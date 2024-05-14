@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>On the test_load_mock_dataset test case, I am getting the assertion error that the tuples differ, but to my eye, they are the same and I am really not understanding the error message and as a result, how to debug it.\u00a0</p>\n<p></p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fktgl2l8n7li414%2F63b75df828bd2eda4578924ed7d8fe283b05c81e31dd7f63532837dffa9a5f4f%2Fimage.png\" alt=\"image.pngNaN\" /></p>",
+        "type": "question",
+        "created": "2022-10-13T00:36:45.422Z",
+        "subject": "pset 4 part 2 test case error",
+        "_id": "l96bz9pqgp33r4"
+    },
+    {
+        "content": "Hard to be sure without looking at the code, but it\u2019s possible that the type of the data inside your lists is different?",
+        "type": "i_answer",
+        "created": "2022-10-13T04:46:49.660Z",
+        "_id": "l96bz9pqgp33r4"
+    }
+]

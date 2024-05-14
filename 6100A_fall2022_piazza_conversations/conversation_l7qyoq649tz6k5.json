@@ -1,0 +1,33 @@
+[
+    {
+        "content": "<p>I saved my file and tried to insert it using <em>Select File</em>. When I do that, it says <em>C:\\fakepath\\ps0.py</em>, and I can&#39;t do anything else. When I reload the page, that section clears. I can&#39;t tell if my homework is submitted or not. Could some please help me? Thank you very much.\u00a0</p>",
+        "type": "question",
+        "created": "2022-09-07T01:48:23.548Z",
+        "subject": "How do I submit PSET 0?",
+        "_id": "l7qyoq649tz6k5"
+    },
+    {
+        "content": "<p>I had the same issue yesterday, but it turns out I just wasn&#39;t logged into the website.\u00a0 You can check near the upper right hand corner.\u00a0 Is this the case with you?\u00a0\u00a0</p>\n<p></p>\n<p>^^ this worked!! TYSM &lt;3</p>",
+        "type": "s_answer",
+        "created": "2022-09-07T11:44:01.033Z",
+        "_id": "l7qyoq649tz6k5"
+    },
+    {
+        "content": "<p>I have the same issue, even while I&#39;m logged in. Any idea what could be happening?</p>",
+        "type": "followup",
+        "created": "2022-09-09T15:03:40.843Z",
+        "_id": "l7qyoq649tz6k5"
+    },
+    {
+        "content": "<p>Or, is there a way to know whether your submission has been uploaded or not?</p>",
+        "type": "followup_response",
+        "created": "2022-09-09T15:14:36.353Z",
+        "_id": "l7qyoq649tz6k5"
+    },
+    {
+        "content": "<p>For me, I could tell mine was submitted BC it showed me an option to download my latest submission.\u00a0</p>",
+        "type": "followup_response",
+        "created": "2022-09-09T15:54:29.112Z",
+        "_id": "l7qyoq649tz6k5"
+    }
+]

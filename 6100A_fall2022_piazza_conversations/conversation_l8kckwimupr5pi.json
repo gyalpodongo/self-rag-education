@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Is the lecture 6 content going to be on the microquiz?</p>",
+        "type": "question",
+        "created": "2022-09-27T15:22:38.878Z",
+        "subject": "Lecture 6",
+        "_id": "l8kckwimupr5pi"
+    },
+    {
+        "content": "<p>It is fair game but won&#39;t be the focus of the quiz.</p>",
+        "type": "i_answer",
+        "created": "2022-09-27T15:30:01.654Z",
+        "_id": "l8kckwimupr5pi"
+    }
+]

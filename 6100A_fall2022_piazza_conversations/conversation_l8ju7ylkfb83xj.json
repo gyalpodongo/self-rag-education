@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>1) If the user has fewer than 3 guesses,</p>\n<p>and tries to request help anyway,</p>\n<p>what message should the program display?</p>\n<p></p>\n<p>I did not find an example of this in the appendix.</p>\n<p></p>\n<p>2) If the user has 3 guesses and asks for help,</p>\n<p>but the word is not completely revealed,</p>\n<p>do they lose the game? Or should this not be allowed?</p>\n<p></p>\n<p>Thank you!</p>",
+        "type": "question",
+        "created": "2022-09-27T06:48:41.960Z",
+        "subject": "Trying to get help without enough guesses / using up the last 3 guesses on help",
+        "_id": "l8ju7ylkfb83xj"
+    },
+    {
+        "content": "1) I believe you can find an example of that here:\u00a0<a href=\"https://sicp-s1.mit.edu/fall22/psets/1_pset2#:~:text=continue%20the%20gameplay.-,example\">https://sicp-s1.mit.edu/fall22/psets/1_pset2#:~:text=continue%20the%20gameplay.-,example</a><div><br /></div><div>2) if the user has exactly 3 guesses left, they can definitely ask for help, but if the word is not completed, they will lose.</div>",
+        "type": "i_answer",
+        "created": "2022-09-27T11:19:39.180Z",
+        "_id": "l8ju7ylkfb83xj"
+    }
+]

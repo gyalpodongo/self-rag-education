@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi,</p>\n<p></p>\n<p>I don&#39;t know what happened, but my Zoom link became invalid after checking back on it after an hour. I don&#39;t want to lose my spot again for the checkoff, so here is my new (and hopefully working) zoom link:</p>\n<p></p>\n<p><a href=\"https://mit.zoom.us/j/99317398366\" target=\"_blank\" rel=\"noopener noreferrer\">https://mit.zoom.us/j/99317398366</a></p>\n<p></p>\n<p>Thanks,</p>\n<p></p>\n<p>Johlesa Orm</p>",
+        "type": "question",
+        "created": "2022-10-13T19:37:36.019Z",
+        "subject": "New Zoom Link for Checkoff",
+        "_id": "l97gqej7o5x61i"
+    },
+    {
+        "content": "<p>resolved</p>",
+        "type": "i_answer",
+        "created": "2022-10-13T20:11:55.299Z",
+        "_id": "l97gqej7o5x61i"
+    }
+]

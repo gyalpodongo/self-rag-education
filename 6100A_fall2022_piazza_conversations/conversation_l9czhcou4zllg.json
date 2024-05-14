@@ -1,0 +1,33 @@
+[
+    {
+        "content": "<p>For Practice Problem 3 for the exam practice why is the expected result for the test cases 11 and 16? I would think that because it is the sum of consecutive numbers in the list that it would be 3&#43;4&#43;5 = 12 and 2&#43;3&#43;4 = 9. Could someone tell me how I am interpreting the question incorrectly?</p>",
+        "type": "question",
+        "created": "2022-10-17T16:21:17.310Z",
+        "subject": "Practice Probelm 3",
+        "_id": "l9czhcou4zllg"
+    },
+    {
+        "content": "<p>the sum needs to be made up of consecutive numbers, so the greatest sum you can get (by adding all the numbers in consecutively) would be 3&#43;4&#43;(-1)&#43;5. if you only do 3&#43;4&#43;5, you&#39;d be skipping a number and that is no longer a &#34;contiguous&#34; sequence</p>",
+        "type": "s_answer",
+        "created": "2022-10-17T17:49:14.042Z",
+        "_id": "l9czhcou4zllg"
+    },
+    {
+        "content": "<p>Hi! Thank you for replying!</p>\n<p></p>\n<p>Sorry, but I am still not sure how that applies for the second example. Do we add 2 to 3, 4, -1, and 15?</p>\n<p></p>\n<p>I guess I am still not understanding what a continguous sequence is.</p>\n<p></p>\n<p>Thank you!</p>",
+        "type": "followup",
+        "created": "2022-10-17T17:59:57.884Z",
+        "_id": "l9czhcou4zllg"
+    },
+    {
+        "content": "<p>in this practice case, a contiguous sequence is made up of consecutive elements. thats really the only definition for it, but since in this practice they also say that it is a subsequence, it means that the sum of numbers you end up finding can start from anywhere and be of any length so long as the numbers you sum together are consecutive (consecutive according to the order in which they appear in the list, not the order they appear numerically)</p>\n<p></p>\n<p>so for the second example 16 is from the subsequence 15 &#43; -1 &#43; 2, which 1) is consecutive bc they appear consecutively in the order of the list and 2) is the greatest sum you can get because there are no other combinations of consecutive elements that are greater than 16</p>",
+        "type": "followup_response",
+        "created": "2022-10-17T18:08:24.225Z",
+        "_id": "l9czhcou4zllg"
+    },
+    {
+        "content": "<p>Oh! That makes sense, thank you!</p>",
+        "type": "followup_response",
+        "created": "2022-10-17T18:22:07.469Z",
+        "_id": "l9czhcou4zllg"
+    }
+]

@@ -1,0 +1,1818 @@
+[
+    {
+        "timestamp": "00:00:12",
+        "content": "FLOATS a nd APPROXIMATION METHODS"
+    },
+    {
+        "timestamp": "00:01:48",
+        "content": "INTEGERS"
+    },
+    {
+        "timestamp": "00:05:27",
+        "content": "FRACTIONS"
+    },
+    {
+        "timestamp": "00:07:45",
+        "content": "WHAT ABOUT FRACTIONS?"
+    },
+    {
+        "timestamp": "00:12:24",
+        "content": "TRACE THROUGH THIS ON YOUR OWN Python Tutor LINK"
+    },
+    {
+        "timestamp": "00:17:45",
+        "content": "WHY is this a PROBLEM?"
+    },
+    {
+        "timestamp": "00:18:27",
+        "content": "THE POINT?"
+    },
+    {
+        "timestamp": "00:19:45",
+        "content": "STORING FLOATING POINT NUMBERS"
+    },
+    {
+        "timestamp": "00:22:24",
+        "content": "USE A FINITE SET OF BITS TO REPRESENT A POTENTIALLY INFINITE\u2026"
+    },
+    {
+        "timestamp": "00:23:54",
+        "content": "SURPRISING RESULTS!"
+    },
+    {
+        "timestamp": "00:24:21",
+        "content": "MORAL of the STORY"
+    },
+    {
+        "timestamp": "00:25:09",
+        "content": "LAST LECTURE"
+    },
+    {
+        "timestamp": "00:25:57",
+        "content": "BETTER than GUESS-and-CHECK"
+    },
+    {
+        "timestamp": "00:26:06",
+        "content": "EFFECT of APPROXIMATION on our ALGORITHMS?"
+    },
+    {
+        "timestamp": "00:27:21",
+        "content": "APPROXIMATE sqrt(x)"
+    },
+    {
+        "timestamp": "00:27:51",
+        "content": "APPROXIMATION"
+    },
+    {
+        "timestamp": "00:28:57",
+        "content": "APPROXIMATION ALGORITHM"
+    },
+    {
+        "timestamp": "00:30:30",
+        "content": "IMPLEMENTATION"
+    },
+    {
+        "timestamp": "00:37:51",
+        "content": "WE OVERSHOT the EPSILON!"
+    },
+    {
+        "timestamp": "00:39:21",
+        "content": "SOME OBSERVATIONS"
+    },
+    {
+        "timestamp": "00:40:27",
+        "content": "LET'S FIX IT"
+    },
+    {
+        "timestamp": "00:42:54",
+        "content": "BIG IDEA"
+    },
+    {
+        "timestamp": "00:43:57",
+        "content": "LESSONS LEARNED in APPROXIMATION"
+    },
+    {
+        "timestamp": "00:46:09",
+        "content": "SUMMARY"
+    },
+    {
+        "timestamp": "00:00:00",
+        "content": "Okay. So let's get started. Today's lecture, we're going to do a little bit of a recap of the last lecture."
+    },
+    {
+        "timestamp": "00:00:16",
+        "content": "We had begun talking about binary numbers, and then we're going to dive into our second algorithm of the class, then approx the approximation method algorithm."
+    },
+    {
+        "timestamp": "00:00:21",
+        "content": "So let's remember the motivation we had for even talking about binary numbers and how numbers are represented in the computer in the first place."
+    },
+    {
+        "timestamp": "00:00:29",
+        "content": "And the motivation was this piece of code. So it's very simple."
+    },
+    {
+        "timestamp": "00:00:33",
+        "content": "We have an initial X zero and then we have a loop that just adds 0.1 to itself ten times."
+    },
+    {
+        "timestamp": "00:00:43",
+        "content": "And then we printed whether that sum equals one."
+    },
+    {
+        "timestamp": "00:00:47",
+        "content": "And what we saw was that it was false. Printing X equivalent to one was false."
+    },
+    {
+        "timestamp": "00:00:53",
+        "content": "So then we printed what the actual value of X was after adding point one to itself many ten times."
+    },
+    {
+        "timestamp": "00:00:59",
+        "content": "And we saw that that summation was actually .9999999."
+    },
+    {
+        "timestamp": "00:01:04",
+        "content": "And of course, two Python point nine, nine and nine is not equal to one."
+    },
+    {
+        "timestamp": "00:01:08",
+        "content": "So that's why we had printed false for X equivalent to one."
+    },
+    {
+        "timestamp": "00:01:12",
+        "content": "Right. That that expression. And so this is our motivation."
+    },
+    {
+        "timestamp": "00:01:22",
+        "content": "Why in the world does this happen in in programing and in Python and something like this could really screw us up, right, if we're not even able to compare floating point numbers. So last lecture, we ended with this piece of code."
+    },
+    {
+        "timestamp": "00:01:30",
+        "content": "It was a way for us to to get the binary representation of a number in base ten."
+    },
+    {
+        "timestamp": "00:01:37",
+        "content": "All right. So given some number and we followed a really simple recipe, a really simple algorithm to convert that number into base to."
+    },
+    {
+        "timestamp": "00:01:46",
+        "content": "The stuff that's in inboxes. Let's not worry about it for now, but let's look at just this part right here."
+    },
+    {
+        "timestamp": "00:01:53",
+        "content": "So the stuff that's in between the two boxes and this is the part that does most of the work for us or all of the work even for us."
+    },
+    {
+        "timestamp": "00:02:00",
+        "content": "It basically creates a string initially empty."
+    },
+    {
+        "timestamp": "00:02:18",
+        "content": "And the idea was that we were going to pretend either zero or one to that string, depending on whether the number we had was odd or even so for a number like 19, if we wanted to convert 19 base ten into base to what the algorithm was doing is over here in the loop."
+    },
+    {
+        "timestamp": "00:02:27",
+        "content": "It says while the num, this num, whatever it is initially 19 is still greater than zero."
+    },
+    {
+        "timestamp": "00:02:34",
+        "content": "Let's get the remainder when we divide the number by two."
+    },
+    {
+        "timestamp": "00:02:37",
+        "content": "So that's what this num percent two is doing. It's either getting a zero or one."
+    },
+    {
+        "timestamp": "00:02:42",
+        "content": "So 19 the remainder when we divide 19 by two is one and we're going to prepare."
+    },
+    {
+        "timestamp": "00:02:49",
+        "content": "And so we're casting this one integer to a string and pretending it to this result, which is initially empty."
+    },
+    {
+        "timestamp": "00:02:57",
+        "content": "So that's what this line is doing. Result equals this thing here."
+    },
+    {
+        "timestamp": "00:03:01",
+        "content": "And then we're going to take our number and integer divided by two."
+    },
+    {
+        "timestamp": "00:03:05",
+        "content": "So we're going to take the number 19 and divided by two, right?"
+    },
+    {
+        "timestamp": "00:03:08",
+        "content": "So that's going to be 9.5, but we're only interested in the integer portion of it."
+    },
+    {
+        "timestamp": "00:03:12",
+        "content": "So nine and then the loop. Does the check again."
+    },
+    {
+        "timestamp": "00:03:17",
+        "content": "Is nine still greater than zero? It is. So then we're going to say, what's the remainder when we divide nine by two?"
+    },
+    {
+        "timestamp": "00:03:24",
+        "content": "It's another one. So we're going to pretend it that remainder two, the string that we're building up."
+    },
+    {
+        "timestamp": "00:03:31",
+        "content": "Okay. And again, we're going to divide this number by two. So now we have 4.5 when we only grab the integer portion of it four."
+    },
+    {
+        "timestamp": "00:03:39",
+        "content": "And again, we ask, what is the remainder when we divide four by two?"
+    },
+    {
+        "timestamp": "00:03:45",
+        "content": "It's a zero. So we pretend the zero two are sort of this binary string we're building up again."
+    },
+    {
+        "timestamp": "00:03:52",
+        "content": "We divide it by two, it's two. The remainder, when we divide two by two is zero."
+    },
+    {
+        "timestamp": "00:03:57",
+        "content": "It's an even number. Again, we divide two by two."
+    },
+    {
+        "timestamp": "00:04:00",
+        "content": "It's a one. And the remainder we get when we divide one by or and yeah, when we divide one by two is a one."
+    },
+    {
+        "timestamp": "00:04:09",
+        "content": "And so this is the string that we had eventually sort of systematically right."
+    },
+    {
+        "timestamp": "00:04:14",
+        "content": "Iteratively built up with this loop here. And numb."
+    },
+    {
+        "timestamp": "00:04:18",
+        "content": "After we divide, this is going to be zero. And then we break out of the loop."
+    },
+    {
+        "timestamp": "00:04:24",
+        "content": "All right. So the binary representation of 19 was 10011."
+    },
+    {
+        "timestamp": "00:04:28",
+        "content": "Base two. We just kept it in as a strip."
+    },
+    {
+        "timestamp": "00:04:34",
+        "content": "The parts that are in red boxes is us dealing with in case with a negative number."
+    },
+    {
+        "timestamp": "00:04:40",
+        "content": "So if the user wanted to convert -19 to a binary representation, this if else up here says is the number less than zero."
+    },
+    {
+        "timestamp": "00:04:50",
+        "content": "If yes, let's set a negative flag to true and let's just assume the user gave us a positive number so we convert that -19 to the absolute value of itself."
+    },
+    {
+        "timestamp": "00:05:11",
+        "content": "Positive 19. This code goes through as if the user had given us a positive number and then at the end we would get the same number as before, except that we're going to present a negative sign. So the negative so the binary representation of -19 is just negative the same thing."
+    },
+    {
+        "timestamp": "00:05:22",
+        "content": "Okay. So that's that was where we ended up. We talked about these integers, but now what about fractions?"
+    },
+    {
+        "timestamp": "00:05:29",
+        "content": "Right. Integers seems really easy. There's a really easy, simple procedure algorithm, right recipe for us to follow to get the binary representation."
+    },
+    {
+        "timestamp": "00:05:38",
+        "content": "But what about these fractions? Oh, yes. Sorry."
+    },
+    {
+        "timestamp": "00:05:41",
+        "content": "So how is the negative rate? Everything's going to be a zero or one."
+    },
+    {
+        "timestamp": "00:05:45",
+        "content": "How does it read? Here."
+    },
+    {
+        "timestamp": "00:05:49",
+        "content": "Here. Oh, we just. It doesn't read it. We just pretend like we were given a positive number, and then we just do the same process over and over again."
+    },
+    {
+        "timestamp": "00:05:58",
+        "content": "Okay, so the computer, I mean it."
+    },
+    {
+        "timestamp": "00:06:03",
+        "content": "For the purposes of the algorithm, it doesn't need to know because the number will come out the same."
+    },
+    {
+        "timestamp": "00:06:08",
+        "content": "We just flag it as being a negative number and then at the end we say, Hey you, we were actually given a negative number."
+    },
+    {
+        "timestamp": "00:06:14",
+        "content": "So let's just pop this negative sign right in front of it. Oh, yeah."
+    },
+    {
+        "timestamp": "00:06:19",
+        "content": "Like just the powers that, like, two is. Mm hmm."
+    },
+    {
+        "timestamp": "00:06:23",
+        "content": "Like, are we, like, going from left to right, like, descending powers or ascending power?"
+    },
+    {
+        "timestamp": "00:06:28",
+        "content": "We're actually doing ascending when we're building up the string because we're going right to left, so."
+    },
+    {
+        "timestamp": "00:06:36",
+        "content": "Yeah, yeah, exactly. So this is two to the zero and this is two to the four."
+    },
+    {
+        "timestamp": "00:06:55",
+        "content": "Yeah. So in terms of fractions, if we're thinking about what it means to talk about a fraction in human readable base ten, right, so number of zero through nine when we have zero point ABC, we're basically saying that's eight divided by ten plus B divided by 100, plus C divided by a thousand and so on."
+    },
+    {
+        "timestamp": "00:07:01",
+        "content": "And in base two, we're going to have the same sort of thing going on."
+    },
+    {
+        "timestamp": "00:07:11",
+        "content": "If we're talking about a base to representation of a number zero point A, B, C, where now A, B or C is just zero or one instead of 039, it's going to be the same thing."
+    },
+    {
+        "timestamp": "00:07:18",
+        "content": "So we would have a divided by two plus B divided by four, plus C divided by eight and so on."
+    },
+    {
+        "timestamp": "00:07:23",
+        "content": "So we're now we're dealing with powers of two instead of powers of ten, right?"
+    },
+    {
+        "timestamp": "00:07:27",
+        "content": "Because our base our base is now two instead of ten. So that means the binary representation of a decimal fraction basically means can we find some"
+    },
+    {
+        "timestamp": "00:07:44",
+        "content": "sort of combination of these values 0.5 times a zero or one plus 0.25 times a01 plus 0.12, five times zero one, and so on and so on. So these are all the powers of two."
+    },
+    {
+        "timestamp": "00:07:51",
+        "content": "So I'll give you the recipe for how we can actually find the the the representation of a fraction."
+    },
+    {
+        "timestamp": "00:07:57",
+        "content": "And this is not something that we expect you to come up, just like the recipe for."
+    },
+    {
+        "timestamp": "00:08:01",
+        "content": "This is not something we expect you to come up with."
+    },
+    {
+        "timestamp": "00:08:10",
+        "content": "But given the recipe, you should be able to sort of intuitively figure out what is the code that actually, you know, performs this this this action that does this recipe?"
+    },
+    {
+        "timestamp": "00:08:16",
+        "content": "So the idea to convert a decimal number to a decimal fraction in base ten to a fraction, sorry, to a binary fraction."
+    },
+    {
+        "timestamp": "00:08:28",
+        "content": "Right in base two is as follows. So let's look at the decimal number three divided by eight."
+    },
+    {
+        "timestamp": "00:08:34",
+        "content": "Just as an example. So that's 0.375. Right."
+    },
+    {
+        "timestamp": "00:08:37",
+        "content": "But we know it's three over eight in base ten."
+    },
+    {
+        "timestamp": "00:08:41",
+        "content": "So using numbers in numbers zero through nine, we end up saying it's three over ten plus seven over 100 plus five over a thousand."
+    },
+    {
+        "timestamp": "00:08:51",
+        "content": "Right. That's just base ten. But we need to come up with a way to convert this into base two."
+    },
+    {
+        "timestamp": "00:08:56",
+        "content": "And so the trick here is to basically say, what is the biggest multiple of two that I can multiply my number, my decimal number?"
+    },
+    {
+        "timestamp": "00:09:08",
+        "content": "With such that I end up getting a whole number, an integer."
+    },
+    {
+        "timestamp": "00:09:19",
+        "content": "That's sort of the trick to this whole thing. Can I multiply my point three, seven, five or whatever fraction I'm interested in calculate in changing to base two by"
+    },
+    {
+        "timestamp": "00:09:29",
+        "content": "some power of two big enough such that I'm going to get a whole number out of this, out of the multiplication, and it has to be a power of two because we're converting it to binary."
+    },
+    {
+        "timestamp": "00:09:34",
+        "content": "Right. Zeros and ones. So in this simple example, .375 is three divided by eight."
+    },
+    {
+        "timestamp": "00:09:40",
+        "content": "So that means that the biggest power or the smallest power of two can multiply three over eight by to give me a whole number is eight."
+    },
+    {
+        "timestamp": "00:09:49",
+        "content": "Right. That's two to the power of three. So if I multiply .375 by eight."
+    },
+    {
+        "timestamp": "00:09:56",
+        "content": "Three over eight times eight gives me three in base ten. And now this whole number."
+    },
+    {
+        "timestamp": "00:10:02",
+        "content": "I know how to convert to binary. I have a recipe."
+    },
+    {
+        "timestamp": "00:10:06",
+        "content": "Right. We've done it on the board here. We have the code on the previous slide."
+    },
+    {
+        "timestamp": "00:10:10",
+        "content": "So all we have to do now is convert the number three to binary, which is just one one."
+    },
+    {
+        "timestamp": "00:10:17",
+        "content": "Base to. But this one one is a representation of the number three."
+    },
+    {
+        "timestamp": "00:10:23",
+        "content": "So in order to get back to .375, I need to divide my three by two to the power of three."
+    },
+    {
+        "timestamp": "00:10:30",
+        "content": "So I need to divide my one one by two to the power of three."
+    },
+    {
+        "timestamp": "00:10:35",
+        "content": "And in binary, dividing by some power of two just means shifting the decimal point over."
+    },
+    {
+        "timestamp": "00:10:42",
+        "content": "Just like in base ten divided by ten means shifting the decimal point over."
+    },
+    {
+        "timestamp": "00:10:54",
+        "content": "So if number three is one one and I multiplied by two to the three to get this value to divide by two to the three, I just need to move the decimal point from just after the one one over one to and then add another zero."
+    },
+    {
+        "timestamp": "00:11:01",
+        "content": "So the representation of the .375 becomes 0.011."
+    },
+    {
+        "timestamp": "00:11:07",
+        "content": "I just shifted this decimal point over by three because now we're dealing in base two."
+    },
+    {
+        "timestamp": "00:11:14",
+        "content": "Okay. So that's the that's the system. That's the recipe for getting this decimal, this binary representation out of a decimal number."
+    },
+    {
+        "timestamp": "00:11:24",
+        "content": "But there's a problem. Right. This is all relying on the fact that I can find this magical power of two, right?"
+    },
+    {
+        "timestamp": "00:11:31",
+        "content": "That if it's big enough. Right, I can find such a power of two."
+    },
+    {
+        "timestamp": "00:11:35",
+        "content": "That when I multiply with my decimal number, I get a whole number out of it."
+    },
+    {
+        "timestamp": "00:11:39",
+        "content": "And that's not always the case. Sometimes that power of two is going to be really, really big or it might not even exist."
+    },
+    {
+        "timestamp": "00:11:47",
+        "content": "Okay. And so if it's really big or if it doesn't exist, that's where we run into problems as we're going to see in a little bit."
+    },
+    {
+        "timestamp": "00:11:54",
+        "content": "Okay. So this is all relying on the fact that I can find this power of two."
+    },
+    {
+        "timestamp": "00:12:05",
+        "content": "So here's the code to actually do this recipe that I had on the previous slide finding the power of two, doing the conversion, and then shifting the decimal point over."
+    },
+    {
+        "timestamp": "00:12:09",
+        "content": "So I'm going to do a quick sort of overview of the pieces, and then we can run the Python tutor just to show you exactly step by step what's going on."
+    },
+    {
+        "timestamp": "00:12:16",
+        "content": "So let's say I want to do point 6 to 5 and convert that to a power of two."
+    },
+    {
+        "timestamp": "00:12:21",
+        "content": "So I've got my X initialized up there. This bit here."
+    },
+    {
+        "timestamp": "00:12:25",
+        "content": "So this big box here is the part that finds this magical power of two for me."
+    },
+    {
+        "timestamp": "00:12:31",
+        "content": "Okay. It's just a loop that keeps incrementing the p the power such that two to the power of p multiplied by x."
+    },
+    {
+        "timestamp": "00:12:40",
+        "content": "This percent one just gives me the decimal bit out of that multiplication is zero."
+    },
+    {
+        "timestamp": "00:12:47",
+        "content": "So I'm going to keep multiplying to two some power of P by x."
+    },
+    {
+        "timestamp": "00:12:53",
+        "content": "As long as I still have a decimal piece to my number."
+    },
+    {
+        "timestamp": "00:12:57",
+        "content": "As soon as this percentage percent one becomes zero, that means that the number I end up with is some number dot zero."
+    },
+    {
+        "timestamp": "00:13:05",
+        "content": "Right. There is no more decimal part to it. At that point, I break out of the loop and I found my power of pee or my power pee."
+    },
+    {
+        "timestamp": "00:13:15",
+        "content": "This is going to be the integer. So I'm multiplying x by that special power by two to the power of that by two to the power of that special power."
+    },
+    {
+        "timestamp": "00:13:25",
+        "content": "And now I have this numbers on the previous slide, right? It's the number three and base ten."
+    },
+    {
+        "timestamp": "00:13:30",
+        "content": "And then this box here is exactly the same as two slides ago."
+    },
+    {
+        "timestamp": "00:13:34",
+        "content": "It's this procedure here. It's taking my number, whatever it may be, and getting the binary representation of it."
+    },
+    {
+        "timestamp": "00:13:43",
+        "content": "And after that we need to figure out how many spaces to move the decimal point backward."
+    },
+    {
+        "timestamp": "00:13:49",
+        "content": "So what is the power of p? We multiplied that number by and now we to work our way backward and say, well, that dot is here."
+    },
+    {
+        "timestamp": "00:13:56",
+        "content": "Let me move the dot back p steps. And that's what this is doing."
+    },
+    {
+        "timestamp": "00:14:02",
+        "content": "So it's iterating through P minus, however long this thing is to pad the front with zeros."
+    },
+    {
+        "timestamp": "00:14:10",
+        "content": "Okay. Because if. Because sometimes this is going to be a really small number."
+    },
+    {
+        "timestamp": "00:14:14",
+        "content": "So I need to add some leading zeros before I put my decimal point and then I put my decimal point."
+    },
+    {
+        "timestamp": "00:14:20",
+        "content": "And that's all this line is doing. And then I. And then I print my result."
+    },
+    {
+        "timestamp": "00:14:25",
+        "content": "So Python tutor. All right."
+    },
+    {
+        "timestamp": "00:14:35",
+        "content": "So step through. So this is point 65, just like in the slides."
+    },
+    {
+        "timestamp": "00:14:39",
+        "content": "P is initially zero. So now this loop is just incrementing P one by one to find the the point where I have a remainder of zero."
+    },
+    {
+        "timestamp": "00:14:50",
+        "content": "So here I'm actually also printing the remainder. So here we still have a non-zero remainder, right?"
+    },
+    {
+        "timestamp": "00:14:55",
+        "content": "So it's 0.6 to 5 as the remainder point to five as a remainder, 0.5 as a remainder."
+    },
+    {
+        "timestamp": "00:15:01",
+        "content": "And then at some point I had multiplied it by two to the power of three because three and I had a zero remainder."
+    },
+    {
+        "timestamp": "00:15:08",
+        "content": "So now I've broken out of that loop and I know NUM is equal to five."
+    },
+    {
+        "timestamp": "00:15:12",
+        "content": "I multiplied by two to the power of three times 0.6 to 5 to give me five."
+    },
+    {
+        "timestamp": "00:15:19",
+        "content": "So now I need a convert number which is five using this process we did here into binary."
+    },
+    {
+        "timestamp": "00:15:26",
+        "content": "That's what this code is doing. And this is exactly this process we had here."
+    },
+    {
+        "timestamp": "00:15:31",
+        "content": "So I'm creating this result string and then free pending a zero or one, whether the number is divisible by two or not."
+    },
+    {
+        "timestamp": "00:15:40",
+        "content": "So the number five in binary is 101. Okay."
+    },
+    {
+        "timestamp": "00:15:54",
+        "content": "So that means that I have 101. as my binary representation of five and now the code is going to go through this loop, which means it's going to move the decimal point to the left."
+    },
+    {
+        "timestamp": "00:15:57",
+        "content": "Three slots, right, because I'm locked up because I have to multiply by two to the power of three to get the five."
+    },
+    {
+        "timestamp": "00:16:05",
+        "content": "So you can see it's going to go loop through three slots, right?"
+    },
+    {
+        "timestamp": "00:16:10",
+        "content": "So here it is. It made the .101 and then sorry, this bit which I skipped over applies the dot, right?"
+    },
+    {
+        "timestamp": "00:16:18",
+        "content": "So it puts the dot in front of it. And then the last step is to just print the representation."
+    },
+    {
+        "timestamp": "00:16:23",
+        "content": "So the binary representation of .625 is 0.121."
+    },
+    {
+        "timestamp": "00:16:32",
+        "content": "So here's the code. And we can run it."
+    },
+    {
+        "timestamp": "00:16:43",
+        "content": "So 0.5 the representation is 0.1 0.6 to 5, which is where we had just done the representation is 0.121."
+    },
+    {
+        "timestamp": "00:16:52",
+        "content": "Right? And we can play around with a bunch of these values. But then when we do something like 0.1, what is the representation of 0.1. to be?"
+    },
+    {
+        "timestamp": "00:17:02",
+        "content": "Right, because now we can use this code to get the representation of whatever decimal we'd like."
+    },
+    {
+        "timestamp": "00:17:07",
+        "content": "Point one was this troublesome decimal. So let's see exactly what happened."
+    },
+    {
+        "timestamp": "00:17:11",
+        "content": "Well, it had to do a whole lot of divisions, right?"
+    },
+    {
+        "timestamp": "00:17:16",
+        "content": "It had to test a whole bunch of powers of two before it actually got to a whole number."
+    },
+    {
+        "timestamp": "00:17:23",
+        "content": "In fact, about 50 of them. And we know that because there's about 50 of these zeros and ones here."
+    },
+    {
+        "timestamp": "00:17:29",
+        "content": "Right. So is approximately two to the par 50 that I had to multiply point one by before it got to a whole number."
+    },
+    {
+        "timestamp": "00:17:43",
+        "content": "So what that means for us is a number that's kind of a linear combination of powers of two is really easy and fast to compute, right?"
+    },
+    {
+        "timestamp": "00:17:56",
+        "content": "Something like this one here, one time student negative three is .001, but something like 0.1, which isn't as easy to see."
+    },
+    {
+        "timestamp": "00:18:06",
+        "content": "What the linear combination of all these powers of two are is not so easy to compute, right?"
+    },
+    {
+        "timestamp": "00:18:12",
+        "content": "And in fact, we had to use our program to figure out exactly what it is."
+    },
+    {
+        "timestamp": "00:18:16",
+        "content": "And for us, it was about 50 of these digits long, which was pretty long."
+    },
+    {
+        "timestamp": "00:18:21",
+        "content": "Right. And some of these numbers could be even longer, potentially infinite."
+    },
+    {
+        "timestamp": "00:18:27",
+        "content": "So the point here is that everything in computer memory is represented in terms of bits, right?"
+    },
+    {
+        "timestamp": "00:18:32",
+        "content": "Zeros and ones. The reason we went through this whole computation is because there are some numbers that"
+    },
+    {
+        "timestamp": "00:18:45",
+        "content": "are just going to be way too big to fit inside these inside the computer hardware, inside these representations. Okay. So for integers, it's straightforward to deal with."
+    },
+    {
+        "timestamp": "00:18:50",
+        "content": "We had a really fast way to compute the, the, the base, the base to representation."
+    },
+    {
+        "timestamp": "00:18:56",
+        "content": "But for fractions it's a lot harder and those numbers can be really, really big."
+    },
+    {
+        "timestamp": "00:19:01",
+        "content": "So now how are these numbers actually represented inside computer memory?"
+    },
+    {
+        "timestamp": "00:19:05",
+        "content": "So they're actually being represented in two pieces."
+    },
+    {
+        "timestamp": "00:19:09",
+        "content": "One in one piece is a significant digit."
+    },
+    {
+        "timestamp": "00:19:13",
+        "content": "And the other piece is the power of two. Okay."
+    },
+    {
+        "timestamp": "00:19:18",
+        "content": "So if we had the representation one on one inside computer memory, basically the significant digit is one and the power of two is one."
+    },
+    {
+        "timestamp": "00:19:29",
+        "content": "So that means we're going to take this one dot and give it the power of two."
+    },
+    {
+        "timestamp": "00:19:33",
+        "content": "So we're going to add a zero after it."
+    },
+    {
+        "timestamp": "00:19:35",
+        "content": "So this is the binary to representation because we basically just move the dot from here to here and then the number one zero on base two is 2.0."
+    },
+    {
+        "timestamp": "00:19:44",
+        "content": "Right? That's what we have on the first line."
+    },
+    {
+        "timestamp": "00:19:46",
+        "content": "One common negative one, that representation means I'm going to take the significant digit one and the power of two is negative one."
+    },
+    {
+        "timestamp": "00:19:54",
+        "content": "So I'm going to take this decimal point and move it to the left one."
+    },
+    {
+        "timestamp": "00:19:58",
+        "content": "So this is going to be. 0.1."
+    },
+    {
+        "timestamp": "00:20:02",
+        "content": "That's this number 0.1, which is 0.5."
+    },
+    {
+        "timestamp": "00:20:07",
+        "content": "This is base to this is base ten. And just to bring the point home, 125 is going to be 125, a significant digit and two to the negative two."
+    },
+    {
+        "timestamp": "00:20:23",
+        "content": "How is this going to work? Well, we're going to take 125 and convert it to a power of two."
+    },
+    {
+        "timestamp": "00:20:28",
+        "content": "So it's what is this? I'm not going to remember what it is. 111110."
+    },
+    {
+        "timestamp": "00:20:35",
+        "content": "One. This is what 125 is in base two."
+    },
+    {
+        "timestamp": "00:20:40",
+        "content": "But the significance about the other, the exponent here tells me it's negative two."
+    },
+    {
+        "timestamp": "00:20:45",
+        "content": "So instead of putting the dot here, I'm going to move it one to over."
+    },
+    {
+        "timestamp": "00:20:49",
+        "content": "So this is the actual number I'm representing in memory and now I can just convert the two pieces separately."
+    },
+    {
+        "timestamp": "00:20:55",
+        "content": "So this is going to be 31 dot what is this, two five, right?"
+    },
+    {
+        "timestamp": "00:21:02",
+        "content": "So this is how computers actually represent numbers inside memory."
+    },
+    {
+        "timestamp": "00:21:07",
+        "content": "Okay. And we call this the object type, which is, you know, decimal or real number of float because this decimal point kind of floats around."
+    },
+    {
+        "timestamp": "00:21:18",
+        "content": "Five for 31.25 for numbers based on base ten is 31.25 and 125 is how it's represented inside memory."
+    },
+    {
+        "timestamp": "00:21:29",
+        "content": "So it's a base ten sort of thing. And then what is the power of two?"
+    },
+    {
+        "timestamp": "00:21:41",
+        "content": "Yeah. So there's a couple of conversions being done here."
+    },
+    {
+        "timestamp": "00:21:44",
+        "content": "We're representing the the the based 125 is base ten and how much we need to move the decimal point."
+    },
+    {
+        "timestamp": "00:21:51",
+        "content": "But first we need to make the conversion of 125 to binary, which is this long thing here, not counting this decimal point."
+    },
+    {
+        "timestamp": "00:21:57",
+        "content": "The negative two tells us we need to move the decimal point over and then we have the actual number we're trying to store."
+    },
+    {
+        "timestamp": "00:22:03",
+        "content": "Right. And the reason we're doing this is because we're mostly just storing numbers as whole numbers inside the memory."
+    },
+    {
+        "timestamp": "00:22:10",
+        "content": "We're not storing fractions. Right."
+    },
+    {
+        "timestamp": "00:22:13",
+        "content": "Yeah. Cause we went through all that trouble to convert the, like, the decimal point."
+    },
+    {
+        "timestamp": "00:22:19",
+        "content": "Oh, I know what that was. Those are fractions. Exactly. Yeah. Yeah."
+    },
+    {
+        "timestamp": "00:22:26",
+        "content": "Okay. So in the end, we did all that because we're trying to figure out the error."
+    },
+    {
+        "timestamp": "00:22:33",
+        "content": "Right. Why do we get this error inside our programs?"
+    },
+    {
+        "timestamp": "00:22:37",
+        "content": "Well, in the end, it's because computers have a finite number of bits to store data."
+    },
+    {
+        "timestamp": "00:22:43",
+        "content": "Most modern computers maybe have 30 to maybe 64 bits to represent significant digits."
+    },
+    {
+        "timestamp": "00:22:56",
+        "content": "Right. So if we have 32 slots in order to put these significant digits, if our number based two representation was 50 digits long, then we're going to truncate at 32."
+    },
+    {
+        "timestamp": "00:23:03",
+        "content": "We can't store those extra bits. Right. And so a number like point one ends up actually being an approximation in base two inside computer memory."
+    },
+    {
+        "timestamp": "00:23:13",
+        "content": "We're not able to store that number exactly perfectly."
+    },
+    {
+        "timestamp": "00:23:17",
+        "content": "So it becomes an approximation. Right. And the approximation actually ends up being at the 32nd bit."
+    },
+    {
+        "timestamp": "00:23:22",
+        "content": "Right. That either will be zero or one, you know, depending on how we decide to truncate."
+    },
+    {
+        "timestamp": "00:23:28",
+        "content": "And so the error is actually two to the to two to the -32, right."
+    },
+    {
+        "timestamp": "00:23:33",
+        "content": "Which is on the order of two times ten to the negative ten, which seems pretty small."
+    },
+    {
+        "timestamp": "00:23:38",
+        "content": "Right. It's a very small error. But we just saw that that error accumulates really, really quickly."
+    },
+    {
+        "timestamp": "00:23:59",
+        "content": "Right. So while point one has an error at the two to the -32 slot, if we take that error and we just kind of accumulated over ten increments as we had this loop that went through ten times, we see that that error ends up becoming a big problem."
+    },
+    {
+        "timestamp": "00:24:03",
+        "content": "Right. We see that it actually at the -16 slot or something like that, it know it starts to to round to the wrong the wrong thing."
+    },
+    {
+        "timestamp": "00:24:12",
+        "content": "And so we see things like this, right? We expect it to be one, but it's not one."
+    },
+    {
+        "timestamp": "00:24:21",
+        "content": "Okay. So the moral of the story is we don't want to use equivalence, right?"
+    },
+    {
+        "timestamp": "00:24:25",
+        "content": "The the equivalent operator, the equal equal operator."
+    },
+    {
+        "timestamp": "00:24:37",
+        "content": "When we're comparing and comparing floats because of errors like this that errors can accumulate and then we start getting the wrong answer, and then your programs end up not doing what you expect them to do."
+    },
+    {
+        "timestamp": "00:24:40",
+        "content": "Okay. So we always want to test whether some float is within some epsilon of another float."
+    },
+    {
+        "timestamp": "00:24:47",
+        "content": "And so that brings us to an approximation method. Last lecture we saw the guess in check method as a really simple algorithm for solving problems."
+    },
+    {
+        "timestamp": "00:24:55",
+        "content": "We have a set number of solutions that we can check, and then we check each one by one."
+    },
+    {
+        "timestamp": "00:25:01",
+        "content": "And then at some point we either find the solution or we've checked all that we can check."
+    },
+    {
+        "timestamp": "00:25:05",
+        "content": "And we haven't found the solution, right? It's usually an integer."
+    },
+    {
+        "timestamp": "00:25:08",
+        "content": "What were the things that we're checking?"
+    },
+    {
+        "timestamp": "00:25:11",
+        "content": "But as long as you have some finite set of values, you can check for a solution through guess and check is totally applicable."
+    },
+    {
+        "timestamp": "00:25:19",
+        "content": "Okay. But the problem is it's a little bit limiting, right?"
+    },
+    {
+        "timestamp": "00:25:23",
+        "content": "It doesn't give us an actual approximation to the square root."
+    },
+    {
+        "timestamp": "00:25:29",
+        "content": "If you remember the code we wrote last time, it didn't actually say, I'm approximating the square root of five to be 1.4 or something, or whatever it is or to point something, right?"
+    },
+    {
+        "timestamp": "00:25:39",
+        "content": "It was just able to tell me the square root of a perfect square, or that the number you gave me is not a perfect square."
+    },
+    {
+        "timestamp": "00:25:49",
+        "content": "And so it's a really limiting algorithm. But the approximation method, the one we're going to see today actually is going to be able to give us an approximation to the square root of any number."
+    },
+    {
+        "timestamp": "00:25:55",
+        "content": "Okay. So it's better than guessing check because we don't just want the correct answer or nothing."
+    },
+    {
+        "timestamp": "00:26:01",
+        "content": "It's not an all or nothing kind of situation. It's that we can approximate the answer to some degree."
+    },
+    {
+        "timestamp": "00:26:09",
+        "content": "So we're going to use guests and check when the exact answer that we want might not be accessible."
+    },
+    {
+        "timestamp": "00:26:14",
+        "content": "Right. We need some way to find an answer that's just good enough."
+    },
+    {
+        "timestamp": "00:26:18",
+        "content": "And approximation methods will not always and not usually."
+    },
+    {
+        "timestamp": "00:26:22",
+        "content": "Actually, most of the time will not give us the right answer. They'll usually give us an approximation."
+    },
+    {
+        "timestamp": "00:26:28",
+        "content": "That's good enough. Okay. And approximation methods."
+    },
+    {
+        "timestamp": "00:26:32",
+        "content": "They came about because of the exhaustive enumeration limitation."
+    },
+    {
+        "timestamp": "00:26:35",
+        "content": "We're not able to test all the possible values to find the exact square root of a number."
+    },
+    {
+        "timestamp": "00:26:40",
+        "content": "Right. Because those values are all infinite. So floating points come into play here."
+    },
+    {
+        "timestamp": "00:26:47",
+        "content": "The whole thing we've been talking about at the beginning of this lecture and less of less and less."
+    },
+    {
+        "timestamp": "00:26:51",
+        "content": "Last time, floating points come into play here because they're very important to this method."
+    },
+    {
+        "timestamp": "00:26:57",
+        "content": "Now that we're comparing floats, we're have we're going to have to be careful about how we actually do the comparison."
+    },
+    {
+        "timestamp": "00:27:04",
+        "content": "So how can we approximate the square root? Well, instead of looking at just whole numbers and saying whether we found the root or not."
+    },
+    {
+        "timestamp": "00:27:12",
+        "content": "What we're going to do is have smaller increments. So no longer are we doing just integer guessing check."
+    },
+    {
+        "timestamp": "00:27:18",
+        "content": "We're can do point one, point two, .3.4 and so on until we get to a guess, that's close enough to X, right?"
+    },
+    {
+        "timestamp": "00:27:27",
+        "content": "So we say that 2.1 or whatever is good enough to the square root of five."
+    },
+    {
+        "timestamp": "00:27:33",
+        "content": "What does it mean to be good enough? Right. Suppose we wanted to find this approximation to the square root."
+    },
+    {
+        "timestamp": "00:27:39",
+        "content": "Right. The guess in check was not able to do this for us, but the approximation method can."
+    },
+    {
+        "timestamp": "00:27:45",
+        "content": "So what we're asking for, can we find a route such that that route times that route times itself is equal to X, right."
+    },
+    {
+        "timestamp": "00:27:54",
+        "content": "And we're going to do this such that we have a good enough approximation."
+    },
+    {
+        "timestamp": "00:27:59",
+        "content": "So that means that route that we're going to find minus X."
+    },
+    {
+        "timestamp": "00:28:05",
+        "content": "It's going to be less than some epsilon or the absolute value of that subtraction is going to be less than epsilon."
+    },
+    {
+        "timestamp": "00:28:11",
+        "content": "Right. So in where we did incremental step by step, we're going to go through as long as we are within or until we are within some epsilon of x."
+    },
+    {
+        "timestamp": "00:28:23",
+        "content": "Okay. So the algorithm will be as follows. We're going to start with a guest that we know is too small."
+    },
+    {
+        "timestamp": "00:28:28",
+        "content": "So for the square root of a number, let's start with zero and then we're going to increment by a really small value with guess in check."
+    },
+    {
+        "timestamp": "00:28:34",
+        "content": "We incremented it by integers. With this particular method we can incremented by 0.5 or 0.10.0001, whatever we'd like."
+    },
+    {
+        "timestamp": "00:28:43",
+        "content": "Okay, that new increment gives us a new guess."
+    },
+    {
+        "timestamp": "00:28:46",
+        "content": "We're going to check whether this new guest is now close enough to X."
+    },
+    {
+        "timestamp": "00:28:50",
+        "content": "If it is, we're good. And if it's not, we're just going to keep incrementing the guess until we get close enough to the actual answer."
+    },
+    {
+        "timestamp": "00:28:56",
+        "content": "Okay. So we are we have two parameters we actually need to set in the approximation algorithm."
+    },
+    {
+        "timestamp": "00:29:04",
+        "content": "The first is an epsilon. So this is down here. How close do we want to be?"
+    },
+    {
+        "timestamp": "00:29:09",
+        "content": "To the final answer. What's the leeway we're going to allow?"
+    },
+    {
+        "timestamp": "00:29:13",
+        "content": "And second is the increment. So how much do we want to change our guest by?"
+    },
+    {
+        "timestamp": "00:29:20",
+        "content": "The way the algorithm performs depends on the values we choose for these."
+    },
+    {
+        "timestamp": "00:29:24",
+        "content": "Obviously, if our guest is smaller, right?"
+    },
+    {
+        "timestamp": "00:29:28",
+        "content": "If we decrease the increment, we're going to get a much more accurate approximation."
+    },
+    {
+        "timestamp": "00:29:34",
+        "content": "Right. If we increase the epsilon, how how close we want to be to X."
+    },
+    {
+        "timestamp": "00:29:41",
+        "content": "Our program is going to be a faster because we're going to enter that plus minus epsilon boundary faster."
+    },
+    {
+        "timestamp": "00:29:47",
+        "content": "But it's going to be less accurate because at some point we're going to enter the boundary."
+    },
+    {
+        "timestamp": "00:29:51",
+        "content": "I'm going to say good enough. I'm not going to get any closer to X because there's no need to."
+    },
+    {
+        "timestamp": "00:29:55",
+        "content": "I'm already within Epsilon. So here the guess you know, good enough guess was too the square of five was one point something."
+    },
+    {
+        "timestamp": "00:30:02",
+        "content": "But on the previous slide, right when we had a smaller epsilon, the good enough guess was to point something."
+    },
+    {
+        "timestamp": "00:30:11",
+        "content": "So the approximation algorithm is like, guess in check. Except that we have some small increment."
+    },
+    {
+        "timestamp": "00:30:16",
+        "content": "We change by a small amount and we stop when we're close enough."
+    },
+    {
+        "timestamp": "00:30:20",
+        "content": "So we're going to check that the absolute value of this solution, minus the solution of minus the actual answer is within Epsilon."
+    },
+    {
+        "timestamp": "00:30:28",
+        "content": "So here's some code where we can implement. What? Finding the square root of a number with approximation method."
+    },
+    {
+        "timestamp": "00:30:38",
+        "content": "We have some stuff here that we're initializing."
+    },
+    {
+        "timestamp": "00:30:42",
+        "content": "So this is the thing we want to find the square root of. This is how close we want to be to the final answer and this is our increment"
+    },
+    {
+        "timestamp": "00:30:50",
+        "content": "num guesses is just to keep track of how many actual guesses we're doing."
+    },
+    {
+        "timestamp": "00:30:54",
+        "content": "And we're going to start with a guest that we know is too small. Zero."
+    },
+    {
+        "timestamp": "00:31:01",
+        "content": "This is the loop that does all of the work for us. So the way we would say it in English, it says basically, while our guess is not with an epsilon."
+    },
+    {
+        "timestamp": "00:31:11",
+        "content": "Keep making new guesses. So while what does it mean for the guest to not be within plus or minus epsilon?"
+    },
+    {
+        "timestamp": "00:31:18",
+        "content": "Well, the absolute value of our guests squared minus X."
+    },
+    {
+        "timestamp": "00:31:25",
+        "content": "Is greater equal to epsilon. So while we're still too far away."
+    },
+    {
+        "timestamp": "00:31:30",
+        "content": "Let's make a new guess. So we increment our guest by the increment value."
+    },
+    {
+        "timestamp": "00:31:36",
+        "content": "So originally we were zero, then we're 0.00101."
+    },
+    {
+        "timestamp": "00:31:40",
+        "content": "Then we're going to be .0002 and so on. This num guesses again is just for us to keep track of how many times we've actually"
+    },
+    {
+        "timestamp": "00:31:48",
+        "content": "gone through this loop and at the end we can print how many guesses we've done."
+    },
+    {
+        "timestamp": "00:31:58",
+        "content": "Okay. So here's the code. And 36 so we can run it."
+    },
+    {
+        "timestamp": "00:32:04",
+        "content": "What do we see? Here's our approximation to the square root of 36."
+    },
+    {
+        "timestamp": "00:32:10",
+        "content": "Now we know it's six. And of course, if we kept going, we could have found probably exactly six."
+    },
+    {
+        "timestamp": "00:32:18",
+        "content": "But notice this approximation algorithm stops as soon as you enter that plus minus epsilon boundary."
+    },
+    {
+        "timestamp": "00:32:25",
+        "content": "Yes. I'll always. Do for loops always increase in integer amounts."
+    },
+    {
+        "timestamp": "00:32:32",
+        "content": "Yes. The step has to be on an integer. Positive or negative."
+    },
+    {
+        "timestamp": "00:32:35",
+        "content": "Yeah. So exactly. A for loop would not have worked here. Right. Right."
+    },
+    {
+        "timestamp": "00:32:40",
+        "content": "So here we stop this algorithm as soon as we entered that plus minus boundary of epsilon."
+    },
+    {
+        "timestamp": "00:32:46",
+        "content": "Right. And so 5.9991 is close enough to the square root of six."
+    },
+    {
+        "timestamp": "00:32:50",
+        "content": "And that's what we were reporting. The number of guesses here was about 59, 99, 2000."
+    },
+    {
+        "timestamp": "00:32:57",
+        "content": "And that's makes sense because our increment is 0.0001 and we went all the way up to 5.99."
+    },
+    {
+        "timestamp": "00:33:05",
+        "content": "Right. So with each time through the loop, we incremented 5.0001."
+    },
+    {
+        "timestamp": "00:33:08",
+        "content": "So that's just this times 10,000. Okay, that makes sense."
+    },
+    {
+        "timestamp": "00:33:13",
+        "content": "So let's try it with a couple other values. So here it is with 24, right?"
+    },
+    {
+        "timestamp": "00:33:18",
+        "content": "4.89. Again, we're seeing these floating point errors pop into play."
+    },
+    {
+        "timestamp": "00:33:23",
+        "content": "Right? Whenever we see this weird like .0000 and in some small amount at the end, that's these floating point errors."
+    },
+    {
+        "timestamp": "00:33:30",
+        "content": "Just given the numbers we're working with adding up."
+    },
+    {
+        "timestamp": "00:33:35",
+        "content": "Here's the square root of two, right? 1.41 again, floating point air, but this time on the other side, point nine, nine, one, two, three, four, five."
+    },
+    {
+        "timestamp": "00:33:54",
+        "content": "Run it. It took a second. Right? There was a little pause and then it gave us the answer just because it has to loop through about what is this 101, two, three, 1 million times, right? So did that loop 1 million times to get us get us the answer and then we can try one more."
+    },
+    {
+        "timestamp": "00:34:04",
+        "content": "Five, four, three, two, one. This should take about five times as long, right?"
+    },
+    {
+        "timestamp": "00:34:08",
+        "content": "Because 1231 12,345 took about one second."
+    },
+    {
+        "timestamp": "00:34:17",
+        "content": "This one should take about 5 seconds, but it's not I'm pretty sure I was talking for more than 5 seconds and this program is not ending, so something's gone wrong."
+    },
+    {
+        "timestamp": "00:34:27",
+        "content": "I'm going to stop it. Remember, you can stop it by clicking the show, hitting control C or the little square here in the corner."
+    },
+    {
+        "timestamp": "00:34:37",
+        "content": "So what went wrong? Uh."
+    },
+    {
+        "timestamp": "00:34:42",
+        "content": "Oh, yes. My question is, will this loop always terminate? And five, four, three, two, one was an example of the loop not terminating."
+    },
+    {
+        "timestamp": "00:34:51",
+        "content": "So what happened? Right. We did all this."
+    },
+    {
+        "timestamp": "00:34:54",
+        "content": "Let's try to debug what exactly happened, because clearly what we have in code right now is not really giving us much information."
+    },
+    {
+        "timestamp": "00:35:01",
+        "content": "So let's add some print statements. The print statements I'm adding is just in here."
+    },
+    {
+        "timestamp": "00:35:07",
+        "content": "So everything else that's not boxed is the same as on the previous slide."
+    },
+    {
+        "timestamp": "00:35:11",
+        "content": "The only thing I'm adding new is this if statement here."
+    },
+    {
+        "timestamp": "00:35:16",
+        "content": "So every 1000. Sorry, every 100,000 guesses."
+    },
+    {
+        "timestamp": "00:35:22",
+        "content": "So every time I've gone through this loop 100,000 times, I'm going to print what the current guesses and what the guessed squared minus x is."
+    },
+    {
+        "timestamp": "00:35:31",
+        "content": "So how far away I am from x the epsilon?"
+    },
+    {
+        "timestamp": "00:35:35",
+        "content": "Ah, yes, not the epsilon, but how far away I am from x."
+    },
+    {
+        "timestamp": "00:35:40",
+        "content": "So let's run that code. It's down here."
+    },
+    {
+        "timestamp": "00:35:47",
+        "content": "I added a little bit of extra thing, which is just it's not printing the whole time."
+    },
+    {
+        "timestamp": "00:35:51",
+        "content": "It's just going to pause for me just to talk about what's going on. So here I have the code run."
+    },
+    {
+        "timestamp": "00:35:57",
+        "content": "Has run. So my first 100,000 times through the loop, I have my guess being about ten and how far I am from X is about 54,000."
+    },
+    {
+        "timestamp": "00:36:08",
+        "content": "So I want to be 0.01 away from that from X, right, because that's what my epsilon is."
+    },
+    {
+        "timestamp": "00:36:13",
+        "content": "And so here I'm 54,000 away from X, so clearly that's too much."
+    },
+    {
+        "timestamp": "00:36:19",
+        "content": "Okay. Let's continue."
+    },
+    {
+        "timestamp": "00:36:22",
+        "content": "So then we make more guesses. And then here, when my guess is 100, I am about 44,000 away from X from 54."
+    },
+    {
+        "timestamp": "00:36:30",
+        "content": "So looking good. What's continue. So with 120, I'm 39,000 away from X with 200, I'm 14,000 away from X."
+    },
+    {
+        "timestamp": "00:36:41",
+        "content": "So it's looking much better, right? I'm getting closer and closer to getting that difference, you know, being zero or .01."
+    },
+    {
+        "timestamp": "00:36:50",
+        "content": "Continue with 210. I'm 10,000 away from X and then I'm almost 6000 way for Max, and then I'm 1000 away from Max."
+    },
+    {
+        "timestamp": "00:37:06",
+        "content": "And then from 230 as my guests, which brought me 1400 away from ex, the next time I have to 40, all the next printout I have brings me to 3000 away from ex."
+    },
+    {
+        "timestamp": "00:37:13",
+        "content": "So I was 1000, but now I'm 3000."
+    },
+    {
+        "timestamp": "00:37:18",
+        "content": "And then from there on, things break down really quickly because I just get now farther and farther away from my ex."
+    },
+    {
+        "timestamp": "00:37:25",
+        "content": "So here I am continuing the program for a little bit and then I just keep making guesses, right, because I was never within that epsilon."
+    },
+    {
+        "timestamp": "00:37:33",
+        "content": "So here's 500. And now I'm almost 200,000 away from."
+    },
+    {
+        "timestamp": "00:37:38",
+        "content": "And so now you see what's happening. This program is just going to keep getting further and further away from where I need to be."
+    },
+    {
+        "timestamp": "00:37:46",
+        "content": "So let's visualize what exactly happened. This is our x 5000 454,321 and this is our Epsilon."
+    },
+    {
+        "timestamp": "00:37:56",
+        "content": "Let's say it's .01. Obviously not to scale."
+    },
+    {
+        "timestamp": "00:38:01",
+        "content": "Blue is going to be representing one guess. So here's a guess."
+    },
+    {
+        "timestamp": "00:38:05",
+        "content": "And then we have the guests squared a green."
+    },
+    {
+        "timestamp": "00:38:08",
+        "content": "So let's just for visualization purposes, let's say this is our guest and this is our guest squared."
+    },
+    {
+        "timestamp": "00:38:13",
+        "content": "Okay. We're far away from from X. We're definitely outside the epsilon boundary."
+    },
+    {
+        "timestamp": "00:38:19",
+        "content": "We make another guess by incrementing it a little bit. This is the guest squared."
+    },
+    {
+        "timestamp": "00:38:24",
+        "content": "We make another guess by incrementing it a little bit because we're still far away from that plus minus epsilon."
+    },
+    {
+        "timestamp": "00:38:29",
+        "content": "This is our guest squared. We make another guess?"
+    },
+    {
+        "timestamp": "00:38:32",
+        "content": "This is our guest squared. We're pretty darn close to that plus minus epsilon boundary."
+    },
+    {
+        "timestamp": "00:38:37",
+        "content": "Right. We want to be within that plus minus epsilon."
+    },
+    {
+        "timestamp": "00:38:41",
+        "content": "So one more guest should make it right. This is our next guest."
+    },
+    {
+        "timestamp": "00:38:46",
+        "content": "But now the guests squared is on the other side. Okay."
+    },
+    {
+        "timestamp": "00:38:51",
+        "content": "This is the big reveal, you guys. So what happened?"
+    },
+    {
+        "timestamp": "00:38:55",
+        "content": "What happens now? The program says keep guessing because we're not with an epsilon."
+    },
+    {
+        "timestamp": "00:39:01",
+        "content": "So it's going to make another guess. Yes."
+    },
+    {
+        "timestamp": "00:39:05",
+        "content": "Squared. And it's just going to keep guessing. And then our guest squared is just going to keep getting bigger and bigger."
+    },
+    {
+        "timestamp": "00:39:12",
+        "content": "So we basically overshot the epsilon, right? We've overshot our little plus minus boundary that we were interested in being within."
+    },
+    {
+        "timestamp": "00:39:21",
+        "content": "Right. We didn't account for that when we wrote the loop."
+    },
+    {
+        "timestamp": "00:39:26",
+        "content": "Right. All we wanted to do was be within Epsilon and our program would end."
+    },
+    {
+        "timestamp": "00:39:31",
+        "content": "So let's fix that. One addition will fix that and it's something that we had been doing and guess in check anyway."
+    },
+    {
+        "timestamp": "00:39:46",
+        "content": "Right and guess and check we would say something like if we've passed the reasonable guess, you're right when we know that gets squared from here on out is definitely too big."
+    },
+    {
+        "timestamp": "00:39:50",
+        "content": "Just stop. Stop guessing, right? Just. Just stop."
+    },
+    {
+        "timestamp": "00:39:54",
+        "content": "And so we can add that same thing here. As just another ending condition."
+    },
+    {
+        "timestamp": "00:39:59",
+        "content": "So everything in this code is the same as before, except for this red box."
+    },
+    {
+        "timestamp": "00:40:04",
+        "content": "We're adding another stopping condition that basically says keep dressing while we work, while we're still guessing something reasonable."
+    },
+    {
+        "timestamp": "00:40:13",
+        "content": "Right. But when we've got something that's not reasonable."
+    },
+    {
+        "timestamp": "00:40:17",
+        "content": "Right. Which is when the guest squared is greater than x."
+    },
+    {
+        "timestamp": "00:40:20",
+        "content": "Right. We've we're way past it. Stop guessing as well."
+    },
+    {
+        "timestamp": "00:40:24",
+        "content": "So whichever one of these conditions, either this one or this one, being with an epsilon is true."
+    },
+    {
+        "timestamp": "00:40:30",
+        "content": "We break out of the loop and then we have an, if else, kind of the same sort of thing we've been doing so far in the guess in check."
+    },
+    {
+        "timestamp": "00:40:38",
+        "content": "Why did we break the loop? Did we break it? Because we were within Epsilon."
+    },
+    {
+        "timestamp": "00:40:44",
+        "content": "That is the clause here, right?"
+    },
+    {
+        "timestamp": "00:40:56",
+        "content": "If we did, then we say this is close to the square root of X, but if we broke it because we've passed reasonable number of guesses, then we know we failed to find the square root right because we overshot the mark or whatever."
+    },
+    {
+        "timestamp": "00:41:02",
+        "content": "So here is the code with five, four, three, two, one."
+    },
+    {
+        "timestamp": "00:41:08",
+        "content": "But now we have that extra condition here. Guest squared less than less than X."
+    },
+    {
+        "timestamp": "00:41:14",
+        "content": "So we see that we've done some number of guesses, right?"
+    },
+    {
+        "timestamp": "00:41:18",
+        "content": "2 million, 300,000. And the message we get is we failed to find the square root."
+    },
+    {
+        "timestamp": "00:41:25",
+        "content": "Makes sense, right. Because we knew we would fail."
+    },
+    {
+        "timestamp": "00:41:28",
+        "content": "And we're also reporting what the last guess was and the last guess square, just in case the user wants to use that information for anything."
+    },
+    {
+        "timestamp": "00:41:36",
+        "content": "What are some solutions to fix this? Right. If we don't want to fail?"
+    },
+    {
+        "timestamp": "00:41:40",
+        "content": "What are what can we do? Well, I gave you a hint right here."
+    },
+    {
+        "timestamp": "00:41:44",
+        "content": "We can decrement our increment or we can decrease our increment if instead of adding 0.0001 every time through the loop, let's add 0.00001."
+    },
+    {
+        "timestamp": "00:41:57",
+        "content": "So let's make it make a guess. Ten times as many guesses."
+    },
+    {
+        "timestamp": "00:42:02",
+        "content": "We're going to have to wait a little bit, maybe about 10 seconds, but the program will end."
+    },
+    {
+        "timestamp": "00:42:07",
+        "content": "It's taking this long, obviously, because it's making all of these extra guesses right."
+    },
+    {
+        "timestamp": "00:42:11",
+        "content": "For every one guess we had with the program that failed. We're now making ten guesses, right?"
+    },
+    {
+        "timestamp": "00:42:15",
+        "content": "Because we decreased our increment by ten. Okay."
+    },
+    {
+        "timestamp": "00:42:19",
+        "content": "So it ended and we see exactly that idea and the number of guesses."
+    },
+    {
+        "timestamp": "00:42:23",
+        "content": "So here we had 2.3 million guesses when our increment was .0001, but when our increment was .000014 zeros, we had 23 million guesses."
+    },
+    {
+        "timestamp": "00:42:35",
+        "content": "So obviously we had ten times as many guesses, which made our program be ten times as slow."
+    },
+    {
+        "timestamp": "00:42:40",
+        "content": "But now we didn't fail because we were able to go within that epsilon."
+    },
+    {
+        "timestamp": "00:42:47",
+        "content": "Right. So we found that two 33.06864, which is pretty close to what we had before, is within .01 of one."
+    },
+    {
+        "timestamp": "00:42:59",
+        "content": "Right. So with approximation methods, it's possible to overshoot the epsilon, right?"
+    },
+    {
+        "timestamp": "00:43:03",
+        "content": "We have to be a little bit more careful now about what our end condition is."
+    },
+    {
+        "timestamp": "00:43:15",
+        "content": "Yes, we can check that we are with an epsilon, but we have to also use a little bit of common sense, maybe algebra or something like that to figure out, is there a way we can overshoot the epsilon and how else can we stop the program without it running into an infinite loop?"
+    },
+    {
+        "timestamp": "00:43:23",
+        "content": "Right. Because that would be bad. So I think I already went over this."
+    },
+    {
+        "timestamp": "00:43:28",
+        "content": "What are some observations about running it? Yes, a reported failure."
+    },
+    {
+        "timestamp": "00:43:33",
+        "content": "So we reset the increments down to ten times smaller than what it was before."
+    },
+    {
+        "timestamp": "00:43:38",
+        "content": "The program was smaller, was slower because we had more values to check through."
+    },
+    {
+        "timestamp": "00:43:44",
+        "content": "So the big idea here is we want to be careful when comparing floats."
+    },
+    {
+        "timestamp": "00:43:48",
+        "content": "If we were using something like equal equals sign, right."
+    },
+    {
+        "timestamp": "00:43:51",
+        "content": "That would have been a complete disaster that we were might have never been with an epsilon or something like that."
+    },
+    {
+        "timestamp": "00:43:59",
+        "content": "Yeah. So what are some lessons we learned in approximation?"
+    },
+    {
+        "timestamp": "00:44:04",
+        "content": "Right. So we can't use double equal sign to check for exact conditions."
+    },
+    {
+        "timestamp": "00:44:07",
+        "content": "We always have to check whether we are within plus or minus some epsilon of the actual answer."
+    },
+    {
+        "timestamp": "00:44:13",
+        "content": "We have to be careful that we have that the the exit condition being plus or minus within some epsilon doesn't jump over our exit test as we just saw."
+    },
+    {
+        "timestamp": "00:44:23",
+        "content": "Right. In that case, we add some extra condition. And then we saw that we actually have a trade off, right?"
+    },
+    {
+        "timestamp": "00:44:28",
+        "content": "We can have a program that does terminate and reports a correct answer."
+    },
+    {
+        "timestamp": "00:44:33",
+        "content": "Right. It doesn't say we failed, but it does report a correct answer. But that could be a program that's a lot slower."
+    },
+    {
+        "timestamp": "00:44:40",
+        "content": "Right. It's a lot slower because we had to decrease our increment."
+    },
+    {
+        "timestamp": "00:44:45",
+        "content": "Alternatively, we could have increased our epsilon boundary."
+    },
+    {
+        "timestamp": "00:44:48",
+        "content": "Right. Or plus minus epsilon that we allowed to be within could have been bigger."
+    },
+    {
+        "timestamp": "00:44:52",
+        "content": "But then we would give up on some accuracy as well."
+    },
+    {
+        "timestamp": "00:44:55",
+        "content": "So there's always this tradeoff of speed versus accuracy to get the program to do, to actually give you an answer to do what you'd like."
+    },
+    {
+        "timestamp": "00:45:03",
+        "content": "Right. And depending on the application, you might want accuracy versus speed or vice versa."
+    },
+    {
+        "timestamp": "00:45:09",
+        "content": "Okay. So. This approximation algorithm is is really slow."
+    },
+    {
+        "timestamp": "00:45:16",
+        "content": "Right. To get an answer for the square root of 54,321, we had to decrease our increment to something like .00001."
+    },
+    {
+        "timestamp": "00:45:28",
+        "content": "And we ran it. And that program took maybe 10 seconds to run right on my computer because we started"
+    },
+    {
+        "timestamp": "00:45:38",
+        "content": "from zero and we were just painfully incrementing that increment one at a time, even though we knew sort of from what the number actually was, five 54,000 that that the square root of it could not really be that low."
+    },
+    {
+        "timestamp": "00:45:47",
+        "content": "But that's just the algorithm we had, right?"
+    },
+    {
+        "timestamp": "00:45:48",
+        "content": "We had to start from something zero just in case the user gave it other numbers, which, you know, didn't make sense to start higher than that."
+    },
+    {
+        "timestamp": "00:45:56",
+        "content": "And so the approximation algorithm, as you saw, can be really slow."
+    },
+    {
+        "timestamp": "00:46:00",
+        "content": "The question I have is, is there a faster way that still gets good answers?"
+    },
+    {
+        "timestamp": "00:46:04",
+        "content": "And the answer, of course, is yes. And we're going to see this this particular this algorithm in the next lecture."
+    },
+    {
+        "timestamp": "00:46:11",
+        "content": "Okay. So quick summary. We saw floating points."
+    },
+    {
+        "timestamp": "00:46:15",
+        "content": "We did a lot of calculations with binary numbers. You don't need to know how to do those calculations."
+    },
+    {
+        "timestamp": "00:46:19",
+        "content": "But again, given a recipe or an algorithm, can you take that and put it into code?"
+    },
+    {
+        "timestamp": "00:46:25",
+        "content": "Write floating point numbers introduced a little bit of challenge for us in comparing them because of the way they're stored in memory."
+    },
+    {
+        "timestamp": "00:46:31",
+        "content": "We can't represent some of these numbers exactly in memory. So that's a problem."
+    },
+    {
+        "timestamp": "00:46:37",
+        "content": "Because they're not represented exactly in memory."
+    },
+    {
+        "timestamp": "00:46:39",
+        "content": "We might magnify some errors right as we saw with that loop and the approximation methods use floats."
+    },
+    {
+        "timestamp": "00:46:45",
+        "content": "Unfortunately or fortunately. Right."
+    },
+    {
+        "timestamp": "00:46:47",
+        "content": "They need to use floats because we need to have a small increment and we have to be mindful of these issues when using."
+    }
+]

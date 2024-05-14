@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi, I&#39;m passing all the other test cases except for test_data_frame_maker_large. I know it&#39;s because the tuples differ, but I&#39;m finding it difficult to work backwards and find out why my result is so different from the expected (they don&#39;t even have the same number of items). Any help on where to start with this would be greatly appreciated.</p>\n<p></p>\n<p>FAIL: test_data_frame_maker_large (__main__.TestDataFrame)<br />----------------------------------------------------------------------<br />Traceback (most recent call last):<br />\u00a0 File &#34;c:\\users\\steph\\desktop\\mit cross stuff\\pset4\\1_ps4\\test_ps4_student.py&#34;, line 146, in test_data_frame_maker_large<br />\u00a0 \u00a0 self.assertEqual(mod_res_data, expected_data)<br />AssertionError: Tuples differ: ([18092, 19250, 18092, 19250], [3014.3, 3901.35, 3014.3, 3901.35]) != ([18092, 18093, 18094, 18095, 19247, 19248, 19249, [75 chars].35])</p>\n<p>First differing element 0:<br />[18092, 19250, 18092, 19250]<br />[18092, 18093, 18094, 18095, 19247, 19248, 19249, 19250]</p>\n<p>- ([18092, 19250, 18092, 19250], [3014.3, 3901.35, 3014.3, 3901.35])<br />&#43; ([18092, 18093, 18094, 18095, 19247, 19248, 19249, 19250],<br />&#43; \u00a0[3014.3, 3004.04, 2984.42, 2995.11, 4110.41, 3932.69, 3946.01, 3901.35])</p>",
+        "type": "question",
+        "created": "2022-10-15T20:08:25.710Z",
+        "subject": "Failing test_data_frame_maker_large",
+        "_id": "l9acpr3i46h6id"
+    },
+    {
+        "content": "<p>Make sure that when you add the appropriate dates in the interval that you are adding them <em>inclusive</em> to the interval. Also, check to see if you are assuming the data has a certain order that it doesn&#39;t in the .csv file. These were both the source of the issues I was having :)</p>",
+        "type": "s_answer",
+        "created": "2022-10-15T22:35:19.400Z",
+        "_id": "l9acpr3i46h6id"
+    }
+]

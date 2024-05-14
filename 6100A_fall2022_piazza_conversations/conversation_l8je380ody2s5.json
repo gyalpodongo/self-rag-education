@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>I have finished PSET 2, and upon trying to run the test file, I get a ton of errors, and I have no clue what is wrong. I also know of at least one other person that has been getting very similar errors. We have tried everything we can think of, including redownloading the files from the website, but to no avail. As far as I can tell by manually testing, my code seems to work as intended, but I would like to verify this with the tester before submitting.</p>\n<p></p>\n<p>I have attached a .txt file of the console outputs containing the errors I am getting.</p>\n<p></p>\n<p><a href=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fktcd9s6257m612%2F3f42eec07300c35f48022823572ffae15b95bcf81f26c32d838acb0a5541b1dc%2FPSET2_Errors.txt\" target=\"_blank\" rel=\"noopener noreferrer\">PSET2_Errors.txt</a></p>",
+        "type": "question",
+        "created": "2022-09-26T23:17:07.032Z",
+        "subject": "Errors running PSET 2 tester",
+        "_id": "l8je380ody2s5"
+    },
+    {
+        "content": "Is it possible you accidentally changed the named of your code file from \u2018hangman.py\u2019,<div><br /></div><div>OR</div><div><br /></div><div>Can you make sure the test file, and the code file are in the same folder?</div>",
+        "type": "i_answer",
+        "created": "2022-09-27T11:22:15.761Z",
+        "_id": "l8je380ody2s5"
+    }
+]

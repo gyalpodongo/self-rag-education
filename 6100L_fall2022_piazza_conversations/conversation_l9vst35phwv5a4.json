@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hello,</p>\n<p></p>\n<p>I can&#39;t to access the panopto videos on Canvas. it says this whenever i try to open it. is there another way to view the recorded lectures?</p>\n<h1>HTTP 403 : Forbidden</h1>\n<p></p>\n<p>Error configuring access to Panopto folder. Please contact an administrator.</p>",
+        "type": "question",
+        "created": "2022-10-30T20:22:04.861Z",
+        "subject": "Panopto Video",
+        "_id": "l9vst35phwv5a4"
+    },
+    {
+        "content": "<p>resolved via email</p>",
+        "type": "i_answer",
+        "created": "2022-11-01T13:21:13.060Z",
+        "_id": "l9vst35phwv5a4"
+    }
+]

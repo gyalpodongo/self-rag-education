@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>If you choose not to have a pset buddy on the form, can you pset with someoneof your choosing?</p>",
+        "type": "question",
+        "created": "2022-09-06T07:31:42.458Z",
+        "subject": "Choosing pset  buddies",
+        "_id": "l7pvidq2q26ld"
+    },
+    {
+        "content": "<p>You can collaborate and help each other with high-level ideas. You may not show code, dictate code, or tell each other details on how to solve each part of the pset. The course site has details on our collaboration policy.\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-09-06T10:16:13.285Z",
+        "_id": "l7pvidq2q26ld"
+    }
+]

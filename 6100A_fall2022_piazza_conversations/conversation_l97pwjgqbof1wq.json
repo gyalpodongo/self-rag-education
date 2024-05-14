@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>do we need to email anyone before using our late days?\u00a0</p>",
+        "type": "question",
+        "created": "2022-10-13T23:54:18.890Z",
+        "subject": "late days",
+        "_id": "l97pwjgqbof1wq"
+    },
+    {
+        "content": "Nope, late days will get applied automatically!",
+        "type": "i_answer",
+        "created": "2022-10-14T15:53:39.973Z",
+        "_id": "l97pwjgqbof1wq"
+    }
+]

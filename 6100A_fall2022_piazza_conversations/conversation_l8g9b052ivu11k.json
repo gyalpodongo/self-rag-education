@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>I submitted pset1 with my buddy last Saturday, I checked the grade yesterday and it was 0, but my code works on all samples. It is probably because I didn\u2019t write under comments. I made a stupid move of resubmitting yesterday to just check if that was the problem as ik late submissions aren\u2019t considered and it still didn\u2019t get hundred because I was checking something for myself. Will the submission I made last week be visible to graders so they can manually grade my pset? Can I communicate this in checkoffs? Thanks \u00a0</p>",
+        "type": "question",
+        "created": "2022-09-24T18:39:53.462Z",
+        "subject": "Pset 1 mistake",
+        "_id": "l8g9b052ivu11k"
+    },
+    {
+        "content": "If your code doesn\u2019t run, or throw an error on the server, we will manual grade it.",
+        "type": "i_answer",
+        "created": "2022-09-24T19:16:39.577Z",
+        "_id": "l8g9b052ivu11k"
+    }
+]

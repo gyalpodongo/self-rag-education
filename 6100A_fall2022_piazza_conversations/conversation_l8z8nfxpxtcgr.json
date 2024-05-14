@@ -1,0 +1,15 @@
+[
+    {
+        "content": "Hi, I seemed to have gotten a 0% from the auto grader on my pset due to an import function that I don\u2019t even think I put in. When I ran the tester files on my own it worked perfectly fine. Is there anything that I can do? Thank you!",
+        "type": "question",
+        "created": "2022-10-08T01:29:11.533Z",
+        "subject": "Pset 3 Grade",
+        "_id": "l8z8nfxpxtcgr"
+    },
+    {
+        "content": "If you received a zero on any part of the pset, we take a look at it via manual grading to see if something simple messed up the test cases on our end. Those grades will be updated soon on the scores page after manual grading.",
+        "type": "i_answer",
+        "created": "2022-10-08T14:22:44.228Z",
+        "_id": "l8z8nfxpxtcgr"
+    }
+]

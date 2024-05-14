@@ -1,0 +1,33 @@
+[
+    {
+        "content": "<p>My grade for PSET 1 dropped from 80% to 40%. Is this normal?</p>",
+        "type": "question",
+        "created": "2022-10-02T01:18:58.776Z",
+        "subject": "My grade for PSET 1 changed",
+        "_id": "l8qnn74o5cs46r"
+    },
+    {
+        "content": "<p><strong attention=\"jlmbg5gl6bq1qe\">@Nadia Waid</strong> you handgraded this one. Can you take a look and let me know if the original grade should stand?\u00a0</p>",
+        "type": "followup",
+        "created": "2022-10-03T15:23:12.705Z",
+        "_id": "l8qnn74o5cs46r"
+    },
+    {
+        "content": "<p>Student came in to ask about it in office hours, their autograder score doesn&#39;t even show a 40%, but it says 40% on the grade page</p>",
+        "type": "followup_response",
+        "created": "2022-10-03T16:50:49.757Z",
+        "_id": "l8qnn74o5cs46r"
+    },
+    {
+        "content": "<p>The 40% is because I overrode their score based on manual grading.\u00a0</p>",
+        "type": "followup_response",
+        "created": "2022-10-03T16:53:33.471Z",
+        "_id": "l8qnn74o5cs46r"
+    },
+    {
+        "content": "<p>Was it hardcoded or something?</p>",
+        "type": "followup_response",
+        "created": "2022-10-03T18:55:38.403Z",
+        "_id": "l8qnn74o5cs46r"
+    }
+]

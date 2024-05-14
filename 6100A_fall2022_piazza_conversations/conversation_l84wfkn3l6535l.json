@@ -1,0 +1,45 @@
+[
+    {
+        "content": "<p>Hi!</p>\n<p></p>\n<p>For Part C of the PSET, when I test my code with the tester, one of the tests has one less step than the expected number of steps (11 instead of 12). The number of steps matches up with the other two tests (and my r values match exactly), and the PSET mentions that the number of steps will vary based on the bisection search method, so I was wondering if I would still need to change my code such that the steps will match that of the testers.</p>",
+        "type": "question",
+        "created": "2022-09-16T19:54:03.711Z",
+        "subject": "PSET Part C Tester Steps",
+        "_id": "l84wfkn3l6535l"
+    },
+    {
+        "content": "Same thing here",
+        "type": "followup",
+        "created": "2022-09-16T19:56:31.949Z",
+        "_id": "l84wfkn3l6535l"
+    },
+    {
+        "content": "<p><a href=\"/class/l5s90ip6zjd5tz/post/34\" target=\"_blank\" rel=\"noopener noreferrer\">#34</a></p>",
+        "type": "i_answer",
+        "created": "2022-09-16T20:35:21.258Z",
+        "_id": "l84wfkn3l6535l"
+    },
+    {
+        "content": "<p>Same problem, for multiple test cases I have one less step than I am supposed to get according to the tester. The r value is the same as it should be. Do I need to change my code?</p>",
+        "type": "followup_response",
+        "created": "2022-09-17T00:15:31.539Z",
+        "_id": "l84wfkn3l6535l"
+    },
+    {
+        "content": "<p>Same here. In particular, Part C Test 2 keeps failing. I had 11 steps and the tester had 12. This was when my error was &#43;/-100. When my error was &#43;/-10, I had 14 steps instead, which still failed.</p>\n<p>On the instructions, it mentioned that graders would accept multiple answers of step count as long as they were close enough, but towards the bottom of the instructions it says to make sure that all tests pass. In this situation do we ignore the failed test case and just submit?</p>",
+        "type": "followup_response",
+        "created": "2022-09-17T04:00:49.753Z",
+        "_id": "l84wfkn3l6535l"
+    },
+    {
+        "content": "<p>Exactly! Only Part C Test 2 has this issue. All other tests pass with the correct number of steps/ months.\u00a0</p>",
+        "type": "followup_response",
+        "created": "2022-09-18T01:11:58.362Z",
+        "_id": "l84wfkn3l6535l"
+    },
+    {
+        "content": "<p>-nvm</p>\n<p></p>",
+        "type": "followup_response",
+        "created": "2022-09-20T01:14:17.040Z",
+        "_id": "l84wfkn3l6535l"
+    }
+]

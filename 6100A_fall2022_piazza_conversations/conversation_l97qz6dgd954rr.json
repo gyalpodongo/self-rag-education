@@ -1,0 +1,39 @@
+[
+    {
+        "content": "<p>Hello,</p>\n<p></p>\n<p>I got my pset 3 checked off about 3 hours ago and was told to make a piazza post if the score wasn&#39;t updated after 30 minutes. My kerb is jesschn.\u00a0</p>",
+        "type": "question",
+        "created": "2022-10-14T00:24:21.508Z",
+        "subject": "PSET 3 checkoff score not updated",
+        "_id": "l97qz6dgd954rr"
+    },
+    {
+        "content": "Do you remember who the LA/TA was that gave you the checkoff?",
+        "type": "i_answer",
+        "created": "2022-10-14T01:22:13.188Z",
+        "_id": "l97qz6dgd954rr"
+    },
+    {
+        "content": "<p>I believe it was Hassan Mohiuddin?</p>",
+        "type": "followup",
+        "created": "2022-10-14T01:26:10.609Z",
+        "_id": "l97qz6dgd954rr"
+    },
+    {
+        "content": "Alright! I\u2019ll update as doon as he gets back to me",
+        "type": "followup_response",
+        "created": "2022-10-14T11:31:40.798Z",
+        "_id": "l97qz6dgd954rr"
+    },
+    {
+        "content": "Score should be up",
+        "type": "followup_response",
+        "created": "2022-10-14T22:12:07.439Z",
+        "_id": "l97qz6dgd954rr"
+    },
+    {
+        "content": "<p>Thank you!</p>",
+        "type": "followup_response",
+        "created": "2022-10-14T22:13:17.184Z",
+        "_id": "l97qz6dgd954rr"
+    }
+]

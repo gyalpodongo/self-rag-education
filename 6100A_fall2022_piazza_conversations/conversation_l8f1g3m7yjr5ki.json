@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi!</p>\n<p></p>\n<p>I just finished my pset 2. When I was trying the test file, it kept asking me for a letter input, and there&#39;s no end of it. And after running the tester file, I cannot run my hangman file properly. It&#39;s showed as below. Would you be able to explain what&#39;s going on here? <img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl7rw7gfn39b5wm%2F04c8c169768fa7fd6adce8e0ca943013427a3c826b16f206ecdae01ca5bc0ee7%2FScreen_Shot_2022-09-23_at_6.09.38_PM.png\" width=\"1090\" height=\"630\" alt=\"\" /></p>",
+        "type": "question",
+        "created": "2022-09-23T22:12:08.143Z",
+        "subject": "pset 2 test file issue",
+        "_id": "l8f1g3m7yjr5ki"
+    },
+    {
+        "content": "It\u2019s hard to tell what the problem is just by looking at this. I\u2019d recommend trying to restart the kernel, and if that doesn\u2019t work, try office hours next week<div><br /></div><div>Edit: if it\u2019s constantly asking for an input, you might have an infinite loop (check the condition in your while loop). And use Ctrl&#43;C or Cmd&#43;C to manually exit those</div>",
+        "type": "i_answer",
+        "created": "2022-09-24T03:03:25.243Z",
+        "_id": "l8f1g3m7yjr5ki"
+    }
+]

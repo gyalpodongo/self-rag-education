@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Just noticed that on my first PSET I got a 90% on the autograded section, with a 75% on part 3.\u00a0 \u00a0I was wondering if someone could take a look at that one more time.\u00a0 It said that the answer was 0, and I had None, which is what we were told to output in that scenario within the problem.\u00a0 If I&#39;m missing something and you could just explain where I went wrong, that would be great!\u00a0 Thank you!</p>",
+        "type": "question",
+        "created": "2022-10-07T21:24:49.213Z",
+        "subject": "PSET 1 Autograder Issue",
+        "_id": "l8yzx6f1jpx6js"
+    },
+    {
+        "content": "<md>Hello! I just took a look at your code, and it seems like that specific test case deals with the following situation: **If the initial deposit amount is greater than or equal to the required down payment minus $100, then the\u00a0best savings rate is 0.0**, not the case where r is supposed to be None.\n\nI noticed a few things in your code. Fixing them results in a correct implementation that passes all test cases.\n\nYou have a check that looks like this: \n~~~\nif (initial_deposit >= ((cost_of_dream_home * portion_down_payment) + 100 or (cost_of_dream_home * portion_down_payment) - 100))\n~~~\nthe first check is doing what you intend for it to do. The second half however, is not being compared to anything. It's truth value just depends on (cost_of_dream_home * portion_down_payment) - 100)) being non-zero. So, you'd want to change it to the following:\n~~~\nif (initial_deposit >= ((cost_of_dream_home * portion_down_payment) + 100 or (initial_deposit >=(cost_of_dream_home * portion_down_payment) - 100)))\n~~~\n\nThe block above would set r to be 0.0, but the way it's currently set up, it would still go into the while loop that follows it, where the value of r gets overridden to be ```None```. To avoid this, you'd want to put the while loop into an ```else``` block, so it doesn't still go in there.\n\nI hope that helps! Let me know if any part of that needs additional clarification.</md>",
+        "type": "i_answer",
+        "created": "2022-10-07T22:19:14.218Z",
+        "_id": "l8yzx6f1jpx6js"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl7yvgylvqrg11i%2Fb1a13be0e3e6941aa83c3b7bc99a69b79eafa9bc50571fc790016d8fd11bfd42%2Fimage.png\" alt=\"image.pngNaN\" width=\"650\" height=\"171\" /></p>\n<p></p>\n<p>When I submitted Pset, select file was shown &#39;no file&#39;.</p>\n<p>I want to make sure the file was submitted successfully.</p>",
+        "type": "question",
+        "created": "2022-10-20T01:01:38.767Z",
+        "subject": "Make sure file submitted _  file missing",
+        "_id": "l9gcy8njxgc3qt"
+    },
+    {
+        "content": "<p>A little late on this, but the &#39;Download Most Recent Submission&#39; means you have a file submitted. You can click that, and compare it to your last code to see if they are the same.</p>",
+        "type": "i_answer",
+        "created": "2022-10-31T14:19:07.140Z",
+        "_id": "l9gcy8njxgc3qt"
+    }
+]

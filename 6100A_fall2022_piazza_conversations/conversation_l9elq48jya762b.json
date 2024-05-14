@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi,</p>\n<p>On micro quiz 3 I received a 52%. My scoring was as follows:</p>\n<p>1: 2/4</p>\n<p>2: 1.2/4</p>\n<p>3: 2/2</p>\n<p>For Q1, the only issue was that I added the key instead of the value of d on my second to last line, causing only 1 test case to fail. Changing this one part(to ans.append(Lk[i])), I would have gotten full credit.\u00a0</p>\n<p>For Q2, I simply forgot to increment by 1 for i in my innermost loop and had an index out of bound which I could fix by adding i &lt; len(keys) and instead of d[keys[i]] &#43;= freq, d[keys[i-1]] &#43;= freq</p>\n<p></p>\n<p>My logic was correct for both questions, but I had very small errors which lead to failing test cases. Could I have a regrade for those two questions please?</p>\n<p>Thanks</p>",
+        "type": "question",
+        "created": "2022-10-18T19:31:43.987Z",
+        "subject": "Microquiz 3 Regrade",
+        "_id": "l9elq48jya762b"
+    },
+    {
+        "content": "<p>We just took another look at your quiz answers and updated the score.\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-10-19T01:45:30.037Z",
+        "_id": "l9elq48jya762b"
+    }
+]

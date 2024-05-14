@@ -1,0 +1,9 @@
+[
+    {
+        "content": "<p>Some students have been asking where to find the &#34;Getting Started&#34; handout for installing Python. You&#39;ll find it within the zip file that&#39;s downloaded when you click the &#34;Download Files&#34; link at the top of Problem Set 0&#39;s page.<br /><br /><a href=\"https://sicp-s1.mit.edu/fall22/psets/1_pset0\" target=\"_blank\" rel=\"noopener noreferrer\">https://sicp-s1.mit.edu/fall22/psets/1_pset0</a><br /><br />The handout walks you through installing the Anaconda distribution of Python, and also <em>updating</em> and <em>testing</em> that it works. It&#39;s important to update the software (namely, Spyder) to fix a bug relating to Python&#39;s <kbd>input()</kbd> function.</p>\n<p></p>\n<p>EDIT: Students with M1 Macs are reporting difficulties installing Anaconda and Spyder. Our TAs and LAs in office hours are working on an alternate options for installation. Pset 0 isn&#39;t graded, so if you are having installation trouble, don&#39;t stress about submitting Pset 0 by tomorrow.</p>\n<p></p>\n<p>EDIT 2: Our TAs have put together two new documents on alternatives to installing Anaconda. Pset 0&#39;s zip file has been updated to include them. You can either install Spyder standalone, which includes the Python packages we&#39;ll use, or install VSCode and then its Python extension along with the necessary packages.</p>\n<p></p>\n<p>If you are still having trouble installing, please seek help in office hours ASAP.</p>",
+        "type": "note",
+        "created": "2022-09-06T19:20:45.598Z",
+        "subject": "Installing Anaconda / Python",
+        "_id": "l7qku87y6eblt"
+    }
+]

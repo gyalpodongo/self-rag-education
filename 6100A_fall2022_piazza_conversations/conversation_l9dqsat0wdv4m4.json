@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi! On slide 40 of the review, what\u2019s the difference between even_or_odd() and even_or_odd in code? We went over it briefly during the session but I did not fully understand it.</p>",
+        "type": "question",
+        "created": "2022-10-18T05:05:37.716Z",
+        "subject": "review slide 40",
+        "_id": "l9dqsat0wdv4m4"
+    },
+    {
+        "content": "<md>even\\_or\\_odd is just a function definition, so its type is effectively a function. \n\n even\\_or\\_odd() is calling the function, so its type is effectively a Boolean since that is what the function returns after you call it.</md>",
+        "type": "i_answer",
+        "created": "2022-10-18T14:53:26.308Z",
+        "_id": "l9dqsat0wdv4m4"
+    }
+]

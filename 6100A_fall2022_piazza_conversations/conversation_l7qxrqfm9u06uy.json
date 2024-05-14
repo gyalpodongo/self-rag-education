@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>I have a prior commitment I have to attend. What is the policy if I have to leave class early?</p>",
+        "type": "question",
+        "created": "2022-09-07T01:22:44.242Z",
+        "subject": "Leaving class",
+        "_id": "l7qxrqfm9u06uy"
+    },
+    {
+        "content": "<p>If it&#39;s just for the first class, we will be having a break around 3:55. However, we do have mandatory in-class microquizzes at the end of several subsequent lectures. See section 3 of the course info page.</p>\n<p><a href=\"https://sicp-s1.mit.edu/fall22/information\" target=\"_blank\" rel=\"noopener noreferrer\">https://sicp-s1.mit.edu/fall22/information</a></p>\n<p></p>",
+        "type": "i_answer",
+        "created": "2022-09-07T01:51:15.576Z",
+        "_id": "l7qxrqfm9u06uy"
+    }
+]

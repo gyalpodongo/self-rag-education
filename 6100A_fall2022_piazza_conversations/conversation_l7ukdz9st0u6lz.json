@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>In this <a href=\"http://student.mit.edu/catalog/m6a.html\" target=\"_blank\" rel=\"noopener noreferrer\">link</a> it says that there&#39;s a recitation offered at 10 am. Is this time still offered?</p>",
+        "type": "question",
+        "created": "2022-09-09T14:19:12.208Z",
+        "subject": "Recitation Times",
+        "_id": "l7ukdz9st0u6lz"
+    },
+    {
+        "content": "<p>No. Our website and the canvas announcement from yesterday has the latest info: <a href=\"https://sicp-s1.mit.edu/fall22\" target=\"_blank\" rel=\"noopener noreferrer\">https://sicp-s1.mit.edu/fall22</a>\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-09-09T14:20:52.902Z",
+        "_id": "l7ukdz9st0u6lz"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "content": "What do you recommend doing if I&#39;m not doing well on the microquizzes? I feel like I&#39;m doing everything I can to prepare- I make sure I understand all the notes from lecture/recitation and the finger exercises, and do all of the practice questions on mitx. I also find the psets to not be terribly hard, I&#39;ve been scoring well on my checkoffs, and I go to office hours when I don&#39;t understand something. Finally, I make sure to review what I did wrong/understand the correct solutions on past quizzes. Do you have any tips of how to score better? I&#39;m not sure what I&#39;m doing wrong.",
+        "type": "question",
+        "created": "2022-09-30T17:32:49.426Z",
+        "subject": "What should I do if I&#39;m not scoring very well on microquizzes?",
+        "_id": "l8orjv6a6uh2m4"
+    },
+    {
+        "content": "<p>One thing I would do is to review &#34;correct&#34; microquiz solutions,</p>\n<p>ensure that I understand them fully,</p>\n<p>and then practice reimplementing them again from scratch.</p>\n<p></p>\n<p></p>",
+        "type": "s_answer",
+        "created": "2022-09-30T17:44:25.599Z",
+        "_id": "l8orjv6a6uh2m4"
+    }
+]

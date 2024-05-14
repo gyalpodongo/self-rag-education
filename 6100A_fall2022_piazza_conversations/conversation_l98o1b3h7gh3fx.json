@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>If we do our checkoff monday rather than today, does that count as 1 late day or 3? I currently have 2 remaining so I just want to make sure I am able to do this.</p>",
+        "type": "question",
+        "created": "2022-10-14T15:49:48.269Z",
+        "subject": "Checkoff late day",
+        "_id": "l98o1b3h7gh3fx"
+    },
+    {
+        "content": "<p>You&#39;re good to do it Monday. Since we don&#39;t have chckoffs on the weekend, you can do it on Monday as long as you have at least one late day.\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-10-14T19:33:39.469Z",
+        "_id": "l98o1b3h7gh3fx"
+    }
+]

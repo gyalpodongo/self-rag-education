@@ -1,0 +1,9 @@
+[
+    {
+        "content": "<p>Hello,</p>\n<p></p>\n<p>I received an 88% on the autograder for pset 4, but when I ran the tester file, I passed all the tests. Would it be possible to review my pset to see why I lost 12% on the autograder?</p>\n<p></p>\n<p>Thanks,</p>\n<p></p>\n<p>Sophie Thompson</p>",
+        "type": "question",
+        "created": "2022-10-24T15:19:17.175Z",
+        "subject": "Pset 4",
+        "_id": "l9mxckvr3u15xm"
+    }
+]

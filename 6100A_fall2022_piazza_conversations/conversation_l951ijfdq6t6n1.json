@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p><em>Returns None if the frame size of the given DataFrame object is None\u00a0</em></p>\n<p><em></em></p>\n<p>I&#39;m confused, doesn&#39;t it (the inner function) always return None even if time isn&#39;t None? Or do they mean the outer function (shift_maker) should return None?</p>",
+        "type": "question",
+        "created": "2022-10-12T02:56:02.521Z",
+        "subject": "shift_maker return None?",
+        "_id": "l951ijfdq6t6n1"
+    },
+    {
+        "content": "<p>Sorry the directions are a bit confusing here. The intention is that the inner function that you define does nothing if the DataFrame passed to it has a frame size\u00a0<strong>None</strong>. It will always return None, but in the case that its frame size is None, the inner function should simply return None without doing anything else.</p>",
+        "type": "i_answer",
+        "created": "2022-10-12T18:30:32.753Z",
+        "_id": "l951ijfdq6t6n1"
+    }
+]

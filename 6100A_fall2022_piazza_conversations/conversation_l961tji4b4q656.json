@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>For our final exam, will our code have to pass timing requirements for efficiency, or do we just have to produce code that gets the job done?</p>",
+        "type": "question",
+        "created": "2022-10-12T19:52:22.012Z",
+        "subject": "Final Exam: Timing Requirements",
+        "_id": "l961tji4b4q656"
+    },
+    {
+        "content": "<p>If the question asks for a timing requirement then you&#39;ll have to meet that spec. Otherwise, it just has to give the correct output.\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-10-13T13:23:22.973Z",
+        "_id": "l961tji4b4q656"
+    }
+]

@@ -1,0 +1,33 @@
+[
+    {
+        "content": "<p>Hello,</p>\n<p>My code for PSET 4 passed the test cases provided, but received a 40% from the autograder. I suspect that the failure is originating in the load_data function due to a misunderstanding about what was asked. In the doc string, it asked that the function return the dates and their corresponding closing prices, so my return for the function only included closing prices. I did separate the price types into their corresponding lists, but only wrote a return for closing based on the doc string, supported by the test case passing. My fix would involve if statements for the price input that would return the corresponding price lists in the tuple. Not sure if it is possible, but is there any way I can resubmit with the fix? (I haven&#39;t used any late days and have already done the checkoff.)</p>\n<p>- Thanks</p>",
+        "type": "question",
+        "created": "2022-10-17T20:54:32.857Z",
+        "subject": "Autograder Question for PSET 4",
+        "_id": "l9d98rkpru531h"
+    },
+    {
+        "content": "<p><strong attention=\"j7awud7zf0p2uu\">@Kuan Wei Huang</strong> same issue as others</p>",
+        "type": "followup",
+        "created": "2022-10-18T02:12:21.910Z",
+        "_id": "l9d98rkpru531h"
+    },
+    {
+        "content": "<p>Sure will take a look. What&#39;s your kerb?</p>",
+        "type": "i_answer",
+        "created": "2022-10-21T12:26:58.014Z",
+        "_id": "l9d98rkpru531h"
+    },
+    {
+        "content": "<p>vera_m - thanks</p>",
+        "type": "followup",
+        "created": "2022-10-22T09:30:38.073Z",
+        "_id": "l9d98rkpru531h"
+    },
+    {
+        "content": "<p>You&#39;ve been added to the list of regrades and should see an updated score next week. Thank you for your patience.</p>",
+        "type": "followup_response",
+        "created": "2022-10-22T12:46:13.000Z",
+        "_id": "l9d98rkpru531h"
+    }
+]

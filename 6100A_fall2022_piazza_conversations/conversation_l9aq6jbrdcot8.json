@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi, I&#39;m reviewing the MC section of the second microquiz -- why can&#39;t bisection search be used to guess a 4 digit pincode?</p>",
+        "type": "question",
+        "created": "2022-10-16T02:25:23.799Z",
+        "subject": "microquiz 2 true/false question",
+        "_id": "l9aq6jbrdcot8"
+    },
+    {
+        "content": "With bisection search, you need to be able to know whether the actual value is higher or lower than the guessed value, but pincode guessing doesn&#39;t tell you that.",
+        "type": "s_answer",
+        "created": "2022-10-16T02:27:53.816Z",
+        "_id": "l9aq6jbrdcot8"
+    }
+]

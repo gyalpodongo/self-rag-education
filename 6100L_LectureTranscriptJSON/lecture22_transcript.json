@@ -1,0 +1,3046 @@
+[
+    {
+        "timestamp": "00:00:09",
+        "content": "THETA"
+    },
+    {
+        "timestamp": "00:01:15",
+        "content": "TIMING"
+    },
+    {
+        "timestamp": "00:01:24",
+        "content": "TIMING A PROGRAM"
+    },
+    {
+        "timestamp": "00:03:27",
+        "content": "nvert"
+    },
+    {
+        "timestamp": "00:03:36",
+        "content": "EXAMPLE: convert to km, compound"
+    },
+    {
+        "timestamp": "00:04:39",
+        "content": "CREATING AN INPUT LIST"
+    },
+    {
+        "timestamp": "00:09:39",
+        "content": "RUN IT! convert_to_km OBSERVATIONS"
+    },
+    {
+        "timestamp": "00:10:30",
+        "content": "MEASURE TIME: compound with a variable number of months"
+    },
+    {
+        "timestamp": "00:12:15",
+        "content": "MEASURE TIME: sum over L"
+    },
+    {
+        "timestamp": "00:14:00",
+        "content": "s = sum of (L) print (f timesperfcount"
+    },
+    {
+        "timestamp": "00:18:45",
+        "content": "MEASURE TIME: find element in a list"
+    },
+    {
+        "timestamp": "00:30:12",
+        "content": "MEASURE TIME: diameter function"
+    },
+    {
+        "timestamp": "00:40:21",
+        "content": "TWO DIFFERENT MACHINES"
+    },
+    {
+        "timestamp": "00:41:45",
+        "content": "DON'T GET ME WRONG!"
+    },
+    {
+        "timestamp": "00:43:09",
+        "content": "COUNT OPERATIONS"
+    },
+    {
+        "timestamp": "00:46:54",
+        "content": "COUNT OPERA NS: is_in"
+    },
+    {
+        "timestamp": "00:47:24",
+        "content": "NT OPERATIONS: is in"
+    },
+    {
+        "timestamp": "00:51:18",
+        "content": "PLOT OF INPUT SIZE vs. OPERATION COUNT"
+    },
+    {
+        "timestamp": "00:51:48",
+        "content": "PROBLEMS WITH TIMING AND COUNTING"
+    },
+    {
+        "timestamp": "00:53:12",
+        "content": "EFFICIENCY IN TERMS OF INPUT: BIG-PICTURE"
+    },
+    {
+        "timestamp": "00:53:57",
+        "content": "ORDERS OF GROWTH"
+    },
+    {
+        "timestamp": "00:54:12",
+        "content": "A BETTER WAY A GENERALIZED WAY WITH APPROXIMATIONS"
+    },
+    {
+        "timestamp": "00:54:51",
+        "content": "WHICH INPUT TO USE TO MEASURE EFFICIENCY"
+    },
+    {
+        "timestamp": "00:55:21",
+        "content": "DIFFERENT INPUTS CHANGE HOW THE PROGRAM RUNS"
+    },
+    {
+        "timestamp": "00:57:57",
+        "content": "DIFFERENT INPUTS THE PROGRAM CHANGE HOW"
+    },
+    {
+        "timestamp": "00:58:54",
+        "content": "ASYMPTOTIC GROWTH"
+    },
+    {
+        "timestamp": "00:59:27",
+        "content": "BIG 0 Definition"
+    },
+    {
+        "timestamp": "01:03:30",
+        "content": "big Oh bound is an (x) = 0 (g (x)) mea constants co, x0 for\u2026"
+    },
+    {
+        "timestamp": "01:04:03",
+        "content": "A big 0"
+    },
+    {
+        "timestamp": "01:04:24",
+        "content": "BIG 0 FORMALLY"
+    },
+    {
+        "timestamp": "01:07:21",
+        "content": "Example big 0 bound is a lower a ose f (x) = 3x2 \u2014 20x \u2014 1"
+    },
+    {
+        "timestamp": "01:08:18",
+        "content": "SIMPLIFICATION EXAMPLES"
+    },
+    {
+        "timestamp": "01:10:15",
+        "content": "YOU TRY IT!"
+    },
+    {
+        "timestamp": "01:11:33",
+        "content": "(co_C (e;"
+    },
+    {
+        "timestamp": "01:12:24",
+        "content": "USING 0 TO EVALUATE YOUR ALGORITHM"
+    },
+    {
+        "timestamp": "01:13:48",
+        "content": "COMBINING COMPLEXITY CLASSES LOOPS IN SERIES"
+    },
+    {
+        "timestamp": "01:14:51",
+        "content": "COMBINING COMPLEXITY CLASSES NESTED LOOPS"
+    },
+    {
+        "timestamp": "01:15:39",
+        "content": "ANALYZE COMPLEXITY"
+    },
+    {
+        "timestamp": "01:18:30",
+        "content": "COMPLEXITY CLASSES"
+    },
+    {
+        "timestamp": "01:19:51",
+        "content": "COMPLEXITY GROWTH"
+    },
+    {
+        "timestamp": "01:20:00",
+        "content": "SUMMARY"
+    },
+    {
+        "timestamp": "00:00:08",
+        "content": "All right, let's get started. Last lecture, we began talking about an entirely new topic in computer science, and we have begun learning about how to figure out the runtime of our programs."
+    },
+    {
+        "timestamp": "00:00:15",
+        "content": "Right. So we did."
+    },
+    {
+        "timestamp": "00:00:16",
+        "content": "We looked at how to actually time the program by figuring out exactly how long it takes and then how to count the number of operations in the program."
+    },
+    {
+        "timestamp": "00:00:24",
+        "content": "Today, we're going to do a very same thing to begin with."
+    },
+    {
+        "timestamp": "00:00:28",
+        "content": "So for the first half of the lecture, we'll time a bunch of programs and then we'll count the number of operations just like before."
+    },
+    {
+        "timestamp": "00:00:37",
+        "content": "But we're going to do them in the context of slightly different, slightly more interesting programs or functions involving just pure numbers as our parameters and then functions that involve lists as our parameters."
+    },
+    {
+        "timestamp": "00:00:53",
+        "content": "That will be the first half of the lecture. And then from there on, we're going to look at the idea of order of growth, which is kind of what we're building up, the set of lectures to, and then the order of growth."
+    },
+    {
+        "timestamp": "00:00:58",
+        "content": "There'll be a little bit of math, a little bit of graphing, but not not too much."
+    },
+    {
+        "timestamp": "00:01:03",
+        "content": "And then we're just we're just going to see how to actually evaluate the order of growth of functions from there on out."
+    },
+    {
+        "timestamp": "00:01:11",
+        "content": "Okay. So let's begin by just figuring out the runtime of our programs, right?"
+    },
+    {
+        "timestamp": "00:01:17",
+        "content": "This was a really quick and easy way to for us to figure out exactly how long our programs take."
+    },
+    {
+        "timestamp": "00:01:22",
+        "content": "So last lecture, we imported this time module and we're doing that again this time."
+    },
+    {
+        "timestamp": "00:01:44",
+        "content": "But instead of actually running the, the time function that we had seen last lecture here, right, instead of running the time function which gave us this sort of global absolute time since some, some date in the past, we're going to run this slightly different function called performance counter."
+    },
+    {
+        "timestamp": "00:01:49",
+        "content": "And this is what is typically used in the real world to figure out how long an actual program or a function takes to run."
+    },
+    {
+        "timestamp": "00:01:58",
+        "content": "The reason we're using this is because it's more accurate."
+    },
+    {
+        "timestamp": "00:02:00",
+        "content": "So the time time function that we used last lecture gave us maybe precision to one times 10 to -3 or something very, very big like that."
+    },
+    {
+        "timestamp": "00:02:17",
+        "content": "The performance counter can actually give us precision to something that's a lot, lot smaller, so maybe one times ten, negative eight or something very small."
+    },
+    {
+        "timestamp": "00:02:21",
+        "content": "So we'll be able to see the timings of some functions that were basically zero in the last lecture."
+    },
+    {
+        "timestamp": "00:02:29",
+        "content": "Okay. So just a quick review of how we actually get the time that a function takes to run."
+    },
+    {
+        "timestamp": "00:02:35",
+        "content": "We run this performance counter time and this one gives us not an absolute time but more of a a shorter time frame, not from some time in the past."
+    },
+    {
+        "timestamp": "00:02:46",
+        "content": "And the performance counter is very useful when we're getting these details right."
+    },
+    {
+        "timestamp": "00:02:50",
+        "content": "The difference in some times. So we're running the performance counter to get the quote unquote starting time."
+    },
+    {
+        "timestamp": "00:02:57",
+        "content": "We run the function, we run the performance counter again to get the quote unquote, stopping time, subtract the starting time to get the data."
+    },
+    {
+        "timestamp": "00:03:05",
+        "content": "Okay. So and then we will print that, that time to see how long the function actually takes to run."
+    },
+    {
+        "timestamp": "00:03:12",
+        "content": "Oh, yeah, that's what I said. Okay. So we're going to look at two different functions than than last time."
+    },
+    {
+        "timestamp": "00:03:20",
+        "content": "But they're going to they're going to have sort of the same overarching themes that we saw last lecture."
+    },
+    {
+        "timestamp": "00:03:26",
+        "content": "So the first function we're going to look at is called convert to kilometers, taking in some miles and returns the value in kilometers."
+    },
+    {
+        "timestamp": "00:03:34",
+        "content": "And the second function is a function named compound."
+    },
+    {
+        "timestamp": "00:03:38",
+        "content": "So this one should seem very familiar."
+    },
+    {
+        "timestamp": "00:03:41",
+        "content": "It will bring flashbacks to problems at one."
+    },
+    {
+        "timestamp": "00:03:45",
+        "content": "It's a function that takes in a monthly investment, an interest rate for the month and some number of months to invest that much."
+    },
+    {
+        "timestamp": "00:03:54",
+        "content": "And it returns how much money you've made over those number of months."
+    },
+    {
+        "timestamp": "00:03:58",
+        "content": "So you can see here you have in total initialized a loop that goes through that many months and"
+    },
+    {
+        "timestamp": "00:04:07",
+        "content": "it updates the total based on the interest rate and how much money you have there right now, plus whatever you've invested for that month. Okay."
+    },
+    {
+        "timestamp": "00:04:11",
+        "content": "So the three questions we're going to answer, just like we answered last lecture, is how long natural seconds does it take to run these functions?"
+    },
+    {
+        "timestamp": "00:04:18",
+        "content": "Which input parameters does the function actually depend on?"
+    },
+    {
+        "timestamp": "00:04:22",
+        "content": "And do these two functions actually run for different amounts of time?"
+    },
+    {
+        "timestamp": "00:04:28",
+        "content": "And sort of what is that difference? Right? Does one run in 12 seconds and the other one one run in point five?"
+    },
+    {
+        "timestamp": "00:04:33",
+        "content": "So what what is the actual time that it takes for them to run? So this is our code."
+    },
+    {
+        "timestamp": "00:04:39",
+        "content": "So these are the two functions. Before we go on, let me just show you how we're creating the inputs."
+    },
+    {
+        "timestamp": "00:04:46",
+        "content": "So just like before, we're creating a list of all of the different inputs we're going to run the function with."
+    },
+    {
+        "timestamp": "00:04:52",
+        "content": "So here I've got this l n that will contain the numbers 110, 100, 1000 and so on."
+    },
+    {
+        "timestamp": "00:04:58",
+        "content": "And these are going to be the parameters to my function one at a time, of course."
+    },
+    {
+        "timestamp": "00:05:04",
+        "content": "And then I've got my loop here for each one of those inputs."
+    },
+    {
+        "timestamp": "00:05:08",
+        "content": "110, 100 a thousand. I'm just going to run my function, right?"
+    },
+    {
+        "timestamp": "00:05:12",
+        "content": "So here I'm measuring the time it takes and then I'm going to report that the time that it took to run the program."
+    },
+    {
+        "timestamp": "00:05:20",
+        "content": "And just for fun. I'm also going to report how many times this program could run in one second."
+    },
+    {
+        "timestamp": "00:05:27",
+        "content": "Because for me, it was a little bit hard to read, you know, one time sudden negative, you know, 2058 or something like that."
+    },
+    {
+        "timestamp": "00:05:34",
+        "content": "But it was a lot easier for me to see this big number for how many times that function could have run in one second."
+    },
+    {
+        "timestamp": "00:05:41",
+        "content": "So here I've got. Convert to kilometers."
+    },
+    {
+        "timestamp": "00:05:47",
+        "content": "So I'm going to run it and we're going to see it's this right here."
+    },
+    {
+        "timestamp": "00:05:55",
+        "content": "How long the function actually took. So last time we ran a program that was really simple like this, all of it basically said it took 0 seconds."
+    },
+    {
+        "timestamp": "00:06:03",
+        "content": "Right? It was just so fast that that time that time function was wasn't able to pick up that precise time difference."
+    },
+    {
+        "timestamp": "00:06:10",
+        "content": "But this performance counter can. Right. Which is a lot nicer."
+    },
+    {
+        "timestamp": "00:06:13",
+        "content": "So now we see that no matter what the input, it looks like the time is pretty much the same, right?"
+    },
+    {
+        "timestamp": "00:06:20",
+        "content": "Three times negative 7 seconds, no matter what the input is."
+    },
+    {
+        "timestamp": "00:06:24",
+        "content": "Right. That was expected."
+    },
+    {
+        "timestamp": "00:06:28",
+        "content": "Now, what about the. The compound function?"
+    },
+    {
+        "timestamp": "00:06:31",
+        "content": "This one's going to be a little bit more interesting because there are actually three parameters to this function."
+    },
+    {
+        "timestamp": "00:06:36",
+        "content": "Right. So what we're going to do is change each one and see which one of those parameters actually has an effect on the runtime."
+    },
+    {
+        "timestamp": "00:06:46",
+        "content": "So here, this bit is going to fix my interest rate and fixed the number of months and I'm going to change the amount I invest every month."
+    },
+    {
+        "timestamp": "00:07:05",
+        "content": "Okay. So if I run that, that was pretty fast. Again, we look at the results here and no matter how much I invest every month, it looks like the program doesn't really change how long it takes to run."
+    },
+    {
+        "timestamp": "00:07:08",
+        "content": "Right. It's always about one times ten to the negative 6 seconds to run."
+    },
+    {
+        "timestamp": "00:07:14",
+        "content": "All right. What if I change the interest rate?"
+    },
+    {
+        "timestamp": "00:07:18",
+        "content": "So this one was a little bit harder to change, but I settled on this as the thing I'm varying."
+    },
+    {
+        "timestamp": "00:07:26",
+        "content": "Sorry. I'm varying it in this way. So it's going to be 1.1.1 or 1.01 or 1.01."
+    },
+    {
+        "timestamp": "00:07:34",
+        "content": "That's what I'm going to invest that the interest rate for whatever I'm going to invest"
+    },
+    {
+        "timestamp": "00:07:38",
+        "content": "in and I'm going to fix $10 is my investment per month and fix the 12 months again."
+    },
+    {
+        "timestamp": "00:07:45",
+        "content": "So if I run that. Same deal."
+    },
+    {
+        "timestamp": "00:07:49",
+        "content": "It looks like changing this investment isn't really making much of a difference in how long it takes the program to run."
+    },
+    {
+        "timestamp": "00:07:57",
+        "content": "All right. One last parameter to try."
+    },
+    {
+        "timestamp": "00:08:01",
+        "content": "So now I'm going to fix the initial investment to $10 a month, and I'm going to fix my interest rate to this per month."
+    },
+    {
+        "timestamp": "00:08:10",
+        "content": "And I'm going to vary how many months I'm going to invest this."
+    },
+    {
+        "timestamp": "00:08:14",
+        "content": "So again, this end will be one O ten, 100, 1000, 10,000, and so on."
+    },
+    {
+        "timestamp": "00:08:21",
+        "content": "So let's see what this is going to do. Already."
+    },
+    {
+        "timestamp": "00:08:24",
+        "content": "It's doing something different than the other two because it hasn't finished running yet."
+    },
+    {
+        "timestamp": "00:08:28",
+        "content": "Right. So it's still working on this last one down here. But we can see that more interesting things are happening now."
+    },
+    {
+        "timestamp": "00:08:35",
+        "content": "Right. So here I've got initially it's a little bit hard to tell for those small numbers, which is fine."
+    },
+    {
+        "timestamp": "00:08:42",
+        "content": "But luckily we're able to run it for a bunch of a bunch of inputs."
+    },
+    {
+        "timestamp": "00:08:53",
+        "content": "So starting from about here, right when I start investing or sorry, when I start investing my money over a thousand months, 10,000 months, 100,000 a month and so on, it looks like we can kind of see a pattern again for a thousand months."
+    },
+    {
+        "timestamp": "00:09:00",
+        "content": "It takes the program takes about five times, turns negative, 5 seconds to run."
+    },
+    {
+        "timestamp": "00:09:04",
+        "content": "If I increase the number of months by ten, it takes five time to ten to the negative 4 seconds to run."
+    },
+    {
+        "timestamp": "00:09:11",
+        "content": "And then as my input increases by ten, the number of months, my time to run seems to increase by ten as well."
+    },
+    {
+        "timestamp": "00:09:18",
+        "content": "Right. So a .05.0. 5.7.8, something like that."
+    },
+    {
+        "timestamp": "00:09:27",
+        "content": "Okay. So this is from a previous run."
+    },
+    {
+        "timestamp": "00:09:31",
+        "content": "Of course, each run will be different because we're just calculating. We're just purely grabbing the time that the program took to run."
+    },
+    {
+        "timestamp": "00:09:38",
+        "content": "So the actual time will be different, but few things to notice."
+    },
+    {
+        "timestamp": "00:09:43",
+        "content": "So Python actually reported the time it took the program to run in scientific notation."
+    },
+    {
+        "timestamp": "00:09:47",
+        "content": "Just kind of cool. So this is 4.3 times ten to the negative six."
+    },
+    {
+        "timestamp": "00:09:51",
+        "content": "So it knew how to show it to me like that. So it's not doesn't have a bunch of zeros in there."
+    },
+    {
+        "timestamp": "00:09:57",
+        "content": "And then the observation, as we might have, you know, as you might have guessed, is for this convert to kilometers was independent."
+    },
+    {
+        "timestamp": "00:10:06",
+        "content": "Right. So this is the kilometers, not the compound function. But then the compound function here."
+    },
+    {
+        "timestamp": "00:10:14",
+        "content": "This is again from a previous run. We can make a few observations."
+    },
+    {
+        "timestamp": "00:10:18",
+        "content": "So the first was that the time only change only actually changed with the with the input when we changed end months, right?"
+    },
+    {
+        "timestamp": "00:10:28",
+        "content": "When we changed the initial investment or the interest rate."
+    },
+    {
+        "timestamp": "00:10:33",
+        "content": "The program just basically took the same amount of time to run. So it was only end months that actually made a difference for us."
+    },
+    {
+        "timestamp": "00:10:47",
+        "content": "Second observation, again, something we noticed is as we increase the number of months by ten, the time it takes the program to run also increases by ten. Again, something we've we talked about and the last observation."
+    },
+    {
+        "timestamp": "00:10:58",
+        "content": "Is that we have this relationship very apparent as the input is really big, right?"
+    },
+    {
+        "timestamp": "00:11:15",
+        "content": "As the input a small I think I mentioned this last time, if for some reason my computer updates or decides to dedicate some time, some resources to do it to running an app in the background for whatever reason"
+    },
+    {
+        "timestamp": "00:11:24",
+        "content": "as it's trying to figure out the compound function with an input of one, this number could be changed dramatically, right?"
+    },
+    {
+        "timestamp": "00:11:27",
+        "content": "Because two times something negative six can be affected a lot by just a little bit of time dedicated to something else."
+    },
+    {
+        "timestamp": "00:11:34",
+        "content": "Whereas, you know, 4 seconds or 14 seconds, if my computer dedicates a little bit of time to something else, that 414 won't be affected as much."
+    },
+    {
+        "timestamp": "00:11:43",
+        "content": "Right? So when the numbers are big, that's when we can see that the behavior of our function a lot more clearly."
+    },
+    {
+        "timestamp": "00:11:51",
+        "content": "Right? Not when the numbers are small. Okay. So."
+    },
+    {
+        "timestamp": "00:11:57",
+        "content": "Now I'd like to look at some more functions. These functions are going to have the input being a list as opposed to just numbers."
+    },
+    {
+        "timestamp": "00:12:07",
+        "content": "Right. We've seen a bunch of examples with numbers, but let's see what happens when my input is a list."
+    },
+    {
+        "timestamp": "00:12:12",
+        "content": "So here's a very simple function. It takes in a list l and it sums all of the elements in the list."
+    },
+    {
+        "timestamp": "00:12:21",
+        "content": "So we've seen this a bunch of times already. We initialize a total to be zero."
+    },
+    {
+        "timestamp": "00:12:26",
+        "content": "We iterate through each element in our and we keep our running total by just adding the element to it to that total."
+    },
+    {
+        "timestamp": "00:12:34",
+        "content": "Pretty simple. And we return it. Now, how do we actually run this function with a whole bunch of different inputs?"
+    },
+    {
+        "timestamp": "00:12:42",
+        "content": "Well, that's what we're going to see next. So this bit here is exactly the same as before."
+    },
+    {
+        "timestamp": "00:12:49",
+        "content": "It's actually creating for us the list of 110, 100, 1000, 10,000 and so on."
+    },
+    {
+        "timestamp": "00:12:57",
+        "content": "But clearly the number ten cannot be an input to this function."
+    },
+    {
+        "timestamp": "00:13:02",
+        "content": "Right. Because this function is expecting a list. Right."
+    },
+    {
+        "timestamp": "00:13:07",
+        "content": "So l cannot be ten. It needs to be a list with some things in it."
+    },
+    {
+        "timestamp": "00:13:18",
+        "content": "So instead, what we're going to do out of that number 110, 100, a thousand and so on, we're actually going to make a list with just some random dummy numbers in it."
+    },
+    {
+        "timestamp": "00:13:22",
+        "content": "I don't actually care what these numbers are, so let's just make them be the numbers."
+    },
+    {
+        "timestamp": "00:13:26",
+        "content": "0290 290 902 999."
+    },
+    {
+        "timestamp": "00:13:30",
+        "content": "And in a fact, each one of these lists will then have one element in it ten elements in it, 100 elements in it, a thousand elements in it, and so on."
+    },
+    {
+        "timestamp": "00:13:38",
+        "content": "All right, everyone okay with that? Right. So the input is now different."
+    },
+    {
+        "timestamp": "00:13:42",
+        "content": "It needs to be a list. We're just creating a bunch of lists of varying lengths."
+    },
+    {
+        "timestamp": "00:13:48",
+        "content": "So the relationship between these lengths are that the lists are ten times as big as the previous list."
+    },
+    {
+        "timestamp": "00:13:53",
+        "content": "Right. Okay. So then now I have my input list here."
+    },
+    {
+        "timestamp": "00:13:58",
+        "content": "I do the exact same thing as before. Not yet. I run the performance counter to create my starting time."
+    },
+    {
+        "timestamp": "00:14:06",
+        "content": "I run my function and I get the data and I report the exact same thing as before."
+    },
+    {
+        "timestamp": "00:14:11",
+        "content": "All right, so let's run that. Down here."
+    },
+    {
+        "timestamp": "00:14:22",
+        "content": "Right. Running, running, running again. We have to wait a little bit."
+    },
+    {
+        "timestamp": "00:14:26",
+        "content": "It looks like it's working, but it's just getting slower and slower, which is fine."
+    },
+    {
+        "timestamp": "00:14:30",
+        "content": "So what do we notice? So when we had one element in my list, it took one time sending negative 5 seconds to run."
+    },
+    {
+        "timestamp": "00:14:37",
+        "content": "When I had ten, it took one time ten. Negative 6 seconds to run."
+    },
+    {
+        "timestamp": "00:14:42",
+        "content": "It was actually shorter to have more elements in it."
+    },
+    {
+        "timestamp": "00:14:45",
+        "content": "See, this is what I mean when it's very unpredictable for low numbers."
+    },
+    {
+        "timestamp": "00:14:51",
+        "content": "But as we get to lists of length, thousand, 10,000, 100,000, a million and so on, we can start to see the pattern."
+    },
+    {
+        "timestamp": "00:15:00",
+        "content": "So with 10,000, it took four times ten negative 4 seconds to run with 100,000."
+    },
+    {
+        "timestamp": "00:15:05",
+        "content": "It took four time the 3 seconds to run. And then as the input increases by ten, that is the length of my list increases by ten."
+    },
+    {
+        "timestamp": "00:15:13",
+        "content": "It looks like the program takes ten times as long to run."
+    },
+    {
+        "timestamp": "00:15:19",
+        "content": "A very similar thing as before."
+    },
+    {
+        "timestamp": "00:15:21",
+        "content": "So the first observation that we can make out of this, this this function is that the size of the input, obviously, is now the length of our list."
+    },
+    {
+        "timestamp": "00:15:31",
+        "content": "Right? It's not just the number ten or the number of thousand. It's a length of length."
+    },
+    {
+        "timestamp": "00:15:35",
+        "content": "A list of length. Ten or a list of length. A thousand."
+    },
+    {
+        "timestamp": "00:15:40",
+        "content": "Second observation is that, again, just like in the previous case, the average time increases by ten as the length of our list increases by ten."
+    },
+    {
+        "timestamp": "00:15:51",
+        "content": "Okay. Very good. And just like before, this relationship between the size and time is more predictable for large sizes than it was for small sizes."
+    },
+    {
+        "timestamp": "00:16:02",
+        "content": "Right. As we just saw here, which surprised me a little bit as well, is a for us a list that's longer it took a shorter amount of time to run."
+    },
+    {
+        "timestamp": "00:16:12",
+        "content": "Just counterintuitive. But again, that's probably because my computer did something here to take a little bit longer to run."
+    },
+    {
+        "timestamp": "00:16:23",
+        "content": "Okay. And then the last observation, this is this is compared to the compound function where we change the number of months."
+    },
+    {
+        "timestamp": "00:16:37",
+        "content": "It looks like the time that this program actually takes to run is pretty comparable just in terms of pure, you know, seconds is comparable to how long it took for the compound to run."
+    },
+    {
+        "timestamp": "00:16:41",
+        "content": "Right. So here when my input was 100 million, I think."
+    },
+    {
+        "timestamp": "00:16:46",
+        "content": "Yeah, 100 million. It took about 8 seconds to run. And when my list had 100 million elements in it, it took about 7 seconds to run."
+    },
+    {
+        "timestamp": "00:16:54",
+        "content": "Right. And then ten times faster going when we decreased our input by ten."
+    },
+    {
+        "timestamp": "00:17:02",
+        "content": "Okay. So already we're starting to see something."
+    },
+    {
+        "timestamp": "00:17:06",
+        "content": "Something that we're going to get. Yeah, go ahead. Oh, some of it's just this function that I wrote here."
+    },
+    {
+        "timestamp": "00:17:17",
+        "content": "Yep. That's just. Did I name it something differently in here?"
+    },
+    {
+        "timestamp": "00:17:21",
+        "content": "No. Yeah."
+    },
+    {
+        "timestamp": "00:17:24",
+        "content": "So already we're starting to get at this idea where I have two functions that do wildly different things, right?"
+    },
+    {
+        "timestamp": "00:17:32",
+        "content": "One, some of the elements in the list. The other one just loops over some number of months and does some calculation."
+    },
+    {
+        "timestamp": "00:17:38",
+        "content": "But it looks like they're sort of in terms of just algorithmically wise, they are very similar."
+    },
+    {
+        "timestamp": "00:17:44",
+        "content": "They take similar amounts of time. They increase at the same rate."
+    },
+    {
+        "timestamp": "00:17:49",
+        "content": "And basically they just have a for loop, right. Or some sort of loop that iterates through the input and does something so algorithmically."
+    },
+    {
+        "timestamp": "00:17:55",
+        "content": "We want to consider both of these functions the same, even though they implement completely different things."
+    },
+    {
+        "timestamp": "00:18:03",
+        "content": "Other questions before we go on to another list function. Okay."
+    },
+    {
+        "timestamp": "00:18:09",
+        "content": "So let's look at a slightly different problem."
+    },
+    {
+        "timestamp": "00:18:14",
+        "content": "Dealing with lists."
+    },
+    {
+        "timestamp": "00:18:15",
+        "content": "So this function or these three functions deal with finding an element in the list, and we're going to compare the runtimes of these three functions."
+    },
+    {
+        "timestamp": "00:18:25",
+        "content": "So the first function is going to be a very brute forcing method to find the element in a list."
+    },
+    {
+        "timestamp": "00:18:32",
+        "content": "It's got. Was there a question? Yeah. Yeah."
+    },
+    {
+        "timestamp": "00:18:39",
+        "content": "Oh, my God. All right. No worries. Okay, so the first function will do a brute force search to find an element X."
+    },
+    {
+        "timestamp": "00:18:50",
+        "content": "Right here. One of my parameters within a list. The other one of my parameters, basically given a list of a bunch of elements."
+    },
+    {
+        "timestamp": "00:18:58",
+        "content": "This function, we'll just painstakingly look at each element one at a time and ask whether that element is the one that I'm looking for."
+    },
+    {
+        "timestamp": "00:19:08",
+        "content": "Starting over here, the beginning of my list and going to the end of my list."
+    },
+    {
+        "timestamp": "00:19:12",
+        "content": "That's what is in does. The next one."
+    },
+    {
+        "timestamp": "00:19:18",
+        "content": "Binary search also looks for an element in a list, making sure that the list is ordered."
+    },
+    {
+        "timestamp": "00:19:24",
+        "content": "But the way that it's going to do it is in a slightly smarter way."
+    },
+    {
+        "timestamp": "00:19:28",
+        "content": "So I'm actually going to draw my lists this way. So each one of these is going to be elements in my list."
+    },
+    {
+        "timestamp": "00:19:36",
+        "content": "So this is going to do a bisexual section search to find the element in the list."
+    },
+    {
+        "timestamp": "00:19:41",
+        "content": "So again, we're looking for element X within this list L."
+    },
+    {
+        "timestamp": "00:19:45",
+        "content": "And remember by section search. We start with a lot with a beginning and point and an ending end point."
+    },
+    {
+        "timestamp": "00:19:55",
+        "content": "And our first guess for where? For the element or whatever we're looking for is to just say what's the is it the middle element?"
+    },
+    {
+        "timestamp": "00:20:04",
+        "content": "Right. So look at the element in the middle and ask, Are you the one I'm looking for?"
+    },
+    {
+        "timestamp": "00:20:07",
+        "content": "In this particular case, you look at the element in the middle and you say, Are you the X I'm looking for?"
+    },
+    {
+        "timestamp": "00:20:13",
+        "content": "Right. Good. So that's this one right here."
+    },
+    {
+        "timestamp": "00:20:19",
+        "content": "So the midpoint calculation is right here. Right."
+    },
+    {
+        "timestamp": "00:20:31",
+        "content": "The reason why we're doing slash slash for integer division is in the case where I have a list where I would actually, you know, look at the midpoint here. Right. Obviously, I can't ask the I ask Python for the element and index 3.5."
+    },
+    {
+        "timestamp": "00:20:41",
+        "content": "Right. It doesn't work like that. So I'm just going to round down."
+    },
+    {
+        "timestamp": "00:20:45",
+        "content": "You could also round up if you wanted to. I just made the choice to round down just so I'm actually grabbing the element at a an integer index."
+    },
+    {
+        "timestamp": "00:20:54",
+        "content": "Right. So I've grabbed my middle element and then I ask, Are you the one I'm looking for?"
+    },
+    {
+        "timestamp": "00:20:58",
+        "content": "And if not, I ask whether this one is too low or too high."
+    },
+    {
+        "timestamp": "00:21:04",
+        "content": "And then if it's too low, then I know I need to search this."
+    },
+    {
+        "timestamp": "00:21:10",
+        "content": "Part of my list. And if it's too high, I need to search this part of my list."
+    },
+    {
+        "timestamp": "00:21:15",
+        "content": "Right. So that's what this little if else is doing."
+    },
+    {
+        "timestamp": "00:21:19",
+        "content": "Right. And when I make my decision as to which side to look at, then I reset my endpoints."
+    },
+    {
+        "timestamp": "00:21:27",
+        "content": "And I do the process all over again by asking the midpoint there, are you the one I'm looking for?"
+    },
+    {
+        "timestamp": "00:21:33",
+        "content": "So on and so on. And so this does a bisexual search, also called binary search for the element in a list."
+    },
+    {
+        "timestamp": "00:21:41",
+        "content": "And the last way for us to search whether an element is in the list is one that we've already been doing."
+    },
+    {
+        "timestamp": "00:21:47",
+        "content": "It's this little one liner here is X in L, so using the keyword in."
+    },
+    {
+        "timestamp": "00:21:54",
+        "content": "Right. So that's I call that the built in function, the built in operator in."
+    },
+    {
+        "timestamp": "00:22:00",
+        "content": "Okay. So."
+    },
+    {
+        "timestamp": "00:22:06",
+        "content": "It would be unfair if we just asked Python to figure out or to just pick a random number and ask whether that element was the one we're looking for."
+    },
+    {
+        "timestamp": "00:22:16",
+        "content": "Okay. So instead, what we're going to do is to kind of take an average for each one of these three functions just to make it fair."
+    },
+    {
+        "timestamp": "00:22:28",
+        "content": "So we're going to say when we're searching for an element in the list, I'm going to say that I'm going to take the average of the case when the element is the first one in the list."
+    },
+    {
+        "timestamp": "00:22:35",
+        "content": "And I can find it maybe right away in this case, or maybe not right away in this case."
+    },
+    {
+        "timestamp": "00:22:40",
+        "content": "The average with that plus when the element is the last one in the list."
+    },
+    {
+        "timestamp": "00:22:46",
+        "content": "And plus, when the element is the middle one in my list."
+    },
+    {
+        "timestamp": "00:22:50",
+        "content": "Right. So in that way, we're actually, you know, kind of covering all our bases, kind of best case, worst case medium case scenarios."
+    },
+    {
+        "timestamp": "00:22:59",
+        "content": "Right. So each one of these three functions will be run with that."
+    },
+    {
+        "timestamp": "00:23:05",
+        "content": "In mind. So that's these three functions."
+    },
+    {
+        "timestamp": "00:23:09",
+        "content": "So this is my brute force is in this is my binary search."
+    },
+    {
+        "timestamp": "00:23:15",
+        "content": "And the in it's obviously I'm just going to type in and when I run it."
+    },
+    {
+        "timestamp": "00:23:21",
+        "content": "So I'll just show you for one of them. So we're going to uncomment this entire bit here."
+    },
+    {
+        "timestamp": "00:23:28",
+        "content": "And run it. But you can see here."
+    },
+    {
+        "timestamp": "00:23:45",
+        "content": "So instead of just running the performance counter and making one function call, I'm actually going to run three function calls, iterate it over this little loop where I'm looking for the element at the zeroth location, the element at the halfway location, and the element at the end of my list."
+    },
+    {
+        "timestamp": "00:23:52",
+        "content": "And I'm just averaging those down here the time it takes to find those three."
+    },
+    {
+        "timestamp": "00:23:58",
+        "content": "Does that make sense? Okay. All right."
+    },
+    {
+        "timestamp": "00:24:02",
+        "content": "So this is a lot to look at. Luckily I'm going to summarize it in the next few slides so we don't have to stare at that at that python screen there."
+    },
+    {
+        "timestamp": "00:24:14",
+        "content": "Okay. So we have three functions to run."
+    },
+    {
+        "timestamp": "00:24:17",
+        "content": "Let's first look at how each of these three functions did individually, and then we can start comparing them to each other."
+    },
+    {
+        "timestamp": "00:24:23",
+        "content": "So the first function we ran was the is in."
+    },
+    {
+        "timestamp": "00:24:26",
+        "content": "So the remember this was the brute force one. We're painstakingly going through each element and asking if it's the one we're looking for."
+    },
+    {
+        "timestamp": "00:24:32",
+        "content": "No, no. Smart way about that. Just brute force your way through."
+    },
+    {
+        "timestamp": "00:24:49",
+        "content": "We notice that as the input list grows by ten, the time it takes to find the element in the list, whether it's the first one, last one, or in the middle, on average, also grows by ten."
+    },
+    {
+        "timestamp": "00:24:57",
+        "content": "Okay. All right."
+    },
+    {
+        "timestamp": "00:25:02",
+        "content": "Next. Let's look at the built in function."
+    },
+    {
+        "timestamp": "00:25:07",
+        "content": "Well, worry about the binary one later. The built in function."
+    },
+    {
+        "timestamp": "00:25:11",
+        "content": "So just using the in operator and you see this was down here."
+    },
+    {
+        "timestamp": "00:25:19",
+        "content": "So this in. So basically the function I'm running is purely just asking whether X is in L right?"
+    },
+    {
+        "timestamp": "00:25:25",
+        "content": "And that returns true or false. So I didn't need to make a function for that."
+    },
+    {
+        "timestamp": "00:25:30",
+        "content": "But that built in an operator also has a very similar trend, right, as the length of my list increases by ten."
+    },
+    {
+        "timestamp": "00:25:41",
+        "content": "The time it takes for my program to run is also ten times as long."
+    },
+    {
+        "timestamp": "00:25:46",
+        "content": "Right. I went .05 to point five and the next one would be five and so on."
+    },
+    {
+        "timestamp": "00:25:52",
+        "content": "Right. Okay. So those seem to be doing approximately the same sort of they have the same performance."
+    },
+    {
+        "timestamp": "00:26:02",
+        "content": "Now, what about the bisexual search or binary search?"
+    },
+    {
+        "timestamp": "00:26:08",
+        "content": "Well, this one is not so clear, right? If we look at the input, right."
+    },
+    {
+        "timestamp": "00:26:15",
+        "content": "The input clearly increases by ten. From here to here."
+    },
+    {
+        "timestamp": "00:26:20",
+        "content": "The time increases nine times and the -6 to 1.1 times and negative five."
+    },
+    {
+        "timestamp": "00:26:26",
+        "content": "Right. And so the factor, how many more times it took is very unclear."
+    },
+    {
+        "timestamp": "00:26:33",
+        "content": "Right. It's not quite one."
+    },
+    {
+        "timestamp": "00:26:36",
+        "content": "If it was one that meant it's independent, right? It's constant."
+    },
+    {
+        "timestamp": "00:26:40",
+        "content": "It doesn't matter what the input size is. It's always going to give us this amount."
+    },
+    {
+        "timestamp": "00:26:44",
+        "content": "It's always going to run in this amount of time. So it's not quite one. So it's almost independent of size, but it's not linear, right?"
+    },
+    {
+        "timestamp": "00:26:51",
+        "content": "Like the other two functions were. Right. It's not ten when the input grows by ten."
+    },
+    {
+        "timestamp": "00:26:57",
+        "content": "So we're not quite sure what this function is. Right, but clearly it's not as bad as the other two, but not as good as no relation."
+    },
+    {
+        "timestamp": "00:27:07",
+        "content": "Okay. Observation from observation three observation for we'll now compare the function"
+    },
+    {
+        "timestamp": "00:27:12",
+        "content": "that we wrote the is in this one here to the binary search this one down here."
+    },
+    {
+        "timestamp": "00:27:19",
+        "content": "Well. Binary search was orders of magnitude faster than brute force."
+    },
+    {
+        "timestamp": "00:27:28",
+        "content": "Right. Brute force when the input was, what is this, 10 million or a hundred million?"
+    },
+    {
+        "timestamp": "00:27:33",
+        "content": "I'm not sure when the input was 100 million."
+    },
+    {
+        "timestamp": "00:27:38",
+        "content": "Brute force took 1.6 seconds. But the bisexual search, the binary search took .0000 1 seconds."
+    },
+    {
+        "timestamp": "00:27:48",
+        "content": "So it's not like we went from 1.5 seconds to 1.2 seconds or 2.5 seconds."
+    },
+    {
+        "timestamp": "00:27:54",
+        "content": "We were orders of magnitude faster, right? Ten to the negative five."
+    },
+    {
+        "timestamp": "00:28:03",
+        "content": "Right. So there's a really big difference between this algorithm, the one that's brute forces its way through and between this algorithm that does"
+    },
+    {
+        "timestamp": "00:28:07",
+        "content": "something smart about removing half of the search space with each each loop."
+    },
+    {
+        "timestamp": "00:28:12",
+        "content": "Right. All right. So that's important to know. And lastly, just kind of comparing pure time that it takes these programs to run."
+    },
+    {
+        "timestamp": "00:28:22",
+        "content": "Let's compare the function that we wrote, the one that loops one at a time through this list and the built in in function."
+    },
+    {
+        "timestamp": "00:28:32",
+        "content": "The built in in function while it's still the same sort of has the same relationship linear"
+    },
+    {
+        "timestamp": "00:28:38",
+        "content": "right with the input size it seems to do a lot better consistently by about 10 seconds."
+    },
+    {
+        "timestamp": "00:28:45",
+        "content": "Sorry, ten times as fast. Right."
+    },
+    {
+        "timestamp": "00:28:48",
+        "content": "So when our function took point 1 seconds, the built in 1.0 5 seconds where when our function took one second, the built in function took 0.5 seconds."
+    },
+    {
+        "timestamp": "00:28:59",
+        "content": "So consistently it's just faster to use the built in function than to make our own."
+    },
+    {
+        "timestamp": "00:29:08",
+        "content": "All right. Questions about any of these observations. That makes sense."
+    },
+    {
+        "timestamp": "00:29:15",
+        "content": "Are they interesting? Okay."
+    },
+    {
+        "timestamp": "00:29:20",
+        "content": "So what do we see? Just a quick recap of those three functions, right."
+    },
+    {
+        "timestamp": "00:29:25",
+        "content": "The first one we saw was linear in the size of the arguments."
+    },
+    {
+        "timestamp": "00:29:28",
+        "content": "So when the input list size increases by ten, the program takes ten times as long to run."
+    },
+    {
+        "timestamp": "00:29:33",
+        "content": "But this other one is something less than linear, but not constant."
+    },
+    {
+        "timestamp": "00:29:37",
+        "content": "So we're not quite sure what it is. All right."
+    },
+    {
+        "timestamp": "00:29:40",
+        "content": "We'll come back to this in a little bit. We'll end up plotting some of these runtimes."
+    },
+    {
+        "timestamp": "00:29:44",
+        "content": "So we'll actually be able to see the relationship in a few slides."
+    },
+    {
+        "timestamp": "00:29:51",
+        "content": "The next thing I actually want to do is do one more sort of function."
+    },
+    {
+        "timestamp": "00:29:57",
+        "content": "This one is called the diameter. All right. And I'll explain what it's doing because it looks a little bit scary."
+    },
+    {
+        "timestamp": "00:30:03",
+        "content": "But suppose we actually have some points in a 2D plate."
+    },
+    {
+        "timestamp": "00:30:09",
+        "content": "Right. So it looks like this."
+    },
+    {
+        "timestamp": "00:30:12",
+        "content": "Basically, what this function is going to do is it's going to figure out the biggest distance between all of these points."
+    },
+    {
+        "timestamp": "00:30:20",
+        "content": "So, you know, the distance between these two points is, you know, something?"
+    },
+    {
+        "timestamp": "00:30:24",
+        "content": "This is the distance between these two points is something else. Which two points yield the biggest distance?"
+    },
+    {
+        "timestamp": "00:30:31",
+        "content": "That's what this function aims to tell us. And what that distance is."
+    },
+    {
+        "timestamp": "00:30:36",
+        "content": "So the way it works is it has nested for loops."
+    },
+    {
+        "timestamp": "00:30:40",
+        "content": "So this is different than what we've seen so far, right."
+    },
+    {
+        "timestamp": "00:30:42",
+        "content": "We saw an example of this last lecture, but now we're seeing it in the context of something actually useful."
+    },
+    {
+        "timestamp": "00:30:48",
+        "content": "So in this particular case, we're going to create an input list."
+    },
+    {
+        "timestamp": "00:30:53",
+        "content": "All right. So. Again, our input list will just have some dummy values in it."
+    },
+    {
+        "timestamp": "00:31:00",
+        "content": "I don't actually care what these numbers are. I just want to populate a whole bunch of points in a 2D plane."
+    },
+    {
+        "timestamp": "00:31:06",
+        "content": "So what we're going to do is pretty much just iterate from numbers 0 to 10, sorry, 029 0 to 99, 0 to 999 and so on, just like we did before."
+    },
+    {
+        "timestamp": "00:31:17",
+        "content": "And to get us a little coordinate. In the two D plane."
+    },
+    {
+        "timestamp": "00:31:21",
+        "content": "Based on those numbers, I'm just going to take the cosine of that number, comma, the sign of that number, so that together."
+    },
+    {
+        "timestamp": "00:31:29",
+        "content": "So, like, cosine of, you know. One or whatever sign of one will be this point here."
+    },
+    {
+        "timestamp": "00:31:36",
+        "content": "Right. Set up as a tuple, and then this one might be cosine of five right karma sine of five, something like that."
+    },
+    {
+        "timestamp": "00:31:46",
+        "content": "So I'm just making a whole bunch of coordinates in a 2D plane, ensuring that I have an coordinates."
+    },
+    {
+        "timestamp": "00:31:54",
+        "content": "Okay. Now the loop. Ah."
+    },
+    {
+        "timestamp": "00:31:57",
+        "content": "Sorry, there's going to be two loops. The outer loop will basically take us through each of these elements."
+    },
+    {
+        "timestamp": "00:32:06",
+        "content": "Okay. I have five in this particular case. And the inner loop will go through every other element."
+    },
+    {
+        "timestamp": "00:32:13",
+        "content": "Right. But notice it starts from I plus one. And I'll tell you why that is instead of starting from zero."
+    },
+    {
+        "timestamp": "00:32:20",
+        "content": "So let's just walk through. Let's say we start out with this element, this little as our first element in our outer loop."
+    },
+    {
+        "timestamp": "00:32:30",
+        "content": "So right now we've grabbed the first element in our our outer for loop."
+    },
+    {
+        "timestamp": "00:32:35",
+        "content": "And what we're going to do is figure out the distance between it and everybody else."
+    },
+    {
+        "timestamp": "00:32:40",
+        "content": "So now we're iterating through the inner four loop, going through each element except for myself."
+    },
+    {
+        "timestamp": "00:32:47",
+        "content": "So I'm going to get the distance between this one and this one since it's the first one, obviously it's the the biggest one."
+    },
+    {
+        "timestamp": "00:32:53",
+        "content": "But then I'm going to get the distance between this one and this one. Right."
+    },
+    {
+        "timestamp": "00:32:57",
+        "content": "And I'm going to say, are you bigger than this one? It looks like no."
+    },
+    {
+        "timestamp": "00:33:00",
+        "content": "So we're still keeping this one as our longest one. Then I'm going to grab the distance between this and this one and this and this one."
+    },
+    {
+        "timestamp": "00:33:06",
+        "content": "And as I'm going through this little if statement here keeps track of the farther one."
+    },
+    {
+        "timestamp": "00:33:13",
+        "content": "So the one that has the biggest magnitude right in this case, that's probably the first one we looked at."
+    },
+    {
+        "timestamp": "00:33:19",
+        "content": "And after I've gone through each element, each other element, I've concluded my first iteration in my outer form loop."
+    },
+    {
+        "timestamp": "00:33:30",
+        "content": "So now. The outer four loop goes to the next element in the list."
+    },
+    {
+        "timestamp": "00:33:35",
+        "content": "Let's say it's this one. It doesn't actually matter. Okay."
+    },
+    {
+        "timestamp": "00:33:40",
+        "content": "This one."
+    },
+    {
+        "timestamp": "00:33:41",
+        "content": "We'll look at the distance between itself and everybody else, except for the one we already looked at, because we already know this distance."
+    },
+    {
+        "timestamp": "00:33:48",
+        "content": "Right. We kept track of it already when we iterated through this one."
+    },
+    {
+        "timestamp": "00:33:51",
+        "content": "So as I'm going through my outer loop, keeping track of this this point here, it figures out the distance between this one."
+    },
+    {
+        "timestamp": "00:34:00",
+        "content": "This one, which is suddenly bigger than that one, which we had to keep track of."
+    },
+    {
+        "timestamp": "00:34:04",
+        "content": "And then this one right here. All right, good."
+    },
+    {
+        "timestamp": "00:34:08",
+        "content": "So now we're still keeping track of the biggest distance we've seen."
+    },
+    {
+        "timestamp": "00:34:10",
+        "content": "It's probably this one here, and I've concluded the second iteration of my outer for loop, and now I go to the next element."
+    },
+    {
+        "timestamp": "00:34:17",
+        "content": "Let's say it's this one doesn't matter again."
+    },
+    {
+        "timestamp": "00:34:20",
+        "content": "Now this one is going to get the distance between itself and everybody else except for the two that we've already seen, this one and this one."
+    },
+    {
+        "timestamp": "00:34:27",
+        "content": "Right. So that's why our inner loop starts at our plus one."
+    },
+    {
+        "timestamp": "00:34:30",
+        "content": "So this one will get the distance between itself and this one all the way back there and this one all the way over here."
+    },
+    {
+        "timestamp": "00:34:36",
+        "content": "Right. And then next iteration in the outer loop takes a look at this one, let's say, and it finds the distance between itself and everybody else."
+    },
+    {
+        "timestamp": "00:34:44",
+        "content": "But you know what? There's only one left on there."
+    },
+    {
+        "timestamp": "00:34:54",
+        "content": "And then the last time through, this one doesn't even get a chance to find the distance between itself and anybody else, because everybody else already found the distance between it."
+    },
+    {
+        "timestamp": "00:34:59",
+        "content": "Okay. And so on this way we're basically finding all the possible pairs of all of these"
+    },
+    {
+        "timestamp": "00:35:04",
+        "content": "points in this 2D plane and keeping track of the longest of the biggest distance."
+    },
+    {
+        "timestamp": "00:35:24",
+        "content": "So in terms of the list, the input list, the way that looks like this, I plus one business here, the outer loop basically says, I'm going to start with you and I'm going to get the difference between you and the element at index one, the element at index two and the element at index three. This outer for loop is done."
+    },
+    {
+        "timestamp": "00:35:30",
+        "content": "Next, we're going to get the difference between the distance between this one and everybody else."
+    },
+    {
+        "timestamp": "00:35:35",
+        "content": "Right. So obviously not the element index here because we already know that distance."
+    },
+    {
+        "timestamp": "00:35:39",
+        "content": "So we're going to get the distance between element and index one and index two and index three."
+    },
+    {
+        "timestamp": "00:35:45",
+        "content": "And then we're done. And then the last loop, outer loop, gets the distance between element and index two and index three."
+    },
+    {
+        "timestamp": "00:35:52",
+        "content": "And then it's done. Right. So just these two nested loops just does all of this."
+    },
+    {
+        "timestamp": "00:36:00",
+        "content": "Until it finds the always Paris pairs basically pairs up everybody together."
+    },
+    {
+        "timestamp": "00:36:07",
+        "content": "Okay. So if we run it. What are we going to see?"
+    },
+    {
+        "timestamp": "00:36:19",
+        "content": "So my input for this particular function, you'll notice, first of all, is going to be much, much smaller than the inputs for everything we've done so far."
+    },
+    {
+        "timestamp": "00:36:23",
+        "content": "Right. Some of the inputs we had seen in the past were a million, 10 million, 100 million."
+    },
+    {
+        "timestamp": "00:36:29",
+        "content": "In this particular case, I'm only going to go up to 6000 because it's just going to take way too long to run."
+    },
+    {
+        "timestamp": "00:36:36",
+        "content": "If I make it go for any much any longer than that. So what do we see already?"
+    },
+    {
+        "timestamp": "00:36:43",
+        "content": "We've got 100 points or 100 of these, right?"
+    },
+    {
+        "timestamp": "00:36:49",
+        "content": "Finding the distance, but finding the maximum distance between a bunch of these pairs took about 0.0 3 seconds."
+    },
+    {
+        "timestamp": "00:36:56",
+        "content": "If we doubled that to 200 points, it took 0.10 1 seconds."
+    },
+    {
+        "timestamp": "00:37:01",
+        "content": "If we doubled that to 400 points. It took 0.0 5 seconds and so on and so on."
+    },
+    {
+        "timestamp": "00:37:06",
+        "content": "So just like before. Let's take a look at the big numbers to see our trend."
+    },
+    {
+        "timestamp": "00:37:18",
+        "content": "So as the numbers increase right by two, if my input increases by two, it looks like the time that it takes for me to find out the biggest distance increases by four."
+    },
+    {
+        "timestamp": "00:37:24",
+        "content": "So my input increases by two, the time increases by four."
+    },
+    {
+        "timestamp": "00:37:29",
+        "content": "And I'm not going to run this, but you can make a new list on your own and change this to be inputs that are multiple that are multiples of ten."
+    },
+    {
+        "timestamp": "00:37:38",
+        "content": "Right. Increasing by ten each time."
+    },
+    {
+        "timestamp": "00:37:41",
+        "content": "And you'll see a very similar pattern where the where the time it takes to run that program will be about 100 times as slow."
+    },
+    {
+        "timestamp": "00:37:49",
+        "content": "So the relationship there is a and an squared kind of relationship."
+    },
+    {
+        "timestamp": "00:37:56",
+        "content": "All right. So a few observations here as well. First one I already mentioned is this program just on just takes a lot longer to run in general."
+    },
+    {
+        "timestamp": "00:38:13",
+        "content": "Right. So here we were able with our compound and with finding whether an element is in the list and getting the sum of all the elements in the list, we were able to run 100 million a list with 100 million elements and it still took about one one something seconds."
+    },
+    {
+        "timestamp": "00:38:22",
+        "content": "Whereas with this diameter function we can barely get to 6000 and it's already taking 14 seconds."
+    },
+    {
+        "timestamp": "00:38:29",
+        "content": "So just way, way, way slower program in general."
+    },
+    {
+        "timestamp": "00:38:33",
+        "content": "Right. And then the relationship seems to be a an and squared kind of relationship relating the input to how long the program takes."
+    },
+    {
+        "timestamp": "00:38:42",
+        "content": "So let's actually plot well, I already did this, but here are the relationships for these sort of three types of algorithms that we've seen so far."
+    },
+    {
+        "timestamp": "00:38:53",
+        "content": "So the this is the finding the element in a list those three versions sorry those two versions that we saw."
+    },
+    {
+        "timestamp": "00:39:10",
+        "content": "And this is the diameter function. So if we plot how long it takes the program to run when the input increases, sorry, when the input is this size, we can see that there is a linear relationship."
+    },
+    {
+        "timestamp": "00:39:14",
+        "content": "So the time it takes for the program to run is linear in the input."
+    },
+    {
+        "timestamp": "00:39:23",
+        "content": "The diameter. We'll talk about the binary search and the diameter."
+    },
+    {
+        "timestamp": "00:39:30",
+        "content": "We all going to notice this just by looking at the pure numbers, but it's a lot easier to see it visually when the this is on the x axis the size of the problem."
+    },
+    {
+        "timestamp": "00:39:36",
+        "content": "So how many points we actually are finding the diameter between and how long it actually takes the program to run again?"
+    },
+    {
+        "timestamp": "00:39:43",
+        "content": "The relationship is quadratic. Now that we plot it, we clearly see the quadratic relationship."
+    },
+    {
+        "timestamp": "00:39:49",
+        "content": "And then this binary search, we were very unsure of what it was."
+    },
+    {
+        "timestamp": "00:39:53",
+        "content": "Right. It wasn't quite constant. It definitely wasn't linear."
+    },
+    {
+        "timestamp": "00:39:56",
+        "content": "But now that we've plotted it, so this is the input size and this is how long it actually takes the program to run."
+    },
+    {
+        "timestamp": "00:40:02",
+        "content": "You can see it drastically increases when the input size is very small, but then it kind of sort of asymptotically reaches some sort of value."
+    },
+    {
+        "timestamp": "00:40:12",
+        "content": "It's actually a logarithmic relationship. All right."
+    },
+    {
+        "timestamp": "00:40:18",
+        "content": "Last thing I wanted to mention about timing before we move on to counting is just pure running."
+    },
+    {
+        "timestamp": "00:40:24",
+        "content": "Just purely running these functions on different computers will just give us different values just right off the bat."
+    },
+    {
+        "timestamp": "00:40:30",
+        "content": "So for my on this newer ish computer, how long did it take to run this compound?"
+    },
+    {
+        "timestamp": "00:40:37",
+        "content": "Well, you know what? It took like 3 seconds or something, one point something seconds on an older laptop."
+    },
+    {
+        "timestamp": "00:40:43",
+        "content": "It took, you know, 663 seconds on an even older desktop."
+    },
+    {
+        "timestamp": "00:40:47",
+        "content": "It took 1226 seconds. Right. So just for just purely timing things, the machine you're running it on is going to make a difference."
+    },
+    {
+        "timestamp": "00:40:55",
+        "content": "Okay. And then that's fine."
+    },
+    {
+        "timestamp": "00:41:00",
+        "content": "Right. It's important to know how long it takes."
+    },
+    {
+        "timestamp": "00:41:02",
+        "content": "But if you're just looking at the relationship between input and how long the program takes to run, that's the same."
+    },
+    {
+        "timestamp": "00:41:09",
+        "content": "So it doesn't matter what machine you're running it on. When you increase the input by ten, the program will take ten times as long to run."
+    },
+    {
+        "timestamp": "00:41:17",
+        "content": "No matter whether you're running on a fast laptop, old laptop or super or desktop."
+    },
+    {
+        "timestamp": "00:41:23",
+        "content": "So just timing a program is really important."
+    },
+    {
+        "timestamp": "00:41:31",
+        "content": "Right. You'd like to know whether the program you wrote, you're going to have to wait, you know, a month for it to finish or a couple of minutes for it to finish."
+    },
+    {
+        "timestamp": "00:41:34",
+        "content": "That's an important thing to know."
+    },
+    {
+        "timestamp": "00:41:44",
+        "content": "But what we're going to get at towards the end of this lecture is something that's complimentary and that's this idea of asymptotic complexity, just kind of mathematically saying, you know what, this program is not going to be that bad to run."
+    },
+    {
+        "timestamp": "00:41:49",
+        "content": "Right. You're not going to have to wait for it for months to run without actually running it, of course."
+    },
+    {
+        "timestamp": "00:41:54",
+        "content": "So you be able to glance at a program and say this one is reasonable to run."
+    },
+    {
+        "timestamp": "00:41:58",
+        "content": "And so we're going to do that in terms of this idea of order of growth, which we'll get to at in a little bit."
+    },
+    {
+        "timestamp": "00:42:06",
+        "content": "Okay. Any questions on timing before we get to counting? Oh, yeah."
+    },
+    {
+        "timestamp": "00:42:11",
+        "content": "Yes. The function. Yes."
+    },
+    {
+        "timestamp": "00:42:18",
+        "content": "Can you assume that all building functions are optimal in terms of running time?"
+    },
+    {
+        "timestamp": "00:42:22",
+        "content": "Yes, certainly better than when we when we write them."
+    },
+    {
+        "timestamp": "00:42:32",
+        "content": "Ah, yes. In Python. And then of course in other languages, you know, there would be there may be take advantage of other speed ups as well, like putting things in memory efficiently."
+    },
+    {
+        "timestamp": "00:42:38",
+        "content": "But yeah, generally it's better to run something that's already been made than to make it yourself."
+    },
+    {
+        "timestamp": "00:42:43",
+        "content": "Yeah. Okay."
+    },
+    {
+        "timestamp": "00:42:47",
+        "content": "So now what we're going to do is we're going to count operations just like we did last lecture."
+    },
+    {
+        "timestamp": "00:42:53",
+        "content": "Clearly, timing is nice, but it doesn't give us a nice relationship besides us like spotting it, right?"
+    },
+    {
+        "timestamp": "00:43:01",
+        "content": "There's no formula. There's no relationship. That relates the input to how long it takes the program to run."
+    },
+    {
+        "timestamp": "00:43:07",
+        "content": "Counting will get us a little bit closer to that. And we saw that last lecture."
+    },
+    {
+        "timestamp": "00:43:23",
+        "content": "Let me remind you the idea of counting. So. The idea of counting is that we're going to take a bunch of these operations like mathematical operations, comparisons, indexing into something and assigning a value to a variable."
+    },
+    {
+        "timestamp": "00:43:35",
+        "content": "All of these things right when we run them, yes, they might run for different amounts of time, one time, something negative nine versus two times negative nine, something like that."
+    },
+    {
+        "timestamp": "00:43:40",
+        "content": "But that's very that's not a very big difference."
+    },
+    {
+        "timestamp": "00:43:43",
+        "content": "And so what we're going to say is that every one of these operations will consider to be constant."
+    },
+    {
+        "timestamp": "00:44:02",
+        "content": "Right. They will take one unit of time. So if we say that we can actually come up with a relationship that tells us according to that, that relates the input to how much this how many operations this program will."
+    },
+    {
+        "timestamp": "00:44:10",
+        "content": "So here in the convert to kilometers."
+    },
+    {
+        "timestamp": "00:44:13",
+        "content": "What do we have? We have one multiplication. And you know, just for the heck of it, this lecture, let's say the return also counts as an operation."
+    },
+    {
+        "timestamp": "00:44:23",
+        "content": "So in this convert to kilometer function, we have two operations."
+    },
+    {
+        "timestamp": "00:44:27",
+        "content": "Notice that it's not really related to the input at all."
+    },
+    {
+        "timestamp": "00:44:31",
+        "content": "So then the amount of operations that this program takes to run is always to."
+    },
+    {
+        "timestamp": "00:44:37",
+        "content": "It matches what our timing said, right? It basically didn't matter what the input was."
+    },
+    {
+        "timestamp": "00:44:42",
+        "content": "They always took approximately the same amount of time to run. The sum of function."
+    },
+    {
+        "timestamp": "00:44:48",
+        "content": "So it takes in an input list and it gets the sum of all the elements."
+    },
+    {
+        "timestamp": "00:44:54",
+        "content": "This one will do. We'll have one operation for doing this assignment."
+    },
+    {
+        "timestamp": "00:44:58",
+        "content": "It'll have one operation for grabbing an on an element in my list l and assigning it to I."
+    },
+    {
+        "timestamp": "00:45:08",
+        "content": "It'll have to operations for this total plus equals I remember total plus I on the right hand side is one operation and total equals."
+    },
+    {
+        "timestamp": "00:45:17",
+        "content": "That is my second operation. So that's two operations."
+    },
+    {
+        "timestamp": "00:45:21",
+        "content": "And then let's not forget our for loop. That's kind of the important part of this function."
+    },
+    {
+        "timestamp": "00:45:27",
+        "content": "How many times will these three operations repeat this one plus these two?"
+    },
+    {
+        "timestamp": "00:45:31",
+        "content": "Well, it's going to repeat however many elements. I have an l so length l times."
+    },
+    {
+        "timestamp": "00:45:38",
+        "content": "Okay. And then again, let's say we count the return. The return will also be one operation."
+    },
+    {
+        "timestamp": "00:45:52",
+        "content": "So the total number of operations for the sum of function will be one for the total equals zero plus length of l times three, because there's three operations being done for each length of L plus another one for the return."
+    },
+    {
+        "timestamp": "00:45:56",
+        "content": "So that's going to be three length L plus two."
+    },
+    {
+        "timestamp": "00:46:01",
+        "content": "That's a nice little formula that relates how how how many units of time we'll have to wait depending on the size of the list."
+    },
+    {
+        "timestamp": "00:46:11",
+        "content": "Right. That's pretty cool. So the way that we're going to count the number of operations, again, I'm going to do it slightly differently."
+    },
+    {
+        "timestamp": "00:46:17",
+        "content": "The last lecture just to show you that there is another way to do it."
+    },
+    {
+        "timestamp": "00:46:21",
+        "content": "So this is our function is in it's going to count how many operations we have and I'm going to use something called a global variable."
+    },
+    {
+        "timestamp": "00:46:29",
+        "content": "And I'll show you again the difference between them. So it's just these three lines that I added."
+    },
+    {
+        "timestamp": "00:46:33",
+        "content": "And you should never, ever use global variables in your programs except in this situation."
+    },
+    {
+        "timestamp": "00:46:40",
+        "content": "The idea of global variables is that you can define variables just in the main program outside of any functions."
+    },
+    {
+        "timestamp": "00:47:02",
+        "content": "And you can access those variables within some function purely by saying, you know, if we defined count out here right before this function definition count equals zero or whatever inside of any function we can say, Hey, Python, I would like to access this variable that I defined outside of this function."
+    },
+    {
+        "timestamp": "00:47:07",
+        "content": "You say that you tell Python using Global and then the name of that variable and Python will grab that"
+    },
+    {
+        "timestamp": "00:47:14",
+        "content": "variable that's basically quote unquote shared across the entire program and modify that variable."
+    },
+    {
+        "timestamp": "00:47:21",
+        "content": "Right. So in there, in essence, we're basically saying this is now a shared variable."
+    },
+    {
+        "timestamp": "00:47:26",
+        "content": "If I modify it within this counter, within this function, it'll be obviously modified for everything else."
+    },
+    {
+        "timestamp": "00:47:35",
+        "content": "It's very tempting to use global variables because, you know, all the variables you could ever want to create are going to be accessible by everybody."
+    },
+    {
+        "timestamp": "00:47:42",
+        "content": "Right. No need to pass in parameters. No need to do. But it's very, very bad programing."
+    },
+    {
+        "timestamp": "00:47:49",
+        "content": "So we won't ever do it, except for in this particular case, because we'd like to keep a counter of things that are happening or for debugging purposes and things like that."
+    },
+    {
+        "timestamp": "00:47:56",
+        "content": "So the count variable will keep track of."
+    },
+    {
+        "timestamp": "00:48:01",
+        "content": "It'll just increment in key places where we have these constant unit of times happening."
+    },
+    {
+        "timestamp": "00:48:07",
+        "content": "So I've got count plus equals one here because I've got my return value."
+    },
+    {
+        "timestamp": "00:48:13",
+        "content": "I've got count plus equals two here because I grab an element from L and I do the equality check here and then that's it."
+    },
+    {
+        "timestamp": "00:48:27",
+        "content": "So if I run that in down here."
+    },
+    {
+        "timestamp": "00:48:36",
+        "content": "What are we going to see? Well. I don't actually do how many how much more it ran."
+    },
+    {
+        "timestamp": "00:48:43",
+        "content": "But we can see the the relationship, right? We go 9 to 30, 7 to 300 7 to 3000, 7 to 30007 and so on."
+    },
+    {
+        "timestamp": "00:48:54",
+        "content": "So again, the same relationship where we increase the input by ten, the number of operations we do is ten times is more exactly like the formula said it would be."
+    },
+    {
+        "timestamp": "00:49:01",
+        "content": "What about the binary search?"
+    },
+    {
+        "timestamp": "00:49:03",
+        "content": "So again, we're going to use this global variable and we're going to have the counter keep track of all of these operations."
+    },
+    {
+        "timestamp": "00:49:09",
+        "content": "So this count incrementing by three accounts for setting the low to zero, setting the height of this thing and grabbing this actual value of length."
+    },
+    {
+        "timestamp": "00:49:20",
+        "content": "Incrementing the count within this while loop will keep track of this subtraction"
+    },
+    {
+        "timestamp": "00:49:26",
+        "content": "as one operation and the test that is greater than one is another operation."
+    },
+    {
+        "timestamp": "00:49:31",
+        "content": "Counting increasing by three here accounts for high plus low that integer division and assigning that value back to mid."
+    },
+    {
+        "timestamp": "00:49:41",
+        "content": "Count plus three here accounts for indexing into this l."
+    },
+    {
+        "timestamp": "00:49:54",
+        "content": "The less than or equal check. And then either doing this reassignment of low or this reassignment of high results, three operations and then lastly, count increases by three once more because I've got these operations here."
+    },
+    {
+        "timestamp": "00:50:01",
+        "content": "So indexing into the into law, checking for equality and then doing the return."
+    },
+    {
+        "timestamp": "00:50:07",
+        "content": "Okay. So the actual number of operations will be kept track of in right by the counter."
+    },
+    {
+        "timestamp": "00:50:14",
+        "content": "So all we're doing is just kind of reporting how many times, how many operations we've done."
+    },
+    {
+        "timestamp": "00:50:20",
+        "content": "So as we increase the input by ten, just like with timing, we can't quite tell what the relationship is."
+    },
+    {
+        "timestamp": "00:50:28",
+        "content": "Right? Again, it's it's like one point something, right?"
+    },
+    {
+        "timestamp": "00:50:31",
+        "content": "With each run. All right."
+    },
+    {
+        "timestamp": "00:50:36",
+        "content": "So this is these are the the results."
+    },
+    {
+        "timestamp": "00:50:44",
+        "content": "So the observation one, as I mentioned, when we increase the input by ten, this brute force, I released it but the brute force is in function also is does ten times as many operations the binary search."
+    },
+    {
+        "timestamp": "00:50:51",
+        "content": "Again we don't know what rate it is at, but we can plot them."
+    },
+    {
+        "timestamp": "00:50:56",
+        "content": "So here I have the plots, just like when I plotted the input size versus how long the program actually took to run."
+    },
+    {
+        "timestamp": "00:51:04",
+        "content": "I'm now plotting the input size versus actually just the number of operations being done."
+    },
+    {
+        "timestamp": "00:51:10",
+        "content": "So the is in function. That brute force way of finding whether an element is on the list grows linearly."
+    },
+    {
+        "timestamp": "00:51:15",
+        "content": "No surprise there. And how lucky for us the binary search matches the graph matches the one that we had for timing."
+    },
+    {
+        "timestamp": "00:51:25",
+        "content": "Right. So as I increase my size."
+    },
+    {
+        "timestamp": "00:51:28",
+        "content": "In the binary search method, the number of operations that I do is logarithmic and in time, just like we saw in the actual time."
+    },
+    {
+        "timestamp": "00:51:39",
+        "content": "Okay. So. Timing and counting are really nice, right?"
+    },
+    {
+        "timestamp": "00:51:45",
+        "content": "Timing gives us pure number of seconds or months or whatever."
+    },
+    {
+        "timestamp": "00:51:49",
+        "content": "We need to wait for this program to finish, but counting gives us a nice little formula, right?"
+    },
+    {
+        "timestamp": "00:51:55",
+        "content": "That relates the input to the number of of of operations that you have to do."
+    },
+    {
+        "timestamp": "00:52:06",
+        "content": "You might have noticed I briefly touched upon this thought throughout this entire lecture and last lecture, we basically just saw something like, you know, three different algorithms."
+    },
+    {
+        "timestamp": "00:52:15",
+        "content": "Right. We saw something that's constant, something that's linear, something that's, you know, quadratic and something that's binary, logarithmic in this particular case."
+    },
+    {
+        "timestamp": "00:52:20",
+        "content": "Right. So that's four different algorithms. But we saw way more functions."
+    },
+    {
+        "timestamp": "00:52:25",
+        "content": "Right. Right. So what we'd like to do is evaluate the algorithms, not the different implementations."
+    },
+    {
+        "timestamp": "00:52:32",
+        "content": "Right. And what we'd like to do is evaluate these algorithms as the input gets really, really big."
+    },
+    {
+        "timestamp": "00:52:39",
+        "content": "So what we're going to do is figure out a relationship between the programs runtime."
+    },
+    {
+        "timestamp": "00:52:46",
+        "content": "And the input. But what we're going to do is focus on the biggest terms that contribute to the program's runtime."
+    },
+    {
+        "timestamp": "00:52:55",
+        "content": "Right. So we saw these examples last time, right?"
+    },
+    {
+        "timestamp": "00:53:04",
+        "content": "This my sum, which basically summed all the elements, all the numbers from zero to X, and this the silly square function that had nested loops kind of like this diameter."
+    },
+    {
+        "timestamp": "00:53:09",
+        "content": "Right. We were able to say something like, you know, when the import increases by ten, the program is ten times as long to run."
+    },
+    {
+        "timestamp": "00:53:17",
+        "content": "Right. So the efficiency of that program was on the order of X when the input increased by X."
+    },
+    {
+        "timestamp": "00:53:24",
+        "content": "The program took X times as long to run. The square had a similar we could have said in a similar way."
+    },
+    {
+        "timestamp": "00:53:30",
+        "content": "Right. When the input increases by x, the program took x squared as long to run."
+    },
+    {
+        "timestamp": "00:53:35",
+        "content": "So I don't actually care right about all of these differences in the exact time x one time send negative six 1.3 times 10 to -6."
+    },
+    {
+        "timestamp": "00:53:45",
+        "content": "I don't care. What I do care is the order of growth."
+    },
+    {
+        "timestamp": "00:53:49",
+        "content": "How does the program run in relation to the input?"
+    },
+    {
+        "timestamp": "00:53:54",
+        "content": "Okay. And I care about that when the input is really, really big."
+    },
+    {
+        "timestamp": "00:53:58",
+        "content": "So what we're going to do is express the program's runtime in an order of not exact kind of relationship."
+    },
+    {
+        "timestamp": "00:54:07",
+        "content": "So while counting was really nice, right?"
+    },
+    {
+        "timestamp": "00:54:18",
+        "content": "It told us a nice relationship between the input and the number of operations when the input is really, really big, like three x plus four when x is really, really big."
+    },
+    {
+        "timestamp": "00:54:24",
+        "content": "I don't care that the number of operations is three x plus four, right?"
+    },
+    {
+        "timestamp": "00:54:29",
+        "content": "Because when x is really, really big, that plus four might as well be plus zero."
+    },
+    {
+        "timestamp": "00:54:35",
+        "content": "And that three x is basically like X when the input is really, really big."
+    },
+    {
+        "timestamp": "00:54:40",
+        "content": "Right. So that's what we're going to try to do."
+    },
+    {
+        "timestamp": "00:54:43",
+        "content": "All right. Now, before we do that, we need to decide what to measure, right?"
+    },
+    {
+        "timestamp": "00:54:48",
+        "content": "Because when we write functions, we're going to have functions that have a whole bunch of inputs potentially."
+    },
+    {
+        "timestamp": "00:54:54",
+        "content": "Right. So the input could be an integer like in convert to kilometers."
+    },
+    {
+        "timestamp": "00:54:58",
+        "content": "It could be a list, in which case we would be interested in maybe the length of the list."
+    },
+    {
+        "timestamp": "00:55:03",
+        "content": "And if you have many parameters, you'd have to decide, right, what is the parameter that contributes to the to the growth of this function?"
+    },
+    {
+        "timestamp": "00:55:13",
+        "content": "So here's an example. This is our is in function."
+    },
+    {
+        "timestamp": "00:55:18",
+        "content": "It looks for an element E in list F right."
+    },
+    {
+        "timestamp": "00:55:22",
+        "content": "So there's two parameters to this one. We can ask, does the program take longer to run as e increases?"
+    },
+    {
+        "timestamp": "00:55:29",
+        "content": "It's one of the parameters. Let's see what happens as we make it bigger so we can look at a little example."
+    },
+    {
+        "timestamp": "00:55:34",
+        "content": "If we find out whether zero is in this list containing 1 to 3 or whether a thousand is in the list, one, two, three."
+    },
+    {
+        "timestamp": "00:55:42",
+        "content": "Does the program take longer to run? No, exactly."
+    },
+    {
+        "timestamp": "00:55:46",
+        "content": "So it is not really relevant in my run time sort of calculation."
+    },
+    {
+        "timestamp": "00:55:52",
+        "content": "All right. Well, let's consider Elmo. When we say L is going to change."
+    },
+    {
+        "timestamp": "00:55:59",
+        "content": "It could change in two ways, right? The elements in EL could have different values."
+    },
+    {
+        "timestamp": "00:56:05",
+        "content": "Right. Or the list length itself could be different."
+    },
+    {
+        "timestamp": "00:56:10",
+        "content": "So in this particular function, let's say that the elements in L are small numbers versus big numbers."
+    },
+    {
+        "timestamp": "00:56:17",
+        "content": "Okay. That's certainly something that could happen and certainly with some functions that's going to make a difference."
+    },
+    {
+        "timestamp": "00:56:24",
+        "content": "So let's say in this particular function, if the elements in L are big versus small, is it going to make an impact on my runtime?"
+    },
+    {
+        "timestamp": "00:56:31",
+        "content": "Well, here's a little example. Let's say I'm looking for the numbers."
+    },
+    {
+        "timestamp": "00:56:35",
+        "content": "Zero inside a list with one, two, three, and the number zero inside a list with 1000."
+    },
+    {
+        "timestamp": "00:56:39",
+        "content": "2003 thousand. Is that going to make a difference?"
+    },
+    {
+        "timestamp": "00:56:43",
+        "content": "No. Right. So the size of the elements themselves don't really matter."
+    },
+    {
+        "timestamp": "00:56:50",
+        "content": "And what less thing to ask ourselves is what about the length of the list?"
+    },
+    {
+        "timestamp": "00:56:54",
+        "content": "So if Elle has different lengths, will this be a difference in our run time?"
+    },
+    {
+        "timestamp": "00:56:58",
+        "content": "Right. So if I'm looking for zero on a list of three elements or zero on a list with ten elements, we're clearly that zero is nowhere to be found."
+    },
+    {
+        "timestamp": "00:57:06",
+        "content": "Is that linked list that's going to have a difference? Yeah."
+    },
+    {
+        "timestamp": "00:57:16",
+        "content": "In this case, it will. Exactly. So here in this particular function, the input I'd be interested in, in, in sort of reporting the runtime from is the length of the list, not the elements in the list, not itself, but the length of the list."
+    },
+    {
+        "timestamp": "00:57:28",
+        "content": "Okay. So the last thing that I'll mention is for this particular class, we're going to talk about the worst case scenario."
+    },
+    {
+        "timestamp": "00:57:35",
+        "content": "So you might have noticed in this previous example here. Right, I always looked for an element that wasn't even in the list."
+    },
+    {
+        "timestamp": "00:57:44",
+        "content": "Right. So when you're faced with a function, you ask yourself this particular class at least what is the worst case scenario and finding out whether it functions in the list."
+    },
+    {
+        "timestamp": "00:57:52",
+        "content": "The worst case scenario for us is if it's not in the list at all. Right."
+    },
+    {
+        "timestamp": "00:57:58",
+        "content": "So that's sort of another aspect of runtime that we don't actually we won't talk about because for us we're always interested in the worst case."
+    },
+    {
+        "timestamp": "00:58:07",
+        "content": "But there are certainly certainly analysis where you could look at the best case scenario, which is, well, the element is the first one on the list."
+    },
+    {
+        "timestamp": "00:58:14",
+        "content": "Right. In that case, you're always going to find it right away."
+    },
+    {
+        "timestamp": "00:58:16",
+        "content": "So it's constant or an average case scenario, which is kind of what people do in the real world."
+    },
+    {
+        "timestamp": "00:58:21",
+        "content": "Right? You're not always encountering the worst case. But for us, we're going to look at the worst case scenario."
+    },
+    {
+        "timestamp": "00:58:27",
+        "content": "So our goal is going to be to describe how the runtime grows as the size of the input grows in a really general way."
+    },
+    {
+        "timestamp": "00:58:34",
+        "content": "So we're not going to be interested in figuring out the exact number of operations, No."
+    },
+    {
+        "timestamp": "00:58:39",
+        "content": "Three X plus two kind of deal here. We're just going to focus on terms that are really that grow the fastest."
+    },
+    {
+        "timestamp": "00:58:46",
+        "content": "We're going to eliminate any sort of additive multiplicative constants and things like that."
+    },
+    {
+        "timestamp": "00:58:51",
+        "content": "So we're just going to focus on terms that grow the fastest and that will give us our order of growth."
+    },
+    {
+        "timestamp": "00:58:57",
+        "content": "So the way we're going to denote the order of growth is using this notation called Big O and Big Theta."
+    },
+    {
+        "timestamp": "00:59:04",
+        "content": "Okay. Now. Morning."
+    },
+    {
+        "timestamp": "00:59:08",
+        "content": "We're going to have some math coming our way. It's going to be like three slides of just pure math."
+    },
+    {
+        "timestamp": "00:59:13",
+        "content": "Okay. You can sit back. You won't need to know it. No need to know the details."
+    },
+    {
+        "timestamp": "00:59:18",
+        "content": "But it will motivate us to kind of give us the idea about this asymptotic order of growth."
+    },
+    {
+        "timestamp": "00:59:26",
+        "content": "All right. So this is the the mathematical definition of big."
+    },
+    {
+        "timestamp": "00:59:31",
+        "content": "So what we would like to do, there will be a drawing board."
+    },
+    {
+        "timestamp": "00:59:34",
+        "content": "So what we would like to do is figure out an upper bound for our function."
+    },
+    {
+        "timestamp": "00:59:40",
+        "content": "So the function might look like this."
+    },
+    {
+        "timestamp": "00:59:51",
+        "content": "And I know this is just an F, but we relate this to our class by saying, you know what, if we did the order of calculation, sorry, the number of operations analysis, right, for a function, we could basically come up with something like this, right?"
+    },
+    {
+        "timestamp": "00:59:57",
+        "content": "We came up with three x plus two. We could come up with three x squared plus 20 x plus one for some random function that we wrote."
+    },
+    {
+        "timestamp": "01:00:05",
+        "content": "Right. So that we considered the function. Now the big O is going to be the upper bound on this function."
+    },
+    {
+        "timestamp": "01:00:13",
+        "content": "So if I plot this function in my in my x y axis, this is what it looks like."
+    },
+    {
+        "timestamp": "01:00:20",
+        "content": "The big goal will be some other function that's going to upper bound."
+    },
+    {
+        "timestamp": "01:00:26",
+        "content": "This one, the blue one. Okay. And it's going to upper bound it for all values beyond some X."
+    },
+    {
+        "timestamp": "01:00:33",
+        "content": "Right. So for all values beyond some X, some some number on the x axis, some crossover point, this big of g, this g will always be bigger than my F."
+    },
+    {
+        "timestamp": "01:00:45",
+        "content": "That's the idea here. So clearly X is not going to upper bound it, right?"
+    },
+    {
+        "timestamp": "01:00:50",
+        "content": "Because after this crossover point, X will be below my function no matter how big, how big of a constant."
+    },
+    {
+        "timestamp": "01:00:58",
+        "content": "I tack onto that x, I could have a thousand x that's still not going to upper bound."
+    },
+    {
+        "timestamp": "01:01:03",
+        "content": "My little blue line here. So what we're going to do is we're going to increase the the exponential there."
+    },
+    {
+        "timestamp": "01:01:09",
+        "content": "So let's take x squared. Well, X squared is getting closer."
+    },
+    {
+        "timestamp": "01:01:13",
+        "content": "It looks like they're both quadratics, but this orange line is not above the blue line for some crossover point."
+    },
+    {
+        "timestamp": "01:01:23",
+        "content": "Two. X getting closer. Three X Getting closer."
+    },
+    {
+        "timestamp": "01:01:28",
+        "content": "Four x. Is an upper bound on my f."
+    },
+    {
+        "timestamp": "01:01:34",
+        "content": "Because after this little crossover point here at about 20, my orange line, the G will be always above my blue line, my F right."
+    },
+    {
+        "timestamp": "01:01:47",
+        "content": "So far so good. Just visually speaking. Yeah. There."
+    },
+    {
+        "timestamp": "01:01:53",
+        "content": "It that. Yeah. The orange one is below it. That's totally fine, because what we're interested in is the behavior when the input is really big."
+    },
+    {
+        "timestamp": "01:02:02",
+        "content": "So that's why I don't care about, like, weird stuff happening down there."
+    },
+    {
+        "timestamp": "01:02:05",
+        "content": "All I care about is when. When my excess super big. Okay."
+    },
+    {
+        "timestamp": "01:02:10",
+        "content": "So now I found this. So I can say that after this point 20, my orange line will always be above my blue."
+    },
+    {
+        "timestamp": "01:02:20",
+        "content": "So I can say that my f is big."
+    },
+    {
+        "timestamp": "01:02:23",
+        "content": "All of g is big o of x squared."
+    },
+    {
+        "timestamp": "01:02:34",
+        "content": "Okay. Because I don't care about this force so much because it's just a multiplicative constant, because this for x is always greater than my function for all x greater than this crossover point here."
+    },
+    {
+        "timestamp": "01:02:45",
+        "content": "That's it. That's the definition. Right. So the G here is basically this function without the multiplicative constant in front of it."
+    },
+    {
+        "timestamp": "01:02:56",
+        "content": "Okay. So I say three x squared plus 20 x plus one is big of x squared."
+    },
+    {
+        "timestamp": "01:03:02",
+        "content": "So generally speaking, that was just an example."
+    },
+    {
+        "timestamp": "01:03:04",
+        "content": "Generally speaking, the big low is an upper bound on my function and this is now just using variables like constants and things like that."
+    },
+    {
+        "timestamp": "01:03:14",
+        "content": "But it's exactly the same situation that we had from before. Okay."
+    },
+    {
+        "timestamp": "01:03:18",
+        "content": "So I'm going to try to map the blue to the blue and the orange to the orange and the"
+    },
+    {
+        "timestamp": "01:03:22",
+        "content": "purple to the purple to help you kind of match up what we saw in the previous slide."
+    },
+    {
+        "timestamp": "01:03:27",
+        "content": "So basically, we say that our function F is big, all of this orange G, right?"
+    },
+    {
+        "timestamp": "01:03:33",
+        "content": "If we can find some blue constant, right."
+    },
+    {
+        "timestamp": "01:03:40",
+        "content": "Where this constant was this for here, where that constant multiplied by g for x squared is greater than my function for all our values beyond that crossover point."
+    },
+    {
+        "timestamp": "01:03:50",
+        "content": "Right. So I found my four because four x squared is always greater than my function beyond 21."
+    },
+    {
+        "timestamp": "01:03:58",
+        "content": "Right. That's what we saw in the picture. Right. So then we can say that my function F is G is big O of g of x, that g is x squared just matched."
+    },
+    {
+        "timestamp": "01:04:11",
+        "content": "All right. So in terms of the picture here, right, this is kind of a little zoom in of what happens."
+    },
+    {
+        "timestamp": "01:04:25",
+        "content": "Anything can happen down here. But beyond the crossover point, which is here in the big picture, that crossover point, beyond that crossover point, my orange is always greater than my blue. So what does this mean?"
+    },
+    {
+        "timestamp": "01:04:32",
+        "content": "We're going to talk about this in a few slides, but you might have thought about this."
+    },
+    {
+        "timestamp": "01:04:36",
+        "content": "I can actually pick any function that grows faster than what is this, three x squared, right?"
+    },
+    {
+        "timestamp": "01:04:43",
+        "content": "I can pick x factorial. X factorial grows super fast or two to the x that also grows super fast."
+    },
+    {
+        "timestamp": "01:04:51",
+        "content": "All of those functions that grow way faster than mine are also upper bounds on this on this function."
+    },
+    {
+        "timestamp": "01:05:00",
+        "content": "Okay. So that's big. So it's just an upper bound. Then what is theta?"
+    },
+    {
+        "timestamp": "01:05:08",
+        "content": "For the reason I just stated. Right. I said x squared sorry."
+    },
+    {
+        "timestamp": "01:05:12",
+        "content": "X factorial two to the x. All of these functions that grow much faster than my function are all upper bounds."
+    },
+    {
+        "timestamp": "01:05:20",
+        "content": "And that's not really helpful for us when we say, Oh, this function is big, all of whatever, right?"
+    },
+    {
+        "timestamp": "01:05:25",
+        "content": "Because you can just pick something that's ludicrously fast, that grows ludicrously fast and say that has no meaning."
+    },
+    {
+        "timestamp": "01:05:33",
+        "content": "So instead what we usually report is the theta, which is actually an upper bound and a lower bound for our function."
+    },
+    {
+        "timestamp": "01:05:44",
+        "content": "Right. So using the exact same reasoning, we're going to find some constant tacked on to that g of x such that that function grows is always underneath our function."
+    },
+    {
+        "timestamp": "01:05:55",
+        "content": "Okay. So again, I'll put up a lot of math, but basically these first two lines here, this one here, there exists blah, blah, blah, blah, blah."
+    },
+    {
+        "timestamp": "01:06:03",
+        "content": "That first here this is is the big O definition."
+    },
+    {
+        "timestamp": "01:06:06",
+        "content": "So we've already know what that means. All we're going to do is tack on another condition, which is that we can find another constant for that same g."
+    },
+    {
+        "timestamp": "01:06:18",
+        "content": "Where that function beyond some crossover point is always below my blue, my blue light."
+    },
+    {
+        "timestamp": "01:06:25",
+        "content": "So here's an example. Right. For X squared, we saw that it grew faster than three x squared beyond a crossover point."
+    },
+    {
+        "timestamp": "01:06:33",
+        "content": "Well, we could say two X squared will always grow slower than its own crossover point."
+    },
+    {
+        "timestamp": "01:06:42",
+        "content": "Okay. So the constant for was the same as we had seen before, but this constant to now becomes a lower bound."
+    },
+    {
+        "timestamp": "01:06:49",
+        "content": "Right. So I'm basically trying to have that same g, both upper bound and lower bound."
+    },
+    {
+        "timestamp": "01:06:57",
+        "content": "My blue function. Right. And that's the definition of data."
+    },
+    {
+        "timestamp": "01:07:06",
+        "content": "So now I can no longer say that to to the right an exponential both upper bounds and lower bounds it because"
+    },
+    {
+        "timestamp": "01:07:13",
+        "content": "that to to the X will grow faster than my function no matter what constant I tacked attack on to it."
+    },
+    {
+        "timestamp": "01:07:21",
+        "content": "So now what we see is that really the g of x is going to be the term that grows the fastest."
+    },
+    {
+        "timestamp": "01:07:27",
+        "content": "It's just going to be that term here. Right. It's going to be the thing without the fastest growing term in my function, without the constant on it."
+    },
+    {
+        "timestamp": "01:07:40",
+        "content": "Okay. So, yes, we will never remember all that, but we're going to do a bunch of exercises and you're going to see just how easy it is to figure out the order of girls."
+    },
+    {
+        "timestamp": "01:07:45",
+        "content": "Okay. But I will mention this just again, because it's very important."
+    },
+    {
+        "timestamp": "01:07:49",
+        "content": "Right. So when we're talking about upper bounds, you can pick any function that grows faster than yours."
+    },
+    {
+        "timestamp": "01:07:55",
+        "content": "Right. F of x, this three x squared thing is all of x squared."
+    },
+    {
+        "timestamp": "01:07:59",
+        "content": "Yes. But it's also over x cubed over x to the five of x to the 100 over two to the x of x factorial."
+    },
+    {
+        "timestamp": "01:08:06",
+        "content": "All of those things that grow much faster. But my f of x is only one theta and it's theta of x squared."
+    },
+    {
+        "timestamp": "01:08:13",
+        "content": "Right. And that's the term that grows. That's the term that grows the fastest in my function here."
+    },
+    {
+        "timestamp": "01:08:26",
+        "content": "So when we look at a function, right, based on the number of operations or however you know, you know, you're given the function, when we look at the order of growth of the function, we just focus on the dominant term."
+    },
+    {
+        "timestamp": "01:08:34",
+        "content": "Right. So in the first one, the input here is N and the function is and squared plus two and plus two."
+    },
+    {
+        "timestamp": "01:08:43",
+        "content": "Which one of these is the dominant term? You tell me."
+    },
+    {
+        "timestamp": "01:08:47",
+        "content": "Yes, exactly. And squared. So this function is just going to be theta then squared."
+    },
+    {
+        "timestamp": "01:08:52",
+        "content": "That's it. How about in the next one?"
+    },
+    {
+        "timestamp": "01:09:11",
+        "content": "What's the dominant term here? Yeah, exactly three x squared, even though 100,000 x is going to be huge for a while and this constant is also going to be huge for a while as X gets really, really big, this three x squared and in fact just x squared will kind of take over everything else, right?"
+    },
+    {
+        "timestamp": "01:09:17",
+        "content": "So this next one is all theta of x squared. How about the next one?"
+    },
+    {
+        "timestamp": "01:09:24",
+        "content": "What's the term that grows the fastest here? Yeah, exactly."
+    },
+    {
+        "timestamp": "01:09:31",
+        "content": "Right. Log is. Is, is is. Right. So this theta of this function is just theta of it."
+    },
+    {
+        "timestamp": "01:09:38",
+        "content": "So notice what we're doing here is just focusing on the dominant term."
+    },
+    {
+        "timestamp": "01:09:41",
+        "content": "We're going to drop the multiplicative constants, drop every other term and relate the theta in terms of the input."
+    },
+    {
+        "timestamp": "01:09:49",
+        "content": "Right? So I don't just use theta of an all the time."
+    },
+    {
+        "timestamp": "01:09:52",
+        "content": "Right. In the previous one, it's tempting to say the first one, state of an squared, the next one state of N Squared, the last one state of n."
+    },
+    {
+        "timestamp": "01:09:59",
+        "content": "But N is not always the input to your function, right? If it is great."
+    },
+    {
+        "timestamp": "01:10:02",
+        "content": "If it's not, you always have to relate it according to the input of the function."
+    },
+    {
+        "timestamp": "01:10:06",
+        "content": "Maybe it's length l. Maybe it's something else."
+    },
+    {
+        "timestamp": "01:10:11",
+        "content": "Okay. So let's have you try a couple more. What is the theta of the first one here?"
+    },
+    {
+        "timestamp": "01:10:17",
+        "content": "That's the term that grows the fastest. Yeah."
+    },
+    {
+        "timestamp": "01:10:21",
+        "content": "Fate of X. Next one. And cute, but exactly what I told you is going to be so easy."
+    },
+    {
+        "timestamp": "01:10:29",
+        "content": "I know that math is scary. How about the next one?"
+    },
+    {
+        "timestamp": "01:10:34",
+        "content": "That's the term that grows the fastest, but then it's theta of dropping in multiplicative constants and it's just theta of y."
+    },
+    {
+        "timestamp": "01:10:41",
+        "content": "The last one is going to be tricky. What is the theta?"
+    },
+    {
+        "timestamp": "01:10:45",
+        "content": "If the if the variable is only b. Yeah."
+    },
+    {
+        "timestamp": "01:10:51",
+        "content": "To to the beat. What about if the variable is only a. AQ Exactly."
+    },
+    {
+        "timestamp": "01:10:58",
+        "content": "And if my function is both a function of A and B."
+    },
+    {
+        "timestamp": "01:11:06",
+        "content": "And a plus two plus eight cubed."
+    },
+    {
+        "timestamp": "01:11:10",
+        "content": "Right. Because both will contribute to the runtime of this function."
+    },
+    {
+        "timestamp": "01:11:15",
+        "content": "Right. Not just the B, right."
+    },
+    {
+        "timestamp": "01:11:17",
+        "content": "So if this function, whatever this crazy function is that I wrote that takes so long to run was had both inputs B and a right as its parameters."
+    },
+    {
+        "timestamp": "01:11:26",
+        "content": "The theta for that function is both is in terms of both BNP the dominant terms of each."
+    },
+    {
+        "timestamp": "01:11:33",
+        "content": "Yeah. What are you up to? No."
+    },
+    {
+        "timestamp": "01:11:37",
+        "content": "No need to worry about negative coefficients. Overreact to a ton of negative."
+    },
+    {
+        "timestamp": "01:11:42",
+        "content": "Yeah. Yeah. Yeah."
+    },
+    {
+        "timestamp": "01:11:46",
+        "content": "Question. I guess. Big data presented to us these days."
+    },
+    {
+        "timestamp": "01:11:58",
+        "content": "Oh, some different parameter. The variable that's not even here. Yeah."
+    },
+    {
+        "timestamp": "01:12:07",
+        "content": "If the, if we were, if the parameter, the function was C let's say for this last one, but the formula was this then the theta would be just constant theta of one."
+    },
+    {
+        "timestamp": "01:12:12",
+        "content": "Because it doesn't even depend on these variables. So these are just considered Constantine."
+    },
+    {
+        "timestamp": "01:12:18",
+        "content": "That's a great question. Yeah. If the parameter was C or something else."
+    },
+    {
+        "timestamp": "01:12:25",
+        "content": "Okay. So now we can actually look at functions that we write and we do the exact same thing."
+    },
+    {
+        "timestamp": "01:12:39",
+        "content": "We can first start out with just saying, how many operations does this function take come up with that relationship and just theta that right, just like we did on the previous slide. So here's a function that that calculates stuff a factorial."
+    },
+    {
+        "timestamp": "01:12:46",
+        "content": "What do we have here? Well, we've got this is constant here."
+    },
+    {
+        "timestamp": "01:12:50",
+        "content": "Right. We've got just one wild loop where there's five things going on here."
+    },
+    {
+        "timestamp": "01:12:54",
+        "content": "There's the comparison. There's this. Times equals, which is two operations."
+    },
+    {
+        "timestamp": "01:12:59",
+        "content": "This minus equals its two operations. So this function is just five and plus two by the same analysis."
+    },
+    {
+        "timestamp": "01:13:05",
+        "content": "We did, you know, a few slides ago. Right. So if we say, what's the state of this function?"
+    },
+    {
+        "timestamp": "01:13:11",
+        "content": "Well, what's the theta of this thing? Five and plus two. Super easy, right?"
+    },
+    {
+        "timestamp": "01:13:14",
+        "content": "It's just the state of it. And in this case, the paramount parameter of our function is trillion."
+    },
+    {
+        "timestamp": "01:13:30",
+        "content": "When we have functions that are slightly more complex and we've got things that are in series, like for example, here I've got two for loops, one right after the other."
+    },
+    {
+        "timestamp": "01:13:34",
+        "content": "We basically use this law of addition to take care of that."
+    },
+    {
+        "timestamp": "01:13:38",
+        "content": "So that means we figured out what the theta is for the first four loop, the theta for the next for loop, and we just add those to fade us together."
+    },
+    {
+        "timestamp": "01:13:47",
+        "content": "Okay. So the first for loop here is state of MN because it's something that depends on parameter MN."
+    },
+    {
+        "timestamp": "01:13:54",
+        "content": "And the next for loop here is theta and squared."
+    },
+    {
+        "timestamp": "01:13:58",
+        "content": "Right. And this, this because the parameter here is end times."
+    },
+    {
+        "timestamp": "01:14:04",
+        "content": "The stuff inside the for loops are constant, so they don't contribute anything to our theta."
+    },
+    {
+        "timestamp": "01:14:08",
+        "content": "Right. There's no more things to multiply the complexity there."
+    },
+    {
+        "timestamp": "01:14:12",
+        "content": "So the if this is my entire function here, the theta for this function is theta then plus theta of n squared."
+    },
+    {
+        "timestamp": "01:14:19",
+        "content": "Right. And the law of addition just says theta event squared is just theta of sticking those"
+    },
+    {
+        "timestamp": "01:14:25",
+        "content": "two inside as as part of my function and plus and squared and we know how to do that."
+    },
+    {
+        "timestamp": "01:14:30",
+        "content": "That just simplifies to the dominant term which is n squared."
+    },
+    {
+        "timestamp": "01:14:36",
+        "content": "Okay. So that's the law of addiction."
+    },
+    {
+        "timestamp": "01:14:39",
+        "content": "So that's when we have loops or things like that in the series. What about when we have loops that are nested?"
+    },
+    {
+        "timestamp": "01:14:45",
+        "content": "Right? Then we use the law of multiplication."
+    },
+    {
+        "timestamp": "01:14:50",
+        "content": "Because for each one of these things, we're going to have to do this that many times, right?"
+    },
+    {
+        "timestamp": "01:14:56",
+        "content": "So in this particular case, we need to be careful. The outer for loop is going to be theta even."
+    },
+    {
+        "timestamp": "01:15:01",
+        "content": "And the inner for loop. Is also theta even."
+    },
+    {
+        "timestamp": "01:15:07",
+        "content": "Even though I'm dividing by two. Right. 0.5 times n is still theta."
+    },
+    {
+        "timestamp": "01:15:13",
+        "content": "Right. That multiplicative constant in front of that n is 0.5."
+    },
+    {
+        "timestamp": "01:15:17",
+        "content": "Which is just, you know, it's just it still leads me to be theta of it."
+    },
+    {
+        "timestamp": "01:15:23",
+        "content": "The print is constant, so there's nothing else to multiply there."
+    },
+    {
+        "timestamp": "01:15:27",
+        "content": "So the law of multiplication just says that often times theta event is theta of and squared inside there."
+    },
+    {
+        "timestamp": "01:15:38",
+        "content": "Okay. So let's look at this program. What is the theta for this?"
+    },
+    {
+        "timestamp": "01:15:45",
+        "content": "Well, we can do it sort of in very grave detail. We've got X as our parameter, so we only count loops and things like that that are a function of X."
+    },
+    {
+        "timestamp": "01:15:56",
+        "content": "If I had a loop that was a function of I don't know, and or something that doesn't count because it's not a function of my input."
+    },
+    {
+        "timestamp": "01:16:02",
+        "content": "So only look at things that are a function of x. I've got one outer for loop that goes through X times."
+    },
+    {
+        "timestamp": "01:16:10",
+        "content": "So that's state of x. I've got an inner for loop that starts from AI and goes to X."
+    },
+    {
+        "timestamp": "01:16:21",
+        "content": "That's a little bit tricky, but in the end, overall, it's going to be fate of X because it's going to be the first time it's going to go through X times."
+    },
+    {
+        "timestamp": "01:16:28",
+        "content": "The next time it's going to go x minus one, then x minus two, then x minus three."
+    },
+    {
+        "timestamp": "01:16:32",
+        "content": "So we're effectively just kind of adding over all of these runs, X plus oh, sorry."
+    },
+    {
+        "timestamp": "01:16:37",
+        "content": "One plus two plus three plus four plus five all the way up to X. And that's just some function of X, right?"
+    },
+    {
+        "timestamp": "01:16:43",
+        "content": "It's definitely not going to be constant. So the inner loop is also theta of x."
+    },
+    {
+        "timestamp": "01:16:50",
+        "content": "Everything else is state of one. There's nothing else that depends on."
+    },
+    {
+        "timestamp": "01:17:01",
+        "content": "So this whole function is going to be theta of one for this assignment here, theta of x times theta x for this nested loop here and theta of one for this return down here."
+    },
+    {
+        "timestamp": "01:17:09",
+        "content": "So overall, it's just going to be theta of. Right."
+    },
+    {
+        "timestamp": "01:17:12",
+        "content": "So that's. And so overall, it's just going to be theta of X squared just by the laws of multiplication and addition."
+    },
+    {
+        "timestamp": "01:17:22",
+        "content": "All right. Think about this and then tell me what you think it is."
+    },
+    {
+        "timestamp": "01:17:31",
+        "content": "What do you guys think it is? Yeah."
+    },
+    {
+        "timestamp": "01:17:36",
+        "content": "Fate of. Length of. Absolutely right. So this is constant."
+    },
+    {
+        "timestamp": "01:17:40",
+        "content": "This stuff inside the loop is constant. The return is constant. The only thing that depends on L is the length of the last right."
+    },
+    {
+        "timestamp": "01:17:46",
+        "content": "This loop. So the answer is theta length. Perfect. How about this one?"
+    },
+    {
+        "timestamp": "01:17:55",
+        "content": "So here we're assuming the link. All the inputs are the same length. Yeah."
+    },
+    {
+        "timestamp": "01:18:02",
+        "content": "Fate of length of pick your favorite one side of length. L was reasonable."
+    },
+    {
+        "timestamp": "01:18:06",
+        "content": "You could also say theta length l one or theta fell two because these are two loops that are in series, right?"
+    },
+    {
+        "timestamp": "01:18:12",
+        "content": "So this one just loops through the length of L. But inside we're not doing anything that costs more than just constant time."
+    },
+    {
+        "timestamp": "01:18:19",
+        "content": "Right here, we're just comparing two numbers like three and two. We're just assigning something to true."
+    },
+    {
+        "timestamp": "01:18:24",
+        "content": "So nothing else really depends on the, the length of the list."
+    },
+    {
+        "timestamp": "01:18:28",
+        "content": "So this is theta of length. So this is plus theta length."
+    },
+    {
+        "timestamp": "01:18:31",
+        "content": "So that's just theta like. All right."
+    },
+    {
+        "timestamp": "01:18:36",
+        "content": "So we saw a bunch of different algorithms. Right."
+    },
+    {
+        "timestamp": "01:18:39",
+        "content": "Sorry. We didn't see a bunch. We saw a bunch of different programs, but we could kind of classify them all into one of these categories."
+    },
+    {
+        "timestamp": "01:18:48",
+        "content": "Right. And this is all basically all the different algorithms that you could ever write in general."
+    },
+    {
+        "timestamp": "01:18:56",
+        "content": "Right. So something that's constant theta one, something that's logarithmic is theta log in, something that's linear."
+    },
+    {
+        "timestamp": "01:19:02",
+        "content": "We saw many of these is theta, then something that's log linear."
+    },
+    {
+        "timestamp": "01:19:06",
+        "content": "We haven't seen any yet, but that's theta and log in theta."
+    },
+    {
+        "timestamp": "01:19:10",
+        "content": "And to sum constant like and squared and cubed is polynomial and theta of some constant to the end like two to the n, three to the n is exponential."
+    },
+    {
+        "timestamp": "01:19:19",
+        "content": "And when we're writing our programs, you can do a quick analysis of the of the program that you just wrote."
+    },
+    {
+        "timestamp": "01:19:25",
+        "content": "Look at the loops, look at to see how efficient you wrote it. And you can basically classify your program into one of these categories."
+    },
+    {
+        "timestamp": "01:19:32",
+        "content": "Right. If you had nested loops that both depend on the input, you probably wrote a polynomial type algorithm."
+    },
+    {
+        "timestamp": "01:19:38",
+        "content": "If you just had one loop that depended on the input, you probably wrote a linear time algorithm."
+    },
+    {
+        "timestamp": "01:19:43",
+        "content": "Right. And when we write these algorithms at a first pass, we want to be somewhere up here."
+    },
+    {
+        "timestamp": "01:19:48",
+        "content": "You don't want to do anything that's x polynomial or definitely not exponential because things get slow really quickly with those numbers."
+    },
+    {
+        "timestamp": "01:19:58",
+        "content": "Right. And so we never, ever want to be in that situation. Sometimes it's unavoidable."
+    },
+    {
+        "timestamp": "01:20:03",
+        "content": "Right. So that's all I've got."
+    },
+    {
+        "timestamp": "01:20:05",
+        "content": "Next lecture, we will be going through a bunch of those different complexity classes and looking at different programs that land in those classes."
+    },
+    {
+        "timestamp": "01:20:13",
+        "content": "Right. Especially the the logarithmic and the log letters. All right."
+    }
+]

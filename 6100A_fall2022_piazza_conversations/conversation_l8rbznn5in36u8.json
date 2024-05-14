@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>The problem in the pset says to remove all the non-punctuation characters and generate a list from the string. Should we allow for letters and numbers to be put in that string, or just letters?\u00a0</p>",
+        "type": "question",
+        "created": "2022-10-02T12:40:30.833Z",
+        "subject": "Problem 1 PSET - Letters and Numbers?",
+        "_id": "l8rbznn5in36u8"
+    },
+    {
+        "content": "<md>```\nassume the string is made of lowercase characters\n```\n\nThe load_file we have given does the removing of punctuation, etc. \n\nYou would just need to break up the string(which can contain numbers in the form of the type string) by spaces. An example could be \"this is a string but contains a number 5\"</md>",
+        "type": "i_answer",
+        "created": "2022-10-02T16:59:29.189Z",
+        "_id": "l8rbznn5in36u8"
+    }
+]

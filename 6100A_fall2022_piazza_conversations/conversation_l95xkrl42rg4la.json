@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi,</p>\n<p>In the dataframe_structs.py: we have the __init__ which defines year,month and day attribute for a Date instance. Why do we still need the &#34;field accessors&#34; namely the get_year/get_month/get_day functions to access these attributes? Wouldn&#39;t date_x.year return the same attribute?\u00a0</p>\n<p></p>\n<p>Thanks!</p>",
+        "type": "question",
+        "created": "2022-10-12T17:53:34.120Z",
+        "subject": "PSET 4: Question on class/instance attributes",
+        "_id": "l95xkrl42rg4la"
+    },
+    {
+        "content": "<p>The reason why we don&#39;t do this may seem a bit strange in Python, but it is a practice in programming languages that incorporate Object-Oriented programming because it allows us to establish a basis for what data we can be allowed to access and from where.</p>\n<p></p>\n<p>For the same reason that Strings are immutable datatypes and aren&#39;t meant to be changed, we can define a Date object to display &#34;immutable&#34; behavior by guiding the programmer using those objects to instantiate new Date objects for a Date of interest rather than changing values ever.</p>\n<p></p>\n<p>So for this reason using the dot accessor\u00a0<strong>(date_x.year)</strong> is typically avoided unless it&#39;s an internal class function accessing its own parameters. Otherwise defining a\u00a0<strong>.get_&lt;parameter&gt;()</strong> function allows other functions / programs to access a parameter without the ability to change it.</p>\n<p></p>\n<p>This way we kind of implicitly define which parameters you&#39;re allowed to edit after instantiating a class. For example in the Date class, we have\u00a0<strong>.get_year()</strong> but not\u00a0<strong>.set_year()\u00a0</strong>defined because it&#39;s our intention to use Date objects as functionally immutable types that we don&#39;t want to change ever after instantiating.</p>\n<p></p>\n<p>Does this make sense?</p>",
+        "type": "i_answer",
+        "created": "2022-10-12T18:16:03.769Z",
+        "_id": "l95xkrl42rg4la"
+    }
+]

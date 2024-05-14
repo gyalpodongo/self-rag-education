@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Since there&#39;s no documentation for the library we&#39;re using, I don&#39;t really know how to iterate over csv files using it. Can I use pandas to do the code instead? Or will that mess up the autograder?</p>",
+        "type": "question",
+        "created": "2022-10-10T19:41:09.280Z",
+        "subject": "Can I use pandas for PSET 4?",
+        "_id": "l936jf34yyg5lw"
+    },
+    {
+        "content": "<p>You may not use pandas for this pset. See @209.</p>\n<p></p>",
+        "type": "i_answer",
+        "created": "2022-10-12T00:40:54.349Z",
+        "_id": "l936jf34yyg5lw"
+    }
+]

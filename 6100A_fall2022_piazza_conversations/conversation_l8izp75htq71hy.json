@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hello,\u00a0</p>\n<p></p>\n<p>I recently checked my grades for Pset 1 and noticed that the auto-grader gave my part C a 0%. I was initially confused because my code produced the same answers the auto-grader expected so I went to office hours to try and understand what happened. I think the problem lies in the fact that I named the variable supposed to be named &#34;r&#34; as &#34;guess&#34; and &#34;steps&#34; as &#34;attempts.&#34; When it checked for the correct &#34;r&#34; and &#34;steps&#34;, it did not find it because my variables were under a different name. I completely didn&#39;t realize the variable names mattered, and had just renamed them to make it easier to track and understand when reading through my code. I will definitely make sure to name variables correctly in the future, but for now I was wondering if you would maybe consider looking back at my code and giving some or maybe all of the points back (provided it is correct, which I believe it is). Again, I will make sure to do it correctly in the future so I apologize for any trouble. Thank you so much!</p>\n<p></p>\n<p>Landon Dolvin</p>",
+        "type": "question",
+        "created": "2022-09-26T16:34:18.101Z",
+        "subject": "Pset 1 Grading Issue",
+        "_id": "l8izp75htq71hy"
+    },
+    {
+        "content": "<p>If you received a 0 on the pset, it will be manually graded by a TA. In the future, remember to read the pset instructions carefully!</p>",
+        "type": "i_answer",
+        "created": "2022-09-27T03:51:44.617Z",
+        "_id": "l8izp75htq71hy"
+    }
+]

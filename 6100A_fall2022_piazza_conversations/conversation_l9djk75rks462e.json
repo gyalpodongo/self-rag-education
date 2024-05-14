@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Can someone explain why:</p>\n<p></p>\n<p>&#34;If two functions <code>a()</code>\u00a0and\u00a0<code>b()</code> both call each other within their bodies, then calling either function is guaranteed to never terminate.&#34;</p>\n<p></p>\n<p>Is a false statement?</p>",
+        "type": "question",
+        "created": "2022-10-18T01:43:22.431Z",
+        "subject": "Concept question - Microquiz 2",
+        "_id": "l9djk75rks462e"
+    },
+    {
+        "content": "<md>Consider:\n\n```python\ndef a(x):\n    if x == 0:\n        return 0\n    return b(x - 1)\n\ndef b(x):\n    if x == 0:\n        return 0\n    return a(x - 1)\n```\n\nEssentially, if there is a case where a call to `a` doesn't call `b` (or vice versa), then it is possible for the functions to terminate.</md>",
+        "type": "i_answer",
+        "created": "2022-10-18T01:46:22.998Z",
+        "_id": "l9djk75rks462e"
+    }
+]

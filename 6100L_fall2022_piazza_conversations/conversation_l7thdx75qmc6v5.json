@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hello, I submitted the code for pset 0 but when I try to view the file by downloading my most recent submission from the website to make sure it submitted correctly I receive an error. I was wondering if that was just me, or if the same error is visible on the instructor end? Let me know, thank you.</p>",
+        "type": "question",
+        "created": "2022-09-08T20:07:24.497Z",
+        "subject": "pset0",
+        "_id": "l7thdx75qmc6v5"
+    },
+    {
+        "content": "<p>Not sure why there is an error, but I have a submission for you so you&#39;re all set.</p>",
+        "type": "i_answer",
+        "created": "2022-09-08T21:58:04.731Z",
+        "_id": "l7thdx75qmc6v5"
+    }
+]

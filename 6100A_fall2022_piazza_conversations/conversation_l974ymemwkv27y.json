@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p>Good Morning, I have just been to office hours after not passing the tests frame maker and shift maker. However, no TA was able to help me after being passed on a few times. I also waited in line for a long time in the morning and afternoon yesterday and no one could find an issue with my code. I am hoping that someone can maybe look through and help me figure out why I am failing these test cases.\u00a0</p>\n<p></p>\n<p><a href=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl974jrx3sk84cq%2F4108819152316e4e7a44d6e6ddc6e97dc7a9182030b8f3fd930b7f5d42a6f80c%2Fps4.py\" target=\"_blank\" rel=\"noopener noreferrer\">ps4.py</a></p>\n<p></p>\n<p>This is the file for my code</p>",
+        "type": "question",
+        "created": "2022-10-13T14:08:04.078Z",
+        "subject": "Code not working after attending several office hours",
+        "_id": "l974ymemwkv27y"
+    },
+    {
+        "content": "<p>One thing I noticed is in you is_before function. You should only be returning a value if it is True since there is the case where the year is less than the end year but the month and day are equal. This case should return True, but it returns false. Fixing this will resolve the last test case. The other error is related to your is_after function because consider when you want to be checking the month or day. You only want to continue checking if the thing you checked before was equal, if the year was greater you want to return true and if the year was less you know it will be false no matter what the month is. You only need to check the month if the 2 year are equal. Hope this helps :)</p>",
+        "type": "i_answer",
+        "created": "2022-10-13T14:17:17.700Z",
+        "_id": "l974ymemwkv27y"
+    },
+    {
+        "content": "<p>Thank you! I have just rectified this\u00a0</p>",
+        "type": "followup",
+        "created": "2022-10-13T16:33:11.725Z",
+        "_id": "l974ymemwkv27y"
+    },
+    {
+        "content": "<p>I have just made the adjustments and all my test cases are now passing. Thank you for all the help!\u00a0</p>",
+        "type": "followup_response",
+        "created": "2022-10-13T19:06:13.428Z",
+        "_id": "l974ymemwkv27y"
+    }
+]

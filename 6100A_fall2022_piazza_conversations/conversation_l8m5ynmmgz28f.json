@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<div>My kerb is brianle@mit.edu.</div><div><br /></div>For question 1 on microquiz 2, when I copied my code from my IDE to the answer box, I forgot to copy the \u201cdef combo(n):\u201d line, resulting in a 0 for that question. With that line, the rest of my code should pass the test cases.\u00a0<div><br /></div><div>Is it possible to get partial credit for that question? If not, that is okay as well.</div><div><br /></div><div>Thank you very much.</div><p></p>",
+        "type": "question",
+        "created": "2022-09-28T21:52:55.582Z",
+        "subject": "Microquiz 2",
+        "_id": "l8m5ynmmgz28f"
+    },
+    {
+        "content": "<p>We will take a look and manually grade.\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-09-29T18:30:56.994Z",
+        "_id": "l8m5ynmmgz28f"
+    }
+]

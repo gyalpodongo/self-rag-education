@@ -1,0 +1,33 @@
+[
+    {
+        "content": "Hi, I got a 50% on pset 4 with the auto grader, and I was wondering if I could request a manual grade. I tried really hard on the pset and I was passing all the test cases, so I wasn\u2019t expecting my grade to be so low. Let me know if there\u2019s anything I can do to understand why that was my grade.\u00a0",
+        "type": "question",
+        "created": "2022-10-18T22:48:40.793Z",
+        "subject": "Pset 4",
+        "_id": "l9esre552pz76a"
+    },
+    {
+        "content": "<p><strong attention=\"j7awud7zf0p2uu\">@Kuan Wei Huang</strong> :(</p>",
+        "type": "followup",
+        "created": "2022-10-19T15:20:22.074Z",
+        "_id": "l9esre552pz76a"
+    },
+    {
+        "content": "<p>Sure will take a look. What&#39;s your kerb?</p>",
+        "type": "i_answer",
+        "created": "2022-10-21T12:25:54.674Z",
+        "_id": "l9esre552pz76a"
+    },
+    {
+        "content": "ebazakas",
+        "type": "followup",
+        "created": "2022-10-24T19:50:25.515Z",
+        "_id": "l9esre552pz76a"
+    },
+    {
+        "content": "<p>You&#39;re on the regrade list and should have seen your score updated. Thanks.</p>",
+        "type": "followup_response",
+        "created": "2022-10-24T20:15:27.057Z",
+        "_id": "l9esre552pz76a"
+    }
+]

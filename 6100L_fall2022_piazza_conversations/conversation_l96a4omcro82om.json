@@ -1,0 +1,45 @@
+[
+    {
+        "content": "<p>The word.txt file cannot be found when I try to do PSET 2. It is located in the folder with the PSET and is there when I open it. How do I fix this problem.\u00a0</p>",
+        "type": "question",
+        "created": "2022-10-12T23:44:58.788Z",
+        "subject": "word.txt file",
+        "_id": "l96a4omcro82om"
+    },
+    {
+        "content": "<p>On Spyder, make sure you&#39;re in the right directory when it runs your file. In the top right, you should see the current working directory that looks like this. Make sure it corresponds to the folder your PSet is in.\u00a0 <img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fktdgaeg6rvm6la%2Fd1db3467c195b97b3675363283b7f7f14f8b3181194963757e24dfb645ec3117%2Fimage.png\" alt=\"image.png\" /></p>\n<p></p>\n<p>When you run a file in Spyder, it should show something like:\u00a0</p>\n<p><code>runfile(&#39;/Users/suufi/Documents/6.0001-2/6.100L/1_ps2/xxxx.py&#39;, wdir=&#39;/Users/suufi/Documents/6.0001-2/6.100L/1_ps2&#39;)</code> in the console. Let me know if you need any more help.</p>",
+        "type": "i_answer",
+        "created": "2022-10-14T21:07:20.076Z",
+        "_id": "l96a4omcro82om"
+    },
+    {
+        "content": "<p>\u00a0I am in the correct directory, and it still is giving me the error that there is no such file.</p>",
+        "type": "followup",
+        "created": "2022-10-19T00:03:05.683Z",
+        "_id": "l96a4omcro82om"
+    },
+    {
+        "content": "Could you provide a screenshot of the folder layout and your spyder screen?",
+        "type": "followup_response",
+        "created": "2022-10-19T00:14:44.782Z",
+        "_id": "l96a4omcro82om"
+    },
+    {
+        "content": "<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fkek617aype656l%2Fa50b5fcb60e17700464f0662966ab9aebe750805f32bbab532769f5cab3b380a%2FScreen_Shot_2022-10-18_at_8.52.26_PM.png\" alt=\"Screen_Shot_2022-10-18_at_8.52.26_PM.pngNaN\" /></p>",
+        "type": "followup_response",
+        "created": "2022-10-19T00:53:00.918Z",
+        "_id": "l96a4omcro82om"
+    },
+    {
+        "content": "It seems like you\u2019re working with two different folders here. If I understand correctly, your code is actually in a folder on your desktop called 6.100L/1_ps2. The file you\u2019re attempting to run is in your Downloads folder and under 1_ps2. Try deleting the folder you\u2019re not using and just sticking with one of them. You can delete both folders and save your current current code somewhere and put back after downloading a new copy from the website.",
+        "type": "followup_response",
+        "created": "2022-10-19T00:57:05.988Z",
+        "_id": "l96a4omcro82om"
+    },
+    {
+        "content": "<p>I fixed it so that it all matches and says the desktop folder, but it still is not working</p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fkek617aype656l%2Fa5457782d53e38085bca5b371727da1930785ccac549983ad159a69bb4b3d84a%2FScreen_Shot_2022-10-18_at_9.00.45_PM.png\" alt=\"Screen_Shot_2022-10-18_at_9.00.45_PM.pngNaN\" /></p>",
+        "type": "followup_response",
+        "created": "2022-10-19T01:00:52.286Z",
+        "_id": "l96a4omcro82om"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi!</p>\n<p></p>\n<p>For a few weeks spyder has been making the menu text so small to the point of being unreadable. Tonight I updated spyder in an attempt to fix this but it did not help. I would love some advice. I have attached a screenshot. <a href=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fktc3ds0lgt85gu%2F422f6c5ccd62d8df8e0501a31395f7e3b236f952fa369efa0d29fdf8a106770b%2FspyderTextIssue.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">spyderTextIssue.jpg</a></p>",
+        "type": "question",
+        "created": "2022-10-19T02:20:35.838Z",
+        "subject": "Spyder Text Scaling Issue",
+        "_id": "l9f0bx4uv9v12l"
+    },
+    {
+        "content": "<p>I found a SuperUser post about this issue:</p>\n<p></p>\n<p><a href=\"https://superuser.com/questions/1473131/control-font-size-of-spyder-python-ide-on-everything-except-the-editor-code\" target=\"_blank\" rel=\"noopener noreferrer\">https://superuser.com/questions/1473131/control-font-size-of-spyder-python-ide-on-everything-except-the-editor-code</a></p>\n<p></p>\n<p>I think the solution is to set the &#34;custom DPI scaling&#34; setting in the Preferences. You may need to adjust the value, depending on your desired font size.</p>\n<p></p>\n<p>I am attaching a screenshot.</p>\n<p></p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fkxy88cn4vfp36w%2Fe4f95b8c29985dd4c218051533f59b202951088c4360d84cc16ae940b9e29e4f%2FScreen_Shot_2022-10-19_at_9.21.01_AM.png\" alt=\"Screen_Shot_2022-10-19_at_9.21.01_AM.pngNaN\" /></p>",
+        "type": "s_answer",
+        "created": "2022-10-19T13:29:50.809Z",
+        "_id": "l9f0bx4uv9v12l"
+    }
+]

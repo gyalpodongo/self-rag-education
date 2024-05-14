@@ -1,0 +1,21 @@
+[
+    {
+        "content": "Microquiz 2 taught us that if we were not able to delete key-value pairs in a Python dictionary, the dictionary would still be considered mutable. Why is this? What exactly does it mean to be mutable?",
+        "type": "question",
+        "created": "2022-10-02T21:36:59.392Z",
+        "subject": "What exactly does it mean to be mutable?",
+        "_id": "l8rv5khsyl014j"
+    },
+    {
+        "content": "<p>Mutable means that I can change the values of a datatype without needing to create an entirely new datatype. i.e.:<br /><br />my_string = &#34;my string&#34;</p>\n<p>my_string[5] = &#34;A&#34;\u00a0 # DOES NOT work</p>\n<p></p>\n<p>my_list = [1, 2, 3, 4, 5]</p>\n<p>my_list[2] = 4\u00a0 # Works!</p>\n<p></p>\n<p>This is because strings are immutable and lists are mutable</p>",
+        "type": "i_answer",
+        "created": "2022-10-03T13:43:40.452Z",
+        "_id": "l8rv5khsyl014j"
+    },
+    {
+        "content": "<p>As for dictionaries, you could change the value assigned to each key, which still makes the dictionary mutable, even without the ability to add/delete key-value pairs.\u00a0</p>",
+        "type": "s_answer",
+        "created": "2022-10-03T16:48:04.207Z",
+        "_id": "l8rv5khsyl014j"
+    }
+]

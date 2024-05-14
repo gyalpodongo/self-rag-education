@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>I contacted my pset buddy two days ago and they still haven&#39;t responded. I went ahead and finished it, but I didn&#39;t tick the box at the top. Is that fine? The hw stated I needed to get in contact with course staff.\u00a0</p>",
+        "type": "question",
+        "created": "2022-09-20T03:57:42.925Z",
+        "subject": "regarding pset buddy",
+        "_id": "l89o140daaa5l3"
+    },
+    {
+        "content": "<p>Yes, definitely get started on your own if the buddy does not respond. The only reason we ask you to contact the staff is in case someone else is looking for a buddy -- we could make a new pair.\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-09-20T13:40:25.647Z",
+        "_id": "l89o140daaa5l3"
+    }
+]

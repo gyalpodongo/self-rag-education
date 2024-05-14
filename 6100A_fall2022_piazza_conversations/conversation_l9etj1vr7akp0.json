@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>say you have a function as follows:</p>\n<p></p>\n<p>def func(word):</p>\n<p>\u00a0 \u00a0 for letter in word:</p>\n<p>\u00a0 \u00a0 \u00a0 \u00a0print(letter)</p>\n<p></p>\n<p>Would the complexity of this function be denoted as Big Theta(n) or Big Theta (len(word))?</p>",
+        "type": "question",
+        "created": "2022-10-18T23:10:11.271Z",
+        "subject": "Proper way to denote big theta",
+        "_id": "l9etj1vr7akp0"
+    },
+    {
+        "content": "<p>You always denote the complexity of a function in terms of the input tp the function. In this case, you state it in terms of len(word)!</p>",
+        "type": "i_answer",
+        "created": "2022-10-19T00:56:47.706Z",
+        "_id": "l9etj1vr7akp0"
+    }
+]

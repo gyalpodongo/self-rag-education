@@ -1,0 +1,21 @@
+[
+    {
+        "content": "<p>It seems that the Pset 5 section 2.4 says to use 2 LSBs while the template document section &#34;reveal_color_image&#34; says to use 3 LSBs. I am using 2, is that okay? Thanks!</p>",
+        "type": "question",
+        "created": "2022-11-28T19:53:54.434Z",
+        "subject": "Number of LSBs for RGB in PSET 5",
+        "_id": "lb17kk5e5j533u"
+    },
+    {
+        "content": "<p>It has to be 3 LSBs otherwise it will not pass the tester</p>",
+        "type": "followup",
+        "created": "2022-11-28T19:55:56.757Z",
+        "_id": "lb17kk5e5j533u"
+    },
+    {
+        "content": "<p>3 is the right number, it is a typo in the pset file.</p>",
+        "type": "i_answer",
+        "created": "2022-11-29T15:10:00.816Z",
+        "_id": "lb17kk5e5j533u"
+    }
+]

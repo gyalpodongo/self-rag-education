@@ -1,0 +1,33 @@
+[
+    {
+        "content": "<p>Good evening,</p>\n<p></p>\n<p>Today during lecture my computer&#39;s display turned off. I am using a Macbook Pro that was borrowed from IS&amp;T. I have contacted them about a replacement and I was told to &#34;sit tight&#34; until a new one is shipped (hopefully before the final). I&#39;ve tried many keyboard shortcuts to boot up the laptop but to no avail. I have pset 4 halfway done, but now I have no access to it, and I do not have access to another personal computer at this time. What can I do? Thank you for any flexibility that can be provided.</p>",
+        "type": "question",
+        "created": "2022-10-13T01:45:14.014Z",
+        "subject": "Loaner Laptop Bricked - Cannot access files",
+        "_id": "l96efbxault219"
+    },
+    {
+        "content": "<p><strong attention=\"hl3tzzvxbv86bm\">@Ana Bell</strong> is there anything we can do about this?</p>",
+        "type": "followup",
+        "created": "2022-10-13T04:52:50.048Z",
+        "_id": "l96efbxault219"
+    },
+    {
+        "content": "<p>If you get S3 support we can give you an extension of 1 day, meaning that you can submit the pset by Sunday night (and get the checkoff by Monday night). Unfortunately you&#39;ll have to recreate the code.\u00a0</p>\n<p></p>\n<p>1) Do you have a friend who can let you borrow a laptop?\u00a0</p>\n<p>2) There are public Athena machines you can use, which have Python installed on them. They don&#39;t have Spyder, but do have an IDE called IDLE. See this map for these computing clusters: <a href=\"https://ist.mit.edu/sites/default/files/getting_started/ComputingMap.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">https://ist.mit.edu/sites/default/files/getting_started/ComputingMap.pdf</a>\u00a0</p>\n<p></p>",
+        "type": "i_answer",
+        "created": "2022-10-13T13:20:26.905Z",
+        "_id": "l96efbxault219"
+    },
+    {
+        "content": "<p>This is probably a long shot but if you hold down the power button for 20&#43; seconds it may restart/reboot the laptop.</p>",
+        "type": "followup",
+        "created": "2022-10-13T15:02:50.703Z",
+        "_id": "l96efbxault219"
+    },
+    {
+        "content": "<p>Yesterday, I was able to get to the Apple Logo where the loading bar would start, but then the device flickered a tiled, static version of the screen for a brief moment and turned off again. Now as of today, the device won&#39;t even turn on at all. I appreciate the help though :)</p>",
+        "type": "followup_response",
+        "created": "2022-10-13T15:14:17.285Z",
+        "_id": "l96efbxault219"
+    }
+]

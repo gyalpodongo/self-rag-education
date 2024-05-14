@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>I originally wrote my equal dates, before and after date funtions with inequalities using date1.year and date2.year to find the year attributes of the date objects.\u00a0 My functions were able to pass the tests but when I call these functions in frame maker and shift maker, there is an error.\u00a0 It says &#39;list&#39; object does not have attribute &#39;year&#39;</p>\n<p>I tried using the getter function date1.get_year()\u00a0</p>\n<p>But I get the same error: &#39;list&#39; object has no attribute &#39;get_year()&#39;</p>\n<p>why does it think the date object is a list?</p>\n<p>is my syntax wrong?</p>",
+        "type": "question",
+        "created": "2022-10-13T15:12:16.545Z",
+        "subject": "confused about getter functions",
+        "_id": "l97796zlwgy5y5"
+    },
+    {
+        "content": "Since you\u2019re getting the error further down, I am inclined to believe that the error is also further down (and not in the before, after and equal dates functions). At some point in your code, where you\u2019re supposed to be passing in a date object, you\u2019re passing in a list (most probable location for this is frame_data in my opinion)<div><br /></div><div>PS you should ALWAYS be using getter methods to access attributes. Typing in code like \u2018date1.year\u2019 is generally considered bad coding practice and will cause you to loose points on the checkoff</div>",
+        "type": "i_answer",
+        "created": "2022-10-13T15:16:52.323Z",
+        "_id": "l97796zlwgy5y5"
+    }
+]

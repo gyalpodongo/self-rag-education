@@ -1,0 +1,9 @@
+[
+    {
+        "content": "Hi, I pass all the tests, but I still don&#39;t understand well some points for the frame_maker and shift_maker functions:\n1. when we call them to construct a Dataframe object in the make_dataframe function, who will pass the value to 2 parameters of the function defined in frame_maker and shift_maker?\n2. when we return those 2 functions defined inside frame_maker and shift_maker, when will them be called?",
+        "type": "question",
+        "created": "2022-10-13T01:56:26.476Z",
+        "subject": "pset 4_functions return function",
+        "_id": "l96etqssd1j2ii"
+    }
+]

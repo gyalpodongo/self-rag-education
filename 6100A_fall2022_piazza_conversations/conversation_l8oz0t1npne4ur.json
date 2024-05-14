@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi! My PSet 1 score is 0 on the scores page however my code was able to pass all of the test cases and the TA who did my checkoff said my code looked ok. Is there a way to fix it? Thank you so much!</p>",
+        "type": "question",
+        "created": "2022-09-30T21:01:57.131Z",
+        "subject": "HW1 score = 0% but it passed all test cases:",
+        "_id": "l8oz0t1npne4ur"
+    },
+    {
+        "content": "<md>If you received a zero on any part of the pset, we take a look at it via manual grading to see if something simple messed up the test cases on our end. Those grades will be updated soon on the scores page after manual grading.</md>",
+        "type": "i_answer",
+        "created": "2022-10-02T16:08:31.634Z",
+        "_id": "l8oz0t1npne4ur"
+    }
+]

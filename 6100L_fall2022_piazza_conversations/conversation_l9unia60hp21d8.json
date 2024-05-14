@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p>Hi,</p>\n<p>I&#39;ve reached out to the teaching assistants and after some work, they recommended that I reach out here:</p>\n<p></p>\n<p>The test file is not reading my hangman function, and despite my game working as per the instructions, the autograder scored my pset @ 80%</p>\n<p></p>\n<p>would you kindly advise on what could be the issue and rectify the grade if my submission is correct?\u00a0</p>\n<p><a href=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fkqs5s5qgf6z69u%2Fc2832f5debedee150e16f2c6cf340010b6ef21abb7c7626d7cfafc0cb30b7acc%2Fhangman.py\" target=\"_blank\" rel=\"noopener noreferrer\">hangman.py [my submission]</a></p>",
+        "type": "question",
+        "created": "2022-10-30T01:05:56.472Z",
+        "subject": "test file not reading my hangman function",
+        "_id": "l9unia60hp21d8"
+    },
+    {
+        "content": "<p>Hi, I ran your code locally on my laptop, and it ran, but was failing 3 tests (all 3 of the play game tests). I&#39;m not entirely sure why you weren&#39;t able to run the test file. Can you send in the error message you got?</p>",
+        "type": "i_answer",
+        "created": "2022-10-31T14:18:15.471Z",
+        "_id": "l9unia60hp21d8"
+    },
+    {
+        "content": "<p>Hi,</p>\n<p>That&#39;s the issue we couldn&#39;t get around during the office hours--despite the game running as per the instructions on my Spyder interface, the test fails to read it</p>",
+        "type": "followup",
+        "created": "2022-10-31T16:51:13.692Z",
+        "_id": "l9unia60hp21d8"
+    },
+    {
+        "content": "<p>Also current problems I have found in your code:</p>\n<p>- your don&#39;t print the word guesses when telling the player how many guesses they have left</p>\n<p>- you still display already guessed incorrect letters in the letters available</p>\n<p>- if the player loses, you always print out &#39;The word was else&#39;</p>\n<p>- you do not print dashes before the winning statement</p>\n<p>- The way you deal with revealing letters is incorrect... there is a statement that says &#39;Letter revealed: a&#39;, for instance if you are revealing the letter a, that your program does not print.</p>\n<p></p>\n<p>When I fixed all these issues locally, your code passed all tests. Let me know if it does the same for you</p>",
+        "type": "followup_response",
+        "created": "2022-11-02T13:22:03.706Z",
+        "_id": "l9unia60hp21d8"
+    }
+]

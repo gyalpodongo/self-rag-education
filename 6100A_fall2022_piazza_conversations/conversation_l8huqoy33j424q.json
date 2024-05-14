@@ -1,0 +1,21 @@
+[
+    {
+        "content": "<p>I have manually attempted the test_play_game cases of the tester and they work, yet when I try to run the test_ps2_student.py, I get a FAIL for all of them. I presume it is because when I call input(), the output skips a line in the console making it different from the predicted output in the tester file.</p>\n<p></p>\n<p>Is there anything I can do about this?</p>",
+        "type": "question",
+        "created": "2022-09-25T21:27:43.563Z",
+        "subject": "Problem with input() and test_ps2_student.py",
+        "_id": "l8huqoy33j424q"
+    },
+    {
+        "content": "<p>I am having the same problem!</p>",
+        "type": "followup",
+        "created": "2022-09-25T22:34:37.506Z",
+        "_id": "l8huqoy33j424q"
+    },
+    {
+        "content": "It\u2019s hard to say what the exact problem here is without looking at the code, or the output error message that it shows. I could take a look at the error message, but if not, I\u2019d recommend office hours",
+        "type": "i_answer",
+        "created": "2022-09-26T04:40:56.310Z",
+        "_id": "l8huqoy33j424q"
+    }
+]

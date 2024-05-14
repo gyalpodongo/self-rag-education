@@ -1,0 +1,15 @@
+[
+    {
+        "content": "I keep getting these test results even when the game runs perfectly fine with the guess that the test uses:\n\nProblem Set 2 Unit Test Results:\n[-0.35]: You do not play the game right for a two letter word and correct guesses\n[-0.35]: You do not play the game right for a two letter word and incorrect guesses\nPoints for these tests: 4.3/5\n\nDo we need to get all 5 points for our assignment to be considered complete or are the test cases just for a general idea of whether our code is working?\n\nresolved: had to print &#34;--------&#34; before the victory/loss message",
+        "type": "question",
+        "created": "2022-09-25T02:11:52.323Z",
+        "subject": "pset 2 test case",
+        "_id": "l8gpg96rhz253y"
+    },
+    {
+        "content": "Marking resolved",
+        "type": "i_answer",
+        "created": "2022-09-25T13:27:24.001Z",
+        "_id": "l8gpg96rhz253y"
+    }
+]

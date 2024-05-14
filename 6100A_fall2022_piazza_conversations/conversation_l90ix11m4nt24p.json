@@ -1,0 +1,21 @@
+[
+    {
+        "content": "<md># Difficulty understanding how to use read() to analyze a csv file.\n\nI am having some trouble on Pset 4 understanding which specific parts of the csv file get analyzed (is it by rows, columns, or individual elements) when calling the read() method. Do we need to use a for loop of some sort? Is this something we learned in class, will it be covered later, or will we have to learn in on our own? Also, how does Python interpret new \"boxes\" in the csv file (Are they commas, \"\\r\", \"\\n\", etc.?).</md>",
+        "type": "question",
+        "created": "2022-10-08T23:04:21.130Z",
+        "subject": "Difficulty understanding how to use read() to analyze a csv file.",
+        "_id": "l90ix11m4nt24p"
+    },
+    {
+        "content": "How to we analyze the csv file? I am very lost and do not know how to get past this step.",
+        "type": "followup",
+        "created": "2022-10-10T23:09:52.631Z",
+        "_id": "l90ix11m4nt24p"
+    },
+    {
+        "content": "<p>See the answers to @204 and @209. Basically CSV files can be thought of sorta like Excel files, where each\u00a0<strong>row</strong> is a line, separated by a &#39;\\n&#39; newline character, and each cell in that row is divided by a comma.</p>\n<p></p>\n<p>You can call\u00a0<strong>f.read</strong><strong>()</strong> to just read everything at once, or you can call\u00a0<strong>f.readline()</strong> to get the next row of a list, which will continue to return subsequent rows until you reach the end of the file.</p>\n<p></p>\n<p>You can also just loop through the lines with\u00a0<strong>for line in f</strong>, and simply parse from there.</p>",
+        "type": "i_answer",
+        "created": "2022-10-12T01:06:25.060Z",
+        "_id": "l90ix11m4nt24p"
+    }
+]

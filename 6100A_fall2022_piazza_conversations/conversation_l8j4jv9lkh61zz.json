@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p>I have finished the problem set and passed all tests:<img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl8dmr2a7ubp3w%2F7bea40abc1c6378f5ec860e7ea684dd4d8a1bad29dc75e1ce628af8e29635c50%2FScreen_Shot_2022-09-26_at_2.45.14_PM.png\" alt=\"Screen_Shot_2022-09-26_at_2.45.14_PM.pngNaN\" width=\"425\" height=\"210\" /></p>\n<p></p>\n<p>But I wasn&#39;t able to submit it to the course website since last Friday. It kept saying &#39;No file selected&#39;. But when I clicked on &#39;download most recent submission&#39; I was able to download my code. I didn&#39;t have this problem with PS1.</p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl8dmr2a7ubp3w%2F56b8251e5ff35097523116ecc337b0504704606db40c0610d465aa25bfbacb20%2FScreen_Shot_2022-09-26_at_2.41.04_PM.png\" alt=\"Screen_Shot_2022-09-26_at_2.41.04_PM.pngNaN\" width=\"433\" height=\"271\" /></p>\n<p></p>\n<p>\u00a0I tried all kinds of methods: \u00a0use different browsers (safari, chrome), refresh the page, log out and log in, reboot my laptop, download a brand new homework folder and paste my code to the new hangman.py...... Nothing works. I went to the TA this morning and showed Sophie(Sophie Reynolds) the process. She suggested me to post this on piazza. If we still couldn&#39;t find out what&#39;s wrong, may I email my problem set to one of the TAs or the instructor so I could meet the deadline?\u00a0</p>",
+        "type": "question",
+        "created": "2022-09-26T18:50:07.497Z",
+        "subject": "Not able to submit hangmam.py",
+        "_id": "l8j4jv9lkh61zz"
+    },
+    {
+        "content": "I believe your problem is that you changed the variable WORDLIST_FILENAME at the start of the code. Can you change it back to \u201cwords.txt\u201d?",
+        "type": "i_answer",
+        "created": "2022-09-27T11:27:53.614Z",
+        "_id": "l8j4jv9lkh61zz"
+    },
+    {
+        "content": "<p>I think it works! Thank you so much!</p>\n<p></p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl8dmr2a7ubp3w%2F9f6f721a17b1cecf680a6d99f8653a625ef5235949bb8f9c8b341c9d924c3454%2FScreen_Shot_2022-09-27_at_9.50.34_AM.png\" alt=\"Screen_Shot_2022-09-27_at_9.50.34_AM.pngNaN\" width=\"465\" height=\"291\" /></p>",
+        "type": "followup",
+        "created": "2022-09-27T13:53:08.612Z",
+        "_id": "l8j4jv9lkh61zz"
+    },
+    {
+        "content": "I believe I am having the same issue, with an unchanged file name. How should I proceed? I also spoke to 2 TAs previously.\u00a0",
+        "type": "followup",
+        "created": "2022-09-27T15:44:37.600Z",
+        "_id": "l8j4jv9lkh61zz"
+    }
+]

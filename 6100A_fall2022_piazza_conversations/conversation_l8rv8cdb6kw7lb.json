@@ -1,0 +1,15 @@
+[
+    {
+        "content": "I now know that after an exception is caught and handled, program execution does not resume on the line of code immediately following the line that caused the exception to be raised. Where does it resume?",
+        "type": "question",
+        "created": "2022-10-02T21:39:08.831Z",
+        "subject": "Exceptions Question",
+        "_id": "l8rv8cdb6kw7lb"
+    },
+    {
+        "content": "After the try-except block. Basically, your program tries to run a few lines of code. If it catches an exception, then it silently terminates that trial, and resumes running the program after this block.",
+        "type": "s_answer",
+        "created": "2022-10-02T21:40:42.831Z",
+        "_id": "l8rv8cdb6kw7lb"
+    }
+]

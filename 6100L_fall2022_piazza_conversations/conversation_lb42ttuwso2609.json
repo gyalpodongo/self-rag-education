@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Does anyone know how to install python libraries on VScode? my pset won&#39;t work because I don&#39;t have numpy and PIL installed</p>",
+        "type": "question",
+        "created": "2022-11-30T20:04:27.368Z",
+        "subject": "PSET 5 libraries not working",
+        "_id": "lb42ttuwso2609"
+    },
+    {
+        "content": "<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fkqcjswag73ino%2F34106d0a3c6c97bf5e7fb8d0146557c02a2dec5991724e9f6aa3f932a7739d26%2Fimage.png\" alt=\"image.png\" /></p>\n<p>These are the steps that worked for me with VScode. Once you do this, you should be able to use pip install in the terminal to install pil and numpy</p>",
+        "type": "s_answer",
+        "created": "2022-11-30T20:40:04.850Z",
+        "_id": "lb42ttuwso2609"
+    }
+]

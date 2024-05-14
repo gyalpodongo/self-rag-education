@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>I have copied the prompt into Spyder and wrote the code that works in it. However, after I moved the same code back to the Finger Exercise input box, the test always gave an error of &#34;SyntaxError: &#39;return&#39; outside function&#34; no matter how I modified the indentations. I am attaching the screenshots here, and I am wondering if that is the issue with my code or the test system.</p>\n<p></p>\n<p>Thank you!</p>\n<p></p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl8c3smjek8w4wi%2Fd0735506bf3b8b3bdf4b7764daab48a06a8732c2197433907fba1b3b01d33057%2FScreen_Shot_2022-09-21_at_5.01.53_PM.png\" alt=\"Screen_Shot_2022-09-21_at_5.01.53_PM.pngNaN\" width=\"403\" height=\"193\" /><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl8c3smjek8w4wi%2F3f0295169df5ed969b05028bf8b1354ba58638c4b40394a9ef64e4796b338de6%2FScreen_Shot_2022-09-21_at_5.02.01_PM.png\" alt=\"Screen_Shot_2022-09-21_at_5.02.01_PM.png\" width=\"405\" height=\"73\" /><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl8c3smjek8w4wi%2Fb77b44613442c061551ae9aefa27d3327de265390e9ef04d630c790668f9568f%2FScreen_Shot_2022-09-21_at_5.02.14_PM.png\" alt=\"Screen_Shot_2022-09-21_at_5.02.14_PM.png\" width=\"316\" height=\"140\" /><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl8c3smjek8w4wi%2Fb5fe794c171444b68abcd833968e89047968c093cc0824260314763e0a6a9841%2FScreen_Shot_2022-09-21_at_5.02.21_PM.png\" alt=\"Screen_Shot_2022-09-21_at_5.02.21_PM.pngNaN\" width=\"492\" height=\"174\" /></p>\n<p></p>",
+        "type": "question",
+        "created": "2022-09-21T21:06:06.001Z",
+        "subject": "Finger Exercises 5 - Test Result Question",
+        "_id": "l8c47h2pepc2f4"
+    },
+    {
+        "content": "<p>I can&#39;t tell from the screenshot, but make sure that you haven&#39;t mixed spaces and tabs. Sometimes that can happen when copying from one editor to another.</p>\n<p></p>\n<p>Edit: I noticed that you didn&#39;t copy in the whole function into the catsoop checker, only the body. Copying in the whole function should work.</p>",
+        "type": "i_answer",
+        "created": "2022-09-21T21:14:16.019Z",
+        "_id": "l8c47h2pepc2f4"
+    }
+]

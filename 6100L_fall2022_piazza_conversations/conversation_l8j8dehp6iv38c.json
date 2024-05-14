@@ -1,0 +1,39 @@
+[
+    {
+        "content": "<p>Hello, I hope you are well. I made this question private since it contains my working code for the finger exercises released today. I got the code to work by testing it in the actual finger exercise portal (I got 100% on the finger exercise), but it wouldn&#39;t run in Spyder on my computer. I tried to put it into Python Tutor and it ran infinitely as shown in the screenshot below. It says that a dictionary called _annotations_ was created on step one, but I didn&#39;t create a dictionary and this is a new file. Is there a way to fix this? I haven&#39;t touched any settings or buttons (I honestly wouldn&#39;t even know where to find them) so I am completely lost. (The first screenshot is after pressing &#34;run&#34; in the terminal, the second is the response that Python Tutor gives (I used my code from another exercise because the one from this finger exercise wouldn&#39;t all fit in the screenshot, but it is the same result for the other code where nothing is printed and it is instead stored in a dictionary)).</p>\n<p></p>\n<p>Thank you!</p>\n<p></p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fkw9s6wlp3bo77h%2F7b8f0cda71329376ef63ae80ea9d9d6e40c93a3f53e4e34bc30daeb9b07e983d%2FScreen_Shot_2022-09-26_at_4.30.27_PM.png\" width=\"777\" height=\"486\" alt=\"\" /><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fkw9s6wlp3bo77h%2Fb35cdfc1e3ee096cb8da22a25f7e889057c69a923bd9ad52f206860bbca0b821%2FScreen_Shot_2022-09-26_at_4.13.16_PM.png\" width=\"749\" height=\"285\" alt=\"\" />)</p>\n<p></p>\n<p></p>",
+        "type": "question",
+        "created": "2022-09-26T20:37:04.285Z",
+        "subject": "Code not running in Spyder or Python Tutor",
+        "_id": "l8j8dehp6iv38c"
+    },
+    {
+        "content": "<p>Ohh I see. Your spyder is running the file called untitled4.py and the code you pasted is in the file called untitled5.py. Save the file first and then run it.\u00a0</p>\n<p>Regarding the Python Tutor, the print statement from the code isn&#39;t of correct syntax. It should be <kbd>print()</kbd> not <kbd>print:</kbd></p>",
+        "type": "i_answer",
+        "created": "2022-09-27T01:00:23.621Z",
+        "_id": "l8j8dehp6iv38c"
+    },
+    {
+        "content": "<p>I fixed the print error and it helped with the Python Tutor, but the Spyder still didn\u2019t work. I pressed run several times and no new line appeared in the terminal (those runs were from a previous problem that I was working on, none of them were from working on this problem.) I tried running the same code in several files, in the python tutor, and in my general terminal and none of them worked. Sorry for the issues, I just want to make sure my IDE is working before the microquiz!</p>",
+        "type": "followup",
+        "created": "2022-09-27T01:04:39.489Z",
+        "_id": "l8j8dehp6iv38c"
+    },
+    {
+        "content": "<p>The console is stuck in a program that&#39;s infinite looped right now, so it&#39;s not responding, not even to new programs you run. Go to the 3 horizontal lines by the red square and hit Restart Kernel. That will reset the console. Then try to run this particular file again.\u00a0</p>",
+        "type": "followup_response",
+        "created": "2022-09-27T01:10:09.006Z",
+        "_id": "l8j8dehp6iv38c"
+    },
+    {
+        "content": "<p>I did this and it seemed to work for a bit, but it stopped working again yesterday during the microquiz (so I had no way to test my code other than the actual microquiz website itself). I can try to come to office hours in the next couple of days to ask in person if needed!</p>",
+        "type": "followup_response",
+        "created": "2022-09-29T12:44:50.075Z",
+        "_id": "l8j8dehp6iv38c"
+    },
+    {
+        "content": "<p>It&#39;ll be way easier to figure this out in-person, so I recommend OH!</p>",
+        "type": "followup_response",
+        "created": "2022-09-29T14:41:35.191Z",
+        "_id": "l8j8dehp6iv38c"
+    }
+]

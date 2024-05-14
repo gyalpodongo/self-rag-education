@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hello,\u00a0</p>\n<p>I hope you are doing well.</p>\n<p>After submitting PSET1 for 6.100A, I have received 0%, even though when checking the auto-grader all responses are the same as the expected result. I believe my mistake was forgetting to name a variable &#34;steps&#34; which I named\u00a0 &#34;guesses&#34;.\u00a0</p>\n<p>Can i possibly get a credit/higher grade for this?</p>\n<p>Thank you so much for your understanding !</p>\n<p></p>",
+        "type": "question",
+        "created": "2022-09-26T17:16:00.724Z",
+        "subject": "I have received 0% in PSET 1 part C, while my code&#39;s results are correct",
+        "_id": "l8j16u6s9lv4qv"
+    },
+    {
+        "content": "<p>If you received a 0 on the pset, it will be manually graded by a TA. In the future, remember to read the pset instructions carefully!</p>",
+        "type": "i_answer",
+        "created": "2022-09-27T03:51:51.102Z",
+        "_id": "l8j16u6s9lv4qv"
+    }
+]

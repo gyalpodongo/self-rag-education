@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p></p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fkqcjswfcdw6nw%2F4ea97ebcfe606ef65032b137d2f4d956f50f638fbe7e5925dffb11560596d795%2Fimage.png\" alt=\"image.png\" /></p>\n<p>I keep getting an error from the test code cases. Shouldn&#39;t the expected = [&#39;world&#39;, &#39;hello&#39;]</p>",
+        "type": "question",
+        "created": "2022-10-04T02:28:14.639Z",
+        "subject": "Test Case Error?",
+        "_id": "l8tkzz5bet75xk"
+    },
+    {
+        "content": "<p>get_most_frequent_words is supposed to return the words with the highest frequency. So, in this case, &#39;world&#39; has a combined frequency of 7, while &#39;hello&#39; has a combined frequency of 2. Since, &#39;world&#39; has the combined highest frequency, it should only return [&#39;hello&#39;].</p>\n<p></p>\n<p>You should only return more than one word in the case where the combined highest frequency is tied. In such a case, you will return all the words with the combined highest frequency, sorted in alphabetical order</p>",
+        "type": "i_answer",
+        "created": "2022-10-04T04:15:54.925Z",
+        "_id": "l8tkzz5bet75xk"
+    }
+]

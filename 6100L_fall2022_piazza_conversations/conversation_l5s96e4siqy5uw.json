@@ -1,0 +1,9 @@
+[
+    {
+        "content": "<script type=\"text/javascript\">PA.load(\"/dashboard/tips_tricks\", null, function(data){ $('#' + 'questionText').html(data);});</script>",
+        "type": "note",
+        "created": "2022-07-19T14:10:25.420Z",
+        "subject": "Tips & Tricks for a successful class",
+        "_id": "l5s96e4siqy5uw"
+    }
+]

@@ -1,0 +1,2934 @@
+[
+    {
+        "timestamp": "00:00:09",
+        "content": "LISTS, MUTABILITY"
+    },
+    {
+        "timestamp": "00:01:03",
+        "content": "INDICES and ORDERING in LISTS"
+    },
+    {
+        "timestamp": "00:01:48",
+        "content": "ORDERING in LISTS"
+    },
+    {
+        "timestamp": "00:03:48",
+        "content": "MUTABILITY"
+    },
+    {
+        "timestamp": "00:07:00",
+        "content": "OPERATION ON LISTS \u2014 append"
+    },
+    {
+        "timestamp": "00:07:30",
+        "content": "OPERATION ON LISTS\u2014"
+    },
+    {
+        "timestamp": "00:13:51",
+        "content": "YOU TRY IT!"
+    },
+    {
+        "timestamp": "00:16:48",
+        "content": "BIG IDEA"
+    },
+    {
+        "timestamp": "00:27:36",
+        "content": "STRINGS to LISTS"
+    },
+    {
+        "timestamp": "00:30:09",
+        "content": "LISTS to STRINGS"
+    },
+    {
+        "timestamp": "00:34:30",
+        "content": "A FEW INTERESTING LIST OPERATIONS"
+    },
+    {
+        "timestamp": "00:46:00",
+        "content": "LISTS SUPPORT ITERATION"
+    },
+    {
+        "timestamp": "00:51:33",
+        "content": "TRACE the CODE with an EXAMPLE"
+    },
+    {
+        "timestamp": "00:54:24",
+        "content": "TRICKY EXAMPLES OVERVIEW"
+    },
+    {
+        "timestamp": "00:55:18",
+        "content": "TRICKY EXAMPLE 1: append"
+    },
+    {
+        "timestamp": "01:01:15",
+        "content": "COMBINING LISTS"
+    },
+    {
+        "timestamp": "01:08:57",
+        "content": "TRICKY EXAMPLE 3: combining"
+    },
+    {
+        "timestamp": "01:09:36",
+        "content": "EMPTY OUT A LIST AND CHECKING THAT IT'S THE SAME OBJECT"
+    },
+    {
+        "timestamp": "01:14:00",
+        "content": "SUMMARY"
+    },
+    {
+        "timestamp": "01:14:57",
+        "content": "ocw.mit.edu"
+    },
+    {
+        "timestamp": "00:00:01",
+        "content": "All right. So hello, everyone. Let's get started."
+    },
+    {
+        "timestamp": "00:00:06",
+        "content": "This is Lecture ten. So last lecture, we introduced two new data types."
+    },
+    {
+        "timestamp": "00:00:11",
+        "content": "We talked about a data type called a tuple and a data type called a list."
+    },
+    {
+        "timestamp": "00:00:16",
+        "content": "So today we're not going to talk about tuples anymore because they were pretty straightforward."
+    },
+    {
+        "timestamp": "00:00:21",
+        "content": "A lot of operations you could do with strings, you could do with tuples. They were immutable objects."
+    },
+    {
+        "timestamp": "00:00:26",
+        "content": "That means once you created them in memory, you couldn't do anything to change them."
+    },
+    {
+        "timestamp": "00:00:37",
+        "content": "And so they were, I guess, pretty boring, except that you could populate tuples with objects that were of any type, so you could populate a tuple with integers and floats and booleans and other tuples all at the same time."
+    },
+    {
+        "timestamp": "00:00:43",
+        "content": "Okay. We introduced lists last time as well as something that was really similar to tuples and strings in terms of manipulations."
+    },
+    {
+        "timestamp": "00:00:53",
+        "content": "Lists were also nice because you could populate them again with any kind of data objects just like you could."
+    },
+    {
+        "timestamp": "00:00:59",
+        "content": "Tuples. Okay, today what we're going to focus on, though, is the idea of mutability when talking about lists, okay, which is something new."
+    },
+    {
+        "timestamp": "00:01:07",
+        "content": "We have never talked about this idea before. And so this lecture is going to be pretty heavy on kind of that idea and a little bit heavy on syntax"
+    },
+    {
+        "timestamp": "00:01:15",
+        "content": "and things like that to kind of remind you of how to do how to manipulate these compound data types."
+    },
+    {
+        "timestamp": "00:01:22",
+        "content": "So please, if there's any questions, feel free to stop me and then I can go over what I just talked about if there was anything confusing."
+    },
+    {
+        "timestamp": "00:01:30",
+        "content": "So this slide is basically a copy of the slide we had on lists last lecture."
+    },
+    {
+        "timestamp": "00:01:36",
+        "content": "It shows a bunch of different loops, a bunch of different operations that you can do with lists."
+    },
+    {
+        "timestamp": "00:01:41",
+        "content": "They're very similar to operations that you can do with strings, right?"
+    },
+    {
+        "timestamp": "00:01:44",
+        "content": "So here I'm just creating an empty list. I'm creating a list with a bunch of elements in it."
+    },
+    {
+        "timestamp": "00:01:50",
+        "content": "So here we can see that this list contains four elements and they are all of different types."
+    },
+    {
+        "timestamp": "00:01:56",
+        "content": "Right? This is an integer, this is a string, this is an integer, this is another list."
+    },
+    {
+        "timestamp": "00:02:00",
+        "content": "And that's totally okay to do with with these data types."
+    },
+    {
+        "timestamp": "00:02:10",
+        "content": "Doing all of these operations, getting the length, indexing, slicing, concatenation, getting the max, all that is should be a review as well as iterating a for loop over the elements in a list directly."
+    },
+    {
+        "timestamp": "00:02:22",
+        "content": "So just like we iterated a for loop over characters in the string, this loop basically makes our loop variable take on the value of every single element in our list."
+    },
+    {
+        "timestamp": "00:02:30",
+        "content": "What's new?"
+    },
+    {
+        "timestamp": "00:02:31",
+        "content": "The bolded thing here is something we haven't been able to do before, and this basically goes into memory and changes the element at Index three."
+    },
+    {
+        "timestamp": "00:02:42",
+        "content": "And so that's kind of how we read that and it changes that element to have the value on the right hand side."
+    },
+    {
+        "timestamp": "00:02:49",
+        "content": "So this is kind of I mean, we read it in the same way as we do other assignment statements."
+    },
+    {
+        "timestamp": "00:02:54",
+        "content": "We look at the right hand side and we evaluate that in this case, it's only a ten."
+    },
+    {
+        "timestamp": "00:02:59",
+        "content": "But the left hand side looks different. Right. It's not a variable name, as we have seen before, but in fact, it's this."
+    },
+    {
+        "timestamp": "00:03:06",
+        "content": "It's referencing the item in list named L at index three."
+    },
+    {
+        "timestamp": "00:03:12",
+        "content": "So that would be index zero one, two, three."
+    },
+    {
+        "timestamp": "00:03:15",
+        "content": "This line of code down there, L square brackets three equals ten, basically replaces this entire element here with the number ten."
+    },
+    {
+        "timestamp": "00:03:31",
+        "content": "Okay. So on the next few slides, we're going to talk about what exactly this means inside memory, because it it's it's different than what we've been able to what we've been doing before."
+    },
+    {
+        "timestamp": "00:03:38",
+        "content": "So what exactly happens when we go into a mutable object like a list and we change an element using this exact syntax?"
+    },
+    {
+        "timestamp": "00:03:50",
+        "content": "All right, well, let's draw memory diagrams the way we have been in the past."
+    },
+    {
+        "timestamp": "00:03:54",
+        "content": "Here's a little cloud representing the memory. L equals two for three."
+    },
+    {
+        "timestamp": "00:03:58",
+        "content": "Creates this list for me in memory. This list object and L is the name that I'm referencing to this list object."
+    },
+    {
+        "timestamp": "00:04:06",
+        "content": "Right? So I'm basically binding the name L to that object in memory."
+    },
+    {
+        "timestamp": "00:04:10",
+        "content": "L square brackets one equals five tells Python to follow the name L to the object in memory."
+    },
+    {
+        "timestamp": "00:04:19",
+        "content": "And then look up the index in the square brackets. In this case, index one."
+    },
+    {
+        "timestamp": "00:04:23",
+        "content": "So that's zero one this four and take the element at this location and override it to be whatever the right hand side says."
+    },
+    {
+        "timestamp": "00:04:33",
+        "content": "So the right hand side says five. So basically we're going into memory and changing that middle element."
+    },
+    {
+        "timestamp": "00:04:39",
+        "content": "Okay. So this is different than strings in tuples. We were not allowed to do anything like this with strings and tuples."
+    },
+    {
+        "timestamp": "00:04:47",
+        "content": "So let's look at an example on the next slide about what this means."
+    },
+    {
+        "timestamp": "00:04:59",
+        "content": "But the idea here I'm trying to get at is this object that we have changed one of the elements inside, one for which we've changed one of the elements. We've changed the object itself."
+    },
+    {
+        "timestamp": "00:05:04",
+        "content": "We didn't make a new copy. We didn't kind of make a version of that object."
+    },
+    {
+        "timestamp": "00:05:07",
+        "content": "We have changed the object itself. So let's see, maybe similar code that might have kind of, you might think does the same thing except with tuples."
+    },
+    {
+        "timestamp": "00:05:20",
+        "content": "All right. So the first two lines of code are going to be the same."
+    },
+    {
+        "timestamp": "00:05:23",
+        "content": "We've got L in memory being the object. Two for three are being the name bound to the object."
+    },
+    {
+        "timestamp": "00:05:30",
+        "content": "Two, four, three L square brackets one. So L at index one equals five."
+    },
+    {
+        "timestamp": "00:05:34",
+        "content": "Changes that middle element to be a five."
+    },
+    {
+        "timestamp": "00:05:38",
+        "content": "Okay, same as the previous slide. Now what if we had these two lines of code?"
+    },
+    {
+        "timestamp": "00:05:43",
+        "content": "T is going to be a variable name that's bound to the tuple."
+    },
+    {
+        "timestamp": "00:05:48",
+        "content": "Two, four, three. So notice this is now the tuple denoted in parentheses."
+    },
+    {
+        "timestamp": "00:05:53",
+        "content": "If I say t is equal to 253. What happens?"
+    },
+    {
+        "timestamp": "00:05:59",
+        "content": "Basically with this line, I am creating a new object in memory."
+    },
+    {
+        "timestamp": "00:06:03",
+        "content": "Okay, so there's my new object and I'm taking the name T and I'm binding it to this new object."
+    },
+    {
+        "timestamp": "00:06:11",
+        "content": "Right. The old object two for three as a tuple still remains in memory."
+    },
+    {
+        "timestamp": "00:06:16",
+        "content": "I have not modified that object at all. It's still there."
+    },
+    {
+        "timestamp": "00:06:20",
+        "content": "I've just lost the binding to it. So the name T is separate from the actual object and memory."
+    },
+    {
+        "timestamp": "00:06:27",
+        "content": "Right. In terms of tuples, what that means for us is we can never change the the tuple object in memory once we've created it."
+    },
+    {
+        "timestamp": "00:06:35",
+        "content": "But with lists using this specific operation, this one right here, l square brackets one equals five."
+    },
+    {
+        "timestamp": "00:06:42",
+        "content": "This does allow us to go into memory and literally change that object."
+    },
+    {
+        "timestamp": "00:06:47",
+        "content": "Right. That is associated with with the name L. Is everyone okay with this slide?"
+    },
+    {
+        "timestamp": "00:06:52",
+        "content": "Does this make sense? This showcases the difference, right?"
+    },
+    {
+        "timestamp": "00:06:55",
+        "content": "So we need to think about what is the name of the object versus the object itself in memory."
+    },
+    {
+        "timestamp": "00:07:02",
+        "content": "Okay. So that shows you how to create a list and then go ahead and change elements to different values within that list."
+    },
+    {
+        "timestamp": "00:07:19",
+        "content": "But now that we have a list object, right, that we can mutate, other operations we can do with it is to, let's say, add more items to the end of the list so we can make the list bigger."
+    },
+    {
+        "timestamp": "00:07:23",
+        "content": "Right. We can mutate the object by doing that using this append function."
+    },
+    {
+        "timestamp": "00:07:29",
+        "content": "Now I'm going to talk about the syntax syntax of the append function in a little bit."
+    },
+    {
+        "timestamp": "00:07:35",
+        "content": "But basically, if I want to mutate l to add an item to the end of it, I have to use the syntax."
+    },
+    {
+        "timestamp": "00:07:40",
+        "content": "There isn't a different form, a different function to do this."
+    },
+    {
+        "timestamp": "00:07:45",
+        "content": "So this specific syntax has to be used."
+    },
+    {
+        "timestamp": "00:07:49",
+        "content": "Append is basically the function name. Okay."
+    },
+    {
+        "timestamp": "00:07:54",
+        "content": "Element is going to be the parameter, the thing that I want to add on to the end of my list."
+    },
+    {
+        "timestamp": "00:08:00",
+        "content": "And L. The thing before the dot is going to be the the object."
+    },
+    {
+        "timestamp": "00:08:05",
+        "content": "I want to add the element to the end of the list. Right."
+    },
+    {
+        "timestamp": "00:08:09",
+        "content": "So l in this case, I'm using it generically, but you can imagine creating a list of employees in your company."
+    },
+    {
+        "timestamp": "00:08:17",
+        "content": "Right? Then you might name that list employees. In that case, we would say employees dot append, you know, and or whatever."
+    },
+    {
+        "timestamp": "00:08:23",
+        "content": "Right. So that l is just kind of generic for now, but it gets replaced with whatever variable name your list is."
+    },
+    {
+        "timestamp": "00:08:31",
+        "content": "So this operation basically mutates the list."
+    },
+    {
+        "timestamp": "00:08:34",
+        "content": "Okay. So it mutates it to be one extra element longer."
+    },
+    {
+        "timestamp": "00:08:39",
+        "content": "And the element you're adding to the end of the list to the right hand side of the list is going to be whatever is in the parentheses to append."
+    },
+    {
+        "timestamp": "00:08:47",
+        "content": "So let's look at an example. So we're going to create L is equal to two, one, three and memory."
+    },
+    {
+        "timestamp": "00:08:52",
+        "content": "And then let's say we do l got 2.5."
+    },
+    {
+        "timestamp": "00:08:57",
+        "content": "All right. Well, this line of code says, look up l it's this object and memory here."
+    },
+    {
+        "timestamp": "00:09:03",
+        "content": "Two, one, three. And add the object five to the end of it."
+    },
+    {
+        "timestamp": "00:09:07",
+        "content": "So I'm going to add the five to the end of the list. Now, it's no longer three elements long, it's four elements long."
+    },
+    {
+        "timestamp": "00:09:13",
+        "content": "And again, I didn't make a copy. I didn't preserve the original list with just two and three in it."
+    },
+    {
+        "timestamp": "00:09:18",
+        "content": "I have literally changed this list in memory that's referenced by L."
+    },
+    {
+        "timestamp": "00:09:24",
+        "content": "Now this function append is being used basically for its side effect."
+    },
+    {
+        "timestamp": "00:09:30",
+        "content": "And the side effect here is mutating the list."
+    },
+    {
+        "timestamp": "00:09:35",
+        "content": "After the after the function ads, the five in this particular case to the end of the list."
+    },
+    {
+        "timestamp": "00:09:42",
+        "content": "The function doesn't need to return anything back. It's basically done its job to do the mutation."
+    },
+    {
+        "timestamp": "00:09:49",
+        "content": "And so. Functions like a pendant."
+    },
+    {
+        "timestamp": "00:09:52",
+        "content": "We're going to see other functions later. Don't have any return value."
+    },
+    {
+        "timestamp": "00:10:02",
+        "content": "Okay. So one really common mistake as we're kind of learning about mutable, mutable objects and using these functions that mutate is to say, well, I'm going to do Eldar, append five and save this."
+    },
+    {
+        "timestamp": "00:10:10",
+        "content": "The result of this function in back into the variable named L and this would be incorrect."
+    },
+    {
+        "timestamp": "00:10:16",
+        "content": "So let's see if we do this line of code, what exactly will happen."
+    },
+    {
+        "timestamp": "00:10:20",
+        "content": "Okay. So it's an assignment. So the first thing we do is we look at the right hand side and we evaluate that."
+    },
+    {
+        "timestamp": "00:10:27",
+        "content": "Well, the right hand side basically says L 2.5, which is exactly the same as the previous line."
+    },
+    {
+        "timestamp": "00:10:32",
+        "content": "So we're going to put another five to the end of our currently mutated list."
+    },
+    {
+        "timestamp": "00:10:37",
+        "content": "Right. Just kind of going with these operations in order."
+    },
+    {
+        "timestamp": "00:10:42",
+        "content": "And then I said this this function, this append function has done its job to mutate the list by adding a five to the end of it."
+    },
+    {
+        "timestamp": "00:10:50",
+        "content": "So it returns nothing. There's nothing of value that it could return because it already did its job of mutation."
+    },
+    {
+        "timestamp": "00:10:56",
+        "content": "So it actually returns none. So the the the assignment, the equal sign then basically says take the name L and bind it to the return of this function."
+    },
+    {
+        "timestamp": "00:11:07",
+        "content": "L 2.5. Well, the return of the function is none. So basically now we're losing the binding from."
+    },
+    {
+        "timestamp": "00:11:14",
+        "content": "21355 which was our mutated list and re binding it to the return not."
+    },
+    {
+        "timestamp": "00:11:21",
+        "content": "So that is an incorrect way to do the mutation of adding an item to the end of the list."
+    },
+    {
+        "timestamp": "00:11:27",
+        "content": "Okay. Everyone okay with that so far?"
+    },
+    {
+        "timestamp": "00:11:31",
+        "content": "Yes. Okay. Excellent. So what should we have done instead? Sorry."
+    },
+    {
+        "timestamp": "00:11:36",
+        "content": "Yes. Be careful about the append operation."
+    },
+    {
+        "timestamp": "00:11:39",
+        "content": "Right. You were doing a mutation and you return none as a result."
+    },
+    {
+        "timestamp": "00:11:43",
+        "content": "Right. So you do not. You do not want to re save this to any variable."
+    },
+    {
+        "timestamp": "00:11:48",
+        "content": "So instead what we would do is we would just do the operation."
+    },
+    {
+        "timestamp": "00:11:53",
+        "content": "Right. There's nothing to save, nothing to save in any return variable."
+    },
+    {
+        "timestamp": "00:12:00",
+        "content": "So we if we wanted to add two fives to the end of that list, you would just say L drop and five again and l would then have been mutated to be two one, three, five, five."
+    },
+    {
+        "timestamp": "00:12:13",
+        "content": "Okay. And so in your code, if you just print l in between these appends, if you printed Alan between after the first append five, it would print this to one, three, five."
+    },
+    {
+        "timestamp": "00:12:18",
+        "content": "And then if we print L after the second append five, it would print two, one, three, five, five."
+    },
+    {
+        "timestamp": "00:12:23",
+        "content": "Right. Because it's kind of a it's an ongoing operation. It's mutating this list."
+    },
+    {
+        "timestamp": "00:12:27",
+        "content": "And now you're doing operations on the newly mutated list."
+    },
+    {
+        "timestamp": "00:12:32",
+        "content": "Everyone. Yeah, but the only one in the medium size qualify for the element."
+    },
+    {
+        "timestamp": "00:12:40",
+        "content": "Can you do? Do you have to do one integer can can use five comma five so you can append only works with one one thing."
+    },
+    {
+        "timestamp": "00:12:47",
+        "content": "So if you wanted to append a tuple. You could append one tuple object that has many things in it, but it would just append that one tuple."
+    },
+    {
+        "timestamp": "00:12:57",
+        "content": "We're going to see that towards the end of this lecture, an operation that allows us to extend the list by a bunch of items."
+    },
+    {
+        "timestamp": "00:13:04",
+        "content": "But there is a way, just not with append. Yeah."
+    },
+    {
+        "timestamp": "00:13:11",
+        "content": "So the other thing. So this this operation always returns not right."
+    },
+    {
+        "timestamp": "00:13:15",
+        "content": "2.5 or whatever. The append always returns none. But here it's just sitting on a line by itself."
+    },
+    {
+        "timestamp": "00:13:21",
+        "content": "We're not saving it back to anything. Right. In the previous one, we took the return and saved it back into L."
+    },
+    {
+        "timestamp": "00:13:28",
+        "content": "And that's why we lost the binding to our the actual list."
+    },
+    {
+        "timestamp": "00:13:35",
+        "content": "So what we usually say is that we use Append and a bunch of these other mutable functions for their side effects."
+    },
+    {
+        "timestamp": "00:13:41",
+        "content": "And the side effect in this case is to mutate the, the object that I'm calling the append on right in this case, the list named L."
+    },
+    {
+        "timestamp": "00:13:54",
+        "content": "So let's have you think about this problem and while you do it and then we can write it on the board together."
+    },
+    {
+        "timestamp": "00:14:01",
+        "content": "So as we go through this, these lines of code one at a time, what will the values of the lists be become?"
+    },
+    {
+        "timestamp": "00:14:11",
+        "content": "Okay, so I want is the string rail. Two is me. All three is."
+    },
+    {
+        "timestamp": "00:14:15",
+        "content": "What is l four going to be right with that line?"
+    },
+    {
+        "timestamp": "00:14:18",
+        "content": "L four equals l one plus l2. Anyone else? What's the type?"
+    },
+    {
+        "timestamp": "00:14:30",
+        "content": "It's concatenation, right. So concatenation with lists is like concatenation with strings."
+    },
+    {
+        "timestamp": "00:14:34",
+        "content": "Yes. Yup. What are the elements in it?"
+    },
+    {
+        "timestamp": "00:14:40",
+        "content": "Yeah. Yeah, exactly."
+    },
+    {
+        "timestamp": "00:14:47",
+        "content": "I'm not going to do the strings, but you know what I mean. All right."
+    },
+    {
+        "timestamp": "00:14:50",
+        "content": "So L4 with that line is just these two elements are in in a new list."
+    },
+    {
+        "timestamp": "00:14:57",
+        "content": "Now what happens to with the next line?"
+    },
+    {
+        "timestamp": "00:15:00",
+        "content": "L three dot append. L four Which one gets mutated?"
+    },
+    {
+        "timestamp": "00:15:04",
+        "content": "O Three or four. L three gets mutated."
+    },
+    {
+        "timestamp": "00:15:08",
+        "content": "Exactly. And what is it get mutated to? So all three originally has dough in it."
+    },
+    {
+        "timestamp": "00:15:16",
+        "content": "What am I adding to the three? Exactly."
+    },
+    {
+        "timestamp": "00:15:28",
+        "content": "Yes, I'm adding one item. Right. And that it's linked to the question that was here, what am I appending?"
+    },
+    {
+        "timestamp": "00:15:33",
+        "content": "I'm appending one item. It's whatever L4 is and L4 is this list."
+    },
+    {
+        "timestamp": "00:15:38",
+        "content": "So I'm going to be adding rate and me within my list here."
+    },
+    {
+        "timestamp": "00:15:43",
+        "content": "Right. And I got to close this list here. Right."
+    },
+    {
+        "timestamp": "00:15:47",
+        "content": "So this is one item, one object, one element, and this is another element right here."
+    },
+    {
+        "timestamp": "00:15:53",
+        "content": "It just happens to be a list. Okay."
+    },
+    {
+        "timestamp": "00:15:58",
+        "content": "What about the next line? L equals l 1.23."
+    },
+    {
+        "timestamp": "00:16:01",
+        "content": "What is the right hand side going to give me? Am I mutating a one or l three?"
+    },
+    {
+        "timestamp": "00:16:10",
+        "content": "Yes. And what am I mutating l one to be? One is originally Ray."
+    },
+    {
+        "timestamp": "00:16:14",
+        "content": "And what am I adding to the end of it? Yeah, exactly."
+    },
+    {
+        "timestamp": "00:16:21",
+        "content": "This l three, which is this big thing here. Right."
+    },
+    {
+        "timestamp": "00:16:24",
+        "content": "So it's a list with two with two elements, the first one being a string and the second one being another list like that."
+    },
+    {
+        "timestamp": "00:16:35",
+        "content": "So that's the right hand side. And then what is the left hand side going to be?"
+    },
+    {
+        "timestamp": "00:16:39",
+        "content": "What is going to be. No. Exactly, yes. Exactly."
+    },
+    {
+        "timestamp": "00:16:48",
+        "content": "Okay. So now that we've introduced mutable objects, we have to be careful about what functions we're using."
+    },
+    {
+        "timestamp": "00:16:54",
+        "content": "Some of them mutate the list, right? And don't return anything."
+    },
+    {
+        "timestamp": "00:16:58",
+        "content": "Append is one of them. And we're going to see a few more in today's lecture."
+    },
+    {
+        "timestamp": "00:17:02",
+        "content": "So these these functions are just being used for their side effect, right?"
+    },
+    {
+        "timestamp": "00:17:06",
+        "content": "They mutate the thing you're calling the function on, and that's it."
+    },
+    {
+        "timestamp": "00:17:11",
+        "content": "They don't need to return. They don't return anything. They don't need to return anything."
+    },
+    {
+        "timestamp": "00:17:14",
+        "content": "They have done their job purely by the mutation aspect of it."
+    },
+    {
+        "timestamp": "00:17:19",
+        "content": "So I want to just quickly make an aside on this dot notation that we've been that we've introduced with this append function."
+    },
+    {
+        "timestamp": "00:17:30",
+        "content": "This is something we haven't actually seen before, but it's something that we will learn about in the future when we create our own object types."
+    },
+    {
+        "timestamp": "00:17:40",
+        "content": "So right now we're using object types that somebody else wrote like a list or a tuple or something like that."
+    },
+    {
+        "timestamp": "00:17:45",
+        "content": "But in a future class, we're going to learn how to create our own object types."
+    },
+    {
+        "timestamp": "00:17:50",
+        "content": "And when we do, we're going to use this DOM notation a lot."
+    },
+    {
+        "timestamp": "00:17:54",
+        "content": "But for now, you basically just kind of have to remember which functions use dot notation and which which don't."
+    },
+    {
+        "timestamp": "00:18:00",
+        "content": "But I'll give you a little bit of intuition for what this dot notation actually means."
+    },
+    {
+        "timestamp": "00:18:04",
+        "content": "So when we have. So everything in Python is an object and then we have objects in Python."
+    },
+    {
+        "timestamp": "00:18:11",
+        "content": "The idea here is that the objects that you have."
+    },
+    {
+        "timestamp": "00:18:16",
+        "content": "Have data associated with them. So what kind of what makes up the object?"
+    },
+    {
+        "timestamp": "00:18:21",
+        "content": "And they have certain behaviors, right? So we touched upon this on maybe the first lecture where we said things you can do with integers."
+    },
+    {
+        "timestamp": "00:18:29",
+        "content": "Are different than the things you can do with strings. Right. That's that's that's pretty clear."
+    },
+    {
+        "timestamp": "00:18:34",
+        "content": "And that's different than the things you can do with a list. Right."
+    },
+    {
+        "timestamp": "00:18:38",
+        "content": "And so the kinds of things that you could do with each one of these object types differs depending on the type."
+    },
+    {
+        "timestamp": "00:18:45",
+        "content": "And at its core, really, everything can be written in terms of this dot notation."
+    },
+    {
+        "timestamp": "00:19:00",
+        "content": "But some of the more common operations, like getting the length of something or adding two numbers together are actually we do them in the shorthand notation, like using the plus operator or using the length. Right."
+    },
+    {
+        "timestamp": "00:19:03",
+        "content": "But at their core, really, we can take all of those operations and convert them to a dot notation."
+    },
+    {
+        "timestamp": "00:19:08",
+        "content": "We're not doing this today, but that's that's what we can do."
+    },
+    {
+        "timestamp": "00:19:12",
+        "content": "And so when we see this dot notation, the way we usually read it is we say, well, what's to the left of the dot?"
+    },
+    {
+        "timestamp": "00:19:17",
+        "content": "It's going to be our object, the thing that we want to do an operation on."
+    },
+    {
+        "timestamp": "00:19:21",
+        "content": "Right. In this particular case, it's a list named L."
+    },
+    {
+        "timestamp": "00:19:25",
+        "content": "Right. But it could be a list name, employees or words or whatever, you know, book or whatever the list contains, whatever the list name is."
+    },
+    {
+        "timestamp": "00:19:38",
+        "content": "The dot then comes for the dot notation, and then the thing on the right hand side is going to be the operation that you want to perform on the object to the left of the dot."
+    },
+    {
+        "timestamp": "00:19:45",
+        "content": "Right. So the operation, if you basically cover up l dot the operation looks just like a function."
+    },
+    {
+        "timestamp": "00:19:51",
+        "content": "Right. It's append, parentheses, some parameters."
+    },
+    {
+        "timestamp": "00:19:55",
+        "content": "And so the operation is basically just a function that you want to run on an object of type list, this specific object named."
+    },
+    {
+        "timestamp": "00:20:04",
+        "content": "Okay. And you can see it has a name append and it has parameters or arguments."
+    },
+    {
+        "timestamp": "00:20:09",
+        "content": "In this case, it's the thing you want to add to the end of the list."
+    },
+    {
+        "timestamp": "00:20:13",
+        "content": "So again, unfortunately, at this point in the class, you just have to kind of remember which functions are denotation and which which ones are not."
+    },
+    {
+        "timestamp": "00:20:20",
+        "content": "But it will become clear what this dot notation actually means towards the end of the class."
+    },
+    {
+        "timestamp": "00:20:27",
+        "content": "Okay. So let's have you work on this on this little code here."
+    },
+    {
+        "timestamp": "00:20:31",
+        "content": "It's going to use append, obviously, and it's going to have you create a list."
+    },
+    {
+        "timestamp": "00:20:36",
+        "content": "So the name of the function you should make here is called make ordered list."
+    },
+    {
+        "timestamp": "00:20:39",
+        "content": "And it takes in one parameter, an integer, and it's positive."
+    },
+    {
+        "timestamp": "00:20:44",
+        "content": "And I want you to create for me a list that that has all of the integers from zero all the way up to an including and inside that list in order."
+    },
+    {
+        "timestamp": "00:20:55",
+        "content": "Okay. So as an example, down in here, around 34."
+    },
+    {
+        "timestamp": "00:21:03",
+        "content": "Right. If we call make order list with six, it's going to create for us this list inside the function and return this list."
+    },
+    {
+        "timestamp": "00:21:13",
+        "content": "Right. So a couple of minutes to work on that and then we can write it together."
+    },
+    {
+        "timestamp": "00:21:21",
+        "content": "All right. What's the first thing we should do here?"
+    },
+    {
+        "timestamp": "00:21:25",
+        "content": "Or how would you approach this problem? Yes."
+    },
+    {
+        "timestamp": "00:21:31",
+        "content": "You want to create an empty list? What do you want to name it?"
+    },
+    {
+        "timestamp": "00:21:36",
+        "content": "You named it List. List is an okay name, but notice the list is also the name of the type of the object."
+    },
+    {
+        "timestamp": "00:21:44",
+        "content": "So I would refrain from naming anything, things that change color so we can use our or my list or whatever, something else."
+    },
+    {
+        "timestamp": "00:21:55",
+        "content": "My list is an empty list. All right, so it's originally empty, and now we need to populate it with some stuff."
+    },
+    {
+        "timestamp": "00:22:04",
+        "content": "You want to go make a four loop that goes over?"
+    },
+    {
+        "timestamp": "00:22:07",
+        "content": "What? Yep."
+    },
+    {
+        "timestamp": "00:22:13",
+        "content": "Zero two and plus one. Exactly. Because we need our boundary to go up to and including n."
+    },
+    {
+        "timestamp": "00:22:19",
+        "content": "Perfect. So now that I've got I changing to be zero than one, then two, then three."
+    },
+    {
+        "timestamp": "00:22:26",
+        "content": "What do I need to do to my list? Yeah."
+    },
+    {
+        "timestamp": "00:22:30",
+        "content": "Exactly. Append I. So my list right. Is the name of the list I've created."
+    },
+    {
+        "timestamp": "00:22:34",
+        "content": "Dot append. I. Okay."
+    },
+    {
+        "timestamp": "00:22:41",
+        "content": "The last thing. Return the list. Right. So return my list."
+    },
+    {
+        "timestamp": "00:22:46",
+        "content": "So run it. Perfect. If we change this to."
+    },
+    {
+        "timestamp": "00:22:51",
+        "content": "To. Still works."
+    },
+    {
+        "timestamp": "00:22:55",
+        "content": "So just testing it out with a couple of different inputs just to make sure it works."
+    },
+    {
+        "timestamp": "00:23:01",
+        "content": "Questions about this code. Pretty. Yeah."
+    },
+    {
+        "timestamp": "00:23:05",
+        "content": "Is this your best? But zero is not necessarily in the range yet."
+    },
+    {
+        "timestamp": "00:23:11",
+        "content": "It defaults to zero. Exactly. Okay."
+    },
+    {
+        "timestamp": "00:23:20",
+        "content": "We're not done yet. You have more writing to do. So let's write a slightly different function now called Remove Elm."
+    },
+    {
+        "timestamp": "00:23:29",
+        "content": "It takes in two parameters. The first one is a list, right?"
+    },
+    {
+        "timestamp": "00:23:34",
+        "content": "And the second one is going to be just some variable."
+    },
+    {
+        "timestamp": "00:23:38",
+        "content": "It could be an integer, it could be a string, it could be whatever. And what the function should do is create a new list."
+    },
+    {
+        "timestamp": "00:23:47",
+        "content": "Populate it with the same elements of L in the same order, but exclude the ones that are equal to E."
+    },
+    {
+        "timestamp": "00:23:55",
+        "content": "Okay, so you don't want to include the ones that are equal to E. Otherwise keep everything in the in the original list."
+    },
+    {
+        "timestamp": "00:24:00",
+        "content": "L in the same order. Okay. So as an example here we've got if our input list is one to 2 to 2 and I call the function"
+    },
+    {
+        "timestamp": "00:24:11",
+        "content": "with L and to the list that this function returns should just contain one element in it."
+    },
+    {
+        "timestamp": "00:24:18",
+        "content": "Just the one. Right. So that try your code for the next couple of minutes around line 50 and then we can write it together."
+    },
+    {
+        "timestamp": "00:24:32",
+        "content": "All right. How can we start?"
+    },
+    {
+        "timestamp": "00:24:46",
+        "content": "Yes. Yep."
+    },
+    {
+        "timestamp": "00:24:50",
+        "content": "What did you name it? Cool. What did you make it be cool."
+    },
+    {
+        "timestamp": "00:24:57",
+        "content": "Empty. Empty list. Okay. I."
+    },
+    {
+        "timestamp": "00:25:05",
+        "content": "Yup. So for I in l. Okay. And at this point I would make a note from myself because you use I, which in my brain means index."
+    },
+    {
+        "timestamp": "00:25:15",
+        "content": "But I would make a note for myself that I is maybe one then to then to then to just according to this first example."
+    },
+    {
+        "timestamp": "00:25:24",
+        "content": "So if I'm reading the code, I would just I will remember that it's not the index, but go on."
+    },
+    {
+        "timestamp": "00:25:30",
+        "content": "So for I and l directly I."
+    },
+    {
+        "timestamp": "00:25:35",
+        "content": "No. Like this."
+    },
+    {
+        "timestamp": "00:25:42",
+        "content": "Okay. And then."
+    },
+    {
+        "timestamp": "00:25:48",
+        "content": "Tonight? Yeah. Okay."
+    },
+    {
+        "timestamp": "00:25:52",
+        "content": "And then let's turn your list."
+    },
+    {
+        "timestamp": "00:25:57",
+        "content": "Okay. Let's try it. Yes."
+    },
+    {
+        "timestamp": "00:26:06",
+        "content": "So is not a list is going to be a."
+    },
+    {
+        "timestamp": "00:26:11",
+        "content": "An element. Right. So I'm. That's my bad. I should have put this in."
+    },
+    {
+        "timestamp": "00:26:15",
+        "content": "Here it is. You know, like, you know, an object or something."
+    },
+    {
+        "timestamp": "00:26:21",
+        "content": "It's. It's. You know, it could be a list, but then I would be looking for that exact sub list, that exact list as a sub element."
+    },
+    {
+        "timestamp": "00:26:29",
+        "content": "So maybe we think of it as an object like five or something like that."
+    },
+    {
+        "timestamp": "00:26:34",
+        "content": "I think. Well, yeah, not equal to E."
+    },
+    {
+        "timestamp": "00:26:41",
+        "content": "Right. So if I'm just looking for that element directly, I want I to be not equal to E, in which case I keep the element in my new list."
+    },
+    {
+        "timestamp": "00:26:50",
+        "content": "So if we run that. That gives me one according to this."
+    },
+    {
+        "timestamp": "00:26:55",
+        "content": "Looks like it's correct. And then we can run it with these other two cases."
+    },
+    {
+        "timestamp": "00:27:00",
+        "content": "So here I'm removing the element one, right?"
+    },
+    {
+        "timestamp": "00:27:03",
+        "content": "So I'm going to keep 2 to 2 as a as my return list."
+    },
+    {
+        "timestamp": "00:27:07",
+        "content": "And here I'm removing zero, which doesn't exist in my list at all."
+    },
+    {
+        "timestamp": "00:27:11",
+        "content": "So it should just keep and it does my original list unchanged."
+    },
+    {
+        "timestamp": "00:27:19",
+        "content": "Any questions about this example? Anyone tried a different way."
+    },
+    {
+        "timestamp": "00:27:27",
+        "content": "Okay. All right."
+    },
+    {
+        "timestamp": "00:27:34",
+        "content": "So other useful list operations, we can convert strengths to lists and then lists back to strings."
+    },
+    {
+        "timestamp": "00:27:51",
+        "content": "And this is very useful when you're reading in text or something like that to a function that's going to be useful for promise at three, so on and so on. So let's first see how we can take a string s and convert it to a list."
+    },
+    {
+        "timestamp": "00:27:57",
+        "content": "So if we just cast S to a list, right?"
+    },
+    {
+        "timestamp": "00:28:01",
+        "content": "The way we used to cast the number five to a float, we would just say Float parentheses five."
+    },
+    {
+        "timestamp": "00:28:15",
+        "content": "Well, we can take a list and cast it to a list by saying list, parentheses, x, and if we cast it like this, Python takes every single character and S and makes it be a separate element in a list."
+    },
+    {
+        "timestamp": "00:28:22",
+        "content": "So you can see here I've got the string I heart C us and you."
+    },
+    {
+        "timestamp": "00:28:25",
+        "content": "It makes for me a list where every single character, including the space, right, and all the special characters, becomes a separate entry in my list."
+    },
+    {
+        "timestamp": "00:28:35",
+        "content": "That's not that useful. I mean, it can be, but it's not that useful."
+    },
+    {
+        "timestamp": "00:28:39",
+        "content": "What is more useful is to take an input string and split it on a particular character."
+    },
+    {
+        "timestamp": "00:28:46",
+        "content": "So one very common character that we would split on is the space."
+    },
+    {
+        "timestamp": "00:28:49",
+        "content": "And if we do something like that, it basically extracts from us, from our string, all of the individual words."
+    },
+    {
+        "timestamp": "00:28:56",
+        "content": "Right. Which is pretty useful."
+    },
+    {
+        "timestamp": "00:28:58",
+        "content": "So here I've got stock split and in parentheses, I've got the character I want to split on this particular case of space."
+    },
+    {
+        "timestamp": "00:29:08",
+        "content": "So if I take s of I split on the space, python will go from the beginning of the list to the first space."
+    },
+    {
+        "timestamp": "00:29:13",
+        "content": "Make that be one element in a list. It'll go from the first paste in the next space in my string and make that be the next element in the list"
+    },
+    {
+        "timestamp": "00:29:22",
+        "content": "and so on and so on until it gets to the end of the list and makes that last bit the last element in my list."
+    },
+    {
+        "timestamp": "00:29:28",
+        "content": "So here, when I've split on the space, I've got three, three, three, three base words, quote unquote words I heart is going to be one."
+    },
+    {
+        "timestamp": "00:29:38",
+        "content": "And there it is as my first entry, C. S is in between these two spaces."
+    },
+    {
+        "timestamp": "00:29:43",
+        "content": "And that's my next entry. And and you question mark is my last entry here."
+    },
+    {
+        "timestamp": "00:29:48",
+        "content": "Okay. So this is a very useful function. We can, of course, split on any character we'd like."
+    },
+    {
+        "timestamp": "00:29:53",
+        "content": "So here I am, splitting on the less than character. So if there's only one."
+    },
+    {
+        "timestamp": "00:29:57",
+        "content": "So if I split on the less than character one an element in my resulting list is just the capital I."
+    },
+    {
+        "timestamp": "00:30:03",
+        "content": "And the remaining element in my resulting list is the three spaces."
+    },
+    {
+        "timestamp": "00:30:08",
+        "content": "And you. And there it is right there. All right."
+    },
+    {
+        "timestamp": "00:30:14",
+        "content": "So once we have a list, we can also go backward."
+    },
+    {
+        "timestamp": "00:30:20",
+        "content": "We can take this list and convert it back to strings. So we use this this join function here."
+    },
+    {
+        "timestamp": "00:30:28",
+        "content": "And the thing before the dot is going to be what character you want to join the"
+    },
+    {
+        "timestamp": "00:30:32",
+        "content": "list element's width and this is the list you want to join back into a string."
+    },
+    {
+        "timestamp": "00:30:37",
+        "content": "So let's look at an example. So let's say I have list L that has three entries in it A, B and C."
+    },
+    {
+        "timestamp": "00:30:46",
+        "content": "If I join on the empty string. So here this is just quote, quote right beside each other."
+    },
+    {
+        "timestamp": "00:30:52",
+        "content": "There's no space or anything in there that's going to take from me all the elements in the list and join them together as one."
+    },
+    {
+        "timestamp": "00:30:59",
+        "content": "Nothing in between the ABC. Right."
+    },
+    {
+        "timestamp": "00:31:02",
+        "content": "And that this operation here will basically make for me a B the string ABC."
+    },
+    {
+        "timestamp": "00:31:10",
+        "content": "If I join on an underscore, right, you might have guessed it'll join A, B and C with an underscore in between each character."
+    },
+    {
+        "timestamp": "00:31:17",
+        "content": "So there it is, a underscore B, underscore C, right. And you can join on any character you'd like."
+    },
+    {
+        "timestamp": "00:31:23",
+        "content": "I don't know if you can join on multiple characters, but I don't see why not. You could try this out on your own."
+    },
+    {
+        "timestamp": "00:31:29",
+        "content": "Join only works with with lists that contain only string elements."
+    },
+    {
+        "timestamp": "00:31:40",
+        "content": "So if we try to join a list that has just integers or floats or booleans, anything that doesn't contain a string in it, then you will get an error, right?"
+    },
+    {
+        "timestamp": "00:31:52",
+        "content": "Because it's basically trying to put all these back into a big string. If you want it to join non string elements, you would have to be basically loop through and cast every one of these to a string first and then join them together."
+    },
+    {
+        "timestamp": "00:31:59",
+        "content": "So if you want to join one, two, three, you would have cast them two strings and then you could join them to make the string."
+    },
+    {
+        "timestamp": "00:32:05",
+        "content": "One, two, three. Okay."
+    },
+    {
+        "timestamp": "00:32:09",
+        "content": "So let's have you work on this example. So here we're going to try to split the input."
+    },
+    {
+        "timestamp": "00:32:17",
+        "content": "So here is a function called count words. It takes in one input sen for sentence."
+    },
+    {
+        "timestamp": "00:32:29",
+        "content": "And I wanted to use something that's not s just to make it clear that the thing before the dot doesn't isn't always s, it's whatever object you want to split or join or whatever."
+    },
+    {
+        "timestamp": "00:32:33",
+        "content": "So this function is going to return. How many words are in s right?"
+    },
+    {
+        "timestamp": "00:32:38",
+        "content": "Quote unquote words in this case?"
+    },
+    {
+        "timestamp": "00:32:40",
+        "content": "Because it's just I'm just interested in the the elements or the characters between spaces and between the start and the end of a word."
+    },
+    {
+        "timestamp": "00:32:48",
+        "content": "Right. So if it's a number, I still count that as a word."
+    },
+    {
+        "timestamp": "00:32:51",
+        "content": "If it's a special character, dot, exclamation point, I would still count that as a word as well."
+    },
+    {
+        "timestamp": "00:32:56",
+        "content": "Okay. So this should be just a couple lines of code, uh, down around 99."
+    },
+    {
+        "timestamp": "00:33:04",
+        "content": "Okay, so I'll give you about a minute to work on it, and then we can write it together. Okay."
+    },
+    {
+        "timestamp": "00:33:09",
+        "content": "So thoughts on how we can do this? L want equal send out split."
+    },
+    {
+        "timestamp": "00:33:19",
+        "content": "Yup. Yup."
+    },
+    {
+        "timestamp": "00:33:23",
+        "content": "Sorry. Parentheses space. Yep. And then your turn."
+    },
+    {
+        "timestamp": "00:33:29",
+        "content": "Yep. And then we can return the length of l one. Perfect."
+    },
+    {
+        "timestamp": "00:33:34",
+        "content": "Let's run it on these two examples and should print three and 12."
+    },
+    {
+        "timestamp": "00:33:38",
+        "content": "And it does. So notice how easy this was with lists."
+    },
+    {
+        "timestamp": "00:33:43",
+        "content": "Right. Because lists are a data structure that's just kind of naturally iterative."
+    },
+    {
+        "timestamp": "00:33:47",
+        "content": "And so running Len on this split list or split string, which gave us a list, is really is is really easy, right?"
+    },
+    {
+        "timestamp": "00:33:54",
+        "content": "It's a two line piece of code without lists. You could imagine creating variables that keep track of where you see the first space."
+    },
+    {
+        "timestamp": "00:34:02",
+        "content": "Right. And then iterating through one character at a time."
+    },
+    {
+        "timestamp": "00:34:04",
+        "content": "And if it's a space, keep track of the fact that you saw space and then look for the next space, right?"
+    },
+    {
+        "timestamp": "00:34:10",
+        "content": "And then resetting things every time you see a space. And that would be really, really tedious."
+    },
+    {
+        "timestamp": "00:34:15",
+        "content": "It would be a really good quiz, one question, but not once we've introduced lists because it becomes really, really easy to do it with with lists."
+    },
+    {
+        "timestamp": "00:34:24",
+        "content": "Okay. All right."
+    },
+    {
+        "timestamp": "00:34:31",
+        "content": "So now that we have lists, we can we can do other really interesting and useful operations to mutate the list."
+    },
+    {
+        "timestamp": "00:34:39",
+        "content": "So we saw the dot notation on a list to do append."
+    },
+    {
+        "timestamp": "00:34:45",
+        "content": "So basically to add an item to the end of our list that was useful."
+    },
+    {
+        "timestamp": "00:34:49",
+        "content": "Other things we can do in terms of mutating the list is to sort of list and reverse a list."
+    },
+    {
+        "timestamp": "00:34:55",
+        "content": "And these are also very useful operations on lists."
+    },
+    {
+        "timestamp": "00:35:00",
+        "content": "So the first to here sort and reverse is there is a notation for how we sort a list and how we reverse a list."
+    },
+    {
+        "timestamp": "00:35:09",
+        "content": "Okay. And these will mutate the list that you call the functions on."
+    },
+    {
+        "timestamp": "00:35:14",
+        "content": "So if I have a list 4 to 7 here and I call l sort."
+    },
+    {
+        "timestamp": "00:35:19",
+        "content": "And I print Elle as the next line. After this l will have changed in memory to be two, four and seven in that order."
+    },
+    {
+        "timestamp": "00:35:29",
+        "content": "It didn't make a copy for me. It didn't preserve the original order."
+    },
+    {
+        "timestamp": "00:35:32",
+        "content": "It changed that list to be now in sorted order."
+    },
+    {
+        "timestamp": "00:35:37",
+        "content": "Reverse. Similarly so if we do l dot reverse on 4 to 7, it will reverse all the elements."
+    },
+    {
+        "timestamp": "00:35:43",
+        "content": "So the one at the end becomes at the beginning. The one second last is the second."
+    },
+    {
+        "timestamp": "00:35:47",
+        "content": "One third last is the third element in the list and so on. Okay."
+    },
+    {
+        "timestamp": "00:35:50",
+        "content": "And again, this mutates my list, so I would have lost my original order with this command."
+    },
+    {
+        "timestamp": "00:36:07",
+        "content": "L dot reverse and with l dot sort of course. Now there are many situations where you want to preserve the original order, like, I don't know, maybe like the order that people join a company or the order that people joined."
+    },
+    {
+        "timestamp": "00:36:15",
+        "content": "Grocery queue, I don't know, things like that, right? You might want to preserve that original order, but you might also get maybe the sorted names of people for a function that does something with those sort of names."
+    },
+    {
+        "timestamp": "00:36:23",
+        "content": "In that case, you don't want to call sort on your original list because you would lose the original order."
+    },
+    {
+        "timestamp": "00:36:30",
+        "content": "You could, of course, make a copy, or you could call this sorted function."
+    },
+    {
+        "timestamp": "00:36:37",
+        "content": "And the sorted function is going to keep my original list l intact in the same order that I had created it in, but it would return for me."
+    },
+    {
+        "timestamp": "00:36:47",
+        "content": "So this function will actually make a copy and return for me."
+    },
+    {
+        "timestamp": "00:36:51",
+        "content": "The sorted version of L and L remains unchanged."
+    },
+    {
+        "timestamp": "00:36:55",
+        "content": "So this function does not do any mutation. We have to take the return and save it into a new variable."
+    },
+    {
+        "timestamp": "00:37:02",
+        "content": "In this case I called it L nil. Okay. So might be a little bit sort of hard to keep straight in your mind, sort of whether you sought or sorted."
+    },
+    {
+        "timestamp": "00:37:12",
+        "content": "You could, of course, always try it in the console. Right, to see which one does what."
+    },
+    {
+        "timestamp": "00:37:17",
+        "content": "The way I sort of remember and think about it is the sort to me feels like a command."
+    },
+    {
+        "timestamp": "00:37:22",
+        "content": "It's like sort this list, right? Mutate this list and sort it."
+    },
+    {
+        "timestamp": "00:37:27",
+        "content": "Whereas sorted. Is more of a request like can you please get me the sorted version of of El?"
+    },
+    {
+        "timestamp": "00:37:34",
+        "content": "Right."
+    },
+    {
+        "timestamp": "00:37:35",
+        "content": "And so that's kind of how I keep things in my mind as to whether I'm calling sort to do the mutation or asking to get the sorted version of the list."
+    },
+    {
+        "timestamp": "00:37:45",
+        "content": "Yes. It is sorting it by whatever the built in sort is for those particular object types."
+    },
+    {
+        "timestamp": "00:37:55",
+        "content": "So in, in the case of integers, it's just increasing order."
+    },
+    {
+        "timestamp": "00:37:59",
+        "content": "In the case of strings, it'll be alphabetical."
+    },
+    {
+        "timestamp": "00:38:04",
+        "content": "You can choose different sorting functions, but we don't get into that."
+    },
+    {
+        "timestamp": "00:38:09",
+        "content": "Yeah, that's a good question."
+    },
+    {
+        "timestamp": "00:38:14",
+        "content": "I think they do in order for it to work so we can try like l equals one and then we can give it a tuple or something."
+    },
+    {
+        "timestamp": "00:38:26",
+        "content": "And then we can ask, sort out. Yeah."
+    },
+    {
+        "timestamp": "00:38:29",
+        "content": "So in this case, it doesn't know how to resolve. It's trying to do a behind the scenes lesson to figure out which one's bigger than which."
+    },
+    {
+        "timestamp": "00:38:36",
+        "content": "And in this case, it doesn't know how to resolve. How do you choose whether the tuple is bigger than an integer area?"
+    },
+    {
+        "timestamp": "00:38:42",
+        "content": "But you can imagine, again, as I mentioned, this is not something we do."
+    },
+    {
+        "timestamp": "00:38:45",
+        "content": "But you could write your own sorting function where depending on the type you would decide which one is bigger."
+    },
+    {
+        "timestamp": "00:38:55",
+        "content": "So. Yes. Question them."
+    },
+    {
+        "timestamp": "00:39:01",
+        "content": "Yes. So you would just do it without parentheses."
+    },
+    {
+        "timestamp": "00:39:05",
+        "content": "But l has to be a list that contains things that can be sorted."
+    },
+    {
+        "timestamp": "00:39:09",
+        "content": "Right? So all integers, all strings or something like that."
+    },
+    {
+        "timestamp": "00:39:13",
+        "content": "So let's look at the memory diagram for how this would look, just to kind of bring the point home about objects that are being mutated."
+    },
+    {
+        "timestamp": "00:39:21",
+        "content": "So our original URL is 9603."
+    },
+    {
+        "timestamp": "00:39:25",
+        "content": "So in memory I've got the name outbound 29603."
+    },
+    {
+        "timestamp": "00:39:29",
+        "content": "Again, let's do an append just for fun."
+    },
+    {
+        "timestamp": "00:39:32",
+        "content": "Eldar 2.5 is going to add a five to the end of that list and append, sort and reverse will all be used for a side effect, right?"
+    },
+    {
+        "timestamp": "00:39:40",
+        "content": "That means they're going to be mutating the object, whereas sorted will not do a mutation."
+    },
+    {
+        "timestamp": "00:39:46",
+        "content": "So let's do an append to the end that's going to put a five at the end of the list, something we already know how it works."
+    },
+    {
+        "timestamp": "00:39:55",
+        "content": "Now let's do a equals sorted l. So again, it's an equality, right?"
+    },
+    {
+        "timestamp": "00:40:01",
+        "content": "So the thing on the right hand side is going to be the function that returns for me, the sorted version of L."
+    },
+    {
+        "timestamp": "00:40:07",
+        "content": "So it's going to create a new object. However, it does the sort it's going to create for me a new list that contains that sorted order."
+    },
+    {
+        "timestamp": "00:40:16",
+        "content": "The original l notice in memory remains unchanged."
+    },
+    {
+        "timestamp": "00:40:19",
+        "content": "So if I want to reference L in my program from here on out, I will use this unchanged l."
+    },
+    {
+        "timestamp": "00:40:27",
+        "content": "So now the return of sorted is this list and I bind it to a."
+    },
+    {
+        "timestamp": "00:40:32",
+        "content": "Okay so name a now points to the sorted list version. All right, now, what if I do this line here B equals L dot sort."
+    },
+    {
+        "timestamp": "00:40:42",
+        "content": "Again. Let's look at the right hand side. L dots sort."
+    },
+    {
+        "timestamp": "00:40:47",
+        "content": "Is going to mutate. L So this function itself will go and change."
+    },
+    {
+        "timestamp": "00:40:53",
+        "content": "L To be as object."
+    },
+    {
+        "timestamp": "00:40:56",
+        "content": "Object that l points to to be the sorted list."
+    },
+    {
+        "timestamp": "00:41:01",
+        "content": "But it's not done. This function is being used for a side effect."
+    },
+    {
+        "timestamp": "00:41:04",
+        "content": "So what is the return from it? None."
+    },
+    {
+        "timestamp": "00:41:08",
+        "content": "Right? It's like the append. So this example here will make B point to the return of that function, which is just none."
+    },
+    {
+        "timestamp": "00:41:21",
+        "content": "Now. Please don't ever do this. All you would have to do to sort out is to just on a on a line by itself, say l dot sort."
+    },
+    {
+        "timestamp": "00:41:28",
+        "content": "I just did this to kind of show you again that if you do l equals l dot sort, bad things will happen."
+    },
+    {
+        "timestamp": "00:41:34",
+        "content": "You're going to re assign l to be none. In this case, I saved under a different variable."
+    },
+    {
+        "timestamp": "00:41:39",
+        "content": "But it's an easy mistake to make. Okay."
+    },
+    {
+        "timestamp": "00:41:45",
+        "content": "And then what about the last one here? Reverse again."
+    },
+    {
+        "timestamp": "00:41:48",
+        "content": "I'm going to go and grab the object pointed to by L and I'm going to reverse all the elements."
+    },
+    {
+        "timestamp": "00:41:53",
+        "content": "So here doing l dot sort and then l reverse right afterward makes my function, makes my list B in reverse sorted order."
+    },
+    {
+        "timestamp": "00:42:01",
+        "content": "So biggest number to smallest number. So with that command there, I've got 96530 instead of 03569."
+    },
+    {
+        "timestamp": "00:42:11",
+        "content": "And again sort and reverse. Changed my list directly."
+    },
+    {
+        "timestamp": "00:42:15",
+        "content": "So I've lost that initial order of 9603 that I had up here."
+    },
+    {
+        "timestamp": "00:42:23",
+        "content": "Okay. One last point I want to make."
+    },
+    {
+        "timestamp": "00:42:27",
+        "content": "I know we've usually seen functions that take in parameters, right?"
+    },
+    {
+        "timestamp": "00:42:31",
+        "content": "Sort and reverse are still functions and they just happen to not need any parameters."
+    },
+    {
+        "timestamp": "00:42:37",
+        "content": "Right? You call them on the object l using this dot notation."
+    },
+    {
+        "timestamp": "00:42:41",
+        "content": "So in effect, it does have sort of a quote unquote parameter."
+    },
+    {
+        "timestamp": "00:42:45",
+        "content": "The thing before the dot, but it doesn't take anything else in in their own respective parentheses."
+    },
+    {
+        "timestamp": "00:42:51",
+        "content": "Right. But they do still need the parentheses there because they are functions."
+    },
+    {
+        "timestamp": "00:42:55",
+        "content": "Right. They are operations that will do something for us."
+    },
+    {
+        "timestamp": "00:43:00",
+        "content": "Okay. Questions about this. Is it okay? Okay."
+    },
+    {
+        "timestamp": "00:43:05",
+        "content": "Very good, because now you get a chance to try it out. So let's have you do something similar to what we did last time."
+    },
+    {
+        "timestamp": "00:43:12",
+        "content": "Take in a parameter, a sun, which is a string representing a sentence."
+    },
+    {
+        "timestamp": "00:43:16",
+        "content": "I want you to figure out all the words, quote unquote, the same in the same manner that we did before in the previous example."
+    },
+    {
+        "timestamp": "00:43:23",
+        "content": "But now return from your list with these words in sorted order."
+    },
+    {
+        "timestamp": "00:43:28",
+        "content": "Okay. So if the input was look at this photograph as my sentence, then I would return a list."
+    },
+    {
+        "timestamp": "00:43:35",
+        "content": "Where which has at look photograph."
+    },
+    {
+        "timestamp": "00:43:38",
+        "content": "And this as my three elements are my four elements in that order."
+    },
+    {
+        "timestamp": "00:43:45",
+        "content": "So here, uh, start writing it down on line 134."
+    },
+    {
+        "timestamp": "00:43:53",
+        "content": "Okay. What is the solution? What do you have so far?"
+    },
+    {
+        "timestamp": "00:44:06",
+        "content": "Yes. I'll split the l equals on that split."
+    },
+    {
+        "timestamp": "00:44:12",
+        "content": "And we split on a space. Got it."
+    },
+    {
+        "timestamp": "00:44:15",
+        "content": "Okay. L got sort of got it."
+    },
+    {
+        "timestamp": "00:44:21",
+        "content": "Return. Perfect. Okay. Let's see if that worked with our two examples."
+    },
+    {
+        "timestamp": "00:44:28",
+        "content": "Yep. There's my first one. There's my second one."
+    },
+    {
+        "timestamp": "00:44:32",
+        "content": "Anybody do it a different way that anyone you sorted?"
+    },
+    {
+        "timestamp": "00:44:35",
+        "content": "Yeah. Return."
+    },
+    {
+        "timestamp": "00:44:44",
+        "content": "Sorted parentheses. L Yeah. Is that how you would stand up?"
+    },
+    {
+        "timestamp": "00:44:53",
+        "content": "Yep. We could do it all in one. Perfect. Yeah. This could be a one liner for sure."
+    },
+    {
+        "timestamp": "00:44:58",
+        "content": "Yeah. So this works because this thing here creates for me a new object."
+    },
+    {
+        "timestamp": "00:45:06",
+        "content": "I could have saved it in a different variable and then return that variable. But this does it all in one."
+    },
+    {
+        "timestamp": "00:45:13",
+        "content": "So just for completion sake, if we comment up, the other solution this way still works."
+    },
+    {
+        "timestamp": "00:45:24",
+        "content": "Questions so far. Okay."
+    },
+    {
+        "timestamp": "00:45:32",
+        "content": "All right. So what we've seen so far is a bunch of these functions built in functions, right, that have these side effects."
+    },
+    {
+        "timestamp": "00:45:41",
+        "content": "They mutate the input, the input list."
+    },
+    {
+        "timestamp": "00:45:53",
+        "content": "So we can actually write our own functions that have a side effect where if we pass in a parameter that's a list, we can have our functions mutate that list however we'd like."
+    },
+    {
+        "timestamp": "00:45:59",
+        "content": "So let's go through this example. Let's say we were given the task of writing a function that takes in the input list l and"
+    },
+    {
+        "timestamp": "00:46:08",
+        "content": "and mutates the list l such that each element in L is changed to be the element square."
+    },
+    {
+        "timestamp": "00:46:15",
+        "content": "Right. So two for two, three and four as an input list becomes four, nine, 16."
+    },
+    {
+        "timestamp": "00:46:22",
+        "content": "Right. And I'm mutating that list. I'm not creating a new list and returning the new list."
+    },
+    {
+        "timestamp": "00:46:27",
+        "content": "I want to actually mutate the input list."
+    },
+    {
+        "timestamp": "00:46:38",
+        "content": "F. So if we were faced with this task the way that we would kind of go about it, maybe based on what we've learned so far as to say, well, I'm going to iterate through each element in L because that's a very python IC way to do this, right?"
+    },
+    {
+        "timestamp": "00:46:44",
+        "content": "So I'm grabbing the element in the list. L But then I would be stuck."
+    },
+    {
+        "timestamp": "00:46:50",
+        "content": "Because the syntax for changing an element at a particular location right is l at I equals, you know, whatever the change thing is."
+    },
+    {
+        "timestamp": "00:47:03",
+        "content": "But my loop variable is iterating through the element directly."
+    },
+    {
+        "timestamp": "00:47:08",
+        "content": "So what's my index in this particular case? I don't have it in hand."
+    },
+    {
+        "timestamp": "00:47:11",
+        "content": "Right. I have the element, but I don't have the index. So what are some solutions?"
+    },
+    {
+        "timestamp": "00:47:18",
+        "content": "Well, a first solution could be right before the loop to create a new variable that keeps track of the index."
+    },
+    {
+        "timestamp": "00:47:25",
+        "content": "Right. So you make equals zero right before the for loop and inside the for loop you increment I each time."
+    },
+    {
+        "timestamp": "00:47:31",
+        "content": "Now you're keeping track of the index yourself. Option two is to change what we iterate over."
+    },
+    {
+        "timestamp": "00:47:37",
+        "content": "So instead of iterating through each element and l directly, let's iterate over the index."
+    },
+    {
+        "timestamp": "00:47:42",
+        "content": "So iterate over a range length."
+    },
+    {
+        "timestamp": "00:47:45",
+        "content": "L In that case that the range length l basically becomes range, you know, five or 20 or whatever the length of my list is."
+    },
+    {
+        "timestamp": "00:47:54",
+        "content": "And a last option is to try to use this, this thing called enumerate, which is a python keyword, I guess function, a python function."
+    },
+    {
+        "timestamp": "00:48:06",
+        "content": "And the syntax for that would be for tuple i comma in enumerate l so I'm basically wrapping enumerate wrapping l inside this enumerate function and"
+    },
+    {
+        "timestamp": "00:48:16",
+        "content": "python each time through the loop makes this little tuple i comma e be the index and the element at each location for each time through the loop."
+    },
+    {
+        "timestamp": "00:48:28",
+        "content": "And so it gives you a two for one kind of deal here using this enumerate function."
+    },
+    {
+        "timestamp": "00:48:33",
+        "content": "I'm not going to go over option one or option three. I do encourage you to try to look these up or try to implement them yourself."
+    },
+    {
+        "timestamp": "00:48:38",
+        "content": "But I will go over option to in in these slides."
+    },
+    {
+        "timestamp": "00:48:44",
+        "content": "So if I were to iterate over the index directly, the way I do it is I'd have to change the loop variable, right."
+    },
+    {
+        "timestamp": "00:48:52",
+        "content": "For I in. And then the thing I want to loop over is all of the indexes indices."
+    },
+    {
+        "timestamp": "00:49:00",
+        "content": "Right. So I want to get the numbers zero one, two, three, four all the way up to the."
+    },
+    {
+        "timestamp": "00:49:05",
+        "content": "But not including the length of. Right. So once I have this index in hand, I can do something like this very easily."
+    },
+    {
+        "timestamp": "00:49:13",
+        "content": "Right. Because this I here is going to be my index. Right."
+    },
+    {
+        "timestamp": "00:49:18",
+        "content": "And the thing on the right hand side is just going to be a matter of grabbing the element at that index and squaring it."
+    },
+    {
+        "timestamp": "00:49:24",
+        "content": "Okay. So here l square brackets I on the right hand side grabs for me the element and index i."
+    },
+    {
+        "timestamp": "00:49:33",
+        "content": "So what's the value of that element at that particular location?"
+    },
+    {
+        "timestamp": "00:49:37",
+        "content": "23 whatever. Square it. So star star two squares it."
+    },
+    {
+        "timestamp": "00:49:42",
+        "content": "And then the thing on the left hand side is the syntax for changing the element at a particular location."
+    },
+    {
+        "timestamp": "00:49:49",
+        "content": "Right. We saw this way back on slide two."
+    },
+    {
+        "timestamp": "00:49:53",
+        "content": "So with this line of code, Python goes through each element in the list and squares it and saves it back into that same list."
+    },
+    {
+        "timestamp": "00:50:00",
+        "content": "No new list is created. It's mutating the original list."
+    },
+    {
+        "timestamp": "00:50:05",
+        "content": "Right. No return. Nothing to return this function or return none because it does its job of doing the mutation."
+    },
+    {
+        "timestamp": "00:50:14",
+        "content": "So if we go through an example, suppose that L is two, three, four."
+    },
+    {
+        "timestamp": "00:50:19",
+        "content": "What is this loop going to do? So I the first time through the loop will be zero."
+    },
+    {
+        "timestamp": "00:50:25",
+        "content": "And then. That first time through the loop it will mutate I so it says elsewhere bracket zero equals whatever the element at zero is the two squared."
+    },
+    {
+        "timestamp": "00:50:37",
+        "content": "So else for bracket zero will be changed to four. Right?"
+    },
+    {
+        "timestamp": "00:50:41",
+        "content": "So we've mutated the first element at index zero to be a four and everything else is the same."
+    },
+    {
+        "timestamp": "00:50:46",
+        "content": "Next time through the loop, I'm mutating the list that I had just mutated."
+    },
+    {
+        "timestamp": "00:50:51",
+        "content": "Right? So the first element is still the mutated value four."
+    },
+    {
+        "timestamp": "00:50:55",
+        "content": "But now I'm going to change my element at index one to be three squared nine last time"
+    },
+    {
+        "timestamp": "00:51:01",
+        "content": "through the loop every all the elements up to index two are going to be the mutated elements."
+    },
+    {
+        "timestamp": "00:51:07",
+        "content": "So four and nine. And then the last time through the loop I'm mutating the six, the four to be 16."
+    },
+    {
+        "timestamp": "00:51:12",
+        "content": "Right. The square version of that. Okay."
+    },
+    {
+        "timestamp": "00:51:17",
+        "content": "So to check that we did the mutation correctly."
+    },
+    {
+        "timestamp": "00:51:22",
+        "content": "What we would do is we would create an input list."
+    },
+    {
+        "timestamp": "00:51:25",
+        "content": "I called it in and you I've set it to two or three for my example."
+    },
+    {
+        "timestamp": "00:51:31",
+        "content": "If I print before the function, call the value of L in it's two, comma, three, comma, four, as expected, it shouldn't be anything different than that."
+    },
+    {
+        "timestamp": "00:51:39",
+        "content": "Then I make a function call to the function that we just wrote."
+    },
+    {
+        "timestamp": "00:51:43",
+        "content": "Note I'm not returning anything here, so I'm not saving the function call to any any variable."
+    },
+    {
+        "timestamp": "00:51:51",
+        "content": "All right. If I print in after the function call, it will print the mutated list."
+    },
+    {
+        "timestamp": "00:51:57",
+        "content": "So this Elin here and here and here is the same object."
+    },
+    {
+        "timestamp": "00:52:03",
+        "content": "Nothing was returned. This this function here has nothing to assign its return to."
+    },
+    {
+        "timestamp": "00:52:08",
+        "content": "If we assigned it to something, that variable would be none."
+    },
+    {
+        "timestamp": "00:52:12",
+        "content": "Just like the pen. Just like the sort. Just like the reverse. All right."
+    },
+    {
+        "timestamp": "00:52:18",
+        "content": "So when you're writing oh, your question and, you know, we created a function that doesn't have a return."
+    },
+    {
+        "timestamp": "00:52:31",
+        "content": "It doesn't say none because we didn't save the function called to any variable."
+    },
+    {
+        "timestamp": "00:52:36",
+        "content": "Right. If we said a equals this function call, if we print a, it would show that."
+    },
+    {
+        "timestamp": "00:52:43",
+        "content": "Yeah. Okay."
+    },
+    {
+        "timestamp": "00:52:47",
+        "content": "So when we're writing functions that mutate input lists, the two likely things you're going to have to do."
+    },
+    {
+        "timestamp": "00:52:53",
+        "content": "It depends on what your function's actually doing, but most likely you're going to have to iterate over the length of the list."
+    },
+    {
+        "timestamp": "00:53:08",
+        "content": "So for iron range length l to grab the index as well as the element to be able to grab the index as well as the element and these functions, I mean, they could do other stuff, but if you're using them for mutation and things like that, they're going to return none."
+    },
+    {
+        "timestamp": "00:53:14",
+        "content": "So when you make function calls to them, they'll those function calls will likely just be on a line without saving the return to any variable."
+    },
+    {
+        "timestamp": "00:53:22",
+        "content": "Right. Okay. So we've talked about mutable objects."
+    },
+    {
+        "timestamp": "00:53:27",
+        "content": "They're very, very useful places where they're useful."
+    },
+    {
+        "timestamp": "00:53:42",
+        "content": "Or the reason that they're useful is because they allow you to have basically large databases of objects like employee employees in the, you know, in a company list of all the students at MIT, things like that."
+    },
+    {
+        "timestamp": "00:53:55",
+        "content": "And if you want to make a change to something about that list, like a student changes their name or their address or something like that, with tuples, you'd have to make a new copy of that entire list."
+    },
+    {
+        "timestamp": "00:53:59",
+        "content": "So it could be very space inefficient because every time a student changes their address"
+    },
+    {
+        "timestamp": "00:54:09",
+        "content": "or their name or something about themselves or their grades or something like that, you're making a new copy of this, potentially thousands long data structure lists."
+    },
+    {
+        "timestamp": "00:54:16",
+        "content": "Don't have that issue with the list. You're just mutating the object in place and you're done."
+    },
+    {
+        "timestamp": "00:54:20",
+        "content": "No extra copies are being made. So it's a very efficient data structure."
+    },
+    {
+        "timestamp": "00:54:24",
+        "content": "But with lists comes some unexpected challenges. And we're going to go through three tricky examples today."
+    },
+    {
+        "timestamp": "00:54:29",
+        "content": "In the next lecture, we're going to see tricky example number four, and these three tricky examples involve looping over the list in one way or"
+    },
+    {
+        "timestamp": "00:54:36",
+        "content": "another over the range of the length of the list or through the list directly."
+    },
+    {
+        "timestamp": "00:54:41",
+        "content": "So let's look at the first example. In this code down here, we're going to loop over the range of the length of the L, okay?"
+    },
+    {
+        "timestamp": "00:54:52",
+        "content": "And then what we're going to do is append the loop variable I to the end of my list."
+    },
+    {
+        "timestamp": "00:55:01",
+        "content": "Now what does range length l do."
+    },
+    {
+        "timestamp": "00:55:05",
+        "content": "So remember the the things that are for loop iterates over is a sequence of values."
+    },
+    {
+        "timestamp": "00:55:12",
+        "content": "Now range some number Chris for us a tuple like object not a tuple specifically, but you can think of it like a tuple."
+    },
+    {
+        "timestamp": "00:55:21",
+        "content": "So range for the length of this particular list would create for us in memory something like a tuple the sequence 012, three."
+    },
+    {
+        "timestamp": "00:55:30",
+        "content": "Right. And this is the sequence that the loop variable I will go over first it'll be zero, then it'll be one, then it'll be two, then it'll be three."
+    },
+    {
+        "timestamp": "00:55:39",
+        "content": "So when we iterate through the sequence, Python says, okay, the first time I see this, I encounter this for loop."
+    },
+    {
+        "timestamp": "00:55:45",
+        "content": "I'm going to save this sequence."
+    },
+    {
+        "timestamp": "00:55:47",
+        "content": "I need to iterate over as a as an object in memory and then I'm going to have my loop variable iterate over each one of these elements."
+    },
+    {
+        "timestamp": "00:55:55",
+        "content": "The thing I'm doing is appending either the end of the list. So the first time through the list I'm going to depend a zero to the end."
+    },
+    {
+        "timestamp": "00:56:01",
+        "content": "So the zero being this loop for loop variable here, next time through the list, I'm appending the one to the list."
+    },
+    {
+        "timestamp": "00:56:08",
+        "content": "I just mutated. Next time I'm upending the two to the list I just mutated, and last time through the list I'm appending the three to the list."
+    },
+    {
+        "timestamp": "00:56:18",
+        "content": "I just mutated. And we finish we've gone through four times, we've appended four items to the end of the list, zero, one, two and three."
+    },
+    {
+        "timestamp": "00:56:28",
+        "content": "Right? This, this think this the elements of my sequence that I'm iterating over."
+    },
+    {
+        "timestamp": "00:56:36",
+        "content": "Let's look at the memory diagram. So originally it was one, two, three, four."
+    },
+    {
+        "timestamp": "00:56:44",
+        "content": "What exactly happens when we first encounter range length L that gets put as a variable?"
+    },
+    {
+        "timestamp": "00:56:50",
+        "content": "This tuple like thing I made, it'd be a tuple, but it's not exactly a tuple in memory."
+    },
+    {
+        "timestamp": "00:56:55",
+        "content": "And this I will iterate through each one of these values in my sequence, right?"
+    },
+    {
+        "timestamp": "00:56:59",
+        "content": "This is the sequence of values that that I'm going to iterate over."
+    },
+    {
+        "timestamp": "00:57:06",
+        "content": "So the first time through the loop python it has I pointing to zero here."
+    },
+    {
+        "timestamp": "00:57:12",
+        "content": "And so what's it doing inside the loop? It's going to pin the zero to the end of L, right."
+    },
+    {
+        "timestamp": "00:57:18",
+        "content": "Next time through the then it's going to print out sorry. And then next time through the loop, the loop variable increment by one."
+    },
+    {
+        "timestamp": "00:57:26",
+        "content": "Right. So we've already looked at the zero and now we're going to do the one."
+    },
+    {
+        "timestamp": "00:57:30",
+        "content": "So the loop variable is now one. So we're going to pen the loop variable one to the end of L print l."
+    },
+    {
+        "timestamp": "00:57:41",
+        "content": "Loop variable becomes to append the loop variable to the end of L, so now it has A to print L and then the last time we append the loop variable three to the end of the list l and print l."
+    },
+    {
+        "timestamp": "00:57:51",
+        "content": "Pretty straightforward."
+    },
+    {
+        "timestamp": "00:57:52",
+        "content": "The code terminates because we've created this original tuple like object here, which tells Python what values you need to iterate over."
+    },
+    {
+        "timestamp": "00:58:02",
+        "content": "This is your sequence of values to go through. So that's basically what I said."
+    },
+    {
+        "timestamp": "00:58:10",
+        "content": "So let's look at a slightly different example."
+    },
+    {
+        "timestamp": "00:58:12",
+        "content": "So in this case, instead of iterating over the range length l, let's iterate over the elements in L directly."
+    },
+    {
+        "timestamp": "00:58:27",
+        "content": "So for E and L now to keep things sort of in parallel to what we had done before, let's create a loop variable i equals zero before the for loop and let's incremented by one each time through the loop."
+    },
+    {
+        "timestamp": "00:58:32",
+        "content": "So we're going to still append zero, then one, then two, then three to the end of our list."
+    },
+    {
+        "timestamp": "00:58:37",
+        "content": "So in this particular case. We start out with the memory diagram like this."
+    },
+    {
+        "timestamp": "00:58:43",
+        "content": "So we have L pointing to one, two, three, four."
+    },
+    {
+        "timestamp": "00:58:47",
+        "content": "Luke variable AI is going to be zero originally and it will first point to the first element in the list, right."
+    },
+    {
+        "timestamp": "00:58:54",
+        "content": "That's what the for loop over the elements the list does."
+    },
+    {
+        "timestamp": "00:58:58",
+        "content": "So going into the list we say l got up and I so at the end of L I'm going to mutate it to contain a zero."
+    },
+    {
+        "timestamp": "00:59:09",
+        "content": "Good. I increment, I buy one. Good."
+    },
+    {
+        "timestamp": "00:59:13",
+        "content": "I print out. Okay, good. And then the next time, through the loop, Python says, All right, what's the next element in my sequence?"
+    },
+    {
+        "timestamp": "00:59:21",
+        "content": "Well, I looked at the one first. Now, let me look at the two."
+    },
+    {
+        "timestamp": "00:59:26",
+        "content": "All right. Now I'm looking at the two as my next element in sequence."
+    },
+    {
+        "timestamp": "00:59:29",
+        "content": "I'm going to append I to the end of the list. Right. So I'm open one to the end of L."
+    },
+    {
+        "timestamp": "00:59:36",
+        "content": "Increment I by one to be to printable. Okay."
+    },
+    {
+        "timestamp": "00:59:42",
+        "content": "Next value in my sequence e increments to the next element in the sequence the three."
+    },
+    {
+        "timestamp": "00:59:48",
+        "content": "We append AI to the end of the list we open to to the end of our increment i by one print."
+    },
+    {
+        "timestamp": "00:59:54",
+        "content": "L What do you notice? Is this code going to terminate?"
+    },
+    {
+        "timestamp": "01:00:02",
+        "content": "No, because our loop variable will always be four elements away from the list."
+    },
+    {
+        "timestamp": "01:00:14",
+        "content": "The end of the list. Right. As I'm adding that item to the end of my list loop variable iterates to the next item, but then I'm adding another item to the end of my list and my loop variable iterates."
+    },
+    {
+        "timestamp": "01:00:18",
+        "content": "And so we're always going to be for behind the end of the list."
+    },
+    {
+        "timestamp": "01:00:21",
+        "content": "So this code will actually never stop. All right."
+    },
+    {
+        "timestamp": "01:00:36",
+        "content": "So the difference here is what I'm iterating over in the previous example, as soon as Python saw range, length, whatever, it made this predefined sequence of values it needed to iterate over."
+    },
+    {
+        "timestamp": "01:00:41",
+        "content": "But here, it doesn't do that because it's iterating over my object out."
+    },
+    {
+        "timestamp": "01:00:45",
+        "content": "There's no predefined sequence to create. It's supposed to iterate over directly."
+    },
+    {
+        "timestamp": "01:00:51",
+        "content": "So that's the difference between these two. All right."
+    },
+    {
+        "timestamp": "01:01:00",
+        "content": "So now I'm going to show you before I do the last trick example involving concatenation, I wanted to mention one thing, which is there was a question earlier, how do we actually add more than one item to the end of our list?"
+    },
+    {
+        "timestamp": "01:01:06",
+        "content": "And we do that using this extend operation. And this extend operation."
+    },
+    {
+        "timestamp": "01:01:12",
+        "content": "Well, it's kind of like append, but we are going to add all of the elements of some list as the parameter to the end of our list."
+    },
+    {
+        "timestamp": "01:01:22",
+        "content": "So in effect, we're mutating l to be extended by all the elements in sum underscore list."
+    },
+    {
+        "timestamp": "01:01:30",
+        "content": "So here's an example. First, let's do concatenation, just to remind ourselves what it does."
+    },
+    {
+        "timestamp": "01:01:34",
+        "content": "So L1 is two, one, three and memory L2 is four, five, six, and Memory L three is going to be a one concatenated with L2."
+    },
+    {
+        "timestamp": "01:01:42",
+        "content": "Pretty straightforward. It's concatenation."
+    },
+    {
+        "timestamp": "01:01:44",
+        "content": "So Python creates for me a new object, which is all the objects, and I want an L to put together as this completely new object bound to the name L3."
+    },
+    {
+        "timestamp": "01:01:54",
+        "content": "So I want an L to remain unchanged. No problems there."
+    },
+    {
+        "timestamp": "01:01:59",
+        "content": "But the extend is going to take is going to mutate."
+    },
+    {
+        "timestamp": "01:02:03",
+        "content": "Notice the dot notation format of extend."
+    },
+    {
+        "timestamp": "01:02:07",
+        "content": "It's going to mutate a one to be extended by all the elements in this list."
+    },
+    {
+        "timestamp": "01:02:12",
+        "content": "So it's going to add a zero and a six to the end of L1."
+    },
+    {
+        "timestamp": "01:02:17",
+        "content": "So here it is. I've got L1 mutated to be two, one, three, and then zero, then six."
+    },
+    {
+        "timestamp": "01:02:23",
+        "content": "Right. So just to bring the point home, the thing we're standing by is all of the elements of this list in the parameter."
+    },
+    {
+        "timestamp": "01:02:32",
+        "content": "Right. So in this particular case, L to extend will be extended by how many elements?"
+    },
+    {
+        "timestamp": "01:02:39",
+        "content": "Two or four. Yeah, I see, too."
+    },
+    {
+        "timestamp": "01:02:47",
+        "content": "Exactly. It'll be extended by two elements at the top level. Right."
+    },
+    {
+        "timestamp": "01:02:50",
+        "content": "This list has two elements in it. A list, and then another list."
+    },
+    {
+        "timestamp": "01:02:54",
+        "content": "So this command here will extend L two by these two elements, specifically one comma, two as a list, and three comma, four as a list."
+    },
+    {
+        "timestamp": "01:03:04",
+        "content": "Right. But these are individual objects or single objects that are lists."
+    },
+    {
+        "timestamp": "01:03:08",
+        "content": "They happen to have a bunch of elements as part of the list, but they are two objects."
+    },
+    {
+        "timestamp": "01:03:13",
+        "content": "Yeah, but the extended. We're sending by."
+    },
+    {
+        "timestamp": "01:03:19",
+        "content": "How come there's no more? Started this practice."
+    },
+    {
+        "timestamp": "01:03:24",
+        "content": "When we extend it by zero six, there's no brackets because we're extending it by the elements of this top level list."
+    },
+    {
+        "timestamp": "01:03:31",
+        "content": "So it's two integers, right? And here we're extending it by the elements of this top level list."
+    },
+    {
+        "timestamp": "01:03:37",
+        "content": "So in the sense that the outermost parentheses which are actually they are lists, right."
+    },
+    {
+        "timestamp": "01:03:44",
+        "content": "So yeah. Okay."
+    },
+    {
+        "timestamp": "01:03:52",
+        "content": "So that introduces extend. We're not actually going to use Extend for this particular example, but I did want to mention it in this example."
+    },
+    {
+        "timestamp": "01:03:58",
+        "content": "We're going to use the plus the concatenation operator to create for us this this new this new object and bind it to elegant."
+    },
+    {
+        "timestamp": "01:04:08",
+        "content": "So let's see what this is going to do."
+    },
+    {
+        "timestamp": "01:04:11",
+        "content": "First, I'm going to actually tell you the answer, and then we'll do the memory diagram again to bring the point home."
+    },
+    {
+        "timestamp": "01:04:17",
+        "content": "So. This loop will again loop through all the elements in help."
+    },
+    {
+        "timestamp": "01:04:24",
+        "content": "Originally, it's one, two, three, four in a list. All right."
+    },
+    {
+        "timestamp": "01:04:28",
+        "content": "So what is the actual loop going to do?"
+    },
+    {
+        "timestamp": "01:04:33",
+        "content": "It's going to take whatever is an l double it."
+    },
+    {
+        "timestamp": "01:04:37",
+        "content": "Right. So originally L is one, two, three, four for the first time through the loop is going to create a new object which is just a l."
+    },
+    {
+        "timestamp": "01:04:45",
+        "content": "One, two, three, four. Doubled. Right. I've concatenated with itself."
+    },
+    {
+        "timestamp": "01:04:49",
+        "content": "And then I'm going to save it in my new as this new object with the name L again."
+    },
+    {
+        "timestamp": "01:04:58",
+        "content": "That's the first time through the loop with a second time through the loop."
+    },
+    {
+        "timestamp": "01:05:02",
+        "content": "I'm going to take whatever l was mutated or whatever l was before."
+    },
+    {
+        "timestamp": "01:05:07",
+        "content": "Sorry, not mutated, but whatever l was before. So it's one, two, three, four."
+    },
+    {
+        "timestamp": "01:05:10",
+        "content": "One, two, three, four. Double that. And save it under the name L."
+    },
+    {
+        "timestamp": "01:05:17",
+        "content": "Second time now, third time through the loop. I'm going to take whatever l is right now."
+    },
+    {
+        "timestamp": "01:05:23",
+        "content": "So these two rows of one, two, three, four. One, two, three, four."
+    },
+    {
+        "timestamp": "01:05:27",
+        "content": "Double that and save it under the name L."
+    },
+    {
+        "timestamp": "01:05:33",
+        "content": "And then the last time through the loop, I'm going to take whatever l was before."
+    },
+    {
+        "timestamp": "01:05:39",
+        "content": "So these four rows of one, two, three, four, one, two, three, four, double those and save that just as the new L."
+    },
+    {
+        "timestamp": "01:05:46",
+        "content": "And that's it. This code does not go to infinity."
+    },
+    {
+        "timestamp": "01:05:55",
+        "content": "Now. Let's see why exactly that is. So this will help."
+    },
+    {
+        "timestamp": "01:06:00",
+        "content": "Originally I've got EL is one, two, three, four. Right."
+    },
+    {
+        "timestamp": "01:06:03",
+        "content": "So that's straightforward. My loop variable E goes through each element in this object."
+    },
+    {
+        "timestamp": "01:06:10",
+        "content": "Right? So first it's going to point to the one. So far the same."
+    },
+    {
+        "timestamp": "01:06:16",
+        "content": "L equals l plus l. Let's look at the right hand side first."
+    },
+    {
+        "timestamp": "01:06:20",
+        "content": "Okay. This creates for me a new object, right?"
+    },
+    {
+        "timestamp": "01:06:23",
+        "content": "Remember, concatenation creates for me a new object. It doesn't mutate anything."
+    },
+    {
+        "timestamp": "01:06:28",
+        "content": "So in memory, I'm going to get one, two, three, four. One, two, three, four."
+    },
+    {
+        "timestamp": "01:06:32",
+        "content": "I've doubled l l with itself. What is el equals going to do?"
+    },
+    {
+        "timestamp": "01:06:41",
+        "content": "You remember we did a slide like this very similar to this, like when we reassigned the tuple."
+    },
+    {
+        "timestamp": "01:06:47",
+        "content": "The equals will actually take the binding from my original object and put it on the new object that I just created."
+    },
+    {
+        "timestamp": "01:06:57",
+        "content": "Right. Exactly. The that the memory diagram with the tuple."
+    },
+    {
+        "timestamp": "01:07:00",
+        "content": "Right. I had happened to have the same name, but it's pointing to a new object."
+    },
+    {
+        "timestamp": "01:07:05",
+        "content": "Same here. I happen to have the same name. Oh. But it's now pointing this new object."
+    },
+    {
+        "timestamp": "01:07:10",
+        "content": "The old object. This thing that I'm iterating over."
+    },
+    {
+        "timestamp": "01:07:14",
+        "content": "I've lost the binding to it."
+    },
+    {
+        "timestamp": "01:07:17",
+        "content": "And really the only way I can even reference that old object is through this because that is still going to go through this old object elements."
+    },
+    {
+        "timestamp": "01:07:27",
+        "content": "So that's the first time. Yes. Question why it is why it is not because you just signed it before you came out."
+    },
+    {
+        "timestamp": "01:07:36",
+        "content": "Yes. You defined it to be the object in memory, not the name."
+    },
+    {
+        "timestamp": "01:07:41",
+        "content": "So it's so it is bound to the object in memory. That's this thing here."
+    },
+    {
+        "timestamp": "01:07:45",
+        "content": "That's why it was so important to kind of separate ourselves from the object in memory versus the name."
+    },
+    {
+        "timestamp": "01:07:50",
+        "content": "We give an object because that name can change to anything. Just a bunch of other stuff."
+    },
+    {
+        "timestamp": "01:07:55",
+        "content": "But the object itself remains in memory. All right. So then this becomes pretty straightforward."
+    },
+    {
+        "timestamp": "01:08:01",
+        "content": "If you understand that piece, right, the first time through the loop, I've got l assigned to this new object here."
+    },
+    {
+        "timestamp": "01:08:07",
+        "content": "I've lost the binding to my original list that I'm iterating over."
+    },
+    {
+        "timestamp": "01:08:12",
+        "content": "So when I print L.A. print this next time, it increases to the next element in my sequence."
+    },
+    {
+        "timestamp": "01:08:20",
+        "content": "Right? L will double what it currently is."
+    },
+    {
+        "timestamp": "01:08:24",
+        "content": "So it's currently this thing here. It's going to double to that and I'm going to lose the binding from the original or not the original."
+    },
+    {
+        "timestamp": "01:08:31",
+        "content": "But this thing that I had just bound it to, to bind it to the next object that I just created."
+    },
+    {
+        "timestamp": "01:08:38",
+        "content": "And then that's the second time through the loop. It looks like this third time through the loop e increments by one right to the next value."
+    },
+    {
+        "timestamp": "01:08:47",
+        "content": "In my sequence, I'm going to take L plus L, so double that."
+    },
+    {
+        "timestamp": "01:08:52",
+        "content": "Previous data object. Take the binding from that previous object to the new one."
+    },
+    {
+        "timestamp": "01:08:59",
+        "content": "Increment it by one more."
+    },
+    {
+        "timestamp": "01:09:03",
+        "content": "Right. And this will be the last time is going to change, because after this, you will have gone through all the elements in the sequence."
+    },
+    {
+        "timestamp": "01:09:11",
+        "content": "It's gone through the end of that list. All right."
+    },
+    {
+        "timestamp": "01:09:14",
+        "content": "So the last time through the loop, I've doubled that out and I've lost the binding from the previous one, made it to the new one, and then that's it."
+    },
+    {
+        "timestamp": "01:09:20",
+        "content": "It's done. Questions."
+    },
+    {
+        "timestamp": "01:09:27",
+        "content": "Is it straightforward? Does the picture help all that?"
+    },
+    {
+        "timestamp": "01:09:31",
+        "content": "Okay. Okay."
+    },
+    {
+        "timestamp": "01:09:35",
+        "content": "One more thing I want to mention, and this is kind of a preview of what we're going to do next time."
+    },
+    {
+        "timestamp": "01:09:40",
+        "content": "One very useful operation that you might want to do is to take a list and remove all of its elements."
+    },
+    {
+        "timestamp": "01:09:47",
+        "content": "But not. Go ahead. Sorry. What she like?"
+    },
+    {
+        "timestamp": "01:09:52",
+        "content": "Because usually it stops before the last one. Oh, here."
+    },
+    {
+        "timestamp": "01:09:57",
+        "content": "That's in range. So here it's just iterating through all the elements in the sequence."
+    },
+    {
+        "timestamp": "01:10:01",
+        "content": "Right? Going to everyone. So when you say operation we might want to do is to remove all the elements in the list but not start."
+    },
+    {
+        "timestamp": "01:10:11",
+        "content": "But by mutating the list. So we want to keep our original list object."
+    },
+    {
+        "timestamp": "01:10:17",
+        "content": "We just want to basically clear it out of all of its elements. And so the command for that has a pretty nice name."
+    },
+    {
+        "timestamp": "01:10:24",
+        "content": "It's called clear. So if you want to take a list l and clear it."
+    },
+    {
+        "timestamp": "01:10:28",
+        "content": "So to remove all the elements inside it, you say l dot clear."
+    },
+    {
+        "timestamp": "01:10:33",
+        "content": "Okay. And that mutates my original list."
+    },
+    {
+        "timestamp": "01:10:37",
+        "content": "L to be empty. So one thing that might help sort of with this mutation lecture and figuring out which"
+    },
+    {
+        "timestamp": "01:10:50",
+        "content": "object is which and whether you've created a new object or not is to figure out, is to ask, how do I know that this object is the object that I'm mutating?"
+    },
+    {
+        "timestamp": "01:10:55",
+        "content": "And to do that, we're actually going to use this function called I.D."
+    },
+    {
+        "timestamp": "01:10:59",
+        "content": "And ID, let's just kind of get the memory location or memory object or the idea of the object itself in memory."
+    },
+    {
+        "timestamp": "01:11:09",
+        "content": "So the code on the left is code that takes in a list."
+    },
+    {
+        "timestamp": "01:11:14",
+        "content": "L We get its ID to see what is this? What, what is this object in memory?"
+    },
+    {
+        "timestamp": "01:11:27",
+        "content": "What's its number? Append an eight to it. We're going to see that the idea of this is going to be the same as the idea of this, because we're mutating, we're not adding, we're not changing it, we're not creating a new object."
+    },
+    {
+        "timestamp": "01:11:36",
+        "content": "And then lastly, we're going to clear it and check the ID again, and you're going to see that the ID is exactly the same in all of these different cases."
+    },
+    {
+        "timestamp": "01:11:39",
+        "content": "Okay. So I'm doing this in the just in the console just to show you real quick."
+    },
+    {
+        "timestamp": "01:11:44",
+        "content": "So here I have four or five. Six is my L, right? Here's L four, five, six."
+    },
+    {
+        "timestamp": "01:11:49",
+        "content": "The idea of it is this number here."
+    },
+    {
+        "timestamp": "01:11:53",
+        "content": "We could just look at the last four, three letter, three digits or whatever."
+    },
+    {
+        "timestamp": "01:11:57",
+        "content": "Eight, eight. Let's append. An item to the end of our list."
+    },
+    {
+        "timestamp": "01:12:03",
+        "content": "Right. L mutated to contain that item."
+    },
+    {
+        "timestamp": "01:12:06",
+        "content": "The idea of L remains the same. Right as an eight a weight."
+    },
+    {
+        "timestamp": "01:12:10",
+        "content": "It's the exact same object in memory. We've mutated it."
+    },
+    {
+        "timestamp": "01:12:14",
+        "content": "Eldon clear. L empty list."
+    },
+    {
+        "timestamp": "01:12:20",
+        "content": "Right. I've removed all the elements of L and the idea of L will show me that is the exact same object."
+    },
+    {
+        "timestamp": "01:12:26",
+        "content": "Right? I'm just mutating the same object in memory. Let's do that again."
+    },
+    {
+        "timestamp": "01:12:33",
+        "content": "Except in the new version. Instead of using l dot clear, I will say l is equal to the empty list."
+    },
+    {
+        "timestamp": "01:12:40",
+        "content": "And this is also a really common common mistake to make."
+    },
+    {
+        "timestamp": "01:12:44",
+        "content": "So here I have Ellis. Four, five, six. Again, this is my."
+    },
+    {
+        "timestamp": "01:12:48",
+        "content": "Oh, let's get the idea of El. It's going to be a new one because I've reassigned El to this new list."
+    },
+    {
+        "timestamp": "01:12:54",
+        "content": "Right. So this one ends in three. One, two. Again."
+    },
+    {
+        "timestamp": "01:12:58",
+        "content": "Let's do in a pen just for fun, right? The id, r o id of l is going to be again three."
+    },
+    {
+        "timestamp": "01:13:09",
+        "content": "One, two. But now if I say L is equal to the empty list, this is exactly the same as the situations we've seen before with the tuple and with that that trick example."
+    },
+    {
+        "timestamp": "01:13:15",
+        "content": "Number three when I say L is equal to the empty list, Python takes my name L and assigns it to this object that is the empty list."
+    },
+    {
+        "timestamp": "01:13:23",
+        "content": "My original object for five, six, eight is still in memory."
+    },
+    {
+        "timestamp": "01:13:27",
+        "content": "I've just lost the binding to it. Right. So here's L."
+    },
+    {
+        "timestamp": "01:13:33",
+        "content": "It's an empty list, but the idea of L is now going to be different, right?"
+    },
+    {
+        "timestamp": "01:13:37",
+        "content": "Originally, I was working with this list at ID three, one, two."
+    },
+    {
+        "timestamp": "01:13:42",
+        "content": "But after I said L is equal to the empty list, I've lost the binding from that old list and rebound my list, my name out of this new empty list."
+    },
+    {
+        "timestamp": "01:13:52",
+        "content": "And you can see this using the this is just pretty cool."
+    },
+    {
+        "timestamp": "01:13:58",
+        "content": "Okay. Quick summary."
+    },
+    {
+        "timestamp": "01:14:00",
+        "content": "So we saw lists and tuples as a way for us to create these compound data structures that can contain any kind of object as their elements."
+    },
+    {
+        "timestamp": "01:14:08",
+        "content": "Tuples are immutable."
+    },
+    {
+        "timestamp": "01:14:10",
+        "content": "So for things like think things that don't change, they're very useful, like country latitude, longitude, those things won't change."
+    },
+    {
+        "timestamp": "01:14:18",
+        "content": "Or, you know, the word that appears on a page number at a line number or something like that."
+    },
+    {
+        "timestamp": "01:14:24",
+        "content": "Lists are mutable objects, so you use them in situations where you need that dynamic aspect, right?"
+    },
+    {
+        "timestamp": "01:14:30",
+        "content": "So if you want to maintain a list of employees, you want to maintain a list of students, a list of grocery items or things in your fridge, right?"
+    },
+    {
+        "timestamp": "01:14:37",
+        "content": "Those are really good situations where you'd want to list because things are constantly changing."
+    },
+    {
+        "timestamp": "01:14:41",
+        "content": "You don't want to make copies of everything all the time because it becomes very inefficient to do so."
+    },
+    {
+        "timestamp": "01:14:47",
+        "content": "Okay, so next lecture, we will continue with tricky examples and we'll also have a quiz."
+    },
+    {
+        "timestamp": "01:14:54",
+        "content": "Remember, quizzes are now on Mondays."
+    }
+]

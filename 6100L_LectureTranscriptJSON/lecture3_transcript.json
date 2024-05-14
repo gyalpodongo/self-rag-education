@@ -1,0 +1,1794 @@
+[
+    {
+        "timestamp": "00:00:27",
+        "content": "LAST LECTURE RECAP"
+    },
+    {
+        "timestamp": "00:00:57",
+        "content": "Branching"
+    },
+    {
+        "timestamp": "00:01:12",
+        "content": "BRANCHING RECAP"
+    },
+    {
+        "timestamp": "00:05:24",
+        "content": "If you keep going right, you are stuck in the same spot\u2026"
+    },
+    {
+        "timestamp": "00:07:48",
+        "content": "BINGE ALL EPISODES OF ONE SHOW"
+    },
+    {
+        "timestamp": "00:08:54",
+        "content": "CONTROL FLOW: while LOOPS"
+    },
+    {
+        "timestamp": "00:11:03",
+        "content": "while LOOP EXAMPLE"
+    },
+    {
+        "timestamp": "00:12:48",
+        "content": "YOU TRY IT!"
+    },
+    {
+        "timestamp": "00:18:45",
+        "content": "BIG IDEA"
+    },
+    {
+        "timestamp": "00:19:06",
+        "content": "while"
+    },
+    {
+        "timestamp": "00:24:57",
+        "content": "A COMMON PATTERN"
+    },
+    {
+        "timestamp": "00:26:33",
+        "content": "Python Tutor: Visualize code in Python, JavaScript, C, C++,\u2026"
+    },
+    {
+        "timestamp": "00:29:42",
+        "content": "ARE YOU STILL WATCHING?"
+    },
+    {
+        "timestamp": "00:31:21",
+        "content": "STRUCTURE of for LOOPS"
+    },
+    {
+        "timestamp": "00:32:18",
+        "content": "A COMMON SEQUENCE of VALUES"
+    },
+    {
+        "timestamp": "00:34:27",
+        "content": "range"
+    },
+    {
+        "timestamp": "00:40:06",
+        "content": "RUNNING SUM"
+    },
+    {
+        "timestamp": "00:44:03",
+        "content": "for LOOPS and range"
+    },
+    {
+        "timestamp": "00:45:39",
+        "content": "SUMMARY"
+    },
+    {
+        "timestamp": "00:00:01",
+        "content": "So let's start today's lecture. Today, we're going to be talking about the idea of iteration."
+    },
+    {
+        "timestamp": "00:00:08",
+        "content": "And iteration is another way we're going to add control flow to our programs."
+    },
+    {
+        "timestamp": "00:00:13",
+        "content": "But before we do that, let's do a little bit of a recap on."
+    },
+    {
+        "timestamp": "00:00:19",
+        "content": "Sorry. Let's do a little bit of a recap of what we've done so far."
+    },
+    {
+        "timestamp": "00:00:22",
+        "content": "Last lecture, because last lecture we actually introduced a different mechanism for control, flow branching."
+    },
+    {
+        "timestamp": "00:00:29",
+        "content": "And the control flow is basically a way for us to tell Python not to go systematically through the code."
+    },
+    {
+        "timestamp": "00:00:40",
+        "content": "Branching was a way for us to tell Python hey, based on some condition being true or false, either evaluate some set of code or another set of code, right?"
+    },
+    {
+        "timestamp": "00:00:44",
+        "content": "Which was not going literally. We were actually kind of skipping around through the code."
+    },
+    {
+        "timestamp": "00:00:49",
+        "content": "So that's what we learned at the end of the lecture. But we also learned about input and output."
+    },
+    {
+        "timestamp": "00:00:54",
+        "content": "So a way for us to write interactive programs and we learned about a new data type the string."
+    },
+    {
+        "timestamp": "00:01:00",
+        "content": "So the string was a sequence of characters. Hopefully you got a chance to do a little bit of exercises on it."
+    },
+    {
+        "timestamp": "00:01:06",
+        "content": "My checks as practice for today's quiz with quizzes with strings and branching."
+    },
+    {
+        "timestamp": "00:01:13",
+        "content": "Okay. So in branching. What did we learn? We talked about how to actually add a branching point in our program."
+    },
+    {
+        "timestamp": "00:01:20",
+        "content": "So we did that using these particular keywords."
+    },
+    {
+        "timestamp": "00:01:23",
+        "content": "So when you type them in your program, in the File Editor, you'll see that they kind of turn a different color."
+    },
+    {
+        "timestamp": "00:01:27",
+        "content": "That tells you it's a special word in Python."
+    },
+    {
+        "timestamp": "00:01:30",
+        "content": "And these keywords are how we told Python to put a branching branching point and the colon kind of ended the branching conditional."
+    },
+    {
+        "timestamp": "00:01:41",
+        "content": "And then anything that was indented as part of that conditional was code that would be executed when that condition was true."
+    },
+    {
+        "timestamp": "00:01:49",
+        "content": "So I'm just going to quickly go over these each one of these boxes."
+    },
+    {
+        "timestamp": "00:01:52",
+        "content": "So the first one up here was the simplest way that we could add a conditional to our program."
+    },
+    {
+        "timestamp": "00:01:57",
+        "content": "It basically said, Hey, go through the program when you reach this condition."
+    },
+    {
+        "timestamp": "00:02:02",
+        "content": "Python would check the condition and say, if that condition is true."
+    },
+    {
+        "timestamp": "00:02:06",
+        "content": "Execute the code, the code that's indented as part of that block."
+    },
+    {
+        "timestamp": "00:02:10",
+        "content": "If the conditional was not true. Don't do anything. Just carry on with the remaining program."
+    },
+    {
+        "timestamp": "00:02:21",
+        "content": "If we want it to do something else. So if the condition was not true, if we wanted to do something else, we added this else clause here and the LS also has some sort of code indented as part of its code block."
+    },
+    {
+        "timestamp": "00:02:29",
+        "content": "And that code would be executed when that condition was false."
+    },
+    {
+        "timestamp": "00:02:35",
+        "content": "Okay. So that was a really simple if or if else, code structure."
+    },
+    {
+        "timestamp": "00:02:39",
+        "content": "But sometimes we want to have code that checks for many conditions."
+    },
+    {
+        "timestamp": "00:02:42",
+        "content": "Right? Not just one. That's where the ELIF structure came in."
+    },
+    {
+        "timestamp": "00:02:46",
+        "content": "So we would have an if condition that starts our code block."
+    },
+    {
+        "timestamp": "00:02:51",
+        "content": "If that condition was true, as usual, we execute the code that's part of that block."
+    },
+    {
+        "timestamp": "00:03:01",
+        "content": "Else if so, Elif, we could insert another condition and Python would say, okay, well if that one wasn't true, let me check if this next one is true and then we would execute the code."
+    },
+    {
+        "timestamp": "00:03:05",
+        "content": "That's part of that code. BLOCK And we can add we can change as many of these, Elif, as we want together."
+    },
+    {
+        "timestamp": "00:03:11",
+        "content": "And Python will evaluate the very first one that it finds true."
+    },
+    {
+        "timestamp": "00:03:23",
+        "content": "That's part of this chain. Okay. Even if more than one is true, it is possible none of those conditions were true, in which case Python would basically skip over all of them and do nothing."
+    },
+    {
+        "timestamp": "00:03:35",
+        "content": "Enter none of those blocks. If you wanted to have a structure where if none of those conditions were true, you wanted to do something, you could put an else at the end of a whole chain of if if Elif lifts and the else would be executed when none of those conditions are true."
+    },
+    {
+        "timestamp": "00:03:44",
+        "content": "Okay. So hopefully this is just recap."
+    },
+    {
+        "timestamp": "00:04:04",
+        "content": "One sort of tricky thing to remember is the if starts a code block so the if can have an else associated with it or it can have an elif, elif, elif and and else associated with it. But if you have if condition and then followed by another if condition, both of those code blocks could potentially be executed because the IPS are independent."
+    },
+    {
+        "timestamp": "00:04:09",
+        "content": "Right. It's not an L situation. They're just another if code block that that that gets started."
+    },
+    {
+        "timestamp": "00:04:16",
+        "content": "So the way we told Python again, just to reiterate the way you told Python which code to execute when the condition is true is by indentation."
+    },
+    {
+        "timestamp": "00:04:23",
+        "content": "And indentation is something you have to do. It's not optional in Python."
+    },
+    {
+        "timestamp": "00:04:29",
+        "content": "Okay. So let's take what we've learned so far and cooked up a really simple game."
+    },
+    {
+        "timestamp": "00:04:34",
+        "content": "So this is sort of a very simple variation of the last words and Zelda sort of my version of it."
+    },
+    {
+        "timestamp": "00:04:38",
+        "content": "Let's say it's kind of a trick level where you have your character and they enter the last words."
+    },
+    {
+        "timestamp": "00:04:44",
+        "content": "They're presented with the screen. And the trick here is you ask the user if they want to go left or right."
+    },
+    {
+        "timestamp": "00:04:51",
+        "content": "If they say right, you're basically going to present them with the exact same screen all over again."
+    },
+    {
+        "timestamp": "00:04:56",
+        "content": "So it's kind of, you know, representing that they're lost in the woods. And as long as they say, I want to keep going, right?"
+    },
+    {
+        "timestamp": "00:05:01",
+        "content": "I want to keep going right. I want to keep going. Right. They're basically going to see the same screen over and over again."
+    },
+    {
+        "timestamp": "00:05:07",
+        "content": "And the trick to getting out of the woods is to say, I want to go left."
+    },
+    {
+        "timestamp": "00:05:11",
+        "content": "Okay. So no matter how far, how many times they've said right in a row, as long as they type in left, they're out of the woods."
+    },
+    {
+        "timestamp": "00:05:20",
+        "content": "Okay. So let's try to code that up with what we know."
+    },
+    {
+        "timestamp": "00:05:23",
+        "content": "Just conditionals. We have an if else, right?"
+    },
+    {
+        "timestamp": "00:05:29",
+        "content": "The if says if the user exits. Right, we're going to do something."
+    },
+    {
+        "timestamp": "00:05:33",
+        "content": "And otherwise, we're going to say that the user said left or something else or exit."
+    },
+    {
+        "timestamp": "00:05:38",
+        "content": "And then we're going to tell them that they've exited successfully. All right."
+    },
+    {
+        "timestamp": "00:05:42",
+        "content": "Now, if they said exit, right, what do we do? What? We're going to show them the exact same thing again."
+    },
+    {
+        "timestamp": "00:05:46",
+        "content": "So we're setting the background to the same woods background and then the presented the with the choice all over again."
+    },
+    {
+        "timestamp": "00:05:51",
+        "content": "Right. Do you want to exit right. Or you want to exit left? So if they say exit right, we would do something."
+    },
+    {
+        "timestamp": "00:05:58",
+        "content": "And otherwise we would tell them they were they successfully exited."
+    },
+    {
+        "timestamp": "00:06:02",
+        "content": "Okay. Well, what if they exited, right? If they exited right, then we would do something again, basically present them with the same situation."
+    },
+    {
+        "timestamp": "00:06:11",
+        "content": "So we would set the woods background again and then we would ask them if they want to go right or left again."
+    },
+    {
+        "timestamp": "00:06:16",
+        "content": "And otherwise, if they said left, they exit. So we already see a problem, right?"
+    },
+    {
+        "timestamp": "00:06:22",
+        "content": "How deep do we make this nested loop situation right here?"
+    },
+    {
+        "timestamp": "00:06:25",
+        "content": "We already have three in case the user said I want to go right three times in a row, but we don't know how persistent the user will be."
+    },
+    {
+        "timestamp": "00:06:33",
+        "content": "So how do we know when we're writing our code? How deep to make this nested loop?"
+    },
+    {
+        "timestamp": "00:06:38",
+        "content": "We don't. Right. We won't be able to really code this up very well with what we know so far."
+    },
+    {
+        "timestamp": "00:06:44",
+        "content": "So that's kind of the motivation for introducing iteration because the situation on the previous slide"
+    },
+    {
+        "timestamp": "00:06:49",
+        "content": "fits really well with some tasks we want to repeat multiple times as long as some condition is true."
+    },
+    {
+        "timestamp": "00:06:55",
+        "content": "In our case, the condition is the user says, I want to exit, right?"
+    },
+    {
+        "timestamp": "00:06:59",
+        "content": "So while the user keeps saying exit right, show them the woods background and ask them again, which way do you want to go?"
+    },
+    {
+        "timestamp": "00:07:07",
+        "content": "And so while that's true, just repeat this this set of things, check this that they said exit."
+    },
+    {
+        "timestamp": "00:07:12",
+        "content": "Right. Show them the woods background. Ask them again. Check that they said exit."
+    },
+    {
+        "timestamp": "00:07:16",
+        "content": "Right. Show them the background. Ask them again. And if at any point they'd say, I don't want to exit."
+    },
+    {
+        "timestamp": "00:07:21",
+        "content": "Right? We break out of this loop and we kind of rejoin the rest of the program."
+    },
+    {
+        "timestamp": "00:07:27",
+        "content": "That's kind of the terminology. We used it with other statements, right? We set the background to the exit background and they're out of the woods."
+    },
+    {
+        "timestamp": "00:07:34",
+        "content": "So this sets the scene for a while. Loops. Here's another example of why loops sort of in the context of watching a show."
+    },
+    {
+        "timestamp": "00:07:47",
+        "content": "So if we want to start a new show on Netflix and we want to watch all episodes of the show in one shot, we're going to tell Netflix we're starting a new show. And while there are more episodes to watch in the show."
+    },
+    {
+        "timestamp": "00:07:54",
+        "content": "We're going to keep watching the next episode. Right. So if there are no more episodes to watch, then we're done."
+    },
+    {
+        "timestamp": "00:08:00",
+        "content": "Right now, Python Netflix will suggest three more shows like this one."
+    },
+    {
+        "timestamp": "00:08:04",
+        "content": "And while there are more episodes to watch. So yes, there are more episodes to watch."
+    },
+    {
+        "timestamp": "00:08:08",
+        "content": "We're going to play the next episode in series in sequence."
+    },
+    {
+        "timestamp": "00:08:13",
+        "content": "So that's the idea that we're trying to get out with while loops in Python this is how we called them."
+    },
+    {
+        "timestamp": "00:08:17",
+        "content": "So we start a y loop with the keyword while. So this again will turn blue in Python because it's a special word."
+    },
+    {
+        "timestamp": "00:08:25",
+        "content": "Some condition is true. Okay. So this is again, some expression or something that will evaluate to a boolean like we talked about in last lecture."
+    },
+    {
+        "timestamp": "00:08:36",
+        "content": "Okay. Colon and Colon tells Python we're starting a code block."
+    },
+    {
+        "timestamp": "00:08:40",
+        "content": "That's part of the while loop being true. And as usual, the code block means we're going to indent these lines of code, right?"
+    },
+    {
+        "timestamp": "00:08:48",
+        "content": "So whatever we want to execute when the condition is true will be indented."
+    },
+    {
+        "timestamp": "00:08:55",
+        "content": "When the indented statements are finished executed Python automatically goes back and rechecked that the"
+    },
+    {
+        "timestamp": "00:09:04",
+        "content": "condition so read checks whether the condition is true or not and this is done behind the scenes right?"
+    },
+    {
+        "timestamp": "00:09:16",
+        "content": "When you code up while loop when you type in the keyword, while python will automatically do this behavior, it'll check the condition, it'll execute the lines of code indented, and then it'll go back and check the condition again."
+    },
+    {
+        "timestamp": "00:09:22",
+        "content": "If it's still true, it'll execute the lines of code indented again, and then it'll check the condition again."
+    },
+    {
+        "timestamp": "00:09:27",
+        "content": "So it's not something you have to code up. You don't have to tell it to go back."
+    },
+    {
+        "timestamp": "00:09:31",
+        "content": "As long as you're writing this while Loop Python will automatically do that sequence of steps for you."
+    },
+    {
+        "timestamp": "00:09:46",
+        "content": "Okay. So when the condition becomes false, Python will no longer execute the stuff inside the stuff that's indented inside the white loop, and it'll go rejoin the rest of the program at the same indentation level as the white."
+    },
+    {
+        "timestamp": "00:10:01",
+        "content": "Okay. So notice that the condition is kind of something that's dependent on or sorry, the the fact that we're doing this code over and over again depends on this condition being true."
+    },
+    {
+        "timestamp": "00:10:08",
+        "content": "So if the code inside is not ever changing anything related to our condition, then it's very likely."
+    },
+    {
+        "timestamp": "00:10:18",
+        "content": "It's actually for sure that this loop will execute infinite number of times."
+    },
+    {
+        "timestamp": "00:10:22",
+        "content": "So this is kind of the pitfall of while loops."
+    },
+    {
+        "timestamp": "00:10:24",
+        "content": "It's possible that if you're not careful, your code will execute an infinite number of times and it'll just never, never terminate."
+    },
+    {
+        "timestamp": "00:10:34",
+        "content": "And I'll show you how to deal with that in a couple of slides. So let's try to code up this this last Woods program in our just with a wire loop."
+    },
+    {
+        "timestamp": "00:10:44",
+        "content": "So here we've got our question that we asked the user, do you want to go left or right?"
+    },
+    {
+        "timestamp": "00:10:52",
+        "content": "And we're going to grab the user input as a string and save it in a variable called where?"
+    },
+    {
+        "timestamp": "00:10:59",
+        "content": "So whatever the user types in, it'll be saved in the variable called aware."
+    },
+    {
+        "timestamp": "00:11:05",
+        "content": "So in my computer memory, the way this looks like, if the user types in write that particular sequence of characters, that'll be saved as the variable where."
+    },
+    {
+        "timestamp": "00:11:13",
+        "content": "So then we finish this first line of the code here and then we checked while the value of where is equivalent to right."
+    },
+    {
+        "timestamp": "00:11:20",
+        "content": "What are we going to do? We're going to ask the user again, where do you want to go left or right?"
+    },
+    {
+        "timestamp": "00:11:25",
+        "content": "So I'm going to. Say right again. And then this memory is going to look exactly the same if the user keeps typing in."
+    },
+    {
+        "timestamp": "00:11:33",
+        "content": "Right? I keep reassigning the variable where to have the value."
+    },
+    {
+        "timestamp": "00:11:39",
+        "content": "Our team. Okay. At some point the user might type in left."
+    },
+    {
+        "timestamp": "00:11:44",
+        "content": "In which case we're going to lose the binding from a variable where from the specific"
+    },
+    {
+        "timestamp": "00:11:51",
+        "content": "sequence of characters our t we're going to bind it now to the characters left."
+    },
+    {
+        "timestamp": "00:11:56",
+        "content": "So at some point after repeating this many times, the user will type in left and we're going to have where is equal to left."
+    },
+    {
+        "timestamp": "00:12:08",
+        "content": "And at that point, when the condition is being checked again, Python will say, no, this is not equivalent, so I'm not going to go inside this code block."
+    },
+    {
+        "timestamp": "00:12:12",
+        "content": "I'm just going to go down here and print. You got out of the loss forced so in code the way this looks is this first one here."
+    },
+    {
+        "timestamp": "00:12:29",
+        "content": "So you're in the lost forest. Go left or right. So if I type in right, it just keeps asking me which way to go."
+    },
+    {
+        "timestamp": "00:12:37",
+        "content": "And at some point, I can type in left and I'm out. That's pretty cool, right?"
+    },
+    {
+        "timestamp": "00:12:44",
+        "content": "We just made our own level in this text adventure."
+    },
+    {
+        "timestamp": "00:12:48",
+        "content": "Let's have you think about this question. What if the user types in capital are ADHD?"
+    },
+    {
+        "timestamp": "00:12:55",
+        "content": "What do you think will happen? Are we going to ask the user to go left or right again?"
+    },
+    {
+        "timestamp": "00:12:59",
+        "content": "Or are we going to tell them that they got out of the forced?"
+    },
+    {
+        "timestamp": "00:13:05",
+        "content": "Yeah. They got out. Do you want to say why not?"
+    },
+    {
+        "timestamp": "00:13:09",
+        "content": "Yeah, exactly. Because it's not lowercase. So remember when we're doing comparison."
+    },
+    {
+        "timestamp": "00:13:13",
+        "content": "So the equal equal on strings, it has to be the same case, right?"
+    },
+    {
+        "timestamp": "00:13:18",
+        "content": "It's case sensitive. And so capital or GHG or even some combination like just capital are lowercase."
+    },
+    {
+        "timestamp": "00:13:24",
+        "content": "All right. All right. She is also going to give us that that we got out."
+    },
+    {
+        "timestamp": "00:13:31",
+        "content": "So this is counterintuitive, right, to what we see as humans, because we see, you know, our GHG no matter what to be doing."
+    },
+    {
+        "timestamp": "00:13:43",
+        "content": "Right. So a workaround for this would be to use sort of a command on the string to maybe convert"
+    },
+    {
+        "timestamp": "00:13:49",
+        "content": "everything to lowercase just sources more easily compared or something like that."
+    },
+    {
+        "timestamp": "00:13:54",
+        "content": "Okay. So another use of y loops is with numbers."
+    },
+    {
+        "timestamp": "00:13:59",
+        "content": "Okay, let's look at this example. I'm going to ask the user for an integer and then I'm going to do something really simple."
+    },
+    {
+        "timestamp": "00:14:06",
+        "content": "I'm going to print X to the screen. However many times the user told me so if the user gives me four, I'm going to print x four times to the screen."
+    },
+    {
+        "timestamp": "00:14:15",
+        "content": "So what is this code doing in memory? Well, the user gives me, let's say, for what happened step by step."
+    },
+    {
+        "timestamp": "00:14:23",
+        "content": "First we see our wire loop. So I'm going to check whether for the current value of MN is greater than zero."
+    },
+    {
+        "timestamp": "00:14:29",
+        "content": "Yes, that's true. I'm going to print X to the screen and then I'm going to do the next line of code."
+    },
+    {
+        "timestamp": "00:14:36",
+        "content": "That's part of this indented block, which is to take N and assign it to whatever."
+    },
+    {
+        "timestamp": "00:14:40",
+        "content": "And it is minus one."
+    },
+    {
+        "timestamp": "00:14:42",
+        "content": "So I'm going to lose the binding from the four and I'm going to take four minus one to be three, create a new object and bind end to the three."
+    },
+    {
+        "timestamp": "00:14:50",
+        "content": "Okay. Next python again. It's part of why loops automatically."
+    },
+    {
+        "timestamp": "00:14:54",
+        "content": "It looks at the condition again and says well now the value event is still greater than zero."
+    },
+    {
+        "timestamp": "00:14:59",
+        "content": "Yeah, three is still greater than zero. So again, we're going to lose the binding."
+    },
+    {
+        "timestamp": "00:15:03",
+        "content": "Sorry, we're printing X to the screen first and then we lose the binding from the current value of N 3 to 2."
+    },
+    {
+        "timestamp": "00:15:11",
+        "content": "Okay. So we're discriminating and buy one each time through this."
+    },
+    {
+        "timestamp": "00:15:17",
+        "content": "Then again, Python checks. The condition it says to is still greater than zero."
+    },
+    {
+        "timestamp": "00:15:21",
+        "content": "So again, we print another X to the screen and then we decrement end by one."
+    },
+    {
+        "timestamp": "00:15:25",
+        "content": "So we're binding end to one. Again, python checks."
+    },
+    {
+        "timestamp": "00:15:28",
+        "content": "The condition is one still greater than zero. Yes. So we print another X to the screen."
+    },
+    {
+        "timestamp": "00:15:32",
+        "content": "So we've printed four Xs now to the screen. And then Python says, Now I'm going to make end to zero."
+    },
+    {
+        "timestamp": "00:15:39",
+        "content": "And then at this point, Python will do another check. Is it say it's going to say is zero greater than zero."
+    },
+    {
+        "timestamp": "00:15:46",
+        "content": "And that's going to be false. So it's not going to execute the code lock anymore and the program will be done."
+    },
+    {
+        "timestamp": "00:15:52",
+        "content": "Right. There's no sort of code to rejoin anymore. There's just the end of the program."
+    },
+    {
+        "timestamp": "00:15:57",
+        "content": "So we would have printed four X's to the screen, and this is in the Python file I gave you."
+    },
+    {
+        "timestamp": "00:16:01",
+        "content": "You can feel free to run it to double check. My question is what happens?"
+    },
+    {
+        "timestamp": "00:16:08",
+        "content": "And this is a really common mistake. What happens if we forget this last line?"
+    },
+    {
+        "timestamp": "00:16:17",
+        "content": "We can try it. I can try it. And in here."
+    },
+    {
+        "timestamp": "00:16:22",
+        "content": "Yeah, exactly. It's going to go on forever. I'll show you what that looks like."
+    },
+    {
+        "timestamp": "00:16:27",
+        "content": "So this is the code when we just have it working as usual."
+    },
+    {
+        "timestamp": "00:16:31",
+        "content": "So if I type in three, it prints three of those x's. But if I happen to forget to write this last line, I'm just going to comment it out."
+    },
+    {
+        "timestamp": "00:16:39",
+        "content": "And if I run the program, I can enter any number and it'll just keep printing stuff to the console."
+    },
+    {
+        "timestamp": "00:16:47",
+        "content": "Right. So this is what it's it's just printing a whole bunch of stuff. So you can see this is all all the stuff it printed."
+    },
+    {
+        "timestamp": "00:16:56",
+        "content": "So yeah, we, we don't have a program that terminates because the condition here is never actually being"
+    },
+    {
+        "timestamp": "00:17:05",
+        "content": "the variable that's part of this condition is never actually being changed inside my loop."
+    },
+    {
+        "timestamp": "00:17:10",
+        "content": "Right. And so that's a big problem when that happens."
+    },
+    {
+        "timestamp": "00:17:14",
+        "content": "What we can do and what I just did here is I'm going to you can click the shell and"
+    },
+    {
+        "timestamp": "00:17:18",
+        "content": "hit control C or command C on a mac and that will just end the program manually."
+    },
+    {
+        "timestamp": "00:17:23",
+        "content": "Or you can just click the red X in the corner."
+    },
+    {
+        "timestamp": "00:17:27",
+        "content": "So here's another example of it going infinite, and there's this little red box in the corner."
+    },
+    {
+        "timestamp": "00:17:33",
+        "content": "You can click that or you can click the three lines, say interrupt kernel."
+    },
+    {
+        "timestamp": "00:17:36",
+        "content": "All that will stop the program. So in this class, we're not actually going to write programs that take seconds to run."
+    },
+    {
+        "timestamp": "00:17:43",
+        "content": "So if you find yourself waiting for your program for more than one or 2 seconds, then likely you've entered an infinite loop."
+    },
+    {
+        "timestamp": "00:17:50",
+        "content": "So you'll want to stop it and try to see where your program went wrong."
+    },
+    {
+        "timestamp": "00:17:58",
+        "content": "Okay. So give this a try. If you want."
+    },
+    {
+        "timestamp": "00:18:03",
+        "content": "Just so you get the hang of stopping an Internet program because you're very likely run."
+    },
+    {
+        "timestamp": "00:18:08",
+        "content": "Right, a program that that doesn't terminate. So while true."
+    },
+    {
+        "timestamp": "00:18:14",
+        "content": "What's the condition here? It's just true, right?"
+    },
+    {
+        "timestamp": "00:18:19",
+        "content": "So there's no condition that's being checked. This program will run always an infinite times, no matter what."
+    },
+    {
+        "timestamp": "00:18:27",
+        "content": "Okay. So that's just this little you try it down here on line 44."
+    },
+    {
+        "timestamp": "00:18:32",
+        "content": "Just run it as soon as you run it. It's just going to print that to the screen over and over again."
+    },
+    {
+        "timestamp": "00:18:37",
+        "content": "Be sure to click the show to put the focus on there and hit control C or hit the red."
+    },
+    {
+        "timestamp": "00:18:46",
+        "content": "All right. So the big idea with Y loops is that they can repeat the code inside them indefinitely."
+    },
+    {
+        "timestamp": "00:18:55",
+        "content": "So we have to be a little bit careful with what what our conditions are and whether"
+    },
+    {
+        "timestamp": "00:19:01",
+        "content": "we're actually making progress towards having that condition become false at some point."
+    },
+    {
+        "timestamp": "00:19:07",
+        "content": "And when that happens, when they run indefinitely, you have to manually intervene to close the program."
+    },
+    {
+        "timestamp": "00:19:15",
+        "content": "Okay. So now that we've seen a loop with a little bit of numerical computation inside it, so we were changing the value of an inside our loop."
+    },
+    {
+        "timestamp": "00:19:27",
+        "content": "Let's have you work on this little program. It's an extension of the last words."
+    },
+    {
+        "timestamp": "00:19:33",
+        "content": "This is exactly the same program that I just ran a few slides ago."
+    },
+    {
+        "timestamp": "00:19:36",
+        "content": "But what I want you to add is an extra printout."
+    },
+    {
+        "timestamp": "00:19:41",
+        "content": "So when the user says, write."
+    },
+    {
+        "timestamp": "00:19:46",
+        "content": "More than two times."
+    },
+    {
+        "timestamp": "00:19:48",
+        "content": "The next time you ask them whether they go left or right, I'd like you to print a sad face right before you ask them that question."
+    },
+    {
+        "timestamp": "00:19:55",
+        "content": "It can be on a different line. It doesn't have to be on the same line."
+    },
+    {
+        "timestamp": "00:20:10",
+        "content": "And the way to do that is to try to create a new variable that's going to be like your counter that keeps track of how many times the user, how many times this y loop has has repeated."
+    },
+    {
+        "timestamp": "00:20:14",
+        "content": "So I'll give you a couple of moments to do that and then we'll write it together."
+    },
+    {
+        "timestamp": "00:20:20",
+        "content": "As usual the you try it is is in here so you can just uncomment the code."
+    },
+    {
+        "timestamp": "00:20:26",
+        "content": "With Spider control one or command, one to batch uncomment, and then you can work off of this code."
+    },
+    {
+        "timestamp": "00:20:35",
+        "content": "To try to improve it. Okay."
+    },
+    {
+        "timestamp": "00:20:39",
+        "content": "So does anyone have a start for me? How can we do this?"
+    },
+    {
+        "timestamp": "00:20:43",
+        "content": "You don't have to give it to me in full. We can work our way up to the final program."
+    },
+    {
+        "timestamp": "00:20:48",
+        "content": "But what's kind of the first your first thought here? Yes."
+    },
+    {
+        "timestamp": "00:21:03",
+        "content": "All right. Like it or something? Mm hmm."
+    },
+    {
+        "timestamp": "00:21:09",
+        "content": "Well. Okay. So we can create a variable end at the beginning of our program."
+    },
+    {
+        "timestamp": "00:21:13",
+        "content": "What do you want to make it? Zero. Okay, good."
+    },
+    {
+        "timestamp": "00:21:18",
+        "content": "Zero will keep track or and we'll keep track of how many times we've gone through the loop."
+    },
+    {
+        "timestamp": "00:21:23",
+        "content": "So inside our program, when when we want when do we want to in to to change?"
+    },
+    {
+        "timestamp": "00:21:29",
+        "content": "N Sorry. Every time we go through the loop, right?"
+    },
+    {
+        "timestamp": "00:21:33",
+        "content": "So every time we want to go through the loop we want to change and to be a new value."
+    },
+    {
+        "timestamp": "00:21:38",
+        "content": "So maybe we want to increase it by one. So n is equal to and plus one."
+    },
+    {
+        "timestamp": "00:21:45",
+        "content": "So now this will keep track of how many times we've gone to the loop and we can actually double check this by printing and."
+    },
+    {
+        "timestamp": "00:21:54",
+        "content": "Right. So if we run it. And we say, right, we've gone once, right?"
+    },
+    {
+        "timestamp": "00:22:01",
+        "content": "We've got twice, right? We've got three times. Right. So this means we're incrementing it correctly."
+    },
+    {
+        "timestamp": "00:22:09",
+        "content": "Now, what can I do with this variable? And now that I have it and I know it's incrementing correctly."
+    },
+    {
+        "timestamp": "00:22:15",
+        "content": "Yeah. Yep."
+    },
+    {
+        "timestamp": "00:22:18",
+        "content": "We can set up an if statement so we can check if that value of n is greater than two."
+    },
+    {
+        "timestamp": "00:22:25",
+        "content": "Right. According to the specification here. What do you want to do when if is greater than two?"
+    },
+    {
+        "timestamp": "00:22:32",
+        "content": "Print something, right? So we can print the sad face. And let's try to run it now."
+    },
+    {
+        "timestamp": "00:22:41",
+        "content": "So if we immediately hit left. Right. It still works."
+    },
+    {
+        "timestamp": "00:22:44",
+        "content": "If we go right one time. Nothing. Right. Another time nothing."
+    },
+    {
+        "timestamp": "00:22:49",
+        "content": "Write a last time. Sad. And from now on, it's going to keep showing me the sad face."
+    },
+    {
+        "timestamp": "00:23:00",
+        "content": "Okay. Questions about this code. Yeah."
+    },
+    {
+        "timestamp": "00:23:05",
+        "content": "Is it possible to test for something that is non equivalent like the first time?"
+    },
+    {
+        "timestamp": "00:23:09",
+        "content": "That's not. Can we check for not equivalency here?"
+    },
+    {
+        "timestamp": "00:23:16",
+        "content": "Yeah. Um, so this, this particular check checks for what the user typed in."
+    },
+    {
+        "timestamp": "00:23:25",
+        "content": "It's possible we can add this if statement that checks for the end in here and something else."
+    },
+    {
+        "timestamp": "00:23:33",
+        "content": "But then we would have to have maybe another. I'd have to think about it."
+    },
+    {
+        "timestamp": "00:23:39",
+        "content": "But it is it might be possible to try to combine them inside the wild loop."
+    },
+    {
+        "timestamp": "00:23:44",
+        "content": "Yeah. That allows you to do not equals."
+    },
+    {
+        "timestamp": "00:23:47",
+        "content": "That would be the not equal sign. Yeah. So another thing we can do with y loops is to iterate through numbers in a sequence."
+    },
+    {
+        "timestamp": "00:23:57",
+        "content": "If we do this, there's a really common pattern which actually leads us to the next kind of loop we're going to see on the next slide."
+    },
+    {
+        "timestamp": "00:24:05",
+        "content": "But the pattern."
+    },
+    {
+        "timestamp": "00:24:07",
+        "content": "When you want to iterate through numbers in a sequence is you first set a loop variable before the while loop inside the condition for the loop."
+    },
+    {
+        "timestamp": "00:24:17",
+        "content": "You do some sort of check with that variable. So end was my loop variable outside the loop and then I test it inside the Y loop."
+    },
+    {
+        "timestamp": "00:24:32",
+        "content": "So end is less than or less than five and then within the while loop you can do whatever commands you want to do with that end, but then you have to remember to change it in some way because if you don't change it in some way, this wild loop condition will always be true."
+    },
+    {
+        "timestamp": "00:24:42",
+        "content": "So here I'm incrementing end by one because it starts from zero."
+    },
+    {
+        "timestamp": "00:24:47",
+        "content": "I want to end to get to something, write something above five which will lead to my condition becoming false."
+    },
+    {
+        "timestamp": "00:24:56",
+        "content": "So this pattern is actually actually exists in a bunch of different programs."
+    },
+    {
+        "timestamp": "00:25:01",
+        "content": "So here's a program that calculates factorial for me."
+    },
+    {
+        "timestamp": "00:25:06",
+        "content": "And here I'm calculating for factorial. I'm not excited about the number four."
+    },
+    {
+        "timestamp": "00:25:10",
+        "content": "That's four factorial. How do we do this? Well, there's a lot of things I'm initializing here."
+    },
+    {
+        "timestamp": "00:25:17",
+        "content": "But sort of the more you work with loops, you'll kind of get used to seeing, right?"
+    },
+    {
+        "timestamp": "00:25:23",
+        "content": "What is the loop variable? So I is actually going to be my loop variable here."
+    },
+    {
+        "timestamp": "00:25:30",
+        "content": "It's being set to some value initially outside the loop."
+    },
+    {
+        "timestamp": "00:25:34",
+        "content": "Inside the conditional. I'm doing some sort of condition."
+    },
+    {
+        "timestamp": "00:25:44",
+        "content": "Check with it. And then. And then inside the body of that conditional, I'm changing it in some way that you know that gives me some sort of that takes me to the end of my conditional here."
+    },
+    {
+        "timestamp": "00:25:53",
+        "content": "So I'm setting I to zero. I'm incrementing by one each time through the loop and I'm making forward progress towards making I greater than x."
+    },
+    {
+        "timestamp": "00:26:02",
+        "content": "Okay. At which point my conditional will become false."
+    },
+    {
+        "timestamp": "00:26:08",
+        "content": "The rest of the code X is equal to four just sets the."
+    },
+    {
+        "timestamp": "00:26:11",
+        "content": "The thing I want to get the factorial of and this factorial variable is kind of my running product."
+    },
+    {
+        "timestamp": "00:26:18",
+        "content": "So it's the thing that I'm going to keep multiplying to figure out what the factorial is."
+    },
+    {
+        "timestamp": "00:26:22",
+        "content": "So here I'm initializing it to one and inside the loop I'm multiplying it by my loop variable every time."
+    },
+    {
+        "timestamp": "00:26:29",
+        "content": "So I'm not going to do a like a memory diagram this at this for this example, but I will do the python tutor."
+    },
+    {
+        "timestamp": "00:26:37",
+        "content": "And I'm going to step through to show you exactly what this is doing. So X is for I is one originally and factorial is one, right?"
+    },
+    {
+        "timestamp": "00:26:44",
+        "content": "So X is the thing I want to get the factorial of. I is going to be my loop variable and and a factorial is my running product."
+    },
+    {
+        "timestamp": "00:26:53",
+        "content": "So next step I one is less than or equal to four."
+    },
+    {
+        "timestamp": "00:26:57",
+        "content": "So I'm going to enter the loop. Python will calculate the factorial as whatever it is right now multiplied by one pi, so it's still one."
+    },
+    {
+        "timestamp": "00:27:07",
+        "content": "And then I'm going to increment I to whatever it is from whatever it is now to one."
+    },
+    {
+        "timestamp": "00:27:12",
+        "content": "So I just want to mention this I plus equals one is equivalent to saying I equals I plus one."
+    },
+    {
+        "timestamp": "00:27:21",
+        "content": "And this is true no matter what variable you have here."
+    },
+    {
+        "timestamp": "00:27:30",
+        "content": "Basically, if you have, you know, fact times equals, you know, two or something like that, that basically means factorial equals fact times two, right?"
+    },
+    {
+        "timestamp": "00:27:39",
+        "content": "So that's kind of the pattern here. These are equivalent and these are equivalent."
+    },
+    {
+        "timestamp": "00:27:43",
+        "content": "This is just shorthand, notation and programing. So that's what this line here means."
+    },
+    {
+        "timestamp": "00:27:47",
+        "content": "I plus equals one means I equals I plus one."
+    },
+    {
+        "timestamp": "00:27:52",
+        "content": "So at this line here, I'm taking whatever I is and adding one to it to."
+    },
+    {
+        "timestamp": "00:27:57",
+        "content": "And then I do the check again. And remember, Python does this automatically, right?"
+    },
+    {
+        "timestamp": "00:28:01",
+        "content": "Because we're using a Y loop."
+    },
+    {
+        "timestamp": "00:28:03",
+        "content": "It goes back to the condition and checks it again using these new values for the variables, two is still less than or equal to four."
+    },
+    {
+        "timestamp": "00:28:10",
+        "content": "So again, we go inside the loop. Body factorial is whatever it is right now, one multiplied by two."
+    },
+    {
+        "timestamp": "00:28:19",
+        "content": "I is going to be two +13. And then again, I'm checking that three is less than or equal to four."
+    },
+    {
+        "timestamp": "00:28:25",
+        "content": "It still is. So then we're going to do factorial is whatever it is now two multiplied by whatever is three."
+    },
+    {
+        "timestamp": "00:28:32",
+        "content": "So now it's six. I is it going to be one more than what it is right now?"
+    },
+    {
+        "timestamp": "00:28:36",
+        "content": "Four four is still less than or equal to four. We're going to go inside the body."
+    },
+    {
+        "timestamp": "00:28:42",
+        "content": "Factorial is whatever it is right now, six multiplied by four."
+    },
+    {
+        "timestamp": "00:28:47",
+        "content": "And at 24. And then I is going to be whatever it is right now +15 at this point, Python says is five less than or equal to four no."
+    },
+    {
+        "timestamp": "00:28:58",
+        "content": "And then it breaks the loop and it goes to print this statement."
+    },
+    {
+        "timestamp": "00:29:02",
+        "content": "Four factorial is and then it grabs whatever the value of the factorial is."
+    },
+    {
+        "timestamp": "00:29:06",
+        "content": "So here I'm using this f string print, that notation that we learned about last lecture."
+    },
+    {
+        "timestamp": "00:29:13",
+        "content": "So I encourage you to go through it yourself, just step by step."
+    },
+    {
+        "timestamp": "00:29:18",
+        "content": "That's what Python tutor is really, really useful for. Okay."
+    },
+    {
+        "timestamp": "00:29:22",
+        "content": "So let's look at a different kind of loop called a for loop."
+    },
+    {
+        "timestamp": "00:29:35",
+        "content": "Okay. And the for loop is going to allow us to to rewrite that special kind of wild loop that we saw where we initialize a variable, we test the variable, we do something to the variable within the code in a more efficient, more readable way."
+    },
+    {
+        "timestamp": "00:29:41",
+        "content": "So in terms of our Netflix example, a for loop would be equivalent to something like Netflix, right?"
+    },
+    {
+        "timestamp": "00:29:49",
+        "content": "If you're not interacting with it cuts you off after four episodes, right, to save bandwidth."
+    },
+    {
+        "timestamp": "00:29:54",
+        "content": "And so there's a sequence of four episodes it knows it's going to go through if there's nothing if you're not interacting with it."
+    },
+    {
+        "timestamp": "00:30:01",
+        "content": "So if you've already gone through your sequence of four episodes, you're allowed to watch without any interaction."
+    },
+    {
+        "timestamp": "00:30:08",
+        "content": "It's done right. It cuts you off. It says, Are you still watching?"
+    },
+    {
+        "timestamp": "00:30:17",
+        "content": "But if there are still more episodes, if you if it only showed you two out of the four, then it's going to keep showing you more episodes until it's shown you the four."
+    },
+    {
+        "timestamp": "00:30:22",
+        "content": "Okay. So this is the the program we had with Y loops a couple of slides ago."
+    },
+    {
+        "timestamp": "00:30:31",
+        "content": "And remember, we were initializing a variable. We were testing the variable sum condition here and then we were incrementing the variable"
+    },
+    {
+        "timestamp": "00:30:38",
+        "content": "or doing something that gives us nice forward progress towards making this condition false."
+    },
+    {
+        "timestamp": "00:30:44",
+        "content": "But it's really verbose. Certainly it works."
+    },
+    {
+        "timestamp": "00:30:48",
+        "content": "You can do it, but it's very easy to forget to do this. Something like this, in which case you'll get an infinite loop."
+    },
+    {
+        "timestamp": "00:30:55",
+        "content": "With a for loop that those four lines of code just look like this these two lines of code."
+    },
+    {
+        "timestamp": "00:31:02",
+        "content": "Okay. So if there's a sequence of values you ever want to iterate over, that's what for."
+    },
+    {
+        "timestamp": "00:31:07",
+        "content": "Loops are useful for. So the syntax for for loop looks a little bit different than a wild loop."
+    },
+    {
+        "timestamp": "00:31:14",
+        "content": "It starts with a for keyword. This is a variable that you get to name whatever name you'd like the keyword in."
+    },
+    {
+        "timestamp": "00:31:23",
+        "content": "Tells Python I'm going to make this variable take on values in this sequence."
+    },
+    {
+        "timestamp": "00:31:31",
+        "content": "And again, we have a colon that tells Python we're going to start a code in an indentation here."
+    },
+    {
+        "timestamp": "00:31:39",
+        "content": "And whatever lines of code you have that are indented are going to be executed."
+    },
+    {
+        "timestamp": "00:31:44",
+        "content": "However many sequence of values you have. So the first time through the loop python will make this variable name take"
+    },
+    {
+        "timestamp": "00:31:53",
+        "content": "on the first value in the sequence and then it's going to execute this code."
+    },
+    {
+        "timestamp": "00:32:06",
+        "content": "Automatically Python will after it finishes executing this these codes, it will go back and set this variable, have the next value in the sequence and execute the same lines of code."
+    },
+    {
+        "timestamp": "00:32:11",
+        "content": "When it's done, it's going to make the variable here take on the next values in the sequence and execute those lines of code."
+    },
+    {
+        "timestamp": "00:32:17",
+        "content": "And so these lines of code will effectively be executed, however many values you have in your sequence."
+    },
+    {
+        "timestamp": "00:32:26",
+        "content": "So more practically speaking. Here we have a variable."
+    },
+    {
+        "timestamp": "00:32:30",
+        "content": "So n in this case, in sum, some sequence of values."
+    },
+    {
+        "timestamp": "00:32:35",
+        "content": "In this case I'm saying range five. We're going to print the value of that."
+    },
+    {
+        "timestamp": "00:32:41",
+        "content": "So I'm going to introduce range now. Range is a way for us to grab numerical sequence, a numerical sequence of values that have some sort of pattern."
+    },
+    {
+        "timestamp": "00:32:52",
+        "content": "So if we just say range some number, the pattern is we start at zero and we go up to but not including that number."
+    },
+    {
+        "timestamp": "00:32:59",
+        "content": "So range five means the sequence of values. Python will iterate over r01, two, three and four range ten means 0123456789."
+    },
+    {
+        "timestamp": "00:33:09",
+        "content": "Right. So we go up to but not including the value in the range starting from zero."
+    },
+    {
+        "timestamp": "00:33:14",
+        "content": "So each time through the loop Python will change the value of end to be every one of those values automatically."
+    },
+    {
+        "timestamp": "00:33:22",
+        "content": "So this these two lines here for NW range five print NW the way they look like behind the"
+    },
+    {
+        "timestamp": "00:33:33",
+        "content": "scenes and python does this for you is first it the first time it encounters the for loop, it sets end to be zero. That's the first value in my sequence."
+    },
+    {
+        "timestamp": "00:33:45",
+        "content": "And then it prints the value of at zero. Next time through the loop, Python will say, Okay, I've done what you asked me to do inside the loop print and I'm going to make N have the"
+    },
+    {
+        "timestamp": "00:33:51",
+        "content": "next value in my sequence so it loses the binding from the zero and makes it be one."
+    },
+    {
+        "timestamp": "00:33:57",
+        "content": "Okay. I've made one. Now, what do you want me to do?"
+    },
+    {
+        "timestamp": "00:33:59",
+        "content": "Well, I'm going to execute whatever's in the in the indented print, and so I'm going to print one."
+    },
+    {
+        "timestamp": "00:34:05",
+        "content": "So I've already printed zero, then I've printed one. I'm finished executing the code inside the loop."
+    },
+    {
+        "timestamp": "00:34:11",
+        "content": "So now MN is going to get the next value in the sequence."
+    },
+    {
+        "timestamp": "00:34:14",
+        "content": "Lose the binding from one and you get two. And so on and so on."
+    },
+    {
+        "timestamp": "00:34:18",
+        "content": "And by the end, this program will have printed zero one, two, three, and for every single value in my range."
+    },
+    {
+        "timestamp": "00:34:29",
+        "content": "So it turns out that we can actually make range have three values inside the parentheses, not just one."
+    },
+    {
+        "timestamp": "00:34:36",
+        "content": "One is sort of shorthand notation."
+    },
+    {
+        "timestamp": "00:34:38",
+        "content": "If you ever want to start from zero and want to go and go up to and including, sorry up to, but not including the value in the parentheses."
+    },
+    {
+        "timestamp": "00:34:51",
+        "content": "But you can actually give it three values a start, a stop and a step, and Python will automatically generate a sequence of values that matches this pattern."
+    },
+    {
+        "timestamp": "00:34:57",
+        "content": "So this should seem familiar to you, right? Because we've seen something like this when we were doing strings, right?"
+    },
+    {
+        "timestamp": "00:35:04",
+        "content": "Except that we weren't doing parentheses. We were doing square brackets and we weren't doing commas, we were doing columns."
+    },
+    {
+        "timestamp": "00:35:11",
+        "content": "But it's the exact same idea here. We're generating numbers, actual integers that we want a loop variable to take on."
+    },
+    {
+        "timestamp": "00:35:20",
+        "content": "So if we all met, start in step, start by default is zero and step by default is one."
+    },
+    {
+        "timestamp": "00:35:25",
+        "content": "If we will step by default, they will be one."
+    },
+    {
+        "timestamp": "00:35:29",
+        "content": "So here I in range for the variable I will take on the values zero one, two and three I and range three comma five."
+    },
+    {
+        "timestamp": "00:35:39",
+        "content": "I will take on the values three and four. So we go up to but not including the five."
+    },
+    {
+        "timestamp": "00:35:46",
+        "content": "Think about these these three questions. So what are the range of values in in the first and the first one?"
+    },
+    {
+        "timestamp": "00:35:52",
+        "content": "And what are we going to print? So in one for one, what range of values are we going to have?"
+    },
+    {
+        "timestamp": "00:35:58",
+        "content": "I.B.? So I is going to be what? One."
+    },
+    {
+        "timestamp": "00:36:06",
+        "content": "Do. Three. Yes."
+    },
+    {
+        "timestamp": "00:36:10",
+        "content": "And we stop we go up to but not including the stop, which is a four."
+    },
+    {
+        "timestamp": "00:36:14",
+        "content": "And what are we printing? Yeah."
+    },
+    {
+        "timestamp": "00:36:17",
+        "content": "One, two, three. Just off. How about the next one?"
+    },
+    {
+        "timestamp": "00:36:22",
+        "content": "J What will the values of JP. One."
+    },
+    {
+        "timestamp": "00:36:27",
+        "content": "Three. That's it. Yup. Because we're going every other."
+    },
+    {
+        "timestamp": "00:36:31",
+        "content": "Every other value. And what are we printing here? Yeah, exactly."
+    },
+    {
+        "timestamp": "00:36:37",
+        "content": "So we're doing an operation with each one of these. JS So we're going to print two and then six."
+    },
+    {
+        "timestamp": "00:36:42",
+        "content": "And how about the last one? We're stepping backward, right?"
+    },
+    {
+        "timestamp": "00:36:49",
+        "content": "The negative one. So what's our start? Four."
+    },
+    {
+        "timestamp": "00:36:54",
+        "content": "And then 3 to 1."
+    },
+    {
+        "timestamp": "00:36:59",
+        "content": "And that's it. We're going to down two, but not including the end. Right."
+    },
+    {
+        "timestamp": "00:37:03",
+        "content": "So we're not going to include the zero. And what are we printing here?"
+    },
+    {
+        "timestamp": "00:37:09",
+        "content": "Yes for dollar signs on one for the first time and then $3 signs and then $2 signs and then $1."
+    },
+    {
+        "timestamp": "00:37:19",
+        "content": "Exactly. So the body obviously can do up, can do operations and can manipulate that loop variable."
+    },
+    {
+        "timestamp": "00:37:27",
+        "content": "So each time that loop goes, that variable goes through, it changes, right?"
+    },
+    {
+        "timestamp": "00:37:32",
+        "content": "It changes. And then you can use that to your advantage."
+    },
+    {
+        "timestamp": "00:37:37",
+        "content": "So here's another example of something useful we can use for loops to keep track of how many times we're going through a loop."
+    },
+    {
+        "timestamp": "00:37:47",
+        "content": "And in this particular case, we're writing a program that sums all the values from zero all all the way up to, but not including whatever is in here."
+    },
+    {
+        "timestamp": "00:37:57",
+        "content": "All right, so how are we doing this? Let's do the memory diagram."
+    },
+    {
+        "timestamp": "00:38:02",
+        "content": "We've got my sum is equal to zero as the first line."
+    },
+    {
+        "timestamp": "00:38:07",
+        "content": "So this will be zero in memory, right?"
+    },
+    {
+        "timestamp": "00:38:11",
+        "content": "Bound to the name myself. And then the four loop will generate for me the values zero through nine."
+    },
+    {
+        "timestamp": "00:38:18",
+        "content": "Right. Including. So I the first time through the loop will have a value of zero."
+    },
+    {
+        "timestamp": "00:38:24",
+        "content": "So we're going to do the operations or the code that we're asked to do when I zero."
+    },
+    {
+        "timestamp": "00:38:30",
+        "content": "So my son will be whatever it is right now, plus whatever is zero."
+    },
+    {
+        "timestamp": "00:38:34",
+        "content": "So it stays zero. Python is done with the code inside."
+    },
+    {
+        "timestamp": "00:38:38",
+        "content": "So now it's going to take I. And change it to the next value in the sequence."
+    },
+    {
+        "timestamp": "00:38:43",
+        "content": "One. Okay. Now we're going to do again the stuff inside the loop with I being one."
+    },
+    {
+        "timestamp": "00:38:50",
+        "content": "So we're going to take my son, whatever it is right now and add one to it."
+    },
+    {
+        "timestamp": "00:38:53",
+        "content": "So it's one. And then we're done there. So Python will take AI to be the next value in the sequence two."
+    },
+    {
+        "timestamp": "00:39:00",
+        "content": "And then we're going to do again. My sum is whatever it is now one plus whatever is now two."
+    },
+    {
+        "timestamp": "00:39:05",
+        "content": "So it's three. Again I will increment to three automatically."
+    },
+    {
+        "timestamp": "00:39:10",
+        "content": "Right. That's next value in the sequence."
+    },
+    {
+        "timestamp": "00:39:11",
+        "content": "So my son will get a value of six and then I will change to four, so on and so on and so on until I becomes eight, right?"
+    },
+    {
+        "timestamp": "00:39:20",
+        "content": "That's sort of towards the end when I is eight, the value of my sum is 36, right?"
+    },
+    {
+        "timestamp": "00:39:27",
+        "content": "Zero zero plus one plus two. All the way up to eight is 36."
+    },
+    {
+        "timestamp": "00:39:31",
+        "content": "And then when I becomes nine, Python will take my son."
+    },
+    {
+        "timestamp": "00:39:35",
+        "content": "Whatever it is right now, 36. Add nine to it to give us 45."
+    },
+    {
+        "timestamp": "00:39:42",
+        "content": "Okay. And then that's the end of the program, right? There's nothing else to do except to print myself."
+    },
+    {
+        "timestamp": "00:39:48",
+        "content": "So at the end of this loop, it's gone through ten times, adding zero all the way up to nine."
+    },
+    {
+        "timestamp": "00:39:54",
+        "content": "We're going to print 45. Yeah."
+    },
+    {
+        "timestamp": "00:39:58",
+        "content": "So I tried running it good time and it just like."
+    },
+    {
+        "timestamp": "00:40:03",
+        "content": "012340, maybe you have another print statement or might be part of another program that's being run beforehand that you didn't comment out."
+    },
+    {
+        "timestamp": "00:40:14",
+        "content": "Yeah, that's question 15."
+    },
+    {
+        "timestamp": "00:40:21",
+        "content": "The plus equals what it means. Oh, it just means it would be like my sum equals my sum."
+    },
+    {
+        "timestamp": "00:40:32",
+        "content": "Plus I. It's a shorthand notation because most of your variable themes might be really long and it's really annoying to retype them."
+    },
+    {
+        "timestamp": "00:40:43",
+        "content": "And so that's generally why that shorthand notation exists."
+    },
+    {
+        "timestamp": "00:40:47",
+        "content": "Yeah, but it basically means take whatever my sum is and add it to it."
+    },
+    {
+        "timestamp": "00:40:54",
+        "content": "And save it back into the variable some. Okay."
+    },
+    {
+        "timestamp": "00:40:58",
+        "content": "Let's have you try this code real quick. So here is code."
+    },
+    {
+        "timestamp": "00:41:03",
+        "content": "It's already on the python file to start out with. I want you to have this code."
+    },
+    {
+        "timestamp": "00:41:10",
+        "content": "It's pretty close to working, but there's one issue."
+    },
+    {
+        "timestamp": "00:41:14",
+        "content": "So we have this for loop that starts at start. It ends at end and we're keeping a running sum and then we're printing the sum at the end."
+    },
+    {
+        "timestamp": "00:41:21",
+        "content": "So very similar to what we just saw. But what I want this code to do is I want it to go and sum up the start and the end."
+    },
+    {
+        "timestamp": "00:41:29",
+        "content": "So I, I want if I have start is three and is five, I want it to add three plus four plus five."
+    },
+    {
+        "timestamp": "00:41:36",
+        "content": "Right. And so this code is not doing quite that, and I would like you to fix it."
+    },
+    {
+        "timestamp": "00:41:44",
+        "content": "Or to tell me how to fix it. So it's down here online."
+    },
+    {
+        "timestamp": "00:41:48",
+        "content": "140 ish. First thing you should do is run it and maybe see what answer it actually gives you."
+    },
+    {
+        "timestamp": "00:41:59",
+        "content": "So I just ran it. It gave me a seven. When you're encountering an output, that's not quite what you expect."
+    },
+    {
+        "timestamp": "00:42:09",
+        "content": "One of the first things to do. You can obviously use the Python tutor, but another thing you can do is put print statements at various places."
+    },
+    {
+        "timestamp": "00:42:17",
+        "content": "Useful places would be inside the loop. So here we can print I."
+    },
+    {
+        "timestamp": "00:42:24",
+        "content": "Right. That's a reasonable thing to print out. And maybe we'll see exactly what values of AI we are adding because we know the summing works."
+    },
+    {
+        "timestamp": "00:42:32",
+        "content": "Right. We just wrote the program on the previous line, our previous slide."
+    },
+    {
+        "timestamp": "00:42:39",
+        "content": "So we got three for seven, which is a little confusing. Let's make our print statement be a little bit better."
+    },
+    {
+        "timestamp": "00:42:43",
+        "content": "I equals comma and then print the actual value of I."
+    },
+    {
+        "timestamp": "00:42:50",
+        "content": "So what do you guys notice? I is three, is four and then a prince to some seven."
+    },
+    {
+        "timestamp": "00:42:54",
+        "content": "What's the problem with this code? Yeah, that's right."
+    },
+    {
+        "timestamp": "00:43:02",
+        "content": "Yeah. We're not adding five, right. We're, we're just adding three zero originally plus three plus four and we've never added five."
+    },
+    {
+        "timestamp": "00:43:12",
+        "content": "So how can we fix that? Yeah, we can do end plus one."
+    },
+    {
+        "timestamp": "00:43:18",
+        "content": "Exactly. So the range, remember, grabs the plus one."
+    },
+    {
+        "timestamp": "00:43:22",
+        "content": "The range grabs these values, you know, as as as numbers that it's working with."
+    },
+    {
+        "timestamp": "00:43:28",
+        "content": "So start is okay and is okay. But we go up to but not including end, right?"
+    },
+    {
+        "timestamp": "00:43:33",
+        "content": "So if we go to end plus one, we're going to go up to but not including and plus one."
+    },
+    {
+        "timestamp": "00:43:38",
+        "content": "So if we run it now. It looks much better."
+    },
+    {
+        "timestamp": "00:43:43",
+        "content": "So we've got eyes. Three eyes, four eyes five."
+    },
+    {
+        "timestamp": "00:43:46",
+        "content": "And the sum is 12. So print statements."
+    },
+    {
+        "timestamp": "00:43:52",
+        "content": "Very useful when debugging code. Questions about this one or was this is this makes sense?"
+    },
+    {
+        "timestamp": "00:44:02",
+        "content": "Okay. The last slide I want to do before we do a summary is just to show you that factorial code we saw using a while loop, a few slides back."
+    },
+    {
+        "timestamp": "00:44:13",
+        "content": "So it looks really verbose, right? We kind of have to think about it for a while before we realize what it's actually doing."
+    },
+    {
+        "timestamp": "00:44:21",
+        "content": "But it was calculating the factorial obviously good variable names helped us figure that out."
+    },
+    {
+        "timestamp": "00:44:25",
+        "content": "That same code. In a for loop."
+    },
+    {
+        "timestamp": "00:44:29",
+        "content": "Looks like this with a for loop looks like this. So we still have the initialization of x24."
+    },
+    {
+        "timestamp": "00:44:41",
+        "content": "We still initialize our factorial, write our running product to a one, but we're losing that those the four lines of code that kind of make up that pattern of changing numbers with Y loops into two."
+    },
+    {
+        "timestamp": "00:44:51",
+        "content": "So this line equals one this y loop with the conditional and this incrementing of I become the for loop."
+    },
+    {
+        "timestamp": "00:45:00",
+        "content": "And that's it. The four loop takes care of all of that, the initialization, the increment and going up to but not including the last value, right."
+    },
+    {
+        "timestamp": "00:45:10",
+        "content": "X plus five. So we're going to take multiply the factorial with one, then two, then three, then for all the way up to and including x."
+    },
+    {
+        "timestamp": "00:45:21",
+        "content": "Okay. So the big idea about for loops is they're going to repeat however long the sequence is, right?"
+    },
+    {
+        "timestamp": "00:45:26",
+        "content": "So you're able to repeat certain code a set number of times, which is really useful in some situations."
+    },
+    {
+        "timestamp": "00:45:32",
+        "content": "Why loops were useful in situations where you didn't know how many times you might want to repeat the code."
+    },
+    {
+        "timestamp": "00:45:38",
+        "content": "So quick summary. We saw some looping mechanisms today. It was a lot of syntax, I know, but the finger exercises for today will certainly help."
+    },
+    {
+        "timestamp": "00:45:46",
+        "content": "And Mitt X also has extra help."
+    },
+    {
+        "timestamp": "00:45:50",
+        "content": "Extra exercises. It's really important to to to do them just to get the mental model for how exactly these loops work."
+    },
+    {
+        "timestamp": "00:45:57",
+        "content": "Right. And how they how they how they assign variables and how they do the checks behind the scenes."
+    },
+    {
+        "timestamp": "00:46:02",
+        "content": "Right. And they'll help you get faster at writing code and at doing quizzes as well."
+    },
+    {
+        "timestamp": "00:46:08",
+        "content": "Okay. So that's it for today."
+    }
+]

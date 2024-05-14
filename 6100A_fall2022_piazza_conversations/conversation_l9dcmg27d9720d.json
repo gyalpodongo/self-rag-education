@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p>Good evening,</p>\n<p></p>\n<p>I have had issues with submitting pset4, but I was able to do the checkoff. I used my two late days &#43; 1 day from S^3 to turn it in. I think that maybe the website was accepting any late answers. When I look at the notes for the autograder, I get a</p>\n<p></p>\n<pre>\nModuleNotFoundError: No module named &#39;hamcrest&#39;</pre>\n<p>error. This happened on all test cases, resulting in an autograder score of 0.</p>\n<p></p>\n<p>I don&#39;t understand, can you please look into this? Thank you for your help.</p>",
+        "type": "question",
+        "created": "2022-10-17T22:29:09.967Z",
+        "subject": "Pset4 Website Difficulty",
+        "_id": "l9dcmg27d9720d"
+    },
+    {
+        "content": "<p>Did you import a module called &#34;hamcrest&#34; in your code?</p>",
+        "type": "i_answer",
+        "created": "2022-10-18T14:55:36.981Z",
+        "_id": "l9dcmg27d9720d"
+    },
+    {
+        "content": "<p>Yeah, I don&#39;t know why that is in my code. I think that might have been the result of autocompletion. Should I reupload the file to the website without the line that calls for the problematic module?</p>",
+        "type": "followup",
+        "created": "2022-10-18T15:09:48.318Z",
+        "_id": "l9dcmg27d9720d"
+    },
+    {
+        "content": "<p>I just resubmitted to the website without that line, and I am no longer receiving the &#34;failed all test cases&#34; message from earlier. I am sorry for the inconvenience.</p>",
+        "type": "followup_response",
+        "created": "2022-10-18T15:11:32.702Z",
+        "_id": "l9dcmg27d9720d"
+    }
+]

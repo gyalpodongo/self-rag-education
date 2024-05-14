@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hello,</p>\n<p>This is Keonna Simon. My kerberos is kcsimon@mit.edu. For finger exercise 9, I have a 100% score. However, on the score page, it says I have 0%. I was wondering why it is like this.</p>\n<p></p>\n<p>Kind regards,</p>\n<p>Keonna Simon.</p>",
+        "type": "question",
+        "created": "2022-10-12T21:13:01.726Z",
+        "subject": "Missing grade",
+        "_id": "l964p9um43i369"
+    },
+    {
+        "content": "<p>I&#39;ve fixed the issue, the Scores page now shows the correct score.</p>",
+        "type": "i_answer",
+        "created": "2022-10-13T01:08:53.883Z",
+        "_id": "l964p9um43i369"
+    }
+]

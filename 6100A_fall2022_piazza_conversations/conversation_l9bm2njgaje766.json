@@ -1,0 +1,21 @@
+[
+    {
+        "content": "<p>I&#39;m running into an issue with #4 where my function returns L_decoded as a list of the individual integers rather than integers with multiple digits as requested; for example I&#39;m getting [8, 4, 8, 7, 6] rather than [8, 4, 876]. \u00a0I understand why my code is not producing the multiple digit integers but I&#39;m not sure how to fix it. Any advice/ideas on how to better approach this?</p>\n<p></p>\n<p>This is what I have so far code-wise:</p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl80pwg3zbgl1sd%2F945ed5023b0ab8def6eb81087c1d7d89791fffef5f54ad0da903e7597454bb72%2FScreen_Shot_2022-10-16_at_1.16.12_PM.png\" alt=\"Screen_Shot_2022-10-16_at_1.16.12_PM.png\" /></p>",
+        "type": "question",
+        "created": "2022-10-16T17:18:10.348Z",
+        "subject": "practice problems #4",
+        "_id": "l9bm2njgaje766"
+    },
+    {
+        "content": "<p>The way I have approached it is by converting them to strings before decoding, decoding the strings one character at a time, then joining the strings back together, then converting them to integers.</p>\n<p></p>\n<p>A different, more mathy way of doing it, would be to decode the numbers, and then multiplying by powers of 10 to put them back together.</p>",
+        "type": "s_answer",
+        "created": "2022-10-16T17:20:09.662Z",
+        "_id": "l9bm2njgaje766"
+    },
+    {
+        "content": "I feel like the wording of this question was extremely confusing.",
+        "type": "followup",
+        "created": "2022-10-17T03:14:22.486Z",
+        "_id": "l9bm2njgaje766"
+    }
+]

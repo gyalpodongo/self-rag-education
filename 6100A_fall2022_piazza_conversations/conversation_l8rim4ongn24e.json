@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi,</p>\n<p></p>\n<p>If I achieved a grade satisfactory to me on the first two microquizzes, could I just not take the third one?</p>",
+        "type": "question",
+        "created": "2022-10-02T15:45:57.047Z",
+        "subject": "Last Microquiz",
+        "_id": "l8rim4ongn24e"
+    },
+    {
+        "content": "<md>We will take the best 2 out of 3 microquiz scores to calculate the grade, so you don't have to take the third one unless you want to.</md>",
+        "type": "i_answer",
+        "created": "2022-10-02T16:15:56.172Z",
+        "_id": "l8rim4ongn24e"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "content": "Hello, I&#39;m currently working on pset 2 and my code is passing the tests so far, but I&#39;m worried that there&#39;s a shorter way to do it. Can we still get full credit if our code does everything it&#39;s supposed to but there&#39;s maybe a much shorter way to do it?",
+        "type": "question",
+        "created": "2022-09-22T21:55:57.827Z",
+        "subject": "Is it okay if our code is long, but correct?",
+        "_id": "l8dlfg8zvov7pr"
+    },
+    {
+        "content": "<p>Yeah that&#39;s totally fine -- 6.100A isn&#39;t about writing the most efficient code but rather learning how to solve problems using code. Also, the hangman code is generally longer than Pset 1.</p>\n<p></p>\n<p>As long as it passes test cases, you&#39;re good:)</p>",
+        "type": "i_answer",
+        "created": "2022-09-22T22:40:11.575Z",
+        "_id": "l8dlfg8zvov7pr"
+    }
+]

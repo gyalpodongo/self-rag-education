@@ -1,0 +1,21 @@
+[
+    {
+        "content": "<p>I&#39;ve been doing all of the readings, and all of the optional MITx finger exercises, and I understand the material.\u00a0</p>\n<p></p>\n<p>I know how to complete the exercises on the microquizzes (I&#39;ve been completing them after the quiz has closed), but I can&#39;t figure them out in the allotted time during the quiz, so I&#39;m not scoring very well.\u00a0</p>\n<p></p>\n<p>How would you recommend getting faster / what practice resources would you recommend?</p>",
+        "type": "question",
+        "created": "2022-10-02T18:24:42.572Z",
+        "subject": "Running out of time on microquizzes",
+        "_id": "l8roaamk7o31i7"
+    },
+    {
+        "content": "I have the same issue :(",
+        "type": "followup",
+        "created": "2022-10-02T21:35:13.636Z",
+        "_id": "l8roaamk7o31i7"
+    },
+    {
+        "content": "<p>You can also try short exercises through other websites, such as: <a href=\"https://codingbat.com/python\" target=\"_blank\" rel=\"noopener noreferrer\">https://codingbat.com/python</a> and others linked down here: https://sicp-s1.mit.edu/fall22/additional_resources\u00a0</p>\n<p></p>\n<p>I assume at this point in the course you are familiar with syntax, so you spend most of the time on the quiz either thinking about how to approach the problem or debugging your code when you encounter an error or unexpected output. A couple suggestions for this:\u00a0</p>\n<p></p>\n<p><strong>1) Regarding debugging: </strong>Try to solve quiz problems incrementally. Try to have something working (aka write code, test it, debug it) for a smaller test case. Don&#39;t try to write code to solve all the nuances of the problem right off the bat, as it is easy to get overwhelmed. For example, write the loop, print out the loop variable, make sure its what you expect. Then add a condition, print out some variable of interest, make sure it&#39;s what you expect. Solve the big-picture first, then add details one at a time (!) from the function specs.\u00a0</p>\n<p><br /><strong>2) Regarding approaching the problem: </strong>I am wondering if you are coding right away or if you are thinking about a couple of approaches beforehand on paper. Another tip I usually give is that you should not start to code right away \u2013 that boxes you in to one particular solution because you start messing around with the code to try to get it to work. You should start with a big picture of a few different strategies to try. When you look at a problem, list out on paper all the data structures you\u2019ve learned (dictionary, list, tuple, etc\u2026.) and take a few seconds to think if they would be useful to use.\u00a0 In a lot of these problems you might be iterating through something. Are you keeping track of anything as you are doing so? Draw it out. Use a pen on paper and draw out a specific simple example. Use that as your one test case and pretend you are the computer, tracing through in as many steps as possible to try to figure out whether you should use a loop or a dictionary, what things you may want to store and variables you might need, etc.\u00a0 Basically, It&#39;s easier to scrap an idea while it&#39;s still an idea rather than once you&#39;ve invested time into writing code!</p>\n<p></p>\n<p>I know these tips are pretty high-level, but I hope this helps.</p>",
+        "type": "i_answer",
+        "created": "2022-10-04T13:25:37.653Z",
+        "_id": "l8roaamk7o31i7"
+    }
+]

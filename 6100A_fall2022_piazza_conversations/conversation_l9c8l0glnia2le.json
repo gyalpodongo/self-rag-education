@@ -1,0 +1,21 @@
+[
+    {
+        "content": "<p>Hi, I just checked my autograder grade for pset 4 and it says 28% even though my code passes all the test cases. Why is this?</p>",
+        "type": "question",
+        "created": "2022-10-17T03:48:18.453Z",
+        "subject": "autograder 28% when I passed all the test cases",
+        "_id": "l9c8l0glnia2le"
+    },
+    {
+        "content": "<p><strong attention=\"j7awud7zf0p2uu\">@Kuan Wei Huang</strong>\u00a0</p>",
+        "type": "followup",
+        "created": "2022-10-17T16:49:13.603Z",
+        "_id": "l9c8l0glnia2le"
+    },
+    {
+        "content": "<p>Hi Stella,</p>\n<p></p>\n<p>The server test cases differ from those in the student tester file. For example, in testing dataset loading, we expect your code to extract columns other than &#34;Close&#34;, as described in the pset description and function docstring. However, your code has hardcoded a particular column to extract.</p>\n<p></p>\n<p>Hope that helps,</p>\n<p>Matt</p>",
+        "type": "i_answer",
+        "created": "2022-10-17T22:12:07.841Z",
+        "_id": "l9c8l0glnia2le"
+    }
+]

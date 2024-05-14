@@ -1,0 +1,1922 @@
+[
+    {
+        "timestamp": "00:00:09",
+        "content": "PYTHON CLASSES"
+    },
+    {
+        "timestamp": "00:00:39",
+        "content": "0 BJ ECTS"
+    },
+    {
+        "timestamp": "00:03:30",
+        "content": "OBJECT ORIENTED PROGRAMMING (OOP)"
+    },
+    {
+        "timestamp": "00:04:24",
+        "content": "WHAT ARE OBJECTS?"
+    },
+    {
+        "timestamp": "00:07:15",
+        "content": "EXAMPLE: [1,2,3,4] has type list"
+    },
+    {
+        "timestamp": "00:10:03",
+        "content": "REAL-LIFE EXAMPLES"
+    },
+    {
+        "timestamp": "00:13:15",
+        "content": "ADVANTAGES OF"
+    },
+    {
+        "timestamp": "00:13:54",
+        "content": "BIG IDEA"
+    },
+    {
+        "timestamp": "00:14:24",
+        "content": "CREATING AND USING YOUR OWN TYPES WITH CLASSES"
+    },
+    {
+        "timestamp": "00:16:12",
+        "content": "A PARALLEL with FUNCTIONS"
+    },
+    {
+        "timestamp": "00:17:24",
+        "content": "COORDINATE TYPE DESIGN DECISIONS"
+    },
+    {
+        "timestamp": "00:20:00",
+        "content": "DEFINE YOUR OWN TYPES"
+    },
+    {
+        "timestamp": "00:21:18",
+        "content": "WHAT ARE ATTRIBUTES?"
+    },
+    {
+        "timestamp": "00:22:45",
+        "content": "DEFINING HOW TO CREATE AN INSTANCE OF A CLASS"
+    },
+    {
+        "timestamp": "00:25:39",
+        "content": "\u2022 self allows you to crea Without self, you are j"
+    },
+    {
+        "timestamp": "00:27:51",
+        "content": "WHAT is self? ROOM EXAMPLE"
+    },
+    {
+        "timestamp": "00:30:21",
+        "content": "ACTUALLY CREATING AN INSTANCE OF A CLASS"
+    },
+    {
+        "timestamp": "00:33:51",
+        "content": "VISUALIZING INSTANCES"
+    },
+    {
+        "timestamp": "00:36:00",
+        "content": "VISUALIZING INSTANCES: draw it"
+    },
+    {
+        "timestamp": "00:37:27",
+        "content": "WHAT IS A METHOD?"
+    },
+    {
+        "timestamp": "00:38:12",
+        "content": "DEFINE A METHOD FOR THE Coordinate CLASS"
+    },
+    {
+        "timestamp": "00:41:15",
+        "content": "HOW TO CALL A METHOD?"
+    },
+    {
+        "timestamp": "00:42:27",
+        "content": "HOW TO USE A METHOD"
+    },
+    {
+        "timestamp": "00:43:30",
+        "content": "VISUALIZING INVOCATION"
+    },
+    {
+        "timestamp": "00:00:00",
+        "content": "All right, let's let's get started."
+    },
+    {
+        "timestamp": "00:00:02",
+        "content": "So today we're going to be starting a completely new set of topics, and we'll be talking about these topics for the next four lectures."
+    },
+    {
+        "timestamp": "00:00:11",
+        "content": "And it's a big topic. The big idea we're trying to accomplish in these next four lectures is for us to start defining our own object types."
+    },
+    {
+        "timestamp": "00:00:22",
+        "content": "Okay. And we'll be we'll be defining these object types through these things called python classes."
+    },
+    {
+        "timestamp": "00:00:30",
+        "content": "All right. So today's lecture, we'll just give you a release."
+    },
+    {
+        "timestamp": "00:00:34",
+        "content": "We'll just define a really simple object type, and then we'll build up from there on."
+    },
+    {
+        "timestamp": "00:00:39",
+        "content": "So let's take a step back and think about particular objects, like really specific objects that we've been working with."
+    },
+    {
+        "timestamp": "00:00:47",
+        "content": "So, for example, we've been working with probably the number 1234."
+    },
+    {
+        "timestamp": "00:00:52",
+        "content": "We've been working with the float pi 3414149."
+    },
+    {
+        "timestamp": "00:00:55",
+        "content": "We've been working with sequences of characters like yellow with lists of numbers, right?"
+    },
+    {
+        "timestamp": "00:01:02",
+        "content": "So here's a list with those specific elements within it. And we've been working with dictionaries and here's a specific dictionary with these entries."
+    },
+    {
+        "timestamp": "00:01:11",
+        "content": "Now, every one of these things up here is an object, right?"
+    },
+    {
+        "timestamp": "00:01:16",
+        "content": "We have it in our program. We can manipulate it."
+    },
+    {
+        "timestamp": "00:01:19",
+        "content": "We can add it to other things. We can index, we can do all these things. But every one of these objects is basically has a surface, a certain type."
+    },
+    {
+        "timestamp": "00:01:26",
+        "content": "Right. We talked about this back in lecture one when I introduce the types of objects."
+    },
+    {
+        "timestamp": "00:01:32",
+        "content": "So what does that mean? Well, in that lecture, I said that the type of an object basically tells us the kinds of things that we can do with it."
+    },
+    {
+        "timestamp": "00:01:41",
+        "content": "Right. So the things you can do with a number are going to be different than the kinds of things you can do with strings."
+    },
+    {
+        "timestamp": "00:01:46",
+        "content": "And we've been seeing this, you know, since that lecture up until today."
+    },
+    {
+        "timestamp": "00:01:50",
+        "content": "Today, we're going to see how we can create our own object types. So to do that, we have to understand the following thing."
+    },
+    {
+        "timestamp": "00:01:57",
+        "content": "And this is something I'll keep repeating today."
+    },
+    {
+        "timestamp": "00:01:58",
+        "content": "So once you decide to create an object type or every one of these objects, for example, has been created using some blueprint."
+    },
+    {
+        "timestamp": "00:02:06",
+        "content": "Right? And when you're creating these objects, you need to think about two things."
+    },
+    {
+        "timestamp": "00:02:10",
+        "content": "The first is what data will represent this object, and the second is what behaviors will this object have?"
+    },
+    {
+        "timestamp": "00:02:16",
+        "content": "Now, the objects up here are pretty simple, right?"
+    },
+    {
+        "timestamp": "00:02:19",
+        "content": "The kinds of data that represents this integer is, well, there's no data really."
+    },
+    {
+        "timestamp": "00:02:24",
+        "content": "It's just the number itself. But it has some operations, some things that you can do with this integer."
+    },
+    {
+        "timestamp": "00:02:30",
+        "content": "Now, the the data that represents a list is going to be different than the data that represents"
+    },
+    {
+        "timestamp": "00:02:36",
+        "content": "an integer because the list is kind of made up of a sequence of numbers or objects."
+    },
+    {
+        "timestamp": "00:02:47",
+        "content": "And then the data that makes up a dictionary is completely different than the data that makes up the list, because a dictionary has entries where each entry has a key and a value pair, and then you have a bunch of these entries."
+    },
+    {
+        "timestamp": "00:02:53",
+        "content": "All right. So the data representing each one of these objects is different."
+    },
+    {
+        "timestamp": "00:02:57",
+        "content": "And we're going to decide what data represents the new objects that we want to create."
+    },
+    {
+        "timestamp": "00:03:01",
+        "content": "And of course, this is something we've known from the first lecture."
+    },
+    {
+        "timestamp": "00:03:04",
+        "content": "The kinds of ways that we can interact with these objects is also different amongst all these different object types, right?"
+    },
+    {
+        "timestamp": "00:03:10",
+        "content": "So in terms of terminology, when we create an actual object that we want to manipulate, we call it an instance of a type."
+    },
+    {
+        "timestamp": "00:03:20",
+        "content": "So this specific number, 1234, is an instance of an integer and this specific sequence of characters lowercase h below is an instance of a string."
+    },
+    {
+        "timestamp": "00:03:31",
+        "content": "Okay. All right. So the idea of object oriented programing is basically that everything in Python is is an object."
+    },
+    {
+        "timestamp": "00:03:40",
+        "content": "And this we've talked about when we were introducing functions, we treated functions like objects."
+    },
+    {
+        "timestamp": "00:03:45",
+        "content": "And what that means is that we can create new objects that have some type."
+    },
+    {
+        "timestamp": "00:03:50",
+        "content": "So we actually create these very specific objects that we can manipulate and we can also destroy the objects, right?"
+    },
+    {
+        "timestamp": "00:03:57",
+        "content": "So you can create them, manipulate them and destroy them as you will. But each one of these objects has a specific type."
+    },
+    {
+        "timestamp": "00:04:03",
+        "content": "So let's talk a little bit more about the data abstraction."
+    },
+    {
+        "timestamp": "00:04:07",
+        "content": "So once you have an object that you'd like to create, so think of anything in the world and write some, some something."
+    },
+    {
+        "timestamp": "00:04:16",
+        "content": "The two things that you need to think about are what is going to be the way that you represent the object in terms of data."
+    },
+    {
+        "timestamp": "00:04:23",
+        "content": "Right. And the other thing is, what are the behaviors of this object?"
+    },
+    {
+        "timestamp": "00:04:27",
+        "content": "How can other programmers or other objects interact with this thing that you're creating?"
+    },
+    {
+        "timestamp": "00:04:33",
+        "content": "So when we're creating our own object type, we have to think about these data abstractions."
+    },
+    {
+        "timestamp": "00:04:38",
+        "content": "Okay, so let's take a more sort of real life example. So let's say I have these two very specific cars that actually exist in the real world."
+    },
+    {
+        "timestamp": "00:04:46",
+        "content": "So we can actually drive these cars around. We can manipulate them."
+    },
+    {
+        "timestamp": "00:04:50",
+        "content": "Right. They have already been created. They are actual objects. Right."
+    },
+    {
+        "timestamp": "00:04:55",
+        "content": "Well, behind the scenes, these objects were created using some blueprint."
+    },
+    {
+        "timestamp": "00:04:59",
+        "content": "Right. This this blueprint is not an actual tangible thing."
+    },
+    {
+        "timestamp": "00:05:03",
+        "content": "It's basically some abstract notion of how to create those specific objects, those specific cars."
+    },
+    {
+        "timestamp": "00:05:11",
+        "content": "So as we're thinking about creating our own object types, we have to think about design decisions, right?"
+    },
+    {
+        "timestamp": "00:05:18",
+        "content": "If I want to create a blueprint for a car that somebody can then use to create an actual car in real life, how do I abstract the car?"
+    },
+    {
+        "timestamp": "00:05:26",
+        "content": "And as we're creating these objects ourselves, we get to make these design decisions, which is pretty cool."
+    },
+    {
+        "timestamp": "00:05:36",
+        "content": "So if I were creating this car, right, the blueprint for a car, I would say, well, I'm going to use maybe the length of the car, the width of a car and the height of the car and the color of the car."
+    },
+    {
+        "timestamp": "00:05:41",
+        "content": "And those four data attributes will represent a car object."
+    },
+    {
+        "timestamp": "00:05:46",
+        "content": "But of course, that's my design decision, right?"
+    },
+    {
+        "timestamp": "00:05:55",
+        "content": "If you are more familiar with cars or if you wanted to get into a more detailed description or representation, you would also have a number for how many HPS it has, how many doors it has, maybe how many people could fit, you know, other things like that."
+    },
+    {
+        "timestamp": "00:06:04",
+        "content": "But a very simple data abstraction for a car is length with height and color."
+    },
+    {
+        "timestamp": "00:06:10",
+        "content": "All right. So that's data abstracts as so what data represents this object you're trying to create?"
+    },
+    {
+        "timestamp": "00:06:18",
+        "content": "Now, how about the interface? Well, in terms of the interface, we decide what are some ways that the programmers can interact with the object or other objects can interact with this object."
+    },
+    {
+        "timestamp": "00:06:25",
+        "content": "So we could say that we could let the users change the color of the car, right?"
+    },
+    {
+        "timestamp": "00:06:32",
+        "content": "We could say that we can let the car make a noise so honk the horn."
+    },
+    {
+        "timestamp": "00:06:37",
+        "content": "Could be maybe one thing, one function that this car could do."
+    },
+    {
+        "timestamp": "00:06:42",
+        "content": "And if we say honk the horn, then maybe you would print something to the screen, right?"
+    },
+    {
+        "timestamp": "00:06:46",
+        "content": "Something like that. And then we can have the car drive from point A to point B or we could have the car, you know, go in a circle."
+    },
+    {
+        "timestamp": "00:06:53",
+        "content": "You could have the car crash another car. And all of these behaviors will are part of this of this the interface for this particular car."
+    },
+    {
+        "timestamp": "00:07:07",
+        "content": "But we're going to define them such that any car that we create from here on, any actual object that we create will have all of these behaviors and all of these data attributes."
+    },
+    {
+        "timestamp": "00:07:12",
+        "content": "Okay. So an example a little closer to home is the list."
+    },
+    {
+        "timestamp": "00:07:17",
+        "content": "Right. We've been working with lists so far. So behind the scenes, somebody created the data type list."
+    },
+    {
+        "timestamp": "00:07:25",
+        "content": "Right. So there is some code in Python that basically defines the data that makes up the list, the data attributes."
+    },
+    {
+        "timestamp": "00:07:31",
+        "content": "How is a list described and the behaviors, the procedures, the functions that a list can do?"
+    },
+    {
+        "timestamp": "00:07:38",
+        "content": "Right. So in terms of data attributes, well, there's many design decisions that, you know, whoever decided to create this list class could have done."
+    },
+    {
+        "timestamp": "00:07:49",
+        "content": "How could they have represented the list? Well, they could have said, I'm going to allocate sort of a contiguous block of memory and where and your elements"
+    },
+    {
+        "timestamp": "00:07:55",
+        "content": "will go in that order right from the smallest memory value to the biggest memory value."
+    },
+    {
+        "timestamp": "00:07:59",
+        "content": "That's one design decision."
+    },
+    {
+        "timestamp": "00:08:01",
+        "content": "Another one could be that instead of allocating sort of a contiguous block of memory, you could say, I can allocate memories here and there."
+    },
+    {
+        "timestamp": "00:08:08",
+        "content": "That's okay. But then each element in my memory, on my list will then be represented by two things, the first being the value at that location."
+    },
+    {
+        "timestamp": "00:08:19",
+        "content": "And the second could be maybe another integer or something that tells Python which memory location to go to to get the next element in the list."
+    },
+    {
+        "timestamp": "00:08:27",
+        "content": "So both valid design decisions. I think Python did the second one."
+    },
+    {
+        "timestamp": "00:08:32",
+        "content": "Right. So those are that's how you represent the the data that represents the list."
+    },
+    {
+        "timestamp": "00:08:37",
+        "content": "And in terms of behavior as well, we've already been working with lists. So we know a bunch of the behaviors that lists have."
+    },
+    {
+        "timestamp": "00:08:42",
+        "content": "Right. You can index into it. You can sort of list, you can append an item to the end of the list."
+    },
+    {
+        "timestamp": "00:08:47",
+        "content": "You can get the maximum element within the list. All of these different procedures, functions are things that you can do with lists, right?"
+    },
+    {
+        "timestamp": "00:08:58",
+        "content": "And we've been working with them and we've been working with lists without actually knowing the representation, how somebody decided to represent this class, which is pretty cool."
+    },
+    {
+        "timestamp": "00:09:04",
+        "content": "So a couple more real life examples, right? If we were to think about representing one of the each of these."
+    },
+    {
+        "timestamp": "00:09:10",
+        "content": "So if we think about the object, an elevator, right?"
+    },
+    {
+        "timestamp": "00:09:13",
+        "content": "Again, it's up to us to make the design decision. It's basically a box that can change floors, right?"
+    },
+    {
+        "timestamp": "00:09:19",
+        "content": "So we could represent it using the length, the width, the height. Maybe we could also, which are all, you know, floats or something like that."
+    },
+    {
+        "timestamp": "00:09:26",
+        "content": "We can also represent it using the max capacity and the current florets act."
+    },
+    {
+        "timestamp": "00:09:31",
+        "content": "So all five of these variables, you know, together values together represent my elevator, right?"
+    },
+    {
+        "timestamp": "00:09:39",
+        "content": "And again, it's my design decision to do this. Yours might be different."
+    },
+    {
+        "timestamp": "00:09:48",
+        "content": "And in terms of things that the elevator can do well, we can change its current floor, which is basically saying change the value of the variable current floor to be something else."
+    },
+    {
+        "timestamp": "00:09:57",
+        "content": "Add people to it, maybe checking if you're at max capacity or not, you know, maybe printing out a warning if you're above that, removing people, things like that."
+    },
+    {
+        "timestamp": "00:10:02",
+        "content": "An employee is also a pretty common example of something that's typically implemented in a bunch of programing languages."
+    },
+    {
+        "timestamp": "00:10:10",
+        "content": "So an employee, basically a person that has a salary, right."
+    },
+    {
+        "timestamp": "00:10:13",
+        "content": "Maybe works for Company X, so you could represent this employee using their name, right?"
+    },
+    {
+        "timestamp": "00:10:18",
+        "content": "Maybe a string for the first name, a string for the last name, and then their birthdate maybe and then their salary, which is, you know, a floater."
+    },
+    {
+        "timestamp": "00:10:25",
+        "content": "And it's something like that. And in terms of behaviors, what can employees do?"
+    },
+    {
+        "timestamp": "00:10:30",
+        "content": "Well, you can change their name, you can change their salary. You can maybe activate or deactivate them as current employees, things like that."
+    },
+    {
+        "timestamp": "00:10:36",
+        "content": "A Q Are a store also a really nice example and it's kind of goes hand in hand with stack of pancakes."
+    },
+    {
+        "timestamp": "00:10:44",
+        "content": "How would you represent a queue at a store? Well, the representation isn't going to be a set of things."
+    },
+    {
+        "timestamp": "00:10:50",
+        "content": "The representation could be something really simple, like just a list, right."
+    },
+    {
+        "timestamp": "00:10:57",
+        "content": "Which is fine. So maybe the list will have, you know, some strings with the names of the people who are currently in the queue at the store."
+    },
+    {
+        "timestamp": "00:11:04",
+        "content": "But what's going to make a queue kind of special is that is the way that we'll be using it."
+    },
+    {
+        "timestamp": "00:11:11",
+        "content": "Right. So the representation isn't super unique. It's just a list."
+    },
+    {
+        "timestamp": "00:11:15",
+        "content": "But the way that we the way that ACU operates will be special."
+    },
+    {
+        "timestamp": "00:11:19",
+        "content": "Because if you think about the Q, the first person who comes into the Q will be the first person out of the Q, right?"
+    },
+    {
+        "timestamp": "00:11:25",
+        "content": "A first in, first out kind of situation. So that means if you make the design decision to add new people at the end of the queue, right?"
+    },
+    {
+        "timestamp": "00:11:32",
+        "content": "So if I have a new person that gets added here."
+    },
+    {
+        "timestamp": "00:11:43",
+        "content": "They're the newest person in. That means if I'm removing a person from the queue, I better remove the oldest one, which is going to be over on the at the first at the beginning of my list."
+    },
+    {
+        "timestamp": "00:11:46",
+        "content": "Right. So the way that you use the Q will be consistent with this idea."
+    },
+    {
+        "timestamp": "00:11:50",
+        "content": "And then, you know, people and then you can basically simulate the queue. And the stack of pancakes is very similar if you think about pancakes."
+    },
+    {
+        "timestamp": "00:11:58",
+        "content": "The the first one you made is the last one you eat, right?"
+    },
+    {
+        "timestamp": "00:12:02",
+        "content": "So it's a first and last out of a kind of situation. So that means that we can still represent a stack of pancakes using a a a list."
+    },
+    {
+        "timestamp": "00:12:13",
+        "content": "Right. So the representation, the data representation for a stack of pancakes will be the same as as a Q, except that the behavior will be different."
+    },
+    {
+        "timestamp": "00:12:22",
+        "content": "Right. Because I if I just made a new pancake and it goes at the end here."
+    },
+    {
+        "timestamp": "00:12:26",
+        "content": "Right. The newest one that I made is the first one that I'm going to eat."
+    },
+    {
+        "timestamp": "00:12:31",
+        "content": "So if I add I if I add a pancake to the end of my list, I'm going to remove the pancake that I want to eat from the end of my list as well."
+    },
+    {
+        "timestamp": "00:12:39",
+        "content": "Okay."
+    },
+    {
+        "timestamp": "00:12:40",
+        "content": "So the idea of object oriented programing and the reason we're doing this is because now we're bundling basically data and behaviors into one thing."
+    },
+    {
+        "timestamp": "00:12:49",
+        "content": "And so we can create all of these different objects that have the same type that all are going to function in the same way."
+    },
+    {
+        "timestamp": "00:12:57",
+        "content": "We know they're going to be consistent. Right."
+    },
+    {
+        "timestamp": "00:13:00",
+        "content": "They're going to be they're going to be consistent in the data that represents them and consistent in the way that we use them."
+    },
+    {
+        "timestamp": "00:13:05",
+        "content": "Right. So cute. Right. We know for sure that the queue is going to be a first in, first out kind of situation."
+    },
+    {
+        "timestamp": "00:13:11",
+        "content": "Right. And the way we're going to implement this is using these things called Python classes."
+    },
+    {
+        "timestamp": "00:13:17",
+        "content": "And the reason we create these Python classes is to make code that's very nicely reusable."
+    },
+    {
+        "timestamp": "00:13:26",
+        "content": "We can create really simple Python classes that we'll see today, and then we can build upon these Python classes to create more complex classes, which we'll see on Wednesday."
+    },
+    {
+        "timestamp": "00:13:33",
+        "content": "But the big idea here and this is something that I was a little bit confused about when I first started"
+    },
+    {
+        "timestamp": "00:13:44",
+        "content": "and learning about object oriented programing is you get to be in charge of the design decision, right? So you get to decide what data represents the class and you decide what behaviors represent the class."
+    },
+    {
+        "timestamp": "00:13:50",
+        "content": "So if you want it to say that you represent a Q using a list, right?"
+    },
+    {
+        "timestamp": "00:13:56",
+        "content": "First in, first out, if you add items to the end, you remove items from the beginning."
+    },
+    {
+        "timestamp": "00:14:00",
+        "content": "That's one design decision. Another design decision could be while you still represented as a list, but new items get added to the front."
+    },
+    {
+        "timestamp": "00:14:08",
+        "content": "But to be consistent with the idea of a Q, that means you remove items from the back and then the behavior is the same, right?"
+    },
+    {
+        "timestamp": "00:14:15",
+        "content": "We're implementing a Q no matter which one of those design decisions we've made."
+    },
+    {
+        "timestamp": "00:14:21",
+        "content": "Okay. So as we're going through today's lecture, I want to make a note of a couple of things."
+    },
+    {
+        "timestamp": "00:14:26",
+        "content": "So I've got these little tabs up at the top here. We're going to be basically switching our brains a little bit today."
+    },
+    {
+        "timestamp": "00:14:34",
+        "content": "We're going to be just defining a Python object, right?"
+    },
+    {
+        "timestamp": "00:14:39",
+        "content": "So we're going to be writing code that tells Python, hey, I am telling you, I would like to create this object type."
+    },
+    {
+        "timestamp": "00:14:46",
+        "content": "Okay. And these are the data. These are the this is the data that represents them."
+    },
+    {
+        "timestamp": "00:14:51",
+        "content": "Represents it. And this these are the behaviors that are represented. So that's us implementing the class."
+    },
+    {
+        "timestamp": "00:14:56",
+        "content": "So telling Python that we are now creating and telling you what one what an object of this type isn't us."
+    },
+    {
+        "timestamp": "00:15:03",
+        "content": "And the other thing is, once we have a definition for this object type, we're going to actually use the type."
+    },
+    {
+        "timestamp": "00:15:10",
+        "content": "Right. We're going to create new objects of this type."
+    },
+    {
+        "timestamp": "00:15:20",
+        "content": "So when we're creating the class, when we're telling Python, that's an object like this exists, we're designing the name of our class, we're deciding what data abstracts it, we're deciding what behaviors we can do with it, right?"
+    },
+    {
+        "timestamp": "00:15:28",
+        "content": "So if we think about the list, we haven't actually seen the code to do this."
+    },
+    {
+        "timestamp": "00:15:31",
+        "content": "But someone wrote code to define this list class."
+    },
+    {
+        "timestamp": "00:15:36",
+        "content": "Now using the class means that we're assuming that this code already exists."
+    },
+    {
+        "timestamp": "00:15:41",
+        "content": "Right. And you're just creating a whole bunch of objects of this type."
+    },
+    {
+        "timestamp": "00:15:45",
+        "content": "So we've been doing this definitely right. If we think about the list class again here."
+    },
+    {
+        "timestamp": "00:15:49",
+        "content": "For example, we created an actual object that we can manipulate, right?"
+    },
+    {
+        "timestamp": "00:15:53",
+        "content": "All is equal to one comma two. We've also created L is equal to three, comma, four, five and all these things."
+    },
+    {
+        "timestamp": "00:15:59",
+        "content": "Right? We're basically creating these instances that we can manipulate and and use in our program to achieve something useful."
+    },
+    {
+        "timestamp": "00:16:06",
+        "content": "And today we're going to see how we can do both of those things."
+    },
+    {
+        "timestamp": "00:16:10",
+        "content": "I want to draw a little parallel with functions because it's going to feel very similar right in with functions."
+    },
+    {
+        "timestamp": "00:16:16",
+        "content": "When we when we were defining a function, we were telling Python that I would like to abstract some code that does something useful."
+    },
+    {
+        "timestamp": "00:16:26",
+        "content": "Using this class, using this function definition. Right."
+    },
+    {
+        "timestamp": "00:16:29",
+        "content": "So we were writing the definition for the function in this abstract way."
+    },
+    {
+        "timestamp": "00:16:34",
+        "content": "We didn't actually run the function at that point. Right. We just defined it."
+    },
+    {
+        "timestamp": "00:16:38",
+        "content": "And so when we define a class, that's basically what we're doing."
+    },
+    {
+        "timestamp": "00:16:41",
+        "content": "We're telling Python that we're creating this object that bundles data and behaviors together."
+    },
+    {
+        "timestamp": "00:16:54",
+        "content": "Okay. When we create an instances of this data type that work that we're going to define, that's kind of like we called the actual function that we defined, right?"
+    },
+    {
+        "timestamp": "00:17:00",
+        "content": "So when we called the function, we were now doing something useful in our program, right?"
+    },
+    {
+        "timestamp": "00:17:05",
+        "content": "We said, here are some actual parameters I want you to run this function with."
+    },
+    {
+        "timestamp": "00:17:09",
+        "content": "Now tell me what the output is. Okay. And that's exactly what we're going to do when we create instances of the of the data type we're defining."
+    },
+    {
+        "timestamp": "00:17:17",
+        "content": "We're now creating actual objects that we can manipulate and use in our class."
+    },
+    {
+        "timestamp": "00:17:25",
+        "content": "Okay. So the object we're going to create in today's lecture is a coordinate in a 2D plane."
+    },
+    {
+        "timestamp": "00:17:32",
+        "content": "Okay. Pretty simple, pretty mathematical."
+    },
+    {
+        "timestamp": "00:17:34",
+        "content": "So before we actually write the code, let's kind of think about what it actually means to put a coordinate in a 2D plane."
+    },
+    {
+        "timestamp": "00:17:42",
+        "content": "So we're going to think about if we had a bunch of instances, right?"
+    },
+    {
+        "timestamp": "00:17:45",
+        "content": "If we had a bunch of coordinates in a 2D plane, what do they look like?"
+    },
+    {
+        "timestamp": "00:17:49",
+        "content": "What kind of data are we interested in grabbing from these instances?"
+    },
+    {
+        "timestamp": "00:17:52",
+        "content": "What are some things we can do with it? So here I have a point in my 2D plane."
+    },
+    {
+        "timestamp": "00:18:04",
+        "content": "So if we think about how we look at this at this coordinate, well, we know how far away the coordinate is on the X axis and we know how far away the coordinate is on the Y axis."
+    },
+    {
+        "timestamp": "00:18:11",
+        "content": "Right. So that's one instance of coordinate object."
+    },
+    {
+        "timestamp": "00:18:15",
+        "content": "Now, let's say we had another one, right? Here's another dot in my 2D plane."
+    },
+    {
+        "timestamp": "00:18:20",
+        "content": "Again, this dot will also know how far away it is on the x axis and how far away it is on the y axis."
+    },
+    {
+        "timestamp": "00:18:26",
+        "content": "Okay, so one reasonable data abstraction for a coordinate in a 2D plane could be to say I want two numbers."
+    },
+    {
+        "timestamp": "00:18:37",
+        "content": "One representing how far away is it? Is it on the x axis and one for how far away it is on the Y axis."
+    },
+    {
+        "timestamp": "00:18:44",
+        "content": "Right. That seems pretty reasonable. I don't care about color."
+    },
+    {
+        "timestamp": "00:18:47",
+        "content": "Right. Even though I colored these things."
+    },
+    {
+        "timestamp": "00:18:49",
+        "content": "But you can imagine making a cuter version of this coordinate object that also has a color associated with it."
+    },
+    {
+        "timestamp": "00:18:56",
+        "content": "Okay. So the data that will represent my point in a coordinate plane, in a 2D coordinate plane is just two numbers, right?"
+    },
+    {
+        "timestamp": "00:19:04",
+        "content": "One for the X, one for the Y. Now."
+    },
+    {
+        "timestamp": "00:19:07",
+        "content": "What are some things that we can do with these corner objects?"
+    },
+    {
+        "timestamp": "00:19:17",
+        "content": "Certainly something really simple we can do is to say, well, point, you know, one of these points, you know, the orange one, for example, tell me how far away you are on the x axis or tell me how far away you're on the y axis."
+    },
+    {
+        "timestamp": "00:19:23",
+        "content": "Right. So those two commands could return, you know, something like three, four."
+    },
+    {
+        "timestamp": "00:19:27",
+        "content": "That's how far away that point is on the x axis or four for how far away it is on the y axis."
+    },
+    {
+        "timestamp": "00:19:33",
+        "content": "Those are pretty simple things to do. One more interesting thing to do is to say, well, hey, you point, orange point, right over there."
+    },
+    {
+        "timestamp": "00:19:39",
+        "content": "Can you tell me how far away you are between the Green Point? Right."
+    },
+    {
+        "timestamp": "00:19:44",
+        "content": "So that would be the Euclidean distance between these two points."
+    },
+    {
+        "timestamp": "00:19:47",
+        "content": "And we're going to write code that figures out how far away one coordinate object is from another coordinate object."
+    },
+    {
+        "timestamp": "00:19:56",
+        "content": "All right. So let's start defining this class coordinate."
+    },
+    {
+        "timestamp": "00:20:00",
+        "content": "We're going to you can see here, this is the code that implements the class."
+    },
+    {
+        "timestamp": "00:20:03",
+        "content": "So this will tell Python that we are now creating this object type coordinate."
+    },
+    {
+        "timestamp": "00:20:09",
+        "content": "Okay. So we're not using it yet. We're not creating any objects and any object instances."
+    },
+    {
+        "timestamp": "00:20:14",
+        "content": "We're just telling Python that we'd like to create this object type."
+    },
+    {
+        "timestamp": "00:20:19",
+        "content": "So we start with the keyword class, right?"
+    },
+    {
+        "timestamp": "00:20:23",
+        "content": "In parallel, we started with the keyword DFA to define a function. Then we say the name of our object type."
+    },
+    {
+        "timestamp": "00:20:28",
+        "content": "So this will be literally the type of the object. So coordinate just like we had list and float all those things."
+    },
+    {
+        "timestamp": "00:20:35",
+        "content": "This will be of type coordinate. And then in parentheses here we say the parent of this class."
+    },
+    {
+        "timestamp": "00:20:41",
+        "content": "So usually we say object until two lectures from now when we're going to see what happens when we put something else in there."
+    },
+    {
+        "timestamp": "00:20:48",
+        "content": "But when we put the object in the parentheses there, we're telling Python that anything a generic Python object can do."
+    },
+    {
+        "timestamp": "00:21:01",
+        "content": "Our object can do as well. So something really, really basic is saying that I'm going to create this object in memory and assign"
+    },
+    {
+        "timestamp": "00:21:06",
+        "content": "a variable to it so that I get a handle for that object using this variable."
+    },
+    {
+        "timestamp": "00:21:10",
+        "content": "Right? Something super basic. Any python object has this ability and ours will too."
+    },
+    {
+        "timestamp": "00:21:15",
+        "content": "Because I've put this object in the parentheses here. All right."
+    },
+    {
+        "timestamp": "00:21:21",
+        "content": "So now we've told Python we're creating a data type called coordinate."
+    },
+    {
+        "timestamp": "00:21:26",
+        "content": "What are we going to fill in the body of this class? So the things we need to fill in are going to be our attributes."
+    },
+    {
+        "timestamp": "00:21:33",
+        "content": "Okay. Now again, what makes up an object? Two things. The data that you want to represent this object with and the procedures."
+    },
+    {
+        "timestamp": "00:21:41",
+        "content": "Functions like behaviors that you'd like this object to have."
+    },
+    {
+        "timestamp": "00:21:45",
+        "content": "Okay. So the data will be two things, right?"
+    },
+    {
+        "timestamp": "00:21:49",
+        "content": "We decided that we're going to represent a coordinate using two numbers."
+    },
+    {
+        "timestamp": "00:21:53",
+        "content": "Okay. Now, what about behaviors? Behaviors will essentially be functions that work with objects of this particular type."
+    },
+    {
+        "timestamp": "00:22:04",
+        "content": "So we're going to define them as functions, but we're going to define them in a really special way that tells Python you can only run this function on an object of type coordinate."
+    },
+    {
+        "timestamp": "00:22:12",
+        "content": "Right. Which makes sense. I would not like to find the distance between two integers."
+    },
+    {
+        "timestamp": "00:22:17",
+        "content": "That's just subtraction. Or I would not like to find the distance between two dictionaries."
+    },
+    {
+        "timestamp": "00:22:21",
+        "content": "What does that even mean? Right."
+    },
+    {
+        "timestamp": "00:22:22",
+        "content": "So distance method that we mentioned is one thing we'd like to implement will only work with objects of type coordinate."
+    },
+    {
+        "timestamp": "00:22:29",
+        "content": "Okay. So these special functions are actually called methods."
+    },
+    {
+        "timestamp": "00:22:34",
+        "content": "Okay. And I'm going to use this term a little bit today."
+    },
+    {
+        "timestamp": "00:22:37",
+        "content": "Hopefully you get used to it."
+    },
+    {
+        "timestamp": "00:22:39",
+        "content": "And then from now, from there, from next lecture on, I'll just use the word methods to refer to functions that only work with objects of this type."
+    },
+    {
+        "timestamp": "00:22:48",
+        "content": "Okay. So we so far in the previous slide had class coordinate object."
+    },
+    {
+        "timestamp": "00:22:54",
+        "content": "Now what is the next thing you have to do? So the next thing you always have to do when you tell Python you're creating"
+    },
+    {
+        "timestamp": "00:23:00",
+        "content": "a new data type is to tell Python how you want to construct this data type."
+    },
+    {
+        "timestamp": "00:23:07",
+        "content": "Right. Kind of a constructor, a constructor function."
+    },
+    {
+        "timestamp": "00:23:12",
+        "content": "And the way we do this is by defining."
+    },
+    {
+        "timestamp": "00:23:14",
+        "content": "So you can see we're defining it like a function def, but we're going to define a function that has a special name and the name is double underscore."
+    },
+    {
+        "timestamp": "00:23:23",
+        "content": "Init. Double underscore. Okay."
+    },
+    {
+        "timestamp": "00:23:27",
+        "content": "So that's the name of this function. And you can see it's a function def name and then parentheses and there's a bunch of stuff in the parentheses."
+    },
+    {
+        "timestamp": "00:23:34",
+        "content": "The first thing will be this thing called self. So already it's going to be a little bit different than regular functions."
+    },
+    {
+        "timestamp": "00:23:41",
+        "content": "Now I'm going to. This is not the only time I'll explain self."
+    },
+    {
+        "timestamp": "00:23:45",
+        "content": "I'll explain it throughout this lecture. But the basic idea of self is that it's always going to be the first parameter of a method, right?"
+    },
+    {
+        "timestamp": "00:23:55",
+        "content": "A function that only works with an object of this class, of this type."
+    },
+    {
+        "timestamp": "00:24:00",
+        "content": "And the reason why we have it here is because all we're doing here is telling Python that we'd like to create this object type."
+    },
+    {
+        "timestamp": "00:24:09",
+        "content": "We don't have an actual object to manipulate."
+    },
+    {
+        "timestamp": "00:24:12",
+        "content": "Right. I haven't created an actual object yet. I'm just telling Python I'd like to create this object."
+    },
+    {
+        "timestamp": "00:24:18",
+        "content": "So if I don't have an actual object created yet, I need some way to refer to an instance without actually having one yet."
+    },
+    {
+        "timestamp": "00:24:28",
+        "content": "And that's what the self is doing. Right. It's basically a variable that tells Python that this is an object of."
+    },
+    {
+        "timestamp": "00:24:36",
+        "content": "That this is a function that only works with an object of this type."
+    },
+    {
+        "timestamp": "00:24:40",
+        "content": "And I'm going to use this variable self to refer to this object myself, my data attributes and my methods and things like that."
+    },
+    {
+        "timestamp": "00:24:50",
+        "content": "It will become clear there will be many examples, but for now it's basically a away for us to refer to an object of this type."
+    },
+    {
+        "timestamp": "00:24:58",
+        "content": "An instance of this type. Without actually having created one. Anything after self is basically a parameters you'd like to create this object with."
+    },
+    {
+        "timestamp": "00:25:07",
+        "content": "So for us, it doesn't make sense to say create this coordinate object without actually initializing its x and y values."
+    },
+    {
+        "timestamp": "00:25:15",
+        "content": "Right. When we put a coordinate object in 2D plane, I would like to put it in that 2D plane."
+    },
+    {
+        "timestamp": "00:25:20",
+        "content": "So it needs an initial X, an initial Y value. Okay."
+    },
+    {
+        "timestamp": "00:25:24",
+        "content": "So these parameters here will tell Python you need a pass of value for X and Y when you create your object."
+    },
+    {
+        "timestamp": "00:25:30",
+        "content": "And then the body of this in it will have whatever you'd like, whatever code you'd like to initialize your object."
+    },
+    {
+        "timestamp": "00:25:39",
+        "content": "Yes. Question. I like the way. The underscores is part of how you write it."
+    },
+    {
+        "timestamp": "00:25:48",
+        "content": "So you have to have underscore, underscore in it. Underscore, underscore."
+    },
+    {
+        "timestamp": "00:25:51",
+        "content": "Yeah, it's a special function. We'll talk about the next lecture. It's called a Dunder Function."
+    },
+    {
+        "timestamp": "00:25:56",
+        "content": "Double underscore thunder. Okay."
+    },
+    {
+        "timestamp": "00:26:01",
+        "content": "Okay. So the body of this function can contain a bunch of initialization codes."
+    },
+    {
+        "timestamp": "00:26:05",
+        "content": "So anything you'd like to initialize when you create an object of this type, that's what you stick in here."
+    },
+    {
+        "timestamp": "00:26:10",
+        "content": "Okay. Usually most of the time, 99% of the time, you want to initialize the data that makes up your object."
+    },
+    {
+        "timestamp": "00:26:19",
+        "content": "Right. So the data we decided makes up our object is how far you are in the x axis and how far away you are on the y axis."
+    },
+    {
+        "timestamp": "00:26:26",
+        "content": "So here this data that I want every single one of my objects to have a value for X and the value for y is initialized using self dot right."
+    },
+    {
+        "timestamp": "00:26:37",
+        "content": "So self dot a variable named x and self dot a variable named y."
+    },
+    {
+        "timestamp": "00:26:42",
+        "content": "And the self-talk before these variables distinguishes these variables X and Y here from regular variables."
+    },
+    {
+        "timestamp": "00:26:51",
+        "content": "Right. If I were to just say x equals x val and y equals y, val, x and y will just be regular variables."
+    },
+    {
+        "timestamp": "00:27:04",
+        "content": "As soon as my init function terminates, those variables are gone. But because I've got self-taught X and self-taught y, this means that these values X and y will persist throughout the lifetime of my object when I create my actual object."
+    },
+    {
+        "timestamp": "00:27:12",
+        "content": "And every single object I create will have their own X and y values."
+    },
+    {
+        "timestamp": "00:27:17",
+        "content": "Question. Does that. He said to me."
+    },
+    {
+        "timestamp": "00:27:23",
+        "content": "So I said, Yeah, good question."
+    },
+    {
+        "timestamp": "00:27:27",
+        "content": "Does this self-talk thing have to be different? It does not have to be."
+    },
+    {
+        "timestamp": "00:27:32",
+        "content": "So you can have self doubt. X equals x val and self-doubt."
+    },
+    {
+        "timestamp": "00:27:35",
+        "content": "Why val equals why val. The reason I did it here is to showcase that they actually do not have to be the same."
+    },
+    {
+        "timestamp": "00:27:42",
+        "content": "Yes, they are completely different. Right. So self doubt x is different than x."
+    },
+    {
+        "timestamp": "00:27:46",
+        "content": "Val, we're just happened to be assigning this value to b whatever's is it?"
+    },
+    {
+        "timestamp": "00:27:53",
+        "content": "Okay. So a little bit of a kind of again, just kind of explaining what the self is in the context of a blueprint."
+    },
+    {
+        "timestamp": "00:28:02",
+        "content": "So if we think about a blueprint in real life, right? So here I have a blueprint for a room that I might want to create."
+    },
+    {
+        "timestamp": "00:28:08",
+        "content": "I don't actually have this room created yet. Right. It's just an idea."
+    },
+    {
+        "timestamp": "00:28:12",
+        "content": "But what I know is that I'm going to use this blueprint, right, to have to have a room that contains two chairs, a coffee table and a sofa."
+    },
+    {
+        "timestamp": "00:28:24",
+        "content": "All right. So in this blueprint, I don't have actual rooms that I've implemented."
+    },
+    {
+        "timestamp": "00:28:28",
+        "content": "You know, this this thing. And I don't have actual rooms where I've put two chair chairs, a coffee table and a sofa."
+    },
+    {
+        "timestamp": "00:28:34",
+        "content": "It's just an idea. But self is is kind of the way that a blueprint accesses its attributes."
+    },
+    {
+        "timestamp": "00:28:42",
+        "content": "Right. So I've got if I say self doubt coffee table, that means if in the future I have an actual room."
+    },
+    {
+        "timestamp": "00:28:49",
+        "content": "Self doubt coffee table means I'm referring to that room's coffee table."
+    },
+    {
+        "timestamp": "00:28:53",
+        "content": "Okay. So. The self is a variable that we use to refer to data or attributes for for a blueprint."
+    },
+    {
+        "timestamp": "00:29:06",
+        "content": "When I don't have actual rooms created, but once I create instances of rooms, right?"
+    },
+    {
+        "timestamp": "00:29:12",
+        "content": "So for example here I have something called living room created, right?"
+    },
+    {
+        "timestamp": "00:29:16",
+        "content": "So I've taken my blueprint and now somebody asked me to create her room with this blueprint."
+    },
+    {
+        "timestamp": "00:29:20",
+        "content": "Right now I no longer use self because I have an actual room in hand."
+    },
+    {
+        "timestamp": "00:29:25",
+        "content": "So now I would refer to coffee table in this living room as living room."
+    },
+    {
+        "timestamp": "00:29:29",
+        "content": "Coffee table or living rooms? Coffee table. I no longer self's coffee table, so self is only used in the context of my blueprint."
+    },
+    {
+        "timestamp": "00:29:37",
+        "content": "Okay. And to sort of bring the last point home, the idea that with the blueprint, you can create in many different instances."
+    },
+    {
+        "timestamp": "00:29:50",
+        "content": "Well, here's a living room that I've applied my blueprint to, and here's another living room, completely different room that somebody asked me to use my blueprint for to create it."
+    },
+    {
+        "timestamp": "00:29:54",
+        "content": "Different chairs, different coffee tables, different colored things."
+    },
+    {
+        "timestamp": "00:29:57",
+        "content": "These are all different instances that I use my one template, my one blueprint for the room on."
+    },
+    {
+        "timestamp": "00:30:04",
+        "content": "Okay. So when we're defining the class, we don't have actual objects, right?"
+    },
+    {
+        "timestamp": "00:30:08",
+        "content": "Again, that's just kind of a really big idea here. We're just telling Python I'd like to create this object, and this is what it looks like."
+    },
+    {
+        "timestamp": "00:30:15",
+        "content": "I'm bundling this data with these behaviors together, but I don't have actual objects of this type created yet, so let's actually create some objects."
+    },
+    {
+        "timestamp": "00:30:23",
+        "content": "The code that does this is as follows."
+    },
+    {
+        "timestamp": "00:30:26",
+        "content": "So I've put the definition for my class, the constructor, the method for my class up here, just to remind us what it looks like."
+    },
+    {
+        "timestamp": "00:30:36",
+        "content": "And with that code we can now start to create actual objects that we can manipulate."
+    },
+    {
+        "timestamp": "00:30:40",
+        "content": "So when we created something like, you know, l is equal to one, a square bracket lists one, comma two."
+    },
+    {
+        "timestamp": "00:30:46",
+        "content": "Now I'm creating these actual coordinates in my code using my blueprint."
+    },
+    {
+        "timestamp": "00:30:51",
+        "content": "So the way we do that is we invoke the name of our class. So when you say coordinate, that's what we named it, right?"
+    },
+    {
+        "timestamp": "00:30:57",
+        "content": "That's our data type. And here I'm passing in every single parameter except for self."
+    },
+    {
+        "timestamp": "00:31:03",
+        "content": "So I initialized a coordinate object using x val and y val."
+    },
+    {
+        "timestamp": "00:31:08",
+        "content": "So I need to put in two parameters here for Excel online."
+    },
+    {
+        "timestamp": "00:31:11",
+        "content": "Val. And self actually becomes this thing that I just created this object, right?"
+    },
+    {
+        "timestamp": "00:31:19",
+        "content": "So coordinate three comma four is now an object that's being referenced by variable named C."
+    },
+    {
+        "timestamp": "00:31:27",
+        "content": "Which is why I'm not passing and stuff. So it's kind of weird to think about."
+    },
+    {
+        "timestamp": "00:31:31",
+        "content": "But now I have one object in memory. It's referenced by name C and on the next line I have another object in memory."
+    },
+    {
+        "timestamp": "00:31:38",
+        "content": "Again, I've invoked the name of my class coordinate this particular object X value will be zero and y value will be zero."
+    },
+    {
+        "timestamp": "00:31:45",
+        "content": "So different than the than the one I just did on the previous line."
+    },
+    {
+        "timestamp": "00:31:50",
+        "content": "But they'll have the same structure, right? So they will both have some X and y value."
+    },
+    {
+        "timestamp": "00:31:55",
+        "content": "They'll just be different from each other. Right. But they'll both have X and they'll both have what?"
+    },
+    {
+        "timestamp": "00:32:00",
+        "content": "The one I've named down here is going to be a virgin."
+    },
+    {
+        "timestamp": "00:32:03",
+        "content": "Okay, so I've got two objects of type coordinate. One is referenced by C, by name C, and the other one is referenced by name orange."
+    },
+    {
+        "timestamp": "00:32:09",
+        "content": "Okay. So now that I have these objects in hand, I can access any of their attributes."
+    },
+    {
+        "timestamp": "00:32:15",
+        "content": "And Python will grab for me the attribute of that particular object."
+    },
+    {
+        "timestamp": "00:32:26",
+        "content": "So here I've got this thing called dot notation, which we've seen before, and I'll, I'll explain it again in a couple slides, but the dot notation tells Python to access the x data attribute of object c."
+    },
+    {
+        "timestamp": "00:32:37",
+        "content": "So this will grab for me the x value of C three, right?"
+    },
+    {
+        "timestamp": "00:32:42",
+        "content": "And the next line will grab for me the x value of origin zero."
+    },
+    {
+        "timestamp": "00:32:48",
+        "content": "And this is all made possible because X and we could also access y."
+    },
+    {
+        "timestamp": "00:32:54",
+        "content": "X and y were defined in the class definition using self-report."
+    },
+    {
+        "timestamp": "00:32:58",
+        "content": "If I didn't use self dot, those were just b variables."
+    },
+    {
+        "timestamp": "00:33:01",
+        "content": "And as soon as I created my object, they would have gone away because that function had terminated."
+    },
+    {
+        "timestamp": "00:33:06",
+        "content": "But in order to have these variables, X and Y persist throughout the lifetime of my object, I've defined them using self directs and self doubt y."
+    },
+    {
+        "timestamp": "00:33:15",
+        "content": "So any object I've created that's a type coordinate will have some value for X and some value for Y, right?"
+    },
+    {
+        "timestamp": "00:33:21",
+        "content": "So we can access that value through this notation. Does that make sense so far?"
+    },
+    {
+        "timestamp": "00:33:26",
+        "content": "Is that all right? So we're going to visualize this in a slightly different way."
+    },
+    {
+        "timestamp": "00:33:34",
+        "content": "So the exact same code as on the previous slide, we're now going to do it in this in our little memory sort of type."
+    },
+    {
+        "timestamp": "00:33:41",
+        "content": "So here I have C is equal to coordinate three for exactly what I had on the previous slide."
+    },
+    {
+        "timestamp": "00:33:45",
+        "content": "So in memory, the way you think about it is, you know, as we've been thinking about other objects, so it's not much different."
+    },
+    {
+        "timestamp": "00:33:52",
+        "content": "We have C is our name, right? And it's bound to an object of type coordinate."
+    },
+    {
+        "timestamp": "00:33:57",
+        "content": "It just so happens we defined this object, but it's the same idea."
+    },
+    {
+        "timestamp": "00:34:01",
+        "content": "I've got a name bound to some object and this object has its own x value and its own Y value."
+    },
+    {
+        "timestamp": "00:34:08",
+        "content": "Okay. So when you evaluate see that X python goes into memory, it says, hey, what type is C?"
+    },
+    {
+        "timestamp": "00:34:14",
+        "content": "And it says, Oh, it's a coordinate object. Does coordinate object have a data attribute named X?"
+    },
+    {
+        "timestamp": "00:34:18",
+        "content": "Yes, it does, because it looks at the init and then it says, well, what's its value?"
+    },
+    {
+        "timestamp": "00:34:22",
+        "content": "What's three? And so it just returns that. And so are the the the next three lines here are slightly different from two slides two slides ago"
+    },
+    {
+        "timestamp": "00:34:35",
+        "content": "but very similar a is equal to zero creates for me a variable named a bound to the value zero."
+    },
+    {
+        "timestamp": "00:34:42",
+        "content": "Right. Just to showcase that it's exactly the same as having a variable named C bound to this object that we created."
+    },
+    {
+        "timestamp": "00:34:48",
+        "content": "And then when I say all rig equals, coordinate a comma, a python says, All right, well, here's a name."
+    },
+    {
+        "timestamp": "00:34:55",
+        "content": "Oil rig for origin. What is its bound?"
+    },
+    {
+        "timestamp": "00:34:59",
+        "content": "What is it bound to? Well, it's also bound to an object of type coordinate and."
+    },
+    {
+        "timestamp": "00:35:04",
+        "content": "It's an object we define. So we define an object or type coordinate having an x and y values."
+    },
+    {
+        "timestamp": "00:35:09",
+        "content": "So here they are and their original easier there is set to zero when I created this object."
+    },
+    {
+        "timestamp": "00:35:14",
+        "content": "So when I say or reject x python will look up orig."
+    },
+    {
+        "timestamp": "00:35:18",
+        "content": "It's going to say, Hey, what type are you? Oh, you're a coordinate."
+    },
+    {
+        "timestamp": "00:35:21",
+        "content": "Do you have an x value? You do. That's what we define in the init."
+    },
+    {
+        "timestamp": "00:35:25",
+        "content": "Let me grab that value from you. So we're just manipulating objects and memory right now that we've written the code to."
+    },
+    {
+        "timestamp": "00:35:36",
+        "content": "To work with objects that we created. We're just creating a whole bunch of these objects in memory and then, you know, grabbing the Rex values."
+    },
+    {
+        "timestamp": "00:35:43",
+        "content": "And then we're going to get the distance between two objects and them in a bit."
+    },
+    {
+        "timestamp": "00:35:48",
+        "content": "One more way to kind of show you that exact same code is to visualize it."
+    },
+    {
+        "timestamp": "00:35:54",
+        "content": "So here is the code, all the entire code, as you would have it in a file, right?"
+    },
+    {
+        "timestamp": "00:36:02",
+        "content": "So you'd have all this all together. The gray box is the definition for my object type."
+    },
+    {
+        "timestamp": "00:36:09",
+        "content": "And the blue box is me using this object that I just created."
+    },
+    {
+        "timestamp": "00:36:14",
+        "content": "I've just separated that out just for clarity. So when I have my gray box, there's nothing to display, right?"
+    },
+    {
+        "timestamp": "00:36:21",
+        "content": "It just sits in memory."
+    },
+    {
+        "timestamp": "00:36:25",
+        "content": "And Python knows of this type of class coordinate that has to date attributes the things that I've defined using self dot, x and y."
+    },
+    {
+        "timestamp": "00:36:32",
+        "content": "When I create C is equal to coordinate three for visualizing what we're trying to do here."
+    },
+    {
+        "timestamp": "00:36:37",
+        "content": "Here, I've got this object whose name is C and it's at three, comma, four."
+    },
+    {
+        "timestamp": "00:36:42",
+        "content": "And then I've got this object name at the origin and it's X and y values are zero zero."
+    },
+    {
+        "timestamp": "00:36:49",
+        "content": "So because I've created these objects using the same blueprint, write the coordinate blueprint that I've defined up in the gray."
+    },
+    {
+        "timestamp": "00:36:55",
+        "content": "That means every object that I've created C and origin has a some thought x and self doubt y value, right?"
+    },
+    {
+        "timestamp": "00:37:02",
+        "content": "It just so happens that the actual values for X and y are different between these two objects."
+    },
+    {
+        "timestamp": "00:37:08",
+        "content": "Right? Okay. So when I grab origin dot x I'm looking up origin and I'm grabbing its x value zero."
+    },
+    {
+        "timestamp": "00:37:15",
+        "content": "Right. Just another way to visualize it. Okay."
+    },
+    {
+        "timestamp": "00:37:21",
+        "content": "Is everyone okay with these data attributes? All right."
+    },
+    {
+        "timestamp": "00:37:26",
+        "content": "So now let's add a method. All right, so a method, remember, is just a function that works with an object of this type."
+    },
+    {
+        "timestamp": "00:37:34",
+        "content": "Okay, so the way that we tell Python we'd like to create a method is by passing in self as the first parameter."
+    },
+    {
+        "timestamp": "00:37:45",
+        "content": "So let's create this function named distance."
+    },
+    {
+        "timestamp": "00:37:50",
+        "content": "If you look in the actual python code for today, I've got two more functions."
+    },
+    {
+        "timestamp": "00:37:54",
+        "content": "One, to get the value of this current object and one to get the Y value."
+    },
+    {
+        "timestamp": "00:37:59",
+        "content": "But those are not as interesting. This distance one is interesting, though."
+    },
+    {
+        "timestamp": "00:38:04",
+        "content": "So I would like to create this function that only works with an object of type coordinate."
+    },
+    {
+        "timestamp": "00:38:10",
+        "content": "So what we've done so far is this these lines up here. So now we've got DF again, it's just a function."
+    },
+    {
+        "timestamp": "00:38:15",
+        "content": "So we've got def, name of it, distance, and then the parameters."
+    },
+    {
+        "timestamp": "00:38:20",
+        "content": "So again, since this is a function that only works with an object of type coordinate, I need to put self as the first parameter."
+    },
+    {
+        "timestamp": "00:38:28",
+        "content": "And this self will help us refer to the object when I call the method on it."
+    },
+    {
+        "timestamp": "00:38:34",
+        "content": "Right. So. So if self is the first parameter, that means that this distance method will be called on self."
+    },
+    {
+        "timestamp": "00:38:43",
+        "content": "So when I call, when I have an actual object in hand that I'm calling distance on the self parameter will take on the value that is that object."
+    },
+    {
+        "timestamp": "00:38:52",
+        "content": "We're going to see this in the next slide. Okay. So self is the thing that I'm calling this function on."
+    },
+    {
+        "timestamp": "00:38:58",
+        "content": "And then what other parameters do I want to take give to this function?"
+    },
+    {
+        "timestamp": "00:39:02",
+        "content": "Well, I want to find the distance between myself."
+    },
+    {
+        "timestamp": "00:39:06",
+        "content": "So this object I'm going to call distance on. And another coordinate object."
+    },
+    {
+        "timestamp": "00:39:12",
+        "content": "Now. Other than maybe a docstring here that says, hey, warning others should be an object of type coordinate."
+    },
+    {
+        "timestamp": "00:39:22",
+        "content": "There isn't really anything that that enforces the type of other when you make a function call or when you make a method call."
+    },
+    {
+        "timestamp": "00:39:29",
+        "content": "Right. So you can call this distance method with other being an integer, which is not an object of type coordinate."
+    },
+    {
+        "timestamp": "00:39:37",
+        "content": "The code will run but will immediately crash because of what's going on inside."
+    },
+    {
+        "timestamp": "00:39:43",
+        "content": "So the only way this code will work is if you're calling it on an object of type, coordinate for the other."
+    },
+    {
+        "timestamp": "00:39:57",
+        "content": "Okay. So the reason for that is because well, when we think about grabbing the distance between two objects that are coordinates in the 2D plane, we take the difference between the X values square or square that take the difference between the Y values square that right, Pythagoras."
+    },
+    {
+        "timestamp": "00:40:06",
+        "content": "Add those two together. Take the square root."
+    },
+    {
+        "timestamp": "00:40:09",
+        "content": "So if I'm calling this distant method on an object of type coordinate i.e. self, how do I grab my self x value?"
+    },
+    {
+        "timestamp": "00:40:19",
+        "content": "Well I just say self dot x. Right. My x value."
+    },
+    {
+        "timestamp": "00:40:22",
+        "content": "What is it? And then I would like to subtract that from the other coordinate objects."
+    },
+    {
+        "timestamp": "00:40:29",
+        "content": "X value. What's my other coordinate object? It's the thing that I'm passing in as a parameter."
+    },
+    {
+        "timestamp": "00:40:34",
+        "content": "So grab their x value. So if I take self-taught x minus other dot x python will grab my x value subtracted from others x value."
+    },
+    {
+        "timestamp": "00:40:43",
+        "content": "Square that we do the exact same thing with y right?"
+    },
+    {
+        "timestamp": "00:40:46",
+        "content": "Grab my x y value subtracted from others y value square that and then the rest is just Pythagoras."
+    },
+    {
+        "timestamp": "00:40:53",
+        "content": "Add those two and take the square root. I take it to the power of a half."
+    },
+    {
+        "timestamp": "00:41:05",
+        "content": "And this function is just a regular function other than the self being the first parameter and us working with, you know, data attributes of myself and potentially other parameters."
+    },
+    {
+        "timestamp": "00:41:10",
+        "content": "But you can see it returns a value. It has the def name and things like that."
+    },
+    {
+        "timestamp": "00:41:21",
+        "content": "So the way we're going to use this method that we just wrote is using the DOT operator, just like we access the data attribute of a object that I created."
+    },
+    {
+        "timestamp": "00:41:27",
+        "content": "I can access a procedural attribute, i.e. a method of an object I just created."
+    },
+    {
+        "timestamp": "00:41:33",
+        "content": "So we use the dot operator for this. The thing before the dot is the object I would like to call the method on."
+    },
+    {
+        "timestamp": "00:41:41",
+        "content": "Dot. The name of the method I like to call."
+    },
+    {
+        "timestamp": "00:41:45",
+        "content": "And in parentheses it's just a function, so I need to give it any parameters this method expects."
+    },
+    {
+        "timestamp": "00:41:51",
+        "content": "Now this should look very familiar. We introduced denotation when we worked with lists."
+    },
+    {
+        "timestamp": "00:41:56",
+        "content": "Right. Remember that?"
+    },
+    {
+        "timestamp": "00:41:58",
+        "content": "And I said, when we work through the list, right, you for now have to remember why we use this special way of writing this this function."
+    },
+    {
+        "timestamp": "00:42:06",
+        "content": "But it was the same idea. The thing before the doc was the list I wanted to apply the function to."
+    },
+    {
+        "timestamp": "00:42:12",
+        "content": "Right. So my list is the name of a list variable. I wanted to apply the function append and it happened to take an integer as a parameter."
+    },
+    {
+        "timestamp": "00:42:21",
+        "content": "And same sort. Here is also another one. But this one didn't take any parameters."
+    },
+    {
+        "timestamp": "00:42:25",
+        "content": "But it's the same idea, the rotation. So in terms of our class here, I've got two corded objects, right?"
+    },
+    {
+        "timestamp": "00:42:34",
+        "content": "And I've got a dot notation being used here to find the distance between one object and another one."
+    },
+    {
+        "timestamp": "00:42:41",
+        "content": "So the thing before the DOD is an object I would like to use the distance method on."
+    },
+    {
+        "timestamp": "00:42:45",
+        "content": "Pick one of them. See dot distance the name of the method I would like to call and in parentheses I've got another coordinate object."
+    },
+    {
+        "timestamp": "00:42:54",
+        "content": "Orig. So here. I am using the class."
+    },
+    {
+        "timestamp": "00:43:01",
+        "content": "Right. And I've got actual values, right. Actual objects that I'm manipulating."
+    },
+    {
+        "timestamp": "00:43:06",
+        "content": "Right. See. And orig. Okay."
+    },
+    {
+        "timestamp": "00:43:16",
+        "content": "So this might look a little bit weird, but when we actually call the function, remember, we omit itself when we when we omitted sorry, we omitted itself when we made this function call."
+    },
+    {
+        "timestamp": "00:43:22",
+        "content": "But that's because self implicitly becomes the thing before the dot."
+    },
+    {
+        "timestamp": "00:43:27",
+        "content": "The thing you're calling this method on. So let's visualize that in our memory."
+    },
+    {
+        "timestamp": "00:43:32",
+        "content": "So here I've got my class definition for a coordinated has some data attributes and some procedural attributes."
+    },
+    {
+        "timestamp": "00:43:39",
+        "content": "I've got these two objects being created."
+    },
+    {
+        "timestamp": "00:43:42",
+        "content": "C Is this object of type coordinate or is this object of type coordinate?"
+    },
+    {
+        "timestamp": "00:43:46",
+        "content": "They've got different x and y values, but they both have X and Y, some x and Y values."
+    },
+    {
+        "timestamp": "00:43:52",
+        "content": "When I make a function call. To see to."
+    },
+    {
+        "timestamp": "00:43:57",
+        "content": "Sorry, a method call on C. Python says, All right, let me look at this thing before the dot."
+    },
+    {
+        "timestamp": "00:44:04",
+        "content": "What is it? It's an object of type coordinate. Okay."
+    },
+    {
+        "timestamp": "00:44:09",
+        "content": "Then it looks at the method you're trying to call distance."
+    },
+    {
+        "timestamp": "00:44:13",
+        "content": "It says, Hey, does coordinate have a distance method defined?"
+    },
+    {
+        "timestamp": "00:44:16",
+        "content": "Why, yes, it does. We just wrote it. And then it says, all right, well, let me call this distance method."
+    },
+    {
+        "timestamp": "00:44:22",
+        "content": "It's going to set self as see the thing before the dot."
+    },
+    {
+        "timestamp": "00:44:29",
+        "content": "And any other parameters will be set in order to whatever is being passed in here."
+    },
+    {
+        "timestamp": "00:44:33",
+        "content": "So orig will become the other parameter from my from my definition for that function."
+    },
+    {
+        "timestamp": "00:44:44",
+        "content": "So this is just the conventional way of calling methods, and it's the way we've been working with lists and dictionaries and things like that."
+    },
+    {
+        "timestamp": "00:44:52",
+        "content": "So again, we've got some object. The thing before the dot, some method to run."
+    },
+    {
+        "timestamp": "00:45:06",
+        "content": "And when we call it this way, the thing before the dog becomes self in our class definition, right in our method definition, and then all the other parameters become assigned one by one."
+    },
+    {
+        "timestamp": "00:45:12",
+        "content": "Right. Everything except herself. Now, to sort of demystify this, I would like to show you what this is actually equivalent to."
+    },
+    {
+        "timestamp": "00:45:20",
+        "content": "So we can run the function, the method that we define using by actually passing in a value for self."
+    },
+    {
+        "timestamp": "00:45:26",
+        "content": "Right. If this is more if this is clear to you. So in that case, the thing before the dot cannot be an object."
+    },
+    {
+        "timestamp": "00:45:36",
+        "content": "Right. Because if it is an object of the type coordinate, then Python will say, well, this is the object I'm running the distance method on."
+    },
+    {
+        "timestamp": "00:45:43",
+        "content": "So to demystify this, you can actually invoke the name of the class, right?"
+    },
+    {
+        "timestamp": "00:45:48",
+        "content": "The object that you're trying to create, the name, the data type."
+    },
+    {
+        "timestamp": "00:45:52",
+        "content": "Right. Coordinate. And then Python says, Oh, I see you're calling the name of the class."
+    },
+    {
+        "timestamp": "00:45:59",
+        "content": "It's not an object. So then what do you want from me?"
+    },
+    {
+        "timestamp": "00:46:02",
+        "content": "Okay. The thing after the dot says I would like to run this method on you, but now it needs all the parameters in the parameter list, including self."
+    },
+    {
+        "timestamp": "00:46:22",
+        "content": "So here I would set, I would have to give it explicitly c com a zero instead of just zero because the thing before the dot is the name of my class, not an actual object like it is on the side. So this is actually the conventional way to do this, right?"
+    },
+    {
+        "timestamp": "00:46:27",
+        "content": "This is the shorthand, the python way to do this."
+    },
+    {
+        "timestamp": "00:46:30",
+        "content": "But this hopefully demystifies the self deal and the way we actually, you know, set to that first parameter to the thing before the duct."
+    },
+    {
+        "timestamp": "00:46:41",
+        "content": "All right. Yes. Question In the first one, you had more than one primary response here."
+    },
+    {
+        "timestamp": "00:46:47",
+        "content": "Yeah, exactly. If there's more parameter, just pop in those extra ones with commas, just like a regular function."
+    },
+    {
+        "timestamp": "00:46:52",
+        "content": "All right. So this dot operator basically accesses either our data cortex or our methods, right?"
+    },
+    {
+        "timestamp": "00:46:59",
+        "content": "C dot distance, whatever or whatever method name we have."
+    },
+    {
+        "timestamp": "00:47:02",
+        "content": "Right. So that's it for today's lecture."
+    },
+    {
+        "timestamp": "00:47:05",
+        "content": "And next lecture, we're going to build on this coordinate object by creating circles."
+    },
+    {
+        "timestamp": "00:47:09",
+        "content": "And then we'll create some fraction objects and we'll look at some other way, some other objects that we can bundle together."
+    },
+    {
+        "timestamp": "00:47:17",
+        "content": "Okay."
+    }
+]

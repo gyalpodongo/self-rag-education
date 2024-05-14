@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Where are the 1:00 and 2:00 recitations being held today?</p>\n<p></p>\n<p>I&#39;m having some trouble accessing Canvas.</p>\n<p></p>\n<p>Thank you.</p>",
+        "type": "question",
+        "created": "2022-09-16T16:20:48.548Z",
+        "subject": "9/16 Recitations?",
+        "_id": "l84otbtwzli4vz"
+    },
+    {
+        "content": "<p>1:00 is in 34-101, and 2:00 is still in 37-212. The schedule is posted in the fourth square on our course page.</p>\n<p><a href=\"https://sicp-s1.mit.edu/fall22\" target=\"_blank\" rel=\"noopener noreferrer\">https://sicp-s1.mit.edu/fall22</a></p>\n<p></p>",
+        "type": "i_answer",
+        "created": "2022-09-16T16:34:43.372Z",
+        "_id": "l84otbtwzli4vz"
+    }
+]

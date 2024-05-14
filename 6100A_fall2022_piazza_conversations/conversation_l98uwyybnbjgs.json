@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>I completed a PSET 3 and PSET 4 check-off yesterday. While my score for PSET 4 is on the website, my score for PSET 3 isn&#39;t. Is there anything I should do to fix this? Thank you!</p>",
+        "type": "question",
+        "created": "2022-10-14T19:02:23.219Z",
+        "subject": "PSET 3 check-off score not on website yet",
+        "_id": "l98uwyybnbjgs"
+    },
+    {
+        "content": "<p>I tracked it down, all set.</p>",
+        "type": "i_answer",
+        "created": "2022-10-14T19:36:46.904Z",
+        "_id": "l98uwyybnbjgs"
+    }
+]

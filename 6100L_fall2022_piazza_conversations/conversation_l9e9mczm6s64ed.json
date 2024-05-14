@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hello,</p>\n<p></p>\n<p>I hope my email finds you well.</p>\n<p>While attempting to submit the final version of the Pset 2 I mistakenly submitted it in the early submission section and it now shows as late submission in the scores.</p>\n<p>What can I do to fix that?</p>\n<p></p>\n<p>Best regards,</p>\n<p>Nicolas Agrotis</p>",
+        "type": "question",
+        "created": "2022-10-18T13:52:53.314Z",
+        "subject": "I Mistakenly resubmitted the early submission and it now shows as late",
+        "_id": "l9e9mczm6s64ed"
+    },
+    {
+        "content": "<p>All set, I reset the submission.</p>",
+        "type": "i_answer",
+        "created": "2022-10-18T16:19:01.139Z",
+        "_id": "l9e9mczm6s64ed"
+    }
+]

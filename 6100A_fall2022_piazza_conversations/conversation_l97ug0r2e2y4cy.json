@@ -1,0 +1,51 @@
+[
+    {
+        "content": "<p>I did checkoff for pset 3 and 4 this afternoon but on the scores page it still shows that &#34;no checkoff received&#34; for both pset3 and 4. Would this get fixed later? Thank you!</p>",
+        "type": "question",
+        "created": "2022-10-14T02:01:26.222Z",
+        "subject": "Pset 3&amp;4 Checkoff",
+        "_id": "l97ug0r2e2y4cy"
+    },
+    {
+        "content": "Do you remember who the TA/LA was that gave you the checkoff?",
+        "type": "i_answer",
+        "created": "2022-10-14T02:28:02.532Z",
+        "_id": "l97ug0r2e2y4cy"
+    },
+    {
+        "content": "<p>I don&#39;t remember his name but he told me that the scores page was refreshing very slowly and I should check the page half an hour later to make sure I receive the score. If not he recommended me to post on Piazza for help. I did the checkoff at around 5:40pm.</p>",
+        "type": "followup",
+        "created": "2022-10-14T07:16:11.337Z",
+        "_id": "l97ug0r2e2y4cy"
+    },
+    {
+        "content": "What\u2019s your kerb?",
+        "type": "followup_response",
+        "created": "2022-10-14T11:29:02.538Z",
+        "_id": "l97ug0r2e2y4cy"
+    },
+    {
+        "content": "<p>ashiyu@mit.edu</p>",
+        "type": "followup_response",
+        "created": "2022-10-14T17:32:35.985Z",
+        "_id": "l97ug0r2e2y4cy"
+    },
+    {
+        "content": "<p><strong attention=\"k05i87ujxmg4si\">@Muhammad Ashhad Alam</strong>\u00a0</p>\n<p>hassan_m gave the checkoff according to the logs.\u00a0</p>",
+        "type": "followup",
+        "created": "2022-10-14T19:43:39.154Z",
+        "_id": "l97ug0r2e2y4cy"
+    },
+    {
+        "content": "Scores should be up",
+        "type": "followup_response",
+        "created": "2022-10-14T22:11:46.792Z",
+        "_id": "l97ug0r2e2y4cy"
+    },
+    {
+        "content": "<p>Thank you so much!</p>",
+        "type": "followup_response",
+        "created": "2022-10-14T22:15:29.944Z",
+        "_id": "l97ug0r2e2y4cy"
+    }
+]

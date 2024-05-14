@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p>In the &#39;test_play_game_short&#39; function (where the word is: &#39;hi&#39;), the user makes a correct guess (and so guesses left stays at 10) then makes an incorrect guess.</p>\n<p></p>\n<p>The &#39;correct&#39; code shows that the guesses left go down to 8 after this, but shouldn&#39;t they only go down by one to 9?</p>\n<p></p>\n<p>Thanks for the help.</p>",
+        "type": "question",
+        "created": "2022-09-21T01:46:09.451Z",
+        "subject": "PSet 2 test query",
+        "_id": "l8ayrs17943nd"
+    },
+    {
+        "content": "<p>Also, it seems like there is also an issue with the &#39;correct&#39; code in the test_play_game_short_fail function. The guesses left decrease from 6 to 4 despite there only being one incorrect letter guessed in between them (i.e., shouldn&#39;t there be a step with 5 guesses remaining?).</p>",
+        "type": "followup",
+        "created": "2022-09-21T01:59:19.196Z",
+        "_id": "l8ayrs17943nd"
+    },
+    {
+        "content": "<p>If they guessed a vowel, by the game rules, their number of guesses will decrease by 2 instead of 1 if they guess incorrectly. Maybe that&#39;s the reason.</p>",
+        "type": "s_answer",
+        "created": "2022-09-21T03:13:51.623Z",
+        "_id": "l8ayrs17943nd"
+    },
+    {
+        "content": "<p>I haven&#39;t checked the test cases but the instructions say that an incorrect vowel guess (a, e, i, o, u) costs 2 guesses. If the guess is a vowel, it is correct to go from 6 to 4.</p>",
+        "type": "followup_response",
+        "created": "2022-09-21T22:11:10.328Z",
+        "_id": "l8ayrs17943nd"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>The PSET tells us to surf the web for functions, could there be a few words on how we can abide on the academic integrity policies while doing this?</p>",
+        "type": "question",
+        "created": "2022-11-28T04:12:09.449Z",
+        "subject": "PSET 5",
+        "_id": "lb09xgmhzle6b4"
+    },
+    {
+        "content": "<p>There is a key distinction between using the internet to find functions to use from a particular package (in this case, the PIL package), and copying code that others have pasted online. What the PIL documentation will tell you is what functions are available for you to use, and what their inputs and outputs are. It&#39;s your job to find out how to use them for the purposes of the pset!</p>",
+        "type": "i_answer",
+        "created": "2022-11-29T15:22:26.582Z",
+        "_id": "lb09xgmhzle6b4"
+    }
+]

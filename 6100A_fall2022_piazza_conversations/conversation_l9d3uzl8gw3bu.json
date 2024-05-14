@@ -1,0 +1,33 @@
+[
+    {
+        "content": "<p>While submiting my PSET 4 (used a late day), the autograder says that I &#34;failed every test&#34; while test_ps4_student.py is giving me a 5/5. Currently, my score is 0% for the PSET. I had the PSET checked off and no glaring issues seemed to exist. Even if there is an error in my code, I think it would be an oversight to get a 0% on the assignment. Here is my document, if I could have the code manually graded that would great.\u00a0</p>\n<p>Thanks, Tim</p>\n<p><a href=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl8hl4mf744i34u%2F688c0e8cab1a340613714c11deec9fb2df65705240437d107faff4e0686c6e87%2Fps4.py\" target=\"_blank\" rel=\"noopener noreferrer\">ps4.py</a></p>",
+        "type": "question",
+        "created": "2022-10-17T18:23:51.980Z",
+        "subject": "PSET 4 Autograder 0%",
+        "_id": "l9d3uzl8gw3bu"
+    },
+    {
+        "content": "<p><strong attention=\"j7awud7zf0p2uu\">@Kuan Wei Huang</strong>\u00a0</p>",
+        "type": "followup",
+        "created": "2022-10-18T02:12:45.051Z",
+        "_id": "l9d3uzl8gw3bu"
+    },
+    {
+        "content": "<p>Sure will take a look. What&#39;s your kerb?</p>",
+        "type": "i_answer",
+        "created": "2022-10-21T12:27:17.331Z",
+        "_id": "l9d3uzl8gw3bu"
+    },
+    {
+        "content": "<p>My kerb is timneum1</p>",
+        "type": "followup",
+        "created": "2022-10-21T15:35:07.841Z",
+        "_id": "l9d3uzl8gw3bu"
+    },
+    {
+        "content": "<p>Got it. You should see an update next week. Thanks for your patience.</p>",
+        "type": "followup_response",
+        "created": "2022-10-21T15:39:10.092Z",
+        "_id": "l9d3uzl8gw3bu"
+    }
+]

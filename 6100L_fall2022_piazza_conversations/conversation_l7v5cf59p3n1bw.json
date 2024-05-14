@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi, For the PS0 I created a python code file with the instructions provided. However, should the deliverable be the code or a copy of the processed code to show that it worked? For example by print(a) at the end? Thank you</p>",
+        "type": "question",
+        "created": "2022-09-10T00:05:51.405Z",
+        "subject": "Program vs Code file",
+        "_id": "l7v5cf59p3n1bw"
+    },
+    {
+        "content": "<md>It should be the code itself that \n\n```\n  1. Asks the user to enter a number \"x\"\n  2. Asks the user to enter a number \"y\"\n  3. Prints out number \"x\", raised to the power \"y\".\n  4. Prints out the log (base 2) of \"x\".\n```\n\nIn other words, running the program in ps0.py should ask the user for the input, etc. In later problem sets for the class, we will have some test cases that are going to help you see whether your code is correct, so the deliverable is the code, but there are ways to see if your code works.</md>",
+        "type": "i_answer",
+        "created": "2022-09-10T03:41:55.064Z",
+        "_id": "l7v5cf59p3n1bw"
+    }
+]

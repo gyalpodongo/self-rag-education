@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p>Hi!\u00a0</p>\n<p></p>\n<p>I passed 40% on PSET3 Autograder but passed all of the cases in the test file, so I&#39;m confused about what happened, what cases failed, and if anything went wrong. Here&#39;s my code <a href=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl7qgp6f9k793bf%2Fab2a8e4e9dff229c9975311e92b73075d40a66dfa53d723bd95b6510efe91cfb%2Fdocument_distance.py\" target=\"_blank\" rel=\"noopener noreferrer\">document_distance.py</a> and email jssteele@mit.edu</p>\n<p></p>\n<p></p>",
+        "type": "question",
+        "created": "2022-10-09T19:57:18.506Z",
+        "subject": "40% on PSET3 Autograder but Passed all Cases in Test File",
+        "_id": "l91roca2pd178h"
+    },
+    {
+        "content": "<p><strong attention=\"j7awud7zf0p2uu\">@Kuan Wei Huang</strong>\u00a0</p>",
+        "type": "followup",
+        "created": "2022-10-10T00:43:48.580Z",
+        "_id": "l91roca2pd178h"
+    },
+    {
+        "content": "<p>Noted.</p>",
+        "type": "followup_response",
+        "created": "2022-10-10T00:51:05.824Z",
+        "_id": "l91roca2pd178h"
+    },
+    {
+        "content": "<p>Hi Julie, we regraded your pset and you got full credit! You used a python3.9 operator that tripped up the autograder. You should see an update soon. Thanks.</p>",
+        "type": "i_answer",
+        "created": "2022-10-10T01:27:04.560Z",
+        "_id": "l91roca2pd178h"
+    }
+]

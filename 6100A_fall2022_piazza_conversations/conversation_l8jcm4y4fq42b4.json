@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Why in Losing Game example does the game end with still 2 guesses left?</p>\n<p></p>\n<pre>\n<code>You have 2 guesses left.\nAvailable Letters: ghijklmnopqrstuvwxyz\nPlease guess a letter: o\nOops! That letter is not in my word: e**e\n--------------\nSorry, you ran out of guesses. The word was else.</code></pre>",
+        "type": "question",
+        "created": "2022-09-26T22:35:50.284Z",
+        "subject": "Confused about Losing Game Example",
+        "_id": "l8jcm4y4fq42b4"
+    },
+    {
+        "content": "<p>O is a vowel, and incorrect vowels cost 2 points.</p>",
+        "type": "s_answer",
+        "created": "2022-09-26T23:05:39.887Z",
+        "_id": "l8jcm4y4fq42b4"
+    }
+]

@@ -1,0 +1,2898 @@
+[
+    {
+        "timestamp": "00:00:06",
+        "content": "FUNCTIONS as OBJECTS"
+    },
+    {
+        "timestamp": "00:00:45",
+        "content": "OM LAST LECTURE"
+    },
+    {
+        "timestamp": "00:00:57",
+        "content": "FUNCTION FROM LAST LECTURE"
+    },
+    {
+        "timestamp": "00:03:06",
+        "content": "WHAT IF THERE IS NO return KEYWORD"
+    },
+    {
+        "timestamp": "00:11:48",
+        "content": "YOU TRY IT!"
+    },
+    {
+        "timestamp": "00:16:18",
+        "content": "return"
+    },
+    {
+        "timestamp": "00:24:09",
+        "content": "FUNCTIONS SUPPORT MODULARITY"
+    },
+    {
+        "timestamp": "00:39:42",
+        "content": "ZOOMING OUT"
+    },
+    {
+        "timestamp": "00:42:36",
+        "content": "FUNCTION SCOPE"
+    },
+    {
+        "timestamp": "00:43:00",
+        "content": "UNDERSTANDING FUNCTION CALLS"
+    },
+    {
+        "timestamp": "00:44:12",
+        "content": "ENVIRONMENTS"
+    },
+    {
+        "timestamp": "00:45:06",
+        "content": "VARIABLE SCOPE"
+    },
+    {
+        "timestamp": "00:47:42",
+        "content": "VARIABLE SCOPE after evaluating def"
+    },
+    {
+        "timestamp": "00:49:12",
+        "content": "VARIABLE SCOPE after f invoked"
+    },
+    {
+        "timestamp": "00:57:39",
+        "content": "ANOTHER SCOPE EXAMPLE"
+    },
+    {
+        "timestamp": "00:59:54",
+        "content": "HIGHER ORDER PROCEDURES"
+    },
+    {
+        "timestamp": "01:02:24",
+        "content": "OBJECTS IN A PROGRAM"
+    },
+    {
+        "timestamp": "01:05:24",
+        "content": "MATCH FORMAL PARAMS in calc"
+    },
+    {
+        "timestamp": "01:05:45",
+        "content": "RMAL PARAMS in"
+    },
+    {
+        "timestamp": "01:11:09",
+        "content": "FUNCTIONS AS PARAMETERS"
+    },
+    {
+        "timestamp": "01:16:36",
+        "content": "SUMMARY"
+    },
+    {
+        "timestamp": "01:17:27",
+        "content": "For complete course materials and to support our work,\u2026"
+    },
+    {
+        "timestamp": "00:00:00",
+        "content": "All right, everyone. So let's get started. Last lecture."
+    },
+    {
+        "timestamp": "00:00:17",
+        "content": "We introduced functions, and we saw some syntax around how to create functions, but mostly we were interested in kind of motivating functions as a way for us to start writing really clean code, code that's easy to debug, and code that's easy to read in the future."
+    },
+    {
+        "timestamp": "00:00:22",
+        "content": "Today we will continue our fun adventure with functions and we'll see what it means to treat functions as objects."
+    },
+    {
+        "timestamp": "00:00:32",
+        "content": "So let's recall the example we talked about last lecture we created."
+    },
+    {
+        "timestamp": "00:00:37",
+        "content": "This function is even so, the syntax for creating a function is basically the keyword d f tells Python we're defining a function."
+    },
+    {
+        "timestamp": "00:00:49",
+        "content": "We decide what name to give our function. Parentheses tells Python in here we're going to name all the arguments, all the inputs to the function."
+    },
+    {
+        "timestamp": "00:00:58",
+        "content": "The colon starts the body of the function."
+    },
+    {
+        "timestamp": "00:01:01",
+        "content": "The first part, it's not required but should always kind of be in there as a way for us to implement abstraction."
+    },
+    {
+        "timestamp": "00:01:11",
+        "content": "Is that called the docstring? So this in green is the docstring."
+    },
+    {
+        "timestamp": "00:01:14",
+        "content": "Triple quotes starts are docstring and triple quotes ends the docstring."
+    },
+    {
+        "timestamp": "00:01:18",
+        "content": "And you think of the docstring also known as a specification as just a really long comment."
+    },
+    {
+        "timestamp": "00:01:25",
+        "content": "Okay."
+    },
+    {
+        "timestamp": "00:01:25",
+        "content": "And in it it's and the docstring is kind of I called it a contract between the person who writes the function and a person who uses the function."
+    },
+    {
+        "timestamp": "00:01:36",
+        "content": "And in the contract, the person who writes the function basically says this function is going to take these inputs and I guarantee you this function to work correctly."
+    },
+    {
+        "timestamp": "00:01:44",
+        "content": "When you give me these inputs of these types and these restrictions on them, things like that."
+    },
+    {
+        "timestamp": "00:01:50",
+        "content": "And then you also state what the function is going to do, and then you also state what the function will return."
+    },
+    {
+        "timestamp": "00:01:58",
+        "content": "Okay. In this particular function, we have only one line."
+    },
+    {
+        "timestamp": "00:02:02",
+        "content": "This is the body of the function."
+    },
+    {
+        "timestamp": "00:02:04",
+        "content": "But you've hopefully seen functions that are a little bit longer as you did the practice from last lecture and the body of the function itself."
+    },
+    {
+        "timestamp": "00:02:13",
+        "content": "So the lines of code are basically lines of code that we've seen before."
+    },
+    {
+        "timestamp": "00:02:16",
+        "content": "There's nothing sort of special about that except for lines that start with a return."
+    },
+    {
+        "timestamp": "00:02:33",
+        "content": "So lines that start with a return basically tell Python that as soon as I see this line with a return hit in when I'm executing my function, I need to stop executing this function, take the value associated with this return and pass it back to whoever called me."
+    },
+    {
+        "timestamp": "00:02:42",
+        "content": "Okay. A function. Always return something. Okay."
+    },
+    {
+        "timestamp": "00:02:45",
+        "content": "In this particular case, the function will return either true or false."
+    },
+    {
+        "timestamp": "00:02:49",
+        "content": "A boolean. But you can write functions. I return integers, floats, strings, things like that."
+    },
+    {
+        "timestamp": "00:02:58",
+        "content": "In this case, this is what is returned. It is possible."
+    },
+    {
+        "timestamp": "00:03:01",
+        "content": "And we actually saw this in one of the you try it as we were writing our code."
+    },
+    {
+        "timestamp": "00:03:05",
+        "content": "It is possible to write a function that doesn't actually return anything explicitly."
+    },
+    {
+        "timestamp": "00:03:10",
+        "content": "So here is the is even function and inside the body."
+    },
+    {
+        "timestamp": "00:03:14",
+        "content": "The only change I've made is I've eliminated the little return keyword, but otherwise the work that is done is the same."
+    },
+    {
+        "timestamp": "00:03:20",
+        "content": "So here I'm just calculating whether the remainder is zero or not."
+    },
+    {
+        "timestamp": "00:03:24",
+        "content": "So this line of code when the when the function is executed, just is replaced with either true or false."
+    },
+    {
+        "timestamp": "00:03:30",
+        "content": "Okay. Notice this function doesn't have a return keyword, but all functions return something."
+    },
+    {
+        "timestamp": "00:03:36",
+        "content": "So while function is being executed because of a function call, if the function reaches the end of all of these indented lines here."
+    },
+    {
+        "timestamp": "00:03:45",
+        "content": "Right. And everything that's indented, if it reaches the end and no return statement has been hit, then Python automatically returns none."
+    },
+    {
+        "timestamp": "00:03:54",
+        "content": "Okay, so this is the line without a return statement."
+    },
+    {
+        "timestamp": "00:03:56",
+        "content": "You can think of this code as basically behind the scenes python putting this little line at the bottom that says Return on."
+    },
+    {
+        "timestamp": "00:04:04",
+        "content": "Now, this is not something that we would ever write. You just do the operations."
+    },
+    {
+        "timestamp": "00:04:09",
+        "content": "Maybe you print some stuff out and then you just omit the return keyword if you want to return."
+    },
+    {
+        "timestamp": "00:04:14",
+        "content": "None from the function. Okay. And none is this none type is is of a value that is of type."
+    },
+    {
+        "timestamp": "00:04:22",
+        "content": "None type. We talked about it back in maybe lecture one or two and we haven't really used it that much since."
+    },
+    {
+        "timestamp": "00:04:28",
+        "content": "But basically you think of it as just having the type, none type, and there's just one value associated with it."
+    },
+    {
+        "timestamp": "00:04:35",
+        "content": "And usually we use this value to represent the absence of a value in our code."
+    },
+    {
+        "timestamp": "00:04:41",
+        "content": "So let me just run some code first just to show you exactly some of the kind of things"
+    },
+    {
+        "timestamp": "00:04:46",
+        "content": "you might observe when you're when you write code that doesn't have a return statement."
+    },
+    {
+        "timestamp": "00:04:51",
+        "content": "So here, I promise, this is the last time we're going to see is even."
+    },
+    {
+        "timestamp": "00:04:56",
+        "content": "So here I have two versions of the is even function."
+    },
+    {
+        "timestamp": "00:04:59",
+        "content": "So I have one that I named is even with return. And I have one that is named is even without return."
+    },
+    {
+        "timestamp": "00:05:06",
+        "content": "Okay. They do very similar things."
+    },
+    {
+        "timestamp": "00:05:15",
+        "content": "The difference is that this one has a return statement where I return whether the remainder is equal to zero, and this one has no return statement, but it just prints whether the return, the remainder is equal to zero."
+    },
+    {
+        "timestamp": "00:05:23",
+        "content": "Okay. So let's look at running the code, which is even with return."
+    },
+    {
+        "timestamp": "00:05:29",
+        "content": "And as we're doing so, this first function will be a recap of last lecture, kind of tracing through what happens when we make a function call."
+    },
+    {
+        "timestamp": "00:05:38",
+        "content": "So I've uncomment commented this line and now I am running."
+    },
+    {
+        "timestamp": "00:05:42",
+        "content": "Line 13. Okay. So when Python sees this file, it basically sees this function definition."
+    },
+    {
+        "timestamp": "00:05:49",
+        "content": "And this is not code that runs it, right? It's just telling Python that I've created this function inside memory when I have this line being run."
+    },
+    {
+        "timestamp": "00:05:59",
+        "content": "That's when the function is actually being called and actually being run."
+    },
+    {
+        "timestamp": "00:06:05",
+        "content": "So I is replaced with the parameter three and at this point the body of the function is executed."
+    },
+    {
+        "timestamp": "00:06:13",
+        "content": "So the first thing that we tell the function to do is print the string with return."
+    },
+    {
+        "timestamp": "00:06:19",
+        "content": "So if I run it, you'll see it prints with return. Then it calculates this variable remainder, which is going to be one, right?"
+    },
+    {
+        "timestamp": "00:06:27",
+        "content": "Because 3%, two equals one. And then I'm going to return whether one equal to zero."
+    },
+    {
+        "timestamp": "00:06:33",
+        "content": "So that's going to be false."
+    },
+    {
+        "timestamp": "00:06:34",
+        "content": "So as soon as we see this return statement, Python returns out of this function call and replaces the function call entirely with the return value."
+    },
+    {
+        "timestamp": "00:06:44",
+        "content": "So this entire line after the python, the function calls executed is replaced with false."
+    },
+    {
+        "timestamp": "00:06:49",
+        "content": "So I've just noted that here. We're not doing anything with this return, right?"
+    },
+    {
+        "timestamp": "00:06:54",
+        "content": "All we're doing is making the function call and it just kind of sits on line 13."
+    },
+    {
+        "timestamp": "00:07:02",
+        "content": "In order to see the result of the function call. We saw last lecture that we actually wrap the function call around a print statement."
+    },
+    {
+        "timestamp": "00:07:12",
+        "content": "Right. And function calls in that sense are kind of just expressions, right?"
+    },
+    {
+        "timestamp": "00:07:16",
+        "content": "They do some work. Python evaluates them to some value and then replaces that function call with the value."
+    },
+    {
+        "timestamp": "00:07:23",
+        "content": "So if we wrap is even with return three, this function call around with a print statement."
+    },
+    {
+        "timestamp": "00:07:29",
+        "content": "Python does the whole thing again. Three. It returns false and this line effectively becomes print, parentheses, false."
+    },
+    {
+        "timestamp": "00:07:38",
+        "content": "And we know what that does, right? It just prints false to the screen."
+    },
+    {
+        "timestamp": "00:07:42",
+        "content": "And I noticed we still did this print statement because as part of the function body, we tell it to do this print."
+    },
+    {
+        "timestamp": "00:07:51",
+        "content": "Everyone okay? So far. Okay. So now let's see what happens when we run."
+    },
+    {
+        "timestamp": "00:07:58",
+        "content": "This function is even without return. So very similar."
+    },
+    {
+        "timestamp": "00:08:04",
+        "content": "I've just created an extra parameter here or variable here just to show you that you can."
+    },
+    {
+        "timestamp": "00:08:11",
+        "content": "So this function is even without return. Three is being run on line 27."
+    },
+    {
+        "timestamp": "00:08:17",
+        "content": "So I is three. This function will print without return and then it calculates remainder to be one and then has ram will be false."
+    },
+    {
+        "timestamp": "00:08:30",
+        "content": "Right. So the variable has RAM will have a value false."
+    },
+    {
+        "timestamp": "00:08:34",
+        "content": "And then as part of the function body, we're going to print the value of has RAM, which is false."
+    },
+    {
+        "timestamp": "00:08:41",
+        "content": "So this line here will actually print for me without return and then this thing false."
+    },
+    {
+        "timestamp": "00:08:50",
+        "content": "Okay. And then the function has no return statement explicitly in there."
+    },
+    {
+        "timestamp": "00:08:55",
+        "content": "So you think about it like Python kind of implicitly adds this return none at the end of the function call."
+    },
+    {
+        "timestamp": "00:09:03",
+        "content": "We don't add this. I just wrote it there just to show you that python would add a line such as this when it reaches the end of the function."
+    },
+    {
+        "timestamp": "00:09:10",
+        "content": "But you would never add it. So that means that the entire function call is replaced with not."
+    },
+    {
+        "timestamp": "00:09:27",
+        "content": "Okay. Yeah. So when you what happens when you put it in the definition of a term, what happens when you put print in the definition versus around the function call"
+    },
+    {
+        "timestamp": "00:09:32",
+        "content": "versus like what you put return versus when you put return in the definition."
+    },
+    {
+        "timestamp": "00:09:36",
+        "content": "So that's the next line. So in the next one, if we were to do what we did before, which is let's print the result of the function call."
+    },
+    {
+        "timestamp": "00:09:46",
+        "content": "Well, Python will do everything we just did. Right, so it'll print without return."
+    },
+    {
+        "timestamp": "00:09:51",
+        "content": "It'll print false, but then it'll additionally print the return from the function call."
+    },
+    {
+        "timestamp": "00:09:58",
+        "content": "So if the return is none. This line effectively becomes print."
+    },
+    {
+        "timestamp": "00:10:03",
+        "content": "None. So what we end up seeing or what the user would end up seeing if they actually run this program, is they'll see without return."
+    },
+    {
+        "timestamp": "00:10:12",
+        "content": "They see false and then they see this extraneous nut in the console."
+    },
+    {
+        "timestamp": "00:10:15",
+        "content": "Right. So you'll see probably this in problem set too."
+    },
+    {
+        "timestamp": "00:10:20",
+        "content": "You'll probably encounter an error such as this and maybe problem set three."
+    },
+    {
+        "timestamp": "00:10:24",
+        "content": "But don't be scared. Whenever you see a non out in the console, it just means you have to be careful about the function that was called right."
+    },
+    {
+        "timestamp": "00:10:32",
+        "content": "You probably forgot to return something and instead we're we're just printing the correct value within the function but just never returned it."
+    },
+    {
+        "timestamp": "00:10:41",
+        "content": "So that's just something to be wary of. Yeah."
+    },
+    {
+        "timestamp": "00:10:48",
+        "content": "So that's a good question. Should you always use return? It depends on what you want in the function to do."
+    },
+    {
+        "timestamp": "00:10:52",
+        "content": "Most functions are useful because they go off on their own."
+    },
+    {
+        "timestamp": "00:10:55",
+        "content": "They do a task and they get a value at the end and they pass the value back to whoever called it."
+    },
+    {
+        "timestamp": "00:11:01",
+        "content": "And then you can use that function with many different inputs to give you many different outputs."
+    },
+    {
+        "timestamp": "00:11:04",
+        "content": "So usually you'd want to make functions that return something that you can then do something else with further in another part of the program."
+    },
+    {
+        "timestamp": "00:11:20",
+        "content": "The the prince within the within the functions should usually be maybe for debugging or for, you know, like maybe the status of the function, you know, what part is like, it's executing or something like that."
+    },
+    {
+        "timestamp": "00:11:25",
+        "content": "And then when you run the function, then it will give you the current and you know."
+    },
+    {
+        "timestamp": "00:11:31",
+        "content": "Exactly, yeah. If the function is not returning anything then it'll do print not."
+    },
+    {
+        "timestamp": "00:11:37",
+        "content": "Right. Yeah. But if the function is returning something it will print right."
+    },
+    {
+        "timestamp": "00:11:42",
+        "content": "This if you wrap it with a print, it'll print whatever got returned."
+    },
+    {
+        "timestamp": "00:11:49",
+        "content": "Okay. So let's have you work on this."
+    },
+    {
+        "timestamp": "00:11:53",
+        "content": "Actually, there's nothing to. To. But think about it."
+    },
+    {
+        "timestamp": "00:11:56",
+        "content": "So I've got four lines of code here. Add one comma to print."
+    },
+    {
+        "timestamp": "00:12:01",
+        "content": "Wrap that around the print statement mult three, comma four and then address that around a print statement."
+    },
+    {
+        "timestamp": "00:12:05",
+        "content": "So try to trace through and tell me what outputs each like each function call will give me."
+    },
+    {
+        "timestamp": "00:12:14",
+        "content": "Right. So add one comma two. What happens? What do you think the output of this function is?"
+    },
+    {
+        "timestamp": "00:12:17",
+        "content": "What gets printed to the screen? What does it."
+    },
+    {
+        "timestamp": "00:12:30",
+        "content": "Am I telling it to print anything? That's the question, yeah."
+    },
+    {
+        "timestamp": "00:12:34",
+        "content": "So nothing is actually printed to the screen, right? Because in the function call add comma to right."
+    },
+    {
+        "timestamp": "00:12:41",
+        "content": "We basically map the parameters one at a time. X is one. Y is too."
+    },
+    {
+        "timestamp": "00:12:45",
+        "content": "That was good. We return three. And so this entire function call is replaced with three."
+    },
+    {
+        "timestamp": "00:12:54",
+        "content": "But we never told the, the that line of code to print that result."
+    },
+    {
+        "timestamp": "00:12:58",
+        "content": "Right. So there's nothing printed in this case. Well, what if we wrap this in a print statement?"
+    },
+    {
+        "timestamp": "00:13:11",
+        "content": "Is anything printed in this case? Yes. What is printed?"
+    },
+    {
+        "timestamp": "00:13:16",
+        "content": "Yeah, exactly right. The ad itself gives me five and so I'm telling it to print five."
+    },
+    {
+        "timestamp": "00:13:23",
+        "content": "What about the next one? Smoked. What is that for?"
+    },
+    {
+        "timestamp": "00:13:27",
+        "content": "Three. Four? Is anything printed as a result of running this line?"
+    },
+    {
+        "timestamp": "00:13:35",
+        "content": "I heard some yes. Some no. Yeah."
+    },
+    {
+        "timestamp": "00:13:39",
+        "content": "The print is in the function. Exactly. So just because it's a function call doesn't mean we don't print anything."
+    },
+    {
+        "timestamp": "00:13:46",
+        "content": "Right? We need to check out what the function is actually doing."
+    },
+    {
+        "timestamp": "00:13:49",
+        "content": "So in mult x gets up to three, y gets up to four and the function body itself says to print to the result."
+    },
+    {
+        "timestamp": "00:13:58",
+        "content": "So this will print as a part of the body."
+    },
+    {
+        "timestamp": "00:14:03",
+        "content": "Right. Um. Prince the 12."
+    },
+    {
+        "timestamp": "00:14:13",
+        "content": "Anything else? A prince. Now."
+    },
+    {
+        "timestamp": "00:14:18",
+        "content": "And lastly, what if we put a print statement around the moat four or five?"
+    },
+    {
+        "timestamp": "00:14:26",
+        "content": "What will that print? Yeah."
+    },
+    {
+        "timestamp": "00:14:30",
+        "content": "Exactly 20. The none. So the mult itself is going to print."
+    },
+    {
+        "timestamp": "00:14:35",
+        "content": "Same as there. It prints the 20. So the function call returns none."
+    },
+    {
+        "timestamp": "00:14:45",
+        "content": "So this entire function call basically is replaced with none and the line then becomes print non."
+    },
+    {
+        "timestamp": "00:14:51",
+        "content": "So this will print the none to the screen."
+    },
+    {
+        "timestamp": "00:14:54",
+        "content": "So there's actually 44 printouts generated from these four lines."
+    },
+    {
+        "timestamp": "00:14:59",
+        "content": "Right. The first one generates nothing, but the last one generates two lines of printouts."
+    },
+    {
+        "timestamp": "00:15:08",
+        "content": "Any questions about this example? Yes. You go through life on this one here."
+    },
+    {
+        "timestamp": "00:15:14",
+        "content": "Yeah. So the molt check out what it's doing."
+    },
+    {
+        "timestamp": "00:15:17",
+        "content": "It's doing a print statement so that 20 gets printed out to the console."
+    },
+    {
+        "timestamp": "00:15:23",
+        "content": "Well, what's the return value of malt? There is no return, right?"
+    },
+    {
+        "timestamp": "00:15:29",
+        "content": "So if there's no return, Python adds the not right."
+    },
+    {
+        "timestamp": "00:15:33",
+        "content": "That's just something that's implicitly done. So the return from molt because it doesn't actually have an explicit return is none."
+    },
+    {
+        "timestamp": "00:15:39",
+        "content": "So we're asking it to print the return, which is not."
+    },
+    {
+        "timestamp": "00:15:44",
+        "content": "Okay. So a couple words on return versus print."
+    },
+    {
+        "timestamp": "00:15:49",
+        "content": "So. The return only has a meaning inside a function."
+    },
+    {
+        "timestamp": "00:15:54",
+        "content": "So as an example, if I just have this file open and I have returned five just randomly, that's not within a function definition already."
+    },
+    {
+        "timestamp": "00:16:05",
+        "content": "I'm in trouble. You see that red x? And if I run that code, python gives me a syntax here."
+    },
+    {
+        "timestamp": "00:16:10",
+        "content": "This one is pretty easy to debug. There's a return outside of a function."
+    },
+    {
+        "timestamp": "00:16:14",
+        "content": "Yep. There it is. So return only has a meaning inside a function."
+    },
+    {
+        "timestamp": "00:16:19",
+        "content": "It basically says this function has done some work for me and it's returning back."
+    },
+    {
+        "timestamp": "00:16:23",
+        "content": "This value print statements can be put wherever you'd like, inside functions, outside functions, wherever you'd like, and they all get executed."
+    },
+    {
+        "timestamp": "00:16:38",
+        "content": "You can have many return statements inside a function, like if you have a function that returns zero, if some condition applies or one if some other condition applies, then you can have those two return statements."
+    },
+    {
+        "timestamp": "00:16:50",
+        "content": "But as soon as Python during execution hits one return statement, it immediately ends the function, takes the return value and pops it back to whoever called it."
+    },
+    {
+        "timestamp": "00:16:56",
+        "content": "Okay. So it's not going to run more than one return statement."
+    },
+    {
+        "timestamp": "00:17:01",
+        "content": "Print. On the other hand, you can run as many print statements as you'd like inside the program."
+    },
+    {
+        "timestamp": "00:17:06",
+        "content": "Right. And they can all be hit and they can all generate some sort of output to the console."
+    },
+    {
+        "timestamp": "00:17:16",
+        "content": "So the return statement has a value associated with it."
+    },
+    {
+        "timestamp": "00:17:20",
+        "content": "Right. So return five return we had remainder equal equals zero, whatever."
+    },
+    {
+        "timestamp": "00:17:25",
+        "content": "There's the associated value with that return statement. That value is what gets passed back to whoever called the function."
+    },
+    {
+        "timestamp": "00:17:32",
+        "content": "The print statement. Also, you can think of it as having a value associated with it."
+    },
+    {
+        "timestamp": "00:17:37",
+        "content": "That's the thing that gets put out to the console."
+    },
+    {
+        "timestamp": "00:17:40",
+        "content": "But that value associated with the print statement is it's just something that's outputted to the council."
+    },
+    {
+        "timestamp": "00:17:46",
+        "content": "It's not being passed around through the program at all. It's just kind of static."
+    },
+    {
+        "timestamp": "00:17:50",
+        "content": "It gets put to the console and then that's it."
+    },
+    {
+        "timestamp": "00:17:52",
+        "content": "Nobody else can really use that value, you know, unless it's a variable and then you're just using a regular variable."
+    },
+    {
+        "timestamp": "00:18:00",
+        "content": "The last thing I want to show you. This is kind of cool. So if we have a print statement, right."
+    },
+    {
+        "timestamp": "00:18:07",
+        "content": "Just in here and we run it. Obviously, that prints that to the console."
+    },
+    {
+        "timestamp": "00:18:13",
+        "content": "But what is this print? It's a function, right?"
+    },
+    {
+        "timestamp": "00:18:16",
+        "content": "It has all the telltale signs of a function. The name is print."
+    },
+    {
+        "timestamp": "00:18:22",
+        "content": "The parentheses are there and I'm giving it one parameter five."
+    },
+    {
+        "timestamp": "00:18:27",
+        "content": "Right. So if I print."
+    },
+    {
+        "timestamp": "00:18:31",
+        "content": "The return of the print function. So if I wrap my print function in another print function, what do you think this is going to output?"
+    },
+    {
+        "timestamp": "00:18:48",
+        "content": "I'll run it. It outputs nothing."
+    },
+    {
+        "timestamp": "00:18:53",
+        "content": "So the first five is due to this."
+    },
+    {
+        "timestamp": "00:18:56",
+        "content": "This shows up on the console. But print being a function, it doesn't actually return anything."
+    },
+    {
+        "timestamp": "00:19:02",
+        "content": "Right? It does something useful, like take whatever you want and show it on the console, but it doesn't return anything back to whoever called it."
+    },
+    {
+        "timestamp": "00:19:11",
+        "content": "And so if I wrap my print function around another print function, I'm basically printing the return of the print function, which is not."
+    },
+    {
+        "timestamp": "00:19:20",
+        "content": "So that's where the second one comes in. Right."
+    },
+    {
+        "timestamp": "00:19:23",
+        "content": "So sort of another way you can make a variable A equals print five."
+    },
+    {
+        "timestamp": "00:19:28",
+        "content": "And if I print a basically we're saying the return of that print for print function is just not."
+    },
+    {
+        "timestamp": "00:19:38",
+        "content": "Yeah. Okay."
+    },
+    {
+        "timestamp": "00:19:47",
+        "content": "So I'm going to have you work on this code for a little bit. Nothing to write, but there is something to fix."
+    },
+    {
+        "timestamp": "00:19:54",
+        "content": "So here's a function called is triangular. It takes in one parameter and it's a number."
+    },
+    {
+        "timestamp": "00:19:59",
+        "content": "An integer greater than zero. I want this function to return."
+    },
+    {
+        "timestamp": "00:20:03",
+        "content": "True if end is triangular and false otherwise."
+    },
+    {
+        "timestamp": "00:20:07",
+        "content": "So triangular just means it's a whole number such that it's equal to one plus two plus three plus some, you know, some some summation like that."
+    },
+    {
+        "timestamp": "00:20:17",
+        "content": "All right. So one is triangular, three is triangular, six is triangular and so on and so on."
+    },
+    {
+        "timestamp": "00:20:24",
+        "content": "So take a look at this code. It's online."
+    },
+    {
+        "timestamp": "00:20:30",
+        "content": "Around 49 ish. So start by running it, seeing what you get."
+    },
+    {
+        "timestamp": "00:20:37",
+        "content": "And I'll give you about a minute or so to see if you can try to fix it."
+    },
+    {
+        "timestamp": "00:20:41",
+        "content": "Make sure it runs with all these test cases here. Okay."
+    },
+    {
+        "timestamp": "00:20:48",
+        "content": "What's the first thing you should do when you're asked to fix some code?"
+    },
+    {
+        "timestamp": "00:20:51",
+        "content": "That's buggy. Yes."
+    },
+    {
+        "timestamp": "00:20:54",
+        "content": "If you like. We can do that."
+    },
+    {
+        "timestamp": "00:20:59",
+        "content": "But first, let's run it with something, right? So let's run it with the first one."
+    },
+    {
+        "timestamp": "00:21:06",
+        "content": "Print is triangular four so we know the answer should be false."
+    },
+    {
+        "timestamp": "00:21:11",
+        "content": "I mean, I told you so that it's good. Yes, it does give me false, which is good."
+    },
+    {
+        "timestamp": "00:21:19",
+        "content": "But it also prints out a nun. What does that mean for us?"
+    },
+    {
+        "timestamp": "00:21:27",
+        "content": "Yes. There's no comment."
+    },
+    {
+        "timestamp": "00:21:34",
+        "content": "Yeah, exactly. Perfect. So there's no actual return statement, right."
+    },
+    {
+        "timestamp": "00:21:37",
+        "content": "Like I mentioned in with the is even example, if you're seeing some nuns show up in places, check your returns."
+    },
+    {
+        "timestamp": "00:21:45",
+        "content": "So is this function actually returning something? No, it's just printing the results."
+    },
+    {
+        "timestamp": "00:21:50",
+        "content": "So it's printing the right thing in this case. Right. So let's start by changing the prints to returns."
+    },
+    {
+        "timestamp": "00:21:59",
+        "content": "Right? Yeah, that's true."
+    },
+    {
+        "timestamp": "00:22:02",
+        "content": "And then. Or this one. Oh, I think I just read."
+    },
+    {
+        "timestamp": "00:22:11",
+        "content": "Okay. All right, let's run it. Perfect."
+    },
+    {
+        "timestamp": "00:22:16",
+        "content": "Yeah. So that seems to have fixed it. What should we do next?"
+    },
+    {
+        "timestamp": "00:22:32",
+        "content": "Yes. Yes, exactly."
+    },
+    {
+        "timestamp": "00:22:37",
+        "content": "Let's check the rest of the print statements. So the second one, six is triangular."
+    },
+    {
+        "timestamp": "00:22:42",
+        "content": "So that prints true. And last one, as you mentioned, is going to fail on us."
+    },
+    {
+        "timestamp": "00:22:50",
+        "content": "It prints false, but one is triangular, right."
+    },
+    {
+        "timestamp": "00:22:53",
+        "content": "Because one is just the sum of one. So do you know what a fix could be of the range of two possible."
+    },
+    {
+        "timestamp": "00:23:09",
+        "content": "Yeah, exactly. So you've, you've spotted it. The range should be one plus one if you didn't spot that right away, as I think somebody mentioned there, the first thing we should do is just start putting some print statements and inside the loop is a great place to put a print statement."
+    },
+    {
+        "timestamp": "00:23:15",
+        "content": "We can see what thing we're iterating over. Right."
+    },
+    {
+        "timestamp": "00:23:23",
+        "content": "And so if this was still NW and we didn't manage to fix it and we run it, we see that we've iterated when I zero right, right here and we never actually had hit one."
+    },
+    {
+        "timestamp": "00:23:31",
+        "content": "Right. So the fix for that is make sure we go up to and including and and now if we run it."
+    },
+    {
+        "timestamp": "00:23:39",
+        "content": "And remove this print statement because it might be a little confusing. That now gives me the correct answer."
+    },
+    {
+        "timestamp": "00:23:46",
+        "content": "Last step should probably be to run the other two cases again, just in case my fix broke something else and it didn't."
+    },
+    {
+        "timestamp": "00:23:54",
+        "content": "The other two cases are still the same. Questions about this code."
+    },
+    {
+        "timestamp": "00:24:00",
+        "content": "Does it make sense? Okay."
+    },
+    {
+        "timestamp": "00:24:16",
+        "content": "So now last lecture, I mentioned that once we write functions, it's really easy to include these functions in larger pieces of code, and it makes those larger pieces of code very nicely readable."
+    },
+    {
+        "timestamp": "00:24:20",
+        "content": "So let's try to do the same with a slightly more complex example."
+    },
+    {
+        "timestamp": "00:24:24",
+        "content": "Let's try to do to create, take our by section root code, right, and make it into a function."
+    },
+    {
+        "timestamp": "00:24:31",
+        "content": "And then there's going to be an exercise in a couple of slides where you get to use this, this function."
+    },
+    {
+        "timestamp": "00:24:36",
+        "content": "So the inside of this. Function here is basically what we had like three lectures ago."
+    },
+    {
+        "timestamp": "00:24:46",
+        "content": "It's just the by section square root code. The only thing I've done is I've wrapped it around a function definition."
+    },
+    {
+        "timestamp": "00:24:52",
+        "content": "So D f I gave it a name by section. Root is a pretty nice name and figured out what input this function should take."
+    },
+    {
+        "timestamp": "00:24:59",
+        "content": "So the input should be the x. I would like to approximate the square root of."
+    },
+    {
+        "timestamp": "00:25:03",
+        "content": "Right. One thing I didn't do is put a docstring on this."
+    },
+    {
+        "timestamp": "00:25:11",
+        "content": "So that's my bad. But you know, the docstring would say X is a positive integer greater than one and returns the approximation to the square root of x or something like that."
+    },
+    {
+        "timestamp": "00:25:22",
+        "content": "Okay. So here we're hard coding Epsilon 2.01."
+    },
+    {
+        "timestamp": "00:25:27",
+        "content": "We've got our low and high end points, right? Just remembering what the bisexual group does."
+    },
+    {
+        "timestamp": "00:25:31",
+        "content": "And we're starting out with a guess. That's right. In between the low and high."
+    },
+    {
+        "timestamp": "00:25:37",
+        "content": "The why loop here is going to do the work for us."
+    },
+    {
+        "timestamp": "00:25:47",
+        "content": "So the wild condition is while the difference in the absolute value, right, the difference between our guest squared and the actual x we're trying to find the square root of is bigger than epsilon."
+    },
+    {
+        "timestamp": "00:25:54",
+        "content": "So while we're still farther away than epsilon, we have more guesses to make."
+    },
+    {
+        "timestamp": "00:25:59",
+        "content": "The way we make the guesses is by updating the low end point or the high end point, right?"
+    },
+    {
+        "timestamp": "00:26:03",
+        "content": "Depending on whether our guest was too low or too high. This should be reviewed, hopefully."
+    },
+    {
+        "timestamp": "00:26:08",
+        "content": "And then after we've decided on which endpoint to update, we update our new guest to be whatever high plus low is divided by two again."
+    },
+    {
+        "timestamp": "00:26:17",
+        "content": "So the midpoint of those where either high or low would have just changed, right?"
+    },
+    {
+        "timestamp": "00:26:27",
+        "content": "Because of this, if else and this loop, we'll just keep going over and over and over again, making better and better approximations until we come within."
+    },
+    {
+        "timestamp": "00:26:30",
+        "content": "Plus or minus epsilon of the square root of x. Bex."
+    },
+    {
+        "timestamp": "00:26:37",
+        "content": "The difference between this code and what we wrote a few a few lectures ago is this part down here."
+    },
+    {
+        "timestamp": "00:26:44",
+        "content": "So a few lectures ago, we all we could do really was write a print statement where we took our guess that we ended up with."
+    },
+    {
+        "timestamp": "00:26:53",
+        "content": "Right. And we printed it along with, you know, that guess is close to the root of our original X."
+    },
+    {
+        "timestamp": "00:27:02",
+        "content": "But instead, since we're writing a function, I would like to take the result."
+    },
+    {
+        "timestamp": "00:27:07",
+        "content": "Write my approximation to X and return it."
+    },
+    {
+        "timestamp": "00:27:12",
+        "content": "So somebody can call this function many, many, many times with different values of X and figure out a bunch of different approximations for all of these different x."
+    },
+    {
+        "timestamp": "00:27:20",
+        "content": "So here I have the function calls, right?"
+    },
+    {
+        "timestamp": "00:27:24",
+        "content": "So I've got by section root with four and by section route with 123 and then I can just print the results of these."
+    },
+    {
+        "timestamp": "00:27:31",
+        "content": "Right. So here is the by section root function. I've got my print out commented out because I don't actually need it."
+    },
+    {
+        "timestamp": "00:27:40",
+        "content": "The rest of the code will do something useful with the approximations."
+    },
+    {
+        "timestamp": "00:27:44",
+        "content": "Right? So in this case by section of four was gave me a 2.0."
+    },
+    {
+        "timestamp": "00:27:49",
+        "content": "So that's the approximation and the by section 123 was approximated to 11.09."
+    },
+    {
+        "timestamp": "00:27:57",
+        "content": "Okay. So what I would like you to do and this is going to be a little bit involved code it will require some thinking"
+    },
+    {
+        "timestamp": "00:28:07",
+        "content": "is to write a function called count the numbers with the square root close to an plus or minus epsilon."
+    },
+    {
+        "timestamp": "00:28:16",
+        "content": "Okay. And I'll, I'll. I'll help you up by drawing something on the board."
+    },
+    {
+        "timestamp": "00:28:21",
+        "content": "But I would like you to do the code for it."
+    },
+    {
+        "timestamp": "00:28:24",
+        "content": "So the idea here is that you have some PN that's given as an input and you have an epsilon that's also given out as an input."
+    },
+    {
+        "timestamp": "00:28:33",
+        "content": "What you'd like to find out is how many whole numbers have their square root within plus or minus epsilon of that."
+    },
+    {
+        "timestamp": "00:28:45",
+        "content": "So this is kind of hard to wrap your mind around without actually drawing a picture."
+    },
+    {
+        "timestamp": "00:28:50",
+        "content": "So this is also something you should try to do in quizzes, situations, presets, things like that."
+    },
+    {
+        "timestamp": "00:28:55",
+        "content": "Don't call it right away. Try to draw a picture kind of depicting what we're asking for here."
+    },
+    {
+        "timestamp": "00:29:00",
+        "content": "So here we'll start with a line."
+    },
+    {
+        "timestamp": "00:29:05",
+        "content": "All right. This is our number line because we're doing the square root. We want to know how many integers have a square with an epsilon of."
+    },
+    {
+        "timestamp": "00:29:14",
+        "content": "So let's start with an N. Right."
+    },
+    {
+        "timestamp": "00:29:19",
+        "content": "And we have something plus or minus epsilon."
+    },
+    {
+        "timestamp": "00:29:22",
+        "content": "Right. So this is Epsilon. And this is also Epsilon."
+    },
+    {
+        "timestamp": "00:29:27",
+        "content": "Okay. In the end, we want to know how many integers have a square root."
+    },
+    {
+        "timestamp": "00:29:35",
+        "content": "Square root of. I think the square root of I is equal to somewhere in this range."
+    },
+    {
+        "timestamp": "00:29:44",
+        "content": "Does that make sense so far? That's what we're trying to figure out."
+    },
+    {
+        "timestamp": "00:29:48",
+        "content": "The square root of EI is somewhere in this range. So that means I is going to be some giant number out here."
+    },
+    {
+        "timestamp": "00:29:57",
+        "content": "Right. So this line can go further out. So in the example here I've got and is equal to ten."
+    },
+    {
+        "timestamp": "00:30:08",
+        "content": "So I know for sure that an AI of 100 just kind of us as humans would work, right?"
+    },
+    {
+        "timestamp": "00:30:16",
+        "content": "Because the square root of 100 is probably going to be approximated to pretty darn close to ten."
+    },
+    {
+        "timestamp": "00:30:22",
+        "content": "So I know that that value will be within plus or minus epsilon of ten."
+    },
+    {
+        "timestamp": "00:30:27",
+        "content": "But there's probably a couple numbers around 100 that also match this criteria."
+    },
+    {
+        "timestamp": "00:30:33",
+        "content": "Right. If I take the square root of 99, according to this example, that approximation puts me within plus or minus epsilon of ten."
+    },
+    {
+        "timestamp": "00:30:44",
+        "content": "Right? So it's going to be, you know, squared of 99 is going to be like nine point whatever is here, 95, right?"
+    },
+    {
+        "timestamp": "00:30:52",
+        "content": "So that's within plus or minus. And similarly, Wright Square Root of 101 and 102 also work."
+    },
+    {
+        "timestamp": "00:31:00",
+        "content": "Because if I take the square root of these guys, that will also put me within plus or minus epsilon of ten."
+    },
+    {
+        "timestamp": "00:31:09",
+        "content": "So the goal here is basically to figure out these numbers 99, 100, 100, 102."
+    },
+    {
+        "timestamp": "00:31:23",
+        "content": "You should use the power of computation and computers being able to do a task really, really quickly to basically say, I'm just going to brute force my way through this problem and say I'm going to"
+    },
+    {
+        "timestamp": "00:31:28",
+        "content": "test each number one at a time all the way up to some pretty large number."
+    },
+    {
+        "timestamp": "00:31:37",
+        "content": "Right. So you want to make sure you hit 99, 100 and 102, maybe going up to maybe and cubed."
+    },
+    {
+        "timestamp": "00:31:43",
+        "content": "Right. If you go and take the square root of some AI cubed, you know, you're going to hit all these values within plus or minus epsilon."
+    },
+    {
+        "timestamp": "00:31:52",
+        "content": "So you're just going to brute force look at all the integers between zero and cubed and figure out if this if they're square root."
+    },
+    {
+        "timestamp": "00:32:00",
+        "content": "The approximations the square root is plus or minus epsilon of in."
+    },
+    {
+        "timestamp": "00:32:06",
+        "content": "If it is, keep a counter and increment it."
+    },
+    {
+        "timestamp": "00:32:09",
+        "content": "And if it's not, ignore it. And that's the idea to this to this question."
+    },
+    {
+        "timestamp": "00:32:17",
+        "content": "Loop and a check. That's it. And you can definitely feel free to make use of the by section function that we wrote in in our code."
+    },
+    {
+        "timestamp": "00:32:29",
+        "content": "Right. You should definitely use it because it's very helpful. So around line 96 is where you can write your code."
+    },
+    {
+        "timestamp": "00:32:43",
+        "content": "All right. Does anyone have a start for this, for writing this code, or how would you think about it or."
+    },
+    {
+        "timestamp": "00:32:50",
+        "content": "Yes. For I. For I."
+    },
+    {
+        "timestamp": "00:32:57",
+        "content": "In. Range. And cute yet."
+    },
+    {
+        "timestamp": "00:33:03",
+        "content": "We can do that. All right. So this will give me numbers zero through and cubed."
+    },
+    {
+        "timestamp": "00:33:12",
+        "content": "Perfect. So I've generated basically the sequence now. What do I want to do once I have I?"
+    },
+    {
+        "timestamp": "00:33:24",
+        "content": "And, you know, you can always write a little comment for yourself or what you want to do once you have I write so in English, what would you want to do once you have a number like this? Take the square root."
+    },
+    {
+        "timestamp": "00:33:30",
+        "content": "Yeah, take the square root of I."
+    },
+    {
+        "timestamp": "00:33:34",
+        "content": "Okay. How do you want to take the square root of I? We can, shall we?"
+    },
+    {
+        "timestamp": "00:33:42",
+        "content": "Use our buy section route? We can't do."
+    },
+    {
+        "timestamp": "00:33:50",
+        "content": "Yeah, we can do both. So let's use the function we just wrote."
+    },
+    {
+        "timestamp": "00:33:55",
+        "content": "So by section root of I, this gives me a square root."
+    },
+    {
+        "timestamp": "00:34:02",
+        "content": "So now security is going to be some value here."
+    },
+    {
+        "timestamp": "00:34:08",
+        "content": "Right. It could be ten. It could be 99.5."
+    },
+    {
+        "timestamp": "00:34:11",
+        "content": "It could be 99.7. What do I do with this number now?"
+    },
+    {
+        "timestamp": "00:34:24",
+        "content": "Yes. Yes, exactly."
+    },
+    {
+        "timestamp": "00:34:28",
+        "content": "Let's use an if statement. So if and there's many ways we can use the statement, we could do absolute value."
+    },
+    {
+        "timestamp": "00:34:34",
+        "content": "Right. That's what we've been doing already. So if we take."
+    },
+    {
+        "timestamp": "00:34:42",
+        "content": "And minus the square root. Right."
+    },
+    {
+        "timestamp": "00:34:46",
+        "content": "So and minus this value we just calculated."
+    },
+    {
+        "timestamp": "00:34:51",
+        "content": "Is less than epsilon. All right."
+    },
+    {
+        "timestamp": "00:34:55",
+        "content": "So here we know that. Square root is within Epsilon."
+    },
+    {
+        "timestamp": "00:35:08",
+        "content": "And what do we want to do once we know that the skirt is with an epsilon? Well, if we don't know, we can look at the docstring."
+    },
+    {
+        "timestamp": "00:35:20",
+        "content": "So we need to return. How many integers have that square root with an epsilon of n?"
+    },
+    {
+        "timestamp": "00:35:27",
+        "content": "Yeah, exactly. Keep count of it. Right. So count plus equals one."
+    },
+    {
+        "timestamp": "00:35:36",
+        "content": "Yes. And I do have to initialize count. Count equals zero right before my."
+    },
+    {
+        "timestamp": "00:35:42",
+        "content": "Okay. Anything else? Yeah, we do need to return."
+    },
+    {
+        "timestamp": "00:35:50",
+        "content": "So at the end of the loop, we can return our count."
+    },
+    {
+        "timestamp": "00:35:58",
+        "content": "Okay. Run it. What is this from?"
+    },
+    {
+        "timestamp": "00:36:02",
+        "content": "Oh, this is from the other two lines here. So far I think that works because from the example there were four numbers that work."
+    },
+    {
+        "timestamp": "00:36:12",
+        "content": "To double check we can or if something went wrong and the number you got wasn't what you were expecting."
+    },
+    {
+        "timestamp": "00:36:21",
+        "content": "Again, print statements very useful so we could print the value of AI."
+    },
+    {
+        "timestamp": "00:36:25",
+        "content": "So this thing here, we're trying to find the square root of and we can print the square root of that value."
+    },
+    {
+        "timestamp": "00:36:32",
+        "content": "Right? And so if we actually add it to the print, to the code here we see the four values that we grabbed 99, 100, 100, 100."
+    },
+    {
+        "timestamp": "00:36:42",
+        "content": "And now that we wrote this code, we can actually make really simple changes to it."
+    },
+    {
+        "timestamp": "00:36:48",
+        "content": "And we have some pretty useful code, right?"
+    },
+    {
+        "timestamp": "00:36:50",
+        "content": "So if we make our boundary bigger, ten plus or minus one, we're going to get more values that match this criteria."
+    },
+    {
+        "timestamp": "00:36:58",
+        "content": "Right? So in fact, we got 40 of them, right?"
+    },
+    {
+        "timestamp": "00:37:01",
+        "content": "All the way from 81, all the way up to 120."
+    },
+    {
+        "timestamp": "00:37:06",
+        "content": "They all match the criteria, which is when you take the square root of that value, it's plus or minus ten."
+    },
+    {
+        "timestamp": "00:37:15",
+        "content": "9 to 11. Yeah. Any questions about this example?"
+    },
+    {
+        "timestamp": "00:37:22",
+        "content": "I know it's kind of involved, but I hope that actually drawing a picture helped explain what we were trying to get at."
+    },
+    {
+        "timestamp": "00:37:28",
+        "content": "And then at that point, it should have been pretty easy to figure out the structure of the code itself."
+    },
+    {
+        "timestamp": "00:37:35",
+        "content": "Any questions? Yes. Regarding the red. Like that."
+    },
+    {
+        "timestamp": "00:37:46",
+        "content": "It could be smaller. Yeah. I mean we could have done and and to power for we just couldn't do and squared because then"
+    },
+    {
+        "timestamp": "00:37:54",
+        "content": "we might miss we well we would definitely miss 101 and 102 in that particular example."
+    },
+    {
+        "timestamp": "00:38:07",
+        "content": "And in fact if our epsilon is really big we might actually I'm not sure about the math, but if our epsilon is really big, we might actually need to go bigger than n cubed as well."
+    },
+    {
+        "timestamp": "00:38:12",
+        "content": "I'd have to think about that. But we just. It's okay."
+    },
+    {
+        "timestamp": "00:38:15",
+        "content": "I mean, it's fine to make it big."
+    },
+    {
+        "timestamp": "00:38:17",
+        "content": "It doesn't take that much longer to compute because the, you know, running the function is is very quick to Python anyway."
+    },
+    {
+        "timestamp": "00:38:25",
+        "content": "Yeah. Those questions, I had a similar question. So this is there's a reason why we chose an arbitrary number that's big enough."
+    },
+    {
+        "timestamp": "00:38:36",
+        "content": "Yeah, arbitrary number. That's big enough. Well, we could have also done just along those lines is we could have done something a"
+    },
+    {
+        "timestamp": "00:38:46",
+        "content": "little bit smarter in here where once we find this a number that actually works, like once we start incrementing our count, we could have some sort of flag that keeps track of as long as we're incrementing the count."
+    },
+    {
+        "timestamp": "00:38:54",
+        "content": "Right. Keep going. But at some point, you know, you're going to reach a number that's too big."
+    },
+    {
+        "timestamp": "00:38:59",
+        "content": "And at that point, you can just end the function early. Right."
+    },
+    {
+        "timestamp": "00:39:02",
+        "content": "You can just break out of the loop and you don't need to keep looking at, you know, all the way up to n cubed."
+    },
+    {
+        "timestamp": "00:39:09",
+        "content": "So we could have done something a little bit smarter to make the function just a little faster."
+    },
+    {
+        "timestamp": "00:39:15",
+        "content": "The flags. Which you can try."
+    },
+    {
+        "timestamp": "00:39:20",
+        "content": "So see if you can have the program stop as soon as you hit 103."
+    },
+    {
+        "timestamp": "00:39:24",
+        "content": "Right. See if you can write the program that uses a flag to trigger that event."
+    },
+    {
+        "timestamp": "00:39:28",
+        "content": "And then when that event is true, just break out of the loop or return immediately or something like that."
+    },
+    {
+        "timestamp": "00:39:35",
+        "content": "Other questions. Okay."
+    },
+    {
+        "timestamp": "00:39:42",
+        "content": "So let's zoom out a little bit on functions. We did this a little bit last lecture."
+    },
+    {
+        "timestamp": "00:39:47",
+        "content": "This is a function that we actually wrote. Last lecture. It was sum of odd numbers between A and B."
+    },
+    {
+        "timestamp": "00:39:52",
+        "content": "This was essentially our black box, right?"
+    },
+    {
+        "timestamp": "00:40:02",
+        "content": "Remember that now that we're writing functions, we are kind of separating ourselves as some as a programmer who writes a function write, you basically make this nice modular piece of code that can be reused over and over again."
+    },
+    {
+        "timestamp": "00:40:07",
+        "content": "So we're separating that aspect from somebody who's using a function."
+    },
+    {
+        "timestamp": "00:40:12",
+        "content": "So once there's a function already written for you, you just use it in code, right?"
+    },
+    {
+        "timestamp": "00:40:16",
+        "content": "Like we use the by section root here. Right? I know we wrote it, but I guess technically I wrote it, but here we just kind of used it."
+    },
+    {
+        "timestamp": "00:40:23",
+        "content": "Right. And we use that to write this nicer, more complex piece of code."
+    },
+    {
+        "timestamp": "00:40:29",
+        "content": "And so this is what we do. We basically create this black box."
+    },
+    {
+        "timestamp": "00:40:32",
+        "content": "And once you know the specification or the docstring of the black box, you don't need to know how it's implemented in order to use it."
+    },
+    {
+        "timestamp": "00:40:39",
+        "content": "But what I wanted to mention is something I mentioned last lecture is the"
+    },
+    {
+        "timestamp": "00:40:43",
+        "content": "function definition is just creating a function object inside inside the memory."
+    },
+    {
+        "timestamp": "00:40:51",
+        "content": "And the name of this function object is the name of the function."
+    },
+    {
+        "timestamp": "00:40:54",
+        "content": "So if we're thinking about the the program, there is the orange box."
+    },
+    {
+        "timestamp": "00:40:59",
+        "content": "We have an object that just happens to be a function which has some code associated with it, whose name is some odd."
+    },
+    {
+        "timestamp": "00:41:13",
+        "content": "And kind of drawing a parallel to that is when we create just the variable, as we have been so far right here, we're creating an object to whose name is low."
+    },
+    {
+        "timestamp": "00:41:19",
+        "content": "So in that same way, that black box is basically saying, I am creating a function object that has some code associated with it whose name is some odd."
+    },
+    {
+        "timestamp": "00:41:28",
+        "content": "Okay. So in this case, I've got some odd low and high as three sort of objects inside my program."
+    },
+    {
+        "timestamp": "00:41:35",
+        "content": "And then only when I make a function call does the code associated with the function object run."
+    },
+    {
+        "timestamp": "00:41:43",
+        "content": "Right? So up when I'm defining the function, it does not run. It just stays inside computer memory as an object that exists."
+    },
+    {
+        "timestamp": "00:41:50",
+        "content": "And when I make my function call is when I use that object."
+    },
+    {
+        "timestamp": "00:41:54",
+        "content": "So the function call basically takes my variables and, and matches them to the function definition."
+    },
+    {
+        "timestamp": "00:42:04",
+        "content": "So it gets matched to low and B gets much too high and low and high in the function call."
+    },
+    {
+        "timestamp": "00:42:10",
+        "content": "Have actual values associated with them too. And set."
+    },
+    {
+        "timestamp": "00:42:15",
+        "content": "And so that function will then go ahead and do the work and at the end it's going to return something either in actual value or none."
+    },
+    {
+        "timestamp": "00:42:22",
+        "content": "And then that actual value replaces the entire function call."
+    },
+    {
+        "timestamp": "00:42:25",
+        "content": "So in my program, the variable, my sum here is going to be equal to the return."
+    },
+    {
+        "timestamp": "00:42:31",
+        "content": "Just a little recap, but hopefully this kind of keeps bringing the point home."
+    },
+    {
+        "timestamp": "00:42:37",
+        "content": "So now we're going to talk about in more detail what exactly happens when we make a functional call."
+    },
+    {
+        "timestamp": "00:42:42",
+        "content": "So when we make a function call, you can think of the program as sort of taking a pause."
+    },
+    {
+        "timestamp": "00:42:49",
+        "content": "Right. I've got my main program and in my May program I have a function call."
+    },
+    {
+        "timestamp": "00:42:53",
+        "content": "That main program will just pause for a bit."
+    },
+    {
+        "timestamp": "00:43:03",
+        "content": "And that function call, you can treat it as sort of a little mini program that needs to run and terminate, return a value before the main program can resume executing."
+    },
+    {
+        "timestamp": "00:43:07",
+        "content": "Okay. So that little mini program, that function call basically creates its own little environment that it lives in, right?"
+    },
+    {
+        "timestamp": "00:43:15",
+        "content": "So in that little environment, it can create variables, just like we would in a regular program."
+    },
+    {
+        "timestamp": "00:43:20",
+        "content": "It can modify variables. It can print things."
+    },
+    {
+        "timestamp": "00:43:24",
+        "content": "Right? It can do all this work within its body. And at some point, it'll finish its job, finish its task, and it'll have some value."
+    },
+    {
+        "timestamp": "00:43:32",
+        "content": "That's the result of all of that work that it did. And that value is what it hopefully returns back to the main program."
+    },
+    {
+        "timestamp": "00:43:39",
+        "content": "And then the main program can come can finish its it can finish its job."
+    },
+    {
+        "timestamp": "00:43:44",
+        "content": "Okay. So what's key here is that every time you make a function call, you basically create a new environment."
+    },
+    {
+        "timestamp": "00:43:52",
+        "content": "And that environment is completely separate from the main program environment."
+    },
+    {
+        "timestamp": "00:43:57",
+        "content": "As soon as the function call terminates, that function call environment disappears."
+    },
+    {
+        "timestamp": "00:44:02",
+        "content": "So any variables that were created within that environment of the function call will also disappear."
+    },
+    {
+        "timestamp": "00:44:08",
+        "content": "Okay, so all we're left with is just what's in the main program. So now we're going to talk a little bit about environments."
+    },
+    {
+        "timestamp": "00:44:15",
+        "content": "Okay. And if you understand this, you'll understand 80% of functions and what to do with them."
+    },
+    {
+        "timestamp": "00:44:21",
+        "content": "Okay. So basically, when you first run your program, the program enters what we call the global environment, the main program environment."
+    },
+    {
+        "timestamp": "00:44:30",
+        "content": "And any time you make a function call, we're creating this new environment."
+    },
+    {
+        "timestamp": "00:44:33",
+        "content": "Okay, so what exactly happens when we create these when we do these function calls, how do these environments interact?"
+    },
+    {
+        "timestamp": "00:44:42",
+        "content": "And the answer is they don't actually interfere with each other that much."
+    },
+    {
+        "timestamp": "00:44:46",
+        "content": "They only interfere with each other through passing in parameters and through returning values."
+    },
+    {
+        "timestamp": "00:44:59",
+        "content": "But beyond that, these two different environments, the main program environment and a function called environment, can actually have variables that have the same name but don't interfere with each other because they exist in different environments."
+    },
+    {
+        "timestamp": "00:45:06",
+        "content": "Right. So we're going to look at this example. So to showcase that."
+    },
+    {
+        "timestamp": "00:45:11",
+        "content": "So here's a function. It's pretty simple. It does not do much."
+    },
+    {
+        "timestamp": "00:45:15",
+        "content": "It takes in one parameter, probably a number, and adds one to it."
+    },
+    {
+        "timestamp": "00:45:20",
+        "content": "Right. So takes an an X and does X plus one, assigns X to it, and then it does this print statement and then returns the new value of x."
+    },
+    {
+        "timestamp": "00:45:31",
+        "content": "So added one to whatever you passed into it and it returns that new back value."
+    },
+    {
+        "timestamp": "00:45:37",
+        "content": "So that's the definition. Again, this just sits in Python memory."
+    },
+    {
+        "timestamp": "00:45:41",
+        "content": "It doesn't actually get run until we make a function call."
+    },
+    {
+        "timestamp": "00:45:44",
+        "content": "The parameters here when we run our function are called formal parameters because there's no actual value associated with them, right?"
+    },
+    {
+        "timestamp": "00:45:58",
+        "content": "We're writing this function, assuming that at some point we're going to get a value for X, but at the time we're writing the function, there's no value for X."
+    },
+    {
+        "timestamp": "00:46:02",
+        "content": "It's just this abstract variable. Okay?"
+    },
+    {
+        "timestamp": "00:46:05",
+        "content": "And we're using that variable X within the function body, assuming that at some point we're going to get initial value for X, right?"
+    },
+    {
+        "timestamp": "00:46:12",
+        "content": "So X is equal to three and then at which point the body can then execute."
+    },
+    {
+        "timestamp": "00:46:17",
+        "content": "Now, when you make a function call in the main program scope, that's when you pass, make a function call with the with an actual parameter."
+    },
+    {
+        "timestamp": "00:46:25",
+        "content": "So here you'll notice I'm using the same name x. But this x inside the main program is different than the x."
+    },
+    {
+        "timestamp": "00:46:32",
+        "content": "That's this formal parameter of the function, this actual parameter."
+    },
+    {
+        "timestamp": "00:46:39",
+        "content": "When we make the function call is mapped to the formal parameter."
+    },
+    {
+        "timestamp": "00:46:43",
+        "content": "So at that point the formal parameter can get the value of the function call, which is three."
+    },
+    {
+        "timestamp": "00:46:49",
+        "content": "Okay. And in fact, it doesn't actually matter what we name this variable out here, right."
+    },
+    {
+        "timestamp": "00:47:01",
+        "content": "We can name x is equal to three and make the function call F of x, but we can also have y is equal to three and we make the exact same function call F of y, right."
+    },
+    {
+        "timestamp": "00:47:06",
+        "content": "Because we want to pass in three as a parameter to this function call."
+    },
+    {
+        "timestamp": "00:47:12",
+        "content": "Okay. So this x out here is different than this X over here."
+    },
+    {
+        "timestamp": "00:47:18",
+        "content": "So the. Oh, yeah, go ahead. What is the point? The formal is the one from the function definition."
+    },
+    {
+        "timestamp": "00:47:24",
+        "content": "We say it's formal because there's no value associated with it. When you first write the function."
+    },
+    {
+        "timestamp": "00:47:30",
+        "content": "Right. You write the function first. There's nothing going on here. And then you have some code that actually knows taking on some values."
+    },
+    {
+        "timestamp": "00:47:38",
+        "content": "And you can run. Yeah. So let's trace through this code."
+    },
+    {
+        "timestamp": "00:47:44",
+        "content": "Little by little to see exactly what environments get created as we make function calls."
+    },
+    {
+        "timestamp": "00:47:50",
+        "content": "So again, this is my black box. It's a function. When I first run the program, we finished the function definition."
+    },
+    {
+        "timestamp": "00:47:57",
+        "content": "So we're at this point in our program right before we do X is equal to three inside my sort of computer python memory."
+    },
+    {
+        "timestamp": "00:48:04",
+        "content": "What I have is one environment created and that's the environment of the main program."
+    },
+    {
+        "timestamp": "00:48:09",
+        "content": "The only thing I have in this environment is by F, right?"
+    },
+    {
+        "timestamp": "00:48:13",
+        "content": "Because at this point in the program where the red arrow is, I just had a function definition."
+    },
+    {
+        "timestamp": "00:48:19",
+        "content": "So again, it's a definition. It's it's a function whose name is F and it's an object, right?"
+    },
+    {
+        "timestamp": "00:48:25",
+        "content": "I It's not being run quite yet. It's an object that contains some code."
+    },
+    {
+        "timestamp": "00:48:31",
+        "content": "Now we have X is equal to three, so that's pretty easy."
+    },
+    {
+        "timestamp": "00:48:34",
+        "content": "Inside my main program environment, I've got a variable named X whose values three and then I have my function call."
+    },
+    {
+        "timestamp": "00:48:43",
+        "content": "So as soon as Python sees a function call, it creates a new environment."
+    },
+    {
+        "timestamp": "00:48:49",
+        "content": "And the current environment where the call is being made from the main program, one will be put on hold."
+    },
+    {
+        "timestamp": "00:49:02",
+        "content": "Okay, so here I'm calling function F. So now I'm creating this new environment that think of it like this mini program, this little task that needs to get done before the main program can continue executing."
+    },
+    {
+        "timestamp": "00:49:08",
+        "content": "So I need to figure out what's going on in this mini program, right in this function."
+    },
+    {
+        "timestamp": "00:49:12",
+        "content": "Call to F. All right. So here's my new environment."
+    },
+    {
+        "timestamp": "00:49:16",
+        "content": "The scope of F, the first thing that we need to do is figure out what are the parameters of F."
+    },
+    {
+        "timestamp": "00:49:21",
+        "content": "So we look at the function definition and we see it has one parameter named X."
+    },
+    {
+        "timestamp": "00:49:27",
+        "content": "So we're going to take that X and the first thing we're going to do is map the formal parameter to the actual parameter."
+    },
+    {
+        "timestamp": "00:49:33",
+        "content": "Okay. So we're going to make the formal parameter of F named X, take on the value three."
+    },
+    {
+        "timestamp": "00:49:42",
+        "content": "That's kind of what we've been doing already. But now this is getting down to sort of details."
+    },
+    {
+        "timestamp": "00:49:47",
+        "content": "Just details. We've mapped all the parameters the body of the function executes."
+    },
+    {
+        "timestamp": "00:49:53",
+        "content": "I've again kind of blurred out this one because we're not in this global scope."
+    },
+    {
+        "timestamp": "00:49:59",
+        "content": "We're trying to figure out what F is doing. So the body of F says, take X, add one to it and reassign it to x."
+    },
+    {
+        "timestamp": "00:50:06",
+        "content": "So what's X? Inside my function? It's three."
+    },
+    {
+        "timestamp": "00:50:10",
+        "content": "We add one to it and we make x before."
+    },
+    {
+        "timestamp": "00:50:15",
+        "content": "I skipped one thing, which is if in my main program I had y is equal to three and F of y."
+    },
+    {
+        "timestamp": "00:50:21",
+        "content": "Nothing really would have changed. My former parameter of F is still x and I'm still mapping x to the value that's in my here in the actual print."
+    },
+    {
+        "timestamp": "00:50:35",
+        "content": "Okay. So in my scope of F, I've got x is three."
+    },
+    {
+        "timestamp": "00:50:38",
+        "content": "I incremented by one, it gives me four and I receive it back into x."
+    },
+    {
+        "timestamp": "00:50:43",
+        "content": "And again, there's no collusion. There's no collusion here."
+    },
+    {
+        "timestamp": "00:50:47",
+        "content": "Right. In terms of naming, because the scope of F, the environment at F has a variable named X, and I'm just doing stuff with the X that F knows."
+    },
+    {
+        "timestamp": "00:50:57",
+        "content": "I do have another X inside my global scope, but that one's put on hold for now."
+    },
+    {
+        "timestamp": "00:51:01",
+        "content": "Okay. All right, so I've done X equals x plus one, then I do the print statement."
+    },
+    {
+        "timestamp": "00:51:07",
+        "content": "So enough of x x equals four that gets printed out and then I return x."
+    },
+    {
+        "timestamp": "00:51:11",
+        "content": "So the thing that gets returned is the value of x. The. And this again, replaces the function call."
+    },
+    {
+        "timestamp": "00:51:18",
+        "content": "So this gets returned back to whoever called me. And the environment that called me was just my main program."
+    },
+    {
+        "timestamp": "00:51:24",
+        "content": "And here I'm going to return four and this is going to replace that with four."
+    },
+    {
+        "timestamp": "00:51:28",
+        "content": "As soon as the function sees the return. And returns that value back, it goes away."
+    },
+    {
+        "timestamp": "00:51:34",
+        "content": "So notice that X that we had created is gone. Now we're in the main program."
+    },
+    {
+        "timestamp": "00:51:39",
+        "content": "There's no there's no confusion. Right. My main program has its own X."
+    },
+    {
+        "timestamp": "00:51:43",
+        "content": "That other x that was part of the execution of F is gone because that function finished its job and it doesn't need its environment anymore."
+    },
+    {
+        "timestamp": "00:51:53",
+        "content": "So now the return of a function replaces F of X and we see Z is equal to four."
+    },
+    {
+        "timestamp": "00:51:59",
+        "content": "That was super detailed. But that's kind of what happens step by step when we make a function call with the new environments being created."
+    },
+    {
+        "timestamp": "00:52:14",
+        "content": "So if you could understand that it should be it should be pretty straightforward, not, you know, and you won't get confused when you see an X out here."
+    },
+    {
+        "timestamp": "00:52:18",
+        "content": "You have F of X, you know, as one function and then maybe another function that has G of X and so on."
+    },
+    {
+        "timestamp": "00:52:26",
+        "content": "Okay. So in order to know the scope that you're in, the environment that you in, you need to know what expression you're evaluating."
+    },
+    {
+        "timestamp": "00:52:32",
+        "content": "Right. So here we were evaluating this function call."
+    },
+    {
+        "timestamp": "00:52:36",
+        "content": "So that means that we were inside the environment of F. Another example, and this one's a little bit weird."
+    },
+    {
+        "timestamp": "00:52:44",
+        "content": "It shows some of the nuances of Python, and these aren't necessarily true in other languages."
+    },
+    {
+        "timestamp": "00:52:52",
+        "content": "So I'm just going to do the drawing of the scopes out here."
+    },
+    {
+        "timestamp": "00:52:58",
+        "content": "So let's start with the one on the left."
+    },
+    {
+        "timestamp": "00:53:00",
+        "content": "So you can see here I've got one function F of Y and I've got the main program that creates X is equal to five and then a call to Y."
+    },
+    {
+        "timestamp": "00:53:08",
+        "content": "So inside my main program I've got X is equal to five, and then I have a function called to F."
+    },
+    {
+        "timestamp": "00:53:15",
+        "content": "Function call means we need to create a new scope. So this one's put on hold for now until we figure out what f parentheses x is right here."
+    },
+    {
+        "timestamp": "00:53:24",
+        "content": "Okay, so the first thing we need to do is grab F and take all the formal parameters of F."
+    },
+    {
+        "timestamp": "00:53:31",
+        "content": "There is one. Its name is Y and map them to the actual parameters."
+    },
+    {
+        "timestamp": "00:53:37",
+        "content": "So I'm calling F with five. So I'm going to map Y to five."
+    },
+    {
+        "timestamp": "00:53:44",
+        "content": "This function is going to take now due to the body of its function."
+    },
+    {
+        "timestamp": "00:53:50",
+        "content": "X is equal to one, so it creates also an x value as one just within its scope."
+    },
+    {
+        "timestamp": "00:53:55",
+        "content": "It adds 12x, so this becomes two and then it prints x."
+    },
+    {
+        "timestamp": "00:54:01",
+        "content": "So it's going to print two. And then the function terminates a returns none."
+    },
+    {
+        "timestamp": "00:54:08",
+        "content": "Right. There's no return statement. And if the function is done."
+    },
+    {
+        "timestamp": "00:54:13",
+        "content": "So this line has now finished. And the last thing that the function does after it's done, the return is the scope goes away."
+    },
+    {
+        "timestamp": "00:54:23",
+        "content": "And the last thing we need to do now is print X. So this will print the value of X in the global scope, which is five."
+    },
+    {
+        "timestamp": "00:54:29",
+        "content": "So the output of this little piece of code on the left side here is two and five."
+    },
+    {
+        "timestamp": "00:54:39",
+        "content": "Okay. What about the middle code? Similarly, I've got a function definition and then I create x is equal to five and then I make a call to G."
+    },
+    {
+        "timestamp": "00:54:51",
+        "content": "All right. Axis five. So as soon as I see a function call, I need to create a new scope."
+    },
+    {
+        "timestamp": "00:54:57",
+        "content": "And I need to map all the formal parameters of G."
+    },
+    {
+        "timestamp": "00:55:01",
+        "content": "It has one formal parameter. Its name is why that one will be mapped to whatever I made the function call with five right axis five out here."
+    },
+    {
+        "timestamp": "00:55:12",
+        "content": "So that gets me up to five. What is this function going to do?"
+    },
+    {
+        "timestamp": "00:55:17",
+        "content": "Well, it prints X. What's X inside the scope of G?"
+    },
+    {
+        "timestamp": "00:55:24",
+        "content": "Do I have a G inside an x? Inside G?"
+    },
+    {
+        "timestamp": "00:55:28",
+        "content": "No. So this is something that Python does."
+    },
+    {
+        "timestamp": "00:55:32",
+        "content": "It says, Well, if your environment doesn't have a variable named X in this case, look further out and see who called you."
+    },
+    {
+        "timestamp": "00:55:42",
+        "content": "Well, which environment called this G. The main one."
+    },
+    {
+        "timestamp": "00:55:46",
+        "content": "Right. Does your bigger environment, the one who called you have a variable named X?"
+    },
+    {
+        "timestamp": "00:55:53",
+        "content": "It does, right? It's fine. So Python grabs the value associated with that larger environment."
+    },
+    {
+        "timestamp": "00:56:00",
+        "content": "And if that larger environment didn't have one, it would look further out and further out until it doesn't have an environment to look at."
+    },
+    {
+        "timestamp": "00:56:07",
+        "content": "So G.E. is going to print the value of X, which is five, and then it's going to print X plus one, which is six, and then it's done."
+    },
+    {
+        "timestamp": "00:56:19",
+        "content": "It returns none. And then as soon as it returns, none, the scope goes away."
+    },
+    {
+        "timestamp": "00:56:27",
+        "content": "And what we're left with is the global program and we print X, which is still five."
+    },
+    {
+        "timestamp": "00:56:33",
+        "content": "What I want you to notice is that that function G printed x plus one but never modified x."
+    },
+    {
+        "timestamp": "00:56:40",
+        "content": "Right. We never said something like X is equal to x plus one or something like that."
+    },
+    {
+        "timestamp": "00:56:44",
+        "content": "We just figured out what x plus one was and printed it."
+    },
+    {
+        "timestamp": "00:56:48",
+        "content": "Okay. All right."
+    },
+    {
+        "timestamp": "00:56:52",
+        "content": "One more example. And this one will actually end up in an error."
+    },
+    {
+        "timestamp": "00:56:57",
+        "content": "So here I've got X is equal to five, just like before."
+    },
+    {
+        "timestamp": "00:57:01",
+        "content": "And then I have a function called two H. So again, a function call means a new scope is created."
+    },
+    {
+        "timestamp": "00:57:08",
+        "content": "I've got one variable y, that's my formal parameter."
+    },
+    {
+        "timestamp": "00:57:12",
+        "content": "It gets mapped to whatever I call the function with five s."
+    },
+    {
+        "timestamp": "00:57:18",
+        "content": "And then what is this function doing? That line x plus equals one is x is equal to x plus one."
+    },
+    {
+        "timestamp": "00:57:34",
+        "content": "This is actually an error. Python doesn't let you do that."
+    },
+    {
+        "timestamp": "00:57:42",
+        "content": "And the error it gives you is actually what it says there. So unbound local error, local variable x is referenced before an assignment so it doesn't actually grab the value from the outer scope like we did in the middle bit."
+    },
+    {
+        "timestamp": "00:58:06",
+        "content": "It doesn't grab it because it thinks you're trying to create a variable named X inside H and you're trying to add one to x, but you never had a line that said x is equal to something originally inside H."
+    },
+    {
+        "timestamp": "00:58:16",
+        "content": "Okay. And so when you're trying to say X is equal to X plus one, it's trying to look for an X inside the scope of H, but it doesn't have one."
+    },
+    {
+        "timestamp": "00:58:35",
+        "content": "And so that's where we get that error from. And this is not some I mean, it's just a nuance of Python, but it's kind of important to understand that you can access variables, but you can't change variables outside of your scope."
+    },
+    {
+        "timestamp": "00:58:44",
+        "content": "Okay, so the middle one just axis is a variable, adds one to it and prints it."
+    },
+    {
+        "timestamp": "00:58:49",
+        "content": "But we never said X is equal to this value."
+    },
+    {
+        "timestamp": "00:59:00",
+        "content": "Okay. And it's kind of like I guess the air you get is kind of like if you made this be something completely different, like Z, you would get the same error."
+    },
+    {
+        "timestamp": "00:59:03",
+        "content": "You know, it would be error. Variable Z reference before assignment."
+    },
+    {
+        "timestamp": "00:59:08",
+        "content": "Right. Like you got X plus one, but I don't know what Z is like."
+    },
+    {
+        "timestamp": "00:59:21",
+        "content": "Instead the definition like z. Correct. And then you like X plus one outside and like."
+    },
+    {
+        "timestamp": "00:59:35",
+        "content": "So if you know, because if you want to, if you want to explicitly say that you're taking it from outside, there's a keyword called Global that you would need to write that explicitly says, Hey, I'm grabbing this value variable."
+    },
+    {
+        "timestamp": "00:59:42",
+        "content": "That is not part of me. It's part of the it's in the main program, the global scope."
+    },
+    {
+        "timestamp": "00:59:50",
+        "content": "Okay. The last thing I want to talk about is using functions as arguments to other functions."
+    },
+    {
+        "timestamp": "01:00:06",
+        "content": "So. The way I've sort of been explaining a function definition is basically saying that when we define a function, Python essentially puts some code in memory whose name is the function name."
+    },
+    {
+        "timestamp": "01:00:12",
+        "content": "Right. So basically the function name creates for me an object inside memory that happens to be a function object."
+    },
+    {
+        "timestamp": "01:00:19",
+        "content": "And just to show you sort of what that means is we have a function is even, right?"
+    },
+    {
+        "timestamp": "01:00:23",
+        "content": "We've definitely created it if we say the type of is even."
+    },
+    {
+        "timestamp": "01:00:29",
+        "content": "It's function, right? So the function is even actually has a type and its type is a function in Python."
+    },
+    {
+        "timestamp": "01:00:37",
+        "content": "So functions are basically just objects, just like an integer is an object, a boolean is an object, a float is an object, right?"
+    },
+    {
+        "timestamp": "01:00:45",
+        "content": "A function. It look, it's an object. It just looks different."
+    },
+    {
+        "timestamp": "01:00:49",
+        "content": "It has a bunch of code associated with it. So if a function is an object, what that means is we can use an assignment operator on a function name."
+    },
+    {
+        "timestamp": "01:01:01",
+        "content": "So we can have two names that are functions that point to the same function code."
+    },
+    {
+        "timestamp": "01:01:06",
+        "content": "We can use a function as an argument to another function, like a parameter to a function, or we can return a function from another function."
+    },
+    {
+        "timestamp": "01:01:15",
+        "content": "So here's an example. Pretend that this is our code file."
+    },
+    {
+        "timestamp": "01:01:20",
+        "content": "We've got the memory, the first line of code here."
+    },
+    {
+        "timestamp": "01:01:24",
+        "content": "The definition basically creates this function object for me in memory."
+    },
+    {
+        "timestamp": "01:01:29",
+        "content": "It's kind of like a variable right is underscore even as the name of this function object"
+    },
+    {
+        "timestamp": "01:01:35",
+        "content": "and this variable is bound to my function object with some code associated with it."
+    },
+    {
+        "timestamp": "01:01:40",
+        "content": "So you think of the function as just an object. Similarly, right when we write our is equal to two."
+    },
+    {
+        "timestamp": "01:01:47",
+        "content": "I think of that as the same thing, right as the name. And I've got an integer object whose values too."
+    },
+    {
+        "timestamp": "01:01:53",
+        "content": "That's exactly what happens when we create a function definition. Right."
+    },
+    {
+        "timestamp": "01:01:57",
+        "content": "Similarly, PI is equal to 22 over seven. Right?"
+    },
+    {
+        "timestamp": "01:02:00",
+        "content": "PI is the name associated with the float object that has that value."
+    },
+    {
+        "timestamp": "01:02:05",
+        "content": "So what we can do right now that we've established that a function is basically an object with a name."
+    },
+    {
+        "timestamp": "01:02:12",
+        "content": "We can say a line like this, my func equals two is even."
+    },
+    {
+        "timestamp": "01:02:18",
+        "content": "The right hand side here is just the name of my function."
+    },
+    {
+        "timestamp": "01:02:24",
+        "content": "It's not a function call. Right. Notice there's no parentheses."
+    },
+    {
+        "timestamp": "01:02:27",
+        "content": "After is even. There's no parameter none of that."
+    },
+    {
+        "timestamp": "01:02:31",
+        "content": "It's literally the name of my function. So inside memory, what I've ended up doing is I have two."
+    },
+    {
+        "timestamp": "01:02:39",
+        "content": "Oops, I have two names. My func and is even that both point to the exact same function object."
+    },
+    {
+        "timestamp": "01:02:47",
+        "content": "So that means that that function object. So this is even function."
+    },
+    {
+        "timestamp": "01:02:52",
+        "content": "Can be referenced by both of these names. So on the next two lines here, H was this and B equals this."
+    },
+    {
+        "timestamp": "01:03:00",
+        "content": "I'm running the same code just referenced by different names."
+    },
+    {
+        "timestamp": "01:03:04",
+        "content": "Right. So then A is going to be bound to false and B is bound to true because I'm I'm accessing the same code fundamentally by different names."
+    },
+    {
+        "timestamp": "01:03:14",
+        "content": "Does that make sense? Yes. So everything in Python is an object, including functions."
+    },
+    {
+        "timestamp": "01:03:19",
+        "content": "It's strange to think. But there you have it. So let's look at this code."
+    },
+    {
+        "timestamp": "01:03:25",
+        "content": "I've got three function definitions and only one function call."
+    },
+    {
+        "timestamp": "01:03:34",
+        "content": "What are the functions? Function definitions. One I have named Calc."
+    },
+    {
+        "timestamp": "01:03:39",
+        "content": "It takes in three parameters when I have ADD, it takes in two parameters and one I have div."
+    },
+    {
+        "timestamp": "01:03:44",
+        "content": "It takes in two parameters. Add. Does something pretty simple do has maybe a print statement, but also does something pretty simple."
+    },
+    {
+        "timestamp": "01:03:55",
+        "content": "Calc is the one that's really strange, right? Because it takes in these three parameters."
+    },
+    {
+        "timestamp": "01:04:00",
+        "content": "But what's the thing it's doing in here? It's kind of treating one of the parameters of operation as a function."
+    },
+    {
+        "timestamp": "01:04:11",
+        "content": "Okay. That's what's strange about calc. So let's trace through the code to see exactly what that means for us."
+    },
+    {
+        "timestamp": "01:04:18",
+        "content": "So when I first run my program, I have three function definitions."
+    },
+    {
+        "timestamp": "01:04:23",
+        "content": "So I'm creating three function objects inside of memory calc a function object that has some"
+    },
+    {
+        "timestamp": "01:04:28",
+        "content": "code and a function object that has some code and div a function object that has some code."
+    },
+    {
+        "timestamp": "01:04:36",
+        "content": "And then we get to the good stuff as equals, the function call."
+    },
+    {
+        "timestamp": "01:04:41",
+        "content": "So this is going to be a variable that's going to have a value. What value?"
+    },
+    {
+        "timestamp": "01:04:46",
+        "content": "We need to figure that out. Calc is a function call."
+    },
+    {
+        "timestamp": "01:04:52",
+        "content": "Every time we have a function call, we need to create a new environment."
+    },
+    {
+        "timestamp": "01:04:58",
+        "content": "So now we are creating our calc environment."
+    },
+    {
+        "timestamp": "01:05:03",
+        "content": "So we've put aside the main program scope for now and we're focusing on what calc is going to do."
+    },
+    {
+        "timestamp": "01:05:09",
+        "content": "First thing we need to do is take every single one of our parameters and map it to the actual parameters."
+    },
+    {
+        "timestamp": "01:05:16",
+        "content": "Right. So the first parameter is up. It gets mapped to."
+    },
+    {
+        "timestamp": "01:05:26",
+        "content": "The next parameter is X gets mapped to the last parameters."
+    },
+    {
+        "timestamp": "01:05:30",
+        "content": "Y gets mapped to three. Is everyone okay so far? Yes."
+    },
+    {
+        "timestamp": "01:05:34",
+        "content": "Okay. I've literally just matched names, a formal parameter to actual parameter."
+    },
+    {
+        "timestamp": "01:05:39",
+        "content": "Okay. So now we finished mapping the for the parameters."
+    },
+    {
+        "timestamp": "01:05:43",
+        "content": "Next, we get to run the body of the function return."
+    },
+    {
+        "timestamp": "01:05:47",
+        "content": "What does this. Let's replace op x and Y with the actual values."
+    },
+    {
+        "timestamp": "01:05:54",
+        "content": "This basically becomes return a function call."
+    },
+    {
+        "timestamp": "01:05:58",
+        "content": "Add two comma three. I've just replaced the names."
+    },
+    {
+        "timestamp": "01:06:02",
+        "content": "That's it. What's add to my three? It's another function call, right?"
+    },
+    {
+        "timestamp": "01:06:10",
+        "content": "So calc is going to have to be put on hold because I have to figure out what ad is going to return."
+    },
+    {
+        "timestamp": "01:06:18",
+        "content": "Okay. So what's that going to return for me?"
+    },
+    {
+        "timestamp": "01:06:21",
+        "content": "Will add two comma. Three is what I'm trying to figure out. So I'm going to map a two to be two."
+    },
+    {
+        "timestamp": "01:06:27",
+        "content": "Three it's going to do five as the return."
+    },
+    {
+        "timestamp": "01:06:32",
+        "content": "So returns five to whoever called it and whoever called it was calc right here."
+    },
+    {
+        "timestamp": "01:06:37",
+        "content": "So this expression here, op x comma, why?"
+    },
+    {
+        "timestamp": "01:06:40",
+        "content": "Which was add two, comma, three is replaced with five."
+    },
+    {
+        "timestamp": "01:06:45",
+        "content": "Everyone okay so far? Awesome. Okay."
+    },
+    {
+        "timestamp": "01:06:48",
+        "content": "And then calc can now finish. Right. Notice I had finished its job, so it went away."
+    },
+    {
+        "timestamp": "01:06:53",
+        "content": "Now Calc can finally return its value. So it can finish as well."
+    },
+    {
+        "timestamp": "01:06:57",
+        "content": "So this one will return five. To whoever called it, which was the main program."
+    },
+    {
+        "timestamp": "01:07:03",
+        "content": "And finally, Calc has finished its job and it returned five."
+    },
+    {
+        "timestamp": "01:07:10",
+        "content": "So step by step we just kind of trace through the code, you know, functions out in and replacing variables wherever needed."
+    },
+    {
+        "timestamp": "01:07:19",
+        "content": "So it's your turn. Tell me, what's the value of runs given this function called a calc and what's going to get printed?"
+    },
+    {
+        "timestamp": "01:07:34",
+        "content": "So we can even write our functions. So in the main program, what do I have?"
+    },
+    {
+        "timestamp": "01:07:49",
+        "content": "Yep. Calc and div are my functions. That's it."
+    },
+    {
+        "timestamp": "01:07:56",
+        "content": "Which one? Yeah. Reds will be the the result."
+    },
+    {
+        "timestamp": "01:08:01",
+        "content": "Yep. And there was. We will have a question mark because we don't know what it is yet."
+    },
+    {
+        "timestamp": "01:08:05",
+        "content": "And what's the first thing I need to do? Yeah."
+    },
+    {
+        "timestamp": "01:08:10",
+        "content": "Make a new scope. Exactly. So that's the scope of calc."
+    },
+    {
+        "timestamp": "01:08:14",
+        "content": "And we're going to map up to div what have X and Y to do with zero."
+    },
+    {
+        "timestamp": "01:08:23",
+        "content": "Thank you. So what's OP going to do?"
+    },
+    {
+        "timestamp": "01:08:33",
+        "content": "Yes, exactly. We make another sculpture. DIF A is two and B is zero."
+    },
+    {
+        "timestamp": "01:08:44",
+        "content": "So we're kind of two scopes deep. What's difficult to do."
+    },
+    {
+        "timestamp": "01:08:53",
+        "content": "Yep. So diff prints out the thing to name was zero. And what's div returning?"
+    },
+    {
+        "timestamp": "01:08:59",
+        "content": "None. Perfect. So Div returns not here to calc."
+    },
+    {
+        "timestamp": "01:09:07",
+        "content": "And then div is gone and then none gets returned from for calc here."
+    },
+    {
+        "timestamp": "01:09:18",
+        "content": "And then calc is gone and all I'm left with is equals."
+    },
+    {
+        "timestamp": "01:09:23",
+        "content": "So not exactly the return of calc. One more example showing scope."
+    },
+    {
+        "timestamp": "01:09:34",
+        "content": "I'm just kind of showcasing these sort of the same idea."
+    },
+    {
+        "timestamp": "01:09:38",
+        "content": "So I've got three functions here. Funk A, funk band, funk C, funk A takes in."
+    },
+    {
+        "timestamp": "01:09:43",
+        "content": "You can see no parameters. Funk beat takes in one parameter."
+    },
+    {
+        "timestamp": "01:09:47",
+        "content": "Funk see takes in two parameters. And if we scan the code, we see that one of them is weirdly doing something."
+    },
+    {
+        "timestamp": "01:09:54",
+        "content": "So it's actually going to be a function, right? Because you see, we're calling it like a function inside here."
+    },
+    {
+        "timestamp": "01:10:00",
+        "content": "So we know F is going to have to be a function."
+    },
+    {
+        "timestamp": "01:10:04",
+        "content": "So if we run this program, first, three function definitions basically put some code for us in the memory when we make a phone call."
+    },
+    {
+        "timestamp": "01:10:14",
+        "content": "Sorry, func a call. This creates a new scope."
+    },
+    {
+        "timestamp": "01:10:19",
+        "content": "It has no parameter or func has no parameter, so there's nothing to bind."
+    },
+    {
+        "timestamp": "01:10:23",
+        "content": "All this function's going to do is print inside func and then return the."
+    },
+    {
+        "timestamp": "01:10:30",
+        "content": "So that whole thing's going to print none. Next could be is going to be another function call right here."
+    },
+    {
+        "timestamp": "01:10:39",
+        "content": "So it creates a function scope right here. We map the formal parameter Y to to."
+    },
+    {
+        "timestamp": "01:10:48",
+        "content": "And then we finished mapping all the parameters."
+    },
+    {
+        "timestamp": "01:10:51",
+        "content": "And what we need to do next is do the body. So we print inside func B and it just returns the value you passed into it."
+    },
+    {
+        "timestamp": "01:10:57",
+        "content": "So not a very smart or interesting function. So prints that and returns to back to whoever called it."
+    },
+    {
+        "timestamp": "01:11:05",
+        "content": "Whoever called it was here. So this print statement becomes print five plus two, the return."
+    },
+    {
+        "timestamp": "01:11:11",
+        "content": "So that's going to print stuff into the console."
+    },
+    {
+        "timestamp": "01:11:14",
+        "content": "And lastly, the interesting one is going to be func C, so func see notice I'm calling it with an actual function I have in hand func B, right."
+    },
+    {
+        "timestamp": "01:11:22",
+        "content": "One of these that I've defined here. So Foxy is a function call."
+    },
+    {
+        "timestamp": "01:11:28",
+        "content": "So there's my scope. I am mapping formal parameter f."
+    },
+    {
+        "timestamp": "01:11:33",
+        "content": "To Funk B and Z to three. So just mapping one one by one."
+    },
+    {
+        "timestamp": "01:11:39",
+        "content": "And then I'm doing the body of Foxy. So the body says, Now print this and return this."
+    },
+    {
+        "timestamp": "01:11:46",
+        "content": "So we print the statement. And then the return basically says, Well, what's F?"
+    },
+    {
+        "timestamp": "01:11:53",
+        "content": "Function call FZ. We have to figure out what the actual values are."
+    },
+    {
+        "timestamp": "01:11:59",
+        "content": "And it's func B, parentheses three. So that's another function call, which means another function scope."
+    },
+    {
+        "timestamp": "01:12:08",
+        "content": "Again, not a very smart or interesting function. This func be."
+    },
+    {
+        "timestamp": "01:12:11",
+        "content": "It just takes in the three it prints inside func B and it returns the three back to whoever called it"
+    },
+    {
+        "timestamp": "01:12:24",
+        "content": "so that that function is done and then the func c can terminate and return three to whoever called it, which was out here. And notice as soon as a function call terminates and does a return, it immediately."
+    },
+    {
+        "timestamp": "01:12:33",
+        "content": "All of its variables, everything that got created inside of that environment go away."
+    },
+    {
+        "timestamp": "01:12:38",
+        "content": "They get wiped out. Okay."
+    },
+    {
+        "timestamp": "01:12:43",
+        "content": "Give you about a minute to try this. So write a function that meets the following specification."
+    },
+    {
+        "timestamp": "01:12:48",
+        "content": "So I have a function named apply criteria is a formal parameter, right?"
+    },
+    {
+        "timestamp": "01:12:54",
+        "content": "So at some point you're going to have a function that does this. It takes an integer, a number, an integer and returns a boolean."
+    },
+    {
+        "timestamp": "01:13:01",
+        "content": "So however a function does that, that's what's going to be passed in and then and is an integer."
+    },
+    {
+        "timestamp": "01:13:07",
+        "content": "And what I want you to do is tell me how many numbers from zero to n match that criteria."
+    },
+    {
+        "timestamp": "01:13:13",
+        "content": "So when I apply the function criteria to number zero through N, how many of those actually return true on that function?"
+    },
+    {
+        "timestamp": "01:13:21",
+        "content": "So just to show you something, you know what this means concretely."
+    },
+    {
+        "timestamp": "01:13:24",
+        "content": "Here's my function. Apply. Here's a function that I could call the apply."
+    },
+    {
+        "timestamp": "01:13:30",
+        "content": "It is even sorry I lied. I guess we are seeing is even a few more times in this lecture."
+    },
+    {
+        "timestamp": "01:13:36",
+        "content": "So here's a function is even and basically I run a play by saying I want to run function"
+    },
+    {
+        "timestamp": "01:13:41",
+        "content": "apply with the name is even right so here I'm mapping name to number zero through ten."
+    },
+    {
+        "timestamp": "01:13:50",
+        "content": "I'll give you about a minute to try it out and then I can write it just so we have some."
+    },
+    {
+        "timestamp": "01:13:56",
+        "content": "So we finish on time. Does anyone have a start?"
+    },
+    {
+        "timestamp": "01:14:05",
+        "content": "So we know we want to touch each number zero through through n to see whether this criteria applies to them."
+    },
+    {
+        "timestamp": "01:14:11",
+        "content": "Right. So what's the start to get that going? Yeah."
+    },
+    {
+        "timestamp": "01:14:19",
+        "content": "Four Iron range and plus one because we want to include in."
+    },
+    {
+        "timestamp": "01:14:26",
+        "content": "How do we apply the function criteria to each one of these values?"
+    },
+    {
+        "timestamp": "01:14:36",
+        "content": "Yeah, exactly. We just say criteria and this name will be replaced with whatever function we're going to call apply with."
+    },
+    {
+        "timestamp": "01:14:44",
+        "content": "I. Right. And this criteria, I will basically be the return of criteria."
+    },
+    {
+        "timestamp": "01:14:51",
+        "content": "What did I say? Criteria returns. It takes in a number and returns a boolean."
+    },
+    {
+        "timestamp": "01:14:58",
+        "content": "So we know that this is a boolean."
+    },
+    {
+        "timestamp": "01:15:02",
+        "content": "What do I want to do with this boolean? If it's true, I want to count it."
+    },
+    {
+        "timestamp": "01:15:10",
+        "content": "If it's not, I don't. So if criteria I."
+    },
+    {
+        "timestamp": "01:15:16",
+        "content": "Count plus equals one. Right."
+    },
+    {
+        "timestamp": "01:15:21",
+        "content": "But disappear. And let's remember to initialize our account."
+    },
+    {
+        "timestamp": "01:15:29",
+        "content": "And then that's it, right? If it's if it doesn't match, then I don't care about doing anything with it."
+    },
+    {
+        "timestamp": "01:15:34",
+        "content": "So then we just return count. So notice I'm using my function here."
+    },
+    {
+        "timestamp": "01:15:40",
+        "content": "That's just the parameter. Kind of like a placeholder for any other function."
+    },
+    {
+        "timestamp": "01:15:44",
+        "content": "So this is even function when it's a parameter to apply."
+    },
+    {
+        "timestamp": "01:15:51",
+        "content": "Well, tell me. 602468 ten."
+    },
+    {
+        "timestamp": "01:15:55",
+        "content": "That's six values that match this criteria. And what's cool is that I can actually create any function."
+    },
+    {
+        "timestamp": "01:16:02",
+        "content": "So if I want a function that's called is five, for example, right?"
+    },
+    {
+        "timestamp": "01:16:08",
+        "content": "It takes in the number and returns true if that number is equal to five."
+    },
+    {
+        "timestamp": "01:16:12",
+        "content": "Right. It's still a function that takes in an integer and returns a boolean."
+    },
+    {
+        "timestamp": "01:16:17",
+        "content": "All I need to do then is run this. Apply with the function is five."
+    },
+    {
+        "timestamp": "01:16:23",
+        "content": "Right. So I just changed that here. And then if I run it, it should just give me one value, right?"
+    },
+    {
+        "timestamp": "01:16:28",
+        "content": "The five, of course, is one that matches."
+    },
+    {
+        "timestamp": "01:16:33",
+        "content": "This is five criteria between zero and ten. Yeah."
+    },
+    {
+        "timestamp": "01:16:38",
+        "content": "So that's basically it. So we saw some function."
+    },
+    {
+        "timestamp": "01:16:41",
+        "content": "A lot more you can do with functions. They're basically objects in Python, so they can be manipulated just like you would any other object."
+    },
+    {
+        "timestamp": "01:16:48",
+        "content": "You can have them be parameters to a function. You can have them be returned from a function."
+    },
+    {
+        "timestamp": "01:16:54",
+        "content": "You can assign another name to this function body, things like that."
+    },
+    {
+        "timestamp": "01:16:59",
+        "content": "I showed you what how to think about environments, right. So that the naming doesn't get confusing, right?"
+    },
+    {
+        "timestamp": "01:17:05",
+        "content": "As soon as a function call is made, that means another environment is created."
+    },
+    {
+        "timestamp": "01:17:20",
+        "content": "So variables created within that environment have no influence on other variables created another environment and functions are very nice, a very nice way for us to write code that can be easily be built upon."
+    },
+    {
+        "timestamp": "01:17:26",
+        "content": "Actually, I think you."
+    }
+]

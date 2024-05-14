@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>How do we access the textbook to do the suggested readings? Thanks!</p>",
+        "type": "question",
+        "created": "2022-09-13T22:36:58.348Z",
+        "subject": "Textbook Acess",
+        "_id": "l80rxissga54t2"
+    },
+    {
+        "content": "<p>You can get it from the bookstore or from Amazon. The library might have digital copies for checkout too.\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-09-14T15:46:58.501Z",
+        "_id": "l80rxissga54t2"
+    }
+]

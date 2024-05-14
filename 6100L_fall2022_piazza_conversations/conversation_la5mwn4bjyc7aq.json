@@ -1,0 +1,9 @@
+[
+    {
+        "content": "<p>Hello,</p>\n<p></p>\n<p>I am trying to complete part A of pset 4, but I am confused on how to reference individual nodes when determining the height of the tree.</p>\n<p></p>\n<p>I think I understand the general idea that to find the height recursively; we check if the tree is just a leaf (aka the just a Node(x) where x is some number). If it is another subtree I believe we need to call it recursively: Node(x) &#43; (find_tree_height(right node)&#43;find_tree_height(left node) (please correct me if this logic is wrong). However, I am unsure how to get reference the Nodes themselves (aka the Node(x) part), and would appreciate some guidance. Thank you in advance!\u00a0</p>",
+        "type": "question",
+        "created": "2022-11-06T17:34:34.763Z",
+        "subject": "How to reference individual nodes",
+        "_id": "la5mwn4bjyc7aq"
+    }
+]

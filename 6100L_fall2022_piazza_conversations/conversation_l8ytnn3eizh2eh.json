@@ -1,0 +1,9 @@
+[
+    {
+        "content": "<p>I was unable to get the pytester to work for ps1 and manually tested cases in Python Tutor - everything worked so I submitted that. During my checkoff today, I found out that my counter variable for the bisection search should have been &#34;steps&#34; instead of &#34;counter&#34;. My code still works, I just did not have the correct variable.</p>\n<p>What can be done to address this for my pset 1 grade?</p>\n<p></p>\n<p>Also, when will I receive a score? I currently do not see anything on my 6.100L website.\u00a0</p>",
+        "type": "question",
+        "created": "2022-10-07T18:29:26.570Z",
+        "subject": "Steps variable in ps1c",
+        "_id": "l8ytnn3eizh2eh"
+    }
+]

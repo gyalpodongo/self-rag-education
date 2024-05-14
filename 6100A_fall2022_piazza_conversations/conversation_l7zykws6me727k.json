@@ -1,0 +1,27 @@
+[
+    {
+        "content": "Is there any way in which lectures can be posted early or somewhere where we can have access to them more prior to the day of the lecture? I feel like it&#39;d be really useful; especially in the case like yesterday where they weren&#39;t posted until after lecture.",
+        "type": "question",
+        "created": "2022-09-13T08:55:21.078Z",
+        "subject": "Lecture Slide Posting",
+        "_id": "l7zykws6me727k"
+    },
+    {
+        "content": "<p>@29</p>",
+        "type": "i_answer",
+        "created": "2022-09-13T14:13:46.905Z",
+        "_id": "l7zykws6me727k"
+    },
+    {
+        "content": "I saw the answer to question 29 - I think my question wasn&#39;t clear. Is there any circumstance and way in which we can get the lecture slides earlier than the day of the lecture?",
+        "type": "followup",
+        "created": "2022-09-13T14:22:01.090Z",
+        "_id": "l7zykws6me727k"
+    },
+    {
+        "content": "<p>It depends on the presenter for each lecture. Generally, it&#39;s not our policy to make the slides available significantly prior to lecture. We do aim, however, to have the slides posted by the time lecture starts, so that you can follow along. Yesterday was an exception, which we try to avoid.</p>",
+        "type": "followup_response",
+        "created": "2022-09-13T18:01:19.689Z",
+        "_id": "l7zykws6me727k"
+    }
+]

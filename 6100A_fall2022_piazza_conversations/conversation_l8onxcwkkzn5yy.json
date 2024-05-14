@@ -1,0 +1,33 @@
+[
+    {
+        "content": "<p>I missed the checkoff for pset 1 due to bad planning on my part. Is there anything I can do? What percent of the pset grade is the checkoff?</p>",
+        "type": "question",
+        "created": "2022-09-30T15:51:20.468Z",
+        "subject": "missed checkoff 1",
+        "_id": "l8onxcwkkzn5yy"
+    },
+    {
+        "content": "<p>It&#39;s 30% of your pset grade, but you can also use a late day.</p>",
+        "type": "i_answer",
+        "created": "2022-09-30T15:57:00.053Z",
+        "_id": "l8onxcwkkzn5yy"
+    },
+    {
+        "content": "<p>Thanks for responding - the course info says late days can\u2019t be used for checkoffs. Should I just go to the next office hours and get my pset 1 checkoff and ask for a late day?\u00a0</p>",
+        "type": "followup",
+        "created": "2022-09-30T15:59:37.477Z",
+        "_id": "l8onxcwkkzn5yy"
+    },
+    {
+        "content": "<md>just fyi this student came to OH for a checkoff citing this piazza post, although I'm not sure if a late day can actually be used for a checkoff or not (i fully believe it should be allowed for this student, but for the future). can someone confirm the course policy?</md>",
+        "type": "followup",
+        "created": "2022-09-30T17:32:25.890Z",
+        "_id": "l8onxcwkkzn5yy"
+    },
+    {
+        "content": "<p>You can&#39;t use late days on checkoffs.\u00a0</p>",
+        "type": "followup_response",
+        "created": "2022-10-03T15:15:16.340Z",
+        "_id": "l8onxcwkkzn5yy"
+    }
+]

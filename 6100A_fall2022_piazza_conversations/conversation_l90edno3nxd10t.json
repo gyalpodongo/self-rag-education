@@ -1,0 +1,45 @@
+[
+    {
+        "content": "<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fkt7v5h0uuwf4wp%2F0f109162ecb96c9d2319ee2ea9726cec34cc9c655f4757082c298e866a4224c5%2FScreenshot_%281%29.png\" width=\"806\" height=\"335\" alt=\"\" /></p>\n<p></p>\n<p>I&#39;m failing the test case for the date_from_string function on PSET 4, but looking at the test case I can&#39;t seem to figure out what is wrong. Is there an error with the test case or is there something I am missing?</p>\n<p></p>",
+        "type": "question",
+        "created": "2022-10-08T20:57:18.867Z",
+        "subject": "date_from_string test case",
+        "_id": "l90edno3nxd10t"
+    },
+    {
+        "content": "<p>I am getting this exact same thing!!!</p>\n<p></p>",
+        "type": "followup",
+        "created": "2022-10-08T21:15:33.512Z",
+        "_id": "l90edno3nxd10t"
+    },
+    {
+        "content": "Make sure that d is made of ints and not Strings!",
+        "type": "s_answer",
+        "created": "2022-10-08T22:09:41.029Z",
+        "_id": "l90edno3nxd10t"
+    },
+    {
+        "content": "<p>I am also getting the same error even after I pass the string through the date_from_string function. Should I not be passing the string through the date_from_string function?</p>",
+        "type": "followup",
+        "created": "2022-10-09T00:54:15.144Z",
+        "_id": "l90edno3nxd10t"
+    },
+    {
+        "content": "Are you returning a Date object or a string with date_from_string? Be sure you\u2019re returning an instance of Date with this method.",
+        "type": "i_answer",
+        "created": "2022-10-09T06:03:55.336Z",
+        "_id": "l90edno3nxd10t"
+    },
+    {
+        "content": "<p>When constructing the date object, make sure the arguments that define the year, month and day are integers. For instance:</p>\n<p></p>\n<p>$$\\text{day='20'}$$</p>\n<p>$$\\text{month='11'}$$</p>\n<p>$$\\text{year='1999'}$$</p>\n<p></p>\n<p>You should cast these as int types before creating an instance of the Date class with these arguments, otherwise it doesn&#39;t equate with instances made from int types for some reason. I hope the image below makes it clearer.<img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl7sls1i5gba4ho%2F39e4f375289f5fffd81c93df5cba5dad7de914337baeb7ba9d1db5283b82ca29%2Ftemppiazzaansw.PNG\" width=\"440\" height=\"300\" alt=\"Date type from string vs from int\" /></p>",
+        "type": "followup_response",
+        "created": "2022-10-11T03:46:03.164Z",
+        "_id": "l90edno3nxd10t"
+    },
+    {
+        "content": "<p>Also remember that using the\u00a0<strong>==</strong> operator to compare equality between instances of objects is not actually comparing the functional equality of two objects, and you should not be using this to test if the objects are equal. The\u00a0<strong>==</strong> operator for class instances tests if two objects\u00a0<strong>point to the same data</strong>. For instance:</p>\n<p></p>\n<pre>\nx = Date(2022, 1, 5)\ny = x\nprint(x == y) # returns True\n\ny = Date(2022, 1, 5)\nprint(x == y) # Does not return True unless we \n\t\t\t\t\t\t\t# override the equality operator from within the class!</pre>",
+        "type": "followup_response",
+        "created": "2022-10-12T01:17:20.362Z",
+        "_id": "l90edno3nxd10t"
+    }
+]

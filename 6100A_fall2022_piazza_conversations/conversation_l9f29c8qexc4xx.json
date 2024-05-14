@@ -1,0 +1,15 @@
+[
+    {
+        "content": "Hi I received a 0 on finger exercise #6, though I believe my code is correct. The question tells us to start writing the code from within the function, so this is what I did, so I did not define the function up top(as already given). I also received a 0 on finger excsersize #7 though I believe my code was partially correct, is there any way to get partial credit here? Thanks",
+        "type": "question",
+        "created": "2022-10-19T03:14:34.682Z",
+        "subject": "finger exercise grades",
+        "_id": "l9f29c8qexc4xx"
+    },
+    {
+        "content": "<p>I&#39;m sorry but we can&#39;t allow resubmission of fex6. Remember that the test cases are there to help you figure out where you went wrong. I&#39;ll make a note of your situation and take it into account for final grades.\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-10-19T14:02:39.082Z",
+        "_id": "l9f29c8qexc4xx"
+    }
+]

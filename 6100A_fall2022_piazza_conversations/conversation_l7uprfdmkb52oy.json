@@ -1,0 +1,51 @@
+[
+    {
+        "content": "<p>Is the total amount of points possible for finger exercise 1 supposed to be 10%? I tried other codes, but that was the highest I could get it.\u00a0</p>",
+        "type": "question",
+        "created": "2022-09-09T16:49:37.690Z",
+        "subject": "Finger Exercise 1",
+        "_id": "l7uprfdmkb52oy"
+    },
+    {
+        "content": "I had the same issue. I think that 10% is the highest.",
+        "type": "s_answer",
+        "created": "2022-09-09T17:07:19.793Z",
+        "_id": "l7uprfdmkb52oy"
+    },
+    {
+        "content": "<md>I think you should be able to get up to 100%! \n\nIf you click \"Show/Hide Detailed Results\" underneath the submission box, you will be able to see which test cases passed and which ones didn't, and perhaps you can change your code accordingly to improve your score. Feel free to post a followup question or drop by office hours if you're still experiencing issues!</md>",
+        "type": "i_answer",
+        "created": "2022-09-09T18:58:10.666Z",
+        "_id": "l7uprfdmkb52oy"
+    },
+    {
+        "content": "<p>How do we fulfill more than one test case? When I add more code to work for other test cases, the whole thing shows up as wrong because there are multiple lines that are deemed the ans.\u00a0</p>",
+        "type": "followup",
+        "created": "2022-09-09T19:48:14.961Z",
+        "_id": "l7uprfdmkb52oy"
+    },
+    {
+        "content": "<p>You hard-coded the value for fahrenheit in the submission.\u00a0i.e. there ts a line in the code that says something like:</p>\n<p></p>\n<pre>\nfahrenheit=140</pre>\n<p>Just write your code assuming that such a line is defined by the grader. i.e. assume that we define the value for fahrenheit</p>",
+        "type": "followup_response",
+        "created": "2022-09-09T20:55:00.821Z",
+        "_id": "l7uprfdmkb52oy"
+    },
+    {
+        "content": "<p>That worked! Thank you so much!</p>",
+        "type": "followup_response",
+        "created": "2022-09-09T21:01:43.554Z",
+        "_id": "l7uprfdmkb52oy"
+    },
+    {
+        "content": "Worked for me too now. Thank you!!",
+        "type": "followup",
+        "created": "2022-09-09T21:22:35.359Z",
+        "_id": "l7uprfdmkb52oy"
+    },
+    {
+        "content": "Worked for me too now, thank you!!",
+        "type": "followup_response",
+        "created": "2022-09-09T21:23:34.871Z",
+        "_id": "l7uprfdmkb52oy"
+    }
+]

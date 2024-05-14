@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Is there any way to argue an autograded score on the PSETs?</p>",
+        "type": "question",
+        "created": "2022-09-26T19:07:55.495Z",
+        "subject": "Argue an Autograded Score",
+        "_id": "l8j56rc7nrz31m"
+    },
+    {
+        "content": "<p>What is it you&#39;d like to argue about the score?</p>",
+        "type": "followup",
+        "created": "2022-09-27T03:55:16.416Z",
+        "_id": "l8j56rc7nrz31m"
+    }
+]

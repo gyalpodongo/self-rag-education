@@ -1,0 +1,21 @@
+[
+    {
+        "content": "<p>My tester file gave me a 5/5 for the functions and it was working properly, but the autograder minused me some points. I would want to see if the error in the autograder was a result of format and not a mistake as the TAs told me if it was just format I can get some grades back.</p>",
+        "type": "question",
+        "created": "2022-10-03T21:30:51.342Z",
+        "subject": "Can we check if the autograder for PSET 2 failed for one function because of a formatting issue?",
+        "_id": "l8tadj662md5q0"
+    },
+    {
+        "content": "<p><strong attention=\"j7awud7zf0p2uu\">@Kuan Wei Huang</strong> I think this was a student I talked to. They got like 91% but wanted as many points back as possible</p>",
+        "type": "followup",
+        "created": "2022-10-03T22:32:33.043Z",
+        "_id": "l8tadj662md5q0"
+    },
+    {
+        "content": "<p>Hi Noura, I took a look at your pset2 code. There&#39;s a bug in your wildcard implementation - when you enter a wildcard, the revealed letter is at the wrong place. Feel free to reach out if you have further questions. Thanks.</p>",
+        "type": "i_answer",
+        "created": "2022-10-04T00:44:31.770Z",
+        "_id": "l8tadj662md5q0"
+    }
+]

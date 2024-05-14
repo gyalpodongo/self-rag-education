@@ -1,0 +1,21 @@
+[
+    {
+        "content": "<p>Hello,</p>\n<p></p>\n<p>My problem set 1 code worked for all parts, but I see a 60% on the autochecker portion. Would it be possible to request someone manual goes over the outputs?</p>\n<p></p>\n<p>Thanks,</p>\n<p>Alex Horne</p>",
+        "type": "question",
+        "created": "2022-09-29T18:37:48.314Z",
+        "subject": "Problem Set 1 code works but apparently failed autochecker.",
+        "_id": "l8nefkwqzvq750"
+    },
+    {
+        "content": "<p><strong attention=\"j7awud7zf0p2uu\">@Kuan Wei Huang</strong>\u00a0</p>",
+        "type": "followup",
+        "created": "2022-09-30T15:57:48.291Z",
+        "_id": "l8nefkwqzvq750"
+    },
+    {
+        "content": "<p>Hi Alex, I manually graded your pset and you passed all the staff test cases. You should see an update in your pset1 grade soon. Thanks.</p>",
+        "type": "i_answer",
+        "created": "2022-09-30T16:15:50.113Z",
+        "_id": "l8nefkwqzvq750"
+    }
+]

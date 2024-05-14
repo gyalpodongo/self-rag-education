@@ -1,0 +1,33 @@
+[
+    {
+        "content": "<p>Hi, I am having trouble submitting Pset4 since the website looks odd on my end (it&#39;s not in its usual format). After I upload my Pset, it wouldn&#39;t react when I hit the submit button. I&#39;ve tried other browsers but still cannot open the website/ upload it. Is there any way to solve it? Thank you!\u00a0</p>",
+        "type": "question",
+        "created": "2022-10-13T21:22:15.188Z",
+        "subject": "Unable to submit pset4",
+        "_id": "l97kgzkksml1vs"
+    },
+    {
+        "content": "Same thing is happening to me, and when I refresh the page or click on a subpage it just shows a gateway error page. Chrome, Edge, and mobile too nothing is working.",
+        "type": "followup",
+        "created": "2022-10-13T21:24:11.899Z",
+        "_id": "l97kgzkksml1vs"
+    },
+    {
+        "content": "Yeah, this is happening to me as well...",
+        "type": "followup",
+        "created": "2022-10-13T21:37:50.830Z",
+        "_id": "l97kgzkksml1vs"
+    },
+    {
+        "content": "<p>same for me!! im getting a 502 error and can&#39;t get on to submit</p>",
+        "type": "followup",
+        "created": "2022-10-13T22:12:52.813Z",
+        "_id": "l97kgzkksml1vs"
+    },
+    {
+        "content": "<p>At least y&#39;all are done :sob:</p>",
+        "type": "followup",
+        "created": "2022-10-13T22:18:39.437Z",
+        "_id": "l97kgzkksml1vs"
+    }
+]

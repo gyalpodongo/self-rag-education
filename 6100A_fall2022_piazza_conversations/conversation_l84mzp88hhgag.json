@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>I&#39;m looking through my MCQ #1 and trying to improve my code to get the correct answers.</p>\n<p></p>\n<p>During the quiz, I know we could submit and they would run test cases for us. Now that the quiz is submitted, I know we can&#39;t submit new code anymore. Is there a way to test our code without manually inputting every sample run?</p>\n<p></p>\n<p>Thank you!</p>",
+        "type": "question",
+        "created": "2022-09-16T15:29:46.617Z",
+        "subject": "Checking new code for MCQ1",
+        "_id": "l84mzp88hhgag"
+    },
+    {
+        "content": "<md>The best option here would be to run the code for certain inputs(so change the variable to another input and run the program again) and check your code that way. The online platform won't allow you to submit new code and there aren't public test cases to be run unfortunately for the quizzes.  \n\nIf you want to check/talk about your code or learn more about how to more efficiently check your code, feel free to stop by office hours!</md>",
+        "type": "i_answer",
+        "created": "2022-09-18T17:18:33.191Z",
+        "_id": "l84mzp88hhgag"
+    }
+]

@@ -1,0 +1,51 @@
+[
+    {
+        "content": "<md>```\ndef load_data(csv, price):\n    Date, Open, High, Low, Close = [], [], [], [], []\n    with open(csv, \"r\")  as f:\n        weird = [\"\\\"\", \".\", \",\", \"/\"]\n        data = f.read()\n        data = data[24:]\n        \n        new = \"\"\n        for i in range (0,len(data)-1):\n            if data[i+1] != \"\\\"\":\n              new += data[i]\n        new = new.replace(\"\\\"\", \" \")\n        new = new.replace(\"\\n\", \"\")\n        new = new.split(\" \")\n        for i in new:\n          if len(i) == 0:\n            new.remove(i)\n        for x in range (0, len(new), 5):\n            Date.append(date_from_string(new[x]))\n            Open.append(new[x+1])\n            High.append(new[x+2])\n            Low.append(new[x+3])\n            Close.append(new[x+4])\n    final = [Date]\n    \n    if price == \"Open\":\n        final.append(Open)\n        return(tuple(final))\n    if price == \"High\":\n        final.append(High)\n        return(tuple(final))\n    if price == \"Low\":\n        final.append(Low)\n        return(tuple(final))\n    if price == \"Close\":\n        final.append(Close)\n        # print(tuple(final))\n        output = tuple(final)\n        return output```\n\nFor some reason, my code here will not return out anything (but will print out when prompted as I called upon it in the commented print statement at the end here). tuple(final) is what I'm trying to return and it should be the correct output according to the test cases. I called this line in the main function of the ps4.py file when I tried to debug my code: \n```load_data(\"datasets/mock1.csv\", \"Close\")```\n\nCan someone look at this please? \n\nThank you!</md>",
+        "type": "question",
+        "created": "2022-10-08T23:04:57.969Z",
+        "subject": "Return Does Not Work",
+        "_id": "l90ixtgxj3k69s"
+    },
+    {
+        "content": "<p>I ran your code, and I&#39;m not seeing the problem you&#39;re describing. For me, it returns out the result:</p>\n<p>([None, None, None, None, None], [&#39;1,000.0&#39;, &#39;1,001.0&#39;, &#39;1,002.0&#39;, &#39;1,003.0&#39;, &#39;1,004.0&#39;])</p>\n<p></p>\n<p>If you&#39;re using Spyder, you might want to try restarting it!</p>",
+        "type": "i_answer",
+        "created": "2022-10-09T20:27:06.716Z",
+        "_id": "l90ixtgxj3k69s"
+    },
+    {
+        "content": "<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl7nujc227fj3b1%2F10cd3bae06b3adccb40c0264fbfed947a70f9175256ea3294c800a1658430134%2FScreen_Shot_2022-10-09_at_4.31.57_PM.png\" width=\"3024\" height=\"1964\" alt=\"\" />For me, it does not return anything even when I restart Spyder.</p>\n<p>(The warning sign is just that I never used the list weird in my code. The first time that outputted was with a print statement instead of return.)</p>\n<p></p>",
+        "type": "followup",
+        "created": "2022-10-09T20:33:49.439Z",
+        "_id": "l90ixtgxj3k69s"
+    },
+    {
+        "content": "<p>when you call it like that, it might return something, but it doesn&#39;t do anything with what you returned. If you want to see it on your console, you need to print the result</p>\n<p>(i.e <kbd>print(load_data(&#34;datasets/mock1.csv&#34;, &#34;Open&#34;))</kbd> )</p>",
+        "type": "followup_response",
+        "created": "2022-10-09T20:39:57.278Z",
+        "_id": "l90ixtgxj3k69s"
+    },
+    {
+        "content": "<p>But wouldn&#39;t this mean that I would not pass the test cases even if I have the correct tuple? I can generate the correct tuples right now for the given test cases but the tester itself is giving an error.</p>\n<p></p>",
+        "type": "followup_response",
+        "created": "2022-10-09T21:08:42.782Z",
+        "_id": "l90ixtgxj3k69s"
+    },
+    {
+        "content": "<p>what error are the test cases giving?</p>",
+        "type": "followup_response",
+        "created": "2022-10-09T21:19:56.804Z",
+        "_id": "l90ixtgxj3k69s"
+    },
+    {
+        "content": "<p>[-0.6]: load_data() did not import the dataset correctly.<br />[-0.8]: load_data() generated an error while importing the dataset.</p>\n<p></p>\n<p>I loaded both of the two datasets (the mock and the SP500) and they both gave me correct results( a tuple made of two lists of date and prices in the order that they are given)). I ran the code I have on my own in Spyder in the tester.py that I have but it would not work when I load it into the actual Pset tester. I think it is still the return function&#39;s issue.</p>",
+        "type": "followup_response",
+        "created": "2022-10-09T21:43:08.517Z",
+        "_id": "l90ixtgxj3k69s"
+    },
+    {
+        "content": "<p>Update: it still does not work even for the next few functions, but by manually calling upon the function in the command line it does return the correct output. Is there anything I can do?</p>",
+        "type": "followup_response",
+        "created": "2022-10-10T23:59:33.346Z",
+        "_id": "l90ixtgxj3k69s"
+    }
+]

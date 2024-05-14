@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>The autograder for PSET 2 gave me a zero even though my code passed all the test cases provided. On the results page, it says &#34;Your code passed 0 public tests for 0.0000 points out of 0.0000.&#34; Will my code be regraded manually?</p>",
+        "type": "question",
+        "created": "2022-10-02T01:09:08.752Z",
+        "subject": "0% With PSET 2 autograder",
+        "_id": "l8qnajv4j0b35l"
+    },
+    {
+        "content": "<md>If you received a zero on the pset, we take a look at it via manual grading to see if a simple mistake somewhere messed up the test cases.</md>",
+        "type": "i_answer",
+        "created": "2022-10-02T16:30:24.542Z",
+        "_id": "l8qnajv4j0b35l"
+    }
+]

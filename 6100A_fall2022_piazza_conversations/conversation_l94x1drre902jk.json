@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi,</p>\n<p></p>\n<p>Struggling to implement the frame_maker function. I thought that I might need to call frame_data first to &#39;initialise&#39; the frame, but that didn&#39;t work. Any advice? My code is below.</p>\n<p></p>\n<p>Thanks,<br /><br />Nick<br /><br /><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl7qkbu94gfn4uv%2F4227b02f72742a58a6f070a7f934b49d38b711f51d9962033638365b82de4aec%2Fimage.png\" alt=\"image.png\" /></p>",
+        "type": "question",
+        "created": "2022-10-12T00:50:43.575Z",
+        "subject": "frame_maker query",
+        "_id": "l94x1drre902jk"
+    },
+    {
+        "content": "<p>Think about the scope of the variables you&#39;re using. You define a function within a function that references the\u00a0<strong>time</strong> variable.\u00a0<strong>time</strong> is an input to\u00a0<strong>frame_maker</strong><strong>()</strong> but not to\u00a0<strong>processor()</strong>, so you will hit an error when your DataFrame object calls the\u00a0<strong>processor()</strong> function because it doesn&#39;t know what\u00a0<strong>time</strong> is.</p>\n<p></p>\n<p>My recommendation is to see whether\u00a0<strong>time</strong> is None, and dependent on that, create / return a function for each of those possibilities.</p>",
+        "type": "i_answer",
+        "created": "2022-10-12T00:55:14.563Z",
+        "_id": "l94x1drre902jk"
+    }
+]

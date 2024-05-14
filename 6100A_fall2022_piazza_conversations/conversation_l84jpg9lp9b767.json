@@ -1,0 +1,27 @@
+[
+    {
+        "content": "Hello, for commenting code, how descriptive do we need to be/how many comments per section are typical? I tried looking at the style guide, but is there a more thorough example of comments in code that you&#39;d recommend as a good reference?\n\nThanks so much!",
+        "type": "question",
+        "created": "2022-09-16T13:57:49.593Z",
+        "subject": "Commenting Code",
+        "_id": "l84jpg9lp9b767"
+    },
+    {
+        "content": "<p>As long as the comments help you or someone else understand your code, there are no wrong answers. Style won&#39;t be graded on the first checkoff, so it&#39;s a great opportunity to get feedback from an LA/TA on your commenting style. For the first pset, aim for over-commenting rather than under!</p>\n<p></p>\n<p>Here&#39;s some code that checks if a number is even or odd, with how I might comment it:</p>\n<pre>\nnum = input(&#39;Input a number: &#39;)\nif num % 2 == 0:  # Check if num is even\n    print(&#39;Your number is even!&#39;)\nelse:  # Otherwise, num must be odd\n    print(&#39;Your number is odd!&#39;)</pre>",
+        "type": "i_answer",
+        "created": "2022-09-16T15:09:55.393Z",
+        "_id": "l84jpg9lp9b767"
+    },
+    {
+        "content": "Do we have to do duplicate comments if parts of the code are the same in different parts of the pset (ex: part a and b)",
+        "type": "followup",
+        "created": "2022-09-16T19:48:00.504Z",
+        "_id": "l84jpg9lp9b767"
+    },
+    {
+        "content": "<p>It wouldn&#39;t hurt! Especially since they are in two different files (the rationale being that if someone opened up either independently, they might still want to know what the code means!)</p>",
+        "type": "followup_response",
+        "created": "2022-09-19T03:38:44.399Z",
+        "_id": "l84jpg9lp9b767"
+    }
+]

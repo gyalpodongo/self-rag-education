@@ -1,0 +1,33 @@
+[
+    {
+        "content": "My code passed all of the test cases on the student tester. After, I went through the check off and the TA told me my code was good. However, the autograder gave me a 40% which doesn\u2019t seem likely given the fact that the tester gave me a 100. Is there any way I could get points from a manual grade.\u00a0<div>Thank you very much</div>",
+        "type": "question",
+        "created": "2022-10-18T03:52:33.131Z",
+        "subject": "PSET 4 Autograder",
+        "_id": "l9do6bmz6lj63c"
+    },
+    {
+        "content": "<p><strong attention=\"j7awud7zf0p2uu\">@Kuan Wei Huang</strong> I missed one</p>",
+        "type": "followup",
+        "created": "2022-10-19T20:51:01.973Z",
+        "_id": "l9do6bmz6lj63c"
+    },
+    {
+        "content": "<p>Sure will take a look. What&#39;s your kerb?</p>",
+        "type": "i_answer",
+        "created": "2022-10-21T12:25:33.772Z",
+        "_id": "l9do6bmz6lj63c"
+    },
+    {
+        "content": "My kerb is djtufto. Thanks again",
+        "type": "followup",
+        "created": "2022-10-21T15:59:17.800Z",
+        "_id": "l9do6bmz6lj63c"
+    },
+    {
+        "content": "<p>You&#39;ve been added to the regrade list and should see an updated score next week. Thank you for your patience.</p>",
+        "type": "followup_response",
+        "created": "2022-10-21T18:59:17.032Z",
+        "_id": "l9do6bmz6lj63c"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi, I believe I have received a high enough grade between the first two microquizzes so I do not need to take Microquiz 3. Can I take the third microquiz remotely for practice, or would you prefer anyone attempting the problems to do them in person?</p>",
+        "type": "question",
+        "created": "2022-10-05T12:36:03.285Z",
+        "subject": "Taking Microquiz 3 Remotely",
+        "_id": "l8vm5h79j694ir"
+    },
+    {
+        "content": "<p>If you are accessing the exam, we require you to join the class in-person. Thanks for checking.\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-10-05T13:01:56.291Z",
+        "_id": "l8vm5h79j694ir"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Why am I getting an error that &#39;ans&#39; is not defined when it was not my job but the test case&#39;s job to define it?</p>\n<p></p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl7tdu6121up3w4%2Fe3377d9cf76f92a8218d4cfe0c3b8aa13f3d6fe7ba6ad96d525f6c9f5197bb87%2Fimage.png\" alt=\"image.png\" /></p>",
+        "type": "question",
+        "created": "2022-09-28T15:32:02.436Z",
+        "subject": "Finger Exercise Lec 6: &#39;ans&#39; is not defined",
+        "_id": "l8lscu10glp2ug"
+    },
+    {
+        "content": "The variable answer is defined using the output your function returns. If you return an incorrect output, or the output in an incorrect format, you might run into these problems",
+        "type": "i_answer",
+        "created": "2022-09-29T00:15:49.471Z",
+        "_id": "l8lscu10glp2ug"
+    }
+]

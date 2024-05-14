@@ -1,0 +1,15 @@
+[
+    {
+        "content": "Hey! My code for problem 2 of the Lecture 3 Finger Exercises is being told that it only passes 70% of the the test cases. However, it is printing the correct answer just being marked wrong. How do I fix this?<img src=\"https://piazza.com/redirect/s3?bucket=uploads&amp;prefix=attach%2Fl5s90ip6zjd5tz%2Fku1lbdldsos51f%2Fclolqviynokv%2Fpublic_2022_09_18.jpg\" /><p></p>",
+        "type": "question",
+        "created": "2022-09-18T19:13:56.078Z",
+        "subject": "Issues With Lecture 3 Finger Exercises",
+        "_id": "l87pvo8eo381e3"
+    },
+    {
+        "content": "<p>Please make a private piazza post sharing your code or come to office hours. The grader seems to be working fine on our end.</p>\n<p></p>\n<p>Edit by Ana: Notice that the test cases you are failing happen when the str is 1 or 2 chars long. Your if statement for that case is printing the correct thing, which is good. But, you have a final print statement at the end of your conditionals. So for these test cases you are printing a final empty line below the correct printout.\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-09-19T03:36:50.600Z",
+        "_id": "l87pvo8eo381e3"
+    }
+]

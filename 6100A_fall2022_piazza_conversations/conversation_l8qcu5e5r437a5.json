@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi,</p>\n<p>Can I still get a new pset buddy for pset3 since my pset buddy dropped the class?</p>\n<p>Thank you!</p>",
+        "type": "question",
+        "created": "2022-10-01T20:16:27.341Z",
+        "subject": "My pset buddy dropped the class",
+        "_id": "l8qcu5e5r437a5"
+    },
+    {
+        "content": "<p>We can pair you with Ryan Cader: recypher@mit.edu</p>",
+        "type": "i_answer",
+        "created": "2022-10-03T15:17:18.900Z",
+        "_id": "l8qcu5e5r437a5"
+    }
+]

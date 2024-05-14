@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Can we make helper functions for this pset, or should all the code be in the given functions on the pset?</p>",
+        "type": "question",
+        "created": "2022-10-02T12:44:12.261Z",
+        "subject": "Helper Functions?",
+        "_id": "l8rc4ehxu9y3c0"
+    },
+    {
+        "content": "<md>You should be able to put all your code in the given functions. If you want more helper functions, just be sure to check for accuracy and that test cases work fine as more code/helper functions can sometimes cause some bugs.</md>",
+        "type": "i_answer",
+        "created": "2022-10-02T16:46:16.152Z",
+        "_id": "l8rc4ehxu9y3c0"
+    }
+]

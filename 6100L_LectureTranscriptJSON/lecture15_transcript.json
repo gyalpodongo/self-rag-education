@@ -1,0 +1,1870 @@
+[
+    {
+        "timestamp": "00:00:36",
+        "content": "RECURSION"
+    },
+    {
+        "timestamp": "00:02:00",
+        "content": "ITERATIVE ALGORITHMS SO FAR"
+    },
+    {
+        "timestamp": "00:03:51",
+        "content": "MULTIPLICATION"
+    },
+    {
+        "timestamp": "00:04:24",
+        "content": "MULTIPLICATION THINK in TERMS of ITERATION"
+    },
+    {
+        "timestamp": "00:05:18",
+        "content": "MULTIPLICATION ANOTHER ITERATIVE SOLUTION"
+    },
+    {
+        "timestamp": "00:06:48",
+        "content": "MULTIPLICATION NOTICE the RECURSIVE PATTERNS"
+    },
+    {
+        "timestamp": "00:09:12",
+        "content": "problem is using * between two"
+    },
+    {
+        "timestamp": "00:09:21",
+        "content": "MULTIPLICATION FIND SMALLER VERSIONS of the PROBLEM"
+    },
+    {
+        "timestamp": "00:11:12",
+        "content": "\u2022 Original problem is using * between"
+    },
+    {
+        "timestamp": "00:11:33",
+        "content": "MULTIPLICATION BUILD the RESULT BACK UP"
+    },
+    {
+        "timestamp": "00:12:45",
+        "content": "MULTIPLICATION RECURSIVE and BASE STEPS"
+    },
+    {
+        "timestamp": "00:14:24",
+        "content": "MULTIPLICATION \u2014 RECURSIVE CODE Python"
+    },
+    {
+        "timestamp": "00:21:24",
+        "content": "REAL LIFE EXAMPLE Student requests a regrade: ONLY ONE\u2026"
+    },
+    {
+        "timestamp": "00:26:39",
+        "content": "BIG IDEA"
+    },
+    {
+        "timestamp": "00:27:03",
+        "content": "WHAT IS RECURSION?"
+    },
+    {
+        "timestamp": "00:29:09",
+        "content": "return pm"
+    },
+    {
+        "timestamp": "00:30:09",
+        "content": "return prod"
+    },
+    {
+        "timestamp": "00:30:51",
+        "content": "FACTORIAL"
+    },
+    {
+        "timestamp": "00:38:12",
+        "content": "RECURSIVE FUNCTION SCOPE EXAMPLE"
+    },
+    {
+        "timestamp": "00:40:48",
+        "content": "SOME OBSERVATIONS Python Tutor LINK for factorial"
+    },
+    {
+        "timestamp": "00:41:18",
+        "content": "ITERATION RECURSION"
+    },
+    {
+        "timestamp": "00:42:45",
+        "content": "WHEN to USE RECURSION? SO FAR WE SAW VERY SIMPLE CODE"
+    },
+    {
+        "timestamp": "00:00:01",
+        "content": "And you got. All right, everybody."
+    },
+    {
+        "timestamp": "00:00:06",
+        "content": "I was afraid I was going to be the only one wearing something today."
+    },
+    {
+        "timestamp": "00:00:17",
+        "content": "I guess not. That's awesome. So I was going to actually wear this and then I remembered we're being recorded for OpenCourseWare, so I thought I should be a little bit more professional. So I'm going to go a little bit more professional today."
+    },
+    {
+        "timestamp": "00:00:27",
+        "content": "All right. Let's not forget my caller that completes the ensemble."
+    },
+    {
+        "timestamp": "00:00:32",
+        "content": "All right. Now I'm twinning with my meme, so that's awesome."
+    },
+    {
+        "timestamp": "00:00:36",
+        "content": "All right. So let's get started on today's lecture."
+    },
+    {
+        "timestamp": "00:00:40",
+        "content": "So today we're going to be doing one of two lectures on the topic of recursion, and you may or may not have heard of recursion."
+    },
+    {
+        "timestamp": "00:00:48",
+        "content": "It's a programing technique and a way to algorithmically solve problems."
+    },
+    {
+        "timestamp": "00:00:55",
+        "content": "It's not something that it's going to come easy because it's going to force our"
+    },
+    {
+        "timestamp": "00:01:01",
+        "content": "brain to think about problems that we've seen in a completely different way."
+    },
+    {
+        "timestamp": "00:01:11",
+        "content": "Okay. So you don't have to use recursion if you don't want to, but there will be problems where the idea of recursion in applying or writing recursive"
+    },
+    {
+        "timestamp": "00:01:18",
+        "content": "code is going to come a lot more naturally than writing code that we have seen so far."
+    },
+    {
+        "timestamp": "00:01:23",
+        "content": "But I'm just warning you, it's going to take a little bit of kind of forgetting everything we've learned about loops and"
+    },
+    {
+        "timestamp": "00:01:35",
+        "content": "things like that to train our brain to think recursively for the next two lectures to help you, we will have an interactive portion of today's lecture. So think about whether you want to come up on stage or whatever."
+    },
+    {
+        "timestamp": "00:01:42",
+        "content": "This is the front and be a part of the interaction you'll be forever immortalized in on the OpenCourseWare."
+    },
+    {
+        "timestamp": "00:01:51",
+        "content": "Um, awesome. I love it on the OpenCourseWare videos."
+    },
+    {
+        "timestamp": "00:01:58",
+        "content": "All right, so let's think about iterative algorithms that we've seen so far."
+    },
+    {
+        "timestamp": "00:02:06",
+        "content": "So iterative algorithm basically means we are writing code that has a loop within it, right?"
+    },
+    {
+        "timestamp": "00:02:12",
+        "content": "So either a four loop or a Y loop writing code with these for loops or while loops are lead to iterative algorithms."
+    },
+    {
+        "timestamp": "00:02:18",
+        "content": "So things that that do some task, some for some repetition."
+    },
+    {
+        "timestamp": "00:02:25",
+        "content": "So the idea of iterative algorithm is that there are some variables that capture the state of the computation."
+    },
+    {
+        "timestamp": "00:02:33",
+        "content": "So each time through the loop, these variables will change their value, essentially capturing what the values are at each step in the loop."
+    },
+    {
+        "timestamp": "00:02:41",
+        "content": "So when we're writing these iterative algorithms, we basically think about what is something that's changing each time through the loop."
+    },
+    {
+        "timestamp": "00:02:48",
+        "content": "Like we keep running some. Like that's the easiest example, right?"
+    },
+    {
+        "timestamp": "00:02:52",
+        "content": "What is a variable that's changing each time through the loop?"
+    },
+    {
+        "timestamp": "00:02:56",
+        "content": "Kind of like a counter that keeps track of how many times we've been through a loop."
+    },
+    {
+        "timestamp": "00:03:01",
+        "content": "When do you stop? So for four loops you stop after you've exhausted a sequence for why loops you stopped when you have a condition that becomes false."
+    },
+    {
+        "timestamp": "00:03:09",
+        "content": "And then at the end of the loop, you have some sort of result that you've been storing and accumulating or changing each time through the loop."
+    },
+    {
+        "timestamp": "00:03:17",
+        "content": "So that's an iterative algorithm and we've been working with these a lot."
+    },
+    {
+        "timestamp": "00:03:22",
+        "content": "So in to show you, we're going to go through the next few slides showing you an iterative algorithm to do multiplication."
+    },
+    {
+        "timestamp": "00:03:29",
+        "content": "It's going to be very, very simple."
+    },
+    {
+        "timestamp": "00:03:41",
+        "content": "But we're also then after going to look at the same problem, which is doing multiplication, but in the context of recursion, and hopefully that gives you a sense for how we think about the exact same problem"
+    },
+    {
+        "timestamp": "00:03:45",
+        "content": "we're trying to solve multiplying two numbers together in a completely different way."
+    },
+    {
+        "timestamp": "00:03:51",
+        "content": "So this is not the function that I want to write with iteration. I don't want to create a function named mult and then return a mode eight a star."
+    },
+    {
+        "timestamp": "00:03:58",
+        "content": "B Right. I don't want to use the built in function. I want to assume that I don't know how to do a star multiplication."
+    },
+    {
+        "timestamp": "00:04:06",
+        "content": "And so instead what I'm going to do is I'm going to rely on, let's say I know how to do addition."
+    },
+    {
+        "timestamp": "00:04:12",
+        "content": "I'm going to rely on the idea of addition to actually write my multiplication function."
+    },
+    {
+        "timestamp": "00:04:19",
+        "content": "So let's think about how to make multiplication, iterative."
+    },
+    {
+        "timestamp": "00:04:23",
+        "content": "We can have a loop, right? That that adds A to itself."
+    },
+    {
+        "timestamp": "00:04:29",
+        "content": "B times. Right. That is the definition of multiplication."
+    },
+    {
+        "timestamp": "00:04:33",
+        "content": "So let's write a function that does this using a four loop, then we'll write it using a while loop."
+    },
+    {
+        "timestamp": "00:04:39",
+        "content": "With a for loop. We're going to write this iterative algorithm."
+    },
+    {
+        "timestamp": "00:04:43",
+        "content": "It's capturing the state of the computation, just like we said we should."
+    },
+    {
+        "timestamp": "00:04:47",
+        "content": "So the for loop will iterate will have my sort of range of values being from zero to be."
+    },
+    {
+        "timestamp": "00:04:53",
+        "content": "So we're going to repeat this loop of V times and the variable total is capturing my state of the computation."
+    },
+    {
+        "timestamp": "00:05:01",
+        "content": "Right? It's keeping track of what the total is at each step through my loop."
+    },
+    {
+        "timestamp": "00:05:06",
+        "content": "At the end of the loop, I return the total. Okay. So very, very simple iterative of function here."
+    },
+    {
+        "timestamp": "00:05:14",
+        "content": "Now let's think about another iterative solution."
+    },
+    {
+        "timestamp": "00:05:15",
+        "content": "Instead of keeping a loop variable B that goes from zero all the way up to B or what was in my loop variable."
+    },
+    {
+        "timestamp": "00:05:24",
+        "content": "And I think, yeah, instead of keeping a loop variable and that goes from zero to B, let's work our way backward in this time."
+    },
+    {
+        "timestamp": "00:05:29",
+        "content": "Let's use a while loop just for fun. Let's say that I'm going to start at B and count down to zero."
+    },
+    {
+        "timestamp": "00:05:36",
+        "content": "So again, going and repeating some task B times."
+    },
+    {
+        "timestamp": "00:05:42",
+        "content": "So what I'm going to do is I'm going to have some counter that starts out B and decreases down to zero."
+    },
+    {
+        "timestamp": "00:05:49",
+        "content": "Again, within my loop, I have to keep track of the result."
+    },
+    {
+        "timestamp": "00:05:53",
+        "content": "So my total in the previous code is now being called result in this code."
+    },
+    {
+        "timestamp": "00:05:58",
+        "content": "And so what I'm going to do is my iteration will start with zero and I'm going to keep adding A to itself, B times."
+    },
+    {
+        "timestamp": "00:06:07",
+        "content": "So the code looks like this. I've got my why."
+    },
+    {
+        "timestamp": "00:06:10",
+        "content": "Look, this time instead of a four loop, I'm going to start out with knowing what B is and I'm going to decrease B by one each time through the loop."
+    },
+    {
+        "timestamp": "00:06:19",
+        "content": "So here I've got B equals B minus one. So that's capturing the state of the counter and each iteration."
+    },
+    {
+        "timestamp": "00:06:26",
+        "content": "The result, just like the total in the previous slide, is capturing the state of my sum at each time through the iteration."
+    },
+    {
+        "timestamp": "00:06:33",
+        "content": "And at the end I return result. So hopefully very simple, very review code here."
+    },
+    {
+        "timestamp": "00:06:41",
+        "content": "But now let's look at the code in a recursive sense."
+    },
+    {
+        "timestamp": "00:06:46",
+        "content": "So here, let's not look at the code yet, but let's think about is there some thing that we're repeating over and over and over again?"
+    },
+    {
+        "timestamp": "00:06:55",
+        "content": "If we recognize it, we can think recursively."
+    },
+    {
+        "timestamp": "00:06:59",
+        "content": "So let's try to figure out this recursive pattern. So I work best with example like actual numbers."
+    },
+    {
+        "timestamp": "00:07:07",
+        "content": "So instead of using an abstract and B let's use A as five and B as four as an example."
+    },
+    {
+        "timestamp": "00:07:14",
+        "content": "So let's say I want to use the star operator. That's basically the function I'm trying to implement the star operator between five and four."
+    },
+    {
+        "timestamp": "00:07:23",
+        "content": "So in the iterative sense, we said that's five plus five plus five plus five, adding five four times."
+    },
+    {
+        "timestamp": "00:07:34",
+        "content": "The idea of recursion is that we're trying to take our original problem, which is using the star operator between two numbers and try to solve a very similar problem."
+    },
+    {
+        "timestamp": "00:07:43",
+        "content": "It's not the same, but it's slightly changed way."
+    },
+    {
+        "timestamp": "00:07:46",
+        "content": "Okay, so instead of saying I'm going to multiply five by four, what I will do is recognize that five times four, which is my original problem."
+    },
+    {
+        "timestamp": "00:07:59",
+        "content": "Can be rewritten by extracting out one of my fives."
+    },
+    {
+        "timestamp": "00:08:03",
+        "content": "Right. So I'm going to take a five out and add it to."
+    },
+    {
+        "timestamp": "00:08:08",
+        "content": "Five times three. So this is my recursive pattern."
+    },
+    {
+        "timestamp": "00:08:12",
+        "content": "Okay. I'm using the SA operator between five and some number."
+    },
+    {
+        "timestamp": "00:08:17",
+        "content": "But if I extract a five out, I can use the star operator between five and a slightly smaller number."
+    },
+    {
+        "timestamp": "00:08:25",
+        "content": "One less than four. Okay. Well, what if I do that?"
+    },
+    {
+        "timestamp": "00:08:30",
+        "content": "What? What about five times three? Can I do the same thing again?"
+    },
+    {
+        "timestamp": "00:08:35",
+        "content": "I can write four, five times three. I can again notice that I can extract the five out again."
+    },
+    {
+        "timestamp": "00:08:41",
+        "content": "And I have five plus five times two. And then I can do the same thing again to figure out what five times two is."
+    },
+    {
+        "timestamp": "00:08:48",
+        "content": "I can again extract a five out and be left with five times one or five star."
+    },
+    {
+        "timestamp": "00:08:54",
+        "content": "One right."
+    },
+    {
+        "timestamp": "00:08:55",
+        "content": "And so notice the thing inside the boxes is basically me solving my original problem, which is using the star operator between five and some number."
+    },
+    {
+        "timestamp": "00:09:04",
+        "content": "But that number is changing each time, you know, on each line."
+    },
+    {
+        "timestamp": "00:09:10",
+        "content": "At some point I can say this problem is so easy that I know the answer."
+    },
+    {
+        "timestamp": "00:09:15",
+        "content": "So five star one. So a number multiplied with one is just the number itself."
+    },
+    {
+        "timestamp": "00:09:20",
+        "content": "And so at that point, I can say I don't need to continue dividing my problem into smaller and smaller pieces."
+    },
+    {
+        "timestamp": "00:09:26",
+        "content": "So just to bring the point home, let's use parentheses to illustrate sort of which pieces I'm replacing where."
+    },
+    {
+        "timestamp": "00:09:32",
+        "content": "So I've got my original problem. Five Applying the star operator write the multiplication on five and four."
+    },
+    {
+        "timestamp": "00:09:40",
+        "content": "I extract the five out and I recognize that I can have five plus."
+    },
+    {
+        "timestamp": "00:09:45",
+        "content": "And in solving five star three. I need to have some trust here, right?"
+    },
+    {
+        "timestamp": "00:09:52",
+        "content": "I don't know what five star three is, but if I decompose that problem in the exact same way, I can extract the five out of that."
+    },
+    {
+        "timestamp": "00:10:00",
+        "content": "Right. And add it to five start to."
+    },
+    {
+        "timestamp": "00:10:06",
+        "content": "Right. So the thing in the box is are equivalent."
+    },
+    {
+        "timestamp": "00:10:09",
+        "content": "And then again, five star two, I'm going to recognize this is the same problem I've been trying to solve."
+    },
+    {
+        "timestamp": "00:10:14",
+        "content": "Let's apply the same solution, which is to extract a five out and multiply and add it to the multiplication of five star one less."
+    },
+    {
+        "timestamp": "00:10:23",
+        "content": "Okay. So again, the two boxes are equivalent."
+    },
+    {
+        "timestamp": "00:10:27",
+        "content": "So this idea here where we're recognizing the same problem and kind of dividing it, dividing it, dividing it."
+    },
+    {
+        "timestamp": "00:10:33",
+        "content": "Having this trust that at some point we're going to divide it so much that we've reached a fundamental fact that we can solve is this divide step."
+    },
+    {
+        "timestamp": "00:10:44",
+        "content": "Okay. So we're going to divide it all the way up to all the way down here where I've got five plus five star one."
+    },
+    {
+        "timestamp": "00:10:50",
+        "content": "At this point I can say, well, five star one is going to be five."
+    },
+    {
+        "timestamp": "00:10:55",
+        "content": "Okay. This is a basic fact that I can just solve."
+    },
+    {
+        "timestamp": "00:10:58",
+        "content": "I don't need to divide this problem any further. So once I solve this fact, I can start building back up my answer."
+    },
+    {
+        "timestamp": "00:11:07",
+        "content": "Right. And I can start passing the answer back up the chain of of of of multiple, multiple multiplication calls."
+    },
+    {
+        "timestamp": "00:11:14",
+        "content": "Right."
+    },
+    {
+        "timestamp": "00:11:15",
+        "content": "So if I'm at this step here and I figured out that this is five star one, this five star one is equal to five, I can just replace it with the five."
+    },
+    {
+        "timestamp": "00:11:24",
+        "content": "And then I can build up the solution to this five star two because now five star two is just five plus five."
+    },
+    {
+        "timestamp": "00:11:33",
+        "content": "So this is going to be Ted, right? It's just simple addition, right?"
+    },
+    {
+        "timestamp": "00:11:38",
+        "content": "There's no more multiplication, which is the thing that we were trying to avoid."
+    },
+    {
+        "timestamp": "00:11:43",
+        "content": "So then the five star two gets replaced with ten and I'm still building back up my solution until I get to the five star four."
+    },
+    {
+        "timestamp": "00:11:50",
+        "content": "So I was trying to figure out what five star three is."
+    },
+    {
+        "timestamp": "00:11:54",
+        "content": "But before I could do that, I had to solve the rest of that. The two lines beneath it."
+    },
+    {
+        "timestamp": "00:11:58",
+        "content": "But now I can finally solve it. It's just five plus ten."
+    },
+    {
+        "timestamp": "00:12:01",
+        "content": "Right. That's the similar problem I was trying to solve. So I can replace the five star three with 15."
+    },
+    {
+        "timestamp": "00:12:08",
+        "content": "And finally, my original problem was trying to figure out five star four and now I can finally"
+    },
+    {
+        "timestamp": "00:12:13",
+        "content": "solve it because I've finally built back up my solution as five plus 50."
+    },
+    {
+        "timestamp": "00:12:20",
+        "content": "Any questions about these steps should be pretty straightforward."
+    },
+    {
+        "timestamp": "00:12:29",
+        "content": "I know it's a weird, roundabout way of figuring out what the answer is, but what I'm trying to get at is trying to recognize the problem that we're trying to solve"
+    },
+    {
+        "timestamp": "00:12:33",
+        "content": "and then finding and solving a very similar problem just slightly changed in this case."
+    },
+    {
+        "timestamp": "00:12:39",
+        "content": "We're multiplying five star one less than what we were just trying to figure out."
+    },
+    {
+        "timestamp": "00:12:50",
+        "content": "So in terms of the recursion for this particular problem, multiplying A with B, we recognize that a star B is going to be A-plus, A-plus, A-plus B times."
+    },
+    {
+        "timestamp": "00:12:56",
+        "content": "If we extract an out, just like when we extracted the five out and added it to something else will recognize that that's just A-plus, A-plus, A-plus."
+    },
+    {
+        "timestamp": "00:13:06",
+        "content": "Save the say B minus one times. Right. Okay."
+    },
+    {
+        "timestamp": "00:13:11",
+        "content": "Well, that's impossible. Say B minus one times is just our original problem."
+    },
+    {
+        "timestamp": "00:13:16",
+        "content": "Just multiplying A with B minus one."
+    },
+    {
+        "timestamp": "00:13:20",
+        "content": "Okay. So this is my recursive step. We recognize that a star is equal to a plus, a star be minus one."
+    },
+    {
+        "timestamp": "00:13:29",
+        "content": "So I'm using the same operation I'm trying to find here."
+    },
+    {
+        "timestamp": "00:13:33",
+        "content": "Down here in my in my, quote unquote, solution."
+    },
+    {
+        "timestamp": "00:13:38",
+        "content": "But this is not the end of recursion, because if I just had this as my as my definition, then I would have infinite recursion."
+    },
+    {
+        "timestamp": "00:13:53",
+        "content": "I don't have a way to stop. And so this recursive step in conjunction with a base case, something that is fun that we know fundamentally about the star operator is going to give us our solution."
+    },
+    {
+        "timestamp": "00:14:08",
+        "content": "So we knew on the previous slide, when we multiply a with one, we just get back a, so our base case, right, very simple case of multiplication which between A and B is going to be when B is one, then that's going to be eight times B is equal to."
+    },
+    {
+        "timestamp": "00:14:17",
+        "content": "So this might look like the mathematical definitions that you might come up with, you know, in a math class."
+    },
+    {
+        "timestamp": "00:14:23",
+        "content": "And we have them right here. Right. So if B is not equal to one, eight times B is eight plus eight times B minus one."
+    },
+    {
+        "timestamp": "00:14:30",
+        "content": "And then the base case right is when B is equal to one, eight times B is equal to."
+    },
+    {
+        "timestamp": "00:14:35",
+        "content": "So with these two lines, we can actually come up with the code."
+    },
+    {
+        "timestamp": "00:14:43",
+        "content": "The programing version of of this function."
+    },
+    {
+        "timestamp": "00:14:47",
+        "content": "So here we're creating a function named Moultrie recur. And its parameters are going to be A and B, right?"
+    },
+    {
+        "timestamp": "00:14:55",
+        "content": "So I'm multiplying A with B. And I have to encode these two cases one B as one and otherwise."
+    },
+    {
+        "timestamp": "00:15:04",
+        "content": "So we usually start with the base case. It's the simplest to think about."
+    },
+    {
+        "timestamp": "00:15:08",
+        "content": "So when B is one, eight times B is equal to A right."
+    },
+    {
+        "timestamp": "00:15:11",
+        "content": "So when if B is equal to one, then what is eight times B, it's just a right."
+    },
+    {
+        "timestamp": "00:15:17",
+        "content": "So the function can just immediately, immediately return."
+    },
+    {
+        "timestamp": "00:15:22",
+        "content": "Else. So that's our base case. Else this is going to be our recursive step."
+    },
+    {
+        "timestamp": "00:15:29",
+        "content": "We're not going to return, eh? But we will return this."
+    },
+    {
+        "timestamp": "00:15:33",
+        "content": "Write a plus a star B minus one. Well, the A is just a plus."
+    },
+    {
+        "timestamp": "00:15:39",
+        "content": "And this the star operator between A and B minus one is just the function again."
+    },
+    {
+        "timestamp": "00:15:49",
+        "content": "Isn't that really cool? We're using the function name in the body of this function that we're defining."
+    },
+    {
+        "timestamp": "00:15:58",
+        "content": "And it's not a problem because the parameter to the one to bottom in the recursive step is changing."
+    },
+    {
+        "timestamp": "00:16:05",
+        "content": "Right. I'm not calling mult recur with a comma b again."
+    },
+    {
+        "timestamp": "00:16:08",
+        "content": "That would be very silly of me because that would lead to infinite recursion."
+    },
+    {
+        "timestamp": "00:16:12",
+        "content": "I'm not making any progress towards a base case, but I am calling it with B minus one."
+    },
+    {
+        "timestamp": "00:16:18",
+        "content": "So this function will just keep calling, won't recur with A, with B, B minus one."
+    },
+    {
+        "timestamp": "00:16:28",
+        "content": "We want it to be a three and so on until it gets to be as one and then it'll build back up the solution, just like we had in the slides with all the parentheses that we were replacing."
+    },
+    {
+        "timestamp": "00:16:33",
+        "content": "Okay. So let's step through the Python tutor and I will show you how it actually"
+    },
+    {
+        "timestamp": "00:16:39",
+        "content": "looks when we make all these function calls and then we'll do another example."
+    },
+    {
+        "timestamp": "00:16:44",
+        "content": "So here I've got mult recur with a is."
+    },
+    {
+        "timestamp": "00:16:48",
+        "content": "I think I ran it yet with five and four, just like the one we've been looking at."
+    },
+    {
+        "timestamp": "00:16:53",
+        "content": "So this is going to be my main function. It makes a function called to recur."
+    },
+    {
+        "timestamp": "00:16:58",
+        "content": "Oh, excuse me. Five, comma four. So my A is five and my B is four."
+    },
+    {
+        "timestamp": "00:17:05",
+        "content": "Right. This is this little blue thing. Here is one function environment, right?"
+    },
+    {
+        "timestamp": "00:17:09",
+        "content": "Like when I draw boxes on my slides that are orange, they do them in blue."
+    },
+    {
+        "timestamp": "00:17:16",
+        "content": "Okay. Now, in this function call, what do we do is be one?"
+    },
+    {
+        "timestamp": "00:17:21",
+        "content": "No. So we go in the case and we return five plus."
+    },
+    {
+        "timestamp": "00:17:26",
+        "content": "What happens next? So anyone else? Five three."
+    },
+    {
+        "timestamp": "00:17:38",
+        "content": "Yes. Murica will run again with as five and B as three."
+    },
+    {
+        "timestamp": "00:17:41",
+        "content": "Exactly. It is a function call. Right."
+    },
+    {
+        "timestamp": "00:17:45",
+        "content": "So as a function call, we are going to create a new environment."
+    },
+    {
+        "timestamp": "00:17:50",
+        "content": "So here's another box. My previous box is currently hung up."
+    },
+    {
+        "timestamp": "00:17:58",
+        "content": "Right. It cannot finish because it's trying to figure out what a what five plus the result of this function call is."
+    },
+    {
+        "timestamp": "00:18:06",
+        "content": "But this one's not done yet. Right. It's it's still figuring out. It's it's it's it's result."
+    },
+    {
+        "timestamp": "00:18:13",
+        "content": "So we've put that one on hold and now we're trying to figure out what recurred five comma three."
+    },
+    {
+        "timestamp": "00:18:17",
+        "content": "Well, what is more recursive? Five, comma three. It's going to be B is not one."
+    },
+    {
+        "timestamp": "00:18:21",
+        "content": "So this one will also go in its else and they'll recur."
+    },
+    {
+        "timestamp": "00:18:26",
+        "content": "It'll return five plus. What?"
+    },
+    {
+        "timestamp": "00:18:36",
+        "content": "Exactly five. The function call when when B comes to."
+    },
+    {
+        "timestamp": "00:18:40",
+        "content": "Exactly. But notice it is another function call."
+    },
+    {
+        "timestamp": "00:18:43",
+        "content": "Right. So here I have boom, another box."
+    },
+    {
+        "timestamp": "00:18:48",
+        "content": "Now I've got two function calls, this original one back here and this which was waiting on this one that I've highlighted here."
+    },
+    {
+        "timestamp": "00:18:55",
+        "content": "But now this one that I've highlighted here had to make another function call down here."
+    },
+    {
+        "timestamp": "00:19:01",
+        "content": "So I've got currently three function calls in the works that are trying to figure out what their results are."
+    },
+    {
+        "timestamp": "00:19:08",
+        "content": "All right. Finally, the small recurring five comma two is going to make another function call."
+    },
+    {
+        "timestamp": "00:19:13",
+        "content": "So it's B is not one. So we're going to go into the else. And what is it's going to say we're going to return five plus."
+    },
+    {
+        "timestamp": "00:19:25",
+        "content": "And it's another function call. So now I'm for function calls deep and I haven't done any sort of."
+    },
+    {
+        "timestamp": "00:19:35",
+        "content": "Visible work. Right. I've just kept kind of, you know, kicking the can down the road to try to figure out what the values are."
+    },
+    {
+        "timestamp": "00:19:43",
+        "content": "And everybody's waiting for somebody else to finally return a value."
+    },
+    {
+        "timestamp": "00:19:48",
+        "content": "Okay."
+    },
+    {
+        "timestamp": "00:19:49",
+        "content": "So this first one is waiting for the one right underneath it to return a value, but this one is waiting for the one underneath it to return a value."
+    },
+    {
+        "timestamp": "00:19:57",
+        "content": "And this one is waiting for the one underneath it to return a value. That's the chain of calls."
+    },
+    {
+        "timestamp": "00:20:02",
+        "content": "What's this last one going to do? Is it going to make another function environment?"
+    },
+    {
+        "timestamp": "00:20:07",
+        "content": "No, it's going to return A, which is five."
+    },
+    {
+        "timestamp": "00:20:14",
+        "content": "Okay. There's my return value five. So this one will return the five to whoever called it."
+    },
+    {
+        "timestamp": "00:20:21",
+        "content": "And whoever called it was this one here will recur five comma two, right."
+    },
+    {
+        "timestamp": "00:20:26",
+        "content": "Five comma two is trying to figure out what five plus. This bottom function call was okay."
+    },
+    {
+        "timestamp": "00:20:33",
+        "content": "Well, now it can figure out that it's going to be five plus five, so its return will be ten."
+    },
+    {
+        "timestamp": "00:20:40",
+        "content": "This one returns a value up one level to whoever called it."
+    },
+    {
+        "timestamp": "00:20:44",
+        "content": "And that was recursive five, comma three. And now will recur five."
+    },
+    {
+        "timestamp": "00:20:47",
+        "content": "Comma three can finish its finish its job. It was trying to figure out what five plus its function call was, which is we figured out as ten."
+    },
+    {
+        "timestamp": "00:20:56",
+        "content": "So this one can figure out it's 15. And finally, this last value can return back up to the original function."
+    },
+    {
+        "timestamp": "00:21:03",
+        "content": "Call five comma four. And five comma four will return five plus the 15 that got returned, which is 20."
+    },
+    {
+        "timestamp": "00:21:14",
+        "content": "Okay. Questions about what just happened."
+    },
+    {
+        "timestamp": "00:21:21",
+        "content": "Because everything makes sense. All right. Okay."
+    },
+    {
+        "timestamp": "00:21:25",
+        "content": "So let's look at one more example. I mean, we'll look at a few more examples, this lecture, but let's look at a real world example for now."
+    },
+    {
+        "timestamp": "00:21:34",
+        "content": "This one will hopefully illustrate the difference between iterative algorithms and recursive algorithms in a more real life setting."
+    },
+    {
+        "timestamp": "00:21:42",
+        "content": "So let's assume that in this real world setting, a student asks for a grade for an exam."
+    },
+    {
+        "timestamp": "00:21:52",
+        "content": "In an iterative setting. We have basically one function call, write, regrade or whatever you want to call it."
+    },
+    {
+        "timestamp": "00:21:58",
+        "content": "There's my student. How is a student going to iteratively get the grade?"
+    },
+    {
+        "timestamp": "00:22:04",
+        "content": "Well, the student will be in charge of basically looping through each staff member."
+    },
+    {
+        "timestamp": "00:22:10",
+        "content": "Right. So the student goes to the instructor and says, Can I have a regrade, please?"
+    },
+    {
+        "timestamp": "00:22:17",
+        "content": "The instructor may have graded one problem. Maybe they didn't, but they will regrade the problem that maybe they were in charge of."
+    },
+    {
+        "timestamp": "00:22:24",
+        "content": "Then the student will go to the next person on staff. Betty, can I have a regrade, please?"
+    },
+    {
+        "timestamp": "00:22:31",
+        "content": "Let's say that to maybe regrade the problem they were in charge of."
+    },
+    {
+        "timestamp": "00:22:34",
+        "content": "Maybe they didn't, but in any case, they'll give the score back or they'll answer the students request."
+    },
+    {
+        "timestamp": "00:22:40",
+        "content": "The student then goes to the next person on staff, the."
+    },
+    {
+        "timestamp": "00:22:44",
+        "content": "The lab assistant. Can I have a regrade, please?"
+    },
+    {
+        "timestamp": "00:22:47",
+        "content": "The lab assistant might regrade the probably in charge of whatever gives the grade back to the student."
+    },
+    {
+        "timestamp": "00:22:53",
+        "content": "The student is keeping track of all these grades scores that they're getting to kind of figure out what their new total score is."
+    },
+    {
+        "timestamp": "00:22:59",
+        "content": "And finally, the student might go to the grader who did probably most of the work asks will re"
+    },
+    {
+        "timestamp": "00:23:06",
+        "content": "grade the greater will dutifully agree to do the regrade and pass back the values."
+    },
+    {
+        "timestamp": "00:23:13",
+        "content": "So here notice the student is in charge of iteratively going to every single person on staff and getting the result back."
+    },
+    {
+        "timestamp": "00:23:22",
+        "content": "And the student is keeping track of what their new score is."
+    },
+    {
+        "timestamp": "00:23:24",
+        "content": "Obviously the staff members will too for the purposes of assigning grades, but the student is as well."
+    },
+    {
+        "timestamp": "00:23:30",
+        "content": "Right. So the student's basically adding up all these values. But there is only one function call."
+    },
+    {
+        "timestamp": "00:23:34",
+        "content": "So I've denoted the function call using just this black circle here."
+    },
+    {
+        "timestamp": "00:23:40",
+        "content": "Okay. So that's iteration, right? We know how to do that."
+    },
+    {
+        "timestamp": "00:23:42",
+        "content": "We've been doing this for a really long time in this class, but now let's look at the same problem recursively."
+    },
+    {
+        "timestamp": "00:23:49",
+        "content": "So the cursor in recursion, we've got these two steps, right."
+    },
+    {
+        "timestamp": "00:23:53",
+        "content": "There's the problem of decreasing our original problem into smaller problems."
+    },
+    {
+        "timestamp": "00:23:59",
+        "content": "Right, until we reach some sort of base case. And then at that point, we have the task of building back up our answer."
+    },
+    {
+        "timestamp": "00:24:10",
+        "content": "So in the recursive setting, again, I've got my one function call to regrade on behalf of the student."
+    },
+    {
+        "timestamp": "00:24:16",
+        "content": "But the student will only interact with one person, maybe the instructor."
+    },
+    {
+        "timestamp": "00:24:21",
+        "content": "Okay. The student will not interact with anybody else and stuff."
+    },
+    {
+        "timestamp": "00:24:25",
+        "content": "The student will just go up to the instructor and say, Hey, I would like to regrade for this exam."
+    },
+    {
+        "timestamp": "00:24:30",
+        "content": "Okay. Now the student is going to wait, right?"
+    },
+    {
+        "timestamp": "00:24:34",
+        "content": "The instructor is also a function call to regrade."
+    },
+    {
+        "timestamp": "00:24:39",
+        "content": "So maybe the instructor didn't do any of the grading, but the instructor will make their own function."
+    },
+    {
+        "timestamp": "00:24:43",
+        "content": "Call to the teacher. Can you please re grade this exam? Right."
+    },
+    {
+        "timestamp": "00:24:48",
+        "content": "But to maybe graded one problem, they'll keep track of the problem they need to grade."
+    },
+    {
+        "timestamp": "00:24:51",
+        "content": "But there are other problems that need to be graded. So the TA will then ask make their own function."
+    },
+    {
+        "timestamp": "00:24:56",
+        "content": "Call to the lab assistant. Maybe the lab assistant created some problems and then the lab assistant will also"
+    },
+    {
+        "timestamp": "00:25:03",
+        "content": "make further the requests sort of passing along the function call to the grader."
+    },
+    {
+        "timestamp": "00:25:08",
+        "content": "So we have the task of doing the re grading as a function being passed along all of the staff members."
+    },
+    {
+        "timestamp": "00:25:14",
+        "content": "Okay. When we reach the base case, which is the last the greater that needs that probably knows or probably greater the"
+    },
+    {
+        "timestamp": "00:25:24",
+        "content": "last question we've got the answer of being passed back up the chain of function calls."
+    },
+    {
+        "timestamp": "00:25:30",
+        "content": "Right. So the greater will say, all right, I've graded my problem. There's nobody else I need to ask."
+    },
+    {
+        "timestamp": "00:25:34",
+        "content": "So here's my score. So this score is being passed back up the chain of function calls to the lab assistant."
+    },
+    {
+        "timestamp": "00:25:41",
+        "content": "The lab assistant will take that score and add it to their score, passes it back up the chain of function, calls to the teaching assistant."
+    },
+    {
+        "timestamp": "00:25:50",
+        "content": "The teaching assistant adds that score to their score."
+    },
+    {
+        "timestamp": "00:25:53",
+        "content": "Maybe they graded a problem, maybe they didn't."
+    },
+    {
+        "timestamp": "00:25:55",
+        "content": "But anyway, they're compiling the results little by little, back up until it passes it to the instructor."
+    },
+    {
+        "timestamp": "00:26:01",
+        "content": "And then the instructor says, Here you go, this is your score. So you see the difference, right?"
+    },
+    {
+        "timestamp": "00:26:05",
+        "content": "The student is the is the iteration, right? They ask everybody on staff, so they interact with everybody on the staff."
+    },
+    {
+        "timestamp": "00:26:13",
+        "content": "But in recursion, the student is basically hung up waiting for an answer until we've gone down all this chain of function calls and the answer has been built back up."
+    },
+    {
+        "timestamp": "00:26:23",
+        "content": "So the student is not keeping track of the answer at all. They only get the final answer at the end."
+    },
+    {
+        "timestamp": "00:26:30",
+        "content": "Did that help at all? Okay, I've refined this example a couple of times."
+    },
+    {
+        "timestamp": "00:26:34",
+        "content": "Hopefully, this is. This is good. So the big idea and recursion here is I've got these quote unquote, earlier function calls, right?"
+    },
+    {
+        "timestamp": "00:26:42",
+        "content": "The ones I've made way back at the beginning. These function calls are just waiting on results to come back."
+    },
+    {
+        "timestamp": "00:26:50",
+        "content": "Right. They're not doing any useful work at the beginning."
+    },
+    {
+        "timestamp": "00:26:53",
+        "content": "They only do useful work when they're assembling the the results after getting a return back from later function calls."
+    },
+    {
+        "timestamp": "00:27:01",
+        "content": "So hopefully that gives you a sense of when of of how we can apply recursion now."
+    },
+    {
+        "timestamp": "00:27:07",
+        "content": "What exactly is recursion so algorithmically?"
+    },
+    {
+        "timestamp": "00:27:10",
+        "content": "It's a way for us to come up with some solutions to some problems in this divide and conquer approach or decrease and conquer approach."
+    },
+    {
+        "timestamp": "00:27:16",
+        "content": "Right. You have your original problem. You divided so much until the same problem just slightly changed until you reach a base case."
+    },
+    {
+        "timestamp": "00:27:25",
+        "content": "That base case can kick off the conquer step and start passing back a value that you can start assembling from your earlier function calls."
+    },
+    {
+        "timestamp": "00:27:34",
+        "content": "Okay. Now, semantically, as we saw in the example where we multiplied the functions, we've got a function that calls itself."
+    },
+    {
+        "timestamp": "00:27:42",
+        "content": "Obviously, it's not calling itself with the exact same parameters because that would lead to infinite recursion."
+    },
+    {
+        "timestamp": "00:27:47",
+        "content": "And that's not what we want. We're going to call ourselves with a slight change in our parameters in such a way that we will reach our base case."
+    },
+    {
+        "timestamp": "00:27:56",
+        "content": "Okay. And once we reach the base case, then again we kick off the conquer step and we can start reassembling back."
+    },
+    {
+        "timestamp": "00:28:02",
+        "content": "And you saw how the function calls do that when they when they help each other back up."
+    },
+    {
+        "timestamp": "00:28:07",
+        "content": "Okay. I'm going to give you a couple of minutes to try this. So complete the function that calculates into the power of P for these variables."
+    },
+    {
+        "timestamp": "00:28:14",
+        "content": "So if you come up with a mathematical definition, it will be a pretty straight translation to code."
+    },
+    {
+        "timestamp": "00:28:21",
+        "content": "I did include two base cases here, so maybe a base case is one and a zero, and another base case is when an is one."
+    },
+    {
+        "timestamp": "00:28:28",
+        "content": "Figure out what you should return and then how to write this recursive step."
+    },
+    {
+        "timestamp": "00:28:33",
+        "content": "So I've got a line. 5050 ish is where you can type in the code."
+    },
+    {
+        "timestamp": "00:28:44",
+        "content": "All right. What's my first base case? Yeah."
+    },
+    {
+        "timestamp": "00:28:52",
+        "content": "Yep. If P is equal to zero, then we can return one."
+    },
+    {
+        "timestamp": "00:28:57",
+        "content": "Oops. Just one time. What's another base case? Here's one."
+    },
+    {
+        "timestamp": "00:29:09",
+        "content": "We can return in. Awesome. How about my recursive step?"
+    },
+    {
+        "timestamp": "00:29:21",
+        "content": "Yep. We can return end times. Like this."
+    },
+    {
+        "timestamp": "00:29:29",
+        "content": "Now, let's assume I don't know how to do Star Starr. How do you rewrite this in terms of the thing we're trying to write?"
+    },
+    {
+        "timestamp": "00:29:35",
+        "content": "There was a social sector, however, this growth occurred."
+    },
+    {
+        "timestamp": "00:29:39",
+        "content": "And yeah, we can do that, too. Yeah, exactly."
+    },
+    {
+        "timestamp": "00:29:42",
+        "content": "So here we're assuming that we don't know the star star operator."
+    },
+    {
+        "timestamp": "00:29:47",
+        "content": "Right. Otherwise, this would be a very easy function to write."
+    },
+    {
+        "timestamp": "00:29:51",
+        "content": "We are trying to define the star star operator ourselves. Using this function in power recur."
+    },
+    {
+        "timestamp": "00:29:56",
+        "content": "So we're just going to call it again down here. With RN and P minus one."
+    },
+    {
+        "timestamp": "00:30:01",
+        "content": "So if we run it, this will give us eight."
+    },
+    {
+        "timestamp": "00:30:09",
+        "content": "Yeah. One of."
+    },
+    {
+        "timestamp": "00:30:15",
+        "content": "Yes. A great question. What is the necessity of this? There is no necessity."
+    },
+    {
+        "timestamp": "00:30:20",
+        "content": "I actually just included it there to just show you how we can up to base cases."
+    },
+    {
+        "timestamp": "00:30:25",
+        "content": "So in this particular case, we would actually never hit this one if the end is greater than one, because we always stop here."
+    },
+    {
+        "timestamp": "00:30:34",
+        "content": "If the sooner if the the user gives us zero, we would just return that one."
+    },
+    {
+        "timestamp": "00:30:38",
+        "content": "But it would work if we completely removed that as well."
+    },
+    {
+        "timestamp": "00:30:42",
+        "content": "Yeah, great questions. Okay."
+    },
+    {
+        "timestamp": "00:30:48",
+        "content": "Let's look at one more one more example."
+    },
+    {
+        "timestamp": "00:30:51",
+        "content": "And this one is the one that I'm going to ask for some participation."
+    },
+    {
+        "timestamp": "00:30:55",
+        "content": "I would like four of you to come down with me. But before we do that, let's think about factorial."
+    },
+    {
+        "timestamp": "00:31:02",
+        "content": "So the definition of an factorial is end times and minus one times n, minus two times n, minus three down to one."
+    },
+    {
+        "timestamp": "00:31:10",
+        "content": "What is a base case? What is the simplest thing that we know the factorial of?"
+    },
+    {
+        "timestamp": "00:31:14",
+        "content": "You guys tell me. What is and what is zero factorial."
+    },
+    {
+        "timestamp": "00:31:22",
+        "content": "What good? I chose one, but both could work. Yep."
+    },
+    {
+        "timestamp": "00:31:26",
+        "content": "If energy go to zero, we can also return one or we can do energy equal to one return one."
+    },
+    {
+        "timestamp": "00:31:32",
+        "content": "What's our recursive step? Do you recognize the recursive pattern here?"
+    },
+    {
+        "timestamp": "00:31:38",
+        "content": "And factorial equals. And times."
+    },
+    {
+        "timestamp": "00:31:47",
+        "content": "And minus one factorial. Right."
+    },
+    {
+        "timestamp": "00:31:48",
+        "content": "If we extract the first and out and minus one times on my sometimes on my three and so on is just n minus one factorial."
+    },
+    {
+        "timestamp": "00:31:56",
+        "content": "And so our recursive step just says its end times the same function factorial with n minus one."
+    },
+    {
+        "timestamp": "00:32:03",
+        "content": "Does everyone okay with that? Cool. Okay."
+    },
+    {
+        "timestamp": "00:32:07",
+        "content": "So let's look through this example with some participation."
+    },
+    {
+        "timestamp": "00:32:11",
+        "content": "So for people one. Yes, and you'll be on your CW forever, you guys."
+    },
+    {
+        "timestamp": "00:32:16",
+        "content": "Two. Yep, two more. Yes."
+    },
+    {
+        "timestamp": "00:32:20",
+        "content": "Thank you. Thank you. Awesome. Okay."
+    },
+    {
+        "timestamp": "00:32:24",
+        "content": "And I'll have you guys stand right here. I'll ask you guys to come in."
+    },
+    {
+        "timestamp": "00:32:31",
+        "content": "One at a time. As we are working through this exam."
+    },
+    {
+        "timestamp": "00:32:35",
+        "content": "So we're just going to demonstrate sort of once again what happens when we make function calls."
+    },
+    {
+        "timestamp": "00:32:40",
+        "content": "You want to just stand right here beside behind my computer. Thank you. Behind my computer."
+    },
+    {
+        "timestamp": "00:32:48",
+        "content": "Okay. Perfect. Okay. So I'll just stand here."
+    },
+    {
+        "timestamp": "00:32:54",
+        "content": "So I am going to be the main program. Right?"
+    },
+    {
+        "timestamp": "00:32:57",
+        "content": "I am. You run this code. I am going to be the main program."
+    },
+    {
+        "timestamp": "00:33:02",
+        "content": "I am going to keep track of the the the variables and everything that's in this global scope."
+    },
+    {
+        "timestamp": "00:33:12",
+        "content": "Okay. So in the global scope, just like we have been in the past, I've got a definition for the my factorial function here."
+    },
+    {
+        "timestamp": "00:33:20",
+        "content": "Okay. And this is just some code at this point."
+    },
+    {
+        "timestamp": "00:33:23",
+        "content": "I've just defined it. I don't care what it actually is, but I have one function call, so my one and only job is to print the result of factorial four."
+    },
+    {
+        "timestamp": "00:33:32",
+        "content": "Right. I have a pretty easy job. So what happens, you guys?"
+    },
+    {
+        "timestamp": "00:33:36",
+        "content": "AUDIENCE Tell me what happens when I've got factorial four."
+    },
+    {
+        "timestamp": "00:33:41",
+        "content": "What is this? Do. I just know right off the bat what factorial for is."
+    },
+    {
+        "timestamp": "00:33:46",
+        "content": "No, it is a function call, right? So as a function call, what do I need to do?"
+    },
+    {
+        "timestamp": "00:33:56",
+        "content": "Exactly. I need to create an environment. Okay. So you'll be my first environment."
+    },
+    {
+        "timestamp": "00:34:02",
+        "content": "Hello. My name is. You can put it on. Hello, my name is."
+    },
+    {
+        "timestamp": "00:34:06",
+        "content": "And then you can step right over there. So you are my first function call."
+    },
+    {
+        "timestamp": "00:34:10",
+        "content": "Your name is fact four factorial. Awesome."
+    },
+    {
+        "timestamp": "00:34:13",
+        "content": "So I have just called you. What is your job?"
+    },
+    {
+        "timestamp": "00:34:19",
+        "content": "So you guys tell me what is factorial? Four's job is from running the code."
+    },
+    {
+        "timestamp": "00:34:25",
+        "content": "Are they going to do the for the else? The US."
+    },
+    {
+        "timestamp": "00:34:28",
+        "content": "So this is your job. You keep track of that your end is going to be for and your job is to return four times factorial of three."
+    },
+    {
+        "timestamp": "00:34:35",
+        "content": "Do you know what factorial of three is right now? No."
+    },
+    {
+        "timestamp": "00:34:38",
+        "content": "So what do you need to do? Yes. Please call somebody else."
+    },
+    {
+        "timestamp": "00:34:42",
+        "content": "Who are you going to call next? What is your name going to be?"
+    },
+    {
+        "timestamp": "00:34:49",
+        "content": "Your your name is also factorial. Exactly. And you are going to be called with and is equal to three."
+    },
+    {
+        "timestamp": "00:34:54",
+        "content": "So you can stand right beside factorial of four."
+    },
+    {
+        "timestamp": "00:34:59",
+        "content": "Very nice. So now notice we've got two function calls."
+    },
+    {
+        "timestamp": "00:35:05",
+        "content": "Both of their names are factorial. Right? But they are completely separate function calls."
+    },
+    {
+        "timestamp": "00:35:11",
+        "content": "They are completely different environments. They have their own end values."
+    },
+    {
+        "timestamp": "00:35:15",
+        "content": "They have their own jobs to do. Right."
+    },
+    {
+        "timestamp": "00:35:18",
+        "content": "Just because their name is factorial for both of them does not mean that they'll interfere with each other's variables."
+    },
+    {
+        "timestamp": "00:35:24",
+        "content": "Right. Very, very important point to make. Factorial three Do you know what factorial of two is?"
+    },
+    {
+        "timestamp": "00:35:32",
+        "content": "No. So what do you need to do exactly? Who are you going to call?"
+    },
+    {
+        "timestamp": "00:35:37",
+        "content": "Here you go. What is your name going to be? That's true."
+    },
+    {
+        "timestamp": "00:35:44",
+        "content": "Yes, we are, too. Exactly. So you are factorial. Your name is also factorial and you are going to be with called with n is equal to two again."
+    },
+    {
+        "timestamp": "00:35:52",
+        "content": "Now, I have three factorial calls."
+    },
+    {
+        "timestamp": "00:35:55",
+        "content": "They're all to the name factorial, but they're all independent function calls."
+    },
+    {
+        "timestamp": "00:36:00",
+        "content": "So your job is to return two times factorial of one. Do you know what factorial of one is?"
+    },
+    {
+        "timestamp": "00:36:08",
+        "content": "As a human, you do, but as factorial you do not."
+    },
+    {
+        "timestamp": "00:36:12",
+        "content": "What do you need to do? Um. Call her. Call her."
+    },
+    {
+        "timestamp": "00:36:15",
+        "content": "Exactly. Here you go. Your name is also factorial."
+    },
+    {
+        "timestamp": "00:36:18",
+        "content": "You can stand beside our lovely other factorial. So your job."
+    },
+    {
+        "timestamp": "00:36:23",
+        "content": "Audience I've already given away. Your last job is to."
+    },
+    {
+        "timestamp": "00:36:29",
+        "content": "Return one. Okay. Excellent. So here is your return value now."
+    },
+    {
+        "timestamp": "00:36:36",
+        "content": "Factorial of one. Are you going to return that value to me?"
+    },
+    {
+        "timestamp": "00:36:41",
+        "content": "Which one will you return it to? Exactly."
+    },
+    {
+        "timestamp": "00:36:45",
+        "content": "So factorial with n is equal to two. Can now replace their factorial one function with one."
+    },
+    {
+        "timestamp": "00:36:51",
+        "content": "So what is your return value going to be? Factorial of two? I got it right too."
+    },
+    {
+        "timestamp": "00:36:56",
+        "content": "Exactly. So. Where do you pass your value along to? Okay."
+    },
+    {
+        "timestamp": "00:37:00",
+        "content": "Now, one thing we forgot. As soon as you made the return value, you disappear."
+    },
+    {
+        "timestamp": "00:37:06",
+        "content": "You had a very simple job. I'm sorry, but it was really important."
+    },
+    {
+        "timestamp": "00:37:10",
+        "content": "You were our base case. Without you, we would have had infinite recursion."
+    },
+    {
+        "timestamp": "00:37:14",
+        "content": "Okay, so you've passed along your value. So as a function that's done its job, what do you do?"
+    },
+    {
+        "timestamp": "00:37:20",
+        "content": "Disappear. Exactly. Thank you. All right. Factorial of where are we?"
+    },
+    {
+        "timestamp": "00:37:24",
+        "content": "Three. Exactly what are you. What is your value going to be now? Six."
+    },
+    {
+        "timestamp": "00:37:28",
+        "content": "Exactly. So here's your return value. You give it to me."
+    },
+    {
+        "timestamp": "00:37:32",
+        "content": "There you go. And as. Exactly. Very good. We disappear."
+    },
+    {
+        "timestamp": "00:37:36",
+        "content": "So we've got three function calls that disappeared as soon as they return to value."
+    },
+    {
+        "timestamp": "00:37:40",
+        "content": "And finally, four times 624."
+    },
+    {
+        "timestamp": "00:37:43",
+        "content": "And who do you give your values? Which I just gave you."
+    },
+    {
+        "timestamp": "00:37:47",
+        "content": "Sorry. Yeah, that was confusing. Thank you so much, you guys."
+    },
+    {
+        "timestamp": "00:37:50",
+        "content": "That illustrated a couple of things."
+    },
+    {
+        "timestamp": "00:37:53",
+        "content": "You guys can head back. Thank you so much."
+    },
+    {
+        "timestamp": "00:38:02",
+        "content": "So we illustrated a couple of things here. I'm going to I can do it on the slides as well just to bring bring the point home."
+    },
+    {
+        "timestamp": "00:38:16",
+        "content": "But. Let's go through it. So I've got factorial for every time I make a function call, even though it's the same name all factorial, it's a completely separate environment, right?"
+    },
+    {
+        "timestamp": "00:38:22",
+        "content": "Happens to have the same name, but they're just in charge of doing their own job."
+    },
+    {
+        "timestamp": "00:38:26",
+        "content": "So here I got factorial for calling, four times factorial of three."
+    },
+    {
+        "timestamp": "00:38:32",
+        "content": "As soon as I see factorial of three, this creates another environment."
+    },
+    {
+        "timestamp": "00:38:36",
+        "content": "This is going to be returning three times factorial of two."
+    },
+    {
+        "timestamp": "00:38:40",
+        "content": "Again, another environment. This returns two times factorial of one and a final environment."
+    },
+    {
+        "timestamp": "00:38:47",
+        "content": "Right. Our most important environment is the last one with the base case."
+    },
+    {
+        "timestamp": "00:38:52",
+        "content": "It allows us to kick start our conquer step."
+    },
+    {
+        "timestamp": "00:38:56",
+        "content": "So this base step will return the value one to whoever called it."
+    },
+    {
+        "timestamp": "00:39:00",
+        "content": "Again, we're not skipping around. We only return the value to the function that called us."
+    },
+    {
+        "timestamp": "00:39:07",
+        "content": "And I know it gets really confusing because everything is called fact in this particular case, but we just have to remember which function called us."
+    },
+    {
+        "timestamp": "00:39:16",
+        "content": "And so we return the one backed up here. This becomes two times one and they can finish their job."
+    },
+    {
+        "timestamp": "00:39:22",
+        "content": "Right. So notice at this point, we've got we were one, two, three, four functions just kind of hung up and waiting for values to be passed back to us."
+    },
+    {
+        "timestamp": "00:39:31",
+        "content": "But now we can finally finish our jobs one by one."
+    },
+    {
+        "timestamp": "00:39:34",
+        "content": "So this one returns it to this one returns the six, this one returns the 2024, and the 24 gets printed out."
+    },
+    {
+        "timestamp": "00:39:46",
+        "content": "So. Big idea here."
+    },
+    {
+        "timestamp": "00:39:50",
+        "content": "We've got each function call, even though it has the same name is completely separate, right?"
+    },
+    {
+        "timestamp": "00:39:55",
+        "content": "Completely independent environment with their own parameters."
+    },
+    {
+        "timestamp": "00:40:01",
+        "content": "Those parameters can change within those environments, and that's totally okay."
+    },
+    {
+        "timestamp": "00:40:05",
+        "content": "They won't interfere with any parameters in any other environments."
+    },
+    {
+        "timestamp": "00:40:10",
+        "content": "Okay. All right. So let's do the Python tutor link."
+    },
+    {
+        "timestamp": "00:40:17",
+        "content": "And then again we can just do one more time just to show you what this looks like in terms of the Python tutor."
+    },
+    {
+        "timestamp": "00:40:23",
+        "content": "So here I've got my factorial with and is equal to four calls and is equal to three calls factorial and is equal to two calls factorial."
+    },
+    {
+        "timestamp": "00:40:32",
+        "content": "That is equal to one at this point. Right."
+    },
+    {
+        "timestamp": "00:40:35",
+        "content": "Just like with the multiplication, I've got all these factorial in the works, but we can start returning values back to whoever called us."
+    },
+    {
+        "timestamp": "00:40:43",
+        "content": "Until we get back to the original one of the original function call."
+    },
+    {
+        "timestamp": "00:40:48",
+        "content": "Okay. So this is another recap of the observations that we've seen, right?"
+    },
+    {
+        "timestamp": "00:40:53",
+        "content": "Each different function call has its own environment. The variables within these environments are specific to those environments."
+    },
+    {
+        "timestamp": "00:41:01",
+        "content": "They don't interfere with each other and the flow of control, right?"
+    },
+    {
+        "timestamp": "00:41:06",
+        "content": "So when we make a function call, all we know is the function that we call next."
+    },
+    {
+        "timestamp": "00:41:11",
+        "content": "We don't skip around. All we know is who we call next and who we need to give the value back up to."
+    },
+    {
+        "timestamp": "00:41:17",
+        "content": "Right. One last thing I wanted to point out."
+    },
+    {
+        "timestamp": "00:41:23",
+        "content": "So here I've got the code for factorial, the iterative version and the recursive version."
+    },
+    {
+        "timestamp": "00:41:31",
+        "content": "Okay. So the one on the left is also the one on the right is what we already wrote."
+    },
+    {
+        "timestamp": "00:41:35",
+        "content": "So it's factorial recursive. And the one on the left is the iterative version."
+    },
+    {
+        "timestamp": "00:41:40",
+        "content": "So."
+    },
+    {
+        "timestamp": "00:41:43",
+        "content": "I personally think the one on the right is more readable because it's it's very similar to the way that we would write the expression mathematically."
+    },
+    {
+        "timestamp": "00:41:56",
+        "content": "But if you kind of if you had a little bit of time to think about it, you can just as easily come up with code that does the exact same job iteratively."
+    },
+    {
+        "timestamp": "00:42:01",
+        "content": "Right. So remember in iteration, we've got our loop. There's no more function, no other function calls."
+    },
+    {
+        "timestamp": "00:42:07",
+        "content": "We have a loop that iterates some number of times."
+    },
+    {
+        "timestamp": "00:42:10",
+        "content": "There's some sort of loop variable or loop counter, and there's a state variable that keeps track of the answer of interest."
+    },
+    {
+        "timestamp": "00:42:17",
+        "content": "In this particular case, the product from one all the way up to and including it."
+    },
+    {
+        "timestamp": "00:42:22",
+        "content": "So I want to end today's lecture with just a couple of observations."
+    },
+    {
+        "timestamp": "00:42:27",
+        "content": "So today we saw some really simple examples of recursion."
+    },
+    {
+        "timestamp": "00:42:31",
+        "content": "But I think it outlined some really, really tricky ideas that people usually have trouble grasping when you first see recursion."
+    },
+    {
+        "timestamp": "00:42:39",
+        "content": "And that's because you basically write a function in terms of itself, and that can be a little bit confusing."
+    },
+    {
+        "timestamp": "00:42:45",
+        "content": "So of course, we applied recursion to some really, really simple things."
+    },
+    {
+        "timestamp": "00:42:49",
+        "content": "We did multiplication. We did. And we did factorial."
+    },
+    {
+        "timestamp": "00:43:00",
+        "content": "Depending on how you feel, the recursive version or the iterative version might be more intuitive for you, and certainly for these examples, you did not need to write them recursively."
+    },
+    {
+        "timestamp": "00:43:05",
+        "content": "There are oh, there's a lot of code out there that you actually don't need to implement recursively."
+    },
+    {
+        "timestamp": "00:43:10",
+        "content": "The iterative solution is far more intuitive, especially since you guys were first introduced to iteration, right?"
+    },
+    {
+        "timestamp": "00:43:16",
+        "content": "You introduced for loops in a while, loops back in lecture and like three or something like that, right?"
+    },
+    {
+        "timestamp": "00:43:20",
+        "content": "So if that's the first thing you saw, that's usually the first thing that's going to be your go to."
+    },
+    {
+        "timestamp": "00:43:25",
+        "content": "But there are several problems that are more intuitive to write using recursion."
+    },
+    {
+        "timestamp": "00:43:31",
+        "content": "So a couple of examples where recursion is more intuitive is any time when you"
+    },
+    {
+        "timestamp": "00:43:42",
+        "content": "need to repeat a task that for which you don't know how deep you need to go, in which case the recursive calls will take care of making calls to itself, to itself, to itself, to itself until it reaches the base case."
+    },
+    {
+        "timestamp": "00:43:50",
+        "content": "You don't need to think about that in your iteration. So an example of that is this kind of classic one where we have a file inside a file system."
+    },
+    {
+        "timestamp": "00:44:03",
+        "content": "Someone. If we're looking for a piece set piece at dot text, we can have a student whose piece of text is straight under their users slash piece at that text folder."
+    },
+    {
+        "timestamp": "00:44:17",
+        "content": "But we might have another person whose piece of text is going to be within their users, their documents, their schools, their MITI, their classes, their six, 100, all of their piece."
+    },
+    {
+        "timestamp": "00:44:22",
+        "content": "That's their piece. That one piece, that dot text. Right?"
+    },
+    {
+        "timestamp": "00:44:26",
+        "content": "So that uncertainty for how far deep you need to search the file system in order to get to the file of interest is a perfect place to apply recursion."
+    },
+    {
+        "timestamp": "00:44:34",
+        "content": "Another one is where you have an expression If you're building your own calculator in code and you have order of expressions."
+    },
+    {
+        "timestamp": "00:44:45",
+        "content": "Oh, sorry, order your order of operations using parentheses again, you don't know how many parentheses you might need to have a loop go through in order to get to that base expression."
+    },
+    {
+        "timestamp": "00:44:52",
+        "content": "Right, to figure out the one that you need to do first. And so that's another case where using recursion is is is very useful."
+    },
+    {
+        "timestamp": "00:45:02",
+        "content": "So in the next lecture, what we're going to do is a recap of recursion using another example, Fibonacci sequence."
+    },
+    {
+        "timestamp": "00:45:09",
+        "content": "And then we're going to start looking at recursion applied to lists."
+    },
+    {
+        "timestamp": "00:45:14",
+        "content": "And specifically if we have lists within lists, within lists, within lists, and we don't know how many nested lists we might have."
+    },
+    {
+        "timestamp": "00:45:23",
+        "content": "Recursion is going to be a perfect example for that."
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p>Hello, I got a 50% for my code do to a misspelled variables even though it outputted the correct results.</p>",
+        "type": "question",
+        "created": "2022-09-27T15:02:41.835Z",
+        "subject": "50% with Auto grader from misspelled variable",
+        "_id": "l8kbv8vfjkc6c"
+    },
+    {
+        "content": "<p>If you got a 0 on any part of the pset it will be manually graded by a TA. In the future, please make sure you read the pset instructions carefully to avoid errors like this!</p>",
+        "type": "i_answer",
+        "created": "2022-09-27T15:27:11.794Z",
+        "_id": "l8kbv8vfjkc6c"
+    },
+    {
+        "content": "<p><strong attention=\"j7awud7zf0p2uu\">@Kuan Wei Huang</strong> just in case this student didn&#39;t receive a 0</p>",
+        "type": "followup",
+        "created": "2022-09-27T15:27:29.500Z",
+        "_id": "l8kbv8vfjkc6c"
+    },
+    {
+        "content": "<p>Thanks for lmk. I see an alexi125 which I&#39;m assuming is her</p>",
+        "type": "followup_response",
+        "created": "2022-09-27T18:06:19.302Z",
+        "_id": "l8kbv8vfjkc6c"
+    }
+]

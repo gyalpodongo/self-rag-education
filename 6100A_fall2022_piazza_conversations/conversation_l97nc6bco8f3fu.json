@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi! I&#39;ve been in the help queue since 3 pm and I went from 76 to 32 but was stuck in that position for the past 2 hours. Since then I&#39;ve been booted from the page and can no longer access the help queue at all. I&#39;m trying to get my pset3 checkoff in by the 9 pm deadline tonight. What do I do?\u00a0</p>",
+        "type": "question",
+        "created": "2022-10-13T22:42:29.496Z",
+        "subject": "help queue glitched -- waited 2 hours no progress",
+        "_id": "l97nc6bco8f3fu"
+    },
+    {
+        "content": "Pset 3 checkoff has been extended for everyone till tomorrow 5 pm. In addition, they are working on a fix for queue",
+        "type": "i_answer",
+        "created": "2022-10-13T22:43:35.469Z",
+        "_id": "l97nc6bco8f3fu"
+    }
+]

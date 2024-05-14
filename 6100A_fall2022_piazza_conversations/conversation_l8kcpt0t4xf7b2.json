@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p>Hi! We noticed several students are running into an issue where your code perfectly matches the output in manual testing, but is still failing test cases. If you&#39;re having this issue, one thing you might want to check for is global variables that are not being cleared properly.\u00a0</p>",
+        "type": "note",
+        "created": "2022-09-27T15:26:27.629Z",
+        "subject": "Pset 2 - check for global variables!",
+        "_id": "l8kcpt0t4xf7b2"
+    },
+    {
+        "content": "<p>\u00a0how can I clear global variables? I did some research but nothing I&#39;ve tried has helped.\u00a0</p>",
+        "type": "followup",
+        "created": "2022-10-10T01:54:38.506Z",
+        "_id": "l8kcpt0t4xf7b2"
+    },
+    {
+        "content": "<p>I tried this with a function to return all global variables, and there are global variables, but there are a lot of them. And none of them look related. I was wondering what information I could get from the list of global variables? <img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fktc3ds0lgt85gu%2F0c92996e4409475e686004848a9941e452df2cb4eb57a53cdf81da87f26e0b7f%2Fimage.png\" alt=\"image.pngNaN\" /></p>\n<p>The image shows all the information returned by the globals() function</p>",
+        "type": "followup",
+        "created": "2022-10-10T01:59:46.048Z",
+        "_id": "l8kcpt0t4xf7b2"
+    },
+    {
+        "content": "<p>If you aren&#39;t creating your own global variables to store information, then the issue probably isn&#39;t related to global variables at all, and is probably a different bug. The list you got seems to just be built in functions/classes.</p>",
+        "type": "followup_response",
+        "created": "2022-10-11T01:41:47.547Z",
+        "_id": "l8kcpt0t4xf7b2"
+    }
+]

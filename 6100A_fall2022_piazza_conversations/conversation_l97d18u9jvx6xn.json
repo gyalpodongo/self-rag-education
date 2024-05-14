@@ -1,0 +1,9 @@
+[
+    {
+        "content": "<p>I noticed that the test case test_framing_data doesn&#39;t test if all data within the interval bounds (inclusive) are stored, only that all data is stored when the interval is None. How should we know if our code works for the interval as well?</p>",
+        "type": "question",
+        "created": "2022-10-13T17:54:03.393Z",
+        "subject": "test_framing_data doesn&#39;t test the interval",
+        "_id": "l97d18u9jvx6xn"
+    }
+]

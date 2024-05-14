@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi!</p>\n<p></p>\n<p>For the similarity function on PSET 3, I noticed that I could use try/except blocks (catch a KeyError/IndexError) but I made a function that passed the test cases without using a try/except block. I know that using the try/except block is more relevant but would it be still possible for me to get full points using my current solution without a try/except block as long as all cases are passed?</p>\n<p></p>\n<p>Thank you!</p>",
+        "type": "question",
+        "created": "2022-10-04T00:41:54.584Z",
+        "subject": "Different Solutions for Similarity Function",
+        "_id": "l8th789kx9n395"
+    },
+    {
+        "content": "<p>I don&#39;t think you need to use a try/except block for this pset.</p>",
+        "type": "i_answer",
+        "created": "2022-10-04T04:36:44.659Z",
+        "_id": "l8th789kx9n395"
+    }
+]

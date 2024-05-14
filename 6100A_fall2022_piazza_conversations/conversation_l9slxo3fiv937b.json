@@ -1,0 +1,21 @@
+[
+    {
+        "content": "<p>Hi, TA asked me to post the question here:</p>\n<p><br />According to the requirements on your web,<em> relocate_voters(election_states, swing_states, prohibited_states)</em> should be expected to output the following:<br />1. the number of relocated voters necessary.<br />2. a dictionary with keys (from_state, to_state) (where the tuple elements are the state abbreviations) and their corresponding voters_moved values.<br />3. the number of Electoral College votes gained by the shuffling.</p>\n<p></p>\n<p>But the order listed in the ps1.py file and the checking order in the test_ps1_student.py file you provided are different:<br />1(voters), 3(EC votes), 2(pairs)</p>\n<p><br />I can pass the test of the last question following the 1-3-2 order, which does not match the webpage description (and not the debug sample you provided on that page).</p>\n<p><br />In what order should we return? Thanks!</p>",
+        "type": "question",
+        "created": "2022-10-28T14:46:22.779Z",
+        "subject": "6.100B Pset1 Q5.1 Confusion",
+        "_id": "l9slxo3fiv937b"
+    },
+    {
+        "content": "<p><strong attention=\"keiua669cvk15d\">@Esha Ranade</strong>\u00a0 <strong attention=\"jlwusfucvo312h\">@Anthony</strong> Could you guys clarify? Thanks!</p>",
+        "type": "followup",
+        "created": "2022-10-30T00:46:34.082Z",
+        "_id": "l9slxo3fiv937b"
+    },
+    {
+        "content": "<md>Please follow the 1-3-2 order that allows you to pass the student tester! We will correct the handout asap.</md>",
+        "type": "i_answer",
+        "created": "2022-10-30T18:07:08.555Z",
+        "_id": "l9slxo3fiv937b"
+    }
+]

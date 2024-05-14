@@ -1,0 +1,21 @@
+[
+    {
+        "content": "<p>I am getting this error on part 6 of my PSET 4 (frame shift) but have tried debugging several times. I don&#39;t understand what&#39;s wrong with my code to make the months off by 1 in this case since logically my function should work <img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fkqlbk0j9gbm5id%2Fabadd29d4aac637bf68903f87ca3b68e0d8d6f8ef6cb68289d20ffca30cd906e%2FScreen_Shot_2022-10-12_at_10.51.45_PM.png\" alt=\"Screen_Shot_2022-10-12_at_10.51.45_PM.pngNaN\" /></p>",
+        "type": "question",
+        "created": "2022-10-13T00:41:52.202Z",
+        "subject": "pset 4 part 6 error",
+        "_id": "l96c5ufetj67ec"
+    },
+    {
+        "content": "It is possible something is wrong with some of your helper functions that mightve escaped \u00a0the tests. I would recommend going to OH to check this out, since I\u2019m not sure if I have any ideas for what might be wrong until I see the code",
+        "type": "i_answer",
+        "created": "2022-10-13T04:44:22.796Z",
+        "_id": "l96c5ufetj67ec"
+    },
+    {
+        "content": "<p>I had this issue. The problem was that I was altering the date.month and date.year of the Date object that was input to the function, then returning the altered date, instead of creating a new Date object and returning that. Maybe that&#39;s what is going wrong for you too?</p>",
+        "type": "followup",
+        "created": "2022-10-13T17:19:36.316Z",
+        "_id": "l96c5ufetj67ec"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>What time will the final exam be for extended time and what room should we go to?\u00a0</p>\n<p></p>\n<p>Thanks!</p>",
+        "type": "question",
+        "created": "2022-10-18T03:27:46.202Z",
+        "subject": "Final Exam",
+        "_id": "l9dnagbeb592lc"
+    },
+    {
+        "content": "<p>resolved via email.</p>",
+        "type": "i_answer",
+        "created": "2022-10-19T01:45:52.075Z",
+        "_id": "l9dnagbeb592lc"
+    }
+]

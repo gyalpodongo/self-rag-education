@@ -1,0 +1,21 @@
+[
+    {
+        "content": "<p>Hey!\u00a0</p>\n<p></p>\n<p>I submitted false with the explanation in [optional] saying:</p>\n<p></p>\n<p>&#34;I assume for 3-3 the answer is also an integer, meaning in theory (would take long) we could search all integers in the following way: 0, 1, -1, 2, -2, ...</p>\n<p>If &#34;involving integers&#34; includes stuff like dividing integers, the answer might not be an integer, and then the answer would be true.&#34;</p>\n<p></p>\n<p>Why can&#39;t all problems involving integers be solved using guess and check?</p>\n<p></p>",
+        "type": "question",
+        "created": "2022-09-16T15:11:46.069Z",
+        "subject": "Microquiz 1 Problem 3-3",
+        "_id": "l84mcjh1p1o4tt"
+    },
+    {
+        "content": "<p>Some problems might not have an answer, but you don&#39;t know that in advance, and if the search space isn&#39;t bounded, then you may never be able to determine that.</p>\n<p></p>\n<p>As a contrived example, suppose the problem was to find x such that f(x) is even. If I give you an f() that&#39;s always odd, but don&#39;t tell you that, then guess-and-check would spin forever.</p>\n<p></p>\n<p>If we limited the set of x under consideration to a finite set of integers, though, then exhaustive enumeration would work (even if inefficiently).</p>",
+        "type": "i_answer",
+        "created": "2022-09-16T15:40:20.878Z",
+        "_id": "l84mcjh1p1o4tt"
+    },
+    {
+        "content": "<p>The f() odd makes a lot of sense! thank you</p>",
+        "type": "followup",
+        "created": "2022-09-16T19:56:50.000Z",
+        "_id": "l84mcjh1p1o4tt"
+    }
+]

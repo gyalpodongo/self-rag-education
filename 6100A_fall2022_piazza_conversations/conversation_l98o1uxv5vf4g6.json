@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Is the check-off for PSET 1 due before tomorrow or by the end of the day tomorrow?</p>",
+        "type": "question",
+        "created": "2022-10-14T15:50:13.987Z",
+        "subject": "PSET 1 Checkoff",
+        "_id": "l98o1uxv5vf4g6"
+    },
+    {
+        "content": "<md>checkoff was due on Monday</md>",
+        "type": "i_answer",
+        "created": "2022-10-18T15:00:03.827Z",
+        "_id": "l98o1uxv5vf4g6"
+    }
+]

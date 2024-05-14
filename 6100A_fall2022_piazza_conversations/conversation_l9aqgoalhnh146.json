@@ -1,0 +1,9 @@
+[
+    {
+        "content": "<p>I am passing everything other than test_frame_maker_large and test_shift_maker and the error is that the tuples are drastically different from each other; the lists don&#39;t even have the same number of elements. I really have no idea where to start with debugging this or what/which function could be responsible for the problem.\u00a0</p>\n<p></p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fktgl2l8n7li414%2Fc7d035f789eee8c7c7e972ed0c8b9c9090ae521e7958fe078f993f9a9629b74c%2Fimage.png\" alt=\"image.pngNaN\" /></p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fktgl2l8n7li414%2Fb2ecdc36a6e0f56b746b15433ee70371b9c0fed37b5702bee223db2ff51927d2%2Fimage.png\" alt=\"image.pngNaN\" /></p>",
+        "type": "question",
+        "created": "2022-10-16T02:33:16.797Z",
+        "subject": "Failing frame_maker_large and shift_maker test cases",
+        "_id": "l9aqgoalhnh146"
+    }
+]

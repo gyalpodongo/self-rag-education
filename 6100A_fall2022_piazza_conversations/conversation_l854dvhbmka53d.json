@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hello, I submitted my pset a few days ago without adding comments. Today I added comments, saved the files, and uploaded them again.</p>\n<p></p>\n<p>However, when I click on &#34;download most recent submission&#34; on the pset, it shows me my original files without any comments. I&#39;m sure I uploaded and submitted the files correctly - is there any way you could see if the correct version went through?\u00a0</p>\n<p></p>\n<p>Thanks.\u00a0</p>",
+        "type": "question",
+        "created": "2022-09-16T23:36:41.375Z",
+        "subject": "Pset 1 Submission - Code Comments",
+        "_id": "l854dvhbmka53d"
+    },
+    {
+        "content": "<md>Hi, I see comments on your recent submission. Sometimes, the website is slow to show your most recent submission. \n\nAn example comment if this looks familiar:\n\n```\n\n    '''\n\n    \n   Monthly salary is defined at the start of the while loop\n   because in this problem, the salary isn't fixed - it increases over time.\n   So I made sure the program has the correct number for the monthly salary at\n   from the beginning. \n    \n   At the end of the month, add the amount of interest earned to the savings.\n\n   Also add the amount of money the user planned to save from the MONTHLY salary to \n   the savings account.\n\n   Increment the variable months by one afterwards (ensuring that the  above calculations\n   occur at the end of each month, not at the beginning).\n    \n   If months mod 6 is zero (meaning months\n   is divisible by 6), we're on a \"sixth\" month, so we increase the variable annual_salary \n   to reflect the semi-annual raise.\n    \n    \n\n    '''\n```</md>",
+        "type": "i_answer",
+        "created": "2022-09-18T17:22:09.305Z",
+        "_id": "l854dvhbmka53d"
+    }
+]

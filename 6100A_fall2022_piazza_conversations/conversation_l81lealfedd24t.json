@@ -1,0 +1,21 @@
+[
+    {
+        "content": "<p>I know this is looking very far ahead, but I was wondering if class the day before Thanksgiving will be a normal lecture.\u00a0 I&#39;m on the women&#39;s basketball team and our coach is giving us more time to go home for Thanksgiving since we only get about 4 days off for Christmas this year and that&#39;s it, but I need to make sure I can actually go home with my class schedule.\u00a0 Obviously class is zoomed so my plan was to just Zoom in from home and attend lecture on that day, but wanted to make sure there wouldn&#39;t be a Microquiz or something that would be an issue.\u00a0 Sorry again it&#39;s so far in advance, just looking to sort out flight tickets before prices get too high!\u00a0 Thank you so much!!</p>",
+        "type": "question",
+        "created": "2022-09-14T12:21:49.731Z",
+        "subject": "Course Schedule--Thanksgiving",
+        "_id": "l81lealfedd24t"
+    },
+    {
+        "content": "<p>We will not have class the Wed right before the Thanksgiving break.\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-09-14T13:09:24.575Z",
+        "_id": "l81lealfedd24t"
+    },
+    {
+        "content": "<p>There will be no lecture the Wednesday before Thanksgiving.</p>",
+        "type": "followup",
+        "created": "2022-09-14T13:50:17.688Z",
+        "_id": "l81lealfedd24t"
+    }
+]

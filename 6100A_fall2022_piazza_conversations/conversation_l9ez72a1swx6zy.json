@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>I don&#39;t understand this problem. Is it supposed to be recursive? How to best approach it? I am getting different results.\u00a0</p>",
+        "type": "question",
+        "created": "2022-10-19T01:48:49.609Z",
+        "subject": "Exam practice problem 3",
+        "_id": "l9ez72a1swx6zy"
+    },
+    {
+        "content": "<p>Something which helped me to think about: how is a contiguous subsequence defined?</p>\n<p></p>\n<p>One way to define it is by the starting element position and the length of the sequence.</p>\n<p></p>\n<p>Another way to define it is by the starting element position and the ending element position.</p>",
+        "type": "s_answer",
+        "created": "2022-10-19T13:36:16.451Z",
+        "_id": "l9ez72a1swx6zy"
+    }
+]

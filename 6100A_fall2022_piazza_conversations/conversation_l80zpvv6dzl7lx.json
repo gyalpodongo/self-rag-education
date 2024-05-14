@@ -1,0 +1,15 @@
+[
+    {
+        "content": "I have ps1_tester.py, ps1a.py and put_in_function.py all in the same folder, yet I get an error that reads &#34;ModuleNotFoundError: No module named &#39;ps1a_in_function&#39;&#34; when I try to run the tester. I also get the error &#34;[PART A] Did you keep all the original comments the file came with? Did you initialize variables at the right places?&#34; for each of the parts when I run the put_in_function. Any help on how to have this work better would be appreciated, as this is keeping me from finishing my PSET.\nBest,\nPablo",
+        "type": "question",
+        "created": "2022-09-14T02:14:58.962Z",
+        "subject": "ps1tester issues",
+        "_id": "l80zpvv6dzl7lx"
+    },
+    {
+        "content": "<p>Did you delete any of the comment blocks that were in the original pset file? If these are deleted then the tester is unable to run, hence the second error. Fixing this should remove the ModuleNotFoundError as well. If you would like to make a private post on Piazza or come to office hours, we can take a look at your code (please don&#39;t post your code in a public post!)</p>",
+        "type": "i_answer",
+        "created": "2022-09-14T15:51:40.094Z",
+        "_id": "l80zpvv6dzl7lx"
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p>Hi!</p>\n<p></p>\n<p>I&#39;ve written a function for has_player_won and deleted pass but when I run the tester it doesn&#39;t print anything about this function. It doesn&#39;t say if tis passed or failed or anything. How can I fix this?</p>",
+        "type": "question",
+        "created": "2022-09-25T21:00:27.913Z",
+        "subject": "tester not showing has_player_won tests",
+        "_id": "l8htrmvd1t222e"
+    },
+    {
+        "content": "<p>its doing this for all the tests I seem to be passing? tests are going away but the score out of 5 is going up</p>",
+        "type": "followup",
+        "created": "2022-09-25T21:25:43.872Z",
+        "_id": "l8htrmvd1t222e"
+    },
+    {
+        "content": "I\u2019m not sure I get what you mean. Can you show the terminal output to help explain?",
+        "type": "i_answer",
+        "created": "2022-09-26T04:42:22.230Z",
+        "_id": "l8htrmvd1t222e"
+    },
+    {
+        "content": "<p>Got help in office hours!</p>\n<p></p>",
+        "type": "followup",
+        "created": "2022-09-26T14:24:09.800Z",
+        "_id": "l8htrmvd1t222e"
+    }
+]

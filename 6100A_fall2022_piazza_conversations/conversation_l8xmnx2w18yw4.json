@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>The plots pop up on the console plots tab instead of a different screen, and because of this I can&#39;t click the buttons</p>",
+        "type": "question",
+        "created": "2022-10-06T22:25:56.024Z",
+        "subject": "Plot&#39;s appearing but buttons not working",
+        "_id": "l8xmnx2w18yw4"
+    },
+    {
+        "content": "<p>Did you set the &#34;Graphics backend&#34; setting in Spyder?</p>\n<p></p>\n<p>===</p>\n<h3>NOTE: Additional setup if using Spyder</h3>\n<p>This problem set involves making <strong>interactive plots</strong>. If you are using Spyder, plots typically appear in the <strong>Plots</strong> pane and are <em>not</em> interactive.</p>\n<p>To be able to interact with your plots in Spyder, go to <strong><code>Preferences | IPython console | Graphics</code></strong>. Under <strong>Graphics Backend</strong>, change the backend to <code>Automatic</code>. This will open any generated plots in a new window, allowing you to interact with them as intended in this pset.</p>\n<p></p>\n<p><img alt=\"Setting Spyder preferences for interactive plots.\" src=\"https://sicp-s1.mit.edu/_static/fall22/psets/1_pset4/spyder_preferences.png\" width=\"600\" /></p>",
+        "type": "s_answer",
+        "created": "2022-10-07T09:45:27.720Z",
+        "_id": "l8xmnx2w18yw4"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "content": "If we look up something online if we have a question about python on a pset, do we have to cite that source?",
+        "type": "question",
+        "created": "2022-09-26T13:29:36.262Z",
+        "subject": "Cite sources",
+        "_id": "l8it3ocm3gs1zk"
+    },
+    {
+        "content": "<p>Visiting external resources for help on a programming concept is a fact of life, and it is encouraged to reinforce computer science concepts that may not be internalized yet.</p>\n<p></p>\n<p>However, commenting in your PSET which resources you used can be helpful for you to understand what you did, just like you are required to list collaborators at the top of the PSET.</p>\n<p></p>\n<p>The most important thing to consider is that after consulting that resource, do you still not understand the concept? If not, that it is not appropriate to take code from that resource and put it in your PSET.</p>\n<p></p>\n<p>If it DID help you internalize that concept, simply put that concept to action in your own code, and comment which resource you used for future reference. The\u00a0<strong>most important part</strong> of all of this is that you yourself have written that code, and that you understand the code that appears in your pset well enough to walk anyone through it and that you can explain it to an LA / TA during a checkoff.</p>",
+        "type": "i_answer",
+        "created": "2022-09-26T19:32:30.773Z",
+        "_id": "l8it3ocm3gs1zk"
+    }
+]

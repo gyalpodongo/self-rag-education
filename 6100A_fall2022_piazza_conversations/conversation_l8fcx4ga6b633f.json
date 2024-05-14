@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>On the finger exercise, we were asked to calculate dot products and pairwise products. I have not yet learned these concepts in math. Will we be expected to know concepts such as this on quizzes?</p>",
+        "type": "question",
+        "created": "2022-09-24T03:33:18.154Z",
+        "subject": "Outside Knowledge Content",
+        "_id": "l8fcx4ga6b633f"
+    },
+    {
+        "content": "<p>You won&#39;t need to know these concepts on the quizzes.\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-09-25T14:41:43.226Z",
+        "_id": "l8fcx4ga6b633f"
+    }
+]

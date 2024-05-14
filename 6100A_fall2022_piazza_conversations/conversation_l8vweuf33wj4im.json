@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl7si5rm5yq262%2F082111e65b4ca06c5d4b4666b6bf69a26b3ba5ac0a00033ee6328b688f7039d5%2Fimage.png\" alt=\"image.pngNaN\" width=\"421\" height=\"180\" />For this test in the tester program, the last result would never be correct as 0 years back would keep it at 1995, and so you are never rewarded points for test_date_before. Is this done on purpose?</p>",
+        "type": "question",
+        "created": "2022-10-05T17:23:16.479Z",
+        "subject": "Test Case Failure",
+        "_id": "l8vweuf33wj4im"
+    },
+    {
+        "content": "Remember that 0 years and 20 months back is the same as 1 year and 8 months back. You should handle these cases carefully.\u00a0",
+        "type": "i_answer",
+        "created": "2022-10-05T17:29:00.495Z",
+        "_id": "l8vweuf33wj4im"
+    }
+]

@@ -1,0 +1,33 @@
+[
+    {
+        "content": "<p>Contacted my PSET buddy on Thursday 10/6, and haven&#39;t gotten a response. I will start the PSET by myself, but I don&#39;t know what the protocol is for when the buddy doesn&#39;t respond.</p>",
+        "type": "question",
+        "created": "2022-10-10T00:40:21.270Z",
+        "subject": "PSET Buddy Not Responded",
+        "_id": "l921sc9ilhtdi"
+    },
+    {
+        "content": "<p>I can assign you a new buddy. Mercy Olagunju mercyo@mit.edu\u00a0</p>\n<p></p>\n<p>Please get in touch with her.\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-10-10T12:04:00.564Z",
+        "_id": "l921sc9ilhtdi"
+    },
+    {
+        "content": "<p>My new partner just emailed me saying their old partner got in touch with them and that they&#39;re no longer going to work with me. What do I do?</p>",
+        "type": "followup",
+        "created": "2022-10-10T17:46:46.713Z",
+        "_id": "l921sc9ilhtdi"
+    },
+    {
+        "content": "<p>I don&#39;t have anyone else to pair you with, so you should begin the pset on your own. Please make use of our many office hours if you get stuck.\u00a0</p>",
+        "type": "followup_response",
+        "created": "2022-10-10T17:53:27.525Z",
+        "_id": "l921sc9ilhtdi"
+    },
+    {
+        "content": "<p>Thanks!</p>",
+        "type": "followup_response",
+        "created": "2022-10-10T17:54:14.938Z",
+        "_id": "l921sc9ilhtdi"
+    }
+]

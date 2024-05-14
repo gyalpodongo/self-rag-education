@@ -1,0 +1,9 @@
+[
+    {
+        "content": "<p>Someone asked after class today why, on slide 53, the first expression in the f-string has a <kbd>,.0f</kbd> format specifier, whereas the last expression&#39;s is just <kbd>,</kbd>. Both result in the same apparent output formatting.<br /><br />The reason is because <kbd>num</kbd> is an int, but <kbd>fraction</kbd> is a float, and hence <kbd>num*fraction</kbd> is also a float. If we had left out the <kbd>.0f</kbd> for <kbd>num*fraction</kbd>, it would have printed as <kbd>10,000,000.0</kbd>, instead of just <kbd>10,000,000</kbd>.<br /><br />If this is confusing, try printing ints and floats in the Python shell with different format specifiers.</p>",
+        "type": "note",
+        "created": "2022-09-08T03:10:36.924Z",
+        "subject": "Lecture 1: F-string numeric type formatting",
+        "_id": "l7sh2bgc6fw7p6"
+    }
+]

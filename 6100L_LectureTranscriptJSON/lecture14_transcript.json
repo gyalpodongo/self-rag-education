@@ -1,0 +1,2950 @@
+[
+    {
+        "timestamp": "00:00:09",
+        "content": "DICTIONARIES"
+    },
+    {
+        "timestamp": "00:00:36",
+        "content": "HOW TO STORE STUDENT INFO"
+    },
+    {
+        "timestamp": "00:03:15",
+        "content": "HOW TO ACCESS STUDENT INFO"
+    },
+    {
+        "timestamp": "00:05:15",
+        "content": "HOW TO STORE AND ACCESS STUDENT INFO"
+    },
+    {
+        "timestamp": "00:11:00",
+        "content": "A BETTER AND CLEANER WAY A DICTIONARY"
+    },
+    {
+        "timestamp": "00:12:54",
+        "content": "BIG IDEA"
+    },
+    {
+        "timestamp": "00:13:42",
+        "content": "A PYTHON DICTIONARY"
+    },
+    {
+        "timestamp": "00:16:36",
+        "content": "DICTIONARY LOOKUP"
+    },
+    {
+        "timestamp": "00:19:27",
+        "content": "YOU TRY IT!"
+    },
+    {
+        "timestamp": "00:21:00",
+        "content": "['mg', [6, 7]])"
+    },
+    {
+        "timestamp": "00:23:24",
+        "content": "DICTIONARY OPERATIONS"
+    },
+    {
+        "timestamp": "00:37:12",
+        "content": "DICTIONARY OPERATIONS most useful way to iterate over dict\u2026"
+    },
+    {
+        "timestamp": "00:38:42",
+        "content": "Typical use is to itera"
+    },
+    {
+        "timestamp": "00:43:18",
+        "content": "DICTIONARY KEYS & VALUES"
+    },
+    {
+        "timestamp": "00:45:39",
+        "content": "WHY IMMUTABLE/HASHABLE KEYS?"
+    },
+    {
+        "timestamp": "00:47:57",
+        "content": "Memory block (like a list)"
+    },
+    {
+        "timestamp": "00:49:12",
+        "content": "Hash function: 1) Sum the letters 2) Take mod 16 (to fit in\u2026"
+    },
+    {
+        "timestamp": "00:52:00",
+        "content": "A PYTHON DICTIONARY for STUDENT GRADES"
+    },
+    {
+        "timestamp": "00:55:21",
+        "content": "grades [0] returns 5"
+    },
+    {
+        "timestamp": "01:00:54",
+        "content": "Ordered sequence of elements"
+    },
+    {
+        "timestamp": "01:02:09",
+        "content": "EXAMPLE: FIND MOST COMMON WORDS IN A SONG'S LYRICS"
+    },
+    {
+        "timestamp": "01:04:12",
+        "content": "lyrics in a pop song EXAMPLE: FIND MOST COMMON WORDS IN A\u2026"
+    },
+    {
+        "timestamp": "01:05:45",
+        "content": "CREATING A DICTIONARY Python Tutor LINK"
+    },
+    {
+        "timestamp": "01:10:06",
+        "content": "USING THE DICTIONARY"
+    },
+    {
+        "timestamp": "01:13:30",
+        "content": "FIND WORDS WITH FREQUENCY GREATER THAN"
+    },
+    {
+        "timestamp": "01:15:57",
+        "content": "LEVERAGING DICT PROPERTIES Python Tutor LINK"
+    },
+    {
+        "timestamp": "01:16:51",
+        "content": "LEVERAGING DICT PROPERTIES"
+    },
+    {
+        "timestamp": "00:00:01",
+        "content": "All right, everyone, let's get started."
+    },
+    {
+        "timestamp": "00:00:04",
+        "content": "So today's lecture will be on this thing called dictionaries, and it's not the dictionaries that our parents and grandparents used."
+    },
+    {
+        "timestamp": "00:00:11",
+        "content": "Notice, I never actually used dictionary regular book dictionaries either."
+    },
+    {
+        "timestamp": "00:00:15",
+        "content": "Maybe once in my entire life. But it's actually on a python dictionary."
+    },
+    {
+        "timestamp": "00:00:21",
+        "content": "So this is going to be a new data type that we have not worked with before, but it'll be a compound data type."
+    },
+    {
+        "timestamp": "00:00:28",
+        "content": "Much like we've seen lists and tuples to be. It's just going to be very different than lists and tuples."
+    },
+    {
+        "timestamp": "00:00:35",
+        "content": "So before I introduce a bunch of syntax and and what a Python dictionary is, let's try to just motivate the need for such a data structure."
+    },
+    {
+        "timestamp": "00:00:47",
+        "content": "So suppose we have the following problem."
+    },
+    {
+        "timestamp": "00:00:50",
+        "content": "We've been dealing with this problem in many of our lectures, but we once again want to store student information."
+    },
+    {
+        "timestamp": "00:00:58",
+        "content": "So let's say we want to store great information for a bunch of students with what we know so far."
+    },
+    {
+        "timestamp": "00:01:07",
+        "content": "We can store information using lists. It's a very reasonable data structure to use because we might get new students in the class."
+    },
+    {
+        "timestamp": "00:01:14",
+        "content": "Students might drop grades, might change things like that. So let's use this mutable data structure a list."
+    },
+    {
+        "timestamp": "00:01:21",
+        "content": "Let's say we want to store names of students and their grades in the class like their final letter grade."
+    },
+    {
+        "timestamp": "00:01:27",
+        "content": "Additionally, we can store things like micro quiz grades and pieces grades."
+    },
+    {
+        "timestamp": "00:01:32",
+        "content": "But for now, let's just assume restoring just the names and the final grades in the class."
+    },
+    {
+        "timestamp": "00:01:41",
+        "content": "So if we do this using lists, one reasonable way to store this information is by saying, Well, I'm going to have a list of all the names of the students in my class."
+    },
+    {
+        "timestamp": "00:01:44",
+        "content": "I'm going to have a list of all the grades of these students in the class."
+    },
+    {
+        "timestamp": "00:01:55",
+        "content": "And I'm basically going to go index by index and make the rule that says at a particular index, I'm storing all the information related to this one person. So I didn't get zero here."
+    },
+    {
+        "timestamp": "00:02:00",
+        "content": "I'm storing the name of the student and their grade at index one."
+    },
+    {
+        "timestamp": "00:02:09",
+        "content": "I'm storing the name of that student, John, and their grade at index two, I'm storing the name of that student and their grade and that index three and so on and so on."
+    },
+    {
+        "timestamp": "00:02:13",
+        "content": "Right. So now I basically have to remember that for a particular index, I am storing all the information related to that student."
+    },
+    {
+        "timestamp": "00:02:21",
+        "content": "Right. Okay. So seems like a reasonable way to to do this."
+    },
+    {
+        "timestamp": "00:02:28",
+        "content": "Now, let's say that I wanted to look up the grade for a particular student."
+    },
+    {
+        "timestamp": "00:02:33",
+        "content": "Okay. So I write this function called Get Grade. It takes in some parameters."
+    },
+    {
+        "timestamp": "00:02:39",
+        "content": "So the first thing it'll take in is the name of the student."
+    },
+    {
+        "timestamp": "00:02:42",
+        "content": "So an A for example, and I would pass in the list of all the names in my class and the list of all the grades in the class."
+    },
+    {
+        "timestamp": "00:02:49",
+        "content": "So these are these two lists that I've previously created, right?"
+    },
+    {
+        "timestamp": "00:02:53",
+        "content": "So these get passed in to this function."
+    },
+    {
+        "timestamp": "00:02:55",
+        "content": "So you can imagine if we have a list of everybody out of MIT, these lists are going to be pretty large that we're passing in as parameters."
+    },
+    {
+        "timestamp": "00:03:02",
+        "content": "How do we actually grab the letter grade associated with the student?"
+    },
+    {
+        "timestamp": "00:03:06",
+        "content": "Well, we're going to use the fact that the letter grade for the student at index AI is in it in the grades list is going to be."
+    },
+    {
+        "timestamp": "00:03:19",
+        "content": "Grabbing the letter grade for the student at that same index in the name list."
+    },
+    {
+        "timestamp": "00:03:24",
+        "content": "Okay. So we have to figure out this particular student being passed in here, what index they're at in the names list."
+    },
+    {
+        "timestamp": "00:03:32",
+        "content": "So that's what this line of code is doing. It's using this index function on the name list with a parameter, for example, Anna."
+    },
+    {
+        "timestamp": "00:03:41",
+        "content": "So this will return for us, the index where Anna is in my list."
+    },
+    {
+        "timestamp": "00:03:46",
+        "content": "So from the previous example, it's going to say that it's going to return the number zero because Anna is stored in the name list an index zero."
+    },
+    {
+        "timestamp": "00:03:56",
+        "content": "So now that I have that index in hand stored in variable, I, I can just index into the grade list at that same index."
+    },
+    {
+        "timestamp": "00:04:04",
+        "content": "Okay. So I can get grades list at index zero will return for me."
+    },
+    {
+        "timestamp": "00:04:08",
+        "content": "The grade that I got for that particular class or whatever we're storing here."
+    },
+    {
+        "timestamp": "00:04:14",
+        "content": "And then we just returned the tuple student comma grade. So this becomes really messy, right?"
+    },
+    {
+        "timestamp": "00:04:25",
+        "content": "I already mentioned that if I have a list of a whole bunch of students for a really large class or, you know, the entire university, then it becomes really unwieldy to just keep passing in all these lists."
+    },
+    {
+        "timestamp": "00:04:39",
+        "content": "If I have in addition, all these micro quiz lists and all these problem set lists that also store additional information for the student, I then have to pass those in for their respective functions."
+    },
+    {
+        "timestamp": "00:04:43",
+        "content": "And so it gets really messy, right, writing these functions that retrieve these this information."
+    },
+    {
+        "timestamp": "00:04:54",
+        "content": "And additionally, if we're mutating these lists, like if a new student comes in and we need add all their information, I need to make sure to update every single one of these lists that I'm maintaining."
+    },
+    {
+        "timestamp": "00:04:58",
+        "content": "If a student leaves, write or drops the class, I need to remember to remove that index from all of these different lists."
+    },
+    {
+        "timestamp": "00:05:05",
+        "content": "So really, really messy situation that we could get into by using this method to store information about students."
+    },
+    {
+        "timestamp": "00:05:14",
+        "content": "So let's try a different approach instead of using all of these different lists."
+    },
+    {
+        "timestamp": "00:05:19",
+        "content": "Let's say that we're going to store everything in a master list so we're not storing many lists."
+    },
+    {
+        "timestamp": "00:05:25",
+        "content": "We'll just store one list for the grades in the class, and the way it'll be stored, according to this in the slide, is going to be this grades list."
+    },
+    {
+        "timestamp": "00:05:36",
+        "content": "So this is one list with three elements in it. And you can imagine if we have more students, we would just put all these students in this master list."
+    },
+    {
+        "timestamp": "00:05:44",
+        "content": "So what is each one of these student elements?"
+    },
+    {
+        "timestamp": "00:05:50",
+        "content": "Well, each student element is itself a list. So already I've got my master list, and each element within this list is also a list."
+    },
+    {
+        "timestamp": "00:05:57",
+        "content": "So this is a list for Eric, a list for Anna and a list for John."
+    },
+    {
+        "timestamp": "00:06:01",
+        "content": "These are variable names. What are these lists going to be comprised of?"
+    },
+    {
+        "timestamp": "00:06:07",
+        "content": "Well, they will be comprised of three things. So notice. Right, two commas here."
+    },
+    {
+        "timestamp": "00:06:11",
+        "content": "So the first thing is their name. The second thing is another list containing their problems, their grades."
+    },
+    {
+        "timestamp": "00:06:18",
+        "content": "And I'm kind of using this element of that list to denote what that set of numbers represents."
+    },
+    {
+        "timestamp": "00:06:26",
+        "content": "And then another list as my third element being for the Michael being the scores for the micro quiz grades."
+    },
+    {
+        "timestamp": "00:06:32",
+        "content": "And again, I'm denoting the first element of that list telling me what this list contains."
+    },
+    {
+        "timestamp": "00:06:40",
+        "content": "Okay, so I've got lists, master list with three sub lists for my three students."
+    },
+    {
+        "timestamp": "00:06:46",
+        "content": "And each one of those lists contains three elements a string, a list and another list."
+    },
+    {
+        "timestamp": "00:06:50",
+        "content": "And those two lists are then also comprised of a string and a list themselves."
+    },
+    {
+        "timestamp": "00:06:56",
+        "content": "So super complex, a data structure or a sort of composition or design choice that I've made here."
+    },
+    {
+        "timestamp": "00:07:03",
+        "content": "But it solves the problem of maintaining all these different lists in separate variables."
+    },
+    {
+        "timestamp": "00:07:11",
+        "content": "So now let's say I wanted to write a function that gets the grades for a particular student for either, you know, problems that are in my grades."
+    },
+    {
+        "timestamp": "00:07:20",
+        "content": "This is the function that does that. So, again, it's not looking super nice."
+    },
+    {
+        "timestamp": "00:07:26",
+        "content": "So what is this function going to take in the who is going to be a string representing the name?"
+    },
+    {
+        "timestamp": "00:07:31",
+        "content": "So for example, Ana, the what will be also a string representing what information I'd like to grab either piece or MQ."
+    },
+    {
+        "timestamp": "00:07:41",
+        "content": "And the data is going to be my master list of all the grades."
+    },
+    {
+        "timestamp": "00:07:45",
+        "content": "So this grades equals this list of everything. So what is this code going to do?"
+    },
+    {
+        "timestamp": "00:07:50",
+        "content": "Well, it has a for loop down here."
+    },
+    {
+        "timestamp": "00:07:54",
+        "content": "And a nested for loop inside it. The outer for loop basically looks through each one of these elements here and looks at the element at index zero."
+    },
+    {
+        "timestamp": "00:08:05",
+        "content": "So either Eric, Anna or John and grabs only the list where that piece, the string here matches the who."
+    },
+    {
+        "timestamp": "00:08:14",
+        "content": "All right. So if student at index zero equals who right here, then we found the student."
+    },
+    {
+        "timestamp": "00:08:19",
+        "content": "I'm interested in grabbing the information for cool."
+    },
+    {
+        "timestamp": "00:08:23",
+        "content": "So now I've gone. I grabbed the right piece, the right list, and now I'm interested in their grades for a particular what?"
+    },
+    {
+        "timestamp": "00:08:31",
+        "content": "Right. So either MQ or. Yes, so I do the exact same thing again for that list here."
+    },
+    {
+        "timestamp": "00:08:37",
+        "content": "Right. So if I'm interested in Ana's grades, I've, I grab these lists here, right."
+    },
+    {
+        "timestamp": "00:08:46",
+        "content": "And then I'm going to check if the info on index zero."
+    },
+    {
+        "timestamp": "00:08:50",
+        "content": "So either this piece or this MQ matches the what."
+    },
+    {
+        "timestamp": "00:08:53",
+        "content": "So either I'm Q to match what I'm interested in grabbing the information what information I'm interested in grabbing."
+    },
+    {
+        "timestamp": "00:08:59",
+        "content": "And then I'm going to go inside this if statement if they match and the high return the who in the info so again super"
+    },
+    {
+        "timestamp": "00:09:07",
+        "content": "complex no need to understand this that well because we're not going to use this method for long so this get grades here."
+    },
+    {
+        "timestamp": "00:09:16",
+        "content": "For example, if I grab a micro quiz grades and I run the code, it will return for me."
+    },
+    {
+        "timestamp": "00:09:22",
+        "content": "This tuple that grabs that returns for me the name of the student."
+    },
+    {
+        "timestamp": "00:09:26",
+        "content": "And then there's just this sub list of the thing that I was interested in, in this case, micro quiz."
+    },
+    {
+        "timestamp": "00:09:31",
+        "content": "And it grabs for me all the grades and then I can then index into this returned to pull to grab either the first quiz or the second quiz grades."
+    },
+    {
+        "timestamp": "00:09:39",
+        "content": "Okay. Um. And. And same for Anna."
+    },
+    {
+        "timestamp": "00:09:43",
+        "content": "Right. In this particular case, it grabs for me just the tuple with my name and then that sub list with the problem."
+    },
+    {
+        "timestamp": "00:09:50",
+        "content": "So great. Okay."
+    },
+    {
+        "timestamp": "00:09:54",
+        "content": "So, again, really messy. I have to I've made my design choice for how to create this all these lists with some lists and some list within those."
+    },
+    {
+        "timestamp": "00:10:12",
+        "content": "And so I'd have to document that probably if I was using this method and then this function to grab this information again, super complex, hard to read."
+    },
+    {
+        "timestamp": "00:10:16",
+        "content": "So it's not really a great way to store information either."
+    },
+    {
+        "timestamp": "00:10:31",
+        "content": "But the idea behind this, which is to try to store some data associated with some sort of key write the piece or MQ or in this case I'm storing, you know, a bunch of grades for Eric and or to that idea we can explore."
+    },
+    {
+        "timestamp": "00:10:36",
+        "content": "And that's basically what dictionaries will do for us."
+    },
+    {
+        "timestamp": "00:10:39",
+        "content": "It will allow us to create data structures that map some sort of custom index, a key to some value, so much like a book dictionary does, right?"
+    },
+    {
+        "timestamp": "00:10:50",
+        "content": "It maps the word to its definition. We'll be able to create our own dictionaries that map some object to another object."
+    },
+    {
+        "timestamp": "00:10:59",
+        "content": "So when we create a dictionary, we call every sort of quote unquote element in the dictionary an entry."
+    },
+    {
+        "timestamp": "00:11:07",
+        "content": "And that entry is, is that mapping of a key to a value."
+    },
+    {
+        "timestamp": "00:11:12",
+        "content": "So just to draw a parallel with a list, we can think of a list as mapping something to another something."
+    },
+    {
+        "timestamp": "00:11:19",
+        "content": "The thing that a list maps is this index number is 0123 in that order."
+    },
+    {
+        "timestamp": "00:11:27",
+        "content": "Right so it has to start have an element at index zero and then that index increases by one from thereon."
+    },
+    {
+        "timestamp": "00:11:35",
+        "content": "And for each one of these index indices, I'm mapping that index to some element in my list."
+    },
+    {
+        "timestamp": "00:11:41",
+        "content": "Right. That's basically what the list there's something associated with index zero, something associated with the X one and so on."
+    },
+    {
+        "timestamp": "00:11:49",
+        "content": "So it's kind of like a very restrictive dictionary, right?"
+    },
+    {
+        "timestamp": "00:11:53",
+        "content": "An actual python dictionary works in a similar way, except that now I am not putting any restrictions on my indices."
+    },
+    {
+        "timestamp": "00:12:03",
+        "content": "My indices here become these sort of custom indices called a key."
+    },
+    {
+        "timestamp": "00:12:08",
+        "content": "And so now I'm able to associate a value equivalent element in my list with that key so I can have an element associated with any object."
+    },
+    {
+        "timestamp": "00:12:20",
+        "content": "Okay. So I am using the term value here and in a dictionary."
+    },
+    {
+        "timestamp": "00:12:28",
+        "content": "The the key is associated with a value, and that's one entry in the dictionary."
+    },
+    {
+        "timestamp": "00:12:33",
+        "content": "Now, this is going to be a little bit confusing because we've been using the term value to refer to just some objects value, right?"
+    },
+    {
+        "timestamp": "00:12:42",
+        "content": "Like, you know, in, you know, variable A has value five or something like that."
+    },
+    {
+        "timestamp": "00:12:47",
+        "content": "But now I'm going to try to make a conscious effort now that we're introducing dictionary and dictionary"
+    },
+    {
+        "timestamp": "00:12:59",
+        "content": "values associated with a key to whenever I'm talking about the dictionary as value to say dictionary value, just so it's not confusing. Okay. But just, just keep that in mind."
+    },
+    {
+        "timestamp": "00:13:03",
+        "content": "It can be a little bit confusing at first. Now that we're using the same terminology for two different things."
+    },
+    {
+        "timestamp": "00:13:11",
+        "content": "So we're going to go through in this lecture, we're going to introduce a bunch of syntax and operations with dictionaries and there'll be lots of you try"
+    },
+    {
+        "timestamp": "00:13:21",
+        "content": "it exercises just to give you a little bit of practice with the syntax because this is kind of a syntax, heavy lecture. So hopefully it helps a little bit, but let's first see how to store data in a Python dictionary."
+    },
+    {
+        "timestamp": "00:13:30",
+        "content": "So as I mentioned, a Python dictionary stores entries."
+    },
+    {
+        "timestamp": "00:13:34",
+        "content": "And that entry is a key value pair. Okay."
+    },
+    {
+        "timestamp": "00:13:38",
+        "content": "So you're mapping one key to its value. The key can be any immutable object."
+    },
+    {
+        "timestamp": "00:13:44",
+        "content": "And we're going to see what this means in a little bit."
+    },
+    {
+        "timestamp": "00:13:46",
+        "content": "And the value associated with that key or the python value associated with that key can be any object you'd like, even lists or other dictionaries."
+    },
+    {
+        "timestamp": "00:13:56",
+        "content": "So the way we create a Python dictionary is by using these open and closed curly braces."
+    },
+    {
+        "timestamp": "00:14:03",
+        "content": "So tuples were open and closed. Parentheses lists were open and closed square brackets."
+    },
+    {
+        "timestamp": "00:14:08",
+        "content": "Dictionaries are open and closed curly braces. And this creates inside memory an empty dictionary."
+    },
+    {
+        "timestamp": "00:14:14",
+        "content": "So an entry, a dictionary with zero entries. So the length of a dictionary is zero."
+    },
+    {
+        "timestamp": "00:14:20",
+        "content": "To add to create a dictionary with one entry in it. Again, we have curly braces and we had one entry in it."
+    },
+    {
+        "timestamp": "00:14:26",
+        "content": "So this something colon something else is an entry in my dictionary, one entry."
+    },
+    {
+        "timestamp": "00:14:32",
+        "content": "And the thing before the colon is the key and the thing after the colon is the value associated with that key."
+    },
+    {
+        "timestamp": "00:14:43",
+        "content": "So you can think of it."
+    },
+    {
+        "timestamp": "00:14:44",
+        "content": "If we're drawing a parallel to lists, this is now mapping, you know, sort of at this custom index for we're putting element 16."
+    },
+    {
+        "timestamp": "00:14:54",
+        "content": "Okay. So we can also create dictionaries that aren't just full of integers, and you can mix and match data types as you'd like."
+    },
+    {
+        "timestamp": "00:15:02",
+        "content": "But usually in dictionaries we kind of have the keys, all be the same type and the values, you know, all be the same type."
+    },
+    {
+        "timestamp": "00:15:10",
+        "content": "But you can certainly mix and match types just like you could."
+    },
+    {
+        "timestamp": "00:15:13",
+        "content": "You could create lists and tuples full of an integer and a float and another list, you know, and mix and match in that way."
+    },
+    {
+        "timestamp": "00:15:20",
+        "content": "So here I'm creating a dictionary again. Open and closed. Curly braces starts my dictionary and it has four elements in it."
+    },
+    {
+        "timestamp": "00:15:28",
+        "content": "So each sorry, four entries in it and each entry is separated by a comma."
+    },
+    {
+        "timestamp": "00:15:34",
+        "content": "I've got here my first entry. So it is mapping the key, Anna, to the dictionary value be."
+    },
+    {
+        "timestamp": "00:15:43",
+        "content": "My second entry maps key map to value a third entry maps key drawn to value B and last entry maps key 82 value."
+    },
+    {
+        "timestamp": "00:15:53",
+        "content": "Right? So this is a dictionary that essentially maps strings to other strings."
+    },
+    {
+        "timestamp": "00:15:59",
+        "content": "So you can see here, I've kind of visualized the dictionary that we just created."
+    },
+    {
+        "timestamp": "00:16:04",
+        "content": "We've got these custom indices, right? So we're basically mapping names to letter grades."
+    },
+    {
+        "timestamp": "00:16:14",
+        "content": "Everything okay so far? Does it make sense? I guess conceptually."
+    },
+    {
+        "timestamp": "00:16:18",
+        "content": "Okay. Okay."
+    },
+    {
+        "timestamp": "00:16:21",
+        "content": "So the first thing we'd like to do is once we have a dictionary full of a bunch of entries, how do we grab an entry?"
+    },
+    {
+        "timestamp": "00:16:29",
+        "content": "How do we look up a value associated with a key?"
+    },
+    {
+        "timestamp": "00:16:34",
+        "content": "So the way we do that is in a very similar way to the way we look up an element in a list."
+    },
+    {
+        "timestamp": "00:16:42",
+        "content": "Right. A key in a dictionary is just a custom index."
+    },
+    {
+        "timestamp": "00:16:47",
+        "content": "Right. So how did we look up an element in a list? So if I wanted the element at index three, I would basically say l score brackets three."
+    },
+    {
+        "timestamp": "00:16:55",
+        "content": "And that grabs for me the value at that index. Well, now I've got my custom indices right."
+    },
+    {
+        "timestamp": "00:17:01",
+        "content": "My custom indices are these strings. The syntax will be exactly the same."
+    },
+    {
+        "timestamp": "00:17:07",
+        "content": "I've got this custom index I'd like to look up. So I say dictionary name, square bracket."
+    },
+    {
+        "timestamp": "00:17:13",
+        "content": "Custom index. So if I say great square bracket John Python will go in to my dictionary named grades it'll look up the key John."
+    },
+    {
+        "timestamp": "00:17:25",
+        "content": "And it'll return for me the value associated with that key be."
+    },
+    {
+        "timestamp": "00:17:31",
+        "content": "So this entire expression here is a value evaluates or gets replaced with the string."
+    },
+    {
+        "timestamp": "00:17:37",
+        "content": "B Just like when we indexed into a list. L Score brackets."
+    },
+    {
+        "timestamp": "00:17:40",
+        "content": "Three We replaced that entire index indexing operation with the value of the element at that location."
+    },
+    {
+        "timestamp": "00:17:46",
+        "content": "Right. So similar here. If I try to index into a dictionary and that key doesn't exist."
+    },
+    {
+        "timestamp": "00:17:54",
+        "content": "So notice my dictionary has no string. Grace. Python will give me a kicker."
+    },
+    {
+        "timestamp": "00:18:04",
+        "content": "So if you run code with dictionaries and you get a killer exception being raised in the console, you'll know that you're trying to index into a key that doesn't exist."
+    },
+    {
+        "timestamp": "00:18:11",
+        "content": "So the question might be, yes, we're able to look up a value."
+    },
+    {
+        "timestamp": "00:18:18",
+        "content": "Right. Given a key, can we do the same thing backwards? Given a key?"
+    },
+    {
+        "timestamp": "00:18:22",
+        "content": "Sorry, given a value like a, B, C, whatever."
+    },
+    {
+        "timestamp": "00:18:26",
+        "content": "Can we look up a key associated with that value? And the answer is no."
+    },
+    {
+        "timestamp": "00:18:30",
+        "content": "We'd have to write some sort of loop or some sort of code that goes through every item in my dictionary to to"
+    },
+    {
+        "timestamp": "00:18:38",
+        "content": "check each value and see whether the key associated with that value is equivalent to the one I'm looking for."
+    },
+    {
+        "timestamp": "00:18:44",
+        "content": "So there is no nice expression to do that backward operation. And that's because the values in my dictionary can be repeated."
+    },
+    {
+        "timestamp": "00:18:51",
+        "content": "So if I look up the value, be right and I want what's the key associated with B?"
+    },
+    {
+        "timestamp": "00:18:57",
+        "content": "Well, there's actually two of them. So how does Python know I want both of them?"
+    },
+    {
+        "timestamp": "00:19:01",
+        "content": "How does it know I want only one of them? How does it know? I want maybe a list of all these things."
+    },
+    {
+        "timestamp": "00:19:06",
+        "content": "It doesn't, right? So you'd have to write code that does something for that operation."
+    },
+    {
+        "timestamp": "00:19:12",
+        "content": "And we're going to see how to do that later. Okay."
+    },
+    {
+        "timestamp": "00:19:15",
+        "content": "So let's have you work on this. You try it. And this is just an exercise in looking up a value."
+    },
+    {
+        "timestamp": "00:19:20",
+        "content": "So this is a function I'd like to write according to the specification."
+    },
+    {
+        "timestamp": "00:19:25",
+        "content": "So it's called find grades. Grades is a dictionary mapping student names to grades."
+    },
+    {
+        "timestamp": "00:19:31",
+        "content": "So string to string exactly like we've seen in the previous slide."
+    },
+    {
+        "timestamp": "00:19:36",
+        "content": "And students is going to be a list of student names. So in the example here, I've got my input dictionary, this thing we just saw."
+    },
+    {
+        "timestamp": "00:19:44",
+        "content": "And then my list of student grades is, for example, you know, these two strings, Matt and Katie."
+    },
+    {
+        "timestamp": "00:19:50",
+        "content": "For a bunch of these questions, especially the one on the micro quiz and things like that."
+    },
+    {
+        "timestamp": "00:20:06",
+        "content": "If it gets a little confusing when I try to write the specification in a very detailed way to make it clear what I'd like from from this function, it's important to try to use the example to help you figure out what we'd like, because we're writing the specification in a general sense."
+    },
+    {
+        "timestamp": "00:20:14",
+        "content": "But the example should hopefully make things really clear for what we'd like."
+    },
+    {
+        "timestamp": "00:20:18",
+        "content": "So in this particular case, what we want the function to return is a list of the grades for the students being passed it."
+    },
+    {
+        "timestamp": "00:20:27",
+        "content": "Right. So we look up Matt, we see that their grade is a C, we look up Katie, their grades."
+    },
+    {
+        "timestamp": "00:20:31",
+        "content": "And so I want to return the list C comma, right in the same order that I passed in my students."
+    },
+    {
+        "timestamp": "00:20:37",
+        "content": "So I'll give you a couple of minutes to work on that and then we can write it together."
+    },
+    {
+        "timestamp": "00:20:41",
+        "content": "So that's a line 94."
+    },
+    {
+        "timestamp": "00:20:47",
+        "content": "So this is just an exercise on looking up values in the dictionary."
+    },
+    {
+        "timestamp": "00:20:52",
+        "content": "All right. Does anybody have a start for me? Yes, please."
+    },
+    {
+        "timestamp": "00:21:02",
+        "content": "Yeah. L knew. How about that? So this will be my results list."
+    },
+    {
+        "timestamp": "00:21:08",
+        "content": "Yep. Yup."
+    },
+    {
+        "timestamp": "00:21:12",
+        "content": "For loop. Yep."
+    },
+    {
+        "timestamp": "00:21:26",
+        "content": "So grades square bracket alum looks up the value associated with my student named Elm."
+    },
+    {
+        "timestamp": "00:21:34",
+        "content": "And maybe we can save it like this. Grade equals this."
+    },
+    {
+        "timestamp": "00:21:39",
+        "content": "And then you said append. Yep. So we can do l new dot append the grade."
+    },
+    {
+        "timestamp": "00:21:46",
+        "content": "Anything else? Yep. A return so we can return on you."
+    },
+    {
+        "timestamp": "00:21:53",
+        "content": "Yup. So very reasonable code. I like it a lot."
+    },
+    {
+        "timestamp": "00:22:00",
+        "content": "You know, besides the first lecture, I don't know that we've written any code that didn't involve a loop."
+    },
+    {
+        "timestamp": "00:22:04",
+        "content": "So your best bet for writing code from or for any sort of thing in this class is to think, what loop can I do?"
+    },
+    {
+        "timestamp": "00:22:11",
+        "content": "So let's run the code and it should return for me."
+    },
+    {
+        "timestamp": "00:22:14",
+        "content": "See, I'm a and it does. Now that we can iterate."
+    },
+    {
+        "timestamp": "00:22:27",
+        "content": "So, you know, I mentioned this before, but once we're iterating over tuples and lists and things like that, one thing I would add and just for debugging purposes is say something like Elm is and then"
+    },
+    {
+        "timestamp": "00:22:32",
+        "content": "you can say like an example of what it could be like Ana or Matt or whatever it could be."
+    },
+    {
+        "timestamp": "00:22:39",
+        "content": "Just to remind yourself that that thing, that loop variable is a string."
+    },
+    {
+        "timestamp": "00:22:44",
+        "content": "And so it's one less thing to remember as you're writing further code."
+    },
+    {
+        "timestamp": "00:22:48",
+        "content": "This is really nice. Okay."
+    },
+    {
+        "timestamp": "00:22:53",
+        "content": "So dictionaries are already proving to be really, really useful."
+    },
+    {
+        "timestamp": "00:22:58",
+        "content": "We can create values associated with custom indices."
+    },
+    {
+        "timestamp": "00:23:03",
+        "content": "And if we want to grab the value associated with that custom index, it's really just a matter of indexing."
+    },
+    {
+        "timestamp": "00:23:10",
+        "content": "Using a key, using that specific key, much like we did indexing into a list."
+    },
+    {
+        "timestamp": "00:23:15",
+        "content": "Okay. No need to loop none of that. Iteration."
+    },
+    {
+        "timestamp": "00:23:19",
+        "content": "It's just a single line of code that indexes into the list."
+    },
+    {
+        "timestamp": "00:23:24",
+        "content": "So let's see a few more operations before we do the next. You try it."
+    },
+    {
+        "timestamp": "00:23:28",
+        "content": "So I've got my list of grades that we've been working with in the past couple of slides."
+    },
+    {
+        "timestamp": "00:23:33",
+        "content": "Let's say that we now want to add a new student in their grade."
+    },
+    {
+        "timestamp": "00:23:38",
+        "content": "The way we do that is very similar to the way that we would add an element to a list."
+    },
+    {
+        "timestamp": "00:23:45",
+        "content": "Once we already have an index for that list right here, notice we don't actually have a slot for grace yet."
+    },
+    {
+        "timestamp": "00:23:53",
+        "content": "I'd like to add her to my dictionary. That's okay."
+    },
+    {
+        "timestamp": "00:23:58",
+        "content": "With this particular syntax here. So grades at key grace."
+    },
+    {
+        "timestamp": "00:24:03",
+        "content": "If Python does not find grace in my list, in my dictionary of keys, it'll just add her."
+    },
+    {
+        "timestamp": "00:24:10",
+        "content": "Okay. Which is really nice, right? I don't need to check if she's already in there."
+    },
+    {
+        "timestamp": "00:24:15",
+        "content": "There's no looping. You just say no grades at grace equals."
+    },
+    {
+        "timestamp": "00:24:19",
+        "content": "Boom. It adds it for you. What if I want to change an entry in my dictionary?"
+    },
+    {
+        "timestamp": "00:24:25",
+        "content": "Well, let's say I want to change Grace's grade to a C grades at custom index."
+    },
+    {
+        "timestamp": "00:24:31",
+        "content": "Grace equals C will go in. Look at my keys."
+    },
+    {
+        "timestamp": "00:24:36",
+        "content": "When Grace didn't exist, Python added her with her value."
+    },
+    {
+        "timestamp": "00:24:40",
+        "content": "But she already exists there. So Python will just overwrite her value."
+    },
+    {
+        "timestamp": "00:24:46",
+        "content": "So really nice. You know, something to look out for in case you already have values in the dictionary."
+    },
+    {
+        "timestamp": "00:24:55",
+        "content": "You know, you want to be careful if you actually do want to overwrite things, but it's really, really nice behavior and that's different than let's write."
+    },
+    {
+        "timestamp": "00:25:00",
+        "content": "Especially adding an entry to the dictionary. To the dictionary."
+    },
+    {
+        "timestamp": "00:25:06",
+        "content": "You can delete entries much like we deleted entries from a list."
+    },
+    {
+        "timestamp": "00:25:10",
+        "content": "We use the dell function. And the Dell function says what entry you'd like to delete from what list?"
+    },
+    {
+        "timestamp": "00:25:19",
+        "content": "So here we just say the name of our dictionary at index."
+    },
+    {
+        "timestamp": "00:25:24",
+        "content": "So this will completely remove Anna and her value and the value associated with Anna from the."
+    },
+    {
+        "timestamp": "00:25:30",
+        "content": "From the dictionary."
+    },
+    {
+        "timestamp": "00:25:43",
+        "content": "So what I want to make a note of is that our dictionaries being mutated with all of these different methods are all of these different functions, right? So here, when I added Grace, I've mutated my original dictionary."
+    },
+    {
+        "timestamp": "00:25:47",
+        "content": "Right? The animation didn't make a copy of this dictionary with Grace added, leaving the original unchanged."
+    },
+    {
+        "timestamp": "00:25:54",
+        "content": "I've literally gone in and mutated my original dictionary to Grace."
+    },
+    {
+        "timestamp": "00:25:59",
+        "content": "I've mutated the original dictionary to act to change her grade."
+    },
+    {
+        "timestamp": "00:26:02",
+        "content": "I've mutated the original dictionary to remove Anna from the dictionary."
+    },
+    {
+        "timestamp": "00:26:06",
+        "content": "Right. So all these. All these functions are actually mutating in my dictionary."
+    },
+    {
+        "timestamp": "00:26:12",
+        "content": "Okay. One other very useful thing that you can do with dictionaries is to check if a key is in my dictionary."
+    },
+    {
+        "timestamp": "00:26:21",
+        "content": "So we do this using the in operator in keyword."
+    },
+    {
+        "timestamp": "00:26:30",
+        "content": "We've seen the keyword being used to check if an element is in a list, to check if a substring or a character is in a string, to check if some element is in a tuple."
+    },
+    {
+        "timestamp": "00:26:36",
+        "content": "We can also use it to check if an element or a key is in my in my dictionary."
+    },
+    {
+        "timestamp": "00:26:43",
+        "content": "So I want to make a note. It's only checking the keys."
+    },
+    {
+        "timestamp": "00:26:46",
+        "content": "It does not look for the values in the dictionary."
+    },
+    {
+        "timestamp": "00:26:49",
+        "content": "We'll see how to check if some value is in the dictionary in a little bit, but in keyword specifically, only looks at the keys in the dictionary."
+    },
+    {
+        "timestamp": "00:26:57",
+        "content": "So if I have the expression as the string John is in grades."
+    },
+    {
+        "timestamp": "00:27:02",
+        "content": "Python only looks at the keys and say, yup, there it is."
+    },
+    {
+        "timestamp": "00:27:07",
+        "content": "I don't care what values associated with it, I just care that it's in my keys."
+    },
+    {
+        "timestamp": "00:27:11",
+        "content": "So this entire expression here, John, in grades will evaluate will be replaced with."
+    },
+    {
+        "timestamp": "00:27:17",
+        "content": "True. Daniel obviously is not in my dictionary keys."
+    },
+    {
+        "timestamp": "00:27:20",
+        "content": "So returns false. B is not in my dictionary keys."
+    },
+    {
+        "timestamp": "00:27:25",
+        "content": "Even though it's in my values, it still returns false because it only looks at the keys."
+    },
+    {
+        "timestamp": "00:27:34",
+        "content": "All right, let's have you try this exercise."
+    },
+    {
+        "timestamp": "00:27:39",
+        "content": "So function is called find an L again, we can use the specifications and the example to help us figure out what we'd like from this function."
+    },
+    {
+        "timestamp": "00:27:49",
+        "content": "So l d is going to be a list of dictionaries."
+    },
+    {
+        "timestamp": "00:28:01",
+        "content": "So in the example here I've got three dictionaries defined and the first parameter here, the thing being passed as l d is the list with d one de to D3 as my elements and K is just an integer."
+    },
+    {
+        "timestamp": "00:28:11",
+        "content": "What I'd like to do is return true from the function, if that key is a key in any of these dictionaries and false otherwise."
+    },
+    {
+        "timestamp": "00:28:22",
+        "content": "So as soon as I see a key that matches K, I want to return."
+    },
+    {
+        "timestamp": "00:28:26",
+        "content": "True. So in this example here, when I look at look for the K to inside these dictionaries D one doesn't have it, but D two has it."
+    },
+    {
+        "timestamp": "00:28:42",
+        "content": "So I would return true when I look for 25 in that same list of dictionaries, 25 is a value in one of these in D three, but it's not a key in do you want it to be three?"
+    },
+    {
+        "timestamp": "00:28:49",
+        "content": "So that would return. All right."
+    },
+    {
+        "timestamp": "00:28:55",
+        "content": "So that's just a little lower line 115."
+    },
+    {
+        "timestamp": "00:29:00",
+        "content": "Give you a couple moments and then we can write it together like usual. All right."
+    },
+    {
+        "timestamp": "00:29:04",
+        "content": "Does anyone want to start me off here? So. How can we do this?"
+    },
+    {
+        "timestamp": "00:29:12",
+        "content": "Create a loop? Yes. For you and for."
+    },
+    {
+        "timestamp": "00:29:18",
+        "content": "Yep. Okay. So that means that D is, you know, I can say like K one mapped to V one or something like that."
+    },
+    {
+        "timestamp": "00:29:26",
+        "content": "Right. Key to a value. If."
+    },
+    {
+        "timestamp": "00:29:35",
+        "content": "Okay. Indy Yup."
+    },
+    {
+        "timestamp": "00:29:39",
+        "content": "So that will check for me my keys in that particular dictionary that I'm looking at right now."
+    },
+    {
+        "timestamp": "00:29:46",
+        "content": "Yep. We can immediately return. True, right. As soon as we found it."
+    },
+    {
+        "timestamp": "00:29:50",
+        "content": "No need to check the other dictionaries just pop out of the function and return."
+    },
+    {
+        "timestamp": "00:29:54",
+        "content": "True. Same inside the F or inside the floor?"
+    },
+    {
+        "timestamp": "00:30:03",
+        "content": "Outside the floor. Outside the four. We can return."
+    },
+    {
+        "timestamp": "00:30:07",
+        "content": "False. Yep. I like this code a lot."
+    },
+    {
+        "timestamp": "00:30:14",
+        "content": "Uses this in operator right to do that the task."
+    },
+    {
+        "timestamp": "00:30:25",
+        "content": "So the return false outside of the for loop works really well because if I've gone through every d inside l d here, then I'm checking every single dictionary. Right."
+    },
+    {
+        "timestamp": "00:30:29",
+        "content": "As soon as I find one that has that key, this return true acts like a break and a return."
+    },
+    {
+        "timestamp": "00:30:38",
+        "content": "Right. So breaks out of the loop and returns immediately. And it doesn't return false."
+    },
+    {
+        "timestamp": "00:30:45",
+        "content": "But if I've gone through every dictionary and didn't find the the key matching key, then I return."
+    },
+    {
+        "timestamp": "00:30:51",
+        "content": "False. Did anybody try it a different way?"
+    },
+    {
+        "timestamp": "00:30:57",
+        "content": "Or is this. We could certainly try it with a boolean flag."
+    },
+    {
+        "timestamp": "00:31:06",
+        "content": "Right. We can flag the fact that we found it through some loop and keep track of it and at the end just return that flag."
+    },
+    {
+        "timestamp": "00:31:13",
+        "content": "That's another way to do it. But this is probably the most python likely."
+    },
+    {
+        "timestamp": "00:31:20",
+        "content": "So we can run it on these two examples here. Right. So I'm expecting to be looking up to the return."
+    },
+    {
+        "timestamp": "00:31:25",
+        "content": "True. And looking up 25 to return false. And it does. Questions about this code or dictionary so far as everything."
+    },
+    {
+        "timestamp": "00:31:34",
+        "content": "Okay so far. Okay. All right."
+    },
+    {
+        "timestamp": "00:31:40",
+        "content": "A couple more operations. So, so far, we've looked up values in the dictionary."
+    },
+    {
+        "timestamp": "00:31:44",
+        "content": "We've added stuff to the dictionary. We've deleted stuff from the dictionary."
+    },
+    {
+        "timestamp": "00:31:49",
+        "content": "One really useful thing to do is to be able to look at every single entry in my dictionary."
+    },
+    {
+        "timestamp": "00:31:56",
+        "content": "The reason why we'd want to do this is because we should assume that when we create our dictionaries, there's no order to them."
+    },
+    {
+        "timestamp": "00:32:04",
+        "content": "Right. This is very much unlike lists. Lists had an order to them."
+    },
+    {
+        "timestamp": "00:32:08",
+        "content": "We knew that the first element in our list was that index zero."
+    },
+    {
+        "timestamp": "00:32:12",
+        "content": "The next one was an index one and so on. Right lists were ordered sequences of of of elements."
+    },
+    {
+        "timestamp": "00:32:18",
+        "content": "But dictionaries are not ordered sequences of elements."
+    },
+    {
+        "timestamp": "00:32:24",
+        "content": "That's not super true. There are up until a very recent version of Python, there was no guarantee to order."
+    },
+    {
+        "timestamp": "00:32:31",
+        "content": "They were put in some order that couldn't that I, I couldn't figure out how it was determined."
+    },
+    {
+        "timestamp": "00:32:46",
+        "content": "But I forget which Python version, maybe 3.6 or something like that started to guarantee an order when you went for, for the list for the dictionary element in that order was the same order that you inserted the elements."
+    },
+    {
+        "timestamp": "00:32:53",
+        "content": "Okay. But if you'd like to write robust code that could be run by people, you know, using an older version of Python, you should write the code."
+    },
+    {
+        "timestamp": "00:33:02",
+        "content": "Assuming that no such order exists and it's okay. It doesn't make the code that much harder to write."
+    },
+    {
+        "timestamp": "00:33:15",
+        "content": "But if we're not assuming any order to Python entries in the dictionary, then that means a lot of times we actually have to look at each entry in the dictionary to do some sort of task."
+    },
+    {
+        "timestamp": "00:33:21",
+        "content": "Okay. So one of the first things you might want to do is to iterate through all the keys in the dictionary."
+    },
+    {
+        "timestamp": "00:33:39",
+        "content": "To do that, we use a function called grades dot keys, and this great squeeze function here doesn't mutate the dictionary at all, but instead it returns for me an iterable, a sequence of values which are all the keys in my dictionary."
+    },
+    {
+        "timestamp": "00:33:47",
+        "content": "Now the data type of this return value is called dict underscore keys."
+    },
+    {
+        "timestamp": "00:33:53",
+        "content": "It's not a data type we've worked with before. Okay."
+    },
+    {
+        "timestamp": "00:33:56",
+        "content": "Looks really weird."
+    },
+    {
+        "timestamp": "00:33:58",
+        "content": "But if you'd like and you don't have to do this, you can always cast this sequence of values, that type dict keys to a list like this."
+    },
+    {
+        "timestamp": "00:34:07",
+        "content": "So if you cast to a list grades, dot keys, it gives for us this more recognizable list with each key being an element in the list."
+    },
+    {
+        "timestamp": "00:34:17",
+        "content": "Okay. You don't have to do this. But if it makes it easier for you, you can."
+    },
+    {
+        "timestamp": "00:34:22",
+        "content": "Okay, so this line of code here grades our kids returns for you."
+    },
+    {
+        "timestamp": "00:34:26",
+        "content": "You can think of it like this, Iterable. This list of all the keys in the dictionary, they're not ordered, right?"
+    },
+    {
+        "timestamp": "00:34:32",
+        "content": "I mean, they're ordered in the order that I added them into the dictionary."
+    },
+    {
+        "timestamp": "00:34:35",
+        "content": "Right. And then Matt, then John than Katie. But they're not sorted in alphabetical order."
+    },
+    {
+        "timestamp": "00:34:40",
+        "content": "If you have integers, they won't be sorted in ascending or descending order."
+    },
+    {
+        "timestamp": "00:34:43",
+        "content": "So it's best to just not assume an order to begin. Similarly, we can get an iterable of all the values in the dictionary."
+    },
+    {
+        "timestamp": "00:34:52",
+        "content": "Okay. And to do this, no surprise there we use grades, not values."
+    },
+    {
+        "timestamp": "00:34:57",
+        "content": "And this is, again, a function where it doesn't mutate the grades at all, but instead gets replaced with this dict values data type."
+    },
+    {
+        "timestamp": "00:35:06",
+        "content": "Never seen it before either."
+    },
+    {
+        "timestamp": "00:35:07",
+        "content": "And you can cast it to a list if you'd like because it makes more sense to us at this point in time, which just returns for us."
+    },
+    {
+        "timestamp": "00:35:14",
+        "content": "This list of every single value in my dictionary."
+    },
+    {
+        "timestamp": "00:35:18",
+        "content": "Again, no order, right? We can see that there's no order except for the order that we actually added the element."
+    },
+    {
+        "timestamp": "00:35:26",
+        "content": "Yeah. Um, when you say, like, an act like a boy, do you mean like another time about."
+    },
+    {
+        "timestamp": "00:35:32",
+        "content": "Not the same. Yeah."
+    },
+    {
+        "timestamp": "00:35:37",
+        "content": "Yeah, it'll turn out the same. The same iterable, I guess if you do it again."
+    },
+    {
+        "timestamp": "00:35:41",
+        "content": "Yeah. Just doing like if they're just iterating over the dictionary there."
+    },
+    {
+        "timestamp": "00:35:46",
+        "content": "It's like it comes out nowhere if you're iterating over the dictionary, not in the Python version we're using, but in a previous version."
+    },
+    {
+        "timestamp": "00:35:55",
+        "content": "If you ran your on your machine or if I ran the same code on my machine, it might have given me a different order."
+    },
+    {
+        "timestamp": "00:36:04",
+        "content": "But in the versions we're using from now on in Python, right."
+    },
+    {
+        "timestamp": "00:36:07",
+        "content": "Because you guys all probably downloaded the latest version of of, you know, Anaconda and Spider."
+    },
+    {
+        "timestamp": "00:36:13",
+        "content": "It will it will guarantee the order that you inserted the elements in."
+    },
+    {
+        "timestamp": "00:36:21",
+        "content": "But if somebody's using an older version of Python takes your code and runs it, they might actually get, you know, A, B, B or some other order for these for these functions here."
+    },
+    {
+        "timestamp": "00:36:39",
+        "content": "Right? Yes, you're welcome. So these being iterable just means that we can have something like for I or so for K in grades, our keys, basically giving us a loop where K is going to be each element in this list."
+    },
+    {
+        "timestamp": "00:36:50",
+        "content": "So that's fine. So we can iterate over the keys or we can iterate over the values directly."
+    },
+    {
+        "timestamp": "00:36:54",
+        "content": "But what I find personally most effective is to iterate over each entry in the dictionary, so not just over the keys or the values by themselves."
+    },
+    {
+        "timestamp": "00:37:04",
+        "content": "It's to iterate over the keys and the values together."
+    },
+    {
+        "timestamp": "00:37:08",
+        "content": "So to do that. We use this function called grades dot items."
+    },
+    {
+        "timestamp": "00:37:22",
+        "content": "And unsurprisingly, this will return also an iterable where each element in my iterable is not just the key or the value, it's a tuple of the key, comma, the value. Okay."
+    },
+    {
+        "timestamp": "00:37:27",
+        "content": "And again, we can cast it to a list to give us something that's more recognizable."
+    },
+    {
+        "timestamp": "00:37:32",
+        "content": "You can see now each element in the returned list is going to be the tuple where I have an entry, right?"
+    },
+    {
+        "timestamp": "00:37:37",
+        "content": "So my entry and a comma B is this first element in my return list."
+    },
+    {
+        "timestamp": "00:37:50",
+        "content": "And then Matt and then John B and then Katie. So I grab these entries together where I have access to both the key and the value for that entry, which means and this is the important part, that we can do something like this and we can do this for the previous slide as well."
+    },
+    {
+        "timestamp": "00:38:07",
+        "content": "But for this particular grade sort items, iteration, if we're grabbing a key value pair out of items, that means we can do something like this for k comma V in grades dot items."
+    },
+    {
+        "timestamp": "00:38:13",
+        "content": "Means that Python will map K to the key for that entry and read to the value for that entry as I'm iterating over each one of these pairs, right?"
+    },
+    {
+        "timestamp": "00:38:23",
+        "content": "So with each iteration, I have access to both the key and the value for that entry, which is pretty useful."
+    },
+    {
+        "timestamp": "00:38:30",
+        "content": "Right. So if I have this line of code here, if I print key o k has value v the k and the v will change with each entry."
+    },
+    {
+        "timestamp": "00:38:39",
+        "content": "Right. I'm just grabbing both the key and the value for that entry. Yeah."
+    },
+    {
+        "timestamp": "00:38:43",
+        "content": "Question the a result. I didn't actually look at it."
+    },
+    {
+        "timestamp": "00:38:48",
+        "content": "It's not a tuple. So the actual object type is this thing dict underscore items."
+    },
+    {
+        "timestamp": "00:38:54",
+        "content": "So again, not a type that we've we've worked with before, but that's just the type, right?"
+    },
+    {
+        "timestamp": "00:38:58",
+        "content": "Like we've seen lists, tuples, dictionaries, dict underscore items is another data type."
+    },
+    {
+        "timestamp": "00:39:04",
+        "content": "Yeah. But the cool thing is that it's an iterable."
+    },
+    {
+        "timestamp": "00:39:07",
+        "content": "So it's a sequence of values, which means that you can cast it to a list, which is also a sequence of values and a knows how to do that casting."
+    },
+    {
+        "timestamp": "00:39:14",
+        "content": "And you get to the more recognizable list that we've been using. Other questions."
+    },
+    {
+        "timestamp": "00:39:23",
+        "content": "Okay. So I really like using greatsword items to iterate over entries."
+    },
+    {
+        "timestamp": "00:39:26",
+        "content": "So let's have you try this exercise. So it's a function called count matches."
+    },
+    {
+        "timestamp": "00:39:31",
+        "content": "It takes in one dictionary D. I didn't say what the the the elements are, but, you know, you can mix and match."
+    },
+    {
+        "timestamp": "00:39:39",
+        "content": "So here I have a dictionary with just in its mapped to it and here I've got a dictionary where it maps you know, in some strings and things like that."
+    },
+    {
+        "timestamp": "00:39:48",
+        "content": "And what I want this function to do is tell me how many entries in this input dictionaries have the key match its value."
+    },
+    {
+        "timestamp": "00:39:56",
+        "content": "So here in this first example, the key here is one the values two so they don't match."
+    },
+    {
+        "timestamp": "00:40:02",
+        "content": "These don't match and these don't match. So the count should be zero. But down here in this example, the one doesn't match to two."
+    },
+    {
+        "timestamp": "00:40:08",
+        "content": "So that's fine. But the key matches its value."
+    },
+    {
+        "timestamp": "00:40:12",
+        "content": "One count key five matches its value two counts."
+    },
+    {
+        "timestamp": "00:40:16",
+        "content": "Right. So this should return count to. All right."
+    },
+    {
+        "timestamp": "00:40:21",
+        "content": "Let's have you work on that down by line 137, and then we'll write it together."
+    },
+    {
+        "timestamp": "00:40:30",
+        "content": "All right. How could I start this? Yes."
+    },
+    {
+        "timestamp": "00:40:36",
+        "content": "Account? Yes. Zero. Yep."
+    },
+    {
+        "timestamp": "00:40:41",
+        "content": "A for loop? Yup. Yep."
+    },
+    {
+        "timestamp": "00:40:50",
+        "content": "As a function? Yep. We woke you up."
+    },
+    {
+        "timestamp": "00:40:56",
+        "content": "So this is where my value equals my key for that particular country."
+    },
+    {
+        "timestamp": "00:41:03",
+        "content": "Count equals count plus. Perfect. Yep."
+    },
+    {
+        "timestamp": "00:41:08",
+        "content": "Return count. Did anybody do it a different way?"
+    },
+    {
+        "timestamp": "00:41:15",
+        "content": "Okay. Awesome. Look. Yeah. Why?"
+    },
+    {
+        "timestamp": "00:41:22",
+        "content": "Oh, yeah, we can write it."
+    },
+    {
+        "timestamp": "00:41:25",
+        "content": "Yeah. Yeah. Like mechanical zero."
+    },
+    {
+        "timestamp": "00:41:28",
+        "content": "And then it is like four x. I think they were just going to pass the value."
+    },
+    {
+        "timestamp": "00:41:35",
+        "content": "I got it. I was going to call."
+    },
+    {
+        "timestamp": "00:41:41",
+        "content": "Yeah. So we can say for X and D dot keys or something like that."
+    },
+    {
+        "timestamp": "00:41:45",
+        "content": "Right. Something like that or no. We can also say for X and D, I think that might work too, because it would grab the key for us."
+    },
+    {
+        "timestamp": "00:41:54",
+        "content": "But just to be safe. Keys. And now we need to grab the value."
+    },
+    {
+        "timestamp": "00:41:58",
+        "content": "So how do you grab the value associated with X? No."
+    },
+    {
+        "timestamp": "00:42:06",
+        "content": "Yes. It's just indexing. Right. So these four brackets X are oops if."
+    },
+    {
+        "timestamp": "00:42:13",
+        "content": "D score brackets x equals. So that's the value equals the key."
+    },
+    {
+        "timestamp": "00:42:18",
+        "content": "Right. Then again, we count plus one."
+    },
+    {
+        "timestamp": "00:42:23",
+        "content": "So this is the. Either way. Yep."
+    },
+    {
+        "timestamp": "00:42:36",
+        "content": "So we don't have to use items, but it just items makes things easier because we have in hand a variable that's, you know, the value and the variable that's the key. And doing things like indexing starts to get confusing."
+    },
+    {
+        "timestamp": "00:42:45",
+        "content": "If you know, I mean, it can be confusing, but yeah, both ways are very valid."
+    },
+    {
+        "timestamp": "00:42:51",
+        "content": "So let's run it. And it should work."
+    },
+    {
+        "timestamp": "00:42:55",
+        "content": "So the first count is zero, as we expected, in the second count as two."
+    },
+    {
+        "timestamp": "00:43:00",
+        "content": "Is that any questions about this code? Does it make sense? Is there another way that somebody tried it?"
+    },
+    {
+        "timestamp": "00:43:09",
+        "content": "Okay. Okay."
+    },
+    {
+        "timestamp": "00:43:16",
+        "content": "So dictionaries are mutable objects."
+    },
+    {
+        "timestamp": "00:43:20",
+        "content": "Right. So all the aliasing and cloning rules apply."
+    },
+    {
+        "timestamp": "00:43:33",
+        "content": "You remember when we talked about lists and using the equal sign between a list and another variable name, just a plain old equal sign means that you are making an alias for that list."
+    },
+    {
+        "timestamp": "00:43:38",
+        "content": "Same thing applies to dictionaries."
+    },
+    {
+        "timestamp": "00:43:39",
+        "content": "So using saying D one equals d two where d two is a dictionary means that you've just created an alias for that dictionary."
+    },
+    {
+        "timestamp": "00:43:46",
+        "content": "So if you change the dictionary through either of those variables, you're changing the object itself."
+    },
+    {
+        "timestamp": "00:43:52",
+        "content": "If you want to actually make a copy, you use D copy. Where D is the name of the dictionary?"
+    },
+    {
+        "timestamp": "00:43:57",
+        "content": "You'd like a copy and that gives you a copy of that dictionary, and then you can change it without changing the original one."
+    },
+    {
+        "timestamp": "00:44:04",
+        "content": "So let's talk a little bit about the values for a dictionary and the keys, because there are some restrictions on the keys for the dictionary."
+    },
+    {
+        "timestamp": "00:44:12",
+        "content": "No restrictions on the values. So dictionary values can be any type, right?"
+    },
+    {
+        "timestamp": "00:44:17",
+        "content": "You can have a dictionary value that's a float and string tuple."
+    },
+    {
+        "timestamp": "00:44:22",
+        "content": "You can have a dictionary value. That's a list which is a mutable object."
+    },
+    {
+        "timestamp": "00:44:25",
+        "content": "You could have a dictionary value. That's another dictionary. All are okay, whatever you'd like for the values to be."
+    },
+    {
+        "timestamp": "00:44:32",
+        "content": "You can have dictionary values that are duplicates, so you can have one key that maps to value."
+    },
+    {
+        "timestamp": "00:44:37",
+        "content": "Five Another key that maps to value five. All good."
+    },
+    {
+        "timestamp": "00:44:42",
+        "content": "Okay. So the key is so the values don't need to be unique."
+    },
+    {
+        "timestamp": "00:44:46",
+        "content": "We do have restrictions on the keys, though. Okay. The first restriction on the keys is that it has to be unique."
+    },
+    {
+        "timestamp": "00:44:53",
+        "content": "Right. So if you're mapping a key. One."
+    },
+    {
+        "timestamp": "00:44:58",
+        "content": "Two. Value five. You cannot map a key one to value six."
+    },
+    {
+        "timestamp": "00:45:06",
+        "content": "Because if you go and look up the value associated with one, how does Python know which value you'd like?"
+    },
+    {
+        "timestamp": "00:45:13",
+        "content": "The five or the six? Right. So the keys have to be unique, first of all."
+    },
+    {
+        "timestamp": "00:45:19",
+        "content": "Second, the keys have to be immutable, technically hackable, but for the purposes of this class, just think of them as having to be immutable."
+    },
+    {
+        "timestamp": "00:45:29",
+        "content": "So a key can only be one of these types that we've seen so far int, float, string, tuple or bool."
+    },
+    {
+        "timestamp": "00:45:34",
+        "content": "You cannot have a key. That's a list. You cannot have a key. That's a dictionary because they're mutable objects."
+    },
+    {
+        "timestamp": "00:45:41",
+        "content": "So let's look at that a little bit further and in detail."
+    },
+    {
+        "timestamp": "00:45:45",
+        "content": "So the reason why we can't have a key that is mutable is because of the way keys are stored in Python."
+    },
+    {
+        "timestamp": "00:45:54",
+        "content": "Sorry. The way the dictionaries are stored in Python. So I'm going to show you an example on the next slide."
+    },
+    {
+        "timestamp": "00:46:00",
+        "content": "First, I'm going to explain how they're stored, and then we'll go through an example showing you exactly why you can't have a mutable structure."
+    },
+    {
+        "timestamp": "00:46:08",
+        "content": "So the way keys are, the way dictionaries are stored in Python is you first need a key right to associate with a value."
+    },
+    {
+        "timestamp": "00:46:16",
+        "content": "So everything starts off with the key you'd like to add to your dictionary."
+    },
+    {
+        "timestamp": "00:46:20",
+        "content": "So Python basically runs a function called a hash function on the key."
+    },
+    {
+        "timestamp": "00:46:27",
+        "content": "For simplicity's sake, let's say the key you're trying to store is a number."
+    },
+    {
+        "timestamp": "00:46:30",
+        "content": "That hash function might return that same number. It might return something else."
+    },
+    {
+        "timestamp": "00:46:42",
+        "content": "If you're trying to store a string as a key python again, runs it maybe a different hash function that takes in that string, which might be a bunch of characters and it converts it to some number."
+    },
+    {
+        "timestamp": "00:46:47",
+        "content": "So the hash function always takes in your key and converts it to a number."
+    },
+    {
+        "timestamp": "00:46:53",
+        "content": "Okay. That number. Think of it like representing a memory location where you're going to store the value associated with that key."
+    },
+    {
+        "timestamp": "00:47:03",
+        "content": "Right. So you're always grabbing a number that represents a memory location."
+    },
+    {
+        "timestamp": "00:47:08",
+        "content": "At that memory location, you will store the value."
+    },
+    {
+        "timestamp": "00:47:11",
+        "content": "So next time you want to look up the value associated with a key, you just run that same hash function."
+    },
+    {
+        "timestamp": "00:47:17",
+        "content": "The function won't change. You run the same hash function on your object and you'll be able to get that same integer back."
+    },
+    {
+        "timestamp": "00:47:23",
+        "content": "You'll be able to grab that same value back. But if you're storing mutable objects, that means that object can change."
+    },
+    {
+        "timestamp": "00:47:30",
+        "content": "So if you run the hash function, the thing that gives you a number on something that's changed."
+    },
+    {
+        "timestamp": "00:47:37",
+        "content": "That number might not be the same. Right, because you've changed the thing that you're passing into the function."
+    },
+    {
+        "timestamp": "00:47:43",
+        "content": "So why would it give you the same value back? So let's look at this example."
+    },
+    {
+        "timestamp": "00:47:48",
+        "content": "So again, we're storing grades and let's say we're trying to store a bunch of grades inside our memory."
+    },
+    {
+        "timestamp": "00:47:53",
+        "content": "And let's say our memory is just 16 locations, so zero through 50."
+    },
+    {
+        "timestamp": "00:47:59",
+        "content": "So at each of these locations, I'm going to store grades associated with a person."
+    },
+    {
+        "timestamp": "00:48:04",
+        "content": "The function I'm going to run on. The student is using their name, so I'm going to store Anna's grade somewhere."
+    },
+    {
+        "timestamp": "00:48:13",
+        "content": "But I need to run a function that takes in the string Anna and gets gets for me a number."
+    },
+    {
+        "timestamp": "00:48:19",
+        "content": "That number is where I'm going to store my grade."
+    },
+    {
+        "timestamp": "00:48:22",
+        "content": "So a simple hash function we might do is to say, well, I'm going to take a and map it to one B, map it to to see them up to three and so on."
+    },
+    {
+        "timestamp": "00:48:31",
+        "content": "I can sum all of those numbers associated with my letters in my name."
+    },
+    {
+        "timestamp": "00:48:37",
+        "content": "Write 16 and then I can mod it with 16, which is how many entries I have in my memory."
+    },
+    {
+        "timestamp": "00:48:43",
+        "content": "So if I it with 16, that's going to give me a number zero through 15, right?"
+    },
+    {
+        "timestamp": "00:48:48",
+        "content": "If you take the remainder, when you divide by 16, you'll either get zero all the way up through 50."
+    },
+    {
+        "timestamp": "00:48:54",
+        "content": "So if I made my name, that means I'm going to store my grade at a memory location."
+    },
+    {
+        "timestamp": "00:49:00",
+        "content": "Zero. So far so good."
+    },
+    {
+        "timestamp": "00:49:05",
+        "content": "So I'm basically I made up this hash function that tells me where to put my my great."
+    },
+    {
+        "timestamp": "00:49:10",
+        "content": "Now I add another person again."
+    },
+    {
+        "timestamp": "00:49:13",
+        "content": "I'm going to look I'm going to convert the letters in their name to numbers so that I can easily get a number out of their out of their their letters."
+    },
+    {
+        "timestamp": "00:49:21",
+        "content": "So I'm basically hashing their number, their letters to a number."
+    },
+    {
+        "timestamp": "00:49:26",
+        "content": "Again, summing this for is 35. I'm going to mod it with 16, which means I'm going to put Erick's grade at location three."
+    },
+    {
+        "timestamp": "00:49:34",
+        "content": "Next person. John. Same thing. Add the numbers mod 16."
+    },
+    {
+        "timestamp": "00:49:38",
+        "content": "I'm going to put John at location 15. So this is my memory where I'm storing the values associated with these students."
+    },
+    {
+        "timestamp": "00:49:46",
+        "content": "So if I want to grab back my grade, I run the exact same hash function."
+    },
+    {
+        "timestamp": "00:49:52",
+        "content": "So I'm going to run the same hash function on my name. My name hasn't changed, right?"
+    },
+    {
+        "timestamp": "00:49:56",
+        "content": "It's still the string. I'm not allowed to change it because it's a string."
+    },
+    {
+        "timestamp": "00:49:59",
+        "content": "And so I'm going to get the same value back zero. So that means to grab the letter associated with my name."
+    },
+    {
+        "timestamp": "00:50:05",
+        "content": "I just need to go straight into my memory location and look up the value associated the value at that memory location."
+    },
+    {
+        "timestamp": "00:50:13",
+        "content": "So I know it's going to be a C. Now, let's say I'm storing a list."
+    },
+    {
+        "timestamp": "00:50:21",
+        "content": "A student name as a list. So again, Anna, Erick and John are immutable, right?"
+    },
+    {
+        "timestamp": "00:50:28",
+        "content": "They will not change. But if I store Kate as a list, her name might change."
+    },
+    {
+        "timestamp": "00:50:34",
+        "content": "Again. I can run the same hash function on her name. That means her grade when I first store."
+    },
+    {
+        "timestamp": "00:50:38",
+        "content": "It is going to be at location five, so I'm storing Kate at location five."
+    },
+    {
+        "timestamp": "00:50:44",
+        "content": "All these three strings I know I can get back because they cannot change."
+    },
+    {
+        "timestamp": "00:50:49",
+        "content": "But let's say that Kate went, goes and changes her name from Kate with a Kate to Kate with a C."
+    },
+    {
+        "timestamp": "00:50:56",
+        "content": "It's the same object, right? The same person."
+    },
+    {
+        "timestamp": "00:50:59",
+        "content": "She earned her grade B originally."
+    },
+    {
+        "timestamp": "00:51:02",
+        "content": "So if I want to grab her grade back, even though her name has changed, I would still like to grab the B associated with her as a person."
+    },
+    {
+        "timestamp": "00:51:10",
+        "content": "But Kate, with a C, if I run that same hash function that I ran to put her great in my table."
+    },
+    {
+        "timestamp": "00:51:18",
+        "content": "Tells me that I now need to look up her grade at memory location 13 no longer at memory location five."
+    },
+    {
+        "timestamp": "00:51:26",
+        "content": "Right. She's not there. Okay."
+    },
+    {
+        "timestamp": "00:51:31",
+        "content": "So now it's like, you know, did the student disappear? All that stuff."
+    },
+    {
+        "timestamp": "00:51:36",
+        "content": "So you see, now that means that's that's the reason why I cannot have a more immutable object as a key to my list."
+    },
+    {
+        "timestamp": "00:51:43",
+        "content": "Because if that object changes. Running that hash function on that changed object might not give me the same"
+    },
+    {
+        "timestamp": "00:51:49",
+        "content": "memory location where I originally stored the value associated with that object."
+    },
+    {
+        "timestamp": "00:51:55",
+        "content": "That makes sense. Okay."
+    },
+    {
+        "timestamp": "00:51:59",
+        "content": "So let's revisit our original example, the one where we tried to store everything in a master list, all these grades in the master list."
+    },
+    {
+        "timestamp": "00:52:07",
+        "content": "Now, let's store it in a master dictionary. Okay."
+    },
+    {
+        "timestamp": "00:52:11",
+        "content": "So I've got my grades notice. Curly bracket. Curly bracket is a dictionary."
+    },
+    {
+        "timestamp": "00:52:16",
+        "content": "I've got two students in my class and. Right."
+    },
+    {
+        "timestamp": "00:52:20",
+        "content": "So this is Anna's information. And Bob, that's Bob's information. So just two students in my master dictionary."
+    },
+    {
+        "timestamp": "00:52:29",
+        "content": "So the key, Anna. Right. Is going to be one entries, one entry key."
+    },
+    {
+        "timestamp": "00:52:35",
+        "content": "Key, Bob is the other entry key. And once that information associated with these keys."
+    },
+    {
+        "timestamp": "00:52:40",
+        "content": "Well, with Anna, I've got this dictionary associated with her name."
+    },
+    {
+        "timestamp": "00:52:45",
+        "content": "So that's this big thing here. I'll explain it in a bit. And similarly with Bob, Bob has one thing associated with it, and it's another dictionary."
+    },
+    {
+        "timestamp": "00:52:57",
+        "content": "So I'm mapping strings to dictionaries here, and that's fine because values in the dictionary can be other dictionaries."
+    },
+    {
+        "timestamp": "00:53:05",
+        "content": "So what are these dictionaries about? Well, the number of items in the dictionary for a person."
+    },
+    {
+        "timestamp": "00:53:12",
+        "content": "For a particular person, there's three elements, right? So comma, comma separates my three elements."
+    },
+    {
+        "timestamp": "00:53:21",
+        "content": "The first one is going to be mapped with Key and Q, the second one mapped with key piece for problem set and the last one mapped with the string fin for final grade."
+    },
+    {
+        "timestamp": "00:53:28",
+        "content": "So each one of these students has this dictionary associated with them."
+    },
+    {
+        "timestamp": "00:53:32",
+        "content": "And that dictionary then itself has three entries one for the micro quiz, one for the one for the final scores."
+    },
+    {
+        "timestamp": "00:53:40",
+        "content": "So now what's the values associated with those keys?"
+    },
+    {
+        "timestamp": "00:53:43",
+        "content": "Well, the micro quiz is going to be a list. The problem that is going to be a list and the final is going to be a string."
+    },
+    {
+        "timestamp": "00:53:49",
+        "content": "So a really nice representation of my of my class."
+    },
+    {
+        "timestamp": "00:53:55",
+        "content": "And same for Bob. So now what if we want to grab a student's exam grade or the student's list of exam grades?"
+    },
+    {
+        "timestamp": "00:54:05",
+        "content": "Remember that big function, right? With the two nested for loops and the nested ifs, that becomes baseline."
+    },
+    {
+        "timestamp": "00:54:14",
+        "content": "Isn't that cool? APPLAUSE."
+    },
+    {
+        "timestamp": "00:54:18",
+        "content": "I like that. Yeah, exactly. We should applaud this because look how easy it is now, too."
+    },
+    {
+        "timestamp": "00:54:23",
+        "content": "Yes. Thank you. Yes. Dictionaries are awesome, guys."
+    },
+    {
+        "timestamp": "00:54:28",
+        "content": "So. Yeah. So, look, that line becomes this, you know, grabbing one one's quiz score becomes this single line of code right here."
+    },
+    {
+        "timestamp": "00:54:37",
+        "content": "So let's break it down again. We do. Left to right whenever we've got this chain of stuff going on."
+    },
+    {
+        "timestamp": "00:54:44",
+        "content": "So the first thing we say is, well, we're looking up grades at some index."
+    },
+    {
+        "timestamp": "00:54:48",
+        "content": "So grades that some index gives me that dictionary. So something like this whole thing here, right?"
+    },
+    {
+        "timestamp": "00:55:04",
+        "content": "Okay. Good. That's first chain. Now, this box here gets replaced with that dictionary, and I'm doing another index into that dictionary, so that means I'm going to grab the MQ associated with."
+    },
+    {
+        "timestamp": "00:55:10",
+        "content": "That that dictionary. So the value associated with them."
+    },
+    {
+        "timestamp": "00:55:15",
+        "content": "Q Is going to be this list five, four, four. So this box here gets replaced with the list five for four."
+    },
+    {
+        "timestamp": "00:55:23",
+        "content": "And then if I want to grab just the first quiz value, I say now I'm going to index in the list five for four at index zero."
+    },
+    {
+        "timestamp": "00:55:29",
+        "content": "So that grabs for me just the five. So then the first quiz score for Anna was a five."
+    },
+    {
+        "timestamp": "00:55:36",
+        "content": "It's pretty bad. Okay."
+    },
+    {
+        "timestamp": "00:55:42",
+        "content": "So. Let's have you think about this."
+    },
+    {
+        "timestamp": "00:55:48",
+        "content": "This is a function. Nothing to code here. Just."
+    },
+    {
+        "timestamp": "00:55:51",
+        "content": "Just to think this is a function that grabs. The average of every single."
+    },
+    {
+        "timestamp": "00:56:01",
+        "content": "Thing. Where that thing is."
+    },
+    {
+        "timestamp": "00:56:04",
+        "content": "What in the class. So if what is MQ as you know is in down here in this example if what is MQ this code is"
+    },
+    {
+        "timestamp": "00:56:13",
+        "content": "supposed to get the average of all of the micro quizzes for all the students in the class."
+    },
+    {
+        "timestamp": "00:56:18",
+        "content": "So you basically want to grab the average of ten plus eight plus three."
+    },
+    {
+        "timestamp": "00:56:24",
+        "content": "And if it's P. S, I would like to grab the average of all the problem sets for all the students in the class."
+    },
+    {
+        "timestamp": "00:56:30",
+        "content": "So the average of ten, ten, seven, eight and zero."
+    },
+    {
+        "timestamp": "00:56:36",
+        "content": "So we've got a loop, right? That goes through other student in the Keys."
+    },
+    {
+        "timestamp": "00:56:41",
+        "content": "So the student student stud dude here is going to be this dictionary, right?"
+    },
+    {
+        "timestamp": "00:56:55",
+        "content": "So given this dictionary, what line should you insert here such that you're creating a list, just a single top level list of all of the values in there."
+    },
+    {
+        "timestamp": "00:57:03",
+        "content": "So the thing you actually want to end up with, and if we're looking at the scores, just because it's a little easier to think about, is going to be ten, ten, right?"
+    },
+    {
+        "timestamp": "00:57:09",
+        "content": "Seven, eight and zero."
+    },
+    {
+        "timestamp": "00:57:12",
+        "content": "So in the end, what I would like to get in my all data, this list that I'm maintaining here is something like this for the piece."
+    },
+    {
+        "timestamp": "00:57:23",
+        "content": "So think about which one of these lines will accomplish that."
+    },
+    {
+        "timestamp": "00:57:30",
+        "content": "And just to help you out we can say student is, you know my dictionary of who thinks it's the first one."
+    },
+    {
+        "timestamp": "00:57:43",
+        "content": "Second one. Third one."
+    },
+    {
+        "timestamp": "00:57:47",
+        "content": "Fourth one. Nobody thought it's the first one."
+    },
+    {
+        "timestamp": "00:57:53",
+        "content": "You guys sure? Okay. Why do you think it's the second one?"
+    },
+    {
+        "timestamp": "00:57:59",
+        "content": "Is it because of the append? Yeah. Let's think about it."
+    },
+    {
+        "timestamp": "00:58:03",
+        "content": "So all data is a list. And what are we appending?"
+    },
+    {
+        "timestamp": "00:58:07",
+        "content": "So what is data at stud at? What's going to give us?"
+    },
+    {
+        "timestamp": "00:58:13",
+        "content": "Data at student. Is the dictionary."
+    },
+    {
+        "timestamp": "00:58:17",
+        "content": "This dictionary here. Right. This. Well, you hear."
+    },
+    {
+        "timestamp": "00:58:22",
+        "content": "And if we take this value and index into the what will it be an integer or will it be a list?"
+    },
+    {
+        "timestamp": "00:58:31",
+        "content": "A list. So when we append a list to another list, what is that going to give us?"
+    },
+    {
+        "timestamp": "00:58:47",
+        "content": "So if we have a list already with, you know, you know, ABC, if I open another list to this, will it put the element within that list or the list itself? Yeah, exactly."
+    },
+    {
+        "timestamp": "00:58:55",
+        "content": "So I don't that's not going to work for us."
+    },
+    {
+        "timestamp": "00:58:58",
+        "content": "Clearly, this is not right either and definitely indexing into data at student at what is not going to be right."
+    },
+    {
+        "timestamp": "00:59:05",
+        "content": "Okay. So that leaves one other choice. The first one."
+    },
+    {
+        "timestamp": "00:59:13",
+        "content": "So let's see why the first one works. We're concatenating right so the plus concatenate."
+    },
+    {
+        "timestamp": "00:59:20",
+        "content": "So let's say I already have a list, a, b, c, I'm going to concatenate something I already have with data at student at what."
+    },
+    {
+        "timestamp": "00:59:29",
+        "content": "Which we said is what is it a single element or another list. Exactly."
+    },
+    {
+        "timestamp": "00:59:33",
+        "content": "So we can name with something like, you know, ten, ten or something like that."
+    },
+    {
+        "timestamp": "00:59:38",
+        "content": "So that will return for us A, B, C, ten, ten, which will allow us to do something like getting the sum of all these elements."
+    },
+    {
+        "timestamp": "00:59:50",
+        "content": "Questions about that as it makes sense. Yes. Oh."
+    },
+    {
+        "timestamp": "00:59:57",
+        "content": "Yeah. But why? Why wouldn't it?"
+    },
+    {
+        "timestamp": "01:00:08",
+        "content": "I like how Americans tend to dislike and."
+    },
+    {
+        "timestamp": "01:00:13",
+        "content": "Because we're indexing into M2. So if you index into MQ, MQ is your key."
+    },
+    {
+        "timestamp": "01:00:19",
+        "content": "So you grab the value associated with that key. So that would be this list here."
+    },
+    {
+        "timestamp": "01:00:24",
+        "content": "The ten or four. It would be the list. Ten, ten. So quick recap on lists and dictionaries before we do one final longer example."
+    },
+    {
+        "timestamp": "01:00:34",
+        "content": "So again, lists are ordered sequences of elements, right?"
+    },
+    {
+        "timestamp": "01:00:37",
+        "content": "There is some element at index zero. There's some element in index one, some element in index two."
+    },
+    {
+        "timestamp": "01:00:42",
+        "content": "So we do have these quote unquote indices. Right."
+    },
+    {
+        "timestamp": "01:00:46",
+        "content": "But there's there's an order to these indices and there has to be an element index zero and further up from there."
+    },
+    {
+        "timestamp": "01:00:52",
+        "content": "Right. Dictionaries also have these quote unquote indices, which we call keys, but these are custom."
+    },
+    {
+        "timestamp": "01:00:59",
+        "content": "So you can basically rearrange. You can think of it as being allowed to rearrange indices however you'd like."
+    },
+    {
+        "timestamp": "01:01:06",
+        "content": "Right. There's no order to the indices in a dictionary."
+    },
+    {
+        "timestamp": "01:01:12",
+        "content": "There are some restrictions on the keys or these indices so they can't be immutable or hackable."
+    },
+    {
+        "timestamp": "01:01:18",
+        "content": "But other than that, you know, the things that you store related to that key can be any type, just like you can store any type in a list."
+    },
+    {
+        "timestamp": "01:01:41",
+        "content": "So the last thing I'd like to go through is a larger example, and this will showcase a whole bunch of things that we've been talking about so far and will showcase sort of how to, first of all, create dictionaries, which is what we did today. It will showcase how to reuse functions."
+    },
+    {
+        "timestamp": "01:01:46",
+        "content": "You know, how to write functions and reuse functions in other places. It will showcase a little bit of immutability as well."
+    },
+    {
+        "timestamp": "01:02:07",
+        "content": "But, you know, this is all in a larger example. And, you know, if I go a little bit fast through this, I've given you Python tutor links and it's also in the file to run on your own so that the goal of this function, of this last example is to basically find the most common words in a song's lyrics."
+    },
+    {
+        "timestamp": "01:02:14",
+        "content": "And dictionaries are going to be really useful for doing something like this."
+    },
+    {
+        "timestamp": "01:02:18",
+        "content": "So I'm going to show you, first of all, what we want to end up with, and then we can talk about how to divide this larger problem into smaller pieces."
+    },
+    {
+        "timestamp": "01:02:27",
+        "content": "So, uh, okay, so those are all the pieces."
+    },
+    {
+        "timestamp": "01:02:31",
+        "content": "But basically what I want to end up with is I want to have a song."
+    },
+    {
+        "timestamp": "01:02:36",
+        "content": "Be stored as a string. Okay. You'll recognize these, but these are very old."
+    },
+    {
+        "timestamp": "01:02:43",
+        "content": "I actually haven't updated these songs for a few years. But anyway, don't judge."
+    },
+    {
+        "timestamp": "01:02:47",
+        "content": "So I've got a song stored as a string. And I'm going to run each individual function."
+    },
+    {
+        "timestamp": "01:02:54",
+        "content": "But in the end, what I'd like to do is come up with something like this."
+    },
+    {
+        "timestamp": "01:03:00",
+        "content": "So I want to present the user the top most common words in the song."
+    },
+    {
+        "timestamp": "01:03:06",
+        "content": "So here I have a list. So you can see open, close square bracket tells me it's a list and I've got elements in my list."
+    },
+    {
+        "timestamp": "01:03:12",
+        "content": "So here's the first element in my list, which tells the user that the word EI occurs 18 times."
+    },
+    {
+        "timestamp": "01:03:20",
+        "content": "The next element on my list tells the user that the word we occurred 17 times."
+    },
+    {
+        "timestamp": "01:03:25",
+        "content": "The next element tells the user that the words ain't ever getting older, occur all 16 times, and then so on."
+    },
+    {
+        "timestamp": "01:03:32",
+        "content": "Right? So we're decreasing in frequency, but the most common word occurring 18 times."
+    },
+    {
+        "timestamp": "01:03:37",
+        "content": "And then I'm showing the user the most common words are down to and including six."
+    },
+    {
+        "timestamp": "01:03:46",
+        "content": "So I would choose some arbitrary value. I want to find in the song the words that occur at least six times, for example."
+    },
+    {
+        "timestamp": "01:03:53",
+        "content": "So that's the goal of this program. So how will we achieve this?"
+    },
+    {
+        "timestamp": "01:03:58",
+        "content": "It's obviously a pretty big task."
+    },
+    {
+        "timestamp": "01:04:00",
+        "content": "I wouldn't want to code, you know, the entire thing right off the bat, but we can actually divide it into three smaller pieces."
+    },
+    {
+        "timestamp": "01:04:10",
+        "content": "The first piece and we're going to write the code for this is to create something called a frequency dictionary."
+    },
+    {
+        "timestamp": "01:04:16",
+        "content": "So given a string of words, we're going to create a dictionary that maps each word to how often it occurs."
+    },
+    {
+        "timestamp": "01:04:23",
+        "content": "So fancy word, frequency dictionary. But it's pretty simple."
+    },
+    {
+        "timestamp": "01:04:27",
+        "content": "It just maps the word to its count inside my long string."
+    },
+    {
+        "timestamp": "01:04:32",
+        "content": "So this presents the data, which is this string of words in a much nicer format, right?"
+    },
+    {
+        "timestamp": "01:04:37",
+        "content": "It's a dictionary that tells me the frequency of each word."
+    },
+    {
+        "timestamp": "01:04:42",
+        "content": "Once I have that in hand, things get a little bit easier."
+    },
+    {
+        "timestamp": "01:04:45",
+        "content": "I can write another function that finds the word that occurs most often in that dictionary."
+    },
+    {
+        "timestamp": "01:04:56",
+        "content": "So the way I'm going to do that is look up the frequencies in the values, find the maximum of those values, and then figure out which keys are associated with that maximum value."
+    },
+    {
+        "timestamp": "01:05:04",
+        "content": "And this is all made possible because I've reimagined my data in this frequency dictionary format."
+    },
+    {
+        "timestamp": "01:05:16",
+        "content": "The last step. Once I figure out how to write a function that returns for me, the words that occurred the most times is to find the words that occur at least some number of times."
+    },
+    {
+        "timestamp": "01:05:23",
+        "content": "And I'll go through an example of this one in a few slides when we get to it."
+    },
+    {
+        "timestamp": "01:05:28",
+        "content": "But this last function here, number three, you can actually rewrite it in a whole bunch of ways."
+    },
+    {
+        "timestamp": "01:05:33",
+        "content": "I'm just going to show you one way to write it. That'll involve immutability, but you don't have to do it using your ability."
+    },
+    {
+        "timestamp": "01:05:40",
+        "content": "You can definitely do it in a whole bunch of, you know, with a whole bunch of other implementations."
+    },
+    {
+        "timestamp": "01:05:46",
+        "content": "So let's begin by first creating a dictionary that maps the words to their frequencies."
+    },
+    {
+        "timestamp": "01:05:53",
+        "content": "So I've picked a song that has a real song and it has some repetition, and it's short that it fits in one line."
+    },
+    {
+        "timestamp": "01:06:03",
+        "content": "So I've got this song here and I've got my function generate word dictionary."
+    },
+    {
+        "timestamp": "01:06:08",
+        "content": "The song is a string, right?"
+    },
+    {
+        "timestamp": "01:06:19",
+        "content": "So it's basically the song a little bit cleaned up, not in terms of words, but in terms of removing punctuation, removing, you know, commas, maybe exclamation or I might have kept quotations or something like that."
+    },
+    {
+        "timestamp": "01:06:25",
+        "content": "But basically it's removing all of the punctuation and stuff because that will mess up my word count."
+    },
+    {
+        "timestamp": "01:06:33",
+        "content": "So what is this function going to do given a string for my song?"
+    },
+    {
+        "timestamp": "01:06:37",
+        "content": "Well, first, I'm going to convert all my letters to lowercase."
+    },
+    {
+        "timestamp": "01:06:41",
+        "content": "This means that Capital G will be counted as the same as the same word as lowercase lowercase tag, which is the correct way to do it."
+    },
+    {
+        "timestamp": "01:06:50",
+        "content": "So convert everything to lowercase. Then I'm going to use our friend the split function, remember, which takes in my string and splits on a character."
+    },
+    {
+        "timestamp": "01:06:59",
+        "content": "So by default it'll split on the space. This puts our string of words in a very manageable format."
+    },
+    {
+        "timestamp": "01:07:09",
+        "content": "A list of words. Right. Much nicer to work with lists than work with a string."
+    },
+    {
+        "timestamp": "01:07:15",
+        "content": "Now that I have my word list, I'm going to create my empty dictionary and then populate it."
+    },
+    {
+        "timestamp": "01:07:21",
+        "content": "So I'm iterating over my list of words. And then I have a choice."
+    },
+    {
+        "timestamp": "01:07:27",
+        "content": "Either. I've seen this word already and I want to update the frequency."
+    },
+    {
+        "timestamp": "01:07:35",
+        "content": "Right. So I want to increase the frequency by one because I've already added this diction, this word to my dictionary, or this is the first time I'm seeing this word."
+    },
+    {
+        "timestamp": "01:07:40",
+        "content": "And I want to add it to my dictionary with a frequency of one."
+    },
+    {
+        "timestamp": "01:07:43",
+        "content": "So the first if the first case here, the if we'll update the frequency because I've already seen the word in my dictionary."
+    },
+    {
+        "timestamp": "01:07:49",
+        "content": "So here I'm using the keyword to check if the key, the word is already in my dictionary."
+    },
+    {
+        "timestamp": "01:07:55",
+        "content": "If so, I increase its frequency by one. Otherwise, this is the first time I'm adding my word to my dictionary."
+    },
+    {
+        "timestamp": "01:08:01",
+        "content": "So give it a frequency of one. And then I return the word dictionary."
+    },
+    {
+        "timestamp": "01:08:06",
+        "content": "Right. So this will map strings to integers."
+    },
+    {
+        "timestamp": "01:08:11",
+        "content": "Let's work through it in the Python tutor. So."
+    },
+    {
+        "timestamp": "01:08:20",
+        "content": "Step, step, step, step, step. Lowercase my input string step."
+    },
+    {
+        "timestamp": "01:08:26",
+        "content": "I've split it. So now I've got this list of all of my words."
+    },
+    {
+        "timestamp": "01:08:32",
+        "content": "Step. This is where we begin. So I've created my empty dictionary over here."
+    },
+    {
+        "timestamp": "01:08:36",
+        "content": "This is. Keep an eye on this area here. It will be populated soon."
+    },
+    {
+        "timestamp": "01:08:41",
+        "content": "The first word W is RA. Right."
+    },
+    {
+        "timestamp": "01:08:45",
+        "content": "It's the first word of my list. It's obviously the first time I'm seeing it."
+    },
+    {
+        "timestamp": "01:08:49",
+        "content": "I have nothing in my dictionary right now, so I'm going to pop in my else and I'm going to add it to my dictionary with a frequency of one."
+    },
+    {
+        "timestamp": "01:08:58",
+        "content": "That worked. Next word in my dictionary is in my list is this one same word I've already seen."
+    },
+    {
+        "timestamp": "01:09:06",
+        "content": "So I'm going to go inside the F and increase the frequency to two."
+    },
+    {
+        "timestamp": "01:09:10",
+        "content": "All right. Is now two. Next is all right."
+    },
+    {
+        "timestamp": "01:09:16",
+        "content": "So here's my word. I've got the next one in my list."
+    },
+    {
+        "timestamp": "01:09:19",
+        "content": "It's the first time I'm seeing it. Add it to my dictionary."
+    },
+    {
+        "timestamp": "01:09:22",
+        "content": "The frequency of one next word I'm seeing is again, increase its frequency to two and I'm going to go faster."
+    },
+    {
+        "timestamp": "01:09:30",
+        "content": "Now, this is increasing frequency to three, right?"
+    },
+    {
+        "timestamp": "01:09:33",
+        "content": "Because I've seen it three times now and then I'm adding Rome for the first time, Ma for the first time and row for the first time."
+    },
+    {
+        "timestamp": "01:09:45",
+        "content": "And lastly, I'm going to increase my. Frequency two more times because it occurs two more times in my song, right?"
+    },
+    {
+        "timestamp": "01:09:52",
+        "content": "So it's increased to two and now it's increased to three. And then we're done."
+    },
+    {
+        "timestamp": "01:09:56",
+        "content": "So we return the word dictionary. Really nice way to represent my list."
+    },
+    {
+        "timestamp": "01:10:03",
+        "content": "My. My son. Right. Very nice. Okay."
+    },
+    {
+        "timestamp": "01:10:08",
+        "content": "So now that I have this frequency dictionary and I've put it up here, this is what we ended up with."
+    },
+    {
+        "timestamp": "01:10:13",
+        "content": "How can we write a function that returns for me the most frequent word?"
+    },
+    {
+        "timestamp": "01:10:19",
+        "content": "So one thing we can recognize is the most frequent word has the highest value python dictionary value in my dictionary."
+    },
+    {
+        "timestamp": "01:10:29",
+        "content": "Right. So as a human, I would kind of look to see which which one of these entries have the biggest value."
+    },
+    {
+        "timestamp": "01:10:37",
+        "content": "As a computer, I can't really do that because I have to do it a little bit more systematically."
+    },
+    {
+        "timestamp": "01:10:42",
+        "content": "So what we can say is, well, let's look at our values and grab the maximum of the values."
+    },
+    {
+        "timestamp": "01:10:48",
+        "content": "So here I'm using this dot values function on my dictionary to grab for to grab for me all of the values in my dictionary."
+    },
+    {
+        "timestamp": "01:10:57",
+        "content": "So this will be kind of like the list two, comma three. Come on, one, comma, three, come in one."
+    },
+    {
+        "timestamp": "01:11:02",
+        "content": "And then I'm running the max function on that list. So max of this list of numbers gives me the maximum value in that list of the three."
+    },
+    {
+        "timestamp": "01:11:10",
+        "content": "So highest now has the value integer three. And now all I need to do is iterate over my element entries in my dictionary."
+    },
+    {
+        "timestamp": "01:11:20",
+        "content": "So this is in the items and I'm checking now inside this iteration is if the value is equal to the highest."
+    },
+    {
+        "timestamp": "01:11:29",
+        "content": "So as I'm looking at each entry, is the value for that entry the same as the highest one I've seen?"
+    },
+    {
+        "timestamp": "01:11:38",
+        "content": "If it is, I'm going to maintain a list of all the words with that highest value, because there might be more than one word that has that highest value, as we saw when we actually ran it here."
+    },
+    {
+        "timestamp": "01:11:45",
+        "content": "Right here, I had a list of all of these words that occurred 16 times."
+    },
+    {
+        "timestamp": "01:11:50",
+        "content": "So that's kind of the output that I want to maintain. Okay."
+    },
+    {
+        "timestamp": "01:11:55",
+        "content": "So I'm appending to my words list and returning this tuple with the words comma that highest value."
+    },
+    {
+        "timestamp": "01:12:02",
+        "content": "So. Python tutor like a like in the previous time."
+    },
+    {
+        "timestamp": "01:12:08",
+        "content": "So let's create our original dictionary. This is what we ended up with last time."
+    },
+    {
+        "timestamp": "01:12:18",
+        "content": "So the highest values three here and I'm going to loop through each entry in my dictionary so you can say C, k v is going to be each one of these in order. So first it's right two, then it's three and so on."
+    },
+    {
+        "timestamp": "01:12:24",
+        "content": "Obviously the two is not equal to the three, so we move on. The three equals the three."
+    },
+    {
+        "timestamp": "01:12:29",
+        "content": "So we take the R and boom, add it to my list here."
+    },
+    {
+        "timestamp": "01:12:32",
+        "content": "So this is the list I'm maintaining of all the words that occur with that frequency three next."
+    },
+    {
+        "timestamp": "01:12:39",
+        "content": "No for Rome. Yes for my. So I'm going to add it to my list and then no for row and I'm done."
+    },
+    {
+        "timestamp": "01:12:48",
+        "content": "So the return is going to be this list. You know, this tuple here with the list of the words that occur three times."
+    },
+    {
+        "timestamp": "01:12:58",
+        "content": "Okay. Good. Last part, I'm not going to go through Python tutor."
+    },
+    {
+        "timestamp": "01:13:04",
+        "content": "I did include a link to it because it becomes very messy with the arrows."
+    },
+    {
+        "timestamp": "01:13:07",
+        "content": "But I do encourage you to try it. Try to follow it along on your own time."
+    },
+    {
+        "timestamp": "01:13:11",
+        "content": "I will explain how. However, the the way that I chose to solve this problem."
+    },
+    {
+        "timestamp": "01:13:16",
+        "content": "So I chose to solve this problem to include mutation and reusing the function that we just wrote"
+    },
+    {
+        "timestamp": "01:13:23",
+        "content": "that grabs for me the highest value and the words associated with that highest frequency value."
+    },
+    {
+        "timestamp": "01:13:30",
+        "content": "So this is the idea. I have my original word dictionary."
+    },
+    {
+        "timestamp": "01:13:36",
+        "content": "Right. This is the frequency dictionary we created right off the bat."
+    },
+    {
+        "timestamp": "01:13:40",
+        "content": "What I'm going to do is look to see which words occur with the highest frequency."
+    },
+    {
+        "timestamp": "01:13:48",
+        "content": "So the highest frequency. My function from before grabs for me figures out that it's three and it figures out the words associated with that three."
+    },
+    {
+        "timestamp": "01:13:57",
+        "content": "R and my. That's exactly what we just did."
+    },
+    {
+        "timestamp": "01:14:07",
+        "content": "So I'm going to grab those words and those entries in the dictionary, and then I'm going to mutate the dictionary to remove those words, because I know those words occur with the highest frequency."
+    },
+    {
+        "timestamp": "01:14:16",
+        "content": "So now I remove those words and I have saved them because they were the result of the function that I had just right."
+    },
+    {
+        "timestamp": "01:14:27",
+        "content": "So I'm maintaining this frequency list which will contain all the words that occur, at least I guess I said one at greater than one time, so at least two times."
+    },
+    {
+        "timestamp": "01:14:35",
+        "content": "So I'm going to grab the ones that occur three and two times. So right now, I had just grabbed the words that occur three times."
+    },
+    {
+        "timestamp": "01:14:42",
+        "content": "I've remove them from my dictionary, so I've actually mutated my dictionary to remove those words."
+    },
+    {
+        "timestamp": "01:14:48",
+        "content": "Now, if I run the exact same function that I just wrote the previous slide on this mutated dictionary."
+    },
+    {
+        "timestamp": "01:14:57",
+        "content": "Which words will it give me? Which words occur the most now?"
+    },
+    {
+        "timestamp": "01:15:03",
+        "content": "Exactly right now."
+    },
+    {
+        "timestamp": "01:15:04",
+        "content": "The highest value in my dictionary, in this frequency dictionary is two because I mutated to remove what was previously the highest value."
+    },
+    {
+        "timestamp": "01:15:12",
+        "content": "So I'm running the same function again on the mutated dictionary to give me just the right."
+    },
+    {
+        "timestamp": "01:15:19",
+        "content": "So I grab that, keep track of that in my frequency list."
+    },
+    {
+        "timestamp": "01:15:23",
+        "content": "Right. Mutate the dictionary to remove that."
+    },
+    {
+        "timestamp": "01:15:34",
+        "content": "And as I'm doing that, I'm I'm also keeping track to make sure that the highest frequency I have in the remaining dictionary is at least, you know, whatever I was interested in. So here I wanted at least two."
+    },
+    {
+        "timestamp": "01:15:38",
+        "content": "So this function, the one I'll write, will no longer grab any other values from the dictionary because now one frequency, one I don't want to graph."
+    },
+    {
+        "timestamp": "01:15:47",
+        "content": "So this is the resulting value. And that's the idea."
+    },
+    {
+        "timestamp": "01:15:51",
+        "content": "We're using your ability in the function we just wrote to do this task."
+    },
+    {
+        "timestamp": "01:15:54",
+        "content": "And this is the code that does that. So this runs the function we wrote previously."
+    },
+    {
+        "timestamp": "01:15:59",
+        "content": "Step number two gives us that list, that tuple with the list of all the words."
+    },
+    {
+        "timestamp": "01:16:05",
+        "content": "This loop here. Make sure I'm. I still have frequencies that are at least X in the dictionary."
+    },
+    {
+        "timestamp": "01:16:11",
+        "content": "I grab the the tuple that I just created so something like this and add it to my frequency list."
+    },
+    {
+        "timestamp": "01:16:17",
+        "content": "So this is the resulting list that I'm keeping track of. And then this bit here removes the word for my dictionary."
+    },
+    {
+        "timestamp": "01:16:23",
+        "content": "So I'm mutating the dictionary using this del keyword that we saw at the beginning of this lecture."
+    },
+    {
+        "timestamp": "01:16:29",
+        "content": "Yeah, of course. Uh. Well, well, well."
+    },
+    {
+        "timestamp": "01:16:35",
+        "content": "Basically. Well, no. Yeah."
+    },
+    {
+        "timestamp": "01:16:42",
+        "content": "I guess I would just. Why is it?"
+    },
+    {
+        "timestamp": "01:16:54",
+        "content": "Well, then that's. So I think maybe it's because the function I forget what the specification said, but I don't know if it said at least two or greater than two or greater at least x or greater than x."
+    },
+    {
+        "timestamp": "01:17:01",
+        "content": "It depends on which one I actually said in the specification. But you can imagine changing this to greater than or greater than or equal to."
+    },
+    {
+        "timestamp": "01:17:08",
+        "content": "And then we're running this function again inside this y loop to grab the the frequency that."
+    },
+    {
+        "timestamp": "01:17:19",
+        "content": "Yeah. So these are just the observations I actually stated at the beginning of this example, a bunch of the different things that we've learned that we're using within this example."
+    },
+    {
+        "timestamp": "01:17:23",
+        "content": "So slicing or splitting, iterating over the list directly."
+    },
+    {
+        "timestamp": "01:17:28",
+        "content": "Mutability, you know, using the items."
+    },
+    {
+        "timestamp": "01:17:32",
+        "content": "Things like that. Okay, so that's it. That's all I have."
+    },
+    {
+        "timestamp": "01:17:36",
+        "content": "I'll see you guys on Monday. Monday is Halloween. If you'd like to bring a costume, I love Halloween."
+    },
+    {
+        "timestamp": "01:17:43",
+        "content": "I will wear something different than what I usually wear."
+    }
+]

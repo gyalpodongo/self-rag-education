@@ -1,0 +1,15 @@
+[
+    {
+        "content": "My code returns ({0: 9, 1: 8, 2: 7, 3: 6, 4: 5, 5: 4, 6: 3, 7: 2, 8: 1, 9: 0}, [8, 4, 876]) instead of ({0:9,1:8,2:7,3:6,4:5,5:4,6:3,7:2,8:1,9:0}, [8, 4, 876]). Is this okay? If not, what would be a likely reason for the extra spaces in my dictionary?",
+        "type": "question",
+        "created": "2022-10-17T20:04:42.679Z",
+        "subject": "Exam practice problem 4",
+        "_id": "l9d7goc7qyi609"
+    },
+    {
+        "content": "Extra spaces in your dictionary when printed is just a computer formatting thing. So long as your output has the same types as the desired output and the same values, you\u2019re good.\u00a0",
+        "type": "i_answer",
+        "created": "2022-10-17T20:09:45.138Z",
+        "_id": "l9d7goc7qyi609"
+    }
+]

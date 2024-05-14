@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>I was completing the finger exercise due tomorrow (for L8) and am able to pass every test case except for one. However, when I go to check the expected output, I&#39;m not sure I understand why it says that should be the expected output at all. From what I understand, we are testing whether the strings have any overlapping characters and returning True if so, False if not. If this is the case, should&#39;t calling the function with s1 = &#39;abcd&#39; and s2 = &#39;cabaa&#39; return True, since both strings have an &#39;a&#39;, a &#39;c&#39;, and a &#39;b&#39;? I&#39;m not sure what exactly it is I&#39;m missing (I&#39;ve also attached a picture). Thank you in advance!</p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fkqcjswag73ino%2F45513f931f3cd7e58411b9560319d64435695406bc891cc1b1677136e5e7ead4%2Fimage.png\" alt=\"image.png\" /></p>",
+        "type": "question",
+        "created": "2022-10-05T01:52:13.190Z",
+        "subject": "Finger Exercise Question",
+        "_id": "l8uz5i12wve448"
+    },
+    {
+        "content": "<p>It&#39;s false because character d is only in one of the strings.</p>",
+        "type": "i_answer",
+        "created": "2022-10-05T10:50:48.345Z",
+        "_id": "l8uz5i12wve448"
+    }
+]

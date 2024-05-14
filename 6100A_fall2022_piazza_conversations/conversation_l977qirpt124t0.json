@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi!! The course website says that the highest the cutoff will be for an F in this class in a 60. Am I understanding correctly that a 60 is a passing grade in this course?</p>\n<p></p>\n<p>Thanks so much and take care!</p>",
+        "type": "question",
+        "created": "2022-10-13T15:25:44.965Z",
+        "subject": "Passing grade?",
+        "_id": "l977qirpt124t0"
+    },
+    {
+        "content": "<md>We do not post final letter grade cutoffs, but the highest the cutoff will be is:\n\n*   A: 90\n*   B: 80\n*   C: 70\n*   D: 60\n*   F: below 60</md>",
+        "type": "i_answer",
+        "created": "2022-10-18T15:00:50.509Z",
+        "_id": "l977qirpt124t0"
+    }
+]

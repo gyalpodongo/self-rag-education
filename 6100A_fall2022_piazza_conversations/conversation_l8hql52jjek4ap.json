@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>My code doesn&#39;t pass the test_play_game_wildcard (though it works fine with the word wildcard when I do it like in the comments). This is what it gives instead:</p>\n<p></p>\n<p>======================================================================<br />FAIL: test_play_game_wildcard (__main__.TestPS2)<br />----------------------------------------------------------------------<br />Traceback (most recent call last):<br />\u00a0 File &#34;D:\\DOC_s\\Desktop\\mit\\##fall 2022\\6.100A\\psets\\pset 2\\1_ps2\\test_ps2_student.py&#34;, line 362, in test_play_game_wildcard<br />\u00a0 \u00a0 raise(e)<br />\u00a0 File &#34;D:\\DOC_s\\Desktop\\mit\\##fall 2022\\6.100A\\psets\\pset 2\\1_ps2\\test_ps2_student.py&#34;, line 338, in test_play_game_wildcard<br />\u00a0 \u00a0 self.assertFalse(threw_exception)<br />AssertionError: True is not false</p>\n<p>----------------------------------------------------------------------</p>\n<p></p>\n<p>How can I resolve this?</p>",
+        "type": "question",
+        "created": "2022-09-25T19:31:26.059Z",
+        "subject": "doesn&#39;t pass the last test",
+        "_id": "l8hql52jjek4ap"
+    },
+    {
+        "content": "I can\u2019t really say much just from this, but it seems like your code is throwing an error somewhere when you try to play hangman with help.\u00a0",
+        "type": "i_answer",
+        "created": "2022-09-26T04:49:56.998Z",
+        "_id": "l8hql52jjek4ap"
+    }
+]

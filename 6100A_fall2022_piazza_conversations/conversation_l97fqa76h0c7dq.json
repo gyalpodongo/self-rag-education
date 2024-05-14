@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p>Hi! Im trying to do my checkoffs and Ive opened the website in a few browsers but it always says 502 bad gateway. Is it down?\u00a0</p>",
+        "type": "question",
+        "created": "2022-10-13T19:09:30.786Z",
+        "subject": "The website seems to be crashed",
+        "_id": "l97fqa76h0c7dq"
+    },
+    {
+        "content": "<p>Yeah. Valid for trying in different browsers though. We love that.</p>",
+        "type": "s_answer",
+        "created": "2022-10-13T19:10:38.788Z",
+        "_id": "l97fqa76h0c7dq"
+    },
+    {
+        "content": "<p>still crashed. When do we estimate it&#39;ll be available again?</p>",
+        "type": "followup",
+        "created": "2022-10-13T20:27:35.108Z",
+        "_id": "l97fqa76h0c7dq"
+    },
+    {
+        "content": "<p>Is there any other way we can receive our check off or should we just wait for the website to come back online?</p>",
+        "type": "followup",
+        "created": "2022-10-13T21:06:13.510Z",
+        "_id": "l97fqa76h0c7dq"
+    }
+]

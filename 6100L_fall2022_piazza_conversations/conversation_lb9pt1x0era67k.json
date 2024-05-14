@@ -1,0 +1,33 @@
+[
+    {
+        "content": "<p>Hello,</p>\n<p></p>\n<p>I was wondering how to determine the breakdown of a score on a pset. For the last pset, I mistakenly missed the halfway hand-in, so I was wondering how that would impact the overal score of that pset. Furthermore, I saw that I recieved a 96% for pset 3, but received full credit for the check off and the halfway hand in, so I&#39;m not sure how to account for what the overall pset score would be. Is the percentage on the site an accurate way to check my overall standing pset-wise, because it seems quite low (although this could be because I have yet to submit pset 5).</p>\n<p></p>\n<p>Any guidance would be appreciated. Thank you!</p>",
+        "type": "question",
+        "created": "2022-12-04T18:46:33.204Z",
+        "subject": "Pset breakdown",
+        "_id": "lb9pt1x0era67k"
+    },
+    {
+        "content": "<p>The halfway handin is worth 10%, the autograder is worth about 65% and the checkoff about 25%. For pset3, your autograder part is 96% and everything else is 100%..</p>",
+        "type": "i_answer",
+        "created": "2022-12-05T14:05:07.426Z",
+        "_id": "lb9pt1x0era67k"
+    },
+    {
+        "content": "<p>Thanks for the response! I&#39;m currently a little confused about my pset average; it says on the site that its 85%, but I&#39;m not sure how that average was reached. As far as I&#39;m aware, the only pset which received a score in the B range was pset 4; is that incorrect? Since my other psets were 100 percents or very close, I am a bit confused. Thanks in advance!</p>",
+        "type": "followup",
+        "created": "2022-12-09T20:48:46.387Z",
+        "_id": "lb9pt1x0era67k"
+    },
+    {
+        "content": "<p>Oh sorry, just realized the actual pset grade for 5 hasn&#39;t been released, just the checkoff. End of semester is getting to me! Thanks regardless, and wanted to let you know I really enjoyed your class!\u00a0</p>",
+        "type": "followup_response",
+        "created": "2022-12-09T20:55:18.044Z",
+        "_id": "lb9pt1x0era67k"
+    },
+    {
+        "content": "<p>The pset5 score has not been counted yet -- when you see the score for pset5 on the site then the final avg will also update.\u00a0</p>",
+        "type": "followup_response",
+        "created": "2022-12-09T20:55:19.733Z",
+        "_id": "lb9pt1x0era67k"
+    }
+]

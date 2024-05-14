@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>In our Hangman game, do we penalize repeated guesses?</p>\n<p>In other words: if the user guesses &#34;a&#34; but &#34;a&#34; has already been guessed, do we tell the user that &#34;a&#34; has been guessed or do we penalize them by using up a guess?</p>",
+        "type": "question",
+        "created": "2022-09-21T00:18:07.886Z",
+        "subject": "Do we penalize repeated guesses in Hangman?",
+        "_id": "l8avmkr2rkf2fr"
+    },
+    {
+        "content": "<p>The program should tell the player if the letter has already been guessed, and this does not use up a guess.</p>",
+        "type": "i_answer",
+        "created": "2022-09-21T00:40:48.146Z",
+        "_id": "l8avmkr2rkf2fr"
+    }
+]

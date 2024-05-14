@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p>I&#39;m considering switching from 6.100A to 6.100L. Once I switch, could I re-submit assignments/would my grades transfer, or would they not be accepted? I noticed that the syllabus says that if you register late, you would have to use late days for P-Sets, but I was unsure if this also applied in the case that you switch from 6.100A to 6.100L.</p>",
+        "type": "question",
+        "created": "2022-09-30T16:46:59.579Z",
+        "subject": "Switching from 6.100A to 6.100L",
+        "_id": "l8opwxdnkno6v9"
+    },
+    {
+        "content": "<p>I would transfer your quiz scores from 100A, and would give you an extension until Sunday to complete the finger exercises and upload your pset into 100L.</p>",
+        "type": "i_answer",
+        "created": "2022-09-30T18:04:40.806Z",
+        "_id": "l8opwxdnkno6v9"
+    },
+    {
+        "content": "<p>Thank you! Will I have to do the check-off for Pset 1 again?</p>",
+        "type": "followup",
+        "created": "2022-10-01T15:28:46.893Z",
+        "_id": "l8opwxdnkno6v9"
+    },
+    {
+        "content": "<p>yes</p>",
+        "type": "followup_response",
+        "created": "2022-10-01T15:41:29.930Z",
+        "_id": "l8opwxdnkno6v9"
+    }
+]

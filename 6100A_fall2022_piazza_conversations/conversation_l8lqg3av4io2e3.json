@@ -1,0 +1,9 @@
+[
+    {
+        "content": "<p><a href=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl7t2ax66fpn6wt%2Fbc1173c94a8cf40e2a8b7c420885fcc4422dff580d25d5b49742bc2c62fedce9%2Ferrors.txt.rtf\" target=\"_blank\" rel=\"noopener noreferrer\">errors.txt.rtf</a></p>\n<p>My tester is not working, and I have redownloaded the files and haven&#39;t renamed or removed anything. I also have no global variables in my code. I&#39;ve discussed this issue twice in office hours, but nothing has been found. I attached the errors in a text file.</p>\n<p></p>\n<p>I submitted it without the tester working because it was due last night, but the issue was never resolved.</p>",
+        "type": "question",
+        "created": "2022-09-28T14:38:35.191Z",
+        "subject": "PSET 2 Tester Errors",
+        "_id": "l8lqg3av4io2e3"
+    }
+]

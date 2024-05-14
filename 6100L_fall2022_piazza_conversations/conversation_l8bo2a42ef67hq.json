@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hello,\u00a0</p>\n<p>I want to ask for a clarification regarding what needs to be submitted by today. The problem set says it is due &#34;Wednesday October 05&#34;.</p>\n<p>What exactly do we need to submit today?</p>\n<p></p>",
+        "type": "question",
+        "created": "2022-09-21T13:34:09.842Z",
+        "subject": "Problem Set 1 - half way submission",
+        "_id": "l8bo2a42ef67hq"
+    },
+    {
+        "content": "<p>Upload one of the pset files to show that you have started working on it. i.e. there is some code in the .py upload file you choose relevant to the pset. The code does not need to be correct.\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-09-21T14:40:30.860Z",
+        "_id": "l8bo2a42ef67hq"
+    }
+]

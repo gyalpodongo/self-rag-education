@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p>Pset 0 references a &#34;Getting Started&#34; Handout but I can&#39;t find it :/</p>",
+        "type": "question",
+        "created": "2022-09-09T15:03:26.059Z",
+        "subject": "Getting Started Handout",
+        "_id": "l7ulyuzv47o6"
+    },
+    {
+        "content": "<p>At the top of the pset file is a link to download a zip file containing these handouts.\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-09-09T15:04:31.829Z",
+        "_id": "l7ulyuzv47o6"
+    },
+    {
+        "content": "<p>Regarding the zip file, is our code submission based on the assignment in the zip file or the one in the survey? The one in the zip file wants us to use input() and print() while the one in the survey is just assigning values to variables and finding base-2 log</p>\n<p></p>",
+        "type": "followup",
+        "created": "2022-09-09T16:46:21.389Z",
+        "_id": "l7ulyuzv47o6"
+    },
+    {
+        "content": "<p>You can follow either one, but make sure that the commands in Getting Started (like input and print) work without error.\u00a0</p>",
+        "type": "followup_response",
+        "created": "2022-09-09T17:03:58.964Z",
+        "_id": "l7ulyuzv47o6"
+    }
+]

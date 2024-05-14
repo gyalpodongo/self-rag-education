@@ -1,0 +1,63 @@
+[
+    {
+        "content": "<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl8c3smjek8w4wi%2Fed29b54555392363b7cce548372945f4618bdf594b758b3ae7e7cbbe96f5ef98%2FScreen_Shot_2022-10-08_at_11.54.23_AM.png\" width=\"575\" height=\"304\" alt=\"\" /></p>\n<p>I have been working on the Pset4 and reached the frame_process function. The function requires a nested function. However, no matter how I tried it, it still not returning the correct result. I am wondering if you can take a look at the code and give some hints on how I can revise. Thank you!</p>",
+        "type": "question",
+        "created": "2022-10-08T15:59:25.859Z",
+        "subject": "Question about Pset4",
+        "_id": "l903qkrnsm8ql"
+    },
+    {
+        "content": "<p>If you want to return a function, you just return the name of the function without any parameters</p>\n<p></p>\n<p>Like in your code, you should be returning as</p>\n<p></p>\n<p><kbd>return frame_process</kbd></p>\n<p></p>\n<p>(instead of <kbd>return frame_process(data, frame)</kbd> since this would be like returning the result of of calling frame_process on objects data and frame)</p>",
+        "type": "i_answer",
+        "created": "2022-10-09T20:36:26.266Z",
+        "_id": "l903qkrnsm8ql"
+    },
+    {
+        "content": "<p><kbd>I have tried <strong>return frame_process,</strong> but for some reason, the inner function is still not working.\u00a0</kbd></p>\n<p></p>\n<p>Do I need to return any value for the inner function or pass any <strong>data, frame</strong> parameter from the outer function to the inner one?</p>",
+        "type": "followup",
+        "created": "2022-10-09T20:39:52.680Z",
+        "_id": "l903qkrnsm8ql"
+    },
+    {
+        "content": "<p>what do you mean by the inner function is still not working? Are you not able to call the function when you&#39;re returned it, or what is exactly happening?</p>",
+        "type": "followup_response",
+        "created": "2022-10-09T20:51:42.517Z",
+        "_id": "l903qkrnsm8ql"
+    },
+    {
+        "content": "<p>It seemed like the inner function was not called when I ran it. I added <strong>print</strong> in the frame_process function to debug, and after I ran it, nothing was printed.</p>\n<p></p>\n<p>I revised this function multiple times but was still not able to pass the test. Does the code I wrote seem correct?</p>",
+        "type": "followup_response",
+        "created": "2022-10-09T20:58:40.724Z",
+        "_id": "l903qkrnsm8ql"
+    },
+    {
+        "content": "<p>how are you calling the function after its returned?</p>",
+        "type": "followup_response",
+        "created": "2022-10-09T21:00:58.071Z",
+        "_id": "l903qkrnsm8ql"
+    },
+    {
+        "content": "<p>actually if its the test case that&#39;s failing, can you send the error output?</p>",
+        "type": "followup_response",
+        "created": "2022-10-09T21:02:10.037Z",
+        "_id": "l903qkrnsm8ql"
+    },
+    {
+        "content": "<p>In this file, I directly tried to add frame_maker(None) and frame_maker((1,0)) under main function.\u00a0 Also, I copied only this function into a new file as the following screenshot to test but it was also not printing anything.</p>\n<p></p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl8c3smjek8w4wi%2F08d89d9b5d0dbb3ff56e421060517f80c989b36ac0f0b52e9f278be457998ae6%2FScreen_Shot_2022-10-09_at_5.05.52_PM.png\" width=\"552\" height=\"387\" alt=\"\" /></p>",
+        "type": "followup_response",
+        "created": "2022-10-09T21:07:22.629Z",
+        "_id": "l903qkrnsm8ql"
+    },
+    {
+        "content": "<p>So right now, when you&#39;re returning a function, you&#39;re not calling it with anything. If you write something like\u00a0<kbd>print(type(frame_maker(None)))\u00a0</kbd>then you should be able to see that it prints out something like</p>\n<p><kbd>&lt;class &#39;function&#39;&gt;</kbd></p>",
+        "type": "followup_response",
+        "created": "2022-10-09T21:19:24.516Z",
+        "_id": "l903qkrnsm8ql"
+    },
+    {
+        "content": "<p>If you want to see if it the function you return works, then you should test it like this:</p>\n<p><kbd>frame_maker(None)(</kbd>&lt;whatever you want data to be&gt;<kbd>,</kbd> &lt;whatever you want frame to be&gt;<kbd>)</kbd></p>\n<p>This would actually call the functiont hat&#39;s returned and pass in parameters.</p>",
+        "type": "followup_response",
+        "created": "2022-10-09T21:26:47.416Z",
+        "_id": "l903qkrnsm8ql"
+    }
+]

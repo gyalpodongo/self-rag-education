@@ -1,0 +1,315 @@
+[
+    {
+        "content": "<p>Hello Everyone,<br /><br />Our course website is <a href=\"https://sicp-s1.mit.edu/6.100L_fa22\" target=\"_blank\" rel=\"noopener noreferrer\">https://sicp-s1.mit.edu/fall22</a>\u00a0<br /><br />You will be able to log onto the site using your Kerberos. On 9/7 everyone that registered for the class and has access to the canvas site has a student account.</p>\n<p></p>\n<ul><li>After 9/7 if you are getting the following message:<br /><strong>&#34;You are logged in but have not been added as a student yet.&#34;</strong><br />please comment your Kerberos below and we will give you a student account. Make sure that you&#39;re registered (or will register) for the class.</li><li>If you&#39;re getting an <strong>&#34;Application Blocked&#34;</strong> message please make sure that you are using https not http in the url.</li><li>If you get a <strong>502 Bad Gateway</strong> error try the following. Access the site from incognito and if that works clear your cache and try accessing the site normally. If you&#39;re still having problems please post below.<br /><br /><br /></li></ul>",
+        "type": "note",
+        "created": "2022-08-11T17:26:32.203Z",
+        "subject": "Course Website",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>keijii@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-03T19:27:01.378Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "orchen@mit.edu",
+        "type": "followup",
+        "created": "2022-09-03T21:23:20.422Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>landond@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-04T21:30:07.295Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>tracestj@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-05T00:12:58.198Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>nagrotis@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-05T13:43:27.455Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>achen818@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-05T14:26:31.103Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>eewing@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-06T18:05:06.098Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>mgriza@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-06T19:13:37.683Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>shoyos@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-07T19:24:54.074Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>ebazakas@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-07T23:31:35.029Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>dbarros@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-08T00:12:25.124Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>jxn@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-08T00:40:59.808Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>jokorie@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-08T01:21:23.795Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>deadpool@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-08T02:29:09.317Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>nirvan@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-08T03:27:11.404Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>perezr@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-08T04:07:53.690Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>linda314@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-08T15:43:03.523Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>isaiah29@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-08T16:43:49.775Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>cgriggs@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-09T01:59:29.267Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>karljo@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-09T02:43:16.334Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>alex_h@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-09T02:48:26.718Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>hkim2022@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-09T05:56:00.360Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>pricena@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-09T15:20:03.496Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>atticusw@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-09T16:17:36.738Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>titust@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-09T17:09:19.303Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>jesschn@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-09T17:11:12.431Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>thankyou@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-09T17:15:00.400Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>manuelct@mit.edu</p>\n<p></p>",
+        "type": "followup",
+        "created": "2022-09-09T17:35:32.408Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>toomlaid@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-09T20:11:32.636Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>asu@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-09T20:31:33.634Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>jaydi@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-09T22:29:21.257Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<md>drjandro@mit.edu</md>",
+        "type": "followup",
+        "created": "2022-09-10T02:11:40.746Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>cnjeri@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-10T03:15:53.236Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>merveakd@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-11T20:08:30.473Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>thbigler@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-11T20:33:46.400Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "neith@mit.edu",
+        "type": "followup",
+        "created": "2022-09-11T22:57:01.161Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>sharygin@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-12T02:04:00.956Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>v_vatel@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-12T04:25:36.864Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>jiaqiwa@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-12T06:10:06.358Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>fkostas@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-12T18:30:25.655Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>Subinkim@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-12T18:42:41.964Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>vpp@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-12T19:52:06.860Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>All set, and I gave you an extension for the first finger exercise to submit until 3pm Tuesday.</p>",
+        "type": "followup_response",
+        "created": "2022-09-13T00:17:38.058Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>All set, and I gave you an extension for the first finger exercise to submit until 3pm Tuesday.</p>",
+        "type": "followup_response",
+        "created": "2022-09-13T00:17:41.985Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>caalvara@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-13T19:02:49.155Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>All set, and I gave you an extension for the first finger exercise to submit until 3pm Wednesday.</p>",
+        "type": "followup_response",
+        "created": "2022-09-13T19:10:36.322Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>Thank you very much!</p>",
+        "type": "followup_response",
+        "created": "2022-09-13T19:16:39.347Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<div>jhorgen@mit.edu</div>",
+        "type": "followup",
+        "created": "2022-09-14T21:06:59.993Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "I just switched into the class today, it will not let me take the quiz yet because I have not yet been added as a student.\u00a0",
+        "type": "followup_response",
+        "created": "2022-09-14T21:07:56.408Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>can someone add me</p>\n<p>langer1@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-30T15:16:27.779Z",
+        "_id": "l6pbb6rvqh01kj"
+    },
+    {
+        "content": "<p>chilic@mit.edu</p>",
+        "type": "followup",
+        "created": "2022-09-30T20:13:53.506Z",
+        "_id": "l6pbb6rvqh01kj"
+    }
+]

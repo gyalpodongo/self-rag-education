@@ -1,0 +1,15 @@
+[
+    {
+        "content": "",
+        "type": "question",
+        "created": "2022-10-17T23:52:52.807Z",
+        "subject": "Where are the review session slides posted?",
+        "_id": "l9dfm3pju2s3js"
+    },
+    {
+        "content": "<md>On the front page of the course website in the calendar. \n\nAlso linked [here](https://sicp-s1.mit.edu/_static/fall22/review_session.pdf)!</md>",
+        "type": "i_answer",
+        "created": "2022-10-18T04:20:48.254Z",
+        "_id": "l9dfm3pju2s3js"
+    }
+]

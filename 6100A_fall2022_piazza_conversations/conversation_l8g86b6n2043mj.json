@@ -1,0 +1,21 @@
+[
+    {
+        "content": "<md># Question about \"test\\_ps2\\_student.py\"\n##### Tests not running properly\nI am having some trouble with \"test\\_ps2\\_student.py\" as it does not run any test functions, and there is a \"student\" term that is undefined (It gives a warning error \"Undefined name 'student' \"). What should I do?</md>",
+        "type": "question",
+        "created": "2022-09-24T18:08:14.879Z",
+        "subject": "PS2 Tests Error / Undefined term",
+        "_id": "l8g86b6n2043mj"
+    },
+    {
+        "content": "Does it give that warning when you run the test file? If so, can you post a screenshot of the terminal when you run the test file?",
+        "type": "i_answer",
+        "created": "2022-09-24T19:15:36.749Z",
+        "_id": "l8g86b6n2043mj"
+    },
+    {
+        "content": "<md>When I test the file, everything runs fine. Also, I managed to figure out where the test functions were being outputted (I had to scroll up a bit on the console). Everything seems to be working fine for now but I will let you know if there are any additional issues. Thanks!</md>",
+        "type": "followup",
+        "created": "2022-09-25T11:23:04.671Z",
+        "_id": "l8g86b6n2043mj"
+    }
+]

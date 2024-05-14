@@ -1,0 +1,21 @@
+[
+    {
+        "content": "<div>Hi,</div>\n<div>I just checked my 6.100A pset 4 score and I received a 60%, I was confused why my grade was so low, so I checked the autograder tests. Apparently, my code was &#34;killed because it took too long to run&#34;, despite only running for 0.2 seconds over the 4 second allowance (which was not mentioned in the pset guide). My code was not inefficient so I&#39;m not sure why I lost marks for this.</div>\n<div></div>\n<div>Please let me know if this can be fixed.</div>\n<div></div>\n<div>Kerb: hcs</div>\n<div>ID# 954106693</div>\n<p></p>",
+        "type": "note",
+        "created": "2022-10-17T01:32:40.155Z",
+        "subject": "Pset wrongly graded by Autograder",
+        "_id": "l9c3qkwrkfo6lv"
+    },
+    {
+        "content": "<p><strong attention=\"j7awud7zf0p2uu\">@Kuan Wei Huang</strong>\u00a0</p>",
+        "type": "followup",
+        "created": "2022-10-17T16:49:22.771Z",
+        "_id": "l9c3qkwrkfo6lv"
+    },
+    {
+        "content": "<p>We plan on manually grading all submissions that went over the 4 second time limit on the server.</p>",
+        "type": "followup",
+        "created": "2022-10-17T22:02:51.129Z",
+        "_id": "l9c3qkwrkfo6lv"
+    }
+]

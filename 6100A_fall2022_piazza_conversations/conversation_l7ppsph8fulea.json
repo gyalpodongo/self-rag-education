@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Anyone else having trouble installing the Anaconda Distribution on MacOS? I follow the prompts from the .pkg file, but I don&#39;t see an Anaconda Navigator on Launchpad like I&#39;m supposed to.</p>",
+        "type": "question",
+        "created": "2022-09-06T04:51:46.556Z",
+        "subject": "Installing Anaconda Distribution",
+        "_id": "l7ppsph8fulea"
+    },
+    {
+        "content": "<p>If you are still having trouble by Thursday, make sure to come to office hours ASAP so that an LA can help you resolve the issue.</p>\n<p></p>\n<p>According to the official documentation, it seems on M1 macs, Navigator is not automatically installed. It&#39;s probably fine to not install it, since it functions mostly as a &#34;launcher&#34; for Spyder and other applications. But if you want it, it should be as simple as running the terminal command to install (see the warning banner and the troubleshooting link).</p>\n<p></p>\n<p>https://docs.anaconda.com/anaconda/install/mac-os/</p>",
+        "type": "i_answer",
+        "created": "2022-09-06T12:30:24.444Z",
+        "_id": "l7ppsph8fulea"
+    }
+]

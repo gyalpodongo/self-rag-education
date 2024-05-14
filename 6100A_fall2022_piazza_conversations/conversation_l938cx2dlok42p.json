@@ -1,0 +1,21 @@
+[
+    {
+        "content": "<p>Do we have to use the getter functions for Date objects that we create? Or can we access the instance attributes directly? (because they aren&#39;t private in the Date class code that was provided in the pset)</p>",
+        "type": "question",
+        "created": "2022-10-10T20:32:05.221Z",
+        "subject": "Getter functions for the Date class?",
+        "_id": "l938cx2dlok42p"
+    },
+    {
+        "content": "<p>I don&#39;t know about for other modules, but in this module, the Date objects are not iterable. For this reason, we have to use the getter functions if we want to read or modify the date values.</p>",
+        "type": "s_answer",
+        "created": "2022-10-11T01:49:55.028Z",
+        "_id": "l938cx2dlok42p"
+    },
+    {
+        "content": "<p>It is correct programming practice to use the getter functions provied (although, Python doesn&#39;t explicitly keep you from accessing them directly...)<br />There is no concept of public or private variables in python</p>",
+        "type": "i_answer",
+        "created": "2022-10-12T22:25:54.131Z",
+        "_id": "l938cx2dlok42p"
+    }
+]

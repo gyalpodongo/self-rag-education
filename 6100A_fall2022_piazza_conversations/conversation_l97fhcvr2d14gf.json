@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p>Hi, I have been waiting in the queue for 2 hrs and it is almost my turn, but I have class right now. Is there something I can do to save my spot or should I just hop on the queue again? Thanks</p>",
+        "type": "question",
+        "created": "2022-10-13T19:02:34.359Z",
+        "subject": "help on pset4",
+        "_id": "l97fhcvr2d14gf"
+    },
+    {
+        "content": "<p>Should I just remove myself? I&#39;m in position 5, but I am in class right now.</p>",
+        "type": "followup",
+        "created": "2022-10-13T19:29:07.314Z",
+        "_id": "l97fhcvr2d14gf"
+    },
+    {
+        "content": "<p>When do you get out of class? If it&#39;s before 5 pm, you can remove yourself now, and when you get out of class &#43; rejoin the queue we can claim you immediately.</p>",
+        "type": "followup_response",
+        "created": "2022-10-13T19:31:05.895Z",
+        "_id": "l97fhcvr2d14gf"
+    },
+    {
+        "content": "<p>My class ends at 5.</p>",
+        "type": "followup_response",
+        "created": "2022-10-13T19:31:57.871Z",
+        "_id": "l97fhcvr2d14gf"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>On MITx (specifically lecture 3), the multiple choice questions ask about representing decimals in binary.</p>\n<p>In lecture 4, it asks about inventory.py.\u00a0</p>\n<p></p>\n<p>Are these things that we are expected to be able to do for the microquiz tomorrow?</p>",
+        "type": "question",
+        "created": "2022-09-27T19:09:33.047Z",
+        "subject": "Additional MITx Information on Microquiz 2?",
+        "_id": "l8kkop9z85c36g"
+    },
+    {
+        "content": "<p>No you won&#39;t need these, but binary numbers are part of an earlier reading so they are fair game for the final exam.\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-09-27T19:23:36.822Z",
+        "_id": "l8kkop9z85c36g"
+    }
+]

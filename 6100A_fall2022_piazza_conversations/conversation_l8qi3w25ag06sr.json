@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi!</p>\n<p>Do you want us to write raw code for each part of the code or can we use functions like split(), set(), etc?</p>",
+        "type": "question",
+        "created": "2022-10-01T22:43:59.885Z",
+        "subject": "Can we use a built in function in a pset?",
+        "_id": "l8qi3w25ag06sr"
+    },
+    {
+        "content": "<md>You can use many common built-in functions, yes.\n, **`str.lower(), split, str.isalpha(), set`**, etc.\n\nIf there is anything very specific and in relation to a specific problem set, feel free to ask as well.</md>",
+        "type": "i_answer",
+        "created": "2022-10-02T16:25:57.137Z",
+        "_id": "l8qi3w25ag06sr"
+    }
+]

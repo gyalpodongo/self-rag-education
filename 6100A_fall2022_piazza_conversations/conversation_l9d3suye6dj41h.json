@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<md>```\nFontconfig error: Cannot load default config file\ntest_load_mock_dataset (__main__.TestDataLoading) ... ok\ntest_load_sp500_dataset (__main__.TestDataLoading) ... \n```\n\nThis is the error I got from checking the auto-grader on why did I receive a 34% on my pset4. However, it works perfectly well on the student tester. It said my code simply took 4.18 seconds to run instead of 4 and hence the autograder killed the grading process.\n\nCould it be possibly manually regraded?</md>",
+        "type": "question",
+        "created": "2022-10-17T18:22:12.662Z",
+        "subject": "This specific error from autograder but passed it on the student tester",
+        "_id": "l9d3suye6dj41h"
+    },
+    {
+        "content": "<p><strong attention=\"j7awud7zf0p2uu\">@Kuan Wei Huang</strong>\u00a0</p>",
+        "type": "followup",
+        "created": "2022-10-18T02:12:57.677Z",
+        "_id": "l9d3suye6dj41h"
+    },
+    {
+        "content": "<p>Sure will take a look. What&#39;s your kerb?</p>",
+        "type": "i_answer",
+        "created": "2022-10-21T12:27:24.048Z",
+        "_id": "l9d3suye6dj41h"
+    },
+    {
+        "content": "<md>My Kerb is sun_m132! Thank you!</md>",
+        "type": "followup",
+        "created": "2022-10-21T16:22:21.045Z",
+        "_id": "l9d3suye6dj41h"
+    }
+]

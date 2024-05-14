@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hello, I am debugging my hangman code right now and the tester and the console text match exactly (I ran it through a difference checker), but the test case still fails.</p>\n<p></p>\n<p>Thanks for any help</p>\n<p></p>\n<p></p>\n<p><a href=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl83z82lzwjtxm%2Fcb811aafd511e7cc1dd767a3f706aa5bf65106e093a1131e73e4b583190b8600%2Fhangman.py\" target=\"_blank\" rel=\"noopener noreferrer\">hangman.py</a></p>",
+        "type": "question",
+        "created": "2022-09-26T17:37:41.758Z",
+        "subject": "text in console matches test exactly but test still fails.",
+        "_id": "l8j1yq2ms2w1as"
+    },
+    {
+        "content": "<p>Your good_guess function throws an error when run on its own. Try running that on your own to figure it out, or go to Office Hours, and they might be able to better help.</p>",
+        "type": "i_answer",
+        "created": "2022-09-27T14:21:49.495Z",
+        "_id": "l8j1yq2ms2w1as"
+    }
+]

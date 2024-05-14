@@ -1,0 +1,21 @@
+[
+    {
+        "content": "<p>My PSET buddy dropped the class, so I would love to be assigned to a new one if there is someone that needs it!</p>",
+        "type": "question",
+        "created": "2022-11-02T17:48:59.270Z",
+        "subject": "New PSET buddy",
+        "_id": "l9zxnrie9rz4tj"
+    },
+    {
+        "content": "<p>Oops, I posted this to the wrong piazza!</p>",
+        "type": "s_answer",
+        "created": "2022-11-02T17:50:42.344Z",
+        "_id": "l9zxnrie9rz4tj"
+    },
+    {
+        "content": "<p>I don&#39;t have anyone in need of a buddy atm, sorry! Please start working on your own and feel free to make use of the many office hours we have to get help! If anyone else request a buddy I&#39;ll be in touch.\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-11-02T17:52:45.038Z",
+        "_id": "l9zxnrie9rz4tj"
+    }
+]

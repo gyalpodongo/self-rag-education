@@ -1,0 +1,15 @@
+[
+    {
+        "content": "Is it okay if the code generates a TypeError when trying to click the &#43; 1M or - 1M buttons initially because the there is simply no data beyond the interval of everything?\u00a0<div><br /></div><div>TypeError: \u2018NoneType\u2019 object is not subscriptable\u00a0</div>",
+        "type": "question",
+        "created": "2022-10-10T01:54:06.926Z",
+        "subject": "PSET 5 shift maker",
+        "_id": "l924f74ev223oc"
+    },
+    {
+        "content": "<p>This should not happen. Would you mind making a private post and send a screenshot of the error that you get here?</p>",
+        "type": "i_answer",
+        "created": "2022-10-12T01:02:57.575Z",
+        "_id": "l924f74ev223oc"
+    }
+]

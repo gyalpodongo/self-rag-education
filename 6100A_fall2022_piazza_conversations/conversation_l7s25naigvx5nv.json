@@ -1,0 +1,33 @@
+[
+    {
+        "content": "<p>Hi,<br /><br />Should the final output for PSET 0 be ints or floats?<br /><br />In Problem_Set_0_Spyder.pdf, when x=2 and y=3, the final result is x**y = 8 and log<sub>2</sub>(x) = 1<br /><br />However, if different values are used for x and y (like x=3 or y=4.5), then the answers for x**y and log<sub>2</sub>(x) would not be ints. Is it ok if our PSET 0 code always returns x**y and log<sub>2</sub>(x) in float format? Or should we type convert all the results to ints?<br /><br />Thanks!</p>",
+        "type": "question",
+        "created": "2022-09-07T20:13:17.994Z",
+        "subject": "Variable Type for PSET 0 Results",
+        "_id": "l7s25naigvx5nv"
+    },
+    {
+        "content": "<p>PSET 0 isn&#39;t graded, so I wouldn&#39;t worry too much about the specifics. This is a good question, though (good thinking)! -MD</p>",
+        "type": "s_answer",
+        "created": "2022-09-07T22:49:59.892Z",
+        "_id": "l7s25naigvx5nv"
+    },
+    {
+        "content": "<p>Where does it say that ps0 is not graded?\u00a0</p>",
+        "type": "followup",
+        "created": "2022-09-08T02:16:23.451Z",
+        "_id": "l7s25naigvx5nv"
+    },
+    {
+        "content": "<p>Pset 0 is just a sanity check that you were able to install Python and run basic commands. The exact formatting isn&#39;t critical here. Generally, though, one would probably expect those expressions to return floats when appropriate.</p>",
+        "type": "i_answer",
+        "created": "2022-09-08T03:20:17.805Z",
+        "_id": "l7s25naigvx5nv"
+    },
+    {
+        "content": "<p>This was mentioned in lecture. You&#39;ll also see that Pset 0 is not listed on the Scores page.</p>",
+        "type": "followup_response",
+        "created": "2022-09-08T03:20:57.624Z",
+        "_id": "l7s25naigvx5nv"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi,</p>\n<p></p>\n<p>Currently on the calendar it says that PSET 4 Checkoff is due the day after the PSET itself is due. Do we really only have one day to get our code checked off?</p>",
+        "type": "question",
+        "created": "2022-10-05T13:57:29.329Z",
+        "subject": "PSET Checkoff 4",
+        "_id": "l8vp27apqsq2rm"
+    },
+    {
+        "content": "<p>That is correct, but checkoffs for ps4 start on Oct 6 (the day after ps release). So you can get the checkoff as soon as you submit your final code. You may not resubmit code after getting the checkoff.\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-10-05T14:48:44.374Z",
+        "_id": "l8vp27apqsq2rm"
+    }
+]

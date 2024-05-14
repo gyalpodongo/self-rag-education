@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p><b>Will the quizzes involve theoretical questions and questions on terminology? </b></p>\n<p><b>Or will the quiz be a practice and application of coding? Thanks!</b></p>",
+        "type": "question",
+        "created": "2022-09-12T18:51:41.782Z",
+        "subject": "Micro Quizs",
+        "_id": "l7z4fyomxre6ef"
+    },
+    {
+        "content": "<p>It will be a mix of both. Coding and multiple choice.</p>",
+        "type": "i_answer",
+        "created": "2022-09-12T18:57:29.323Z",
+        "_id": "l7z4fyomxre6ef"
+    }
+]

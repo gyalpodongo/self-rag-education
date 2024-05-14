@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi, I am assigned a buddy for PSet 2, and I reached out but they did not reply, so I worked on the PSet on my own. I wonder in this case should I put my buddy&#39;s name as collaborator or not? Thanks!</p>",
+        "type": "question",
+        "created": "2022-10-18T01:00:34.513Z",
+        "subject": "Should I put my PSet buddy as collaborator in the python file if they haven&#39;t got back to me at all?",
+        "_id": "l9di15qp18v21m"
+    },
+    {
+        "content": "<p>no need</p>",
+        "type": "i_answer",
+        "created": "2022-11-01T13:21:27.711Z",
+        "_id": "l9di15qp18v21m"
+    }
+]

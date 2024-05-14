@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>In the Finger exercise prompts, when it is stated that we should &#34;assume we are given a variable,&#34; does this mean that our code does not need to define that variable and can run the program using that variable name? Or should we give that variable a value/ define it if we want to use it in a program? Also, is this related to the EOF error that I keep getting, even when my program runs find in my IDE?</p>",
+        "type": "question",
+        "created": "2022-09-14T15:44:09.647Z",
+        "subject": "Finger Exercise &amp; Error",
+        "_id": "l81smhtb3yf3xf"
+    },
+    {
+        "content": "<p>Your code does not need to define that variable and can run the program using that variable name. Don&#39;t ask for input from the user.\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-09-14T15:46:23.944Z",
+        "_id": "l81smhtb3yf3xf"
+    }
+]

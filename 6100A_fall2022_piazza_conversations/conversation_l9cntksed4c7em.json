@@ -1,0 +1,33 @@
+[
+    {
+        "content": "<p>I received a 28% autograder score on pset 4, but it passed all of the test cases so I was wondering how to see where points were taken off or if it will be looked at again for a better score?</p>",
+        "type": "question",
+        "created": "2022-10-17T10:54:52.286Z",
+        "subject": "how to see breakdown of autograder pset score?",
+        "_id": "l9cntksed4c7em"
+    },
+    {
+        "content": "<md>Hi Katie,\n\nYou should be able to view the autograder breakdown by going to your scores page and clicking the \"Autograder\" link next to the percentage.\n\n![autograder.png](/redirect/s3?bucket=uploads&prefix=paste%2Fj7ax2om9jjz55%2Ff44a829ec40a1490ad7293b22f4639608122c00874ae3fd669f5f50b0fb2b53f%2Fautograder.png)\n\nHere's the link that the autograder should direct you to: https://sicp-s1.mit.edu/fall22/scores/autograder?ps=4&course=1.\n\nI've attached the autograder results below if you're not able to access the above link for some reason.\n[katiekat.pdf](/redirect/s3?bucket=uploads&prefix=paste%2Fj7ax2om9jjz55%2F3ad2017d17faef013693c78b4fcb14ff62a92d6290460c7487379ed48232ebce%2Fkatiekat.pdf)</md>",
+        "type": "i_answer",
+        "created": "2022-10-17T15:13:48.256Z",
+        "_id": "l9cntksed4c7em"
+    },
+    {
+        "content": "<p><strong attention=\"j7awud7zf0p2uu\">@Kuan Wei Huang</strong>\u00a0</p>",
+        "type": "followup",
+        "created": "2022-10-17T16:49:03.887Z",
+        "_id": "l9cntksed4c7em"
+    },
+    {
+        "content": "<p>I passed all of the failed test cases when I ran them on my own laptop, is there a way to ask for a manual grade? I don&#39;t know what could&#39;ve gone wrong between me submitting it and it getting tested, as I re-started the console and re-ran the tests immediately before submitting to confirm everything was correct.</p>",
+        "type": "followup",
+        "created": "2022-10-17T21:21:07.163Z",
+        "_id": "l9cntksed4c7em"
+    },
+    {
+        "content": "<md>The test cases on the server differ from the ones given in the student handout \u2013 for example, we test that your code is able to extract columns from the dataset other than \"Close\". However, your code has the column index hard-coded, which is why you lost points in those test cases.\n\nWe can give you a manual grade but your score may not change.</md>",
+        "type": "followup_response",
+        "created": "2022-10-17T22:00:19.265Z",
+        "_id": "l9cntksed4c7em"
+    }
+]

@@ -1,0 +1,39 @@
+[
+    {
+        "content": "<p>Hi Professor Bell,</p>\n<p></p>\n<p>I have a question about Pset 3. When I run my code, I get all of my outputs correctly but I&#39;m not passing one test case: test_tfidf_big. I asked the TA what I should do, and they told me to privately message you here to ask if I can get a manual grade on it.\u00a0</p>\n<p>Attached is a photo of my console.<img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fkzfu6wggysi603%2F62fb4b05123f2e58fba30b1de98ccf92a12faf0924fb4e5a2e6a307c87e2b2c9%2FScreen_Shot_2022-10-31_at_17.57.31.png\" width=\"972\" height=\"476\" alt=\"\" /></p>\n<p></p>\n<p>Thank you,</p>\n<p>Yucan</p>",
+        "type": "question",
+        "created": "2022-10-31T21:58:54.258Z",
+        "subject": "Not passing one test case, but code output runs correctly",
+        "_id": "l9xbpgdufew7fj"
+    },
+    {
+        "content": "<p>Hi Yucan,</p>\n<p></p>\n<p>Thanks for reaching out! Do you mind attaching your pset3 solution files in this piazza post, so we can take a quick look? It may be possible to resolve this issue before the pset deadline :)</p>\n<p></p>\n<p>Cheers,</p>\n<p>Nithya</p>",
+        "type": "i_answer",
+        "created": "2022-11-01T14:09:49.501Z",
+        "_id": "l9xbpgdufew7fj"
+    },
+    {
+        "content": "<p>Hi Nithya,</p>\n<p></p>\n<p>Attached is my pset. Thank you for your help!</p>\n<p></p>\n<p>Yucan</p>\n<p><a href=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fkzfu6wggysi603%2F07a7f857b347ee7524d3a34e3cfb2a41d7d14cd805ddf65e67792e6be49434ab%2Fdocument_distance.py\" target=\"_blank\" rel=\"noopener noreferrer\">document_distance.py</a></p>",
+        "type": "followup",
+        "created": "2022-11-01T14:15:43.518Z",
+        "_id": "l9xbpgdufew7fj"
+    },
+    {
+        "content": "<p>I&#39;m so sorry, that was the wrong file!!\u00a0</p>\n<p>Please check this one:</p>\n<p><a href=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fkzfu6wggysi603%2F07a7f857b347ee7524d3a34e3cfb2a41d7d14cd805ddf65e67792e6be49434ab%2Fdocument_distance.py\" target=\"_blank\" rel=\"noopener noreferrer\">document_distance.py</a></p>\n<p>Thank you so much</p>",
+        "type": "followup_response",
+        "created": "2022-11-01T14:17:34.796Z",
+        "_id": "l9xbpgdufew7fj"
+    },
+    {
+        "content": "<p>Hey Yucan,</p>\n<p></p>\n<p>Thanks for your code! I took a look at your files, and it looks like there is an issue with the sorting that your tfidf function is doing. Note that the tfidf values need to be sorted first by TFIDF VALUE. In the case of ties (i.e. identical tfidf values), we sort by alphabetical order.\u00a0</p>\n<p></p>\n<p>Your tfidf values are correct. But the array you return looks something like this:\u00a0</p>\n<pre>\n[(&#39;a&#39;, 0.0007341667652125487), (&#39;acting&#39;, 0.0007341667652125487), (&#39;almost&#39;, 0.0007341667652125487), (&#39;and&#39;, 0.0), ... ]</pre>\n<p></p>\n<p>In the correct array, the entry for &#39;and&#39; should come before &#39;a&#39;, &#39;acting&#39;, and &#39;almost&#39;, because it has a lower tfidf score.</p>\n<p></p>\n<p>Let me know if you have further questions.</p>",
+        "type": "followup_response",
+        "created": "2022-11-01T20:51:18.302Z",
+        "_id": "l9xbpgdufew7fj"
+    },
+    {
+        "content": "<p>I see, that makes a lot of sense. Thank you for your help!</p>",
+        "type": "followup_response",
+        "created": "2022-11-02T16:13:38.861Z",
+        "_id": "l9xbpgdufew7fj"
+    }
+]

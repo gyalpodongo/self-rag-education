@@ -1,0 +1,81 @@
+[
+    {
+        "content": "Hello,<div><br /></div><div>What were the test cases for P1? I got a 0.8 out of 4, but I don\u2019t really understand what\u2019s wrong with my code.</div><div><br /></div><div>Thank you!</div>",
+        "type": "question",
+        "created": "2022-09-30T16:07:33.573Z",
+        "subject": "MQ2 P1 test cases",
+        "_id": "l8ooi7r9v137ag"
+    },
+    {
+        "content": "<p>this is my code:</p>\n<p>def combo(n):<br />\u00a0 \u00a0 &#34;&#34;&#34; n is an int &gt;= 0<br />\u00a0 \u00a0 Returns True if some non-negative integer combination of 4, 6 and 9 equals n.<br />\u00a0 \u00a0 Otherwise returns False. \u00a0&#34;&#34;&#34;<br />\u00a0 \u00a0 if n%4 == 0 or (n%4 ==1 and n &gt;= 13) or (n%4 == 2 and n &gt;= 6) or (n%4 == 3 and n &gt;= 15):<br />\u00a0 \u00a0 \u00a0 \u00a0 return True<br />\u00a0 \u00a0 return False</p>\n<p></p>\n<p>The only test case that it misses is when n = 9, but that&#39;s just an error on my part. The logic behind this is that if n%4==0, then n= 4 * (n/4), if n%4 == 1 and n&gt;=9, then n = 4*(n-9)/4 &#43;9 (here, it will work for n&gt;=13 similarly), if n%4==2 and n&gt;=6, then n = 4*(n-6)/4&#43;6 and if n%4==3 and n&gt;=15 then n = 4*(n-15)/4 &#43; 6 &#43; 9. In all other cases, the function returns false, which can be verified by hand since there are only a handful, What is the mistake here? t</p>",
+        "type": "followup",
+        "created": "2022-09-30T16:43:51.465Z",
+        "_id": "l8ooi7r9v137ag"
+    },
+    {
+        "content": "<p>The only other situation is if n is negative, but you stated explicitly that n must be a positive integer.</p>",
+        "type": "followup_response",
+        "created": "2022-09-30T16:49:46.691Z",
+        "_id": "l8ooi7r9v137ag"
+    },
+    {
+        "content": "<p>can you send a screenshot of the grade you&#39;re seeing? on the staff end it reflects that you got a 0.9/1 on the first problem</p>",
+        "type": "followup_response",
+        "created": "2022-10-02T17:32:28.580Z",
+        "_id": "l8ooi7r9v137ag"
+    },
+    {
+        "content": "<img src=\"https://piazza.com/redirect/s3?bucket=uploads&amp;prefix=attach%2Fl5s90ip6zjd5tz%2Fktf0t92bf716iu%2Fvduvihtidryk%2Fpublic_2022_10_02.png\" /><p></p><div><br /></div><div>Thank you so much for the reply. Sorry for my post today, just wanted to make sure my question wasn\u2019t lost among all the others.</div>",
+        "type": "followup_response",
+        "created": "2022-10-02T17:35:40.752Z",
+        "_id": "l8ooi7r9v137ag"
+    },
+    {
+        "content": "<p>no problem -- totally understandable!</p>\n<p></p>\n<p>what&#39;s your kerb again? I just want to make sure I&#39;m looking at the right thing</p>",
+        "type": "followup_response",
+        "created": "2022-10-02T17:52:03.150Z",
+        "_id": "l8ooi7r9v137ag"
+    },
+    {
+        "content": "atmargi@mit.edu",
+        "type": "followup_response",
+        "created": "2022-10-02T17:52:21.109Z",
+        "_id": "l8ooi7r9v137ag"
+    },
+    {
+        "content": "Any updates?",
+        "type": "followup_response",
+        "created": "2022-10-02T21:37:13.990Z",
+        "_id": "l8ooi7r9v137ag"
+    },
+    {
+        "content": "<p>Your code effectively &#34;hardcoded&#34; values and does not solve the problem computationally, see solution. Your code was graded consistently with students who made the same error on similar approaches. We can make a note of this and take it into account when we do final grades.\u00a0</p>",
+        "type": "followup_response",
+        "created": "2022-10-03T15:15:51.384Z",
+        "_id": "l8ooi7r9v137ag"
+    },
+    {
+        "content": "But the problem never asks us to solve the question computationally, just to return true or false based on the input. I don\u2019t see why this is an error, especially since my logic is sound and the output is consistent with the provided function\u2019s output. If the intended solution had to use computational methods, I think it should have been stated in the problem description or docstring.",
+        "type": "followup_response",
+        "created": "2022-10-03T15:21:20.898Z",
+        "_id": "l8ooi7r9v137ag"
+    },
+    {
+        "content": "<p>In this question, students who attempted it in a non-computational way were penalized more heavily for errors than students who tried it in a computational way. I understand where you&#39;re coming from and like I said, we will make a note of this for final grades.\u00a0</p>",
+        "type": "followup_response",
+        "created": "2022-10-03T15:28:22.961Z",
+        "_id": "l8ooi7r9v137ag"
+    },
+    {
+        "content": "Thank you so much for your help and for the detailed response. I apologize if I come off as a bit pushy, I was just very confused about the score and wanted to resolve the issue as quickly as possible.\u00a0",
+        "type": "followup_response",
+        "created": "2022-10-03T15:34:17.143Z",
+        "_id": "l8ooi7r9v137ag"
+    },
+    {
+        "content": "<p>No problem</p>",
+        "type": "followup_response",
+        "created": "2022-10-03T16:31:34.809Z",
+        "_id": "l8ooi7r9v137ag"
+    }
+]

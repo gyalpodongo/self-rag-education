@@ -1,0 +1,2938 @@
+[
+    {
+        "timestamp": "00:00:06",
+        "content": "FITNESS TRACKER OBJECT ORIENTED PROGRAMMING EXAMPLE"
+    },
+    {
+        "timestamp": "00:00:57",
+        "content": "IMPLEMENTING THE CLASS USING vs THE CLASS"
+    },
+    {
+        "timestamp": "00:02:18",
+        "content": "Workout Tracker Example"
+    },
+    {
+        "timestamp": "00:03:12",
+        "content": "Fitness Tracker"
+    },
+    {
+        "timestamp": "00:05:24",
+        "content": "GROUPS OF OBJECTS HAVE ATTRIBUTES (RECAP)"
+    },
+    {
+        "timestamp": "00:06:33",
+        "content": "DEFINE A SIMPLE CLASS (RECAP)"
+    },
+    {
+        "timestamp": "00:10:12",
+        "content": "GETTER AND SETTER METHODS (RECAP)"
+    },
+    {
+        "timestamp": "00:10:45",
+        "content": "SELF PROVIDES ACCESS TO CLASS STATE"
+    },
+    {
+        "timestamp": "00:15:18",
+        "content": "AN INSTANCE and DOT NOTATION (RECAP)"
+    },
+    {
+        "timestamp": "00:17:12",
+        "content": "WHY INFORMATION HIDING?"
+    },
+    {
+        "timestamp": "00:17:45",
+        "content": "CHANGING THE CLASS IMPLEMENTATION"
+    },
+    {
+        "timestamp": "00:24:12",
+        "content": "ASIDE: datetime OBJECTS OTHER PYTON LIBRARIES"
+    },
+    {
+        "timestamp": "00:29:45",
+        "content": "CLASS VARIABLES LIVE IN CLASS STATE DICTIONARY"
+    },
+    {
+        "timestamp": "00:30:27",
+        "content": "CLASS VARIABLES"
+    },
+    {
+        "timestamp": "00:32:30",
+        "content": "YOU TRY IT!"
+    },
+    {
+        "timestamp": "00:32:45",
+        "content": "lines of code to cr"
+    },
+    {
+        "timestamp": "00:36:30",
+        "content": "NEXT UP: CLASS HIERARCHIES"
+    },
+    {
+        "timestamp": "00:37:21",
+        "content": "HIERARCHIES"
+    },
+    {
+        "timestamp": "00:40:57",
+        "content": "INHERITANCE: PARENT CLASS"
+    },
+    {
+        "timestamp": "00:42:00",
+        "content": "INHERITANCE: SUBCLASS"
+    },
+    {
+        "timestamp": "00:42:51",
+        "content": "SUBCLASS"
+    },
+    {
+        "timestamp": "00:47:45",
+        "content": "INHERITANCE REPRESENTATION IN MEMORY"
+    },
+    {
+        "timestamp": "00:49:30",
+        "content": "SUBCLASSES REUSE PARENT CODE"
+    },
+    {
+        "timestamp": "00:55:03",
+        "content": "WHERE CAN I USE AN INSTANCE OF A CLASS?"
+    },
+    {
+        "timestamp": "01:03:36",
+        "content": "OVERRIDING SUPERCLASSES"
+    },
+    {
+        "timestamp": "01:09:09",
+        "content": "OVERRIDDEN METHODS IN MEMORY"
+    },
+    {
+        "timestamp": "01:09:51",
+        "content": "WHICH METHOD WILL BE CALLED?"
+    },
+    {
+        "timestamp": "01:11:15",
+        "content": "TESTING EQUALITY WITH SUBCLASSES"
+    },
+    {
+        "timestamp": "01:14:42",
+        "content": "ANSWERS TO YOU TRY IT"
+    },
+    {
+        "timestamp": "01:16:15",
+        "content": "OBJECT ORIENTED DESIGN: MORE ART THAN SCIENCE"
+    },
+    {
+        "timestamp": "00:00:01",
+        "content": "Okay. So let's get started."
+    },
+    {
+        "timestamp": "00:00:04",
+        "content": "Today's lecture will be the last one we have on object oriented programing and creating our own data types with Python classes."
+    },
+    {
+        "timestamp": "00:00:14",
+        "content": "So in today's lecture, we're going to go through an example that's sort of more involved."
+    },
+    {
+        "timestamp": "00:00:20",
+        "content": "We're going to be creating our own fitness tracker object, and specifically we're going to create a class for that implements the idea of a workout."
+    },
+    {
+        "timestamp": "00:00:30",
+        "content": "And the slides for today are going to feel very similar to the slides from Monday's lecture."
+    },
+    {
+        "timestamp": "00:00:44",
+        "content": "A lot of them are just kind of reinforcing the same ideas we saw last lecture on creating getters and setters, creating class variables and the idea of inheritance. But we're just going to do it in the context of this more involved example the fitness tracker."
+    },
+    {
+        "timestamp": "00:00:57",
+        "content": "Okay. So let me remind you, first of all, something we've been talking about and hopefully you understand at this point in our lectures on object oriented programing."
+    },
+    {
+        "timestamp": "00:01:05",
+        "content": "And that's the idea that when we write our own object types, we're writing code from two different perspectives."
+    },
+    {
+        "timestamp": "00:01:15",
+        "content": "Right? The first perspective is the one on the left hand side here, where we are making design decisions for how we want to implement this new object, this new data type."
+    },
+    {
+        "timestamp": "00:01:21",
+        "content": "And when we make these design decisions, we decide the name of the object."
+    },
+    {
+        "timestamp": "00:01:25",
+        "content": "We decide the attributes which are either data or procedures that we want the object to have."
+    },
+    {
+        "timestamp": "00:01:32",
+        "content": "And then once we've decided on this and we've implemented our data type, then we can start to use the data type and to use it."
+    },
+    {
+        "timestamp": "00:01:41",
+        "content": "We are creating a whole bunch of objects of this type, and we're manipulating these objects in some interesting and useful way."
+    },
+    {
+        "timestamp": "00:01:54",
+        "content": "So the left hand side, we're creating this blueprint, this abstract notion of an object, and the right hand side we are creating actual instances that we manipulate."
+    },
+    {
+        "timestamp": "00:01:59",
+        "content": "Right. So up until this object oriented left set of lectures, we've really just been working with the right hand side."
+    },
+    {
+        "timestamp": "00:02:05",
+        "content": "Right? We've been working with objects that other people have created."
+    },
+    {
+        "timestamp": "00:02:08",
+        "content": "But the big idea of these set of lectures is that we now get to create our own object types."
+    },
+    {
+        "timestamp": "00:02:13",
+        "content": "So we get to write this code here. Okay."
+    },
+    {
+        "timestamp": "00:02:16",
+        "content": "So we're going to write code to create a tracker for workouts."
+    },
+    {
+        "timestamp": "00:02:23",
+        "content": "And today's lecture, we're going to there's going to be sort of a sequence of things that we're going to do."
+    },
+    {
+        "timestamp": "00:02:28",
+        "content": "We're going to start out with a really simple workout object, and then we're going to improve on it."
+    },
+    {
+        "timestamp": "00:02:32",
+        "content": "So I've actually set out a little roadmap here on the board that we can follow."
+    },
+    {
+        "timestamp": "00:02:36",
+        "content": "So every time we finish sort of a little section, we'll check it off. So just easier to understand sort of where we are in today's lecture."
+    },
+    {
+        "timestamp": "00:02:44",
+        "content": "So we're going to create first a just a very simple workout object, sort of in the same spirit that we've created."
+    },
+    {
+        "timestamp": "00:02:49",
+        "content": "We've been creating objects, then we're going to improve on it a little bit by adding nicer methods and things like that."
+    },
+    {
+        "timestamp": "00:02:57",
+        "content": "And then we're going to go through the idea of inheritance to create very specific types of workouts."
+    },
+    {
+        "timestamp": "00:03:02",
+        "content": "So if we think about workouts, we have many different kinds of workouts, right?"
+    },
+    {
+        "timestamp": "00:03:18",
+        "content": "We've got biking, swimming, running, but really at the core of all these workouts, right, if we think about sort of the information related to just a very generic workout, not a running or swimming specific one or biking one, just a just a generic workout."
+    },
+    {
+        "timestamp": "00:03:23",
+        "content": "There are some common properties that all of these workouts have."
+    },
+    {
+        "timestamp": "00:03:27",
+        "content": "Right. So I've listed them here. Right. The A workout might have an icon associated with it."
+    },
+    {
+        "timestamp": "00:03:34",
+        "content": "Right. So this one, there's this."
+    },
+    {
+        "timestamp": "00:03:35",
+        "content": "But whatever it may be, there is an icon sort of property for a workout, the kind of workouts or biking, swimming, running, things like that, a date."
+    },
+    {
+        "timestamp": "00:03:46",
+        "content": "So maybe a start date and an end date start time and time."
+    },
+    {
+        "timestamp": "00:03:49",
+        "content": "That kind of information, the heart rate, maybe average heart rate throughout that entire activity, the distance and the number of calories burned."
+    },
+    {
+        "timestamp": "00:03:59",
+        "content": "Right. All of these properties are common to any kind of workout that we might want to create."
+    },
+    {
+        "timestamp": "00:04:12",
+        "content": "But now that we have specific kinds of workouts that we might want to create, we can actually think, well, in addition to these common properties, a swimming specific workout might actually have some more information that we'd like to see."
+    },
+    {
+        "timestamp": "00:04:20",
+        "content": "Right. And we'd like to allow the user to work with."
+    },
+    {
+        "timestamp": "00:04:23",
+        "content": "So the swimming pace, maybe the stroke type, the 100 yard splits, things like that for swimming and for running."
+    },
+    {
+        "timestamp": "00:04:29",
+        "content": "We might want to show the user the cadence, the running pace, the miles splits, and maybe the total elevation throughout that run."
+    },
+    {
+        "timestamp": "00:04:43",
+        "content": "Right. But the idea here is that we have some core set of properties, and no matter what kind of workout we're creating, we would like to save and we would like to allow the user to to store and to do operations."
+    },
+    {
+        "timestamp": "00:04:51",
+        "content": "Now, when we implement our workout class, we're not going to implement all of these."
+    },
+    {
+        "timestamp": "00:04:55",
+        "content": "They're not all necessary. We're going to just keep some of the core ones."
+    },
+    {
+        "timestamp": "00:04:58",
+        "content": "So the ones we're actually going to implement in this class are italicized, right?"
+    },
+    {
+        "timestamp": "00:05:03",
+        "content": "So we're going to keep the icon and the kind of workout, the start time and times and then the number of calories burned."
+    },
+    {
+        "timestamp": "00:05:10",
+        "content": "That's something that we're going to just save as a really common the common set of attributes for a workout."
+    },
+    {
+        "timestamp": "00:05:21",
+        "content": "But of course, you can see that if you make the design decision to improve upon this workout class, you might include a bunch of these other ones as well. Okay."
+    },
+    {
+        "timestamp": "00:05:25",
+        "content": "So. So we're going to have to decide the data attributes."
+    },
+    {
+        "timestamp": "00:05:33",
+        "content": "So we just mentioned on the previous slide, right when we make design decisions, we figure out the attributes that we'd like to have for our object type."
+    },
+    {
+        "timestamp": "00:05:38",
+        "content": "So that's the data and the behaviors for the data."
+    },
+    {
+        "timestamp": "00:05:41",
+        "content": "For a workout. We've decided it would be the start time, the end time and the number of calories burned."
+    },
+    {
+        "timestamp": "00:05:46",
+        "content": "So those three things together, maybe start time as a string and time in the string and calories is a number, right?"
+    },
+    {
+        "timestamp": "00:05:52",
+        "content": "Either a floater and whatever. Those three things together make up the object, a workout and then in terms of functional attributes."
+    },
+    {
+        "timestamp": "00:06:02",
+        "content": "So these are the methods that our object might have. Well, we can have, of course, the ability to tell us the number of calories burned."
+    },
+    {
+        "timestamp": "00:06:11",
+        "content": "So something like a getter method to set the number of calories burned."
+    },
+    {
+        "timestamp": "00:06:14",
+        "content": "If we accidentally and put it the wrong number, reset it, and then maybe something like displaying an information card, right?"
+    },
+    {
+        "timestamp": "00:06:22",
+        "content": "So something like this, if we ask if the user asks us to print a workout object, we might display information in this nice manner here."
+    },
+    {
+        "timestamp": "00:06:33",
+        "content": "All right, so let's start defining our class. So this is a very simple workout class."
+    },
+    {
+        "timestamp": "00:06:38",
+        "content": "So we're going to do the box number one up there before we improve on it."
+    },
+    {
+        "timestamp": "00:06:42",
+        "content": "So this is in the same spirit as we have been defining classes in the past three lectures, right?"
+    },
+    {
+        "timestamp": "00:06:48",
+        "content": "So we tell Python we're creating a new object by saying this is a class and the name of this object."
+    },
+    {
+        "timestamp": "00:06:55",
+        "content": "So the type of this object is workout, okay? And the parent of this object is the generic python object."
+    },
+    {
+        "timestamp": "00:07:01",
+        "content": "So far, so good. Right now the first method we have to implement is the init method."
+    },
+    {
+        "timestamp": "00:07:06",
+        "content": "Right. It tells python how to create an object of type workout the constructor."
+    },
+    {
+        "timestamp": "00:07:12",
+        "content": "And we've got a bunch of parameters in here because it's just a regular function that's a little bit special."
+    },
+    {
+        "timestamp": "00:07:18",
+        "content": "The first parameter of every method is of course self, right?"
+    },
+    {
+        "timestamp": "00:07:21",
+        "content": "Because when we call a method, we call it on an object, right?"
+    },
+    {
+        "timestamp": "00:07:33",
+        "content": "So some object this method name the thing before the dot effectively gets mapped to the variable self, which is why every one of these methods has self as the first parameter."
+    },
+    {
+        "timestamp": "00:07:38",
+        "content": "And then we've got a whole bunch of other parameters for how we would like to initialize the workout object."
+    },
+    {
+        "timestamp": "00:07:43",
+        "content": "So we're going to say when we create a workout object, we're going to tell it the start time, the end time and the number of calories burned."
+    },
+    {
+        "timestamp": "00:07:53",
+        "content": "Okay. So that's the function stub."
+    },
+    {
+        "timestamp": "00:07:57",
+        "content": "I guess that's how you create the the object. And then what does this function actually do?"
+    },
+    {
+        "timestamp": "00:08:02",
+        "content": "What does this method actually do? Well, it does some of the usual things that we know at this point."
+    },
+    {
+        "timestamp": "00:08:08",
+        "content": "So it basically maps every one of these input parameters to data attributes, self doubt, start, self doubt, end and self doubt calories."
+    },
+    {
+        "timestamp": "00:08:23",
+        "content": "Okay. But in addition to just saving these as data attributes, the things that are passed in when you create the object, we would like to do two more things."
+    },
+    {
+        "timestamp": "00:08:27",
+        "content": "We're creating two more data attributes, right? So in total, a workout object is defined by five data attributes."
+    },
+    {
+        "timestamp": "00:08:34",
+        "content": "These last two data attributes we don't need to pass in. Right?"
+    },
+    {
+        "timestamp": "00:08:38",
+        "content": "We're just going to, by default make them two, two strings."
+    },
+    {
+        "timestamp": "00:08:42",
+        "content": "The icon is going to be the string, this sweating person emoji."
+    },
+    {
+        "timestamp": "00:08:48",
+        "content": "Right. And you can have emojis inside strings, which is actually pretty cool."
+    },
+    {
+        "timestamp": "00:08:52",
+        "content": "And the kind is going to be just the kind of workout. So we're just going to set it to be the string workout."
+    },
+    {
+        "timestamp": "00:08:57",
+        "content": "When we create running workouts, it'll just be the string running. When we create biking workouts, it'll be a string biking, right?"
+    },
+    {
+        "timestamp": "00:09:02",
+        "content": "Whatever you want it to be. And we're going to see where these where these dropped later on."
+    },
+    {
+        "timestamp": "00:09:08",
+        "content": "Okay. So that's the definition of my class workout. And then for now, that's it."
+    },
+    {
+        "timestamp": "00:09:13",
+        "content": "That's all we have in terms of the class definition. Now, what happens when we create an actual workout object?"
+    },
+    {
+        "timestamp": "00:09:19",
+        "content": "Well, we invoke the name of the class. So we say, here, workout, right?"
+    },
+    {
+        "timestamp": "00:09:25",
+        "content": "And we're going to save this object to the right hand side of the equal sign as variable."
+    },
+    {
+        "timestamp": "00:09:30",
+        "content": "My underscore workout so far review we pass in the parameters that the workout object expects."
+    },
+    {
+        "timestamp": "00:09:38",
+        "content": "So here's a string representing the start time, a string representing the end time and the calories burned for this particular workout."
+    },
+    {
+        "timestamp": "00:09:44",
+        "content": "200. Yes."
+    },
+    {
+        "timestamp": "00:09:49",
+        "content": "Got. Okay. So then we can add a whole bunch more methods to our class."
+    },
+    {
+        "timestamp": "00:09:57",
+        "content": "Right. That was just the init method."
+    },
+    {
+        "timestamp": "00:09:59",
+        "content": "But last lecture I mentioned that it's important to add getters and setter methods to allow the user to grab or set out various data attributes."
+    },
+    {
+        "timestamp": "00:10:10",
+        "content": "So here I've got three getter methods to grab. For me, the calories start time and end time, and three setter methods to set the calories."
+    },
+    {
+        "timestamp": "00:10:18",
+        "content": "Start time and then time. All right."
+    },
+    {
+        "timestamp": "00:10:36",
+        "content": "So what I wanted to show you and this is not something we've actually seen before, I wanted to show you that every time you create an object of of some type or even an object that already exists, you can actually look into sort of where this object is stored in memory."
+    },
+    {
+        "timestamp": "00:10:42",
+        "content": "Just kind of cool."
+    },
+    {
+        "timestamp": "00:10:44",
+        "content": "So if we think about the class definition that we've done so far, so not creating an actual instance, just defining the class, right?"
+    },
+    {
+        "timestamp": "00:10:52",
+        "content": "This class definition is actually kind of like an object stored away in Python memory."
+    },
+    {
+        "timestamp": "00:10:57",
+        "content": "Right. So here I have my workout class and associated with my workout class definition."
+    },
+    {
+        "timestamp": "00:11:04",
+        "content": "Python knows about all of these methods that you're allowed to do with this Python class."
+    },
+    {
+        "timestamp": "00:11:10",
+        "content": "And this is called the Class State Dictionary. So it's a dictionary that basically holds the state of your object."
+    },
+    {
+        "timestamp": "00:11:17",
+        "content": "So I wanted to show you what that looks like in code. So this is my workout class."
+    },
+    {
+        "timestamp": "00:11:23",
+        "content": "And the way you access the state dictionary is by invoking the name of your class."
+    },
+    {
+        "timestamp": "00:11:28",
+        "content": "So not an instance. The name of the actual class. Dot this dunder method, double underscore, dict, double underscore."
+    },
+    {
+        "timestamp": "00:11:35",
+        "content": "So this holds the dictionary, the state dictionary."
+    },
+    {
+        "timestamp": "00:11:39",
+        "content": "And if we just access the keys, we're going to see here every single method we've defined in our class."
+    },
+    {
+        "timestamp": "00:11:46",
+        "content": "Right? So you see here, here's my dictionary. I could cast it to a list if I wanted to, but not necessary."
+    },
+    {
+        "timestamp": "00:11:58",
+        "content": "But you can see every single method that we've defined, right? So all getters, all our setters, the init method, the double underscore doc actually grabs for us this docstring that you've put right under the class definition."
+    },
+    {
+        "timestamp": "00:12:09",
+        "content": "Right. So that's kind of cool. So that's the dictionary keys."
+    },
+    {
+        "timestamp": "00:12:13",
+        "content": "And of course, you know, as we know, keys have values associated with them."
+    },
+    {
+        "timestamp": "00:12:16",
+        "content": "So the values associated with each one of these keys is going to be and we can see here."
+    },
+    {
+        "timestamp": "00:12:23",
+        "content": "So, for example, the value associated with the docstring is going to be literally the thing that I printed out, right?"
+    },
+    {
+        "timestamp": "00:12:32",
+        "content": "The little docstring that I put right underneath my class definition."
+    },
+    {
+        "timestamp": "00:12:37",
+        "content": "So now it knows the docstring for this class that I just created and the values associated with my getter methods and my setter"
+    },
+    {
+        "timestamp": "00:12:45",
+        "content": "methods and init method and all the methods I created are just the locations and memory where Python can find these methods to run."
+    },
+    {
+        "timestamp": "00:12:52",
+        "content": "They don't have actual values with them, of course, associated with them of course, because they're just method definitions."
+    },
+    {
+        "timestamp": "00:12:58",
+        "content": "But Python just knows where to go in which memory location to actually run this function."
+    },
+    {
+        "timestamp": "00:13:05",
+        "content": "Okay. So that's kind of cool. Cool to know."
+    },
+    {
+        "timestamp": "00:13:12",
+        "content": "Okay. So that's the state dictionary of my definition, right?"
+    },
+    {
+        "timestamp": "00:13:16",
+        "content": "The implementation of my class. Now what happens when I create an actual instance?"
+    },
+    {
+        "timestamp": "00:13:21",
+        "content": "Right. So here I've got my workout equals. And now I've got this actual instance of this class type workout."
+    },
+    {
+        "timestamp": "00:13:29",
+        "content": "When Python sees this line, it says, Okay, what kind of object do you want to create?"
+    },
+    {
+        "timestamp": "00:13:35",
+        "content": "A workout object. It looks at the init method of that workout object and then it runs all the lines associated with the workout object."
+    },
+    {
+        "timestamp": "00:13:42",
+        "content": "So now it creates a new object in memory, puts that at some memory location."
+    },
+    {
+        "timestamp": "00:13:48",
+        "content": "This object is going to be of type workout class and now this object is going to have its own state dictionary."
+    },
+    {
+        "timestamp": "00:13:57",
+        "content": "Where in the object state dictionary we're not storing methods or things like that."
+    },
+    {
+        "timestamp": "00:14:01",
+        "content": "We're storing the actual data attributes associated with this object, right?"
+    },
+    {
+        "timestamp": "00:14:07",
+        "content": "So this object, all of the data attributes are all the things that you access via the self-taught keyword, right?"
+    },
+    {
+        "timestamp": "00:14:12",
+        "content": "Self taught icon, self-contained self that starts off that end and self doubt calories."
+    },
+    {
+        "timestamp": "00:14:17",
+        "content": "So we can actually go in the code just like we did when we looked at the class"
+    },
+    {
+        "timestamp": "00:14:26",
+        "content": "state dictionary and look at the state dictionary for one specific object, one instance. So again, we can call the double underscore dict method on this instance."
+    },
+    {
+        "timestamp": "00:14:34",
+        "content": "So now I have an actual object that has some values associated with it."
+    },
+    {
+        "timestamp": "00:14:38",
+        "content": "And if I look at just the keys, we see these are the data attributes associated with an object of type workout, right?"
+    },
+    {
+        "timestamp": "00:14:46",
+        "content": "I've got my five data attributes and then the values associated with those keys are going to be the values that are specific to this object."
+    },
+    {
+        "timestamp": "00:14:55",
+        "content": "Right. So my start is this date here, my end is this date here."
+    },
+    {
+        "timestamp": "00:15:00",
+        "content": "Calories was 200. The icon was the little sweaty person emoji."
+    },
+    {
+        "timestamp": "00:15:03",
+        "content": "And the kind of workout is to work. So it's kind of neat to be able to look into that sort of detail of where things are stored inside inside memory."
+    },
+    {
+        "timestamp": "00:15:18",
+        "content": "Okay. So. We saw how to create an instance of an object and we can create a whole bunch of workouts that we then store, right?"
+    },
+    {
+        "timestamp": "00:15:26",
+        "content": "And then we can use dot notation to access all of these attributes, right?"
+    },
+    {
+        "timestamp": "00:15:30",
+        "content": "So we can either access attributes directly or we can access methods, right?"
+    },
+    {
+        "timestamp": "00:15:35",
+        "content": "We already know this. So last lecture, I said that you can use dot notation to access data attributes."
+    },
+    {
+        "timestamp": "00:15:42",
+        "content": "So here we're accessing the calories value. Right."
+    },
+    {
+        "timestamp": "00:15:46",
+        "content": "And that's fine. But what's preferred is to use the getter methods, right?"
+    },
+    {
+        "timestamp": "00:15:51",
+        "content": "So get calories will in this particular case return the exact same value as just accessing the calories data attribute."
+    },
+    {
+        "timestamp": "00:15:58",
+        "content": "Okay."
+    },
+    {
+        "timestamp": "00:15:59",
+        "content": "But the note that I made last lecture was that it was better to use a better method because the implementation behind the scenes might change, right?"
+    },
+    {
+        "timestamp": "00:16:15",
+        "content": "And if the implementation changes, then if you access the calories of method directly or sorry, the calories data attribute directly, your code might crash."
+    },
+    {
+        "timestamp": "00:16:29",
+        "content": "But not only that, somebody who's writing a method for this for this workout function might actually make that method be a lot more complex, complex than just returning that data attribute. And that's what we're going to see in the next slide."
+    },
+    {
+        "timestamp": "00:16:34",
+        "content": "Right. So the idea behind using these consistent methods instead of accessing using data attributes is that you want to keep information hidden."
+    },
+    {
+        "timestamp": "00:16:49",
+        "content": "Right. You don't want to start messing around with looking at how something is implemented, because that goes against the principle of abstraction, modularity and information height."
+    },
+    {
+        "timestamp": "00:16:58",
+        "content": "Right. You want to keep things hidden because you want to use that these data, these the objects that somebody else has created in a nicely consistent manner."
+    },
+    {
+        "timestamp": "00:17:02",
+        "content": "The way we use them in a consistent manner is by always using methods that are associated with that object type."
+    },
+    {
+        "timestamp": "00:17:17",
+        "content": "Okay. And so using getter methods might have seemed inconsequential when we wrote like the Animal Class Last Lecture, but it's going to seem it's going to be a lot more important in this particular lecture."
+    },
+    {
+        "timestamp": "00:17:22",
+        "content": "Okay. So with that, we finished our simple workout class, and now we're going to change the implementation just a little bit."
+    },
+    {
+        "timestamp": "00:17:33",
+        "content": "Right. And what we're going to do is we're going to make a change to the the way that we store the information."
+    },
+    {
+        "timestamp": "00:17:41",
+        "content": "We're going to use a class variable, and I'll remind you what a cost variable is in the next slide."
+    },
+    {
+        "timestamp": "00:17:53",
+        "content": "And we're going to make a change to the get calories method and we're going to allow the user to say, hey, I'm going to create this workout object, but I don't know about you."
+    },
+    {
+        "timestamp": "00:17:58",
+        "content": "I don't know how many calories I burn right when I do a workout for 40 minutes."
+    },
+    {
+        "timestamp": "00:18:09",
+        "content": "Right. I don't know that right off the bat. So if the user doesn't supply the number of calories burned, we're we're going to have our get calories method kind of estimate those calories burned based on the duration of that workout."
+    },
+    {
+        "timestamp": "00:18:19",
+        "content": "Right. So we're going to allow the user to either supply the number of calories, in which case they probably know what they're doing."
+    },
+    {
+        "timestamp": "00:18:30",
+        "content": "And then we'll when when they ask us to tell us to get the calories, we're going to use those or we're going to allow the user to not supply the number of calories"
+    },
+    {
+        "timestamp": "00:18:36",
+        "content": "and instead estimate those calories based on the duration that they said this workout lasted."
+    },
+    {
+        "timestamp": "00:18:43",
+        "content": "Okay. All right. So that's the big change that we're going to do here and in the workout class."
+    },
+    {
+        "timestamp": "00:18:48",
+        "content": "So we're going to do a better get calories method. All right."
+    },
+    {
+        "timestamp": "00:18:52",
+        "content": "So this is the new implementation of my workout class."
+    },
+    {
+        "timestamp": "00:18:57",
+        "content": "First thing you'll notice is we're using this class variable."
+    },
+    {
+        "timestamp": "00:19:02",
+        "content": "Right. We talked about this last lecture when we did the rabbits example."
+    },
+    {
+        "timestamp": "00:19:07",
+        "content": "In the rabbits example, we had each rabbit change this class variable value."
+    },
+    {
+        "timestamp": "00:19:14",
+        "content": "In this example, I'm not going to change this class variable value."
+    },
+    {
+        "timestamp": "00:19:18",
+        "content": "I'm actually just going to use it as a variable that's that every one of these instances is going to be able to access."
+    },
+    {
+        "timestamp": "00:19:25",
+        "content": "Right. And I'm just not going to change it, which is fine. You don't have to change this class variable."
+    },
+    {
+        "timestamp": "00:19:31",
+        "content": "So this class variable will represent how many calories per hour are are burned."
+    },
+    {
+        "timestamp": "00:19:36",
+        "content": "Okay, so there's a number and then the method."
+    },
+    {
+        "timestamp": "00:19:40",
+        "content": "And again, we're going to make a different method than what we saw in the previous slides."
+    },
+    {
+        "timestamp": "00:19:45",
+        "content": "The net method is going to be new and improved."
+    },
+    {
+        "timestamp": "00:19:48",
+        "content": "We're going to take in still the same number of parameters, but the calories are going to have a default value."
+    },
+    {
+        "timestamp": "00:19:55",
+        "content": "Right. So if the user actually passes in the number of calories, the value for calories here, self-talk calories will be whatever the user passed in."
+    },
+    {
+        "timestamp": "00:20:04",
+        "content": "But if the user doesn't pass in the number of calories, then this parameter here self dug calories will be none, right?"
+    },
+    {
+        "timestamp": "00:20:14",
+        "content": "None. Using being used to represent the absence of a value."
+    },
+    {
+        "timestamp": "00:20:18",
+        "content": "Okay. So two options here when we create the object."
+    },
+    {
+        "timestamp": "00:20:23",
+        "content": "Other things you might notice is that the self that starts with the start time and the time are no longer just start and end."
+    },
+    {
+        "timestamp": "00:20:32",
+        "content": "Okay. I'm going to talk about this on the next slide."
+    },
+    {
+        "timestamp": "00:20:43",
+        "content": "But essentially what I'm doing here is I'm saying the start and end will be passed in as strings, just like we have been in the past, like September 1st, 2022 1:35 p.m. That's fine."
+    },
+    {
+        "timestamp": "00:20:55",
+        "content": "We can still pass in the start time as a string, but when I'm storing it inside my object, I'm actually going to store it as whatever this thing gives me and this thing"
+    },
+    {
+        "timestamp": "00:21:00",
+        "content": "is actually going to be returning or passing this string as a new data type."
+    },
+    {
+        "timestamp": "00:21:07",
+        "content": "Something we've not worked with before called a datetime object."
+    },
+    {
+        "timestamp": "00:21:11",
+        "content": "Okay, we're going to look at this on the next slide in a little bit more detail."
+    },
+    {
+        "timestamp": "00:21:14",
+        "content": "But for now, what we need to know is that the self dots start and self dot end will be a new data type a datetime object."
+    },
+    {
+        "timestamp": "00:21:23",
+        "content": "Okay. So that's my net message. So few changes."
+    },
+    {
+        "timestamp": "00:21:27",
+        "content": "Now my get calories method will look a little bit different as well."
+    },
+    {
+        "timestamp": "00:21:32",
+        "content": "Right? We're not just returning self doubt calories like we had in that simple workout class."
+    },
+    {
+        "timestamp": "00:21:38",
+        "content": "Right? We're going to do a little switch. So if."
+    },
+    {
+        "timestamp": "00:21:49",
+        "content": "The user supplies the number of calories. So if the calories here were actually passed in, then we don't river we don't resort to the calories being non calories will be 100 or 450 or whatever it is."
+    },
+    {
+        "timestamp": "00:21:57",
+        "content": "And then this if statement is false. So we go in the Alps and we just return that value."
+    },
+    {
+        "timestamp": "00:22:02",
+        "content": "So it's exactly the same behavior as in my simple workout class from back there."
+    },
+    {
+        "timestamp": "00:22:08",
+        "content": "But if the user does not supply the number of calories when they create an object, then the calories will be none here."
+    },
+    {
+        "timestamp": "00:22:16",
+        "content": "When I create my object, the data attributes, self-talk, calories will be none here."
+    },
+    {
+        "timestamp": "00:22:25",
+        "content": "So when I ask the when I ask the workout to tell me how many calories I burned, we're going to go inside the statement and we're going to do something."
+    },
+    {
+        "timestamp": "00:22:32",
+        "content": "The thing we're going to do is subtract the end time minus the start time."
+    },
+    {
+        "timestamp": "00:22:46",
+        "content": "All right. And something like this is allowed on a date time object, but obviously not allowed on strings, which is why I'm converting these strings representing a date and a time into this date time object."
+    },
+    {
+        "timestamp": "00:23:05",
+        "content": "This date, this subtraction here gives me something like something that's called a time delta object, and it's just a new type of object we haven't really worked with before, but it's an object type that we can run a method on, and the method is going to be the total seconds."
+    },
+    {
+        "timestamp": "00:23:19",
+        "content": "So for this time delta object, so 10 minutes or 18 minutes or whatever it may be, if we run this method called total seconds, it will tell us how many seconds are in that time."
+    },
+    {
+        "timestamp": "00:23:23",
+        "content": "Delta object divide by 360 to tell us the number of hours and then multiply by the the class"
+    },
+    {
+        "timestamp": "00:23:32",
+        "content": "variable called per hour will tell us how many calories were burned in that elapsed time."
+    },
+    {
+        "timestamp": "00:23:39",
+        "content": "Okay. Yeah. You do like to work out lot and then like all of that like, oh, workout out is just this thing here."
+    },
+    {
+        "timestamp": "00:23:48",
+        "content": "Workout dog per hour, that's just this. And then we multiply by that."
+    },
+    {
+        "timestamp": "00:23:53",
+        "content": "Yeah. That number. Questions about that."
+    },
+    {
+        "timestamp": "00:24:01",
+        "content": "Okay. So essentially this is going to do the estimation for us for how many calories burned in some number of hours or some number of minutes."
+    },
+    {
+        "timestamp": "00:24:10",
+        "content": "Now, let's demystify this start and end time stuff."
+    },
+    {
+        "timestamp": "00:24:14",
+        "content": "Okay. So the way that we are converting to this, the string to a datetime object is by using this library up here."
+    },
+    {
+        "timestamp": "00:24:24",
+        "content": "So a library is a collection of objects, a collection of maybe also functions that all deal with the same type of thing."
+    },
+    {
+        "timestamp": "00:24:33",
+        "content": "So in this particular case, they all deal with dates and times and manipulating dates and times and things like that."
+    },
+    {
+        "timestamp": "00:24:39",
+        "content": "In the last lecture, we saw an example of a library, that random library that allowed us to do operations with random numbers."
+    },
+    {
+        "timestamp": "00:24:46",
+        "content": "So it's just a nice collection of functions and objects that deal with one sort of common thing."
+    },
+    {
+        "timestamp": "00:24:58",
+        "content": "So in this particular case, there is a function inside that that library, this parser dot parse function that takes in a string and can pass it to this datetime object."
+    },
+    {
+        "timestamp": "00:25:06",
+        "content": "Okay. So if we print the type of start date and the type of end date, it'll show us that it's this type date time thing."
+    },
+    {
+        "timestamp": "00:25:15",
+        "content": "So it's a new object type we haven't worked with yet, but it's an object type."
+    },
+    {
+        "timestamp": "00:25:18",
+        "content": "Like a list is like a dictionary is like our workout is right."
+    },
+    {
+        "timestamp": "00:25:23",
+        "content": "And so the reason why we're doing the conversion is because."
+    },
+    {
+        "timestamp": "00:25:27",
+        "content": "We don't want to deal with the messy part of grabbing in a string and then figuring out"
+    },
+    {
+        "timestamp": "00:25:33",
+        "content": "how long the elapsed time is based on just parsing characters throughout this string."
+    },
+    {
+        "timestamp": "00:25:39",
+        "content": "Right. I certainly don't want to do that. But you know what? Somebody who was passionate about doing that did it in this nice little library for us."
+    },
+    {
+        "timestamp": "00:25:46",
+        "content": "So all we're doing is just reusing the work that they've done, right, to save it as this object."
+    },
+    {
+        "timestamp": "00:25:52",
+        "content": "And then they basically said, let me implement the minus sign to work with objects of type date time."
+    },
+    {
+        "timestamp": "00:26:00",
+        "content": "And it makes things like this very easy. We can just subtract two dates from each other, right?"
+    },
+    {
+        "timestamp": "00:26:06",
+        "content": "And it'll tell us the elapsed time. We can run a method on that elapsed time to tell us how many seconds that elapsed time."
+    },
+    {
+        "timestamp": "00:26:14",
+        "content": "So pretty cool. Yeah. Yeah."
+    },
+    {
+        "timestamp": "00:26:19",
+        "content": "But yes the total seconds gets imported with the date you tell passer."
+    },
+    {
+        "timestamp": "00:26:23",
+        "content": "Yeah, exactly. It's an operation that can be run on this date time delta I think type object here."
+    },
+    {
+        "timestamp": "00:26:33",
+        "content": "I think there might be like total minutes and total hours also."
+    },
+    {
+        "timestamp": "00:26:36",
+        "content": "Yeah. Yeah. So it's faster than like golf person."
+    },
+    {
+        "timestamp": "00:26:41",
+        "content": "Not for the second seconds. Mm. Yeah. Exactly. Yeah. Exactly."
+    },
+    {
+        "timestamp": "00:26:47",
+        "content": "Yeah. So, yeah, the code should be important."
+    },
+    {
+        "timestamp": "00:26:52",
+        "content": "Yeah. So we usually import all our stuff right at the top. So I was just going to show the code."
+    },
+    {
+        "timestamp": "00:26:56",
+        "content": "So here I've got everything that I need to import way at the beginning."
+    },
+    {
+        "timestamp": "00:27:00",
+        "content": "So it's kind of like Python goes and copies and pastes everything in those files and puts them in your file."
+    },
+    {
+        "timestamp": "00:27:05",
+        "content": "So now everything that's defined in those files is now accessible in your file."
+    },
+    {
+        "timestamp": "00:27:10",
+        "content": "You just have to sort of do this the dot notation on on these libraries here."
+    },
+    {
+        "timestamp": "00:27:17",
+        "content": "So I just wanted to show you. Um."
+    },
+    {
+        "timestamp": "00:27:21",
+        "content": "Down here. So here. I shouldn't have imported again, but it's just part of the exercise."
+    },
+    {
+        "timestamp": "00:27:27",
+        "content": "So here I've got the. The parser being imported. I've got the start time."
+    },
+    {
+        "timestamp": "00:27:31",
+        "content": "These are just strings, right? Nothing special about them and we can pass them."
+    },
+    {
+        "timestamp": "00:27:37",
+        "content": "So I've got these strings passed and the types of these objects, again, are not strings anymore now that I've passed them."
+    },
+    {
+        "timestamp": "00:27:45",
+        "content": "Right. Start date and end date. Ah, now these date time objects, they time, not date time."
+    },
+    {
+        "timestamp": "00:27:53",
+        "content": "And then we can do operations like this."
+    },
+    {
+        "timestamp": "00:27:55",
+        "content": "So if I just simply subtract one time from the other and print that time Delta object Python puts it in this nice little format for me."
+    },
+    {
+        "timestamp": "00:28:04",
+        "content": "I should just comment these out. It's hard to see. It puts it in this nice little format for me."
+    },
+    {
+        "timestamp": "00:28:08",
+        "content": "So here's number of hours. Colon number of minutes."
+    },
+    {
+        "timestamp": "00:28:11",
+        "content": "Colon number of seconds. Right. So this is the STR method that was implemented for that kind of object."
+    },
+    {
+        "timestamp": "00:28:17",
+        "content": "It printed in this nice little form, right? Hours, colon, minutes, colon, seconds, and then which is."
+    },
+    {
+        "timestamp": "00:28:24",
+        "content": "And then we can do this useful thing, which is what we're doing in our code."
+    },
+    {
+        "timestamp": "00:28:28",
+        "content": "We can run the total seconds function on an object of this time delta."
+    },
+    {
+        "timestamp": "00:28:32",
+        "content": "And it tells us that this 10 minutes right. Is equivalent to 600 seconds."
+    },
+    {
+        "timestamp": "00:28:38",
+        "content": "It's very, very cool, very useful. And we don't even need to know how any of that is implemented."
+    },
+    {
+        "timestamp": "00:28:43",
+        "content": "We just make use of these functions. What's cool about the parser though, and this will be really, really cool."
+    },
+    {
+        "timestamp": "00:28:51",
+        "content": "You can actually write the time and the date in any format."
+    },
+    {
+        "timestamp": "00:28:56",
+        "content": "It doesn't have to be a month slash, day slash year space."
+    },
+    {
+        "timestamp": "00:29:01",
+        "content": "That's right. So this is kind of how I wrote this one. We can actually write it something like Sept 30, 20, 21."
+    },
+    {
+        "timestamp": "00:29:08",
+        "content": "Right, like that. And it knows how to read that. Or we can write out September all the way."
+    },
+    {
+        "timestamp": "00:29:14",
+        "content": "Put the comma there, put the comma there, put the pm lowercase and closer to the time and it knows how to read that as well."
+    },
+    {
+        "timestamp": "00:29:30",
+        "content": "So it knows how to parse all these different ways of writing the dates and save them as these date time objects for for using in this very nice, very readable way. Isn't that cool? Okay."
+    },
+    {
+        "timestamp": "00:29:36",
+        "content": "So very useful if you ever want to work with daytime's."
+    },
+    {
+        "timestamp": "00:29:43",
+        "content": "Okay. So now. Okay."
+    },
+    {
+        "timestamp": "00:29:48",
+        "content": "So now this is our state dictionary sort of for how we ended up with our simple workout class."
+    },
+    {
+        "timestamp": "00:29:54",
+        "content": "But what are the changes we made to improve it?"
+    },
+    {
+        "timestamp": "00:29:58",
+        "content": "Well, in my state dictionary, I added my class variable calories per hour."
+    },
+    {
+        "timestamp": "00:30:04",
+        "content": "So now this calorie per hour is available. For any instance that I create."
+    },
+    {
+        "timestamp": "00:30:10",
+        "content": "Right? We already knew this, but this is kind of the representation of that."
+    },
+    {
+        "timestamp": "00:30:16",
+        "content": "And and we didn't add anything to the instances. Those haven't changed."
+    },
+    {
+        "timestamp": "00:30:22",
+        "content": "Okay. So little aside on class variables, right?"
+    },
+    {
+        "timestamp": "00:30:25",
+        "content": "So this call per hour here is available for all of these instances."
+    },
+    {
+        "timestamp": "00:30:30",
+        "content": "Now, a class variable, right, is just like an instance variable."
+    },
+    {
+        "timestamp": "00:30:35",
+        "content": "We can access it from within the class definition, which is how it should always be done."
+    },
+    {
+        "timestamp": "00:30:41",
+        "content": "But Python being python, they allow you to access that class variable from outside the class definition as well."
+    },
+    {
+        "timestamp": "00:30:50",
+        "content": "So we can do something like this. So we can call the caliper our class variable and the name of this class right outside of the definition."
+    },
+    {
+        "timestamp": "00:31:00",
+        "content": "Right? This is my class definition. It ended here. Right."
+    },
+    {
+        "timestamp": "00:31:03",
+        "content": "And this is just code that's outside of the definition. And Python will be happy to tell you what that value is."
+    },
+    {
+        "timestamp": "00:31:11",
+        "content": "Python will also be happy to tell you what that value is if you access it through an instance."
+    },
+    {
+        "timestamp": "00:31:16",
+        "content": "So here I've created an actual instance of type workout, so I'm not calling the call per hour on the name of my class."
+    },
+    {
+        "timestamp": "00:31:23",
+        "content": "I'm just grabbing it through one of my instances. And if I print instance about cow per hour, Python will also happily tell me what that value is."
+    },
+    {
+        "timestamp": "00:31:32",
+        "content": "Right. And Python being python, they're going to allow you to change the value of that call per hour outside of the class definition as well."
+    },
+    {
+        "timestamp": "00:31:40",
+        "content": "So here outside the class definition, I'm going to say workout per hour equals to 50."
+    },
+    {
+        "timestamp": "00:31:53",
+        "content": "So now the call per hour is changed permanently to 250, no matter how I access it, either by calling the name of my class directly or by calling the class variable through one of the instances."
+    },
+    {
+        "timestamp": "00:32:04",
+        "content": "So no good. Never, ever work with these data with these data access data attributes or access class variables outside of the class definition."
+    },
+    {
+        "timestamp": "00:32:18",
+        "content": "If you really want the user to be able to do something like this right, then write a method for it and then they can change it or access it in a consistent way, the way that you want them to access it."
+    },
+    {
+        "timestamp": "00:32:28",
+        "content": "Okay. So just a little bit of practice for you guys to create a couple of workout objects just to make sure everyone's on the same page."
+    },
+    {
+        "timestamp": "00:32:34",
+        "content": "We understand what a workout object is. So just create for me two objects and then print the calories for these workout objects."
+    },
+    {
+        "timestamp": "00:32:43",
+        "content": "So the first one I would like you to create name the variable w underscore one."
+    },
+    {
+        "timestamp": "00:32:48",
+        "content": "It started this workout started in January one, 2003 30, and it went to a 4 p.m."
+    },
+    {
+        "timestamp": "00:32:54",
+        "content": "And you want to estimate the calories from this workout?"
+    },
+    {
+        "timestamp": "00:32:57",
+        "content": "You don't know how many calories you burned. Right. And then print the value for that calories."
+    },
+    {
+        "timestamp": "00:33:03",
+        "content": "And then the second object. Same, same start date."
+    },
+    {
+        "timestamp": "00:33:06",
+        "content": "Same end date. But you know that you burn 300 calories."
+    },
+    {
+        "timestamp": "00:33:09",
+        "content": "So create these two objects and then print the number of calories burned."
+    },
+    {
+        "timestamp": "00:33:14",
+        "content": "So this is online. 199."
+    },
+    {
+        "timestamp": "00:33:21",
+        "content": "And it's okay to scroll back up right to the init method of workout just to see how it's implemented."
+    },
+    {
+        "timestamp": "00:33:27",
+        "content": "No reason you should have memorized it by now. Right. All right."
+    },
+    {
+        "timestamp": "00:33:31",
+        "content": "How do we create these two objects? What's w one equal to?"
+    },
+    {
+        "timestamp": "00:33:36",
+        "content": "But. Yep."
+    },
+    {
+        "timestamp": "00:33:46",
+        "content": "Yep. Yep. The start date would be first."
+    },
+    {
+        "timestamp": "00:33:50",
+        "content": "So I can just. As a string. Perfect."
+    },
+    {
+        "timestamp": "00:33:54",
+        "content": "Yep. Yep. I'm not saying I don't think I'll say that."
+    },
+    {
+        "timestamp": "00:33:59",
+        "content": "I don't know if that works. And then the end date."
+    },
+    {
+        "timestamp": "00:34:03",
+        "content": "Right, is the next one. So this one's for PM."
+    },
+    {
+        "timestamp": "00:34:09",
+        "content": "Right. Like that. I could do that. And then what else do I put?"
+    },
+    {
+        "timestamp": "00:34:16",
+        "content": "Or do I put anything else? Exactly."
+    },
+    {
+        "timestamp": "00:34:23",
+        "content": "Yep. In this particular case, I'm going to let it default to none."
+    },
+    {
+        "timestamp": "00:34:27",
+        "content": "And then how do I grab the number of calories burned for this object?"
+    },
+    {
+        "timestamp": "00:34:31",
+        "content": "For this workout object? How do I print that out?"
+    },
+    {
+        "timestamp": "00:34:41",
+        "content": "Yep. So I just call the get calories method on one and let's slap a print statement around that like that."
+    },
+    {
+        "timestamp": "00:34:49",
+        "content": "Okay. Yep."
+    },
+    {
+        "timestamp": "00:34:54",
+        "content": "Right. And I do that. Perfect."
+    },
+    {
+        "timestamp": "00:35:02",
+        "content": "So what is it? A 30 minute workout at 200 calories per hour?"
+    },
+    {
+        "timestamp": "00:35:06",
+        "content": "It's 100 calories burned. Second one will be pretty similar, right?"
+    },
+    {
+        "timestamp": "00:35:14",
+        "content": "So I'm just going to copy and paste. What's the difference between this one and the previous one?"
+    },
+    {
+        "timestamp": "00:35:27",
+        "content": "When I create my object. What's the one difference?"
+    },
+    {
+        "timestamp": "00:35:32",
+        "content": "Yeah. Yup."
+    },
+    {
+        "timestamp": "00:35:35",
+        "content": "Exactly. We will pass in 300 as the last program here."
+    },
+    {
+        "timestamp": "00:35:40",
+        "content": "Right. And so then if we run that. 100 was my first print statement and 300 is my second one."
+    },
+    {
+        "timestamp": "00:35:47",
+        "content": "Right. So it relies on. The the number that was passed in as opposed to calculating it by estimating it based on the starting."
+    },
+    {
+        "timestamp": "00:35:58",
+        "content": "All right, everyone okay with this? We all sort of understand get calories, method perfect."
+    },
+    {
+        "timestamp": "00:36:05",
+        "content": "So we've finished our improved method here."
+    },
+    {
+        "timestamp": "00:36:07",
+        "content": "We saw this better get calories method very neat method that allows estimation and we saw a little bit about using these daytime objects."
+    },
+    {
+        "timestamp": "00:36:20",
+        "content": "Okay."
+    },
+    {
+        "timestamp": "00:36:20",
+        "content": "So the next stop, the rest of this lecture will be implementing one subclass of this state status of this workout object called a run workout class."
+    },
+    {
+        "timestamp": "00:36:32",
+        "content": "Okay. And so we're going to use the idea of hierarchies and class inheritance to do this."
+    },
+    {
+        "timestamp": "00:36:39",
+        "content": "So let's remember a little bit about hierarchies in terms of Python."
+    },
+    {
+        "timestamp": "00:36:45",
+        "content": "So. When we create a class that we know will be sort of this this parent class, that's that's a base class."
+    },
+    {
+        "timestamp": "00:36:54",
+        "content": "Right. It's the most basic thing that we'd like to work off of."
+    },
+    {
+        "timestamp": "00:36:58",
+        "content": "We call that the parent class or the superclass. And this one parent class can have many subclasses associated with it."
+    },
+    {
+        "timestamp": "00:37:06",
+        "content": "Right. So in this particular case, just as an example, we can have two types of of workouts, right?"
+    },
+    {
+        "timestamp": "00:37:13",
+        "content": "One outdoor workout and one kind is an outdoor workout and the other kind is an indoor workout."
+    },
+    {
+        "timestamp": "00:37:18",
+        "content": "Okay. And both of these are workouts, right?"
+    },
+    {
+        "timestamp": "00:37:32",
+        "content": "So everything that a workout has and everything that we can do with a workout, we will be able to will exist in outdoor workout, an indoor workout, and we'll be able to do with outdoor workout, an indoor workout."
+    },
+    {
+        "timestamp": "00:37:36",
+        "content": "Right. So a child class is a class."
+    },
+    {
+        "timestamp": "00:37:40",
+        "content": "A subclass is a super class. But these these some classes can bring about some of their own, quote unquote ideas, right."
+    },
+    {
+        "timestamp": "00:37:53",
+        "content": "Of their own attributes. So for an outdoor workout, we might add more information."
+    },
+    {
+        "timestamp": "00:38:00",
+        "content": "Right. So add more attributes, maybe location, something like that."
+    },
+    {
+        "timestamp": "00:38:04",
+        "content": "For indoor workout, you might not need a location."
+    },
+    {
+        "timestamp": "00:38:07",
+        "content": "It might not add any extra data attributes. We might add more behaviors."
+    },
+    {
+        "timestamp": "00:38:13",
+        "content": "Right? So for outdoor workout, I don't know. You add some different some different behavior than just a regular workout."
+    },
+    {
+        "timestamp": "00:38:21",
+        "content": "Same for indoor workout. Or you might override behaviors, so you might change something."
+    },
+    {
+        "timestamp": "00:38:26",
+        "content": "That workout does to be specific to an outdoor workout."
+    },
+    {
+        "timestamp": "00:38:30",
+        "content": "And of course, we can create as many of these subclasses as we'd like."
+    },
+    {
+        "timestamp": "00:38:33",
+        "content": "So for outdoor workouts, we can now have two different types of outdoor workouts are running or swimming."
+    },
+    {
+        "timestamp": "00:38:39",
+        "content": "And for indoor workouts, we might have treadmill or weights, types of workouts, right?"
+    },
+    {
+        "timestamp": "00:38:43",
+        "content": "And whenever you create these child classes, they inherit everything that their parents has."
+    },
+    {
+        "timestamp": "00:38:48",
+        "content": "So a running class is an outdoor workout and by default is also going to be a workout, right?"
+    },
+    {
+        "timestamp": "00:38:54",
+        "content": "Because outdoor workout was a workout. Okay."
+    },
+    {
+        "timestamp": "00:38:57",
+        "content": "So what we're going to do in this run workout class is I'm going to show you three sort of methods implemented."
+    },
+    {
+        "timestamp": "00:39:04",
+        "content": "The first one is going to be just reusing something that our parent can do."
+    },
+    {
+        "timestamp": "00:39:10",
+        "content": "The second one is going to be overriding a method that our parent already can do to make it better and more specific to the child's class."
+    },
+    {
+        "timestamp": "00:39:19",
+        "content": "And the third one is to add a method that our parent didn't even have."
+    },
+    {
+        "timestamp": "00:39:24",
+        "content": "Okay, so we're going to do these three things in the run workout object."
+    },
+    {
+        "timestamp": "00:39:28",
+        "content": "Okay. So let's remember the this this example here about common properties that all of our workouts have, right?"
+    },
+    {
+        "timestamp": "00:39:37",
+        "content": "So this is basically us implementing our workout superclass."
+    },
+    {
+        "timestamp": "00:39:41",
+        "content": "So I know we did implement all of these, but in theory we can implement all of the things that are highlighted in yellow in our parent class."
+    },
+    {
+        "timestamp": "00:39:48",
+        "content": "And these are common no matter what kinds of workouts we create. Now in the Python file, I actually have a swimming subclass."
+    },
+    {
+        "timestamp": "00:39:55",
+        "content": "We're not going to go over the swimming subclass in the lecture, but please feel free to go through it in the in the Python file for this lecture."
+    },
+    {
+        "timestamp": "00:40:02",
+        "content": "And I think you'll also be working with it in recitation on Friday as well."
+    },
+    {
+        "timestamp": "00:40:06",
+        "content": "In lecture, we're going to be creating some a subclass that's specific to running."
+    },
+    {
+        "timestamp": "00:40:14",
+        "content": "And this running class will, of course, inherit all of these properties that our parent workout class has."
+    },
+    {
+        "timestamp": "00:40:20",
+        "content": "But we're also going to add our own data and we're going to override some data that the workout class has and things like that."
+    },
+    {
+        "timestamp": "00:40:39",
+        "content": "So specifically, the only thing we're actually going to implement that's that's different than a regular workout is to add an elevation, an elevation attribute, right? So beyond that start time and time calories, an icon will also exist and the kind of workout will also exist."
+    },
+    {
+        "timestamp": "00:40:47",
+        "content": "Those are our five data attributes right from workout. And we're going to add elevation for a running workout to make six."
+    },
+    {
+        "timestamp": "00:40:55",
+        "content": "Okay. So this was our parent class, right?"
+    },
+    {
+        "timestamp": "00:40:58",
+        "content": "Just as a reminder, this is what it looked like. We had our class attribute here a class variable and this init method here."
+    },
+    {
+        "timestamp": "00:41:08",
+        "content": "The class workout as their parent was the generic python object."
+    },
+    {
+        "timestamp": "00:41:13",
+        "content": "Now when we create our run workout, our parent will be the workout class, right?"
+    },
+    {
+        "timestamp": "00:41:19",
+        "content": "So we don't just want it to be a python object. We want it to be a workout object."
+    },
+    {
+        "timestamp": "00:41:31",
+        "content": "So as soon as we do that inside our code, Python says, All right, let me just grab all of the stuff, all everything that's defined inside your parent class, this workout and quote unquote, copy and paste it into this class."
+    },
+    {
+        "timestamp": "00:41:39",
+        "content": "So right off the bat, we've got all of the things that workout has."
+    },
+    {
+        "timestamp": "00:41:44",
+        "content": "But that's not that doesn't quite work with our run work out because when we create a run workout and again this"
+    },
+    {
+        "timestamp": "00:41:54",
+        "content": "is a design decision we would like the user to be able to pass in an extra parameter here the elevation value."
+    },
+    {
+        "timestamp": "00:42:06",
+        "content": "So in addition to the start time and time and the calories burned, I'm going to slip in this elevation value right before the calories burned parameter."
+    },
+    {
+        "timestamp": "00:42:14",
+        "content": "So when I initialize my run workout, I could theoretically pass in four values."
+    },
+    {
+        "timestamp": "00:42:21",
+        "content": "String, string, number, number. Or since elevation is zero, elevation has a default parameter in calories has a default parameter."
+    },
+    {
+        "timestamp": "00:42:31",
+        "content": "I could pass in just string string and those other two will default."
+    },
+    {
+        "timestamp": "00:42:37",
+        "content": "Okay. So what is this init method doing? It's calling the super function."
+    },
+    {
+        "timestamp": "00:42:44",
+        "content": "I know we haven't done this before, but I just wanted to show you this."
+    },
+    {
+        "timestamp": "00:42:47",
+        "content": "This is another way to ask Python to tell you who your parent is."
+    },
+    {
+        "timestamp": "00:42:53",
+        "content": "Right. So when you run this function super inside a class definition."
+    },
+    {
+        "timestamp": "00:43:00",
+        "content": "Python effectively returns."
+    },
+    {
+        "timestamp": "00:43:03",
+        "content": "So the replacement of this function is just a function."
+    },
+    {
+        "timestamp": "00:43:07",
+        "content": "It has a return value. The return will be the thing in the parentheses here."
+    },
+    {
+        "timestamp": "00:43:12",
+        "content": "So effectively that line becomes workout dot score in that double underscore exactly as we saw in the last lecture when we did animal right."
+    },
+    {
+        "timestamp": "00:43:20",
+        "content": "Rabbits and all that stuff. All right."
+    },
+    {
+        "timestamp": "00:43:32",
+        "content": "So what we're doing here is we're saying, well, I know work out can do all those initialization for me, so let me just take advantage of that, not copy and paste it and just let work out, you know, do the job and initialize all that stuff for me."
+    },
+    {
+        "timestamp": "00:43:43",
+        "content": "So this line of code here initializes the start end times, right, by parsing them the calories and the icon to the sweaty person emoji and the kind to workout to string."
+    },
+    {
+        "timestamp": "00:43:53",
+        "content": "But since this is a run workout, I would like to replace the icon with the little running person emoji."
+    },
+    {
+        "timestamp": "00:44:02",
+        "content": "And the kind of workout this is is no longer just a workout."
+    },
+    {
+        "timestamp": "00:44:05",
+        "content": "Let's say it's a running workout, right? So it becomes a string running."
+    },
+    {
+        "timestamp": "00:44:09",
+        "content": "So I'm overwriting those data attributes to be the strings."
+    },
+    {
+        "timestamp": "00:44:15",
+        "content": "And then the thing that run workout has that workout didn't have at all is this elevation data attribute, right?"
+    },
+    {
+        "timestamp": "00:44:23",
+        "content": "So self love is now a new data attribute that did not exist in the regular workout."
+    },
+    {
+        "timestamp": "00:44:31",
+        "content": "Okay. And then I've got these two these two functional methods down here, a getter for the elevation and the setter for the elevation."
+    },
+    {
+        "timestamp": "00:44:39",
+        "content": "Nothing fancy with them. They just return and set. Yeah. Super."
+    },
+    {
+        "timestamp": "00:44:45",
+        "content": "Yeah so the super in it calls the parents in it method."
+    },
+    {
+        "timestamp": "00:44:48",
+        "content": "And the reason I do that is because I know the parent can just initialize all that stuff for me."
+    },
+    {
+        "timestamp": "00:44:55",
+        "content": "So I'm just taking advantage of the fact that it does all that stuff for me."
+    },
+    {
+        "timestamp": "00:44:59",
+        "content": "Right? You can imagine the init method. Maybe it also check the types, right?"
+    },
+    {
+        "timestamp": "00:45:06",
+        "content": "To make sure that the person who created this, you know, to kind of enforce that start is a string and does a string like all that extra code that would happen in the init method of work out."
+    },
+    {
+        "timestamp": "00:45:13",
+        "content": "We would just let run with this line here so we don't have to copy and paste it."
+    },
+    {
+        "timestamp": "00:45:19",
+        "content": "Yes. Find them in the lineup for top 50."
+    },
+    {
+        "timestamp": "00:45:27",
+        "content": "Yes. You mean this these two. Yep."
+    },
+    {
+        "timestamp": "00:45:35",
+        "content": "And. There needs to be."
+    },
+    {
+        "timestamp": "00:45:41",
+        "content": "So that is kind of. Yes, exactly. Actually, yes, you're right."
+    },
+    {
+        "timestamp": "00:45:44",
+        "content": "So the reason this works is because the init method of my workout takes in the start and the end of the calories."
+    },
+    {
+        "timestamp": "00:45:51",
+        "content": "Right. If if I said that the method of run workout doesn't need to start and end or something like that, i wouldn't be able to run this init method."
+    },
+    {
+        "timestamp": "00:46:00",
+        "content": "Exactly. Or maybe I would run it with some defaults or something."
+    },
+    {
+        "timestamp": "00:46:03",
+        "content": "Like. Like if you actually want to run it, you have to passive."
+    },
+    {
+        "timestamp": "00:46:06",
+        "content": "You still have to follow the the the stub of that init method."
+    },
+    {
+        "timestamp": "00:46:11",
+        "content": "Right. Yeah. That's, that's a great point. Yeah."
+    },
+    {
+        "timestamp": "00:46:17",
+        "content": "I have seen the intent of the parent and to this one without having to write the super thing."
+    },
+    {
+        "timestamp": "00:46:25",
+        "content": "Yeah. So this I you're right. I wasn't writing the super thing."
+    },
+    {
+        "timestamp": "00:46:29",
+        "content": "I was just naming the parent directly."
+    },
+    {
+        "timestamp": "00:46:33",
+        "content": "So in the animal one, I said animal dot double, um, score in it double underscore."
+    },
+    {
+        "timestamp": "00:46:38",
+        "content": "And in this particular case, I'm just showing you a different way to do it, baby."
+    },
+    {
+        "timestamp": "00:46:42",
+        "content": "You don't know who your parent is. Question Mark In that case, you can just run this function and it tells you who your parent is."
+    },
+    {
+        "timestamp": "00:46:51",
+        "content": "But this line would work just as well if I said work out right."
+    },
+    {
+        "timestamp": "00:46:55",
+        "content": "This thing dot double underscore in it double underscore. And that would be exactly the same as I had done last lecture."
+    },
+    {
+        "timestamp": "00:47:03",
+        "content": "So let's look at the state dictionary for this one, right, for this new addition here."
+    },
+    {
+        "timestamp": "00:47:08",
+        "content": "So this is the state dictionary of just my plain old workout class."
+    },
+    {
+        "timestamp": "00:47:12",
+        "content": "Right. We've done. We saw this before. It's all my getters."
+    },
+    {
+        "timestamp": "00:47:15",
+        "content": "All my setters. The init and this call per hour from the new and improved workout class."
+    },
+    {
+        "timestamp": "00:47:23",
+        "content": "Now. My subclass, the run workout."
+    },
+    {
+        "timestamp": "00:47:27",
+        "content": "The super method basically says, hey, this is you are a workout."
+    },
+    {
+        "timestamp": "00:47:33",
+        "content": "The Super method, the state dictionary for it will additionally have these two getters."
+    },
+    {
+        "timestamp": "00:47:40",
+        "content": "Sorry, this getter in the setter. These two methods. Right?"
+    },
+    {
+        "timestamp": "00:47:43",
+        "content": "We're not copying all this stuff all over again down in the run workout state dictionary because that already exists up here."
+    },
+    {
+        "timestamp": "00:47:51",
+        "content": "Right. But in addition, the run workout has this get elevation and set elevation."
+    },
+    {
+        "timestamp": "00:47:56",
+        "content": "Those are the only things that we've defined in this class. Right."
+    },
+    {
+        "timestamp": "00:48:01",
+        "content": "So then when I create a run workout instance, so this is an instance of run workout, not workout."
+    },
+    {
+        "timestamp": "00:48:13",
+        "content": "Python points to this run workout class and the data attributes for a run workout instance are going to be, of course, all the data attributes of a regular workout."
+    },
+    {
+        "timestamp": "00:48:18",
+        "content": "The was five plus. The elevation the new data attribute that I just added."
+    },
+    {
+        "timestamp": "00:48:25",
+        "content": "Okay. Okay."
+    },
+    {
+        "timestamp": "00:48:33",
+        "content": "So we're using inheritance in this particular case, right?"
+    },
+    {
+        "timestamp": "00:48:41",
+        "content": "In the spirit of modularity, in the spirit of abstraction, in the spirit of writing code that's reusable, that's readable, that's understandable in the future."
+    },
+    {
+        "timestamp": "00:48:53",
+        "content": "Right. So we're not if we were writing the run workout by basically copying and pasting everything in there all over again, it would be a really long class where most of it was just a copy and paste off of the workout."
+    },
+    {
+        "timestamp": "00:48:59",
+        "content": "Right? So now in this particular, if we define it in this way, we can easily see new functionality, right?"
+    },
+    {
+        "timestamp": "00:49:06",
+        "content": "And new data attributes that run workout has in addition to just being a workout object."
+    },
+    {
+        "timestamp": "00:49:13",
+        "content": "Okay, so all those good things for writing."
+    },
+    {
+        "timestamp": "00:49:17",
+        "content": "Very nice, clear code. Okay."
+    },
+    {
+        "timestamp": "00:49:19",
+        "content": "So now we're going to look at a function or sorry, a method that's being reused from our parent and that's this double underscore STR method."
+    },
+    {
+        "timestamp": "00:49:28",
+        "content": "Okay. So this is our method."
+    },
+    {
+        "timestamp": "00:49:32",
+        "content": "It looks like a beast, right? It's very, very long."
+    },
+    {
+        "timestamp": "00:49:36",
+        "content": "But I promise you, it's not so bad. So this is TR method."
+    },
+    {
+        "timestamp": "00:49:40",
+        "content": "Let's remember what it does. It tells Python what to do when you print an object of type workout."
+    },
+    {
+        "timestamp": "00:49:49",
+        "content": "Right. Because it's defined inside the workout class here."
+    },
+    {
+        "timestamp": "00:49:52",
+        "content": "So I'll show you what it actually looks like in the actual workout class."
+    },
+    {
+        "timestamp": "00:49:56",
+        "content": "So here's my workout, right? Um, there's my class variable, my net, my getters, my setters, all that."
+    },
+    {
+        "timestamp": "00:50:04",
+        "content": "And then here's my SDR method. It's long, right?"
+    },
+    {
+        "timestamp": "00:50:07",
+        "content": "It takes an entire page. This is not a method that I would like to copy and paste in every single one of my subclasses."
+    },
+    {
+        "timestamp": "00:50:15",
+        "content": "Right. Because that would be a lot of code, again, against the spirit of abstraction, modularity, all that good stuff."
+    },
+    {
+        "timestamp": "00:50:22",
+        "content": "So what we're doing is we're just defining it once in our parent class workout."
+    },
+    {
+        "timestamp": "00:50:29",
+        "content": "And. It's going to do the following."
+    },
+    {
+        "timestamp": "00:50:35",
+        "content": "So a str method has to return a string."
+    },
+    {
+        "timestamp": "00:50:39",
+        "content": "Right. It doesn't print the string. Right. This is a very important distinction."
+    },
+    {
+        "timestamp": "00:50:43",
+        "content": "A returns a string that will eventually be printed."
+    },
+    {
+        "timestamp": "00:50:47",
+        "content": "When you call the print method."
+    },
+    {
+        "timestamp": "00:50:50",
+        "content": "So the thing that I'm doing throughout this whole function, throughout this whole method, is to basically just build up my string to return."
+    },
+    {
+        "timestamp": "00:50:57",
+        "content": "Return register is return a string and I'm building it just by concatenating it"
+    },
+    {
+        "timestamp": "00:51:02",
+        "content": "piece by piece with more and more stuff that I want to eventually print out."
+    },
+    {
+        "timestamp": "00:51:07",
+        "content": "So the output would look something like this, right?"
+    },
+    {
+        "timestamp": "00:51:11",
+        "content": "I'm basically printing out on the console, sort of like the little square of a watch, right?"
+    },
+    {
+        "timestamp": "00:51:16",
+        "content": "Very cute. So what am I composing here?"
+    },
+    {
+        "timestamp": "00:51:20",
+        "content": "The first bit, right? This thing in the red box prints this line over here."
+    },
+    {
+        "timestamp": "00:51:36",
+        "content": "Just a horizontal line. That's some width long. The next bit here you notice it grabs the icon data attribute, puts it here on the line along with a vertical bar and a bunch of spaces and a vertical bar."
+    },
+    {
+        "timestamp": "00:51:42",
+        "content": "The next bit here prints the kind of work out by accessing the kind data attribute, right?"
+    },
+    {
+        "timestamp": "00:51:48",
+        "content": "So either workout or running or swimming, whatever that string is, prints it right underneath the emoji."
+    },
+    {
+        "timestamp": "00:51:55",
+        "content": "The next bit here is composing the duration."
+    },
+    {
+        "timestamp": "00:52:00",
+        "content": "So remember when we did the DateTime object just over here?"
+    },
+    {
+        "timestamp": "00:52:04",
+        "content": "Right when we were printing the duration where we just simply subtracted an end time minus the start time."
+    },
+    {
+        "timestamp": "00:52:10",
+        "content": "It looked like this, right? I'm perfectly happy with that."
+    },
+    {
+        "timestamp": "00:52:14",
+        "content": "That looks really nice. So let's just use that."
+    },
+    {
+        "timestamp": "00:52:19",
+        "content": "So the duration here, the get duration just does the subtraction."
+    },
+    {
+        "timestamp": "00:52:23",
+        "content": "It's a method inside my workout class. And then we just sort of keep composing that to our return strength."
+    },
+    {
+        "timestamp": "00:52:32",
+        "content": "Next, we are going to figure out how many calories were burned in this workout object."
+    },
+    {
+        "timestamp": "00:52:38",
+        "content": "So, again, we're grabbing the get calories method, right, the return value from that method."
+    },
+    {
+        "timestamp": "00:52:44",
+        "content": "However, it may be calculated, right?"
+    },
+    {
+        "timestamp": "00:52:54",
+        "content": "So for this workout type, either we gave the value directly or we let it estimate it from the duration of the workout, however it decides to calculate it according to how this workout object was made."
+    },
+    {
+        "timestamp": "00:52:58",
+        "content": "That value gets put right there. And then the last bit is this last line down at the bottom."
+    },
+    {
+        "timestamp": "00:53:08",
+        "content": "So then we can create any kind of workout, right?"
+    },
+    {
+        "timestamp": "00:53:11",
+        "content": "Because all the child's classes inherit all of the methods from the parent class."
+    },
+    {
+        "timestamp": "00:53:17",
+        "content": "So of course, all these child classes will inherit the str method of workout."
+    },
+    {
+        "timestamp": "00:53:22",
+        "content": "So no matter what kind of workout I'm creating. So here I'm just creating a regular workout here."
+    },
+    {
+        "timestamp": "00:53:27",
+        "content": "A running workout in here, a swim workout. No matter how I'm creating it, they'll use the same as TR method."
+    },
+    {
+        "timestamp": "00:53:33",
+        "content": "So all of these will printed in this really nice format, right? The first bit will be specific to the kind of workout we have."
+    },
+    {
+        "timestamp": "00:53:41",
+        "content": "Right? The little emojis will be different because I've set those separately, right within the subclasses."
+    },
+    {
+        "timestamp": "00:53:47",
+        "content": "The kind as well. The label. Right workout or running or swimming."
+    },
+    {
+        "timestamp": "00:53:53",
+        "content": "The calories burned and the duration will be will be you will be, you know, calculated using the get calories method and then the get duration method."
+    },
+    {
+        "timestamp": "00:54:03",
+        "content": "So again, in a nicely consistent way. So I'll show you what this looks like in the actual code."
+    },
+    {
+        "timestamp": "00:54:13",
+        "content": "Let me just comment that. So here I've got three workouts created and then I'm just printing these three different kinds of workouts."
+    },
+    {
+        "timestamp": "00:54:26",
+        "content": "And just to show you I'm not lying to you, the swim workout doesn't have an SDR method defined right."
+    },
+    {
+        "timestamp": "00:54:33",
+        "content": "And neither does the run workout. Right. It just has a bunch of other stuff defined, but no SDR method."
+    },
+    {
+        "timestamp": "00:54:39",
+        "content": "So we're just using the SDR method of our parent. And then when we run it, it looks like this, right?"
+    },
+    {
+        "timestamp": "00:54:45",
+        "content": "So I've got a regular workout with their icon and label running workout with the icon and label and a swimming workout with our icon and label."
+    },
+    {
+        "timestamp": "00:54:54",
+        "content": "Isn't that cute? Right."
+    },
+    {
+        "timestamp": "00:54:57",
+        "content": "So we've made our own little digital. So this begs the question."
+    },
+    {
+        "timestamp": "00:55:09",
+        "content": "Right. When can we use an instance of a class?"
+    },
+    {
+        "timestamp": "00:55:14",
+        "content": "Right. Of a subclass. Well, you can use an instance of this run workout anywhere where you can use workout, right?"
+    },
+    {
+        "timestamp": "00:55:24",
+        "content": "Because again, the way I think about it is you say, well, a run workout is a workout."
+    },
+    {
+        "timestamp": "00:55:29",
+        "content": "So anything I can do with a workout I should be able to do with a run workout or swim workout or any of the subclasses."
+    },
+    {
+        "timestamp": "00:55:36",
+        "content": "Right. But the opposite is not true. If I can do something with a run workout, well, run workout has a bunch of other specific things that it can do."
+    },
+    {
+        "timestamp": "00:55:43",
+        "content": "Of course, a regular workout is not going to be able to do those specific things."
+    },
+    {
+        "timestamp": "00:55:48",
+        "content": "All right. So let's think about these two helper functions."
+    },
+    {
+        "timestamp": "00:55:51",
+        "content": "This one calculates the total calories given a list of workouts, and this one calculates the total elevation given a list of workouts."
+    },
+    {
+        "timestamp": "00:56:00",
+        "content": "The code looks very similar for both. We're just iterating through the loop, grabbing each workout object."
+    },
+    {
+        "timestamp": "00:56:07",
+        "content": "And then we're calling the get calories or the get elevation on that workout object."
+    },
+    {
+        "timestamp": "00:56:14",
+        "content": "Right? So this will give me a number and then I'm just keeping a running sum for the total elevation and the total calories."
+    },
+    {
+        "timestamp": "00:56:20",
+        "content": "And at the end, I return. Right. So again, the list here is important."
+    },
+    {
+        "timestamp": "00:56:25",
+        "content": "These are workout objects and workout objects."
+    },
+    {
+        "timestamp": "00:56:43",
+        "content": "So what if I have a bunch of so here I've got to to work out objects and two running workout objects so these workout objects are 30 minutes long, right. So using 200 calories per hour, these ones will each be 100 calories."
+    },
+    {
+        "timestamp": "00:56:51",
+        "content": "These running workouts are 2 hours long."
+    },
+    {
+        "timestamp": "00:56:56",
+        "content": "So they will. It doesn't actually matter."
+    },
+    {
+        "timestamp": "00:57:01",
+        "content": "Right. Sorry, sir. These running workouts are 2 hours long, so they're going to be 400 calories."
+    },
+    {
+        "timestamp": "00:57:07",
+        "content": "Right. Because these parameters here. Correspond to the elevation."
+    },
+    {
+        "timestamp": "00:57:13",
+        "content": "Okay. And they correspond to the elevation because if we look at the way we defined a running workout right here, right."
+    },
+    {
+        "timestamp": "00:57:21",
+        "content": "This is the order of the parameters start time and time, elevation value, calories."
+    },
+    {
+        "timestamp": "00:57:27",
+        "content": "So when I pass in various parameters, they need to go in that order."
+    },
+    {
+        "timestamp": "00:57:33",
+        "content": "And I can't skip around. Right? If I want one of them to be to be the default variable, then that has to be at the end."
+    },
+    {
+        "timestamp": "00:57:40",
+        "content": "So in this particular case, I've got these two running workouts at 400 calories because by default I didn't actually pass in the number of calories."
+    },
+    {
+        "timestamp": "00:57:50",
+        "content": "And then the elevation is 102 hundred. But comma, comma."
+    },
+    {
+        "timestamp": "00:58:02",
+        "content": "Then you would just put if you wanted both to be default, then you just put nothing."
+    },
+    {
+        "timestamp": "00:58:06",
+        "content": "You can't just leave an empty comma if you want to. So, uh."
+    },
+    {
+        "timestamp": "00:58:12",
+        "content": "Yeah. So then you. Then you would have to actually explicitly say, like, calories equals whatever you want."
+    },
+    {
+        "timestamp": "00:58:20",
+        "content": "So, so at that point, yeah, now that we're working with default variables, it becomes a little bit tricky."
+    },
+    {
+        "timestamp": "00:58:25",
+        "content": "You can't go wrong with just saying like 11 equals whatever you want it to be, calories equals whatever you want."
+    },
+    {
+        "timestamp": "00:58:31",
+        "content": "And then you can do whatever you'd like next. Yeah. But in this particular case, we know our workouts are 400 and elevation, as is those values."
+    },
+    {
+        "timestamp": "00:58:41",
+        "content": "So when we run total calories on all of the workouts, no matter what kind of workout I have, it doesn't actually matter."
+    },
+    {
+        "timestamp": "00:58:49",
+        "content": "Right, because. Python will just grab calories for all of these workout types."
+    },
+    {
+        "timestamp": "00:58:55",
+        "content": "Right. So just sums it up. Elevation. If I run it only on running workouts, Python will know what to do."
+    },
+    {
+        "timestamp": "00:59:02",
+        "content": "Here's 102 hundred because those running workouts have an elevation data attribute."
+    },
+    {
+        "timestamp": "00:59:08",
+        "content": "But if I ask for it looks but if I ask for the elevation for a running workout and adjust a regular workout."
+    },
+    {
+        "timestamp": "00:59:15",
+        "content": "Python will spit out an error because as soon as it sees this workout one, it says, Well, what's the workout?"
+    },
+    {
+        "timestamp": "00:59:23",
+        "content": "Get a live method. And it's going to say, I don't have a get live method for a regular workout."
+    },
+    {
+        "timestamp": "00:59:29",
+        "content": "That's not something I know because that's something that we implemented in the child class."
+    },
+    {
+        "timestamp": "00:59:35",
+        "content": "So let's go through this together. And it's actually nothing to code just to sort of run."
+    },
+    {
+        "timestamp": "00:59:45",
+        "content": "No, it's just down here. So this is just kind of making sure you understand sort of the order of operations."
+    },
+    {
+        "timestamp": "00:59:51",
+        "content": "And I think one of the ones that was a question here where we actually passed in the number of calories is is at the end."
+    },
+    {
+        "timestamp": "00:59:58",
+        "content": "So when I create a regular workout, whoops, let me just remove that over here."
+    },
+    {
+        "timestamp": "01:00:04",
+        "content": "What is the value when I ask Python to tell me the calories?"
+    },
+    {
+        "timestamp": "01:00:08",
+        "content": "For this workout at 200 calories an hour. What's the value here?"
+    },
+    {
+        "timestamp": "01:00:17",
+        "content": "Just deal it out. 30 minutes."
+    },
+    {
+        "timestamp": "01:00:24",
+        "content": "100, right? What's the elevation?"
+    },
+    {
+        "timestamp": "01:00:30",
+        "content": "When I ask Python to tell me the elevation for this object. Error."
+    },
+    {
+        "timestamp": "01:00:39",
+        "content": "Exactly. Yep. Yep."
+    },
+    {
+        "timestamp": "01:00:42",
+        "content": "Because the workout object has no attribute right, has no method."
+    },
+    {
+        "timestamp": "01:00:47",
+        "content": "Get a love. That's something specific to a running, running workout."
+    },
+    {
+        "timestamp": "01:00:51",
+        "content": "Okay, how about this one run workout here? So here I am, actually."
+    },
+    {
+        "timestamp": "01:00:55",
+        "content": "Oops, I didn't mean to do that. What happens if I grab the calories for w to."
+    },
+    {
+        "timestamp": "01:01:09",
+        "content": "Yep. 450. Yep. Pretty much just grabs whatever's past in."
+    },
+    {
+        "timestamp": "01:01:13",
+        "content": "Right. Doesn't estimate. How about the elevation? Yep."
+    },
+    {
+        "timestamp": "01:01:17",
+        "content": "There again. Perfect. Now let's create three kinds of running workouts."
+    },
+    {
+        "timestamp": "01:01:23",
+        "content": "So here's one. What's the calories and elevation for this one?"
+    },
+    {
+        "timestamp": "01:01:28",
+        "content": "I'll just do the mounting both together. Right. So RW one, this parameter is the only one passed in."
+    },
+    {
+        "timestamp": "01:01:35",
+        "content": "What does that correspond to? Calories or elevation? Yeah."
+    },
+    {
+        "timestamp": "01:01:41",
+        "content": "Elevation remember our parameter list elevation comes before calories."
+    },
+    {
+        "timestamp": "01:01:45",
+        "content": "So the elevations to 50 and the calories will be estimated right based on whatever this is."
+    },
+    {
+        "timestamp": "01:01:52",
+        "content": "Right. So calories is first at 100 elevations to 50."
+    },
+    {
+        "timestamp": "01:01:58",
+        "content": "How about running work out to. So here I've got 450 and 700 in that order."
+    },
+    {
+        "timestamp": "01:02:04",
+        "content": "Which one is the elevation? Yep 450 and calories of 700."
+    },
+    {
+        "timestamp": "01:02:13",
+        "content": "So when we printed, I printed them backward just to confuse us all."
+    },
+    {
+        "timestamp": "01:02:18",
+        "content": "And then lastly, how about this run workout three?"
+    },
+    {
+        "timestamp": "01:02:21",
+        "content": "So here this is to answer the question what if I wanted elevation to be default, but I wanted to pass in calories."
+    },
+    {
+        "timestamp": "01:02:30",
+        "content": "So here I just say the name of my parameter there and I give it an actual value."
+    },
+    {
+        "timestamp": "01:02:37",
+        "content": "Right. So clearly here, calories will be 300 and elevation defaults to zero."
+    },
+    {
+        "timestamp": "01:02:45",
+        "content": "So just a little practice reading the specifications."
+    },
+    {
+        "timestamp": "01:02:50",
+        "content": "Okay. So that finishes reusing the str method from the parent."
+    },
+    {
+        "timestamp": "01:02:54",
+        "content": "Now let's override our superclass."
+    },
+    {
+        "timestamp": "01:03:10",
+        "content": "So our improved workout class, remember, has a get calories method that estimates the calories based on the time that it took you to do this workout, whether it was a running workout or a regular workout."
+    },
+    {
+        "timestamp": "01:03:15",
+        "content": "What I want, what I'm doing in this method is I'm going to actually implement my own get calories method inside the class definition for a run workout."
+    },
+    {
+        "timestamp": "01:03:25",
+        "content": "Right. So here's my run workout class definition and I've got my own get calories method."
+    },
+    {
+        "timestamp": "01:03:31",
+        "content": "So when I run get calories on a run workout."
+    },
+    {
+        "timestamp": "01:03:34",
+        "content": "Python will use this one. What is this one going to do?"
+    },
+    {
+        "timestamp": "01:03:38",
+        "content": "So we're going to do something really cool."
+    },
+    {
+        "timestamp": "01:03:41",
+        "content": "We're going to estimate the number of calories burned for a run workout based on a set of points, latitude, longitude points."
+    },
+    {
+        "timestamp": "01:03:51",
+        "content": "So what we can actually do is we're going to pass in a list of tuples like this which represent sort of the route that we take."
+    },
+    {
+        "timestamp": "01:04:02",
+        "content": "Right. So from point a, so in this particular case, I've got sort of four places that I have jogged between."
+    },
+    {
+        "timestamp": "01:04:10",
+        "content": "So these are my four latitude longitude points. So each tuple is latitude, comma, longitude."
+    },
+    {
+        "timestamp": "01:04:26",
+        "content": "So I can make this as precise as I'd like. But what I want this method to do is to potentially, if the user does give me a set of latitude longitude points that they actually went through"
+    },
+    {
+        "timestamp": "01:04:30",
+        "content": "to calculate the calories burned based on a class variable called calories per kilometer."
+    },
+    {
+        "timestamp": "01:04:49",
+        "content": "Right. So given a set of these points, what I'd like to do is to calculate the total kilometers traveled between all of these latitude, longitude points multiplied that distance, those that kilometer distance by the calories per kilometer and use that as the estimate for the calories burned in this particular run workout."
+    },
+    {
+        "timestamp": "01:04:59",
+        "content": "So this is how the code achieves that. So I've got another class variable that's only specific to this run workout."
+    },
+    {
+        "timestamp": "01:05:06",
+        "content": "So workout does not know about this. Calories per kilometer is 100 and now I've got my own get calories method here."
+    },
+    {
+        "timestamp": "01:05:13",
+        "content": "It's overridden. So if we run this get calories on a run workout, it will use this one."
+    },
+    {
+        "timestamp": "01:05:20",
+        "content": "And what does it do well? If we don't give it any points, if we don't give it a list of tuples there, python will default to the else."
+    },
+    {
+        "timestamp": "01:05:30",
+        "content": "What does the office do? Well, it says, hey, who's your parent?"
+    },
+    {
+        "timestamp": "01:05:34",
+        "content": "Run their get calories method. So that's just estimating it based on the total time elapsed in this workout."
+    },
+    {
+        "timestamp": "01:05:42",
+        "content": "Right. That's our default parent."
+    },
+    {
+        "timestamp": "01:05:54",
+        "content": "But if the user got fancy and gave us a bunch of tuples representing latitude and longitude points for all of their workouts, then we're going to do the following stuff. We're going to iterate through all of these pairs of GPS points, right?"
+    },
+    {
+        "timestamp": "01:06:02",
+        "content": "Pair by pair. We're going to calculate the distance."
+    },
+    {
+        "timestamp": "01:06:14",
+        "content": "Right. Given this latitude, longitude, value, add on to this running total for the total distance pass, total distance ran and then return that total distance multiplied by this data attribute."
+    },
+    {
+        "timestamp": "01:06:21",
+        "content": "Oh, sorry. Class variable calories per kilometer. Okay."
+    },
+    {
+        "timestamp": "01:06:26",
+        "content": "So let me show you what this actually looks like, because the only thing that is is sort of still mystifying here is this GPS distance."
+    },
+    {
+        "timestamp": "01:06:37",
+        "content": "And this GPS distance is actually a function."
+    },
+    {
+        "timestamp": "01:06:42",
+        "content": "That's in this lecture helper's file, which is included in today's Python zip file."
+    },
+    {
+        "timestamp": "01:06:50",
+        "content": "And it's just, you know, from the Internet, it's habit."
+    },
+    {
+        "timestamp": "01:06:53",
+        "content": "It's a way to calculate the kilometers. But the kilometer, the distance traveled between two latitude, longitude pairs."
+    },
+    {
+        "timestamp": "01:07:02",
+        "content": "That's all it is. So it does some fancy stuff with signs and cosines and things like that to figure out the distance between these two lat long pairs."
+    },
+    {
+        "timestamp": "01:07:11",
+        "content": "Okay. That's all it is. So we're just running that function nicely down here to help us calculate that total distance."
+    },
+    {
+        "timestamp": "01:07:19",
+        "content": "Right. Beyond that, everything is is pretty simple."
+    },
+    {
+        "timestamp": "01:07:22",
+        "content": "It's just looking at consecutive pairs of these of these two poles."
+    },
+    {
+        "timestamp": "01:07:28",
+        "content": "Right. Getting that distance plus this distance plus distances and then multiplying by the caliper kilometers."
+    },
+    {
+        "timestamp": "01:07:36",
+        "content": "So in the end, what we get is something like this. So here, let me show you."
+    },
+    {
+        "timestamp": "01:07:42",
+        "content": "Here, here are two points latitude, longitude points."
+    },
+    {
+        "timestamp": "01:07:45",
+        "content": "So we've got Boston and Newton. So here I've just got a straight shot, right?"
+    },
+    {
+        "timestamp": "01:07:50",
+        "content": "So not counting, you know, getting very precise with blocks and things like that."
+    },
+    {
+        "timestamp": "01:07:54",
+        "content": "But if I create a running workout here with the start time and time elevation value and now I pass in the route GPS points."
+    },
+    {
+        "timestamp": "01:08:03",
+        "content": "Right. This is another piece to my init method. I forgot to show you that."
+    },
+    {
+        "timestamp": "01:08:08",
+        "content": "Sorry about that. So here's my init method for a run workout."
+    },
+    {
+        "timestamp": "01:08:15",
+        "content": "I skipped that little bit. Last parameter here to actually pass in some points."
+    },
+    {
+        "timestamp": "01:08:23",
+        "content": "And if I actually pass in those GPS points when I run the get calories method, it tells me that I burn this many right."
+    },
+    {
+        "timestamp": "01:08:29",
+        "content": "And it calculates it based on that distance between Boston and New. In the second example here, I don't actually pass the value for the GPS points."
+    },
+    {
+        "timestamp": "01:08:40",
+        "content": "So we're defaulting to just our regular calories function from workout, which is to calculate it based on the start time and the time."
+    },
+    {
+        "timestamp": "01:08:48",
+        "content": "So from 135 to 357. Right. That's why it's a weird not round number of calories."
+    },
+    {
+        "timestamp": "01:08:59",
+        "content": "So I think that's also really cool if I said this this function here."
+    },
+    {
+        "timestamp": "01:09:13",
+        "content": "Okay. So these overwritten methods just to show you sort of for completion sake how this run workout class looks, everything is the same as what we ended up with before, but now I'm going to reimplement my get calories method, right?"
+    },
+    {
+        "timestamp": "01:09:19",
+        "content": "So now run workout knows about a calories method and I've also got this data attribute."
+    },
+    {
+        "timestamp": "01:09:25",
+        "content": "Sorry that's variable. Sorry I was going to mess up this class variable cals per kilometer."
+    },
+    {
+        "timestamp": "01:09:30",
+        "content": "Right. And any run workout instance we'll know about of course the couch per kilometer as well as the cow per hour from our parent."
+    },
+    {
+        "timestamp": "01:09:41",
+        "content": "Questions about that. Okay."
+    },
+    {
+        "timestamp": "01:09:47",
+        "content": "We're building something really nice here. Right?"
+    },
+    {
+        "timestamp": "01:09:49",
+        "content": "So I guess the question is, and I think you've probably figured this out, how do you know which method to call?"
+    },
+    {
+        "timestamp": "01:09:56",
+        "content": "Well, you just look at the object before the dot, right?"
+    },
+    {
+        "timestamp": "01:10:01",
+        "content": "You run the method, your object method name."
+    },
+    {
+        "timestamp": "01:10:05",
+        "content": "What's the thing before the dot? What is its type?"
+    },
+    {
+        "timestamp": "01:10:08",
+        "content": "If the type like, for example, get calories, if the type is running, you look to see if that class definition has a get calories method."
+    },
+    {
+        "timestamp": "01:10:17",
+        "content": "If it does, you use that. If it doesn't and only if it doesn't."
+    },
+    {
+        "timestamp": "01:10:22",
+        "content": "You look at your parent and say, does your parent have a get calories method?"
+    },
+    {
+        "timestamp": "01:10:26",
+        "content": "If it does, you use that. And if it doesn't, you look at the parents parent."
+    },
+    {
+        "timestamp": "01:10:31",
+        "content": "Does the parents parent have a get calories? Calories match, right?"
+    },
+    {
+        "timestamp": "01:10:35",
+        "content": "If it does use that, if it doesn't, you look at the parents. Parents parent all the way up."
+    },
+    {
+        "timestamp": "01:10:39",
+        "content": "You keep going all the way up the chain until you get to the generic python object."
+    },
+    {
+        "timestamp": "01:10:43",
+        "content": "If the python object type has a function or method named what you'd like to call you use that otherwise error."
+    },
+    {
+        "timestamp": "01:10:51",
+        "content": "Right? No such method was found anywhere within our chain of hierarchies up until the python object."
+    },
+    {
+        "timestamp": "01:10:59",
+        "content": "All right. So that's finishes overwriting our get calories method."
+    },
+    {
+        "timestamp": "01:11:14",
+        "content": "And now we're going to do one more thing which is to add something new to run workout that didn't actually exist in in workout, although I guess I am implementing it in workout. So it's not actually adding new, but we're going to override it anyway."
+    },
+    {
+        "timestamp": "01:11:22",
+        "content": "So the class workout, let's say that we want to compare two workouts together."
+    },
+    {
+        "timestamp": "01:11:29",
+        "content": "So to do that, we're going to implement the Dunder method."
+    },
+    {
+        "timestamp": "01:11:34",
+        "content": "Double underscore. E q double underscore."
+    },
+    {
+        "timestamp": "01:11:36",
+        "content": "This will allow us to compare two running workout objects or two workout objects or running and workout objects using the double equal sign, right?"
+    },
+    {
+        "timestamp": "01:11:45",
+        "content": "So w1x equal run w two or whatever."
+    },
+    {
+        "timestamp": "01:11:49",
+        "content": "Right. So we can use the double equal sign to compare objects of our type."
+    },
+    {
+        "timestamp": "01:12:03",
+        "content": "So again, my decision for comparing these objects types for comparing these two objects work out objects is to say, well, first, let's compare the types."
+    },
+    {
+        "timestamp": "01:12:07",
+        "content": "So if I'm comparing a workout versus a running workout right off the bat, they're not going to be equal."
+    },
+    {
+        "timestamp": "01:12:14",
+        "content": "Right. So first of all, the type of this object should be the same. So I should be comparing workouts with workouts."
+    },
+    {
+        "timestamp": "01:12:19",
+        "content": "Running workouts with running workouts or swims with swims. And I also want every one of the other data attributes to be the same, right?"
+    },
+    {
+        "timestamp": "01:12:29",
+        "content": "So the start, time and times, the kind and the get calories."
+    },
+    {
+        "timestamp": "01:12:34",
+        "content": "So as long as all of these things are the same, I'm going to say that these workouts are the same or equivalent."
+    },
+    {
+        "timestamp": "01:12:42",
+        "content": "So this is the equal method in my workout and then in my class workout I can actually override that method."
+    },
+    {
+        "timestamp": "01:12:51",
+        "content": "So this should actually be an override, right?"
+    },
+    {
+        "timestamp": "01:12:56",
+        "content": "Just like the other one. And in run workout, I'm going to override the equal method, but I'm going to do it in a very modular python like way."
+    },
+    {
+        "timestamp": "01:13:09",
+        "content": "I'm going to say that a run workout is going to be the same."
+    },
+    {
+        "timestamp": "01:13:14",
+        "content": "As another workout if."
+    },
+    {
+        "timestamp": "01:13:19",
+        "content": "Everything in my parent is the same. So here I'm just calling the super method, right?"
+    },
+    {
+        "timestamp": "01:13:27",
+        "content": "Saying workout dot. Double underscore equal, double underscore other."
+    },
+    {
+        "timestamp": "01:13:31",
+        "content": "So with this little bit here, right this line here, just the super dot, double the score equal to most other."
+    },
+    {
+        "timestamp": "01:13:39",
+        "content": "This compares all of these things."
+    },
+    {
+        "timestamp": "01:13:44",
+        "content": "So I don't need to rewrite that in the EC2 method of run workout."
+    },
+    {
+        "timestamp": "01:13:49",
+        "content": "And I can clearly see what else in addition to regular workout comparison I need to have happen for them to be equal."
+    },
+    {
+        "timestamp": "01:13:58",
+        "content": "I also want the elevations to be equal."
+    },
+    {
+        "timestamp": "01:14:01",
+        "content": "Right? That's the other data attribute. Right."
+    },
+    {
+        "timestamp": "01:14:06",
+        "content": "So you can see now how nicely modular this code looks."
+    },
+    {
+        "timestamp": "01:14:09",
+        "content": "Right. It's very clear what differentiates a run workout to a regular workout."
+    },
+    {
+        "timestamp": "01:14:14",
+        "content": "Right. What this looks like. Questions about this."
+    },
+    {
+        "timestamp": "01:14:22",
+        "content": "Okay. Yeah, exactly."
+    },
+    {
+        "timestamp": "01:14:27",
+        "content": "Yeah. So this this should all be on one line, right?"
+    },
+    {
+        "timestamp": "01:14:32",
+        "content": "But the backslash actually just breaks up the line into multiple lines for visibility."
+    },
+    {
+        "timestamp": "01:14:39",
+        "content": "So in the code, here's a bunch of workouts, right?"
+    },
+    {
+        "timestamp": "01:14:44",
+        "content": "And I mean, we can run some of them, but you can see why they're true or false."
+    },
+    {
+        "timestamp": "01:14:48",
+        "content": "So here W one and w two are not the same because the calories are burned are different."
+    },
+    {
+        "timestamp": "01:14:57",
+        "content": "Right. They're both regular workouts. They're both have the same starting ten times, but the calories burned are different."
+    },
+    {
+        "timestamp": "01:15:02",
+        "content": "So this prints false, right. Just equality on these workouts."
+    },
+    {
+        "timestamp": "01:15:09",
+        "content": "Right. And then here's a true one, right? W two is equivalent to w three because the start and end times are the same."
+    },
+    {
+        "timestamp": "01:15:17",
+        "content": "The length of the is the same. Right. And the calories burned are the same."
+    },
+    {
+        "timestamp": "01:15:20",
+        "content": "W one. W three. W2 and W3 have this to."
+    },
+    {
+        "timestamp": "01:15:26",
+        "content": "Right. This one just used the default value, but that default calculated values was calculated to be 100 because it's a 30 minute workout anyway."
+    },
+    {
+        "timestamp": "01:15:36",
+        "content": "Right. So you can go through some of the other ones on your own."
+    },
+    {
+        "timestamp": "01:15:44",
+        "content": "I guess the other interesting one is this w one with RW one."
+    },
+    {
+        "timestamp": "01:15:48",
+        "content": "Everything about this is the same. Calories burned, right?"
+    },
+    {
+        "timestamp": "01:15:53",
+        "content": "Everything is the same except for the fact that they are different kinds of workouts."
+    },
+    {
+        "timestamp": "01:15:58",
+        "content": "One is a run. One is a regular. So I run that."
+    },
+    {
+        "timestamp": "01:16:01",
+        "content": "That's folks. Other questions or any questions?"
+    },
+    {
+        "timestamp": "01:16:13",
+        "content": "Okay. So last slide, this is the last lecture on object oriented programing."
+    },
+    {
+        "timestamp": "01:16:24",
+        "content": "Hopefully it gave you an idea for how to create your own objects."
+    },
+    {
+        "timestamp": "01:16:27",
+        "content": "And this last example specifically showed how we can just improve it a little bit at a time to make it be this really cool thing, right?"
+    },
+    {
+        "timestamp": "01:16:36",
+        "content": "We added a way to estimate calories. We added a way to estimate calories using G.P.S. points."
+    },
+    {
+        "timestamp": "01:16:42",
+        "content": "And we just did it incrementally. Right. So you don't want to do that right off the bat, just right a little bit at a time."
+    },
+    {
+        "timestamp": "01:16:47",
+        "content": "And in the end, you can write a really cool object type."
+    },
+    {
+        "timestamp": "01:16:52",
+        "content": "Now that you know how to create your own object types, you can create objects using other objects, right?"
+    },
+    {
+        "timestamp": "01:16:59",
+        "content": "So some of the data attributes for something more complex could be a workout object, right?"
+    },
+    {
+        "timestamp": "01:17:05",
+        "content": "Or something like that. But it's it's possible to overdo it, right?"
+    },
+    {
+        "timestamp": "01:17:09",
+        "content": "Especially now that we're not writing super complex classes, it's possible to overengineered, right?"
+    },
+    {
+        "timestamp": "01:17:22",
+        "content": "And when you overengineered, it becomes kind of annoying to just keep scrolling back and forth right to this init, to that in it, to figure out, you know, what methods were in this when this class, what methods were in the other class."
+    },
+    {
+        "timestamp": "01:17:36",
+        "content": "And so if you know, if you can achieve it using just one, one object type or maybe just a function, no need to create your own, you know, all these complicated object types that build upon object types."
+    },
+    {
+        "timestamp": "01:17:41",
+        "content": "But I just wanted to show you that it is possible, especially as you might be building more complex things in future classes, things like that."
+    },
+    {
+        "timestamp": "01:17:51",
+        "content": "It is possible to write really complex classes that don't look so bad, right?"
+    },
+    {
+        "timestamp": "01:17:56",
+        "content": "Because you're building upon code that you've already written, right?"
+    },
+    {
+        "timestamp": "01:18:03",
+        "content": "So now we've got these ideas of abstraction, modularity, information, hiding that all work together to help you achieve this really cool, cool object or cool class or cool program."
+    },
+    {
+        "timestamp": "01:18:12",
+        "content": "Okay. So the next lecture, that's the next set of lectures."
+    },
+    {
+        "timestamp": "01:18:16",
+        "content": "We're going to leave programing for a little bit and we're going to look at figuring out how to write"
+    },
+    {
+        "timestamp": "01:18:23",
+        "content": "efficient programs and how to figure out whether our programs are efficient or not and and things like that."
+    },
+    {
+        "timestamp": "01:18:31",
+        "content": "So we're going to go into a more theoretical side of, of computer science, but."
+    }
+]

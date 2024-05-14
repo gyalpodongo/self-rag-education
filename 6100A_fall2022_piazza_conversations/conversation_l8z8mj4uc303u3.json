@@ -1,0 +1,9 @@
+[
+    {
+        "content": "<p>Hi!</p>\n<p>I can see the autograder results for pset 3 are out but it looks like the final 8 tests on my submission took longer than 4 seconds to run and so were terminated by the autograder. That portion of my code does take a while to run, but it does run to completion and passed the test cases we were given. Do the tests need to run in under 4 seconds to count for points?</p>",
+        "type": "question",
+        "created": "2022-10-08T01:28:29.022Z",
+        "subject": "Pset 3 Autograder Question",
+        "_id": "l8z8mj4uc303u3"
+    }
+]

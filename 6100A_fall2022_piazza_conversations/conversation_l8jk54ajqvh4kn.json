@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Does Python have short-circuit evaluation, or will all expressions in a conditional statement be evaluated?</p>\n<p></p>\n<p>For instance, would this if statement ever result in an exception, namely the divide by zero error? Or would it short circuit before this could ever happen?\u00a0</p>\n<p></p>\n<p>if b &gt; 0 and a/b == c:\u00a0</p>\n<p>...</p>\n<p></p>\n<p>(assuming a, b, and c were assigned values previously in the program)</p>\n<p></p>",
+        "type": "question",
+        "created": "2022-09-27T02:06:33.211Z",
+        "subject": "Does Python have Short-Circuit evaluation?",
+        "_id": "l8jk54ajqvh4kn"
+    },
+    {
+        "content": "<p>You can try it yourself in the console! When I ran your example, this is what happened:</p>\n<p></p>\n<pre>\n&gt;&gt; b = 0\n&gt;&gt; b &gt; 0 and 10/b == 0\nFalse</pre>\n<p></p>\n<p>Does this answer your question? If the first statement of the and is evaluated to False, python will not attempt to evaluate the following statement</p>",
+        "type": "i_answer",
+        "created": "2022-09-27T04:01:19.259Z",
+        "_id": "l8jk54ajqvh4kn"
+    }
+]

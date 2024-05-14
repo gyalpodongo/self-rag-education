@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<md>Office Hour Times\n===============\n\nOn the 6.100A/B website, it says that office hour times are marked down on the main course site. Is this not the main course website? I checked canvas, and did not find any office hour time listings there either. Where can I find this information?</md>",
+        "type": "question",
+        "created": "2022-10-02T13:49:16.037Z",
+        "subject": "Office Hour Times",
+        "_id": "l8reg2o5wlk5kf"
+    },
+    {
+        "content": "<md>https://sicp-s1.mit.edu/fall22 should have the Office Hours information on the main page under \"Office Hours.\" \n\nThis is the information on the site, which is the main course site.\n\nIn-person in 38-370 and on Zoom (get a spot via the\u00a0[Help Queue](https://sicp-s1.mit.edu/fall22/queue))  \n**No OH during lecture hours**  \nOH start Thursday the first week of classes  \nMonday-Thursday: 9am-9pm  \nFriday 9am-5pm</md>",
+        "type": "i_answer",
+        "created": "2022-10-02T16:18:17.155Z",
+        "_id": "l8reg2o5wlk5kf"
+    }
+]

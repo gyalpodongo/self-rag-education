@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>How do you see the detailed results for the autograder for PSETs/ microquizzes? I am getting significantly worse scores on the actual autograder than I am for the PSET tester or microquiz autograder while I am taking it, and want to see where I am actually going wrong.</p>",
+        "type": "question",
+        "created": "2022-10-02T16:13:15.503Z",
+        "subject": "pset/microquiz scores",
+        "_id": "l8rjl8xba4w2pp"
+    },
+    {
+        "content": "We do not reveal autograder results directly to students. I would recommend going to OH and asking a TA for help on how you could improve your code",
+        "type": "i_answer",
+        "created": "2022-10-08T12:21:19.465Z",
+        "_id": "l8rjl8xba4w2pp"
+    }
+]

@@ -1,0 +1,21 @@
+[
+    {
+        "content": "If for loops were removed from Python, why it would still be Turing complete? Is this because for loops can sort of be rewritten using while loops (although it can be tricky to do)?",
+        "type": "question",
+        "created": "2022-09-18T19:55:50.957Z",
+        "subject": "Post-quiz question- Turing complete",
+        "_id": "l87rdkq52ka5mv"
+    },
+    {
+        "content": "<p>yeah exactly -- any for loop can be converted to a while loop</p>",
+        "type": "i_answer",
+        "created": "2022-09-18T20:42:52.225Z",
+        "_id": "l87rdkq52ka5mv"
+    },
+    {
+        "content": "I believe for loops are not tricky to replace with while loops, rather it is while loops that are hard to replace with for loops.",
+        "type": "s_answer",
+        "created": "2022-09-19T01:55:57.143Z",
+        "_id": "l87rdkq52ka5mv"
+    }
+]

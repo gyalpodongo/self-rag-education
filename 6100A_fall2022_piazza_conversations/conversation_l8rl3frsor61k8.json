@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi,</p>\n<p>I would like some clarification about calculating term frequency. Is it the number of times a word appears in a document divided by the total number of words? Or do I need to divide by the number of unique words (and ignore those words&#39; frequencies)?</p>\n<p>Thank you in advance!</p>",
+        "type": "question",
+        "created": "2022-10-02T16:55:23.800Z",
+        "subject": "Clarification about Term Frequency",
+        "_id": "l8rl3frsor61k8"
+    },
+    {
+        "content": "<md>It would be number of times a word appears in the document divided by the total number of words in the document. \n\nThe total number of words in the document means just tally up all words, not just unique ones.</md>",
+        "type": "i_answer",
+        "created": "2022-10-02T17:02:12.007Z",
+        "_id": "l8rl3frsor61k8"
+    }
+]

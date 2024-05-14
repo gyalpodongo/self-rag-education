@@ -1,0 +1,1574 @@
+[
+    {
+        "timestamp": "00:00:45",
+        "content": "EXCEPTIONS, ASSERTIONS"
+    },
+    {
+        "timestamp": "00:01:12",
+        "content": "UNEXPECTED CONDITIONS"
+    },
+    {
+        "timestamp": "00:02:24",
+        "content": "HANDLING EXCEPTIONS"
+    },
+    {
+        "timestamp": "00:10:36",
+        "content": "USER INPUT CAN LEAD TO EXCEPTIONS"
+    },
+    {
+        "timestamp": "00:12:45",
+        "content": "HANDLING SPECIFIC EXCEPTIONS"
+    },
+    {
+        "timestamp": "00:16:42",
+        "content": "OTHER BLOCKS ASSOCIATED WITH A TRY BLOCK"
+    },
+    {
+        "timestamp": "00:17:27",
+        "content": "WHAT TO DO WITH EXCEPTIONS?"
+    },
+    {
+        "timestamp": "00:17:45",
+        "content": "Nice to know these exist, class"
+    },
+    {
+        "timestamp": "00:20:30",
+        "content": "EXAMPLE with SOMETHING YOU'VE ALREADY SEEN"
+    },
+    {
+        "timestamp": "00:22:00",
+        "content": "YOU TRY IT!"
+    },
+    {
+        "timestamp": "00:27:57",
+        "content": "ASSERTIONS: DEFENSIVE PROGRAMMING TOOL"
+    },
+    {
+        "timestamp": "00:33:57",
+        "content": "LONGER EXAMPLE OF EXCEPTIONS and ASSERTIONS"
+    },
+    {
+        "timestamp": "00:36:00",
+        "content": "EXAMPLE"
+    },
+    {
+        "timestamp": "00:37:36",
+        "content": "ERROR IF NO GRADE FOR A STUDENT"
+    },
+    {
+        "timestamp": "00:38:00",
+        "content": "OPTION 1: FLAG THE ERROR BY PRINTING A MESSAGE"
+    },
+    {
+        "timestamp": "00:39:39",
+        "content": "OPTION 2: CHANGE THE POLICY"
+    },
+    {
+        "timestamp": "00:40:06",
+        "content": "OPTION 3: HALT EXECUTION IF ASSERT IS NOT MET"
+    },
+    {
+        "timestamp": "00:42:39",
+        "content": "ocw.mit.edu"
+    },
+    {
+        "timestamp": "00:00:01",
+        "content": "All right. Welcome, everyone. So in case you missed last lecture, I've got some extra debugging."
+    },
+    {
+        "timestamp": "00:00:07",
+        "content": "Debugging ducks that were left over from Last Lecture's debugging lecture."
+    },
+    {
+        "timestamp": "00:00:14",
+        "content": "Please take them home. I don't want to have to take them back to my office and then bring them back so many times."
+    },
+    {
+        "timestamp": "00:00:19",
+        "content": "So please give them a good home if you find them useful in your debugging strategy."
+    },
+    {
+        "timestamp": "00:00:27",
+        "content": "Throughout your programing careers, I suggest you upgrade to carrying a debugging duct with you everywhere."
+    },
+    {
+        "timestamp": "00:00:34",
+        "content": "As I have on my phone. I use it in my day to day life. So that's just the next step beyond an actual duck."
+    },
+    {
+        "timestamp": "00:00:42",
+        "content": "All right. So let's get started on today's lecture. We will be going over the idea of exceptions and assertions."
+    },
+    {
+        "timestamp": "00:00:51",
+        "content": "And these are basically those scary red errors that we get when our program crashes."
+    },
+    {
+        "timestamp": "00:00:59",
+        "content": "Okay."
+    },
+    {
+        "timestamp": "00:00:59",
+        "content": "Today's lecture will hopefully shed some light on exactly what these exceptions are and how we can actually use them to our advantage in our code."
+    },
+    {
+        "timestamp": "00:01:07",
+        "content": "So let's start by talking about exceptions."
+    },
+    {
+        "timestamp": "00:01:12",
+        "content": "So when you run your code, usually it runs without and without error, produces the right output all the time like mine does."
+    },
+    {
+        "timestamp": "00:01:20",
+        "content": "But sometimes it so happens that your code hits an unexpected condition."
+    },
+    {
+        "timestamp": "00:01:27",
+        "content": "And when that unexpected condition is run, you get an exception to something that was expected."
+    },
+    {
+        "timestamp": "00:01:34",
+        "content": "So we've already seen a bunch of different exception examples."
+    },
+    {
+        "timestamp": "00:01:38",
+        "content": "So we talk even talked about a couple of these last lecture."
+    },
+    {
+        "timestamp": "00:01:41",
+        "content": "So we've got index errors where you index too far into some list type errors where you're doing funky things with types that Python doesn't like."
+    },
+    {
+        "timestamp": "00:01:49",
+        "content": "Syntax errors are also exceptions. Name errors are also exceptions."
+    },
+    {
+        "timestamp": "00:01:53",
+        "content": "So a bunch of these errors that we've encountered are types of exceptions."
+    },
+    {
+        "timestamp": "00:01:58",
+        "content": "So it turns out so far in our programing experience that whenever we get an exception, the program immediately crashes."
+    },
+    {
+        "timestamp": "00:02:07",
+        "content": "And really we don't have any way to handle these exceptions."
+    },
+    {
+        "timestamp": "00:02:11",
+        "content": "We just accept the fact that it crashed and we go back to the debugging board."
+    },
+    {
+        "timestamp": "00:02:16",
+        "content": "But it turns out that in Python we can actually write code to handle these exceptions."
+    },
+    {
+        "timestamp": "00:02:35",
+        "content": "So if your code does happen to throw an exception so an error occurs or something unexpected happens, you can write code that deals with that situation and either decides to ignore the fact that an error occurred, set some default values, or just let the or just raise your own exception and move on."
+    },
+    {
+        "timestamp": "00:02:42",
+        "content": "So we're going to see a bunch of examples of these of these cases."
+    },
+    {
+        "timestamp": "00:02:47",
+        "content": "So the way that we deal with exceptions is using some code blocks."
+    },
+    {
+        "timestamp": "00:02:52",
+        "content": "Okay. The way that we handle exceptions is using these try and accept blocks."
+    },
+    {
+        "timestamp": "00:02:57",
+        "content": "So the way that we write. An exception handler is to put some potentially problematic code inside this try."
+    },
+    {
+        "timestamp": "00:03:08",
+        "content": "BLOCK So the try is a keyword in Python. So obviously you can't name a variable try or anything like that."
+    },
+    {
+        "timestamp": "00:03:15",
+        "content": "If you type it in your code, you'll see it turns blue and try tells Python that you're starting a code block that contains some lines of code you'd like Python to execute."
+    },
+    {
+        "timestamp": "00:03:32",
+        "content": "So just normal code. If Python is able to successfully execute these lines of code without an exception being raised, so without the program crashing, then nothing happens."
+    },
+    {
+        "timestamp": "00:03:35",
+        "content": "Nothing is run inside this except block."
+    },
+    {
+        "timestamp": "00:03:39",
+        "content": "And the code just continues as normal. But if it so happens that in that code that you ran."
+    },
+    {
+        "timestamp": "00:03:46",
+        "content": "Something strange has happened. And the code would have crashed."
+    },
+    {
+        "timestamp": "00:03:51",
+        "content": "The code actually doesn't crash because we can catch the exception that gets raised inside this accept block."
+    },
+    {
+        "timestamp": "00:03:59",
+        "content": "So if we have an associated accept block. Over here to a tribe block from here."
+    },
+    {
+        "timestamp": "00:04:05",
+        "content": "Pythons is going to try to run this potentially problematic code."
+    },
+    {
+        "timestamp": "00:04:08",
+        "content": "And if an exception is raised, it will stop running any further lines inside the try block and immediately hop to the"
+    },
+    {
+        "timestamp": "00:04:16",
+        "content": "lines in the accept block and the lines in the accept block will then get executed."
+    },
+    {
+        "timestamp": "00:04:21",
+        "content": "Okay. So to just kind of draw a parallel to if I were to kind of say this in terms of if an LS"
+    },
+    {
+        "timestamp": "00:04:29",
+        "content": "the way that I would describe the try and accept blocks is I would say if and then I"
+    },
+    {
+        "timestamp": "00:04:35",
+        "content": "would put all the potentially problematic lines of code that I'd like to write inside"
+    },
+    {
+        "timestamp": "00:04:45",
+        "content": "this condition for the if and if all of these lines of code manage to successfully run, then nothing else happens."
+    },
+    {
+        "timestamp": "00:04:47",
+        "content": "The inside of this, if is essentially just a pass and we don't execute the LS and then we just carry on with the rest of our lives."
+    },
+    {
+        "timestamp": "00:05:01",
+        "content": "But if there is some line of code here that we're trying to run that crashes or that causes the program to crash, Python will say, No, I'm not going to crash just yet."
+    },
+    {
+        "timestamp": "00:05:04",
+        "content": "Let me see what the code would like me to do. And so we'd hop inside this ls and then we'd do something to handle the problem."
+    },
+    {
+        "timestamp": "00:05:10",
+        "content": "And the something we do is inside this accept block So again, this is not code we'd ever write."
+    },
+    {
+        "timestamp": "00:05:16",
+        "content": "It's just kind of a way to draw a parallel with what we know so far."
+    },
+    {
+        "timestamp": "00:05:20",
+        "content": "The code that we would write is this Try a bunch of code, except do something you'd like to do."
+    },
+    {
+        "timestamp": "00:05:27",
+        "content": "Do some lines of code if an error should come up in the try block."
+    },
+    {
+        "timestamp": "00:05:32",
+        "content": "So let's look at some examples with code that you should be able to write at this point in the course."
+    },
+    {
+        "timestamp": "00:05:37",
+        "content": "So we have some code on the left here. It's a function called some digits, and we're writing this code without any exceptions."
+    },
+    {
+        "timestamp": "00:05:47",
+        "content": "Okay. We're just writing it as if you were given this code on a quiz, what would be one solution?"
+    },
+    {
+        "timestamp": "00:05:54",
+        "content": "So this some digits takes in a string s. And we say it's not empty containing some digits."
+    },
+    {
+        "timestamp": "00:06:00",
+        "content": "And I want to return the sum of all the characters that are digits."
+    },
+    {
+        "timestamp": "00:06:03",
+        "content": "So I don't actually say anything about whether the string is contains non digit characters, but let's write it in a robust way anyway."
+    },
+    {
+        "timestamp": "00:06:13",
+        "content": "So we'd have a loop that goes through every character in that string."
+    },
+    {
+        "timestamp": "00:06:20",
+        "content": "S And I'm using this in keyword here, this nice little trick here that says if that character so whatever character it may be is inside one of these is inside this string of digits."
+    },
+    {
+        "timestamp": "00:06:30",
+        "content": "Then. I know it's a number. Sorry. I know it's a digit and I'm going to cast that digits 039, whatever it may be to an integer."
+    },
+    {
+        "timestamp": "00:06:39",
+        "content": "Add it to my running total and then that loop does its thing until it's done and then I return the total."
+    },
+    {
+        "timestamp": "00:06:46",
+        "content": "So in terms of running the code. This is just as I have it on the slides."
+    },
+    {
+        "timestamp": "00:06:52",
+        "content": "So here, if the user gives me the string, one, two, three, I'm going to some one plus two plus three."
+    },
+    {
+        "timestamp": "00:07:13",
+        "content": "Six. Perfect. And if the user gives me one, two, three, and then some random characters that I know I can't add, Python will still I will still be able to evaluate it because that if statement will not be run right for A, B, and C, we don't go inside the F, so there's no need to cast anything."
+    },
+    {
+        "timestamp": "00:07:17",
+        "content": "Right. So the code still works."
+    },
+    {
+        "timestamp": "00:07:20",
+        "content": "If I didn't have this, if here if I decided to just cast to an end every single thing that comes my way, the first line of code will still work."
+    },
+    {
+        "timestamp": "00:07:29",
+        "content": "But the second line of code will throw an exception."
+    },
+    {
+        "timestamp": "00:07:33",
+        "content": "You see, I have on the right hand side my scary red text that says value error invalid literal four int with base ten a."
+    },
+    {
+        "timestamp": "00:07:43",
+        "content": "Kind of. Hard to parse, but after you've seen a bunch of these, you figure out that there's something going on with my types."
+    },
+    {
+        "timestamp": "00:07:52",
+        "content": "And then I'm trying to cast, you know, I'm trying to cast to an integer the size of the string."
+    },
+    {
+        "timestamp": "00:07:59",
+        "content": "And obviously it doesn't know how to do that. So that's the potentially problematic line, right?"
+    },
+    {
+        "timestamp": "00:08:04",
+        "content": "Casting to an integer. So let's try to write the same code, except that now we'll do it with exception handling."
+    },
+    {
+        "timestamp": "00:08:12",
+        "content": "Okay, so a bunch of it is going to be the same. What we're going to change is the potentially problematic code."
+    },
+    {
+        "timestamp": "00:08:20",
+        "content": "Is this these two lines here? Right. I don't need the if any more."
+    },
+    {
+        "timestamp": "00:08:27",
+        "content": "Instead, I'm going to just assume I can cast every single character to an integer, and I'm going to try to do that."
+    },
+    {
+        "timestamp": "00:08:34",
+        "content": "So I'm going to try to cast every single character to an integer and and then add it to my running total."
+    },
+    {
+        "timestamp": "00:08:44",
+        "content": "Most of the time that's going to work if the input is a digit."
+    },
+    {
+        "timestamp": "00:08:47",
+        "content": "But sometimes the users give me something that's non digit."
+    },
+    {
+        "timestamp": "00:08:52",
+        "content": "In that case, you saw what happens. The code throws a value error."
+    },
+    {
+        "timestamp": "00:08:56",
+        "content": "So if we didn't have the accept block nor the tree block, the code crashes immediately."
+    },
+    {
+        "timestamp": "00:09:01",
+        "content": "No answer is even given. But with the accept block, python will say oh, in this particular for loop run, I had an exception raised."
+    },
+    {
+        "timestamp": "00:09:12",
+        "content": "So I'm going to execute whatever's inside the accept block and the accept block says print"
+    },
+    {
+        "timestamp": "00:09:17",
+        "content": "can't convert and then the character that it couldn't convert that time through the loop."
+    },
+    {
+        "timestamp": "00:09:23",
+        "content": "And then that loop iteration is done and it goes on to the next character in the sequence."
+    },
+    {
+        "timestamp": "00:09:31",
+        "content": "So let's run the code. And this is the same digits with the except."
+    },
+    {
+        "timestamp": "00:09:37",
+        "content": "So here I've got the user giving me perfectly fine input."
+    },
+    {
+        "timestamp": "00:09:42",
+        "content": "No exceptions were raised. The code worked well. If the user gives me some characters with in there, the loops go through."
+    },
+    {
+        "timestamp": "00:09:50",
+        "content": "It adds one plus two plus three. But then when it tries to cast to an integer the a."
+    },
+    {
+        "timestamp": "00:09:57",
+        "content": "Over here. Right. As the iteration goes to eight, it's going to say this raises a value error, as we just saw."
+    },
+    {
+        "timestamp": "00:10:05",
+        "content": "And I'm going to execute whatever's inside the accept block so prints couldn't convert character there it is."
+    },
+    {
+        "timestamp": "00:10:10",
+        "content": "And then I actually gave the user the character it couldn't convert."
+    },
+    {
+        "timestamp": "00:10:13",
+        "content": "It goes on to the next iteration, the next character in the sequence, the B again tries to convert B it can't cast it to an integer."
+    },
+    {
+        "timestamp": "00:10:21",
+        "content": "So we print couldn't convert B And then lastly, the same with the C."
+    },
+    {
+        "timestamp": "00:10:27",
+        "content": "Does that make sense? All right. So far, so kind of like a little life situation going on here."
+    },
+    {
+        "timestamp": "00:10:36",
+        "content": "Nice places to put try accept blocks are when you're dealing with user input because"
+    },
+    {
+        "timestamp": "00:10:47",
+        "content": "the users when they give you some inputs right for you using the actual input command, they're very unpredictable."
+    },
+    {
+        "timestamp": "00:10:49",
+        "content": "We don't know what kinds of things they'll give you, even though you give them clear instructions to tell me one number or tell me another number."
+    },
+    {
+        "timestamp": "00:10:57",
+        "content": "So in this in these three lines of code."
+    },
+    {
+        "timestamp": "00:11:03",
+        "content": "Uh, down here, I've got the user giving me two numbers, and then I print the first one divided by the second one."
+    },
+    {
+        "timestamp": "00:11:12",
+        "content": "So I'm a nice user. I do what I'm told. So I'm going to do five divided by eight."
+    },
+    {
+        "timestamp": "00:11:17",
+        "content": "Perfect. The code runs well."
+    },
+    {
+        "timestamp": "00:11:21",
+        "content": "Let's say somebody else runs the code, and this time they decide they decide to do seven divided by, I don't know, five like that."
+    },
+    {
+        "timestamp": "00:11:30",
+        "content": "Value there. Right. So that's one thing that could go wrong."
+    },
+    {
+        "timestamp": "00:11:34",
+        "content": "The user tries to be funny. And then another thing that could go wrong is, let's say the user gives me a zero for the second number."
+    },
+    {
+        "timestamp": "00:11:44",
+        "content": "So in this case, I get a zero division error. You can see Python doesn't know how to divide by zero, so it raises an exception."
+    },
+    {
+        "timestamp": "00:11:51",
+        "content": "This thing zero division error. So these are this is a case where I'm dealing with potentially problematic inputs."
+    },
+    {
+        "timestamp": "00:11:59",
+        "content": "So I'm going to wrap my potentially problematic lines of code in a try and accept."
+    },
+    {
+        "timestamp": "00:12:04",
+        "content": "BLOCK So I've got those three lines that I'm going to try to do."
+    },
+    {
+        "timestamp": "00:12:07",
+        "content": "And if anything goes wrong, I'm going to I'm going to execute whatever's in the accept block."
+    },
+    {
+        "timestamp": "00:12:12",
+        "content": "And all I do is is say print bug and user input."
+    },
+    {
+        "timestamp": "00:12:16",
+        "content": "Okay. So let's run that. That's this one here."
+    },
+    {
+        "timestamp": "00:12:22",
+        "content": "So here again, proper input works well if the user gives me a letter."
+    },
+    {
+        "timestamp": "00:12:31",
+        "content": "Bug in user input. So a much nicer, friendlier way to crash the program right then value error or whatever it was."
+    },
+    {
+        "timestamp": "00:12:38",
+        "content": "And then again, if the user gives me a zero bug in user input."
+    },
+    {
+        "timestamp": "00:12:43",
+        "content": "Again, much nicer way to crash the program."
+    },
+    {
+        "timestamp": "00:12:48",
+        "content": "So what we can actually do is give specific perhaps have specific behaviors depending on what exceptions are raised."
+    },
+    {
+        "timestamp": "00:12:59",
+        "content": "Right. So maybe I don't want a generic text that says bug in user input for both of those cases."
+    },
+    {
+        "timestamp": "00:13:05",
+        "content": "Right. Maybe if the user divides by zero, I want to give them a different message than if the user gave me a letter."
+    },
+    {
+        "timestamp": "00:13:10",
+        "content": "Right. So in that case, what I can do is I can have different accept blocks for every different error that I know might come up."
+    },
+    {
+        "timestamp": "00:13:20",
+        "content": "Right. So as I'm writing this code, I can think ahead."
+    },
+    {
+        "timestamp": "00:13:24",
+        "content": "Right. And I can try to catch specific errors."
+    },
+    {
+        "timestamp": "00:13:27",
+        "content": "So here I can catch the value error."
+    },
+    {
+        "timestamp": "00:13:31",
+        "content": "So I say accept. And then I say the name of the error that I'd like to catch."
+    },
+    {
+        "timestamp": "00:13:36",
+        "content": "And this block of code, this accept block of code, will be run only if the code in the try block crashes with that specific value error."
+    },
+    {
+        "timestamp": "00:13:47",
+        "content": "Right. And then I can also catch my zero division error down here."
+    },
+    {
+        "timestamp": "00:13:52",
+        "content": "And in this particular case, only this this accept block is only run when the zero division error is raised."
+    },
+    {
+        "timestamp": "00:14:01",
+        "content": "Right. So here in the value error, I'm going to print for the user."
+    },
+    {
+        "timestamp": "00:14:05",
+        "content": "I could not convert to a number. So a more specific error message so they know what's up."
+    },
+    {
+        "timestamp": "00:14:10",
+        "content": "And in a zero division error, I can also flag that there was an issue I can't divide by zero by printing that to the screen."
+    },
+    {
+        "timestamp": "00:14:26",
+        "content": "And then I can say, you know, eight divided by B is infinity. And I can continue the last statement that was supposed to be done in the tri block, A plus B, I can give that the answer to eight plus B, because we can add a 0 to 2 eight."
+    },
+    {
+        "timestamp": "00:14:32",
+        "content": "No problem. The last except locked down here is capturing anything else."
+    },
+    {
+        "timestamp": "00:14:38",
+        "content": "That's not a value area and not a zero division here. So I can't think of anything that could go wrong."
+    },
+    {
+        "timestamp": "00:14:45",
+        "content": "So if we happen to go in here, something went very wrong."
+    },
+    {
+        "timestamp": "00:14:49",
+        "content": "I would say the only thing I can think of is if our computer is almost out of memory and running, this little piece of code pushes it over the edge."
+    },
+    {
+        "timestamp": "00:14:59",
+        "content": "Right? Then the python will probably crash and maybe it'll print that error before completely shutting down the computer or something."
+    },
+    {
+        "timestamp": "00:15:06",
+        "content": "But that. That last one should never really run. So let me show you what happens when we run the code with these specific accept blocks now."
+    },
+    {
+        "timestamp": "00:15:16",
+        "content": "So if the user gives me a perfectly nice input, then the program proceeds as normal."
+    },
+    {
+        "timestamp": "00:15:21",
+        "content": "Every line of code inside the tribe block is executed over here."
+    },
+    {
+        "timestamp": "00:15:25",
+        "content": "None of the accept blocks are executed. The user gives me a letter."
+    },
+    {
+        "timestamp": "00:15:32",
+        "content": "I end the program gracefully with the message could not convert to a number."
+    },
+    {
+        "timestamp": "00:15:36",
+        "content": "So then they know that I caught them. And then the last one is if I try to divide by zero again, I've got the little message, can't divide by zero."
+    },
+    {
+        "timestamp": "00:15:46",
+        "content": "And then I give them their division to be infinity and a plus be a six."
+    },
+    {
+        "timestamp": "00:15:50",
+        "content": "So I do all the lines of code that are caught over here. Question so far."
+    },
+    {
+        "timestamp": "00:15:58",
+        "content": "Seems all right so far. Okay. So really nice ways for us to deal with with exceptions that get raised in our programs."
+    },
+    {
+        "timestamp": "00:16:07",
+        "content": "Now, the the things that I that I've told you that we can associate with a tribe block is an accept block."
+    },
+    {
+        "timestamp": "00:16:14",
+        "content": "Right. So we've done that. Well, we can actually associate a couple other things with tribe blocks and we don't really use them in this class."
+    },
+    {
+        "timestamp": "00:16:27",
+        "content": "But I just thought I'd mention them. So if you have an L block associated with a tribe block, that means the the lines of code inside the block will execute whenever everything inside the tribe block is executed perfectly."
+    },
+    {
+        "timestamp": "00:16:35",
+        "content": "So if everything goes according to plan, whatever you put inside the block will also get executed."
+    },
+    {
+        "timestamp": "00:16:47",
+        "content": "And then you can have a finally block as well. So, you know, just like we have a try and accept, you can also have a finally associated with those and the body of the finally will be executed no matter what if an exception was raised."
+    },
+    {
+        "timestamp": "00:16:53",
+        "content": "You also execute the finally, if the code works perfectly fine without raising and here's the finally also gets executed."
+    },
+    {
+        "timestamp": "00:17:00",
+        "content": "So I gave an example here of of something that you might put in inside the final block."
+    },
+    {
+        "timestamp": "00:17:05",
+        "content": "So sort of cleanup code. So if you're writing code that opens files from the file system, a good idea is to close them before you finish your program."
+    },
+    {
+        "timestamp": "00:17:13",
+        "content": "So that's something that you might want to do inside the finally block. Just close files before shutting down before your program terminates."
+    },
+    {
+        "timestamp": "00:17:23",
+        "content": "Okay. So. I've shown you how to deal with exceptions."
+    },
+    {
+        "timestamp": "00:17:28",
+        "content": "But now what do we do inside the accept blocks?"
+    },
+    {
+        "timestamp": "00:17:31",
+        "content": "Okay, we've done a couple of different things, mostly printing out that something went wrong, but we can do various other things."
+    },
+    {
+        "timestamp": "00:17:39",
+        "content": "One thing, and I don't recommend doing this is to just fail silently."
+    },
+    {
+        "timestamp": "00:17:42",
+        "content": "Certainly we could write code that basically has this question of the last time that you said, Oh, yep, how?"
+    },
+    {
+        "timestamp": "00:17:53",
+        "content": "It's normal. So this is an alias that we associate with a try."
+    },
+    {
+        "timestamp": "00:17:57",
+        "content": "So we would do something like Mm. Else."
+    },
+    {
+        "timestamp": "00:18:01",
+        "content": "And then you would print something here. Success or something."
+    },
+    {
+        "timestamp": "00:18:07",
+        "content": "And then if the code executes perfectly without an error, then you will also print success."
+    },
+    {
+        "timestamp": "00:18:13",
+        "content": "Yeah. So what do we do inside the inside the accept blocks?"
+    },
+    {
+        "timestamp": "00:18:21",
+        "content": "One thing is to fail silently, which means that, well, you could say you could try your entire piece of code, and then you could say accept."
+    },
+    {
+        "timestamp": "00:18:30",
+        "content": "And then the only line you have and accept is maybe a line that says pass."
+    },
+    {
+        "timestamp": "00:18:33",
+        "content": "So that means any error that happens you would catch."
+    },
+    {
+        "timestamp": "00:18:36",
+        "content": "But you do absolutely nothing and let the program continue with a potentially bad value being passed along."
+    },
+    {
+        "timestamp": "00:18:42",
+        "content": "That's not a good idea. You could also silently substitute values that you know might be might be problematic without flagging things happening."
+    },
+    {
+        "timestamp": "00:18:52",
+        "content": "Also, not good ideas. Okay. At the very least, you should flag something to the output that something weird has happened."
+    },
+    {
+        "timestamp": "00:18:59",
+        "content": "Okay, another thing you could do is return some error value so you could have a whole bunch of variables in your code"
+    },
+    {
+        "timestamp": "00:19:06",
+        "content": "that you could set to some values like flags kind of thing whenever your code runs into an exception block."
+    },
+    {
+        "timestamp": "00:19:15",
+        "content": "Right. But the problem with that is that you have to now check for all these values further on in your code."
+    },
+    {
+        "timestamp": "00:19:23",
+        "content": "Right. So now your code becomes overly complicated because you have a whole bunch of extra variables."
+    },
+    {
+        "timestamp": "00:19:27",
+        "content": "You're constantly checking to see if any errors were flagged or something like that happened."
+    },
+    {
+        "timestamp": "00:19:33",
+        "content": "One last thing and this is what I'll show you you can do is to actually still stop the execution."
+    },
+    {
+        "timestamp": "00:19:48",
+        "content": "So much like when we input when we tried to run the the some digits program and it crashed with a value error, we could still make our program crash, but it's on our own terms so we can raise our own value errors or whatever kind of error you'd like to raise with your own custom message."
+    },
+    {
+        "timestamp": "00:20:05",
+        "content": "So the code still crashes, which is fine because maybe you don't want problematic code to move on, but you're basically having a crash with a custom message and a custom error type of being raised."
+    },
+    {
+        "timestamp": "00:20:12",
+        "content": "So this is a keyword in Python you raise your own value error and then the parentheses you put whatever message you'd like to put."
+    },
+    {
+        "timestamp": "00:20:19",
+        "content": "Okay. So here's an example of the some digits where we raise our own exception."
+    },
+    {
+        "timestamp": "00:20:24",
+        "content": "So let's say that indeed we only wanted the user to give us digits and we don't actually want this function"
+    },
+    {
+        "timestamp": "00:20:33",
+        "content": "to keep running and passing along the total if the user ever gave us a string that contains letters."
+    },
+    {
+        "timestamp": "00:20:42",
+        "content": "Right? So in that particular case, I'm going to still put a try block and an accept block around a tri block around the problem a code and accept block to catch any errors."
+    },
+    {
+        "timestamp": "00:20:51",
+        "content": "But now, instead of printing something and letting the code carry on with the loop, we're going to raise a value error."
+    },
+    {
+        "timestamp": "00:21:00",
+        "content": "With our own message. So my message is that the string contained a character."
+    },
+    {
+        "timestamp": "00:21:05",
+        "content": "So if I run this code and it's actually up here, if I run this code with perfectly fine inputs, there's no issue."
+    },
+    {
+        "timestamp": "00:21:14",
+        "content": "Right. We just calculate the total as we want."
+    },
+    {
+        "timestamp": "00:21:18",
+        "content": "But if the user gives us some code, that's some string that does contain extra characters, which maybe we don't actually want to have happen."
+    },
+    {
+        "timestamp": "00:21:27",
+        "content": "You see, I still have a value error, which is the same kind of exception that was raised without the try and accept."
+    },
+    {
+        "timestamp": "00:21:43",
+        "content": "But now the message that I've passed in is string contained a character as opposed to invalid literal for whatever that, you know, that cryptic message was. So this is a much nicer way to to flag or to to stop the stop the program to terminate the program."
+    },
+    {
+        "timestamp": "00:21:55",
+        "content": "But do it on your own terms. So let's have you work on this for a couple of minutes."
+    },
+    {
+        "timestamp": "00:22:02",
+        "content": "You'll raise your own value errors. I'd like you to write this function."
+    },
+    {
+        "timestamp": "00:22:06",
+        "content": "That's called pairwise division. It takes in two lists."
+    },
+    {
+        "timestamp": "00:22:09",
+        "content": "The lists should be not empty. And they're equal lengths. Right."
+    },
+    {
+        "timestamp": "00:22:13",
+        "content": "So, as per this example, here's two lists that are not empty and they're the same length."
+    },
+    {
+        "timestamp": "00:22:28",
+        "content": "And I would like the code to basically go element by element and create a new list where each element is going to be, for example, four divided by one, five divided by two and six divided by three."
+    },
+    {
+        "timestamp": "00:22:32",
+        "content": "So pairwise you do the division, put all those elements in the new list and return that list."
+    },
+    {
+        "timestamp": "00:22:38",
+        "content": "If. The denominator. So the the second parameter passed an ordinance contains any zeros raise a value there."
+    },
+    {
+        "timestamp": "00:22:49",
+        "content": "Okay. So don't let the code crash with the zero division there, but instead raise a value area with a nice message."
+    },
+    {
+        "timestamp": "00:22:56",
+        "content": "So start with just the code to do the task and then add the value error bit at the end."
+    },
+    {
+        "timestamp": "00:23:05",
+        "content": "Okay. Does anyone have a start? How would you like to solve this problem?"
+    },
+    {
+        "timestamp": "00:23:08",
+        "content": "How are you going to write it? Yeah. Yeah."
+    },
+    {
+        "timestamp": "00:23:26",
+        "content": "Sorry, but I guess. I'll numb and I divided by ten arm."
+    },
+    {
+        "timestamp": "00:23:36",
+        "content": "Hi. So we do the division for I in."
+    },
+    {
+        "timestamp": "00:23:50",
+        "content": "So here. What is I? Is it the element or is it an index?"
+    },
+    {
+        "timestamp": "00:23:54",
+        "content": "Yeah. So how do we grab, like, basically number zero through the length of one of these lists?"
+    },
+    {
+        "timestamp": "00:24:02",
+        "content": "If you want to do. 004 Ironman Finland."
+    },
+    {
+        "timestamp": "00:24:09",
+        "content": "Eleanor. Yeah. So we have to do range, remember?"
+    },
+    {
+        "timestamp": "00:24:14",
+        "content": "Yeah. Range. Len. Yep. Yeah."
+    },
+    {
+        "timestamp": "00:24:18",
+        "content": "I think those are my parentheses. That's cool that you did list comprehension right away."
+    },
+    {
+        "timestamp": "00:24:23",
+        "content": "Does anyone want to rewrite this? Using if using a loop."
+    },
+    {
+        "timestamp": "00:24:34",
+        "content": "It's too good for. Yep."
+    },
+    {
+        "timestamp": "00:24:41",
+        "content": "Oh, no. Before I got to."
+    },
+    {
+        "timestamp": "00:24:47",
+        "content": "I'll. So we still want to use the index, right?"
+    },
+    {
+        "timestamp": "00:24:56",
+        "content": "Because if we're looking at the element in aluminum, it's going to be hard for us to grab the same element in DNA."
+    },
+    {
+        "timestamp": "00:25:02",
+        "content": "So let's iterate through the zero, through the range, right?"
+    },
+    {
+        "timestamp": "00:25:08",
+        "content": "So basically what we did up there range, Len, and then pick one of them because they're the same length."
+    },
+    {
+        "timestamp": "00:25:14",
+        "content": "So now let's just to I just so we're not confuse I would say I is zero one, two, three, four."
+    },
+    {
+        "timestamp": "00:25:20",
+        "content": "Right. So now we know this is the index. So with this index in hand, this is the right start."
+    },
+    {
+        "timestamp": "00:25:26",
+        "content": "Right l now I'm at I gives me the element and l them. Divide by l d num exactly at i."
+    },
+    {
+        "timestamp": "00:25:36",
+        "content": "I would say that I. Yeah."
+    },
+    {
+        "timestamp": "00:25:41",
+        "content": "Oh. We can do. Elder penned something like that."
+    },
+    {
+        "timestamp": "00:25:48",
+        "content": "We can't say at our equals that because our URL is."
+    },
+    {
+        "timestamp": "00:25:53",
+        "content": "Not exactly. Yes. Perfect. So we could do like this."
+    },
+    {
+        "timestamp": "00:25:57",
+        "content": "So this is just another way. And then at the end, we can return our variable rate."
+    },
+    {
+        "timestamp": "00:26:08",
+        "content": "Oh. Okay."
+    },
+    {
+        "timestamp": "00:26:11",
+        "content": "So that solves our problem. How do we add the piece where we raise a value?"
+    },
+    {
+        "timestamp": "00:26:15",
+        "content": "So how do you want to check that? There's a. That Denham has a zero."
+    },
+    {
+        "timestamp": "00:26:21",
+        "content": "Because this should hopefully run work with our code without."
+    },
+    {
+        "timestamp": "00:26:27",
+        "content": "Oops, did I do it twice? Sorry. Yes, I did. Let me just comment one of these out."
+    },
+    {
+        "timestamp": "00:26:32",
+        "content": "Oops. There."
+    },
+    {
+        "timestamp": "00:26:37",
+        "content": "So how do I add the piece about valuers? Yes."
+    },
+    {
+        "timestamp": "00:26:43",
+        "content": "And then you? I think so. Yep."
+    },
+    {
+        "timestamp": "00:26:49",
+        "content": "So we can pop this into a try and then accept."
+    },
+    {
+        "timestamp": "00:26:55",
+        "content": "And raise value there. Yep. And with some nice message here."
+    },
+    {
+        "timestamp": "00:27:01",
+        "content": "Nice message. And we can also put the entire for loop under the try."
+    },
+    {
+        "timestamp": "00:27:09",
+        "content": "The code is not very long that it does. It wouldn't make a difference."
+    },
+    {
+        "timestamp": "00:27:13",
+        "content": "Right. So if we try to run it like that now I've got my value error with my nice message."
+    },
+    {
+        "timestamp": "00:27:19",
+        "content": "Another, uh, yeah. Another way we could raise the value there just for completion sake is to say something like you can even raise"
+    },
+    {
+        "timestamp": "00:27:27",
+        "content": "things inside if statements they don't have to be part of accept blocks before we even do anything with the code."
+    },
+    {
+        "timestamp": "00:27:33",
+        "content": "We can say if zero is in lda nam. Ray's value there."
+    },
+    {
+        "timestamp": "00:27:39",
+        "content": "That would also be a fine thing to do. So we can raise valuers wherever we'd like."
+    },
+    {
+        "timestamp": "00:27:49",
+        "content": "So now I'd like to talk a little bit about assertions. So assertions are actually still exceptions that get raised."
+    },
+    {
+        "timestamp": "00:27:56",
+        "content": "They're just a very special type of exceptions that we mostly use as a defensive programing tool."
+    },
+    {
+        "timestamp": "00:28:03",
+        "content": "So assertions are basically used to enforce these contracts that we make between somebody who writes a function and somebody who uses a function."
+    },
+    {
+        "timestamp": "00:28:14",
+        "content": "So that's basically the function dock strings, right?"
+    },
+    {
+        "timestamp": "00:28:17",
+        "content": "When we talked about dock strings, I said that it's very hard for us to enforce the the, the, the text within the dock string."
+    },
+    {
+        "timestamp": "00:28:32",
+        "content": "Right, because it's just the person who's writing the function saying, you know, the input list should not be empty or you know, these, the input to input lists like in the previous example should be the same length and there's no way for us to really enforce that."
+    },
+    {
+        "timestamp": "00:28:39",
+        "content": "It's just something that's nice to have and we're going to guarantee that the code runs if these things are upheld."
+    },
+    {
+        "timestamp": "00:28:45",
+        "content": "But it turns out that assertions are actually a nice way for us to add to a nice thing to"
+    },
+    {
+        "timestamp": "00:28:50",
+        "content": "add to our functions that do try to enforce these this contract through the specification."
+    },
+    {
+        "timestamp": "00:28:57",
+        "content": "So the way we create an assert, we say assert, and I'm asserting that this statement is true."
+    },
+    {
+        "timestamp": "00:29:03",
+        "content": "So if I want that the input length for a function to be non-zero, I would assert that the length L is not equal to zero or something like that."
+    },
+    {
+        "timestamp": "00:29:12",
+        "content": "And if the assertion is true, right, if that condition is met, then the code carries on as normal."
+    },
+    {
+        "timestamp": "00:29:18",
+        "content": "But if the assertion is not true, then Python ends with an assertion error and then some message that the condition was not true."
+    },
+    {
+        "timestamp": "00:29:27",
+        "content": "And these are really nice because it holds the execution of a program."
+    },
+    {
+        "timestamp": "00:29:30",
+        "content": "As soon as that contract is not held right, as soon as something within the specification has gone wrong."
+    },
+    {
+        "timestamp": "00:29:36",
+        "content": "Then the program terminates with those assertion errors."
+    },
+    {
+        "timestamp": "00:29:47",
+        "content": "And it's nice to see them because if you're debugging your code, you don't want to propagate bad values or bad or bad, bad values through functions because that value might get propagated later in, later and later."
+    },
+    {
+        "timestamp": "00:29:53",
+        "content": "And then it would make your debugging very hard. Okay."
+    },
+    {
+        "timestamp": "00:30:01",
+        "content": "So if you stop the execution as soon as something is just strange or off, as in something like an assertion, an assumption on a parameter is not met, then that's that's good."
+    },
+    {
+        "timestamp": "00:30:10",
+        "content": "So in our sum digits example, here is the code that we wrote last."
+    },
+    {
+        "timestamp": "00:30:15",
+        "content": "So total down to the bottom is exactly what we had before. All we're going to add is this assert statement up here that the length of SW"
+    },
+    {
+        "timestamp": "00:30:23",
+        "content": "is not empty because part of my contract here is that s is a non empty string."
+    },
+    {
+        "timestamp": "00:30:28",
+        "content": "All right. So that's a nice thing to assert if the user ever gives us an empty string."
+    },
+    {
+        "timestamp": "00:30:32",
+        "content": "The program will terminate. So in this example here, I've got the some digits with the assert."
+    },
+    {
+        "timestamp": "00:30:40",
+        "content": "So if the user gives us an empty string. No total was created and the assert was immediately false."
+    },
+    {
+        "timestamp": "00:30:49",
+        "content": "Right? So length s was equal to zero. The assert assertion error was raised with the message is empty."
+    },
+    {
+        "timestamp": "00:30:56",
+        "content": "So what I had here. If I have fine input, then no assertion is raised and the code carries on as normal."
+    },
+    {
+        "timestamp": "00:31:08",
+        "content": "So that's nice. So let's have you add one more line of code to your the program that we just wrote."
+    },
+    {
+        "timestamp": "00:31:17",
+        "content": "Just add an assert statement that enforces the contract."
+    },
+    {
+        "timestamp": "00:31:22",
+        "content": "So I have num and loading are not empty lists of equal lengths."
+    },
+    {
+        "timestamp": "00:31:28",
+        "content": "So you can do this all in one assert statement or you can put two separate assert"
+    },
+    {
+        "timestamp": "00:31:32",
+        "content": "statements with two separate messages however you'd like is fine with me."
+    },
+    {
+        "timestamp": "00:31:36",
+        "content": "So I'll give you a minute to work on that and then we can write it."
+    },
+    {
+        "timestamp": "00:31:41",
+        "content": "All right. What assertions should I put in here?"
+    },
+    {
+        "timestamp": "00:31:46",
+        "content": "Yeah. Maybe a. So the thing I'm asserting should be true."
+    },
+    {
+        "timestamp": "00:31:59",
+        "content": "So I do I want them to be equal. Yes, exactly."
+    },
+    {
+        "timestamp": "00:32:03",
+        "content": "So what I want Len Elam to equal Len. Oh, did I?"
+    },
+    {
+        "timestamp": "00:32:10",
+        "content": "Yeah. Do you like that? Yep. That's one. Right."
+    },
+    {
+        "timestamp": "00:32:13",
+        "content": "So the thing you want. You're asserting that this is true."
+    },
+    {
+        "timestamp": "00:32:16",
+        "content": "And if not karma, we're going to put a message right list lengths different or something like that."
+    },
+    {
+        "timestamp": "00:32:26",
+        "content": "Do you want to do the other search statement or does somebody else want to take a crack at the other search?"
+    },
+    {
+        "timestamp": "00:32:36",
+        "content": "So the other one is that they are not empty lists. Yeah, I'm stuff."
+    },
+    {
+        "timestamp": "00:32:50",
+        "content": "Same thing. That."
+    },
+    {
+        "timestamp": "00:32:59",
+        "content": "Yep. So we can definitely do that. Not equal to zero comma."
+    },
+    {
+        "timestamp": "00:33:04",
+        "content": "Yeah. Empty list or something like that?"
+    },
+    {
+        "timestamp": "00:33:09",
+        "content": "Yep. Very nice. So here we're trying to enforce our nice contracts, and I've got two examples down here."
+    },
+    {
+        "timestamp": "00:33:16",
+        "content": "So here I've got two different lengths of lists. So there you go."
+    },
+    {
+        "timestamp": "00:33:19",
+        "content": "My assertion has raised was raised with the my nice message length, stiffer."
+    },
+    {
+        "timestamp": "00:33:26",
+        "content": "And then the code would immediately stop and it would force us to check to see why these lengths are different."
+    },
+    {
+        "timestamp": "00:33:31",
+        "content": "So these bad lists won't propagate any further. If I had larger pieces of code."
+    },
+    {
+        "timestamp": "00:33:36",
+        "content": "And then same here. I've got this assertion error that I have an empty list."
+    },
+    {
+        "timestamp": "00:33:46",
+        "content": "Any questions so far? Okay."
+    },
+    {
+        "timestamp": "00:33:52",
+        "content": "One more example I want to go through. I'm not going to actually run this one, but it is in the python slides."
+    },
+    {
+        "timestamp": "00:33:57",
+        "content": "I just wanted to give you another example of how we can use exceptions to the assertions in just a different setting."
+    },
+    {
+        "timestamp": "00:34:06",
+        "content": "And it hopefully shows that as a programmer you get to choose how how you add these exceptions and assertions, right?"
+    },
+    {
+        "timestamp": "00:34:15",
+        "content": "So wherever they are, they seem reasonable to add, you should add them."
+    },
+    {
+        "timestamp": "00:34:19",
+        "content": "So in this particular example, we are assuming that we have a class list."
+    },
+    {
+        "timestamp": "00:34:25",
+        "content": "In this case, I only have two students in my class. So these are their their test grades."
+    },
+    {
+        "timestamp": "00:34:32",
+        "content": "So I've got a list that looks like this. It looks complicated, but I'll walk you through it."
+    },
+    {
+        "timestamp": "00:34:38",
+        "content": "This is one student. In my list."
+    },
+    {
+        "timestamp": "00:34:42",
+        "content": "And this is another student in my list. So I've got a list of lists, right, where these things that I've highlighted and red is my students."
+    },
+    {
+        "timestamp": "00:34:50",
+        "content": "And for each student I have more lists as part of their sort of information."
+    },
+    {
+        "timestamp": "00:34:56",
+        "content": "So the first list related to one student is their name."
+    },
+    {
+        "timestamp": "00:35:01",
+        "content": "Right. The first element is their first name. Second element is their last name."
+    },
+    {
+        "timestamp": "00:35:05",
+        "content": "And then the second list for that student is their grades in the class."
+    },
+    {
+        "timestamp": "00:35:09",
+        "content": "So just another list of all the grades in the class. Okay."
+    },
+    {
+        "timestamp": "00:35:14",
+        "content": "So what I would like to do and this is the code I'm going to I'm going to go through is what is I'd like to create a new list."
+    },
+    {
+        "timestamp": "00:35:23",
+        "content": "Based on the original grade A test grades that contains the same information as before."
+    },
+    {
+        "timestamp": "00:35:29",
+        "content": "So you can see I still have two lists of students the first row in the second row and in in each students information."
+    },
+    {
+        "timestamp": "00:35:40",
+        "content": "I again still have their name and their list of grades, but I'm adding one more item at the end for each student, which is the average of the list of grades."
+    },
+    {
+        "timestamp": "00:35:47",
+        "content": "So I've taken the average of these and plopped it as my integer float at the end."
+    },
+    {
+        "timestamp": "00:35:52",
+        "content": "And same with my next student. So the code that's going to do this looks like this."
+    },
+    {
+        "timestamp": "00:35:58",
+        "content": "I've got. That's just the original list, to give you an example to look at, because I find it hard to see things without examples."
+    },
+    {
+        "timestamp": "00:36:07",
+        "content": "So this is the code that gets the stats for the class."
+    },
+    {
+        "timestamp": "00:36:11",
+        "content": "So that creates this new list containing my average at the end."
+    },
+    {
+        "timestamp": "00:36:15",
+        "content": "For each student in the class list. So for example, student here, Stu, is going to be this list of two lists."
+    },
+    {
+        "timestamp": "00:36:23",
+        "content": "What I'm going to do in my new list that I'm creating here in new stats is I'm going to pin student at zero, which is just their name."
+    },
+    {
+        "timestamp": "00:36:31",
+        "content": "So just a straight copy and paste student, that one, which is just their grades, again, a straight up copy and paste of all their list of grades."
+    },
+    {
+        "timestamp": "00:36:39",
+        "content": "And then I'm going to apply a function named average."
+    },
+    {
+        "timestamp": "00:36:44",
+        "content": "To the list of student grades."
+    },
+    {
+        "timestamp": "00:36:49",
+        "content": "And what we're going to see in the next couple of slides is we're going to see a few variations of this average function."
+    },
+    {
+        "timestamp": "00:36:55",
+        "content": "And what happens when we when we apply these different these different functions?"
+    },
+    {
+        "timestamp": "00:37:00",
+        "content": "But for now I will assume that this code will do the job."
+    },
+    {
+        "timestamp": "00:37:05",
+        "content": "So the original average function will take in a list of grades."
+    },
+    {
+        "timestamp": "00:37:10",
+        "content": "So this grades here will look like this blue box here, right?"
+    },
+    {
+        "timestamp": "00:37:15",
+        "content": "So just a list of numbers. It's going to sum all the grades."
+    },
+    {
+        "timestamp": "00:37:20",
+        "content": "So some of all the elements inside that list and divide by how many there are."
+    },
+    {
+        "timestamp": "00:37:24",
+        "content": "Average. Okay. Now let's say that I have a student that contains no quiz grades or no grades at all."
+    },
+    {
+        "timestamp": "00:37:36",
+        "content": "In that case, their list of grades will be empty."
+    },
+    {
+        "timestamp": "00:37:48",
+        "content": "So if I try to apply the sum of all the grades divided by the length of the grades, for somebody who has no grades, information, that length will be zero."
+    },
+    {
+        "timestamp": "00:37:53",
+        "content": "So I'm going to get a zero division error when I run my code and it will crash."
+    },
+    {
+        "timestamp": "00:37:59",
+        "content": "So what I'd like to do is to change my average function to try to catch such an error."
+    },
+    {
+        "timestamp": "00:38:07",
+        "content": "So I'm going to try to do the sum divided by the length, and I'm going to catch this zero division error inside this accept block."
+    },
+    {
+        "timestamp": "00:38:14",
+        "content": "And all I'm going to do is print warning, no grades data."
+    },
+    {
+        "timestamp": "00:38:19",
+        "content": "So for any student that actually has grades information here, the code will work."
+    },
+    {
+        "timestamp": "00:38:25",
+        "content": "The code to get the average will work just fine because it will do the sum divided by the length."
+    },
+    {
+        "timestamp": "00:38:31",
+        "content": "But. And then. So that means the tribe block will succeed."
+    },
+    {
+        "timestamp": "00:38:36",
+        "content": "And we're going to return to some divided by the length. But if any student enters the zero division air here."
+    },
+    {
+        "timestamp": "00:38:42",
+        "content": "We're going to print something. And what do we return? What is the function return if we enter the accept block?"
+    },
+    {
+        "timestamp": "00:38:57",
+        "content": "Hmm. That's what's going to be printed."
+    },
+    {
+        "timestamp": "00:39:01",
+        "content": "But what is this function actually return? What value? None."
+    },
+    {
+        "timestamp": "00:39:06",
+        "content": "Exactly right. There's no return inside this except block and no code after it either."
+    },
+    {
+        "timestamp": "00:39:12",
+        "content": "So you can see here if it successfully completes for these three students, we've got our numbers, those that's what we return."
+    },
+    {
+        "timestamp": "00:39:19",
+        "content": "But for the last student that has no grades information, we're returning the."
+    },
+    {
+        "timestamp": "00:39:25",
+        "content": "Okay. I don't like that. What I would like in my grades book is to have numbers as my as my value there."
+    },
+    {
+        "timestamp": "00:39:32",
+        "content": "So instead, let's add a return for that."
+    },
+    {
+        "timestamp": "00:39:36",
+        "content": "Except for that. Except block. So we're still going to flag the error."
+    },
+    {
+        "timestamp": "00:39:43",
+        "content": "We still want to know that something weird has happened. I don't just want to replace Return of Zero without actually telling the user that something."
+    },
+    {
+        "timestamp": "00:39:50",
+        "content": "Something's gone down. I still flag the error, but then I can return a zero so that it's still a number."
+    },
+    {
+        "timestamp": "00:39:56",
+        "content": "And then if I do something with the numbers at the end, then it all works out."
+    },
+    {
+        "timestamp": "00:40:01",
+        "content": "This was a particularly hard first quiz. Ten."
+    },
+    {
+        "timestamp": "00:40:04",
+        "content": "1080. Okay."
+    },
+    {
+        "timestamp": "00:40:09",
+        "content": "One last thing we can do is to just assert."
+    },
+    {
+        "timestamp": "00:40:21",
+        "content": "Right. So if we if we want to make sure that every student had some sort of grades, information, maybe if the grades data was empty, something weird happened from a previous function that might have been called, I don't know."
+    },
+    {
+        "timestamp": "00:40:26",
+        "content": "But maybe we say let's just assert that the length of the grades is not zero."
+    },
+    {
+        "timestamp": "00:40:32",
+        "content": "So we only want this code to execute if there are some grades, information."
+    },
+    {
+        "timestamp": "00:40:36",
+        "content": "And if not, let's just raise an assertion error just in case."
+    },
+    {
+        "timestamp": "00:40:40",
+        "content": "So we can assert that the length of grades is not equal to zero."
+    },
+    {
+        "timestamp": "00:40:45",
+        "content": "And in that case, the code will terminate."
+    },
+    {
+        "timestamp": "00:40:48",
+        "content": "As soon as we try to get that last students information."
+    },
+    {
+        "timestamp": "00:40:52",
+        "content": "Right. It will crash and it will crash with this assert statement that there's no grades data."
+    },
+    {
+        "timestamp": "00:40:57",
+        "content": "And then we can go back to the code and see did we actually expect the student to have information or not."
+    },
+    {
+        "timestamp": "00:41:03",
+        "content": "And then we can, you know, try to work through. So just a quick summary of exceptions and assertions."
+    },
+    {
+        "timestamp": "00:41:13",
+        "content": "Hopefully this lecture kind of demystified some of these exceptions that we've been getting."
+    },
+    {
+        "timestamp": "00:41:19",
+        "content": "It showed you they're not as scary as they might have seemed originally."
+    },
+    {
+        "timestamp": "00:41:25",
+        "content": "They don't always have to terminate the program. Right."
+    },
+    {
+        "timestamp": "00:41:28",
+        "content": "You can catch them. You can deal with them in whatever way that makes sense for that particular function or program."
+    },
+    {
+        "timestamp": "00:41:35",
+        "content": "You can print's a nice output to the screen. You can set some default values."
+    },
+    {
+        "timestamp": "00:41:45",
+        "content": "You can still terminate the program. But do it on your own terms, with your own errors, with your own custom messages so that the users can see something nicer than the default python messages."
+    },
+    {
+        "timestamp": "00:41:55",
+        "content": "Right. And so exceptions, exception handling is very important, is a very important part of writing a program, especially if if you expect weird things to happen."
+    },
+    {
+        "timestamp": "00:42:02",
+        "content": "Right."
+    },
+    {
+        "timestamp": "00:42:04",
+        "content": "Assertions, on the other hand, are a type of exception and they're useful, as I've mentioned, to try to enforce these these contract C specifications."
+    },
+    {
+        "timestamp": "00:42:14",
+        "content": "You basically use assertions because you don't want bad values to propagate."
+    },
+    {
+        "timestamp": "00:42:29",
+        "content": "Okay. So as soon as something that isn't as you expect it to be happens, assertion error is raised and the program immediately terminates, allowing you to check to see why exactly those conditions were not met."
+    },
+    {
+        "timestamp": "00:42:34",
+        "content": "Okay. So that's it? That's all I had."
+    }
+]

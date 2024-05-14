@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi,</p>\n<p></p>\n<p>I am confused on part 5 of PSET 3, where we need to make a helper method to compare the combined frequency of words in freq_dict1 and/or freq_dict2. I&#39;m not sure how to go about iterating through the dicts to compare the values of one word to another.</p>",
+        "type": "question",
+        "created": "2022-10-01T19:56:35.197Z",
+        "subject": "PSET 3 comparing frequent words",
+        "_id": "l8qc4lj1t1s7pq"
+    },
+    {
+        "content": "<md>I think one thing that might be helpful is to first make a single data structure that can help you know the frequencies of each word across both frequency dictionaries. As you said, it is harder to think about iterating over two dicts and trying to compare values, so a new single data structure of frequencies could be helpful.</md>",
+        "type": "i_answer",
+        "created": "2022-10-02T16:40:59.802Z",
+        "_id": "l8qc4lj1t1s7pq"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi!</p>\n<p>I was double checking my work on PSET 1 in the test file, when I realized that it marked one of the answers in part c as incorrect because the steps were 11 instead of 12. Is this something I should try to change, or would this be an acceptable step number? The other test cases were accepted.<br />Also, in the same problem, (part c), I turned the \u2018amount saved\u2019 into a function. Should this be listed under the constants heading in the document or where I completed the steps to reach the r value? (Currently I have it as a constant, since the function itself is referred to.)</p>\n<p>Thanks!</p>\n<p>-Vera</p>",
+        "type": "question",
+        "created": "2022-09-20T06:21:35.928Z",
+        "subject": "PSET 1 clarification on acceptable values",
+        "_id": "l89t65a0ab530x"
+    },
+    {
+        "content": "Hi Vera,\n\nThe online tester allows steps to be off by a maximum of 3, so your answer will be fine.",
+        "type": "i_answer",
+        "created": "2022-09-20T14:36:44.370Z",
+        "_id": "l89t65a0ab530x"
+    }
+]

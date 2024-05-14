@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Dear 6.100A Instructors,</p>\n<p></p>\n<p>I just checked my website and it shows that I have a -0.2% for pset. I just submitted my PSet1 today and it&#39;s not graded yet. I wonder what&#39;s the issue.</p>",
+        "type": "question",
+        "created": "2022-09-20T03:59:07.931Z",
+        "subject": "PSet grade online",
+        "_id": "l89o2xlnllw4g5"
+    },
+    {
+        "content": "<p>Once we start inputting the pset grades, it will fix itself. The automatic script must get messed up when there are no psets graded yet.\u00a0 Sorry for the confusion.</p>",
+        "type": "i_answer",
+        "created": "2022-09-20T13:39:36.277Z",
+        "_id": "l89o2xlnllw4g5"
+    }
+]

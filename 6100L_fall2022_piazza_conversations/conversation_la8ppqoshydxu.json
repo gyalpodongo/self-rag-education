@@ -1,0 +1,15 @@
+[
+    {
+        "content": "I pass every test case except for the last two because it says I have an Attribute Error, but I really don\u2019t understand why/how. Anyone know why this might be happening?",
+        "type": "question",
+        "created": "2022-11-08T21:16:30.172Z",
+        "subject": "Finger Exercise 17",
+        "_id": "la8ppqoshydxu"
+    },
+    {
+        "content": "<p>Everything looks good until the return. What we ask you to return is the actual Circle object, either self or c. You are returning the radius, which is not a Circle object, but a number.\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-11-08T23:37:44.835Z",
+        "_id": "la8ppqoshydxu"
+    }
+]

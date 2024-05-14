@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>For part a, should I just print</p>\n<p></p>\n<p>print(f&#39;Number of months: {months}&#39;)</p>\n<p></p>\n<p>or also print salary, percent, and cost? I couldn&#39;t tell from the test cases if it implied I should print all 4 at the end, or just the first 3 as questions and then only months at the end.\u00a0</p>",
+        "type": "question",
+        "created": "2022-09-17T23:40:41.198Z",
+        "subject": "Print months or more?",
+        "_id": "l86jyv72l2b42q"
+    },
+    {
+        "content": "You should only be printing the number of months. The salary, percent, and cost are all supposed to be supposed to be user inputs so you shouldn\u2019t necessarily be *printing* those.\u00a0",
+        "type": "i_answer",
+        "created": "2022-09-18T16:37:15.778Z",
+        "_id": "l86jyv72l2b42q"
+    }
+]

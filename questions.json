@@ -1,0 +1,312 @@
+[
+  {
+    "question": "What is a list in python?",
+    "answer": "A list is a data structure in Python that is a mutable, or changeable, ordered sequence of elements. Each element or value that is inside of a list is called an item. Just as strings are defined as characters between quotes, lists are defined by having values between square brackets [ ] .",
+    "lecture": "lecture1"
+  },
+  {
+    "question": "What is Object Oriented Programming in Python?",
+    "answer": "Object-oriented programming (OOP) is a programming paradigm that uses 'objects' to design applications and computer programs. 'Objects' are data structures consisting of data fields and methods together with their interactions. This makes it easier to create complex programs that are easier to maintain and reuse. OOP is based on several concepts such as Encapsulation, Abstraction, Inheritance, and Polymorphism.",
+    "lecture": "lecture 9"
+  },
+  {
+    "question": "What are the three main topics covered in lecture 2?",
+    "answer": "The three main topics covered in lecture 2 are: 1) Strings, 2) Input/Output, and 3) Branching.",
+    "lecture": "lecture2"
+  },
+  {
+    "question": "How do you slice a string in Python to get a substring?",
+    "answer": "To slice a string and get a substring in Python, you use square brackets with the format [start:stop:step]. 'start' is the index to start from (inclusive), 'stop' is the index to go up to but not include, and 'step' is the number of characters to skip. If any of these are omitted, they default to the start, end, or 1 respectively.",
+    "lecture": "lecture2"
+  },
+  {
+    "question": "What is the difference between the assignment operator (=) and the equality comparison operator (==) in Python?",
+    "answer": "The assignment operator (=) is used to bind a value to a variable name. It changes the stored value of the variable to the value on the right-hand side. The equality comparison operator (==) is used to test for equality between two expressions. It evaluates to a Boolean (True or False) and does not change any stored values.",
+    "lecture": "lecture2"
+  },
+  {
+    "question": "What is the purpose of the input() function in Python?",
+    "answer": "The input() function in Python is used to get input from the user via the console. It prints the string argument passed to it, then waits for the user to type something and hit enter. Whatever the user types in gets returned as a string which can be stored in a variable.",
+    "lecture": "lecture2"
+  },
+  {
+    "question": "How does indentation work with conditional statements like if/elif/else in Python?",
+    "answer": "In Python, indentation is used to delimit blocks of code. Lines of code that are indented under an if, elif, or else statement belong to that block and will only execute if that condition is true. Once the indentation returns to the previous level, that indicates the end of the conditional block. Proper indentation is required for the code to function.",
+    "lecture": "lecture2"
+  },
+  {
+    "question": "What is the difference between a while loop and a for loop in Python?",
+    "answer": "A while loop repeats a block of code as long as a specified condition is true. The number of iterations is not known in advance. A for loop iterates over a sequence (like a range of numbers) and executes a block of code for each item in the sequence. The number of iterations is known based on the length of the sequence.",
+    "lecture": "lecture3"
+  },
+  {
+    "question": "What is an infinite loop and how can you avoid/break out of one in Python?",
+    "answer": "An infinite loop is a loop that runs forever because its termination condition is never met. This can happen if the condition of a while loop always remains true. To avoid infinite loops, make sure the loop condition will eventually become false. You can also use a break statement to exit a loop prematurely or manually interrupt the program's execution.",
+    "lecture": "lecture3"
+  },
+  {
+    "question": "What are the three arguments that the range() function can take and what do they represent?",
+    "answer": "The range() function can take up to three arguments: start, stop, and step. Start is the first number in the sequence (inclusive, defaults to 0 if omitted), stop is the last number in the sequence (exclusive, must be specified), and step is the difference between each number in the sequence (defaults to 1 if omitted).",
+    "lecture": "lecture3"
+  },
+  {
+    "question": "What is the purpose of the variable 'i' in a for loop like 'for i in range(5):'?",
+    "answer": "The variable 'i' is the loop variable. It takes on each successive value in the specified range (0, 1, 2, 3, 4 in this case) for each iteration of the loop. It allows you to access the current value during each iteration and can be used within the loop's code block.",
+    "lecture": "lecture3"
+  },
+  {
+    "question": "How can you calculate the sum of a sequence of numbers (e.g., 1 to 10) using a for loop in Python?",
+    "answer": "To calculate the sum of a sequence of numbers using a for loop: 1) Initialize a variable to store the sum (e.g., sum = 0) before the loop. 2) Loop through the sequence using range(). 3) Inside the loop, add each number to the sum variable (e.g., sum += i). After the loop finishes, the sum variable will hold the total sum.",
+    "lecture": "lecture3"
+  },
+  {
+    "question": "What is the purpose of the break statement in Python?",
+    "answer": "The break statement in Python is used to immediately exit the loop that it is in. It skips any remaining expressions in the code block and exits only the innermost loop. This is useful when you want to prematurely exit a loop based on some condition without waiting for the loop's natural termination condition to be met.",
+    "lecture": "lecture4"
+  },
+  {
+    "question": "How can you iterate through the individual characters of a string in Python?",
+    "answer": "You can iterate through the individual characters of a string in Python using a for loop. Instead of using range() to generate a sequence of indices, you can directly use the string as the sequence in the for loop (e.g., for char in my_string:). The loop variable (char in this case) will take on the value of each successive character in the string on each iteration.",
+    "lecture": "lecture4"
+  },
+  {
+    "question": "Describe the guess-and-check (or exhaustive enumeration) algorithm.",
+    "answer": "The guess-and-check (or exhaustive enumeration) algorithm is a process for solving problems where you can guess a value for a solution and check if it is correct. If the guess is incorrect, you systematically choose the next guess. This process repeats until either the correct solution is found or all possible values have been guessed. The set of possible guesses must be finite for this algorithm to terminate.",
+    "lecture": "lecture4"
+  },
+  {
+    "question": "Why are we interested in binary numbers in the context of programming?",
+    "answer": "Binary numbers are important in programming because they are the fundamental way that computers represent and manipulate data, including numbers. Hardware is built around the idea of storing information as sequences of bits that are either 0 or 1. Understanding binary helps us understand how decimal numbers and other data are actually stored and processed by computers, which becomes relevant when dealing with issues like floating-point approximation errors.",
+    "lecture": "lecture4"
+  },
+  {
+    "question": "What is the issue with comparing floats for equality in Python (and other programming languages)?",
+    "answer": "Comparing floats for equality can be problematic because of the way floats are represented and stored in computer memory. Floating-point representations are approximations of real numbers, and arithmetic operations on floats can introduce very small errors. These small errors can accumulate and lead to surprising results, like 0.1 + 0.1 + ... (10 times) not being exactly equal to 1.0. Therefore, it's generally not recommended to test floats for exact equality.",
+    "lecture": "lecture4"
+  },
+  {
+    "question": "Why is it difficult to represent certain fractions exactly in binary?",
+    "answer": "Some fractions like 1/10 (0.1 in decimal) do not have an exact binary representation because there is no integer power of 2 that can be used as a denominator to represent them precisely. The binary representation ends up being an infinitely repeating fraction, which computers cannot store exactly given a fixed number of bits, so an approximation must be used.",
+    "lecture": "lecture5"
+  },
+  {
+    "question": "How are floating-point numbers stored in a computer's memory?",
+    "answer": "Floating-point numbers are stored as a pair of integers in memory: the significant digits (or mantissa) and the exponent. The significant digits represent a binary number, and the exponent represents the power of 2 by which the binary number is multiplied. This allows a wide range of numbers to be represented with a finite number of bits, although some precision is lost.",
+    "lecture": "lecture5"
+  },
+  {
+    "question": "What are the two key parameters in the approximation algorithm for finding square roots, and how do they affect the algorithm's behavior?",
+    "answer": "The two key parameters are epsilon and increment. Epsilon determines how close the approximation needs to be to the actual value to be considered 'good enough'. A smaller epsilon will give a more accurate result but may take longer. Increment is the amount by which each guess is increased. A smaller increment will also give a more accurate result but will require more guesses and therefore more time.",
+    "lecture": "lecture5"
+  },
+  {
+    "question": "What is a potential problem with the initial implementation of the approximation algorithm for finding square roots?",
+    "answer": "The initial implementation has the potential to overshoot the epsilon value. If the increment is too large, a guess may jump from being less than the target value to being greater than the target value without ever being within epsilon of the target. This can cause the loop to continue indefinitely. To fix this, an additional condition is needed to stop the loop if the guess becomes too large.",
+    "lecture": "lecture5"
+  },
+  {
+    "question": "When using approximation methods, why should you avoid using the equality operator (==) to compare floats?",
+    "answer": "Due to the way floats are represented internally, operations on floats can introduce small errors. Over many operations, these errors can compound. Therefore, when comparing floats, it's better to check if they are within some small value (epsilon) of each other rather than checking for exact equality. Using == may lead to unexpected results due to these small representation errors.",
+    "lecture": "lecture5"
+  },
+  {
+    "question": "What are the two key properties that a problem must have in order for bisection search to be applicable?",
+    "answer": "In order to apply bisection search to a problem, the problem must have: 1) A search space with an ordering to the values, and 2) A way to check if a guess is too high, too low, or correct. With these properties, bisection search can efficiently narrow down the search space by eliminating half of the remaining values with each guess.",
+    "lecture": "lecture6"
+  },
+  {
+    "question": "How does the number of guesses required in bisection search grow as the size of the search space increases?",
+    "answer": "The number of guesses required in bisection search grows logarithmically with the size of the search space. This is because each guess eliminates half of the remaining search space. So for a search space of size N, it will take on the order of log2(N) guesses to find the solution. This is much more efficient than linear search, where the number of guesses grows linearly with the size of the search space.",
+    "lecture": "lecture6"
+  },
+  {
+    "question": "What modification needs to be made to the bisection search algorithm for finding square roots when the input value x is between 0 and 1?",
+    "answer": "When the input value x for finding a square root is between 0 and 1, the search space needs to be adjusted. Instead of searching between 0 and x (since the square root will be larger than x in this case), the lower bound should be set to x and the upper bound should be set to 1. The rest of the algorithm remains the same.",
+    "lecture": "lecture6"
+  },
+  {
+    "question": "What is the Newton-Raphson method used for?",
+    "answer": "The Newton-Raphson method is a general approximation algorithm used to find the roots of a polynomial in one variable. It can be applied to finding square roots by seeking the root of the equation x^2 - k = 0, where k is the number we want to find the square root of. Newton-Raphson uses calculus to generate successive guesses that converge on the root.",
+    "lecture": "lecture6"
+  },
+  {
+    "question": "What are the two key concepts in programming that are important for managing complexity in large programs?",
+    "answer": "The two key concepts are decomposition and abstraction. Decomposition involves breaking a large program into smaller, self-contained parts that can be developed and tested independently. Abstraction involves hiding the details of how a particular piece of code works and instead providing a clean interface for using that code. These concepts help make large programs easier to develop, understand, and maintain.",
+    "lecture": "lecture6"
+  },
+  {
+    "question": "What are the two key concepts in programming that help manage complexity in large programs?",
+    "answer": "The two key concepts are decomposition and abstraction. Decomposition involves breaking a large program into smaller, self-contained parts that can be developed and tested independently. Abstraction involves hiding the details of how a particular piece of code works and instead providing a clean interface for using that code.",
+    "lecture": "lecture7"
+  },
+  {
+    "question": "What are the main characteristics of a function in Python?",
+    "answer": "A function in Python has several key characteristics: 1) It has a name, 2) It can have parameters (inputs), 3) It should have a docstring that describes what the function does, 4) It has a body which is a set of instructions that are executed when the function is called, and 5) It can return a value using the 'return' keyword.",
+    "lecture": "lecture7"
+  },
+  {
+    "question": "What is the difference between defining a function and calling a function in Python?",
+    "answer": "Defining a function means writing the code that specifies what the function does. This includes the function header (def, name, parameters) and the function body. Defining a function does not execute the code in the function body. Calling a function means executing the code inside the function body. This is done by using the function name followed by parentheses, with any necessary arguments inside the parentheses.",
+    "lecture": "lecture7"
+  },
+  {
+    "question": "What happens when a function call is executed in a Python program?",
+    "answer": "When a function call is executed, Python does the following: 1) It replaces the formal parameters in the function definition with the values provided in the function call, 2) It executes the expressions in the body of the function, and 3) When a return statement is reached, the function exits and the value of the expression following the return is given back to the point where the function was called.",
+    "lecture": "lecture7"
+  },
+  {
+    "question": "What is a good strategy for writing a function to solve a complex problem?",
+    "answer": "A good strategy is to first solve a simpler version of the problem and then incrementally add functionality to handle the more complex aspects. This could involve: 1) Choosing simple test cases and working through them on paper, 2) Deciding on the big-picture structure of the code (e.g., loop type), 3) Writing code to solve the simpler problem, 4) Testing this code, and then 5) Adding in the extra functionality to handle the full complexity of the original problem.",
+    "lecture": "lecture7"
+  },
+  {
+    "question": "What happens if a function does not have a return statement?",
+    "answer": "If a function does not have a return statement, Python will automatically return the special value None when the function completes. None represents the absence of a value.",
+    "lecture": "lecture8"
+  },
+  {
+    "question": "What is the difference between returning a value from a function and printing a value inside a function?",
+    "answer": "Returning a value from a function passes control and the value back to the caller, and the function call evaluates to the returned value. Printing a value inside a function displays the value to the console but does not pass any value back to the caller. The function call still evaluates to None unless there is also a return statement.",
+    "lecture": "lecture8"
+  },
+  {
+    "question": "How can functions support decomposition of a program?",
+    "answer": "Functions allow you to break a program into self-contained, reusable pieces. A complex task can be decomposed into simpler subtasks, each implemented by a function. The main program then coordinates the overall task by calling the appropriate functions. This makes the program easier to understand, test, and debug.",
+    "lecture": "lecture8"
+  },
+  {
+    "question": "What happens when a function is called in terms of environments?",
+    "answer": "When a function is called, a new environment (also called a frame or scope) is created. The parameters of the function are bound to the argument values provided in the call. The function body is then executed in the context of this new environment. When the function completes, the environment is destroyed and control returns to the point where the function was called.",
+    "lecture": "lecture8"
+  },
+  {
+    "question": "Can a function be treated as an object in Python? What does this allow?",
+    "answer": "Yes, in Python, functions are first-class objects. This means they can be assigned to variables, passed as arguments to other functions, and returned as values from functions. This allows for powerful and flexible programming paradigms such as higher-order functions (functions that operate on other functions).",
+    "lecture": "lecture8"
+  },
+  {
+    "question": "What is a lambda function in Python and why is it useful?",
+    "answer": "A lambda function in Python is a small, anonymous function that can take any number of arguments but can only have one expression. It is useful for creating simple, one-time use functions without using the 'def' keyword and naming the function. Lambda functions are often used in situations where a small function is required as an argument to another function.",
+    "lecture": "lecture9"
+  },
+  {
+    "question": "What is the difference between a tuple and a list in Python?",
+    "answer": "Both tuples and lists are used to store collections of data in Python, but they have some key differences. Tuples are immutable, meaning their elements cannot be changed once the tuple is created. Lists, on the other hand, are mutable, so elements can be modified, added, or removed after the list is created. Tuples are defined using parentheses (), while lists use square brackets [].",
+    "lecture": "lecture9"
+  },
+  {
+    "question": "How can you swap the values of two variables in Python using a tuple?",
+    "answer": "In Python, you can swap the values of two variables in a single line of code using tuple packing and unpacking. For example, if you have variables 'a' and 'b', you can swap their values by writing: a, b = b, a. This works because Python evaluates the right side first (creating a tuple (b, a)), and then unpacks that tuple, assigning the first element to 'a' and the second to 'b'.",
+    "lecture": "lecture9"
+  },
+  {
+    "question": "How can you use a tuple to return multiple values from a function in Python?",
+    "answer": "In Python, a function can return multiple values by packing them into a tuple. Inside the function, you can create a tuple of the values you want to return and then return that tuple. When the function is called, it will return the tuple, which can be unpacked into individual variables. For example: def func(): return (1, 2, 3); a, b, c = func().",
+    "lecture": "lecture9"
+  },
+  {
+    "question": "What is the purpose of the '*args' parameter in a Python function?",
+    "answer": "In Python, 'args' is used as a function parameter to allow the function to accept any number of positional arguments. The asterisk () is the important element here as it tells Python to take all the arguments passed to the function and pack them into a tuple named 'args'. This is useful when you don't know ahead of time how many arguments will be passed to the function.",
+    "lecture": "lecture9"
+  },
+  {
+    "question": "What is the main difference between lists and tuples in Python?",
+    "answer": "The main difference between lists and tuples in Python is that lists are mutable (can be changed after creation), while tuples are immutable (cannot be changed after creation). Both lists and tuples can contain elements of different types, but lists are defined using square brackets [], while tuples use parentheses ().",
+    "lecture": "lecture10"
+  },
+  {
+    "question": "What happens when you use the append() method on a list in Python?",
+    "answer": "When you use the append() method on a list in Python, it adds the element passed as an argument to the end of the list. This mutates the original list, modifying it in place. The append() method does not return a new list, it simply modifies the existing list and returns None.",
+    "lecture": "lecture10"
+  },
+  {
+    "question": "What is the difference between the sort() method and the sorted() function when applied to lists in Python?",
+    "answer": "Both sort() and sorted() are used to sort the elements of a list, but they behave differently. The sort() method sorts the list in-place, modifying the original list. It returns None. The sorted() function, on the other hand, returns a new sorted list without modifying the original list.",
+    "lecture": "lecture10"
+  },
+  {
+    "question": "How can you convert a string into a list of individual characters in Python?",
+    "answer": "You can convert a string into a list of individual characters in Python by using the list() function. For example, if s is a string, then list(s) will return a list where each element is a single character from the string s, in the same order as they appear in the string.",
+    "lecture": "lecture10"
+  },
+  {
+    "question": "What is a common way to iterate over the indices of a list in Python, in order to modify the elements?",
+    "answer": "A common way to iterate over the indices of a list in Python, in order to modify the elements, is to use the range() function in combination with the len() function in a for loop. For example: for i in range(len(my_list)): my_list[i] = new_value. This allows you to access each element by its index and modify it in place.",
+    "lecture": "lecture10"
+  },
+  {
+    "question": "What is the difference between a shallow copy and a deep copy of a list in Python?",
+    "answer": "A shallow copy creates a new list object but the elements in the new list are references to the same objects as in the original list. This means that changes to mutable elements (like nested lists) in the new list will affect the original list. A deep copy creates a completely independent copy of the list and all its nested objects, so changes to the new list or its elements will not affect the original list.",
+    "lecture": "lecture11"
+  },
+  {
+    "question": "What is the problem with mutating a list while iterating over it?",
+    "answer": "Mutating a list while iterating over it can lead to unexpected behavior and bugs. This is because Python uses an internal counter to keep track of the index during iteration. If you remove elements from the list during iteration, the counter is not updated and some elements may be skipped or processed multiple times. It's safer to iterate over a copy of the list if you need to mutate the original list based on the iteration.",
+    "lecture": "lecture11"
+  },
+  {
+    "question": "What is the difference between using remove() and pop() to remove elements from a list in Python?",
+    "answer": "Both remove() and pop() mutate the original list, but they work differently. remove() takes a value as an argument and removes the first occurrence of that value from the list. pop() removes the element at a specified index (or the last element if no index is provided) and returns the removed element. So, remove() is used when you know the value you want to remove, while pop() is used when you know the index of the element you want to remove (and optionally, you want to use that element after removing it).",
+    "lecture": "lecture11"
+  },
+  {
+    "question": "What is aliasing in the context of lists in Python?",
+    "answer": "Aliasing occurs when two or more variables refer to the same list object in memory. This can happen when you assign one variable to another variable that is pointing to a list. Changes made to the list through one alias will be visible through all aliases because they are referring to the same object. This is different from having two independent lists that happen to have the same values.",
+    "lecture": "lecture11"
+  },
+  {
+    "question": "What happens when you pass a list as an argument to a function in Python?",
+    "answer": "When you pass a list as an argument to a function, the function's parameter becomes an alias for the original list. This means that if the function mutates the list (e.g., by appending, removing elements, or changing elements), these changes will affect the original list outside the function. If you don't want the function to modify the original list, you should pass a copy of the list instead.",
+    "lecture": "lecture11"
+  },
+  {
+    "question": "What is the purpose of list comprehensions in Python?",
+    "answer": "List comprehensions in Python provide a concise way to create new lists by applying an expression to each element of an iterable and optionally filtering out elements based on a condition. They offer a more readable and compact syntax compared to using a traditional for loop.",
+    "lecture": "lecture12"
+  },
+  {
+    "question": "How can you specify default values for function parameters in Python?",
+    "answer": "In Python, you can specify default values for function parameters by assigning a value to the parameter in the function definition using the equals sign (=). If no argument is provided for a parameter with a default value when calling the function, the default value will be used.",
+    "lecture": "lecture12"
+  },
+  {
+    "question": "What is the effect of returning a function from another function in Python?",
+    "answer": "When a function returns another function in Python, it returns a reference to the function object. The returned function can be assigned to a variable or immediately invoked by adding parentheses () after the function call. This allows for the creation of higher-order functions and enables techniques such as function composition and currying.",
+    "lecture": "lecture12"
+  },
+  {
+    "question": "What is the difference between black-box testing and glass-box testing?",
+    "answer": "Black-box testing focuses on testing the functionality of the code based on its specification, without considering the internal implementation details. It treats the code as a 'black box' and tests the inputs and outputs. Glass-box testing, also known as white-box testing, takes into account the internal structure and logic of the code when designing test cases. It examines the code's internals to ensure all paths and conditions are tested.",
+    "lecture": "lecture12"
+  },
+  {
+    "question": "What is the goal of debugging in programming?",
+    "answer": "The goal of debugging is to identify, locate, and resolve errors or bugs in a program. When a program exhibits unexpected behavior or produces incorrect results, debugging techniques are employed to systematically analyze the code, pinpoint the cause of the problem, and make necessary corrections to eliminate the errors and ensure the program functions as intended.",
+    "lecture": "lecture12"
+  },
+  {
+    "question": "What is an exception in Python?",
+    "answer": "An exception in Python is an error that occurs during the execution of a program, which disrupts the normal flow of the program's instructions. When an exception is raised, Python creates an exception object that contains information about the error, such as its type and a traceback.",
+    "lecture": "lecture13"
+  },
+  {
+    "question": "How can you handle exceptions in Python?",
+    "answer": "Exceptions in Python can be handled using the try-except block. The potentially problematic code is placed inside the try block, and if an exception occurs within that block, the program flow immediately transfers to the corresponding except block. The except block contains the code to handle the specific exception or perform any necessary cleanup.",
+    "lecture": "lecture13"
+  },
+  {
+    "question": "What happens if an exception is not handled in Python?",
+    "answer": "If an exception is not handled in Python, the program will terminate abruptly, and an error message will be displayed to the user. The error message will include the type of the exception, a description of the error, and a traceback that shows the sequence of function calls that led to the exception.",
+    "lecture": "lecture13"
+  },
+  {
+    "question": "What is the purpose of an assertion in Python?",
+    "answer": "Assertions in Python are used as a debugging tool to test whether a condition is true. They are typically used to check the internal state of a program and to ensure that certain assumptions about the program's behavior are met. If an assertion fails, it indicates a bug in the program, and an AssertionError is raised.",
+    "lecture": "lecture13"
+  },
+  {
+    "question": "What is the difference between an exception and an assertion in Python?",
+    "answer": "The main difference between exceptions and assertions in Python is their purpose. Exceptions are used to handle runtime errors and exceptional conditions that may occur during the execution of a program, while assertions are used as a debugging tool to check the internal state of the program and to ensure that certain assumptions are met. Assertions are typically disabled in production code, whereas exceptions are used to handle errors in both development and production environments.",
+    "lecture": "lecture13"
+  }
+]

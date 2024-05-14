@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Should we expect only coding questions, as in the practice equations, or will it include multiple choice questions, as in the micro quizzes?</p>",
+        "type": "question",
+        "created": "2022-10-17T22:27:00.434Z",
+        "subject": "What will the format of the Final Exam be?",
+        "_id": "l9dcjo424n07jf"
+    },
+    {
+        "content": "<md>It will be a mix of multiple choice/multi-select questions in addition to several coding questions(as in the style of microquizzes)</md>",
+        "type": "i_answer",
+        "created": "2022-10-18T14:56:40.372Z",
+        "_id": "l9dcjo424n07jf"
+    }
+]

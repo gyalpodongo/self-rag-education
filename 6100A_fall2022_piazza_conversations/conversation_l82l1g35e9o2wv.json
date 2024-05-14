@@ -1,0 +1,15 @@
+[
+    {
+        "content": "Are we allowed to mimic / reference the bisection code written in the lecture 3 notes when we write our own bisection code part c of the pset if we are able to explain each line?\u00a0",
+        "type": "question",
+        "created": "2022-09-15T04:59:36.497Z",
+        "subject": "PSET 1 Part C",
+        "_id": "l82l1g35e9o2wv"
+    },
+    {
+        "content": "<p>You&#39;re allowed to use any resource available in the lecture notes, as long as you make sure to comment your code and aren&#39;t directly copy/pasting. The implementation of bisection search will differ depending on the problem you are solving.</p>",
+        "type": "i_answer",
+        "created": "2022-09-15T20:36:33.952Z",
+        "_id": "l82l1g35e9o2wv"
+    }
+]

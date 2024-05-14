@@ -1,0 +1,15 @@
+[
+    {
+        "content": "Hi, I remembered seeing this in the notes but wasn&#39;t 100% sure what this meant. How are lists naturally recursive?",
+        "type": "question",
+        "created": "2022-10-05T14:13:31.579Z",
+        "subject": "How are lists naturally recursive?",
+        "_id": "l8vpmtrvp4l3hf"
+    },
+    {
+        "content": "<p>I believe this is referring to the notion that you can have lists that contain lists...and so on. This means that the way python constructs lists behind the scenes is with a recursive algorithm.</p>",
+        "type": "i_answer",
+        "created": "2022-10-07T15:39:13.790Z",
+        "_id": "l8vpmtrvp4l3hf"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi,</p>\n<p></p>\n<p>I\u00a0 am really struggling with the systems this class has put in place for checkoffs. I have spent every free moment of my last 48 hours on the help queue, except for the 3 hours yesterday when the website was down. I cannot wait multi-hour periods due to lectures, so I often have to leave the queue and re-enter. Today I was finally at position 6, and I lost internet momentarilty. This caused my zoom to close. I quickly reopened it but this seems to have changed the link. When the TA could not get to me I was reset to position 33. Over the past week I have spent nearly 10 hours on the queue. And now I will have to go to lecture in 15 minutes, so I will not get the time to do the checkoff I need without missing a class. I am not sure what I could do differently. Please let me know if there are any solutions to this predicament.\u00a0</p>",
+        "type": "question",
+        "created": "2022-10-14T19:16:33.760Z",
+        "subject": "Help Queue Problems",
+        "_id": "l98vf78glko2s"
+    },
+    {
+        "content": "<p>I&#39;m sorry for the trouble. We can allow you to do your checkoff on Monday.</p>",
+        "type": "i_answer",
+        "created": "2022-10-14T19:38:19.022Z",
+        "_id": "l98vf78glko2s"
+    }
+]

@@ -1,0 +1,39 @@
+[
+    {
+        "content": "<p>I signed up for a PSET buddy for PSET2, but wasn&#39;t assigned one. The same thing happened to me last week. I know I submitted the PSET buddy form. Is it possible to get someone assigned?\u00a0</p>",
+        "type": "question",
+        "created": "2022-09-20T23:01:29.022Z",
+        "subject": "PSET 2 Buddy Needed",
+        "_id": "l8asw08u1g55qx"
+    },
+    {
+        "content": "<p>I&#39;ll assign you to a group of 3 via email. Not sure why you were not assigned one...</p>",
+        "type": "i_answer",
+        "created": "2022-09-21T00:05:39.877Z",
+        "_id": "l8asw08u1g55qx"
+    },
+    {
+        "content": "<p><strong attention=\"j7ax2om9jjz55\">@Matthew Feng</strong> she filled out her preferences. kerb: dlinda</p>\n<p>Any idea why she wasn&#39;t assigned?\u00a0</p>",
+        "type": "followup",
+        "created": "2022-09-21T00:06:26.241Z",
+        "_id": "l8asw08u1g55qx"
+    },
+    {
+        "content": "I think we have to do another export of the enrolled students CSV from Canvas \u2013 she&#39;s not in the current copy, which is used by the script to get current students.",
+        "type": "followup_response",
+        "created": "2022-09-21T00:11:52.290Z",
+        "_id": "l8asw08u1g55qx"
+    },
+    {
+        "content": "<p>Gotcha, I&#39;ll email you the updated csv!</p>",
+        "type": "followup_response",
+        "created": "2022-09-21T00:17:49.979Z",
+        "_id": "l8asw08u1g55qx"
+    },
+    {
+        "content": "<p>Thanks, I will be looking out for your email!\u00a0\u00a0</p>",
+        "type": "s_answer",
+        "created": "2022-09-21T19:02:58.553Z",
+        "_id": "l8asw08u1g55qx"
+    }
+]

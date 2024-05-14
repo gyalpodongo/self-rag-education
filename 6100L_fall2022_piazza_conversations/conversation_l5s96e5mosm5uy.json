@@ -1,0 +1,9 @@
+[
+    {
+        "content": "<script type=\"text/javascript\">PA.load(\"/dashboard/get_familiar\", null, function(data){ $('#' + 'questionText').html(data);});</script>",
+        "type": "note",
+        "created": "2022-07-19T14:10:25.450Z",
+        "subject": "Get familiar with Piazza",
+        "_id": "l5s96e5mosm5uy"
+    }
+]

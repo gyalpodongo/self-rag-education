@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p>Do you have a schedule of the dates when 6.100B microquizzes will be held?\u00a0 I&#39;m on the women&#39;s basketball team and especially in November and early December could possibly have a conflict or two with departures for away games.\u00a0 We have our final schedule for basketball, and I just wanted to let the teaching staff know of any makeups I will need in advance.\u00a0 Thanks!</p>",
+        "type": "question",
+        "created": "2022-10-04T00:29:49.100Z",
+        "subject": "6.100B Schedule",
+        "_id": "l8tgroh8x8y4py"
+    },
+    {
+        "content": "<p>I&#39;ll post the schedule sometime next week!</p>",
+        "type": "i_answer",
+        "created": "2022-10-04T13:09:09.723Z",
+        "_id": "l8tgroh8x8y4py"
+    },
+    {
+        "content": "<p>Ok sounds good, thank you!\u00a0 I will try and let you know of any conflicts as soon as the schedule is up!</p>",
+        "type": "followup",
+        "created": "2022-10-04T14:57:41.433Z",
+        "_id": "l8tgroh8x8y4py"
+    },
+    {
+        "content": "<p>The schedule can be accessed at this link: <a href=\"https://sicp-s1.mit.edu/fall22?course=0002\" target=\"_blank\" rel=\"noopener noreferrer\">https://sicp-s1.mit.edu/fall22?course=0002</a>\u00a0</p>",
+        "type": "followup_response",
+        "created": "2022-10-06T00:26:01.032Z",
+        "_id": "l8tgroh8x8y4py"
+    }
+]

@@ -1,0 +1,33 @@
+[
+    {
+        "content": "<p></p>\n<p>Hi,\u00a0<br />When I merged two dictionaries in PS3, I used an operand &#34; | &#34; and it worked well in my Python environment. However, the operand seems not to be working in the autograder, which might be a reason for the lower grade. Could you check my code in different ways?<br />Thank you.</p>\n<p></p>\n<p></p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fk05dxo3mixn2i3%2F218b4aba0adae1c6c9aa1b7a8e28a345ff8ee0bfe53954631a0a51a355d0bed1%2Fimage.png\" alt=\"image.png\" /></p>",
+        "type": "question",
+        "created": "2022-10-14T01:25:11.486Z",
+        "subject": "PS3 grade  &#34; | &#34; operand",
+        "_id": "l97t5epqmpg353"
+    },
+    {
+        "content": "<p>This is a new feature in python 3.9. The tester must be using an older version. I will flag a TA to regrade your pset</p>\n<p></p>\n<p>Update: Your pset has been regraded and you got 9.6/10. Your code failed one of the test cases for get_most_frequent_words.</p>",
+        "type": "i_answer",
+        "created": "2022-10-14T15:54:02.154Z",
+        "_id": "l97t5epqmpg353"
+    },
+    {
+        "content": "<p><strong attention=\"j7awud7zf0p2uu\">@Kuan Wei Huang</strong>\u00a0</p>",
+        "type": "followup",
+        "created": "2022-10-14T15:54:11.053Z",
+        "_id": "l97t5epqmpg353"
+    },
+    {
+        "content": "<p>Thanks for the update.<br />Still, the score is 5.4/10. Will it be updated on the website? Or has it stored with 9.6/10 somewhere?</p>",
+        "type": "followup",
+        "created": "2022-10-17T15:04:56.532Z",
+        "_id": "l97t5epqmpg353"
+    },
+    {
+        "content": "<p>It&#39;s been updated as of about an hour ago.\u00a0</p>",
+        "type": "followup_response",
+        "created": "2022-10-17T18:05:52.523Z",
+        "_id": "l97t5epqmpg353"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "content": "When the pset asks us to write a function within a function, do we need to include a &#34;&#34;&#34; &#34;&#34;&#34; thing (can&#39;t think of the word) for our inner function?",
+        "type": "question",
+        "created": "2022-10-12T23:35:49.086Z",
+        "subject": "Functions within functions",
+        "_id": "l969swgufv60o"
+    },
+    {
+        "content": "<p>You don&#39;t need docstrings for the inner function, as the specs of the returned function are already defined in the outer function&#39;s docstrings. You should still comment though</p>",
+        "type": "i_answer",
+        "created": "2022-10-13T00:00:52.527Z",
+        "_id": "l969swgufv60o"
+    }
+]

@@ -1,0 +1,33 @@
+[
+    {
+        "content": "Hello, I finished the microquiz about two hours ago but the question about guess and check is still bugging me a bit. My intuition tells me it shouldn\u2019t be possible, since there are unsolvable problems that can be translated to integer problems whose answers are not known, but at the same time we haven\u2019t really covered this in the course. Could you tell me the abswer to this question just to put my mind at rest? Thank you!",
+        "type": "question",
+        "created": "2022-09-14T22:33:46.280Z",
+        "subject": "Microquiz 1 guess and check question",
+        "_id": "l827999kv2k6sx"
+    },
+    {
+        "content": "<p>If you revisit the quiz page, there is an option to show the answers w/an explanation.</p>",
+        "type": "i_answer",
+        "created": "2022-09-15T14:50:43.911Z",
+        "_id": "l827999kv2k6sx"
+    },
+    {
+        "content": "It says I can\u2019t access the page until tonight at 8pm.",
+        "type": "followup",
+        "created": "2022-09-15T16:45:15.185Z",
+        "_id": "l827999kv2k6sx"
+    },
+    {
+        "content": "<p>That&#39;s probably when it closes for all people who are taking the microquiz. After that you should be able to see the answers! (This is to prevent sharing of answers between students)</p>",
+        "type": "followup_response",
+        "created": "2022-09-15T19:59:06.431Z",
+        "_id": "l827999kv2k6sx"
+    },
+    {
+        "content": "Fair enough. Thanks!",
+        "type": "followup_response",
+        "created": "2022-09-15T20:00:51.491Z",
+        "_id": "l827999kv2k6sx"
+    }
+]

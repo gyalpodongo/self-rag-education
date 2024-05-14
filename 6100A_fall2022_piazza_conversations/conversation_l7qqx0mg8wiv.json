@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Are students allowed to use the resources found under help--&gt;programming resources--&gt;textbooks/tutorials in solving PSET 0 and later PSETs?\u00a0</p>",
+        "type": "question",
+        "created": "2022-09-06T22:10:53.416Z",
+        "subject": "Resources Allowed on PSETS",
+        "_id": "l7qqx0mg8wiv"
+    },
+    {
+        "content": "<p>Of course! You may use any resources at your disposal and look up topics in more detail at your leisure in order to complete the PSET assignments. Their main purpose is to get you exposure to get hands-on experience writing large programs to solve tasks, and referencing different resources is part of this process!</p>\n<p></p>\n<p>Issues will only arise when copy/pasting code from another source, copying from other students, or writing code that you will not be able to explain to the staff during checkoffs.</p>",
+        "type": "i_answer",
+        "created": "2022-09-07T00:42:34.033Z",
+        "_id": "l7qqx0mg8wiv"
+    }
+]

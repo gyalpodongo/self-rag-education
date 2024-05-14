@@ -1,0 +1,33 @@
+[
+    {
+        "content": "<p>Is there a way to get more detailed results on the autograder results? It would be helpful to revise my code if I knew what it inputed and what it wanted.</p>",
+        "type": "question",
+        "created": "2022-10-17T14:18:37.314Z",
+        "subject": "More Details on Autograder?",
+        "_id": "l9cv3loiozf41g"
+    },
+    {
+        "content": "<p><strong attention=\"j7awud7zf0p2uu\">@Kuan Wei Huang</strong>\u00a0</p>",
+        "type": "followup",
+        "created": "2022-10-17T16:48:15.617Z",
+        "_id": "l9cv3loiozf41g"
+    },
+    {
+        "content": "<p>In your load_data function, did you load in only the closing prices? The autograder depends on the opening and closing price columns.</p>",
+        "type": "i_answer",
+        "created": "2022-10-17T16:48:34.066Z",
+        "_id": "l9cv3loiozf41g"
+    },
+    {
+        "content": "<p>Responding to the instructor answer, the test that I got wrong was the Test_Date_Before. Thanks for the response!</p>",
+        "type": "followup",
+        "created": "2022-10-17T18:06:34.221Z",
+        "_id": "l9cv3loiozf41g"
+    },
+    {
+        "content": "<p>Testing around, I figured out the issue.</p>",
+        "type": "followup_response",
+        "created": "2022-10-17T18:09:53.220Z",
+        "_id": "l9cv3loiozf41g"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "content": "Hi! I received my grade for PSET 4 and received lower than I would have thought. I looked at the test cases and was wondering if someone could explain to me what was wrong with my code and what test cases were used because I am still unclear on what I did incorrectly.\u00a0<div><br /></div><div>For what I understand, I didn&#39;t finish my load data code because I only considered the &#34;close&#34; column and not the other few. This was because I was more focused on the doc string, which specifiied closing prices, than the problem set instructions online, which mentionend all of the columns. I was wondering, however, if this meant that I also lost points for the plotting portions of the problem set because of the incorrect loaded in data from my previous function.\u00a0</div><div><br /></div><div>I was wondering if I would be able to request a regrade for this situation. I just spoke to a TA about this situation who recommended that I post on Piazza.\u00a0</div>",
+        "type": "question",
+        "created": "2022-10-17T16:52:29.965Z",
+        "subject": "6.100A Regrade Request",
+        "_id": "l9d0lhn11y739j"
+    },
+    {
+        "content": "<p><strong attention=\"j7awud7zf0p2uu\">@Kuan Wei Huang</strong> This is the student I was initially talking to who hardcoded the load_data function</p>",
+        "type": "followup",
+        "created": "2022-10-17T17:36:32.694Z",
+        "_id": "l9d0lhn11y739j"
+    }
+]

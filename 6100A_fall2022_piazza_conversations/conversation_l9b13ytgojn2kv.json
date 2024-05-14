@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>For writing occurs_most_often() in example 2, we have to find the maximum of a list of numbers.</p>\n<p></p>\n<p>Is it OK to use max() for this, or should we do it with a loop?</p>",
+        "type": "question",
+        "created": "2022-10-16T07:31:19.684Z",
+        "subject": "Are we allowed to use max() ?",
+        "_id": "l9b13ytgojn2kv"
+    },
+    {
+        "content": "<md>Yes, you can unless there is an explicit restriction mentioned.</md>",
+        "type": "i_answer",
+        "created": "2022-10-18T14:59:30.721Z",
+        "_id": "l9b13ytgojn2kv"
+    }
+]

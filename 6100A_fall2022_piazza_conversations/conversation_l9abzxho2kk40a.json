@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi! I was wondering what the difference between big theta and big o is. Like if an algorithm has an O(n) order of growth, would it not be a Theta(n) order of growth too?\u00a0</p>",
+        "type": "question",
+        "created": "2022-10-15T19:48:20.940Z",
+        "subject": "Big Theta vs Big O",
+        "_id": "l9abzxho2kk40a"
+    },
+    {
+        "content": "<p>Big Oh is an upper bound. Big theta is an upper AND lower bound.\u00a0</p>\n<p></p>\n<p>If something is Big Theta of f then it is Big Oh of that same f. But vice versa is not true.\u00a0</p>\n<p></p>\n<p>As an example, suppose f = 2x**2 &#43; 3x &#43; 1000. This f is Big Theta of x**2 because x**2 is an upper AND lower bound. That same f is also Big Oh of x**2 because x**2 is an upper bound. Now, we can say that same f is Big Oh of x**3 or x**100 or 2**x or x**x (anything bigger than x**2) because all these are upper bounds to f. But none of these are Big Theta of this same f because none of these are also lower bounds to f.\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-10-16T01:46:59.578Z",
+        "_id": "l9abzxho2kk40a"
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p>Hello! I finished Problem Set 0. When I went to save the file, I made sure to save it as a type &#34;Python&#34; file. However, when I went to open the saved file in order to submit it, the file opened in DataSpell and wanted me to obtain an active license to use the software. Is there some other way I can submit the problem set? Thanks!</p>",
+        "type": "question",
+        "created": "2022-09-07T02:50:48.117Z",
+        "subject": "Submitting Work",
+        "_id": "l7r0wzhxw7q7fa"
+    },
+    {
+        "content": "<md>If you already have a file with .py extension, one way you can usually open the file by launching Anaconda-Navigator and opening Spyder and going to File --> Open and then try opening the file. We use Spyder as the code editor/system for the class.\n\nThere is usually a default code editor/system(DataSpell, Visual Studio, Spyder, etc.) that a code file opens when you click on it on a device. It is possible to change the default code editor on your device.</md>",
+        "type": "i_answer",
+        "created": "2022-09-07T17:54:35.965Z",
+        "_id": "l7r0wzhxw7q7fa"
+    },
+    {
+        "content": "<p>Hello! Thank you for the help! When I submitted the file, it said C:\\fakepath\\ps0.py. Is that fine for the assignment, or is there some other way I am supposed to submit it?</p>",
+        "type": "followup",
+        "created": "2022-09-07T18:44:51.626Z",
+        "_id": "l7r0wzhxw7q7fa"
+    },
+    {
+        "content": "<md>That is fine. That is just a placeholder since the actual filename for a file on your computer is longer and more unique to your device, but that is not necessary to display on the website, so it just has a fakepath placeholder.</md>",
+        "type": "followup_response",
+        "created": "2022-09-07T20:54:38.300Z",
+        "_id": "l7r0wzhxw7q7fa"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "content": "Hi, my pset buddy never responded to my attempt to make contact. Who do I reach out to?",
+        "type": "question",
+        "created": "2022-10-06T12:53:48.715Z",
+        "subject": "pset buddy not responding",
+        "_id": "l8x285yjiw9537"
+    },
+    {
+        "content": "<p>I just sent you an email with a new buddy.</p>",
+        "type": "i_answer",
+        "created": "2022-10-06T13:09:04.688Z",
+        "_id": "l8x285yjiw9537"
+    }
+]

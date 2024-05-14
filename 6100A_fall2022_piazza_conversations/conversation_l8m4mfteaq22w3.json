@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p>I ran into an issue where my code for part c of the first pset didn&#39;t work on my laptop but worked on my friend&#39;s laptop. Because I was short on time and needed to submit the pset I submitted the pset assuming that the server won&#39;t run into the same issue as my laptop. I received a score of zero on that part though logically and when tracing the code back it makes sense.\u00a0</p>",
+        "type": "question",
+        "created": "2022-09-28T21:15:25.970Z",
+        "subject": "PSET 1 runs infinitily on my laptop but fine one someone&#39;s laptop",
+        "_id": "l8m4mfteaq22w3"
+    },
+    {
+        "content": "What kind of laptop do you have?",
+        "type": "followup",
+        "created": "2022-09-28T21:16:31.202Z",
+        "_id": "l8m4mfteaq22w3"
+    },
+    {
+        "content": "<p>If you received a 0 on the pset, a TA will manually regrade it. Your code probably had an infinite loop.</p>",
+        "type": "i_answer",
+        "created": "2022-09-28T22:46:08.399Z",
+        "_id": "l8m4mfteaq22w3"
+    },
+    {
+        "content": "<p>MacBook</p>",
+        "type": "followup_response",
+        "created": "2022-09-28T22:51:50.601Z",
+        "_id": "l8m4mfteaq22w3"
+    }
+]

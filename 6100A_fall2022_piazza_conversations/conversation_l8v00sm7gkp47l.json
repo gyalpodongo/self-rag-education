@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>I&#39;ve been trying to upload my code to the website since before 9, but its telling me there&#39;s a fake pathway and then nothing gets uploaded. What can I do to fix this?</p>\n<p></p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fkqlbk0887895hu%2F3e44a67580ead75b437d8d1f9953f763828ad547474342a6d858a3035a51a7a3%2FScreenshot_2022-10-04_221223.png\" width=\"508\" height=\"272\" alt=\"\" /><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fkqlbk0887895hu%2F8a6ba4c74b0e6fb9bed1d0392c0ed798e450e1c1af8cd2f159c1ff296b07cad9%2FScreenshot_2022-10-04_221430.png\" width=\"508\" height=\"272\" alt=\"\" /></p>",
+        "type": "question",
+        "created": "2022-10-05T02:16:33.247Z",
+        "subject": "Trouble turning in PSet 3",
+        "_id": "l8v00sm7gkp47l"
+    },
+    {
+        "content": "<p>Could it be the same issue as in @57 ?</p>",
+        "type": "s_answer",
+        "created": "2022-10-05T19:21:48.297Z",
+        "_id": "l8v00sm7gkp47l"
+    }
+]

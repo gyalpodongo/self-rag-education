@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hello,</p>\n<p></p>\n<p>I have a question about the halfway handin for PS4. According to my grade book I did not receive credit for it because I &#34;submitted late.&#34; However, I definitely submitted it on time, and I think I received this message because I accidentally resubmitted the halfway handin when trying to submit the actual Pset last Wednesday. Is there any way I can still receive credit on it?</p>\n<p></p>\n<p>Thank you,</p>\n<p>Yucan</p>",
+        "type": "question",
+        "created": "2022-11-21T15:49:43.275Z",
+        "subject": "Halfway Handin Ps4",
+        "_id": "laqyrkkrlit489"
+    },
+    {
+        "content": "<p>Yes that is why it says that message. I just reset your counter so you can get credit.</p>",
+        "type": "i_answer",
+        "created": "2022-11-21T16:29:54.533Z",
+        "_id": "laqyrkkrlit489"
+    }
+]

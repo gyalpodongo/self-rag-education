@@ -1,0 +1,2702 @@
+[
+    {
+        "timestamp": "00:00:21",
+        "content": "TODAY"
+    },
+    {
+        "timestamp": "00:01:33",
+        "content": "COMPLEXITY OF SOME PYTHON OPERATIONS"
+    },
+    {
+        "timestamp": "00:02:27",
+        "content": "CONSTANT TIME LIST ACCESS"
+    },
+    {
+        "timestamp": "00:03:00",
+        "content": "\u2022 List nam"
+    },
+    {
+        "timestamp": "00:05:12",
+        "content": "List name pc"
+    },
+    {
+        "timestamp": "00:08:18",
+        "content": "NAIVE IMPLEMENTATION OF dict"
+    },
+    {
+        "timestamp": "00:09:42",
+        "content": "PLEMENTATION OF dict"
+    },
+    {
+        "timestamp": "00:12:09",
+        "content": "DICTIONARY IMPLEMENTATION"
+    },
+    {
+        "timestamp": "00:13:30",
+        "content": "QUERYING THE HASH FUNCTION"
+    },
+    {
+        "timestamp": "00:16:06",
+        "content": "NAMES TO INDICES"
+    },
+    {
+        "timestamp": "00:16:48",
+        "content": "Disadvantage: VE"
+    },
+    {
+        "timestamp": "00:20:24",
+        "content": "Hash table (like a list)"
+    },
+    {
+        "timestamp": "00:26:00",
+        "content": "Hash function: 1) Sum the letters 2) Take mod 16 (to fit in\u2026"
+    },
+    {
+        "timestamp": "00:26:30",
+        "content": "The hash"
+    },
+    {
+        "timestamp": "00:26:51",
+        "content": "PROPERTIES OF A GOOD HASH FUNCTION"
+    },
+    {
+        "timestamp": "00:29:36",
+        "content": "The hash fur"
+    },
+    {
+        "timestamp": "00:31:48",
+        "content": "Dictionaries: n is ten (d)"
+    },
+    {
+        "timestamp": "00:34:42",
+        "content": "TOPIC USEFUL FOR MANY DOMAINS"
+    },
+    {
+        "timestamp": "00:35:54",
+        "content": "Idea:"
+    },
+    {
+        "timestamp": "00:37:03",
+        "content": "ROLLING A DICE"
+    },
+    {
+        "timestamp": "00:40:21",
+        "content": "THE SIMULATION CODE"
+    },
+    {
+        "timestamp": "00:43:39",
+        "content": "THAT'S AN EASY SIMULATION"
+    },
+    {
+        "timestamp": "00:44:21",
+        "content": "NEW QUESTION NOT AS EASY MATHEMATICALLY"
+    },
+    {
+        "timestamp": "00:46:09",
+        "content": "EASY TWEAK TO EXISTING CODE"
+    },
+    {
+        "timestamp": "00:49:45",
+        "content": "REAL WORLD QUESTION VERY COMMON EXAMPLE OF HOW USEFUL\u2026"
+    },
+    {
+        "timestamp": "00:56:12",
+        "content": "PLOTTING RANDOM FILL RATES AND CORRESPONDING TIME IT TAKES\u2026"
+    },
+    {
+        "timestamp": "00:58:03",
+        "content": "RESULTS"
+    },
+    {
+        "timestamp": "00:58:39",
+        "content": "\u2022 Not 300 and not 400"
+    },
+    {
+        "timestamp": "00:58:48",
+        "content": "Not 300"
+    },
+    {
+        "timestamp": "01:00:24",
+        "content": "WHAT DID YOU LEARN?"
+    },
+    {
+        "timestamp": "01:04:33",
+        "content": "YOUR EXPERIENCE"
+    },
+    {
+        "timestamp": "01:05:12",
+        "content": "NOW WE'RE HERE"
+    },
+    {
+        "timestamp": "01:05:51",
+        "content": "WHAT'S"
+    },
+    {
+        "timestamp": "01:06:06",
+        "content": "WHAT'S NEXT"
+    },
+    {
+        "timestamp": "01:10:54",
+        "content": "JUST KEEP CODING"
+    },
+    {
+        "timestamp": "01:12:15",
+        "content": "ocw.mit.edu"
+    },
+    {
+        "timestamp": "00:00:01",
+        "content": "So welcome to the last class. Please don't come on Wednesday."
+    },
+    {
+        "timestamp": "00:00:04",
+        "content": "I will not be here today. We will just be tying up some loose ends regarding some topics that we've seen throughout the course."
+    },
+    {
+        "timestamp": "00:00:12",
+        "content": "And then I'm going to do just a wrap up of things we've learned and potential courses that you might want to take after this."
+    },
+    {
+        "timestamp": "00:00:20",
+        "content": "Okay. So today, as I mentioned, we're going to tie up some loose ends regarding lists, dictionaries."
+    },
+    {
+        "timestamp": "00:00:28",
+        "content": "So those two topics are kind of going to be combined into one sort of kind of one part of this lecture."
+    },
+    {
+        "timestamp": "00:00:36",
+        "content": "It's going to also include a little bit about complexity."
+    },
+    {
+        "timestamp": "00:00:39",
+        "content": "So just some things that we've learned kind of demystifying some details that I kind of skipped throughout the past few lectures."
+    },
+    {
+        "timestamp": "00:00:47",
+        "content": "And then we're going to talk about simulations."
+    },
+    {
+        "timestamp": "00:00:49",
+        "content": "So simulations are very, very useful is a very useful idea that you can already do with what you've learned in this class."
+    },
+    {
+        "timestamp": "00:01:04",
+        "content": "And I'll show you some useful places where you can apply computation and simulation to do some interesting, some interesting things, and then we'll do the wrap up. So let's first start talking about lists."
+    },
+    {
+        "timestamp": "00:01:10",
+        "content": "So lists were the first data structure that we encountered that was really useful, right?"
+    },
+    {
+        "timestamp": "00:01:16",
+        "content": "We did see strings and we did see tuples and things like that."
+    },
+    {
+        "timestamp": "00:01:20",
+        "content": "But once we saw lists, it opened up a whole new world of possibilities for how we can manipulate data."
+    },
+    {
+        "timestamp": "00:01:26",
+        "content": "Right. So lists are sequences of objects."
+    },
+    {
+        "timestamp": "00:01:29",
+        "content": "I kind of skip past how they're actually implemented in memory, so I do want to talk about that a little bit."
+    },
+    {
+        "timestamp": "00:01:35",
+        "content": "But what we did talk about was the complexity, the asymptotic complexity of list operations."
+    },
+    {
+        "timestamp": "00:01:50",
+        "content": "Okay. So some of these are we're pretty obvious. So the ones that are theta even down here were obvious because well, to check for equality between two lists, you, of course, have to look at each element in the list."
+    },
+    {
+        "timestamp": "00:01:54",
+        "content": "Right. So that's state of the length of the list to check whether an item is in a list or to iterate over a list."
+    },
+    {
+        "timestamp": "00:01:59",
+        "content": "Obviously, it's state of and because you have to look at each element in the list."
+    },
+    {
+        "timestamp": "00:02:04",
+        "content": "Well, we didn't really talk about the complexities up here."
+    },
+    {
+        "timestamp": "00:02:08",
+        "content": "So accessing an item in the list specifically is theta of one."
+    },
+    {
+        "timestamp": "00:02:19",
+        "content": "So that means if you have a list with a whole bunch of elements in it to grab the element at a specific memory location, it's constant time complexity. So it's basically doesn't depend on the length of the list."
+    },
+    {
+        "timestamp": "00:02:24",
+        "content": "It's instant. So we're going to see why that is. Let's first, for simplicity's sake, assume that we're storing a list in memory of just integers."
+    },
+    {
+        "timestamp": "00:02:34",
+        "content": "Right. So I know lists can store other lists and dictionaries and things like that."
+    },
+    {
+        "timestamp": "00:02:38",
+        "content": "But just for the this first slide, let's assume all we're doing is storing integers."
+    },
+    {
+        "timestamp": "00:02:44",
+        "content": "So the way Python does this is when you create a list, let's say you're initially populated with length."
+    },
+    {
+        "timestamp": "00:02:50",
+        "content": "L Python initially allocates a contiguous memory block with with length l memory locations."
+    },
+    {
+        "timestamp": "00:03:05",
+        "content": "Okay. So if you have a list with 100 elements in it initially populated with 100 elements in it, Python will initially create for you a sequence of memory locations that are reserved for this list."
+    },
+    {
+        "timestamp": "00:03:17",
+        "content": "Then it says, well, if this is going to contain just integers, I'm going to say each one of these memory locations will hold four bytes for that integer."
+    },
+    {
+        "timestamp": "00:03:22",
+        "content": "That's kind of how we represent an integer, and it could be a byte, something else for different machines."
+    },
+    {
+        "timestamp": "00:03:28",
+        "content": "But in this particular example, let's just say each one of those memory locations will start integer and that's four bytes long."
+    },
+    {
+        "timestamp": "00:03:35",
+        "content": "Well, if this list is contiguous, right, a bunch of blocks of memory and all in order then to access the if element."
+    },
+    {
+        "timestamp": "00:03:45",
+        "content": "All you need to do is a little bit of math. Right?"
+    },
+    {
+        "timestamp": "00:03:52",
+        "content": "So here I've got an integer in one position in my contiguous block, then I have maybe another integer at the next position and so on and so on until I have another integer at the ice position."
+    },
+    {
+        "timestamp": "00:04:07",
+        "content": "So since these are consecutive to access the location of the of the element in this I spot, all I need to do is look up that many memory locations from the start of my list."
+    },
+    {
+        "timestamp": "00:04:13",
+        "content": "Okay, so that's just pure math. So one byte is eight bits."
+    },
+    {
+        "timestamp": "00:04:18",
+        "content": "So if I have four times. Four times eight bits multiplied by I plus the first location that will tell me exactly the location of the integer."
+    },
+    {
+        "timestamp": "00:04:34",
+        "content": "Okay. So this is all made possible because these memory these memory locations are allocated in order."
+    },
+    {
+        "timestamp": "00:04:41",
+        "content": "If they were allocated not in order, then maybe this would not be as easy."
+    },
+    {
+        "timestamp": "00:04:48",
+        "content": "32. Because. So if I say an integer is stored as four bytes in bits, that's four times eight because eight bits is in one byte."
+    },
+    {
+        "timestamp": "00:04:59",
+        "content": "So eight times four is 32 bits for what?"
+    },
+    {
+        "timestamp": "00:05:05",
+        "content": "All right. But this is assuming that I'm storing integers and obviously lists can contain other lists."
+    },
+    {
+        "timestamp": "00:05:21",
+        "content": "They can contain tuples, they can contain dictionaries. And some of those objects might not fit within this set number of bytes, right, within four bytes, because some of those objects might be very, very large themselves."
+    },
+    {
+        "timestamp": "00:05:27",
+        "content": "So in that particular case, let's say the list is heterogeneous."
+    },
+    {
+        "timestamp": "00:05:36",
+        "content": "That doesn't faze us because we can say, well, instead of storing the object itself at each memory location that worked for integers but not might"
+    },
+    {
+        "timestamp": "00:05:49",
+        "content": "not work when we have to store a list of a thousand elements at a particular memory location, let's instead, instead of storing the element itself, let's store a pointer."
+    },
+    {
+        "timestamp": "00:05:53",
+        "content": "And a pointer is just a number that tells you which memory, location that list might be stored at or that dictionary might be stored at."
+    },
+    {
+        "timestamp": "00:06:09",
+        "content": "Right. So if we store a pointer at a particular memory location, then that means that this is my again, contiguous memory allocated for a list of length l or something like that."
+    },
+    {
+        "timestamp": "00:06:22",
+        "content": "Then here I'm storing a still an integer and that integer tells Python which memory location to jump to, to grab the integer that's stored there or something like that."
+    },
+    {
+        "timestamp": "00:06:26",
+        "content": "Okay. And here I might have another list that I'm storing, but I'm not storing it exactly in that memory location."
+    },
+    {
+        "timestamp": "00:06:33",
+        "content": "It's pointed to by by this pointer that tells Python again to jump to a different memory location where that list might be continuously stored itself."
+    },
+    {
+        "timestamp": "00:06:43",
+        "content": "Right. So here in this in this example, I'm still storing numbers."
+    },
+    {
+        "timestamp": "00:06:50",
+        "content": "This just that these numbers correspond to a memory location that tells Python where to go to get my element in that list."
+    },
+    {
+        "timestamp": "00:06:58",
+        "content": "Right. So in terms of the computation, to get the ice element in the list, it's going to be the same."
+    },
+    {
+        "timestamp": "00:07:05",
+        "content": "I'm still allocating in my original list for bytes to store my pointer."
+    },
+    {
+        "timestamp": "00:07:10",
+        "content": "Again, just a number."
+    },
+    {
+        "timestamp": "00:07:12",
+        "content": "And so to get the if location, all I need to do is tell Python to go the start of this list plus 32 times I locations down to get to that element."
+    },
+    {
+        "timestamp": "00:07:25",
+        "content": "Okay. So this. Formula here."
+    },
+    {
+        "timestamp": "00:07:28",
+        "content": "Right. Adding the start of this memory location of the list plus 32 times I is just math."
+    },
+    {
+        "timestamp": "00:07:38",
+        "content": "There's nothing here that depends on the length of the list."
+    },
+    {
+        "timestamp": "00:07:41",
+        "content": "Right. So to grab the element at the ice location, right."
+    },
+    {
+        "timestamp": "00:07:45",
+        "content": "Somewhere within here, all we're doing is some math, right?"
+    },
+    {
+        "timestamp": "00:07:49",
+        "content": "An addition and a multiplication. And since that is just, you know, none of that depends on the length of the list."
+    },
+    {
+        "timestamp": "00:07:57",
+        "content": "The complexity to access the ice element in the list is constant."
+    },
+    {
+        "timestamp": "00:08:01",
+        "content": "Right. Just math. And we're using this idea that we are we know exactly how many memory locations we need to jump to get to the ice location."
+    },
+    {
+        "timestamp": "00:08:11",
+        "content": "Does that make sense? Okay. So that leads us to the question."
+    },
+    {
+        "timestamp": "00:08:19",
+        "content": "Well, okay, we're storing a list of elements and we're using the idea that a list has indices."
+    },
+    {
+        "timestamp": "00:08:28",
+        "content": "Right, to tell us the value. There's an element, an index zero about an element, an index one, an element, an index two and so on."
+    },
+    {
+        "timestamp": "00:08:36",
+        "content": "So there's an order to the list, right? And because of that order, we're able to index an element at the location in constant time."
+    },
+    {
+        "timestamp": "00:08:47",
+        "content": "But let's say we wanted to store a dictionary. A dictionary does not have an order to it."
+    },
+    {
+        "timestamp": "00:08:53",
+        "content": "Right. And what does a dictionary store? It stores a key value pair."
+    },
+    {
+        "timestamp": "00:08:59",
+        "content": "In a list, you could think of the quote unquote key as the index zero one, two, three, four and so on."
+    },
+    {
+        "timestamp": "00:09:05",
+        "content": "And the value was the element at that index. But in a dictionary, the key is not ordered."
+    },
+    {
+        "timestamp": "00:09:11",
+        "content": "Right? The key can be anything. So here I've got a dictionary without maps, maybe unnamed to a boolean."
+    },
+    {
+        "timestamp": "00:09:18",
+        "content": "Maybe the student is in this class. True or false?"
+    },
+    {
+        "timestamp": "00:09:22",
+        "content": "So a naive implementation of a dictionary could be to say, well, let's implement elements of the dictionary."
+    },
+    {
+        "timestamp": "00:09:30",
+        "content": "So a key value pair as a list."
+    },
+    {
+        "timestamp": "00:09:33",
+        "content": "So just two elements. The first element in that list is my key, and the second element in my list is my value, right?"
+    },
+    {
+        "timestamp": "00:09:40",
+        "content": "So here are really naive. Implementation uses the list and I've got four entries in my dictionary."
+    },
+    {
+        "timestamp": "00:09:47",
+        "content": "The element and index zero are all strings. The element at index one in each location is my value associated with that key."
+    },
+    {
+        "timestamp": "00:09:56",
+        "content": "Well, if I were to index into this list, right."
+    },
+    {
+        "timestamp": "00:10:00",
+        "content": "To grab the value associated with Eric, for example."
+    },
+    {
+        "timestamp": "00:10:05",
+        "content": "Can I do that in constant time? No."
+    },
+    {
+        "timestamp": "00:10:09",
+        "content": "Right. Because there's no numerical index here."
+    },
+    {
+        "timestamp": "00:10:13",
+        "content": "There's no order to this set of values. Right. It's not even in alphabetical order."
+    },
+    {
+        "timestamp": "00:10:20",
+        "content": "Right? So a than J, than E than S, and there's no order guaranteed for dictionaries anyway."
+    },
+    {
+        "timestamp": "00:10:34",
+        "content": "So in order to look up an item in this naive implementation of a dictionary where you're just putting all the elements in order in a list, it's theta of where end is the length of our list."
+    },
+    {
+        "timestamp": "00:10:38",
+        "content": "Right. And so. This implementation of a dictionary doesn't work."
+    },
+    {
+        "timestamp": "00:10:45",
+        "content": "And yet when I showed you the slide, a few of you a few lectures ago, we saw something interesting."
+    },
+    {
+        "timestamp": "00:10:51",
+        "content": "So this is what we just what we just kind of proved, quote, unquote, the access time in a list is constant."
+    },
+    {
+        "timestamp": "00:11:01",
+        "content": "But the access time in a dictionary is is constant as well in the average case."
+    },
+    {
+        "timestamp": "00:11:08",
+        "content": "In the worst case, it is Beethoven. Right?"
+    },
+    {
+        "timestamp": "00:11:12",
+        "content": "Accessing an item in a dictionary is the event. Because in the worst case, we might store the dictionary like this."
+    },
+    {
+        "timestamp": "00:11:18",
+        "content": "Right? It's just a list of all of our dictionary entries, all in order."
+    },
+    {
+        "timestamp": "00:11:23",
+        "content": "So to look up one index, we'd have to go through the entire list and check if the element at index zero is"
+    },
+    {
+        "timestamp": "00:11:30",
+        "content": "the one we're looking for and then grab the element and index one as its value."
+    },
+    {
+        "timestamp": "00:11:39",
+        "content": "But in the average case and this is what we're going to see next in the average case, the access, the little time it takes to do a lookup for key in a dictionary is constant."
+    },
+    {
+        "timestamp": "00:11:46",
+        "content": "It's actually theta of one, which makes dictionaries really powerful data structures to use in a lot of situations."
+    },
+    {
+        "timestamp": "00:11:52",
+        "content": "So why is this? Well, it has to do with the idea of hashing."
+    },
+    {
+        "timestamp": "00:11:58",
+        "content": "Okay. So the way that dictionaries are actually stored in memory is not as a list of a bunch of entries."
+    },
+    {
+        "timestamp": "00:12:05",
+        "content": "Right. We just showed that that is not feasible. That leads to a state of end look up time."
+    },
+    {
+        "timestamp": "00:12:11",
+        "content": "So instead, they use something called a hash table. We briefly spoke about this."
+    },
+    {
+        "timestamp": "00:12:17",
+        "content": "A hash table is just like a long list."
+    },
+    {
+        "timestamp": "00:12:21",
+        "content": "And the indices of the hash table are actually things that you look up using a hash function."
+    },
+    {
+        "timestamp": "00:12:29",
+        "content": "Okay. So how does this work? Well, any key that you'd like to add to a dictionary?"
+    },
+    {
+        "timestamp": "00:12:36",
+        "content": "Can actually actually has a hash function run on it."
+    },
+    {
+        "timestamp": "00:12:46",
+        "content": "And this hash function takes in maybe an integer, maybe a float, maybe a string, maybe a tuple, any sort of any hash object hashes it, which means it takes that object."
+    },
+    {
+        "timestamp": "00:12:53",
+        "content": "If it's a string, it'll give us an integer. If it's a tuple, it'll give us an integer."
+    },
+    {
+        "timestamp": "00:12:57",
+        "content": "So if it hashes it, that means it takes it in as an input and gives us back a number, an integer."
+    },
+    {
+        "timestamp": "00:13:04",
+        "content": "And that integer is what is used as the index to look it up in the hash table, to look up the value associated with it in a hash."
+    },
+    {
+        "timestamp": "00:13:13",
+        "content": "So in that sense, the lookup itself is constant time because we just showed looking up an item in a dictionary"
+    },
+    {
+        "timestamp": "00:13:24",
+        "content": "using the index is constant time and if that hash function is also constant time, then the time it takes to look up an item in the dictionary is also constant time."
+    },
+    {
+        "timestamp": "00:13:30",
+        "content": "So here are some examples of the Python hash function actually being run on different objects."
+    },
+    {
+        "timestamp": "00:13:37",
+        "content": "So up here, if I run, it's literally a function in Python hash of some parameters."
+    },
+    {
+        "timestamp": "00:13:43",
+        "content": "So in this case, 123, it just gives me the value back."
+    },
+    {
+        "timestamp": "00:13:46",
+        "content": "So the hash of some number is the number itself. We can hash a string that'll give us this particular number."
+    },
+    {
+        "timestamp": "00:13:56",
+        "content": "So again, an integer, the hash of a tuple also gives us some number back."
+    },
+    {
+        "timestamp": "00:14:01",
+        "content": "So these are all this, this these are all just some function running behind the scenes that takes in this hackable object and gives us back"
+    },
+    {
+        "timestamp": "00:14:09",
+        "content": "a number that's now we can't run a hash function on a list because the list is mutable and therefore unhackable."
+    },
+    {
+        "timestamp": "00:14:17",
+        "content": "Right? If the object changes, then the hash function run on this object will give us a different value."
+    },
+    {
+        "timestamp": "00:14:24",
+        "content": "Okay. Okay. So if you actually run this out on your own computer, you might get different answers."
+    },
+    {
+        "timestamp": "00:14:38",
+        "content": "Or if you run it at different times, you might get different answers because Python adds a little bit of randomness to the the hash values, just in case you want to encrypt data and things like that."
+    },
+    {
+        "timestamp": "00:14:40",
+        "content": "But generally you will always get some integer back if you run the hash function on a on a immutable object."
+    },
+    {
+        "timestamp": "00:14:49",
+        "content": "Okay. So then that begs the question, how big should a hash table be?"
+    },
+    {
+        "timestamp": "00:15:03",
+        "content": "Right. So if a hash table is basically just a long list and if I run a function on some object to give me the value of an index within that list, how big should this table be? How many indices should I have?"
+    },
+    {
+        "timestamp": "00:15:07",
+        "content": "A thousand. A million? 10 million. Right. What's a good number?"
+    },
+    {
+        "timestamp": "00:15:17",
+        "content": "Well, let's take this example of a string. Okay, so first string, what we can do is and we can use my name as an example if we want to hash my name such that every single name hashes to something unique."
+    },
+    {
+        "timestamp": "00:15:28",
+        "content": "What we can do is the following so we can take each character in somebodies name and behind the scenes."
+    },
+    {
+        "timestamp": "00:15:36",
+        "content": "Each one of these characters actually has an integer."
+    },
+    {
+        "timestamp": "00:15:41",
+        "content": "Oh, sorry, an ASCII code associated with it, which is something numeric."
+    },
+    {
+        "timestamp": "00:15:46",
+        "content": "And what we can do is just convert that number to binary."
+    },
+    {
+        "timestamp": "00:15:49",
+        "content": "So the letter capital A happens to be this binary value, right?"
+    },
+    {
+        "timestamp": "00:15:55",
+        "content": "01000001 the lowercase n is this value, the lowercase a is this value and so on."
+    },
+    {
+        "timestamp": "00:16:03",
+        "content": "Right? So I've got seven different sort of groups of eight bits here, four corresponding to each letter in my name."
+    },
+    {
+        "timestamp": "00:16:11",
+        "content": "Now if I take those bits and now just smoosh them together, concatenate them to give me one really, really big number, right?"
+    },
+    {
+        "timestamp": "00:16:19",
+        "content": "So this is all going to be one really big number. The corresponding number in base ten."
+    },
+    {
+        "timestamp": "00:16:25",
+        "content": "Is this really long thing? Okay."
+    },
+    {
+        "timestamp": "00:16:29",
+        "content": "And so if I do this, as long as someone's name is unique, they will end up with a unique number associated with their name."
+    },
+    {
+        "timestamp": "00:16:38",
+        "content": "Right. And therefore, that unique number can be used as a unique index into a really big hash table."
+    },
+    {
+        "timestamp": "00:16:46",
+        "content": "So let's think about hashing the names of Mitt's 4000 undergrads."
+    },
+    {
+        "timestamp": "00:16:51",
+        "content": "Right. Let's assume that the longest name is 20 characters long, right?"
+    },
+    {
+        "timestamp": "00:16:58",
+        "content": "So there's going to be 20 of these different letters that we need to hash."
+    },
+    {
+        "timestamp": "00:17:04",
+        "content": "So we use the same process here. Each one of those 20 characters gets its own eight bit representation."
+    },
+    {
+        "timestamp": "00:17:12",
+        "content": "So in total, the number of bits that I'm going to use to represent that 20 long character is going to be eight times 20."
+    },
+    {
+        "timestamp": "00:17:20",
+        "content": "So 160 different bits. Okay. That's a lot of bits."
+    },
+    {
+        "timestamp": "00:17:25",
+        "content": "And if I concatenate all those together, the number that that corresponds to is two to the 160, which is this thing here."
+    },
+    {
+        "timestamp": "00:17:46",
+        "content": "Okay. So if I want every single combination of letters in the alphabet to be a unique value in this long list, then I will need to have a list that is this long."
+    },
+    {
+        "timestamp": "00:17:50",
+        "content": "I'm not even going to try to figure it out or to say how big this number is."
+    },
+    {
+        "timestamp": "00:17:54",
+        "content": "But it's really, really big. And having a list."
+    },
+    {
+        "timestamp": "00:18:00",
+        "content": "Take a hash table that has this many entries will guarantee for me that names that are 20 characters long will each hash to something unique."
+    },
+    {
+        "timestamp": "00:18:11",
+        "content": "But I only have 4000 names that I'd like to put in my table."
+    },
+    {
+        "timestamp": "00:18:17",
+        "content": "So I have 4000 names that I'd like to put on a table that has this many spots."
+    },
+    {
+        "timestamp": "00:18:23",
+        "content": "Right. So that's a lot of wasted space. Yeah. Because it's a binary."
+    },
+    {
+        "timestamp": "00:18:30",
+        "content": "Yeah. So. Exactly. So each one of the characters has eight bits associated with it, right."
+    },
+    {
+        "timestamp": "00:18:36",
+        "content": "So there's going to be 160 of these zeros or ones in a row."
+    },
+    {
+        "timestamp": "00:18:40",
+        "content": "So to tell the number that that that's associated with, we basically say, ah, we basically calculate 100000000 20 with 20 zeros at the end."
+    },
+    {
+        "timestamp": "00:18:53",
+        "content": "And that gives me two to the 160. Right."
+    },
+    {
+        "timestamp": "00:18:57",
+        "content": "That's going to be how big my numbers. That is going to be."
+    },
+    {
+        "timestamp": "00:19:04",
+        "content": "That's going to be 4141. That's going to be how many slots I'll need in order to have unique combinations of letters be mapped to one slot."
+    },
+    {
+        "timestamp": "00:19:15",
+        "content": "Right. So as this is your one will map to one things uses your one zero will map to another things."
+    },
+    {
+        "timestamp": "00:19:22",
+        "content": "This is your one. One will map to another thing. So like all these combinations of letters will each map to something unique."
+    },
+    {
+        "timestamp": "00:19:28",
+        "content": "And in order to guarantee that I need this many slots."
+    },
+    {
+        "timestamp": "00:19:32",
+        "content": "But since again, since I only have 4000 undergrads, well, that's a lot of wasted space, right?"
+    },
+    {
+        "timestamp": "00:19:37",
+        "content": "I'm only using 4000 of these slots to hold students names."
+    },
+    {
+        "timestamp": "00:19:41",
+        "content": "And that's because a lot of those combinations of letters aren't really valid, right?"
+    },
+    {
+        "timestamp": "00:19:47",
+        "content": "So what's the solution? There's a lot of wasted space there."
+    },
+    {
+        "timestamp": "00:19:50",
+        "content": "So the solution would be to say, well, you know what, I would be fine with having a smaller hash table."
+    },
+    {
+        "timestamp": "00:19:57",
+        "content": "I don't need that giant number of entries in my hash table."
+    },
+    {
+        "timestamp": "00:20:10",
+        "content": "I would be fine with maybe having, you know, 10,000 spots and then having some names that happen to hash to the same thing or saying, I'm fine with having a hash table that has a million spots."
+    },
+    {
+        "timestamp": "00:20:13",
+        "content": "And, you know, out of those 4000, some will be used, some will be unused and some might collide to the same hash value."
+    },
+    {
+        "timestamp": "00:20:21",
+        "content": "And that's totally okay. Okay. So if we allow collisions, what is this going to look like?"
+    },
+    {
+        "timestamp": "00:20:27",
+        "content": "So here's a visualization of our hash table. So think of the hash table like a list."
+    },
+    {
+        "timestamp": "00:20:33",
+        "content": "The reason why we think of it as a list is because indexing into a list is constant time."
+    },
+    {
+        "timestamp": "00:20:38",
+        "content": "Right. We're taking advantage of the idea that if we index into a list, that's going to be constant."
+    },
+    {
+        "timestamp": "00:20:44",
+        "content": "So let's say we're adding some names and grades into our hash table."
+    },
+    {
+        "timestamp": "00:20:50",
+        "content": "Right? So this is our representation of a dictionary. The values here are says that I have a hash table that has 16 different entries."
+    },
+    {
+        "timestamp": "00:21:01",
+        "content": "0 to 15 and 0 to 15 corresponds to like the list index."
+    },
+    {
+        "timestamp": "00:21:07",
+        "content": "Okay. So if I have a name and a grade that I'd like to add to my hash table."
+    },
+    {
+        "timestamp": "00:21:15",
+        "content": "I need to run a hash function on the key. So the key is the name and the grade is the the value associated with the name."
+    },
+    {
+        "timestamp": "00:21:33",
+        "content": "So to add, Anna, with the grade of C to my hash table, I need to take my hand, which is the key, and run a hash function on it, such that when I run the hash function on this name and it'll give me a number, an integer between zero and 50."
+    },
+    {
+        "timestamp": "00:21:42",
+        "content": "Okay. And if I can do that, then I know I've added my my entry here into one of these buckets."
+    },
+    {
+        "timestamp": "00:21:56",
+        "content": "So a reasonable hash function to run on the name and we saw this in the dictionary lecture is to say, well, let's have a map to one be map to to see, map to three and so on."
+    },
+    {
+        "timestamp": "00:22:01",
+        "content": "So in for my name, I've got one plus 14, plus one equals 16."
+    },
+    {
+        "timestamp": "00:22:07",
+        "content": "But since I want to ensure that this hash function gives me a number between zero and 15, let's mark that with 16."
+    },
+    {
+        "timestamp": "00:22:17",
+        "content": "Right, so I can sum all the letters in my name just fine."
+    },
+    {
+        "timestamp": "00:22:20",
+        "content": "And then let's finalize it by saying mod 16 to give me the remainder either zero, one, two or 50."
+    },
+    {
+        "timestamp": "00:22:27",
+        "content": "And if I do that, I'm ensured that this key value pair will be added to one of these buckets from 0 to 50."
+    },
+    {
+        "timestamp": "00:22:36",
+        "content": "Okay, so in this particular case and with a greater C maps to zero, right?"
+    },
+    {
+        "timestamp": "00:22:40",
+        "content": "That's what the hash function on my name told me to add the location that the hash function in my name told me to add to."
+    },
+    {
+        "timestamp": "00:22:48",
+        "content": "So there I am, putting my name in there. Let's add a couple more people."
+    },
+    {
+        "timestamp": "00:22:51",
+        "content": "So here's Eric, his name hashes to 35 mod 16."
+    },
+    {
+        "timestamp": "00:22:57",
+        "content": "So that's three. So I'm going to add Eric and his grade two, bucket number three."
+    },
+    {
+        "timestamp": "00:23:02",
+        "content": "Then we can add John with a grade of B, his name hashes to 47 mod 16."
+    },
+    {
+        "timestamp": "00:23:09",
+        "content": "So that's 15. So we can add John down in bucket 15."
+    },
+    {
+        "timestamp": "00:23:13",
+        "content": "Okay. And then let's add Eve with a grade of B, so she hashes to 32 mod 16, which is also zero."
+    },
+    {
+        "timestamp": "00:23:22",
+        "content": "And you know what, Ana was already in the bucket zero."
+    },
+    {
+        "timestamp": "00:23:26",
+        "content": "But that's fine because you know what? I have four number four names here."
+    },
+    {
+        "timestamp": "00:23:31",
+        "content": "So for entries that I want to add to my hash table dictionary and two of them collided, that's fine."
+    },
+    {
+        "timestamp": "00:23:39",
+        "content": "I still have many other buckets that are empty here."
+    },
+    {
+        "timestamp": "00:23:43",
+        "content": "So if I have, you know, you know, ten students in my class, probably they won't all hash to zero."
+    },
+    {
+        "timestamp": "00:23:50",
+        "content": "They'll probably hash, you know, somewhere within here so that it's nicely balanced."
+    },
+    {
+        "timestamp": "00:23:55",
+        "content": "And so maybe out of ten students in my class, only two collided."
+    },
+    {
+        "timestamp": "00:24:00",
+        "content": "And that's way better than having all of the students in the class be enumerated in one long list."
+    },
+    {
+        "timestamp": "00:24:06",
+        "content": "Right. So when I look up and the way that this works is you hash the name Ana against, right?"
+    },
+    {
+        "timestamp": "00:24:12",
+        "content": "So when you want to look up the grade of Anna, that's the key."
+    },
+    {
+        "timestamp": "00:24:16",
+        "content": "You hash the value Ana again, you say, hey, Ana, hash to zero."
+    },
+    {
+        "timestamp": "00:24:20",
+        "content": "So then I'm going to look in bucket zero and say, all right, let me enumerate everybody who's in bucket zero and see if I can find Ana with her."
+    },
+    {
+        "timestamp": "00:24:29",
+        "content": "Great happens to be the first one."
+    },
+    {
+        "timestamp": "00:24:31",
+        "content": "But, you know, if it was later on, then I'd still be able to grab it much faster than if I had everybody in one long list."
+    },
+    {
+        "timestamp": "00:24:38",
+        "content": "Does that make sense? Like the idea of, yeah, but you can still like access that."
+    },
+    {
+        "timestamp": "00:24:44",
+        "content": "Like you might get two answers. Exactly. Yeah, you can still access them."
+    },
+    {
+        "timestamp": "00:24:48",
+        "content": "You just might have to look through a list of two. Right?"
+    },
+    {
+        "timestamp": "00:24:50",
+        "content": "So here at bucket zero, I'm effectively storing a list of these everything that has to a zero."
+    },
+    {
+        "timestamp": "00:24:57",
+        "content": "Right, which is. It's fine. Yes. That's that's two that I have to look through."
+    },
+    {
+        "timestamp": "00:25:02",
+        "content": "It's not four, it's not ten. It's not, you know, 100. It's not everybody all in a row."
+    },
+    {
+        "timestamp": "00:25:08",
+        "content": "Right? Yeah. So the complexity of this is actually going to be smaller than theta, even."
+    },
+    {
+        "timestamp": "00:25:16",
+        "content": "Right. And it'll depend on the hash function that we use."
+    },
+    {
+        "timestamp": "00:25:19",
+        "content": "Right. This hash function needs to be nicely balanced. It shouldn't put everyone in bucket zero."
+    },
+    {
+        "timestamp": "00:25:24",
+        "content": "Right. Then that's a useless hash function and it depends on the size of the hash table."
+    },
+    {
+        "timestamp": "00:25:29",
+        "content": "Right. If I have maybe a thousand people that I'm storing in 15 buckets, I'm going to have a lot of collisions."
+    },
+    {
+        "timestamp": "00:25:40",
+        "content": "Right. But if I'm only storing these four or maybe, you know, eight or ten or something smaller than the size of my table, then there will be far fewer collisions."
+    },
+    {
+        "timestamp": "00:25:45",
+        "content": "It'll be more nicely balanced. Yeah. Like Oh theta of n for the things in zero."
+    },
+    {
+        "timestamp": "00:25:52",
+        "content": "Yes. And that's fine because usually what we care about is theta of the length of the input, right?"
+    },
+    {
+        "timestamp": "00:25:58",
+        "content": "So in this case it's theta of if I have four students in my class."
+    },
+    {
+        "timestamp": "00:26:03",
+        "content": "Right, I've got only two that that mapped to zero."
+    },
+    {
+        "timestamp": "00:26:08",
+        "content": "So here it's length over two. But if I had more students, then it would be far fewer."
+    },
+    {
+        "timestamp": "00:26:14",
+        "content": "Right. It would be two out of ten or maybe two out of 50. And that hash do the same thing."
+    },
+    {
+        "timestamp": "00:26:18",
+        "content": "Yeah. So yeah."
+    },
+    {
+        "timestamp": "00:26:23",
+        "content": "So as as the question said, what makes a good hash table and hash function pair."
+    },
+    {
+        "timestamp": "00:26:29",
+        "content": "Right. Because this only works if you have a really good hash function and a nice hash table to go along with it."
+    },
+    {
+        "timestamp": "00:26:36",
+        "content": "So this is actually a problem in computer science, you know, a research problem all by itself."
+    },
+    {
+        "timestamp": "00:26:41",
+        "content": "So people actually study this for their for their lives coming up with good hash functions and hash tables."
+    },
+    {
+        "timestamp": "00:26:49",
+        "content": "So some some basic rules. You want to have the domain of interest."
+    },
+    {
+        "timestamp": "00:26:54",
+        "content": "So in this particular case, you know, a tuple or a string or whatever it is, map to integers between zero and the size of the hash table."
+    },
+    {
+        "timestamp": "00:27:05",
+        "content": "So in the previous example, we don't want to have a hash function that mods too because then everything will either hash to zero or one, right?"
+    },
+    {
+        "timestamp": "00:27:14",
+        "content": "If our hash table has 15 things, well, we better make sure that our hash function is going to give us a number between zero and 50."
+    },
+    {
+        "timestamp": "00:27:22",
+        "content": "Second, you want the hash of the hash value to be fully determined by the value being hashed."
+    },
+    {
+        "timestamp": "00:27:40",
+        "content": "So in this case, we don't want any sort of randomness to go on for the reason that well, if I want to look up eaves grade later on in, you know, in the code or whatever, then I need to run the exact same hash function on her name to determine the grade."
+    },
+    {
+        "timestamp": "00:27:48",
+        "content": "So if there's randomness involved in this hash function, then you might not get back the same value that it has to originally."
+    },
+    {
+        "timestamp": "00:27:56",
+        "content": "Right. So you'll be looking in the wrong bucket and you'll incorrectly say she doesn't have a value or she's not there."
+    },
+    {
+        "timestamp": "00:28:05",
+        "content": "Third you want to use the whole input to hash the the the functions you use the whole input to to run the hash function."
+    },
+    {
+        "timestamp": "00:28:24",
+        "content": "So again, in this example, we don't just want to use the first letters of people's names because then that will lead to a lot more collisions than if we use the entire, you know, the sum of all the letters in the alphabet or all the letters in their name."
+    },
+    {
+        "timestamp": "00:28:28",
+        "content": "Right. Okay. So those are really big ideas."
+    },
+    {
+        "timestamp": "00:28:32",
+        "content": "And then what we want out of our hash function is all the values."
+    },
+    {
+        "timestamp": "00:28:44",
+        "content": "Right? If you run this hash function on a bunch of different inputs for your storing names or you're storing, I don't know, tuples or whatever you're storing. You want this function to give you a nice uniform distribution of values, right?"
+    },
+    {
+        "timestamp": "00:28:51",
+        "content": "So in our hash table previously here, if I add more names to my hash table, I want to ensure that they're going to land in buckets."
+    },
+    {
+        "timestamp": "00:28:59",
+        "content": "You know, two, five, six, seven, eight, nine, ten, 11, 12, 13, 14. I don't want everything to hash to the numbers here."
+    },
+    {
+        "timestamp": "00:29:17",
+        "content": "Right. That would be very bad. So as a side reminder, back in the lecture on dictionaries, I actually said something like, For now, think of the objects that can be keys to a dictionary as immutable objects."
+    },
+    {
+        "timestamp": "00:29:25",
+        "content": "Right. And I said, technically hackable, but we don't need to know what that is."
+    },
+    {
+        "timestamp": "00:29:29",
+        "content": "Well, hackable means just this."
+    },
+    {
+        "timestamp": "00:29:31",
+        "content": "You can run a hash function on the object and you'll get the same value back no matter how many times you run the hash function on that object."
+    },
+    {
+        "timestamp": "00:29:39",
+        "content": "Right. So we looked at this example."
+    },
+    {
+        "timestamp": "00:29:42",
+        "content": "What happens if we add a student whose name is not immutable, not hackable?"
+    },
+    {
+        "timestamp": "00:29:48",
+        "content": "So lists are mutable objects, so as such, they are not hackable."
+    },
+    {
+        "timestamp": "00:29:53",
+        "content": "That means if we run a hash function on a list today and then we potentially mutate the list tomorrow, that list will not hash to the same thing."
+    },
+    {
+        "timestamp": "00:30:02",
+        "content": "Right. So we saw this example, let's say Kate with a K is added to our hash table."
+    },
+    {
+        "timestamp": "00:30:08",
+        "content": "So her name currently hashes to 37 mod 16, which is a five."
+    },
+    {
+        "timestamp": "00:30:13",
+        "content": "Right. So we added her there."
+    },
+    {
+        "timestamp": "00:30:15",
+        "content": "Now let's say, you know, tomorrow we want to look up her grade to, you know, do whatever to integrate it into a bigger spreadsheet."
+    },
+    {
+        "timestamp": "00:30:22",
+        "content": "She had changed her name between yesterday and today. Now she's Kate with a C."
+    },
+    {
+        "timestamp": "00:30:28",
+        "content": "If we run the same hash function again on her name, that leads us to look in a different bucket."
+    },
+    {
+        "timestamp": "00:30:34",
+        "content": "Right. She's still there. She's Kate with a K, as we had originally added her."
+    },
+    {
+        "timestamp": "00:30:39",
+        "content": "But now her name is Kate with a C. We run the same hash function, tells us to look back at 13 and she's not there."
+    },
+    {
+        "timestamp": "00:30:53",
+        "content": "Right. So that's why we only want hackable objects to be added to be keys to the dictionary, because we want the same value to come back to us when we run the hash function on."
+    },
+    {
+        "timestamp": "00:31:01",
+        "content": "Okay. So now we can see in the worst case scenario, everything maps to the same bucket in my hash table, my list."
+    },
+    {
+        "timestamp": "00:31:11",
+        "content": "Right? Every single thing I add is has a really bad hash function on it."
+    },
+    {
+        "timestamp": "00:31:16",
+        "content": "Let's say the hash function always returns three. Right."
+    },
+    {
+        "timestamp": "00:31:26",
+        "content": "If my hash function always returns three, no matter what I'm adding to my addiction, no matter what I'm hashing, then every single item essentially gets put in a really long list at bucket number three."
+    },
+    {
+        "timestamp": "00:31:32",
+        "content": "So when I look up, a value will surprise it. Hashes to three."
+    },
+    {
+        "timestamp": "00:31:37",
+        "content": "And now I need to look through every single thing in that bucket."
+    },
+    {
+        "timestamp": "00:31:40",
+        "content": "Number three, to find the one I'm looking for. Right. So it's just very, very bad."
+    },
+    {
+        "timestamp": "00:31:45",
+        "content": "And in the worst case scenario, this is the complexity."
+    },
+    {
+        "timestamp": "00:31:47",
+        "content": "It's theta of n, where n is the length of whatever items we have that we're adding to our buckets."
+    },
+    {
+        "timestamp": "00:31:54",
+        "content": "To our hash table."
+    },
+    {
+        "timestamp": "00:31:55",
+        "content": "What in the average case and this is only when we have a hash table that's pretty big relative to the things that we're adding to it."
+    },
+    {
+        "timestamp": "00:32:04",
+        "content": "And when we have a hash function, that's good enough, right?"
+    },
+    {
+        "timestamp": "00:32:14",
+        "content": "That has a nice uniform distribution of values only in that case, in the average in the average case, the time it takes for us to grab a value from a dictionary is theta of one constant."
+    },
+    {
+        "timestamp": "00:32:21",
+        "content": "And so that's why dictionaries are really, really useful data structures to store things and to retrieve things from back in."
+    },
+    {
+        "timestamp": "00:32:30",
+        "content": "Back when I was doing a little project, I didn't know about Python dictionaries."
+    },
+    {
+        "timestamp": "00:32:40",
+        "content": "I had just learned about the language, and I was actually using lists to read in genomic data files, and I was storing everything in lists like genomic names and things like that."
+    },
+    {
+        "timestamp": "00:32:44",
+        "content": "And it was really slow. Like, you know, my advisor would be like, you know, is your code done yet?"
+    },
+    {
+        "timestamp": "00:32:52",
+        "content": "I'm like, No, it's been a couple of days still waiting."
+    },
+    {
+        "timestamp": "00:32:55",
+        "content": "And then someone told me, Hey, just use a dictionary to store the values and then the lookup is going to be a lot faster."
+    },
+    {
+        "timestamp": "00:33:02",
+        "content": "It was done, you know, within a couple of seconds. So very, very useful the time complete because it's genomic data, it's huge amounts of data, right?"
+    },
+    {
+        "timestamp": "00:33:10",
+        "content": "So the the theta one versus theta of one is really it makes a really big difference when you deal with large data sets."
+    },
+    {
+        "timestamp": "00:33:18",
+        "content": "Right. It's not just on paper. It's actually makes a big difference."
+    },
+    {
+        "timestamp": "00:33:23",
+        "content": "Okay. Questions about this. I hope this ties in with you."
+    },
+    {
+        "timestamp": "00:33:29",
+        "content": "This specific construction. Yeah. If I accidentally changed it, nothing would change."
+    },
+    {
+        "timestamp": "00:33:38",
+        "content": "So you don't. Yeah. So Python right now uses specific hash function in a future version."
+    },
+    {
+        "timestamp": "00:33:43",
+        "content": "They might use a different hash function. We don't really use the numbers associated with the hash functions."
+    },
+    {
+        "timestamp": "00:33:49",
+        "content": "I mean, you could for your programs, but it would be, I guess, relative to whatever value you get, right."
+    },
+    {
+        "timestamp": "00:34:01",
+        "content": "So you wouldn't kind of hard code the value for, you know the the tuple one two, three as something right you just get what you get and and that's what it is."
+    },
+    {
+        "timestamp": "00:34:07",
+        "content": "But it could give you a different hash function if you ran on your computer."
+    },
+    {
+        "timestamp": "00:34:10",
+        "content": "Actually, you might get a different hash value than mine. Yeah."
+    },
+    {
+        "timestamp": "00:34:16",
+        "content": "Um. So this topic kind of ties in data structures."
+    },
+    {
+        "timestamp": "00:34:21",
+        "content": "We've seen lists and dictionaries. Some of the behind the scenes look at how things are stored puts a little complexity in there."
+    },
+    {
+        "timestamp": "00:34:29",
+        "content": "We're talking about algorithms and runtime, so it ties in a bunch of the topics that we've seen in this class really, really nicely."
+    },
+    {
+        "timestamp": "00:34:38",
+        "content": "So one other thing that I'd like to now talk about is the idea of a simulation."
+    },
+    {
+        "timestamp": "00:34:43",
+        "content": "And this hopefully is going to be a little bit more useful to you if you decide to"
+    },
+    {
+        "timestamp": "00:34:53",
+        "content": "take another computer science course or computation course in a different field, whatever you'd like. Computation simulations are very useful tools in computer science, so it allows you to computationally describe the world."
+    },
+    {
+        "timestamp": "00:35:04",
+        "content": "So if you see an event in the world, you can actually simulate it computationally."
+    },
+    {
+        "timestamp": "00:35:09",
+        "content": "What you've learned so far with what you've learned so far, you can totally simulate a whole bunch of things."
+    },
+    {
+        "timestamp": "00:35:13",
+        "content": "And we're using randomness to simulate these events that you might see in the real world."
+    },
+    {
+        "timestamp": "00:35:19",
+        "content": "So, for example, you might have seen sort of the hurricane pass, right?"
+    },
+    {
+        "timestamp": "00:35:24",
+        "content": "When you see on the on on the news or whatever the most likely path that a hurricane might take."
+    },
+    {
+        "timestamp": "00:35:30",
+        "content": "But then they also have the little models that show, you know, other likely paths."
+    },
+    {
+        "timestamp": "00:35:34",
+        "content": "They simulated. Right, using a bunch of data that they have the most likely path for that hurricane."
+    },
+    {
+        "timestamp": "00:35:50",
+        "content": "Right. Another place where simulation where where simulation is useful is if you see a real world event that's actually kind of complex, you can take a simpler set of rules and simulate those and then add in more rules to"
+    },
+    {
+        "timestamp": "00:36:00",
+        "content": "make it closer and closer to the thing that you actually observe in the real world."
+    },
+    {
+        "timestamp": "00:36:03",
+        "content": "Okay, so the idea of a simulation is that you have some event in the real world and you want to calculate something about it."
+    },
+    {
+        "timestamp": "00:36:12",
+        "content": "We're going to use computation to design an experiment, right?"
+    },
+    {
+        "timestamp": "00:36:16",
+        "content": "And we're going to do use randomness for that. Once we've done that, we're going to repeat the experiment a whole bunch of times computationally."
+    },
+    {
+        "timestamp": "00:36:24",
+        "content": "And that's just means we're going to put a four loop around whatever experiment we've designed computationally."
+    },
+    {
+        "timestamp": "00:36:35",
+        "content": "And if you're interested in some outcome, some particular outcome, like as we're going to see, we're going to roll a die and we're interested in how many times a four comes up, then we're going to keep track of that outcome."
+    },
+    {
+        "timestamp": "00:36:41",
+        "content": "Okay. And you keep track of it how many times that outcome happened in your whole bunch of repetitions."
+    },
+    {
+        "timestamp": "00:36:49",
+        "content": "And then after the end of the repetitions, you can report some value of interest."
+    },
+    {
+        "timestamp": "00:36:53",
+        "content": "Maybe the probability that a four comes up on a diagonal. So here's the example."
+    },
+    {
+        "timestamp": "00:36:59",
+        "content": "It's going to be very simple because it's something we can calculate already right off the bat."
+    },
+    {
+        "timestamp": "00:37:04",
+        "content": "But I'll give you a sense of how you can write code around such a real world effect."
+    },
+    {
+        "timestamp": "00:37:17",
+        "content": "So here we're interested in just rolling a dice and seeing the probability to get a dot, dot, dot, dot, right to get a four on on the dice on on one of the dice rolls or the probability to get a whichever."
+    },
+    {
+        "timestamp": "00:37:25",
+        "content": "So here the event is that we're rolling the dice and then we're interested in getting the probability of some face."
+    },
+    {
+        "timestamp": "00:37:33",
+        "content": "So we're going to design an experiment for that dice roll."
+    },
+    {
+        "timestamp": "00:37:39",
+        "content": "And this is just one way to design the experiment. There are a whole other many, many other ways to design it."
+    },
+    {
+        "timestamp": "00:37:44",
+        "content": "This is just one that I chose that I felt illustrated most how we can take a real world example and put it into code."
+    },
+    {
+        "timestamp": "00:37:53",
+        "content": "So a die has six faces. So what I have done here is I've created a list of each one of those faces."
+    },
+    {
+        "timestamp": "00:38:02",
+        "content": "Right. You could have use numbers as the elements in the list."
+    },
+    {
+        "timestamp": "00:38:05",
+        "content": "In this case, I just use strings to be a little bit cuter or cuter."
+    },
+    {
+        "timestamp": "00:38:08",
+        "content": "But, you know, whatever. However, you'd like to represent each one of those die faces."
+    },
+    {
+        "timestamp": "00:38:12",
+        "content": "Here's a list of six things in it. And then I'm using this choice function from this random library."
+    },
+    {
+        "timestamp": "00:38:19",
+        "content": "Again, the random library. Super duper useful library. Random dot choice will effectively select one of the elements in this list for me."
+    },
+    {
+        "timestamp": "00:38:28",
+        "content": "So if I type in random dot choice in the console now it might give me the dot dot."
+    },
+    {
+        "timestamp": "00:38:33",
+        "content": "If I type it in right after, it might give me the dot, dot, dot, dot, whatever."
+    },
+    {
+        "timestamp": "00:38:37",
+        "content": "It's going to be random each time I run this function. But this line of code effectively simulates me taking a dice and rolling it."
+    },
+    {
+        "timestamp": "00:38:47",
+        "content": "And then we can repeat this experiment a whole lot of times."
+    },
+    {
+        "timestamp": "00:38:52",
+        "content": "Right. If I'm taking a dice and rolling it, that's like, what, one or 2 seconds per roll?"
+    },
+    {
+        "timestamp": "00:38:58",
+        "content": "I don't think I have time to repeat that experiment 10,000 times."
+    },
+    {
+        "timestamp": "00:39:01",
+        "content": "But with simulation. With computation, right."
+    },
+    {
+        "timestamp": "00:39:04",
+        "content": "With programing, we can simulate it 10,000 times or a million times and then just wait a couple of seconds."
+    },
+    {
+        "timestamp": "00:39:11",
+        "content": "Right. So very, very useful application of programing."
+    },
+    {
+        "timestamp": "00:39:16",
+        "content": "So how do you simulate this distro 10,000 times?"
+    },
+    {
+        "timestamp": "00:39:19",
+        "content": "Just slap a four loop around that line of code. Right."
+    },
+    {
+        "timestamp": "00:39:23",
+        "content": "So for some number in range, 10,000, that means I'm going to get this run, this line of code 10,000 times."
+    },
+    {
+        "timestamp": "00:39:32",
+        "content": "All of a sudden, I've just rolled the dice 10,000 times. As I'm doing."
+    },
+    {
+        "timestamp": "00:39:37",
+        "content": "So I'm interested in the outcome of some events. So let's say how many times did a dot, dot, dot, dot come up right before?"
+    },
+    {
+        "timestamp": "00:39:44",
+        "content": "Well, each time in my for loop, I can keep track of the value of rule."
+    },
+    {
+        "timestamp": "00:39:50",
+        "content": "If it was a four increment, a counter, if it was not a four."
+    },
+    {
+        "timestamp": "00:40:05",
+        "content": "I don't care. Do nothing. So each time I have a counter that tells me how many times four came up, and then after the four loop is done, I've repeated my experiment 10,000 times and I can report the probability to get a four right."
+    },
+    {
+        "timestamp": "00:40:11",
+        "content": "So the counter divided by 10,000. So this is the code."
+    },
+    {
+        "timestamp": "00:40:17",
+        "content": "That's it. It's super simple. I wrote a function, and it actually takes it a parameter."
+    },
+    {
+        "timestamp": "00:40:24",
+        "content": "So if we're interested in the probability for, you know, a dot, dot, dot, dot to come up, then we pass in the value of that particular of that side."
+    },
+    {
+        "timestamp": "00:40:34",
+        "content": "If I'm interested in the probability that a dot comes up, then I pass in the dot as a string."
+    },
+    {
+        "timestamp": "00:40:40",
+        "content": "Okay. So what does it do?"
+    },
+    {
+        "timestamp": "00:40:42",
+        "content": "Well, just like in the previous slide, I've got this for loop here that tells Python how many times to repeat the experiment."
+    },
+    {
+        "timestamp": "00:40:50",
+        "content": "I have the experiment number here as a variable, so I can easily just change it to be something else."
+    },
+    {
+        "timestamp": "00:40:56",
+        "content": "And then I've got my role here. So this is me actually doing the experiment."
+    },
+    {
+        "timestamp": "00:41:01",
+        "content": "So just. Here's me rolling the dice. Here's roll value."
+    },
+    {
+        "timestamp": "00:41:04",
+        "content": "And then I check what the value of the row was and increment the counter if it was the side of interest."
+    },
+    {
+        "timestamp": "00:41:09",
+        "content": "Right thing. I've passed in as a parameter and then at the end I just do a print."
+    },
+    {
+        "timestamp": "00:41:14",
+        "content": "But you could imagine doing a return or something like that."
+    },
+    {
+        "timestamp": "00:41:17",
+        "content": "So if I run it, we're going to get the probability that the side that came up was 0.167 and the probability that that came up was 0.16 or two."
+    },
+    {
+        "timestamp": "00:41:30",
+        "content": "Intuition says they should be the same. But you know what?"
+    },
+    {
+        "timestamp": "00:41:33",
+        "content": "That's that's that's our intuition, right? We already know the problem."
+    },
+    {
+        "timestamp": "00:41:37",
+        "content": "If we didn't know how to calculate the probability of, you know, one of these sides coming up, this would be pretty good, right?"
+    },
+    {
+        "timestamp": "00:41:46",
+        "content": "The beauty of computation is we can just add two more zeros on there, run it right and maybe uncomment it."
+    },
+    {
+        "timestamp": "00:41:54",
+        "content": "So we actually see the values run it. We wait a couple of seconds, but now the probability is getting closer and closer to the true probability."
+    },
+    {
+        "timestamp": "00:42:04",
+        "content": "Right. So the more experiments I do, the better my answer becomes."
+    },
+    {
+        "timestamp": "00:42:08",
+        "content": "And I just have to wait a couple of seconds. If I increase it by ten more, I would have to wait ten more times."
+    },
+    {
+        "timestamp": "00:42:15",
+        "content": "Right? Ten times as long. So maybe 20 seconds."
+    },
+    {
+        "timestamp": "00:42:18",
+        "content": "I'm not going to do it. So it's still a guesstimate, but it's a pretty close guesstimate."
+    },
+    {
+        "timestamp": "00:42:25",
+        "content": "Now the other beauty of writing code is that we can now ask, Well, this is a fair die write."
+    },
+    {
+        "timestamp": "00:42:32",
+        "content": "Every single one of these sides comes up with an equal probability."
+    },
+    {
+        "timestamp": "00:42:36",
+        "content": "What do you guys think? The change I should make to. To make an unfair die?"
+    },
+    {
+        "timestamp": "00:42:41",
+        "content": "Let's say it's weighted unfairly towards the the the the dot."
+    },
+    {
+        "timestamp": "00:42:46",
+        "content": "Right. The one you get. Yeah, exactly."
+    },
+    {
+        "timestamp": "00:42:50",
+        "content": "Let me just add another dot here. Here, I've got another dot and now the die is weighted unfairly."
+    },
+    {
+        "timestamp": "00:42:56",
+        "content": "Right. It comes up more times on the one than on anything else."
+    },
+    {
+        "timestamp": "00:42:59",
+        "content": "So if I run the code again, wait a couple of seconds. Probability to get a one twice as high as probability to get a four."
+    },
+    {
+        "timestamp": "00:43:07",
+        "content": "Right. So really easy change. It helped me answer another question."
+    },
+    {
+        "timestamp": "00:43:11",
+        "content": "A small variation of my original problem. And I didn't have to roll the dice 10,000 times in."
+    },
+    {
+        "timestamp": "00:43:18",
+        "content": "In the real world. Okay."
+    },
+    {
+        "timestamp": "00:43:24",
+        "content": "So that was really easy simulation, right? The probability of getting one die."
+    },
+    {
+        "timestamp": "00:43:29",
+        "content": "Of calculating sides of die is coming up is pretty simple."
+    },
+    {
+        "timestamp": "00:43:34",
+        "content": "So why did we bother with the code, right? Because we can just do it mathematically."
+    },
+    {
+        "timestamp": "00:43:42",
+        "content": "The side question that I asked was also kind of simple to figure out, because we can actually ask harder questions and harder variations of our original problem."
+    },
+    {
+        "timestamp": "00:43:53",
+        "content": "We could certainly come up with mathematical solutions to these harder problems as well, but I wouldn't be as certain about the my answers to those as I would be just writing code."
+    },
+    {
+        "timestamp": "00:44:00",
+        "content": "For me, it was a little bit easier to debug code than it would be to answer to mathematically write probabilities to much harder questions."
+    },
+    {
+        "timestamp": "00:44:15",
+        "content": "And you can see once you've written the code, right, once you've kind of framed your experiment in this way, it's really easy to just go ahead and change it a little bit."
+    },
+    {
+        "timestamp": "00:44:19",
+        "content": "Right? So the code is easy to change once it's written. So let's look at a new question."
+    },
+    {
+        "timestamp": "00:44:24",
+        "content": "This one says. One experiment is no longer to just roll a die once."
+    },
+    {
+        "timestamp": "00:44:37",
+        "content": "One experiment is now that we're rolling the dice seven times, and I'm interested to know the probability to get the dot, dot, dot, dot at least three times out of those seven rolls."
+    },
+    {
+        "timestamp": "00:44:46",
+        "content": "Much harder question, right than before."
+    },
+    {
+        "timestamp": "00:44:49",
+        "content": "It would require a little bit of thinking, some paper. Right, to figure out."
+    },
+    {
+        "timestamp": "00:44:55",
+        "content": "But in terms of code, it's going to be really simple. So now one experiment is no longer just one choice."
+    },
+    {
+        "timestamp": "00:45:03",
+        "content": "From my list of of dice faces. But it's going to be seven choices from my list of die faces."
+    },
+    {
+        "timestamp": "00:45:10",
+        "content": "Right, representing the seven roles that I have for one experiment."
+    },
+    {
+        "timestamp": "00:45:15",
+        "content": "Right. And out of those seven roles, what I'm interested to do is keeping track of incrementing a counter."
+    },
+    {
+        "timestamp": "00:45:23",
+        "content": "Whenever I see a four dot, dot, dot, dot. And then just like before."
+    },
+    {
+        "timestamp": "00:45:29",
+        "content": "Slap a four loop around it. Repeat that experiment. 10,000 a million times, however many times you'd like."
+    },
+    {
+        "timestamp": "00:45:35",
+        "content": "And then keep track of how many times that four came up."
+    },
+    {
+        "timestamp": "00:45:39",
+        "content": "Three or more times out of the seven rolls. Okay, so this is our event count."
+    },
+    {
+        "timestamp": "00:45:44",
+        "content": "How many times out of the 10,000 in that case, but it could be a million, whatever it is that we incremented our counter to be more than three."
+    },
+    {
+        "timestamp": "00:45:53",
+        "content": "More than or equal to three. Okay. And then our value of interest is the probability of that happening."
+    },
+    {
+        "timestamp": "00:45:59",
+        "content": "So take that counter and divide by 10,000, because that's how many times we repeated our experiment."
+    },
+    {
+        "timestamp": "00:46:05",
+        "content": "Okay. So this is the code slightly longer and I've actually divided into two parts, this one up here and then this one down here."
+    },
+    {
+        "timestamp": "00:46:15",
+        "content": "So the code up here is going to do the simulation 10,000 times."
+    },
+    {
+        "timestamp": "00:46:24",
+        "content": "So I've got one for loop here that goes through 10,000 or a million."
+    },
+    {
+        "timestamp": "00:46:28",
+        "content": "However many times you want to repeat the the experiment. Within here."
+    },
+    {
+        "timestamp": "00:46:34",
+        "content": "Sorry and sorry."
+    },
+    {
+        "timestamp": "00:46:36",
+        "content": "I forgot to mention that here I have a function where I've kind of generalized a bunch of stuff so we could run it with different values."
+    },
+    {
+        "timestamp": "00:46:42",
+        "content": "So instead of set three times out of seven rows, we could have 15 times out of 3000 roles."
+    },
+    {
+        "timestamp": "00:46:48",
+        "content": "Right? So we can generalize this. So here inside this for loop, I've got the simulation of rolling seven times, right?"
+    },
+    {
+        "timestamp": "00:46:59",
+        "content": "So here I've got range of and roles in the previous slide I said it's seven, but it could be anything you'd like."
+    },
+    {
+        "timestamp": "00:47:04",
+        "content": "And then I've got choosing one of the faces seven times and keeping track of how many times out of those seven I got a dot, dot, dot, dot."
+    },
+    {
+        "timestamp": "00:47:24",
+        "content": "So at the end of this for loop here, I've counted how many times I got a dot, dot, dot, dot, and then I'm going to keep track of that number in this list."
+    },
+    {
+        "timestamp": "00:47:29",
+        "content": "How many matched? So how many matched will be a list of 10,000 elements, right?"
+    },
+    {
+        "timestamp": "00:47:36",
+        "content": "10,000 elements. One element for each one of my experiments."
+    },
+    {
+        "timestamp": "00:47:42",
+        "content": "So the first time, maybe three. Da da da da came up out of seven."
+    },
+    {
+        "timestamp": "00:47:46",
+        "content": "Then the next time one, then the next time five. Then the next time for however many."
+    },
+    {
+        "timestamp": "00:47:50",
+        "content": "Right. So now I've got a list of how many times that dot, dot, dot, dot came up out of seven rules."
+    },
+    {
+        "timestamp": "00:47:57",
+        "content": "So the code down here, that's why I split it up, because it's a little bit easier for me to think about it."
+    },
+    {
+        "timestamp": "00:48:02",
+        "content": "The code down here is now going to iterate through this list of 10,000 experiments and say, which one of these is greater or equal to three?"
+    },
+    {
+        "timestamp": "00:48:11",
+        "content": "This one, this one, this one. So I'm incrementing a counter any time."
+    },
+    {
+        "timestamp": "00:48:26",
+        "content": "That is true. And at the end of this loop down there, I'm going to know how many times out of those 10,000 trials I had, three or more times out of seven come up on the da da da da."
+    },
+    {
+        "timestamp": "00:48:31",
+        "content": "Okay. So I can run the code. And here I've got the exact problem on the previous slide."
+    },
+    {
+        "timestamp": "00:48:37",
+        "content": "So if I'm interested in the probability of the four coming up at least three or more times out of seven rolls, that's 0.0955."
+    },
+    {
+        "timestamp": "00:48:46",
+        "content": "And then I also down here wrote it like this, and this probability is 0.16."
+    },
+    {
+        "timestamp": "00:48:55",
+        "content": "What is this problem down here? Look familiar? So the probability of that coming up at least once out of one rule."
+    },
+    {
+        "timestamp": "00:49:09",
+        "content": "That's just the previous problem, right on the previous slide. I just have one role and I count the probability to get the four right."
+    },
+    {
+        "timestamp": "00:49:17",
+        "content": "So this matches what I got with the previous function that I wrote."
+    },
+    {
+        "timestamp": "00:49:21",
+        "content": "But hey, now I wrote a better function that can actually that's more general and I can also run it to get the probability that from the previous code."
+    },
+    {
+        "timestamp": "00:49:29",
+        "content": "Right. So this is actually a much better code to run. Okay."
+    },
+    {
+        "timestamp": "00:49:35",
+        "content": "Questions about this. Interesting. I mean, it's dice rolls."
+    },
+    {
+        "timestamp": "00:49:40",
+        "content": "How interesting can it be? But yeah. So let's look at a more interesting problem, something that you might apply to, you know, to the real world."
+    },
+    {
+        "timestamp": "00:49:51",
+        "content": "So you might see this in a calculus course. Might not."
+    },
+    {
+        "timestamp": "00:49:56",
+        "content": "But it is more of a calculus problem."
+    },
+    {
+        "timestamp": "00:49:58",
+        "content": "So I've got water that runs through a faucet at random, somewhere between one gallons per minute and three gallons per minute."
+    },
+    {
+        "timestamp": "00:50:09",
+        "content": "This is the setup. What is the time it takes to fill the 600 gallon pool?"
+    },
+    {
+        "timestamp": "00:50:15",
+        "content": "Does anyone have an intuition for how we can solve this? If not, I can just click next."
+    },
+    {
+        "timestamp": "00:50:25",
+        "content": "Yeah, definitely between the lowest rate and the highest rate. Right. So between 200 gallons per minute, sorry."
+    },
+    {
+        "timestamp": "00:50:31",
+        "content": "Between 200 minutes and 600 minutes, right."
+    },
+    {
+        "timestamp": "00:50:34",
+        "content": "200 at best. If the water flows at three gal per minute and 600 minutes at worst if the water flows super slowly, one gallon per minute."
+    },
+    {
+        "timestamp": "00:50:46",
+        "content": "So we could say, well, let's take the average of the flow one."
+    },
+    {
+        "timestamp": "00:50:50",
+        "content": "The average between one and three gallons is two, right?"
+    },
+    {
+        "timestamp": "00:50:54",
+        "content": "So if we take 600 gallons divided by two gallons per minute, that would give us 300 minutes."
+    },
+    {
+        "timestamp": "00:51:01",
+        "content": "It's a reasonable guess, but that's not actually the right answer."
+    },
+    {
+        "timestamp": "00:51:05",
+        "content": "Another way we could say is, well, let's take the slowest and the fastest it could run."
+    },
+    {
+        "timestamp": "00:51:12",
+        "content": "Right. So it could take. So here I've got 600 minutes and 200 minutes."
+    },
+    {
+        "timestamp": "00:51:18",
+        "content": "And average those numbers out. Right. Divide by two. So that's 400 minutes."
+    },
+    {
+        "timestamp": "00:51:23",
+        "content": "But that's actually not right either. Yeah. Can you take the time to calculate that?"
+    },
+    {
+        "timestamp": "00:51:31",
+        "content": "You could, yeah. I don't want to do integrals, though. Yeah, but that's exactly the right answer."
+    },
+    {
+        "timestamp": "00:51:36",
+        "content": "Yeah. You have to do an integral and. Yeah, I."
+    },
+    {
+        "timestamp": "00:51:40",
+        "content": "Yeah, yeah. We're teaching computer science here, so we're not going to do integrals in this class."
+    },
+    {
+        "timestamp": "00:51:47",
+        "content": "Instead, we're going to do code and the code is going to be like five lines."
+    },
+    {
+        "timestamp": "00:51:52",
+        "content": "Okay. To do that, to find the answer to this."
+    },
+    {
+        "timestamp": "00:51:54",
+        "content": "So all we're going to do is grab a whole bunch of numbers between one and three, a million of them, if you want."
+    },
+    {
+        "timestamp": "00:52:01",
+        "content": "These will represent a bunch of random values. You could have the water flow right be."
+    },
+    {
+        "timestamp": "00:52:08",
+        "content": "And then we're going to say for each one of these numbers chosen at random, how long would it take to fill the pool?"
+    },
+    {
+        "timestamp": "00:52:15",
+        "content": "So you do 600 divided by that rate, right? It's just just how long it takes."
+    },
+    {
+        "timestamp": "00:52:21",
+        "content": "And then we're going to average all of these rates. All right."
+    },
+    {
+        "timestamp": "00:52:25",
+        "content": "So we have a million of these numbers, potential times that it could take to fill the pool."
+    },
+    {
+        "timestamp": "00:52:30",
+        "content": "Some of them all average them. This is the code."
+    },
+    {
+        "timestamp": "00:52:35",
+        "content": "It looks like a lot. But down here, the bottom half of this is just us reporting the results."
+    },
+    {
+        "timestamp": "00:52:41",
+        "content": "This is here's two print statements. And here I'm actually also plotting what the what the what the dots look like."
+    },
+    {
+        "timestamp": "00:52:48",
+        "content": "All the flow rates, the actual code to do the simulation is these lines, seven lines of code, not five."
+    },
+    {
+        "timestamp": "00:52:57",
+        "content": "So I've got a function fill pool. It can take in a size parameter."
+    },
+    {
+        "timestamp": "00:53:01",
+        "content": "We could even do a lower range and upper range if we wanted to for the flow rate."
+    },
+    {
+        "timestamp": "00:53:06",
+        "content": "For now, we'll just hard code it to be between one and three."
+    },
+    {
+        "timestamp": "00:53:09",
+        "content": "I've got two lists that I'm going to populate with a bunch of different random numbers, so the flow rate will be chosen between one and three."
+    },
+    {
+        "timestamp": "00:53:17",
+        "content": "So here I've got a random dot."
+    },
+    {
+        "timestamp": "00:53:21",
+        "content": "Random is another useful random function from the random library that gives me a number between zero and one."
+    },
+    {
+        "timestamp": "00:53:29",
+        "content": "So to get a number between one and three at random, I'll just multiply by two and add one."
+    },
+    {
+        "timestamp": "00:53:35",
+        "content": "Right? So bottom case, it'll be one top case will be two times one +13."
+    },
+    {
+        "timestamp": "00:53:42",
+        "content": "Right. So are all we need to know will be a random number between one and three afloat."
+    },
+    {
+        "timestamp": "00:53:47",
+        "content": "Right? So it could be anything. A pen, that random number to our list of flow rates."
+    },
+    {
+        "timestamp": "00:53:53",
+        "content": "And then using that flow rate that we just randomly chose, figure out how long it takes to fill the pool of the pool of size."
+    },
+    {
+        "timestamp": "00:54:01",
+        "content": "Size. So size divided by the rate. Right. Just very simple math."
+    },
+    {
+        "timestamp": "00:54:07",
+        "content": "And then we now have a list that's populated with all of these times that it takes to fill the pool."
+    },
+    {
+        "timestamp": "00:54:14",
+        "content": "Okay. And that's the stuff inside the loop."
+    },
+    {
+        "timestamp": "00:54:17",
+        "content": "The for loop here is one experiment, right? So I grabbed one random number."
+    },
+    {
+        "timestamp": "00:54:21",
+        "content": "I figured out how long it takes for me to fill my pool. And then I repeated that 10,000 times."
+    },
+    {
+        "timestamp": "00:54:26",
+        "content": "Right. Okay. So down here, I'm going to report the average flow rate, which should be two, right?"
+    },
+    {
+        "timestamp": "00:54:36",
+        "content": "Because if we're choosing a random number between one and three, the average of those numbers better be two."
+    },
+    {
+        "timestamp": "00:54:43",
+        "content": "And then I'm reporting the thing that we're actually interested in, which is the average fill time, right."
+    },
+    {
+        "timestamp": "00:54:48",
+        "content": "Which was not either of those two things we had the intuition for, but it is the integral."
+    },
+    {
+        "timestamp": "00:54:53",
+        "content": "And down here I'm doing some plots. So these are the things that I've plotted."
+    },
+    {
+        "timestamp": "00:54:57",
+        "content": "So on the left side I've got on the x axis apologies."
+    },
+    {
+        "timestamp": "00:55:01",
+        "content": "I forgot to label my axes and put a title on this, so I'm just going to talk about it."
+    },
+    {
+        "timestamp": "00:55:06",
+        "content": "So the x axis is number zero through 10,000, representing each basically like zero one, two, three four represents one of my experiments, right?"
+    },
+    {
+        "timestamp": "00:55:17",
+        "content": "Choosing a random number and the y axis is the random number that was chosen."
+    },
+    {
+        "timestamp": "00:55:21",
+        "content": "Right. So this is looks like a nice smattering of randomness here, which is what we wanted."
+    },
+    {
+        "timestamp": "00:55:29",
+        "content": "And then for each one of these values, I'm going to have a corresponding fill rate."
+    },
+    {
+        "timestamp": "00:55:45",
+        "content": "Right. So, for example, here, if at 0.0, the fill rate happened to be one right, then that means the time it took for me to fill the pool should be up there at about 600."
+    },
+    {
+        "timestamp": "00:55:50",
+        "content": "Right. It could be that little point right there, maybe. Okay."
+    },
+    {
+        "timestamp": "00:55:54",
+        "content": "So this is a graph of random numbers between one and three, 10,000 of them chosen."
+    },
+    {
+        "timestamp": "00:55:59",
+        "content": "And this is the graph of the corresponding times it took for me to fill the pool with each one of these dots that we randomly chose."
+    },
+    {
+        "timestamp": "00:56:07",
+        "content": "We notice that the plot on the right is not uniformly scattered right."
+    },
+    {
+        "timestamp": "00:56:15",
+        "content": "In fact, it's more kind of densely populated down towards the bottom."
+    },
+    {
+        "timestamp": "00:56:24",
+        "content": "So our two guesses were that the fill rate was either 300 or 400 on average."
+    },
+    {
+        "timestamp": "00:56:32",
+        "content": "Right. And neither of those were right. Let's view these graphs in a slightly different way."
+    },
+    {
+        "timestamp": "00:56:38",
+        "content": "I'm actually going to sort the values right now. Right."
+    },
+    {
+        "timestamp": "00:56:41",
+        "content": "It was just a random number gotten between one and three."
+    },
+    {
+        "timestamp": "00:56:47",
+        "content": "But I can sort them. It doesn't matter. The order that I got these random numbers, I can sort them."
+    },
+    {
+        "timestamp": "00:56:52",
+        "content": "And if I sort them, I get something that looks like this. So again, I've got randomly chosen numbers, 10,000 of them and with equal probability."
+    },
+    {
+        "timestamp": "00:57:02",
+        "content": "Right. That's why we see this nice line. I chose a number between one and three."
+    },
+    {
+        "timestamp": "00:57:09",
+        "content": "Does that make sense? Okay. And so then the corresponding time it took for me to fill my pool for each one of these numbers."
+    },
+    {
+        "timestamp": "00:57:17",
+        "content": "Right. Is a number between 206 hundred, as we have guessed."
+    },
+    {
+        "timestamp": "00:57:24",
+        "content": "Now, the average of the time it takes of the fill rate is two."
+    },
+    {
+        "timestamp": "00:57:31",
+        "content": "Which is true. Right. That is not a surprise for us because it's a random number between one and three."
+    },
+    {
+        "timestamp": "00:57:37",
+        "content": "But the actual average time it takes to fill my pool is down here."
+    },
+    {
+        "timestamp": "00:57:41",
+        "content": "If I were to average every single one of these values, it's down here and around 330."
+    },
+    {
+        "timestamp": "00:57:48",
+        "content": "So it's not 300. It's not 400. It's definitely between, you know, between those two."
+    },
+    {
+        "timestamp": "00:57:52",
+        "content": "But it's not really close to one or the other."
+    },
+    {
+        "timestamp": "00:57:54",
+        "content": "That's because I've got more points kind of dense, more densely populated down towards the bottom than the top."
+    },
+    {
+        "timestamp": "00:58:01",
+        "content": "Okay. So the actual values that I got for 10,000 different randomly chosen numbers is 331."
+    },
+    {
+        "timestamp": "00:58:07",
+        "content": "I think the actual value if we do the integral is like 329 point something or other."
+    },
+    {
+        "timestamp": "00:58:13",
+        "content": "So we're pretty close. But then again, we only did 10,000, we could do a million and we would get pretty close to the actual value."
+    },
+    {
+        "timestamp": "00:58:20",
+        "content": "Right. So it's not 300 or 400."
+    },
+    {
+        "timestamp": "00:58:23",
+        "content": "And that's because, as was mentioned from from one of your from fellow students, there is an inverse relationship between the fill time."
+    },
+    {
+        "timestamp": "00:58:32",
+        "content": "Right. And the and the pull rate. Right."
+    },
+    {
+        "timestamp": "00:58:36",
+        "content": "It's the size of the pool divided by the rate."
+    },
+    {
+        "timestamp": "00:58:39",
+        "content": "So what we actually need to do, if we wanted to figure out the value, is to solve the integral between one and three of."
+    },
+    {
+        "timestamp": "00:58:47",
+        "content": "Do the x over x, whatever that would be. Right? So I don't want to bother with that."
+    },
+    {
+        "timestamp": "00:59:01",
+        "content": "But I will bother with seven lines of code and then just wait, wait 5 seconds for that code to repeat, you know, 5 million times or a million times or 10 million times."
+    },
+    {
+        "timestamp": "00:59:05",
+        "content": "Right. Is that cool? And this is totally within your reach, right?"
+    },
+    {
+        "timestamp": "00:59:12",
+        "content": "It's it's not hard code to do. It's just for loops."
+    },
+    {
+        "timestamp": "00:59:16",
+        "content": "It's using a random library, right."
+    },
+    {
+        "timestamp": "00:59:18",
+        "content": "To just randomly grab a whole bunch of numbers and then just knowing the problem at hand, filling a pool at a certain rate."
+    },
+    {
+        "timestamp": "00:59:25",
+        "content": "Simple math. And then you get a nice a nice answer, a nice approximation, but still an answer to the question."
+    },
+    {
+        "timestamp": "00:59:33",
+        "content": "So hopefully this shows you how powerful computation can be."
+    },
+    {
+        "timestamp": "00:59:37",
+        "content": "This is just another example of how you can just apply computation programing to a problem that you see in real life."
+    },
+    {
+        "timestamp": "00:59:52",
+        "content": "If you choose to do like a your app or take future courses in in a different field, maybe not in, yes, you will probably apply computation to concepts and ideas and problems in those fields and it'll be something similar to this."
+    },
+    {
+        "timestamp": "01:00:06",
+        "content": "You observe something, you try to think of it, computationally model it with a bunch of, you know, randomness and then calculate an idea of something of interest."
+    },
+    {
+        "timestamp": "01:00:13",
+        "content": "Okay. So that's the end of six 100 L."
+    },
+    {
+        "timestamp": "01:00:18",
+        "content": "I've got a little wrap up to remind ourselves where we've been and where we will go."
+    },
+    {
+        "timestamp": "01:00:24",
+        "content": "So what did we learn? Oh, also, this is also these slides will be kind of like a meme dump of every remaining meme that I have."
+    },
+    {
+        "timestamp": "01:00:32",
+        "content": "Okay, so this is going to be very meme heavy. Okay."
+    },
+    {
+        "timestamp": "01:00:36",
+        "content": "So what did we learn? We've got of course, we learned Python programing, right?"
+    },
+    {
+        "timestamp": "01:00:42",
+        "content": "We learned a lot of Python syntax. Some lectures were heavier on Python syntax than others."
+    },
+    {
+        "timestamp": "01:00:47",
+        "content": "But hopefully you've got a handle on that. We learned, of course, flow of control, right?"
+    },
+    {
+        "timestamp": "01:00:54",
+        "content": "With branches if statements. Ellis."
+    },
+    {
+        "timestamp": "01:00:57",
+        "content": "Ellis. Sorry. Lifts Ellis statements. Right."
+    },
+    {
+        "timestamp": "01:01:00",
+        "content": "Allow us to either do one thing or another in the code."
+    },
+    {
+        "timestamp": "01:01:03",
+        "content": "Make a decision point loops for loops and while loops as well as exceptions as a way for us to deal with unexpected things coming up in the course."
+    },
+    {
+        "timestamp": "01:01:12",
+        "content": "The ideas here, flow of control are actually transferable to any other programing language."
+    },
+    {
+        "timestamp": "01:01:18",
+        "content": "So if you know the ideas, if you have the intuition for what kind of flow of control you'd like to use, all you'd have to do is change the syntax."
+    },
+    {
+        "timestamp": "01:01:26",
+        "content": "And then suddenly you can write some code in another language."
+    },
+    {
+        "timestamp": "01:01:36",
+        "content": "Of course, we learned about data structures, so we did lists, write really useful data structures, dictionaries, super useful data structures, tuples, things like that."
+    },
+    {
+        "timestamp": "01:01:41",
+        "content": "So you can learn about more advanced data structures in a future course if you'd like."
+    },
+    {
+        "timestamp": "01:01:47",
+        "content": "But those are really the top two or three most useful data structures."
+    },
+    {
+        "timestamp": "01:01:53",
+        "content": "We talked a lot, actually. It was a common we didn't talk a lot specifically, but it was a common theme in this class organization of code."
+    },
+    {
+        "timestamp": "01:02:01",
+        "content": "Right. So these ideas of decomposition and abstraction, they came up a lot when we talked about functions."
+    },
+    {
+        "timestamp": "01:02:07",
+        "content": "That's our first introduction."
+    },
+    {
+        "timestamp": "01:02:09",
+        "content": "So Functions helped us take some functional piece of code, like some code that does something abstracted away into a nice little module."
+    },
+    {
+        "timestamp": "01:02:23",
+        "content": "Decompose it into one little module. You have to write it one, maybe write it a few times, but debug it a few times and then use it a whole bunch of times without worrying that it's going to change."
+    },
+    {
+        "timestamp": "01:02:31",
+        "content": "So it's just a very nice way for us to decompose functional pieces of code."
+    },
+    {
+        "timestamp": "01:02:35",
+        "content": "And then we saw it come up again when we did classes, object oriented programing, right?"
+    },
+    {
+        "timestamp": "01:02:40",
+        "content": "We were able to bundle behaviors and data together into one nice little object, right?"
+    },
+    {
+        "timestamp": "01:02:47",
+        "content": "That we could then create many of in many different parts of the code and then manipulate individually."
+    },
+    {
+        "timestamp": "01:02:54",
+        "content": "Another common theme throughout this class was algorithms."
+    },
+    {
+        "timestamp": "01:02:58",
+        "content": "So we talked about by section search algorithm way at the beginning of the lectures, right?"
+    },
+    {
+        "timestamp": "01:03:11",
+        "content": "We talked about it in a piece at one and it came up again towards the end when we talked about complexity and searching and sorting algorithms, things like that. So that was kind of your only big algorithm that you saw in this class, but it shows you just how you can implement, you know?"
+    },
+    {
+        "timestamp": "01:03:21",
+        "content": "Some code in a completely different way to behave in a completely different way."
+    },
+    {
+        "timestamp": "01:03:26",
+        "content": "Right. To be a lot faster, you know, with some conditions like being sorted and things like that."
+    },
+    {
+        "timestamp": "01:03:31",
+        "content": "And then lastly, the last part of the class was a little bit more theory heavy."
+    },
+    {
+        "timestamp": "01:03:35",
+        "content": "We talked about computational complexity and that big theta notation."
+    },
+    {
+        "timestamp": "01:03:40",
+        "content": "So that gave you a sense of how to maybe design algorithms, right?"
+    },
+    {
+        "timestamp": "01:03:45",
+        "content": "So if you have a first crack of pseudocode on a piece of paper, you can see, well."
+    },
+    {
+        "timestamp": "01:03:50",
+        "content": "Hmm. If I need to run this code on a really large data set, it's not going to work because it's too slow."
+    },
+    {
+        "timestamp": "01:03:55",
+        "content": "Right. You've got three nested loops or something like that."
+    },
+    {
+        "timestamp": "01:03:58",
+        "content": "So it might force you to rethink the design of the algorithm sooner than having already implemented it."
+    },
+    {
+        "timestamp": "01:04:07",
+        "content": "But, you know, if you're dealing with small data sets, maybe you wouldn't care that you've got three nested for loops or, you know, a really inefficient recursion algorithm."
+    },
+    {
+        "timestamp": "01:04:14",
+        "content": "So that's those are the big the big things that we learn in this class."
+    },
+    {
+        "timestamp": "01:04:19",
+        "content": "Your experience, I kind of categorize in three different three different ways."
+    },
+    {
+        "timestamp": "01:04:28",
+        "content": "You might have been a natural if you kind of joined this class and immediately got logic, immediately learned you knew how to do the problem, said, that's totally fine."
+    },
+    {
+        "timestamp": "01:04:32",
+        "content": "I still hope you got something out of this class and you learned some some something."
+    },
+    {
+        "timestamp": "01:04:47",
+        "content": "You might have joined the class late. Right. If you found six 108 to be too fast or too challenging, you might have joined it, joined it late, kicked it to the curb and said, Let me join 100 L, I welcomed you."
+    },
+    {
+        "timestamp": "01:04:52",
+        "content": "We did a little bit of research and found that even if you join late, it does not actually hinder your performance in the class."
+    },
+    {
+        "timestamp": "01:04:58",
+        "content": "So hopefully that was your experience. Did you work hard?"
+    },
+    {
+        "timestamp": "01:05:03",
+        "content": "So maybe you didn't get all the concepts right away. Maybe you struggled a little bit with the problem sets."
+    },
+    {
+        "timestamp": "01:05:08",
+        "content": "Maybe you struggle a little bit on the piece, on the quizzes."
+    },
+    {
+        "timestamp": "01:05:11",
+        "content": "But I still think that you learned a lot."
+    },
+    {
+        "timestamp": "01:05:15",
+        "content": "And the test is always to go back and look at the first problem set."
+    },
+    {
+        "timestamp": "01:05:21",
+        "content": "So if you do that, when you go home tonight, you look back at the first problem set in this class."
+    },
+    {
+        "timestamp": "01:05:26",
+        "content": "You look back at the code that you wrote. It will seem so easy."
+    },
+    {
+        "timestamp": "01:05:30",
+        "content": "I promise you this. And that's because I think you all did such a good job."
+    },
+    {
+        "timestamp": "01:05:35",
+        "content": "You tried your your hardest in this class. I know it's not easy."
+    },
+    {
+        "timestamp": "01:05:40",
+        "content": "I know it's slower paced, but it's still not, you know, not not an easy class."
+    },
+    {
+        "timestamp": "01:05:44",
+        "content": "And I think you've learned a lot. Looking back at the first problem set, we'll just show you that for sure."
+    },
+    {
+        "timestamp": "01:06:00",
+        "content": "So what's next? There have been some questions about what are some future classes that you might want to take or what can you do once you've you know, once you've finished here? Here we go. So we've got six 100 B is kind of the most natural next step."
+    },
+    {
+        "timestamp": "01:06:10",
+        "content": "It's a half semester class in the second half of the semester."
+    },
+    {
+        "timestamp": "01:06:13",
+        "content": "So they're finishing up right now."
+    },
+    {
+        "timestamp": "01:06:14",
+        "content": "Basically, it's an overview of really interesting topics in computer science and with a focus on data science though."
+    },
+    {
+        "timestamp": "01:06:22",
+        "content": "So what we talk and I actually run that class as well."
+    },
+    {
+        "timestamp": "01:06:26",
+        "content": "So what we talk about there is optimization algorithms."
+    },
+    {
+        "timestamp": "01:06:30",
+        "content": "So for example, let's say you want to create a schedule for your classes next semester and you will have some constraints, right?"
+    },
+    {
+        "timestamp": "01:06:44",
+        "content": "Like you don't want to have classes at 8 a.m. or 9 a.m. or 10 a.m. or 11 a.m. And you want it to all be within, you know, some time limit or things like that."
+    },
+    {
+        "timestamp": "01:06:47",
+        "content": "Optimization algorithm could be something that you write and you could just apply it to something that you have."
+    },
+    {
+        "timestamp": "01:06:53",
+        "content": "Simulations are exactly what we saw today of the, you know, the physics filling the pool thing."
+    },
+    {
+        "timestamp": "01:07:00",
+        "content": "You'll see more. Examples of that and ask different questions about it as well."
+    },
+    {
+        "timestamp": "01:07:07",
+        "content": "So you will see things like. You calculate, you know, things like standard deviations."
+    },
+    {
+        "timestamp": "01:07:13",
+        "content": "How many times do we need to repeat this experiment in order to be within some confidence interval?"
+    },
+    {
+        "timestamp": "01:07:17",
+        "content": "Right. So how confident are you about your answers? So we'll be doing more things like that."
+    },
+    {
+        "timestamp": "01:07:21",
+        "content": "And then there's of course, the machine learning aspect of it."
+    },
+    {
+        "timestamp": "01:07:25",
+        "content": "So if you have a bunch of experiments that you do that you get a whole bunch of data from, how can you fit a curve to those experiments?"
+    },
+    {
+        "timestamp": "01:07:35",
+        "content": "And then, you know, for a future experiment, what's the expected value, right?"
+    },
+    {
+        "timestamp": "01:07:38",
+        "content": "So that's a little bit of machine learning on experimental data and then some more machine learning"
+    },
+    {
+        "timestamp": "01:07:52",
+        "content": "in sort of a more classical sense is dealing with clustering algorithms and classification of, of data and things like that."
+    },
+    {
+        "timestamp": "01:07:54",
+        "content": "So six 100 B I know a lot about because it's I also teach it, it's a really good next class if you want to kind of be employable for an internship."
+    },
+    {
+        "timestamp": "01:08:03",
+        "content": "If you take this, I think you'll be good to go. 6101 is also a really nice class to take next if you really enjoyed the programing in this class."
+    },
+    {
+        "timestamp": "01:08:13",
+        "content": "6101 will be your next step. It's called Fundamentals of Programing and it is in Python that one has."
+    },
+    {
+        "timestamp": "01:08:21",
+        "content": "It's pretty fast paced, so there will be problem sets every week and they're going to be pretty hardcore."
+    },
+    {
+        "timestamp": "01:08:32",
+        "content": "There's going to be a lot of debugging involved in those problem sets, and I actually was a recitation instructor for that class and to get a first"
+    },
+    {
+        "timestamp": "01:08:45",
+        "content": "for the problem sets at least to get something working doesn't take that long, but to make it work according to the specifications that they have will take a little bit of debugging and reworking."
+    },
+    {
+        "timestamp": "01:08:51",
+        "content": "That's because they deal with a lot of real world data. So writing code that's really efficient is very important, right?"
+    },
+    {
+        "timestamp": "01:09:05",
+        "content": "So again, writing, you know, nested for loops, of course, we can totally do that, but making it efficient, using data structures like sets to make the code efficient, using proper algorithms that are efficient is a very important part of this class."
+    },
+    {
+        "timestamp": "01:09:15",
+        "content": "But you'll learn a lot."
+    },
+    {
+        "timestamp": "01:09:17",
+        "content": "If you take this class, you'll be very employable for an internship in some, you know, some some computer science or some computer science company."
+    },
+    {
+        "timestamp": "01:09:26",
+        "content": "Six one or two is also a nice next class if you're interested in software construction."
+    },
+    {
+        "timestamp": "01:09:32",
+        "content": "It is actually in a different languages in TypeScript these days."
+    },
+    {
+        "timestamp": "01:09:36",
+        "content": "Used to be in Java. You can take what you've learned here and if you're interested in learning a different language, this is a nice one to try it."
+    },
+    {
+        "timestamp": "01:09:46",
+        "content": "Their motto is You are writing code that is safe from bugs, easy to understand and ready for change."
+    },
+    {
+        "timestamp": "01:09:51",
+        "content": "So they have also lots of problem sets, but you're also working in a team."
+    },
+    {
+        "timestamp": "01:10:03",
+        "content": "So you get to learn how to work in a team well with with other students, how to code together, how to write code that has nice documentation, lots of debugging, things like that."
+    },
+    {
+        "timestamp": "01:10:09",
+        "content": "So more of that, those ideas of decomposition abstraction that we learned in this class will definitely be prominent in this class in six one or two."
+    },
+    {
+        "timestamp": "01:10:19",
+        "content": "And then of course, we've got other classes I'm happy to chat about."
+    },
+    {
+        "timestamp": "01:10:24",
+        "content": "So machine learning is a nice one."
+    },
+    {
+        "timestamp": "01:10:27",
+        "content": "If again, if you have a handle on programing really well and want to try some just applying programing to machine learning and algorithms."
+    },
+    {
+        "timestamp": "01:10:45",
+        "content": "Class is also fine. Next step if you're more interested in the complexity part of this class that we saw also very, very reasonable things to try to do next after this class."
+    },
+    {
+        "timestamp": "01:10:51",
+        "content": "Um. Yes. Last slide."
+    },
+    {
+        "timestamp": "01:11:01",
+        "content": "If you're not going to code for a while, but think you might code in a couple semesters or something like that, like, you know, you want to take a more computational class in some desired field."
+    },
+    {
+        "timestamp": "01:11:06",
+        "content": "I would say. That you should try to practice coding at least once a week."
+    },
+    {
+        "timestamp": "01:11:11",
+        "content": "So in our website we've got a little help menu where you can go to the we've we've listed some other websites."
+    },
+    {
+        "timestamp": "01:11:18",
+        "content": "There's a little bit of coding practice you can do. It doesn't need to be a lot."
+    },
+    {
+        "timestamp": "01:11:38",
+        "content": "30 minutes. Once a week, something like that. Just so you don't forget to code can go a really long way because I know, you know, over the summer sometimes I don't code for a month or so because I do other stuff besides coding in my life and you know, coming back into it takes a little bit of time and it's just without practice."
+    },
+    {
+        "timestamp": "01:11:43",
+        "content": "Like with anything else, it's just easy to forget and it's hard to get back into it."
+    },
+    {
+        "timestamp": "01:11:47",
+        "content": "So even if you just do a little bit of coding, right, a really simple program now once a week, it's going to go a long way."
+    },
+    {
+        "timestamp": "01:11:54",
+        "content": "Right? So that's that's it. I want to thank you all for being in this class and thank you for coming to this last lecture."
+    },
+    {
+        "timestamp": "01:12:00",
+        "content": "I know you didn't have to, but I do appreciate it. Happy coding and good luck with exams and have a good break, everyone."
+    },
+    {
+        "timestamp": "01:12:08",
+        "content": "Thank you."
+    }
+]

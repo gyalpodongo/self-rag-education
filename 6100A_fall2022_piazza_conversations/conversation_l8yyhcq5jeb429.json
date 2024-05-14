@@ -1,0 +1,9 @@
+[
+    {
+        "content": "<p>Hi,</p>\n<p>I have a question about the mcq &#34;If <code>A</code>\u00a0is a user-defined class and\u00a0<code>a</code>\u00a0is an instance of\u00a0<code>A</code>, the expression\u00a0<code>type(a) == A</code>\u00a0evaluates to\u00a0<code>True</code>.&#34; I was wondering what the difference between .isinstance(obj, class) and type is. Shown below, I set <code>A</code> to a parent class with subclass <code>B</code> and <code>a</code> as an instance of <code>B</code>. Evaluating <code>type(a) == B</code> resulted in True; <code>isinstance(a, B)</code> is True. However, <code>type(a) == A</code> is False and <code>isinstance(a, A)</code> is True.\u00a0</p>\n<p></p>\n<p>Would <code>a</code> still be considered an instance of the superclass A? If so, why would the answer to the mcq be True instead of False?</p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl7jt6faqzvh6ua%2Fd368ac02c1aafa4e570dfe98978db91ef3b3ea5352291fac5c4fed5181101753%2FScreen_Shot_2022-10-08_at_9.57.09_AM.png\" alt=\"Screen_Shot_2022-10-08_at_9.57.09_AM.pngNaN\" width=\"614\" height=\"228\" /></p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl7jt6faqzvh6ua%2Fce1f3148a1c67a7cebf67896183c4b3ff75e6e46563e6607eca90b1ce21738b5%2FScreen_Shot_2022-10-08_at_9.57.41_AM.png\" alt=\"Screen_Shot_2022-10-08_at_9.57.41_AM.png\" width=\"496\" height=\"88\" /></p>\n<p></p>\n<p>Thanks!</p>",
+        "type": "question",
+        "created": "2022-10-07T20:44:31.277Z",
+        "subject": "Microquiz Multiple Choice Q",
+        "_id": "l8yyhcq5jeb429"
+    }
+]

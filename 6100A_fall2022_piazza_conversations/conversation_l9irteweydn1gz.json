@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>I&#39;m seeing an error on the Scores page. Is this just me?</p>\n<p></p>\n<p></p>\n<p><b>A Python Error Occurred:</b></p>\n<p></p>\n<pre>\n\u00a0\u00a0File\u00a0&#34;&lt;CATSOOP\u00a0ROOT&gt;/language.py&#34;,\u00a0line\u00a0596,\u00a0in\u00a0get_python_output\n\u00a0\u00a0\u00a0\u00a0exec(code,\u00a0variables)\n\u00a0\u00a0File\u00a0&#34;&lt;string&gt;&#34;,\u00a0line\u00a012,\u00a0in\u00a0&lt;module&gt;\n\u00a0\u00a0File\u00a0&#34;&lt;string&gt;&#34;,\u00a0line\u00a010,\u00a0in\u00a0&lt;module&gt;\n\u00a0\u00a0File\u00a0&#34;&lt;DATA\u00a0ROOT&gt;/courses/fall22/scores/preload.py&#34;,\u00a0line\u00a0145,\u00a0in\u00a0get_scores\n\u00a0\u00a0\u00a0\u00a0all_grades\u00a0=\u00a0ctx[&#39;get_all_grades&#39;]()\n\u00a0\u00a0File\u00a0&#34;&lt;DATA\u00a0ROOT&gt;/courses/fall22/scores/data/preload.py&#34;,\u00a0line\u00a0313,\u00a0in\u00a0get_all_grades\n\u00a0\u00a0\u00a0\u00a0final_scores,\u00a0final_name\u00a0=\u00a0get_final()\n\u00a0\u00a0File\u00a0&#34;&lt;DATA\u00a0ROOT&gt;/courses/fall22/scores/data/preload.py&#34;,\u00a0line\u00a0121,\u00a0in\u00a0get_final\n\u00a0\u00a0\u00a0\u00a0return\u00a0get_mq(mq_data[&#39;name&#39;]),\u00a0mq_data[&#39;name&#39;]\n\u00a0\u00a0File\u00a0&#34;&lt;DATA\u00a0ROOT&gt;/courses/fall22/scores/data/preload.py&#34;,\u00a0line\u00a097,\u00a0in\u00a0get_mq\n\u00a0\u00a0\u00a0\u00a0return\u00a0get_csv_scores(mq_path,\u00a0cs_username,\u00a03)\n\u00a0\u00a0File\u00a0&#34;&lt;DATA\u00a0ROOT&gt;/courses/fall22/scores/data/preload.py&#34;,\u00a0line\u00a057,\u00a0in\u00a0get_csv_scores\n\u00a0\u00a0\u00a0\u00a0with\u00a0open(path)\u00a0as\u00a0file:\nFileNotFoundError:\u00a0[Errno\u00a02]\u00a0No\u00a0such\u00a0file\u00a0or\u00a0directory:\u00a0&#39;&lt;DATA\u00a0ROOT&gt;/courses/fall22/MQs/2_MQ5/_files/2_mq5_totals.csv&#39;\n</pre>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fkxy88cn4vfp36w%2Fabef736afb98631b9e91c76231bda9280296b36a0aa54e8e29afc78c1850c4ad%2FScreen_Shot_2022-10-21_at_1.31.04_PM.png\" alt=\"\" width=\"951\" height=\"768\" /></p>",
+        "type": "question",
+        "created": "2022-10-21T17:33:20.174Z",
+        "subject": "An error on the Scores page",
+        "_id": "l9irteweydn1gz"
+    },
+    {
+        "content": "<p>The website is switching over to 100B content soon. You can access the 100A scores via this link: <a href=\"https://sicp-s1.mit.edu/fall22/scores?course=0001\" target=\"_blank\" rel=\"noopener noreferrer\">https://sicp-s1.mit.edu/fall22/scores?course=0001</a> as of this Sunday\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-10-21T18:07:14.823Z",
+        "_id": "l9irteweydn1gz"
+    }
+]

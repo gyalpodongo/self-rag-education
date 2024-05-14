@@ -1,0 +1,15 @@
+[
+    {
+        "content": "hi, for part 2 why is not reader method not allowed? it indicates that str object cannot be used",
+        "type": "question",
+        "created": "2022-10-12T12:30:28.716Z",
+        "subject": "pset 4 part",
+        "_id": "l95m19poxm772h"
+    },
+    {
+        "content": "<p>See @209 for the response</p>",
+        "type": "i_answer",
+        "created": "2022-10-13T05:15:17.835Z",
+        "_id": "l95m19poxm772h"
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p>My pset buddy told me she dropped the class last week, but she&#39;s my pset buddy again this week. I can finish this pset by myself this time, but next week, can I get a new pset buddy?</p>",
+        "type": "question",
+        "created": "2022-09-25T01:53:07.731Z",
+        "subject": "pset buddy dropped class",
+        "_id": "l8gos5g3d4e3te"
+    },
+    {
+        "content": "<p>You can do it by yourself and we will try to assign someone new next time. I can actually assign a new buddy for you for this pset -- do you still want one?\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-09-25T14:40:50.714Z",
+        "_id": "l8gos5g3d4e3te"
+    },
+    {
+        "content": "<p>actually that would be great if you could set me up with one for this week!</p>",
+        "type": "followup",
+        "created": "2022-09-25T16:05:52.578Z",
+        "_id": "l8gos5g3d4e3te"
+    },
+    {
+        "content": "<p>just sent you an email</p>",
+        "type": "followup_response",
+        "created": "2022-09-25T18:10:18.432Z",
+        "_id": "l8gos5g3d4e3te"
+    }
+]

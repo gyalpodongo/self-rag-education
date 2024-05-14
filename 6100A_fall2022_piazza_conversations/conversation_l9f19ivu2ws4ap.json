@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>For this problem, mutating the list inside the function doesn&#39;t reflect outside it. Do I have to use global variables to do so?\u00a0</p>",
+        "type": "question",
+        "created": "2022-10-19T02:46:43.674Z",
+        "subject": "Exam practice problem 7",
+        "_id": "l9f19ivu2ws4ap"
+    },
+    {
+        "content": "I was having the same problem too, until I realized that I wasn&#39;t actually mutating the list, but was instead assigning it to a different list (or something like that). Make sure you&#39;re actually mutating the list and it should work.",
+        "type": "s_answer",
+        "created": "2022-10-19T03:41:10.544Z",
+        "_id": "l9f19ivu2ws4ap"
+    }
+]

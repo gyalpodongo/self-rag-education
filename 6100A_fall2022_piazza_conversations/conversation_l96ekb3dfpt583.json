@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p>For Part 5 of PSET 4, I have successfully completed the frame_maker function requirements, and two TA&#39;s have verified my code for this section. However, I keep failing test_data_frame_maker_large because of this error: &#39;NoneType&#39; object has no attribute &#39;year&#39;. I have not been successful in debugging this issue by myself and during office hours; however, I know why the error is occurring: the header of my dataframe is set to None when I use the .clear_data() method. Thank you for any advice</p>",
+        "type": "question",
+        "created": "2022-10-13T01:49:06.217Z",
+        "subject": "Data Frame Maker",
+        "_id": "l96ekb3dfpt583"
+    },
+    {
+        "content": "Try setting the header before clearing the data, and see if this fixes the problem?",
+        "type": "i_answer",
+        "created": "2022-10-13T04:40:35.852Z",
+        "_id": "l96ekb3dfpt583"
+    },
+    {
+        "content": "<p>I had the same issue, for me I fixed it by changing my earlier frame_data method. Originally in frame_data(), I was finding the start and end indices to figure out which data to store, but It didnt work until I got rid of this and used the helper functions (is_before, is_after, is_equal) to decide at each position whether to store it or not. I honestly don&#39;t know why my original method gives any different results, but this got rid of the error for me. It was also wild that I passed so many test cases (including test_data_frame_maker_small) without any indication of a problem.</p>",
+        "type": "followup",
+        "created": "2022-10-13T05:35:37.165Z",
+        "_id": "l96ekb3dfpt583"
+    },
+    {
+        "content": "<p>Thank you so much, this was the solution!</p>",
+        "type": "followup_response",
+        "created": "2022-10-13T14:37:33.159Z",
+        "_id": "l96ekb3dfpt583"
+    }
+]

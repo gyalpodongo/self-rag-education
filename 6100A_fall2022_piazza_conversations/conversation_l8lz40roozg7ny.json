@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>I downloaded the zip file for Pset 3 and then did problem zero setting up the list from the string provided, but when I uncomment the appropriate lines and run it I keep getting this error: FileNotFoundError: [Errno 2] No such file or directory: &#39;tests/student_tests/hello_world.txt&#39;.</p>\n<p></p>\n<p>Similarly, when I run the tester I get this error: ModuleNotFoundError: No module named &#39;document_distance&#39;.</p>\n<p></p>\n<p>I have tried closing Spyder and opening it again, and restarting the kernel but none of them fix the problem. I saved the files the same way I saved Pset 1 and 2 and I had no issues with those. Everything is in the same directory, so I don&#39;t know what the problem could be.\u00a0</p>",
+        "type": "question",
+        "created": "2022-09-28T18:41:08.580Z",
+        "subject": "Error Running Pset 3 tester",
+        "_id": "l8lz40roozg7ny"
+    },
+    {
+        "content": "There should be at least 3 things in the directory that has the file \u2018document_distance.py\u2019 in it.<div><br /></div><div>1) the document_distance file</div><div>2) the tester file</div><div>3) a folder called \u2018tests\u2019 which has the different wordlists we use</div><div><br /></div><div>Can you make sure you have all three of these? If not, consider re-downloading the pset. If the problem persists, please come to Office Hours and talk to a TA</div>",
+        "type": "i_answer",
+        "created": "2022-09-29T00:13:39.415Z",
+        "_id": "l8lz40roozg7ny"
+    }
+]

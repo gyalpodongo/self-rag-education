@@ -1,0 +1,57 @@
+[
+    {
+        "content": "<p>I keep getting the following error message when I run my test case, but if I change the scores the tester is looking for, it resolves it. Are the scores that the tester is seeking definitely correct, because following this formula given, (guesses_remaining&#43;4\u00d7number of unique letters in secret_word)&#43;(3\u00d7length of secret_word), I am not sure I understand how the tester is seeking 22 for the &#34;hi&#34; scenario and 55 for the &#34;wildcard&#34; scenario?\u00a0</p>\n<p></p>\n<p>Error message:\u00a0</p>\n<p>[-0.35]: You do not play the game right for a two letter word and correct guesses<br />[-0.3]: You do not play the game correctly with help.\u00a0</p>\n<p></p>\n<p>resolved: i was misunderstanding order of opertaions in the equation</p>",
+        "type": "question",
+        "created": "2022-09-25T13:13:29.690Z",
+        "subject": "[resolved] pset 2 test case",
+        "_id": "l8hd33vehc475n"
+    },
+    {
+        "content": "Can you elaborate a bit on what answers you\u2019re getting and how? Please include the values of guesses_remaining, and unique_letters<div><br /></div><div>Edit: glad to hear it was resolved</div>",
+        "type": "i_answer",
+        "created": "2022-09-25T13:25:06.962Z",
+        "_id": "l8hd33vehc475n"
+    },
+    {
+        "content": "<p>Can you explain what you mean by order of operations? I am getting this pset wrong because of the score issue. I have no idea how &#34;hangman&#34; got 55. I always get 58.</p>",
+        "type": "followup",
+        "created": "2022-09-25T15:16:03.950Z",
+        "_id": "l8hd33vehc475n"
+    },
+    {
+        "content": "<p>For me, I was misreading the equation, and thus implementing it incorrectly. I was reading it as (<strong>(</strong>guesses_remaining&#43;4<strong>)</strong>\u00d7number of unique letters in secret_word)&#43;(3\u00d7length of secret_word), rather than the correct (guesses_remaining&#43;<strong>(</strong>4\u00d7number of unique letters in secret_word)<strong>)</strong>&#43;(3\u00d7length of secret_word). That error was not leading to 58 though, but it is possible it is something similar.\u00a0</p>",
+        "type": "followup_response",
+        "created": "2022-09-25T15:19:34.832Z",
+        "_id": "l8hd33vehc475n"
+    },
+    {
+        "content": "Can you print the values you\u2019re getting for guesses_remaing?",
+        "type": "followup_response",
+        "created": "2022-09-25T15:21:04.548Z",
+        "_id": "l8hd33vehc475n"
+    },
+    {
+        "content": "<p>Nevermind, the score works. However, I am still not getting full points. Here is my output for the word &#34;hangman&#34; based on the test case.</p>\n<p></p>\n<p>RESULTS FOR TEST CASE: test_play_game_wildcard<br />WORD USED IN TEST: wildcard<br />GUESSED LETTERS IN ORDER OF GUESS: [&#39;k&#39;, &#39;w&#39;, &#39;i&#39;, &#39;l&#39;, &#39;d&#39;, &#39;c&#39;, &#39;!&#39;, &#39;!&#39;]<br />************************<br />YOUR OUTPUT:<br />************************<br />Welcome to Hangman!<br />I am thinking of a word that is 8 letters long.<br />\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013<br />You have 10 guesses left.<br />Available letters: abcdefghijklmnopqrstuvwxyz<br />Oops! That letter is not in my word: \u00a0********<br />\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013<br />You have 9 guesses left.<br />Available letters: abcdefghijlmnopqrstuvwxyz<br />Good guess: w*******<br />\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013<br />You have 9 guesses left.<br />Available letters: abcdefghijlmnopqrstuvxyz<br />Good guess: wi******<br />\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013<br />You have 9 guesses left.<br />Available letters: abcdefghjlmnopqrstuvxyz<br />Good guess: wil*****<br />\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013<br />You have 9 guesses left.<br />Available letters: abcdefghjmnopqrstuvxyz<br />Good guess: wild***d<br />\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013<br />You have 9 guesses left.<br />Available letters: abcefghjmnopqrstuvxyz<br />Good guess: wildc**d<br />\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013<br />You have 9 guesses left.<br />Available letters: abefghjmnopqrstuvxyz<br />Letter revealed: r<br />wildc*rd<br />\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013<br />You have 6 guesses left.<br />Available letters: abefghjmnopqstuvxyz<br />Letter revealed: a<br />wildcard<br />\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013<br />Congratulations, you won!<br />Your total score for this game is: 55</p>",
+        "type": "followup_response",
+        "created": "2022-09-25T15:25:41.739Z",
+        "_id": "l8hd33vehc475n"
+    },
+    {
+        "content": "I believe you\u2019re missing the line:<div><br /></div><div>\u2018Please guess a letter: \u2018</div><div><br /></div><div>Which is probably why it\u2019s failing</div>",
+        "type": "followup_response",
+        "created": "2022-09-25T15:30:24.403Z",
+        "_id": "l8hd33vehc475n"
+    },
+    {
+        "content": "<p>Hmm that&#39;s strange, when I play the game manually that line shows. However the tester file output does not reveal it.</p>",
+        "type": "followup_response",
+        "created": "2022-09-25T15:34:12.978Z",
+        "_id": "l8hd33vehc475n"
+    },
+    {
+        "content": "It\u2019s possible there\u2019s some other thing I\u2019m missing here. I would recommend going to office hours, and getting it checked out there",
+        "type": "followup_response",
+        "created": "2022-09-25T17:34:42.406Z",
+        "_id": "l8hd33vehc475n"
+    }
+]

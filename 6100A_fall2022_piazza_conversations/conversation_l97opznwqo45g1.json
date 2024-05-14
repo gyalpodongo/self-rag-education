@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p><a href=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl7qghba6hsp7ho%2F0754c588590c7f0ffc37c4c51c991a9245fbb0fcd56a7d1062a63235e8a6c980%2Fps4.py\" target=\"_blank\" rel=\"noopener noreferrer\">ps4.py</a></p>\n<p>none type issue with final two parts</p>",
+        "type": "question",
+        "created": "2022-10-13T23:21:13.676Z",
+        "subject": "Tried to get help, still coming up with errors",
+        "_id": "l97opznwqo45g1"
+    },
+    {
+        "content": "<p>I was helping this student, I just want to take a closer look when I have time later tonight (need to run off to another meeting)<br />Could someone else take a look too? I was pretty stumped. The issue was that in shift_maker there was data in the dataframe but the header was None</p>",
+        "type": "followup",
+        "created": "2022-10-13T23:23:22.417Z",
+        "_id": "l97opznwqo45g1"
+    },
+    {
+        "content": "<p>resolved</p>\n<p>Thanks!</p>",
+        "type": "followup_response",
+        "created": "2022-10-14T00:13:50.382Z",
+        "_id": "l97opznwqo45g1"
+    },
+    {
+        "content": "I helped her, but I don\u2019t remember what the problem was. Vera if you could, and if you still remember what the issue was, could you remind me? It\u2019d help us a lot if we see it again",
+        "type": "followup_response",
+        "created": "2022-10-14T01:24:35.483Z",
+        "_id": "l97opznwqo45g1"
+    }
+]

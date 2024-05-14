@@ -1,0 +1,9 @@
+[
+    {
+        "content": "<script type=\"text/javascript\">PA.load(\"/dashboard/introduce_piazza\", null, function(data){ $('#' + 'questionText').html(data);});</script>",
+        "type": "note",
+        "created": "2022-07-19T14:10:25.478Z",
+        "subject": "Introduce Piazza to your students",
+        "_id": "l5s96e6eo7j5v1"
+    }
+]

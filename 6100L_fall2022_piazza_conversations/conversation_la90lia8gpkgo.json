@@ -1,0 +1,15 @@
+[
+    {
+        "content": "Dear reader,\nMy grade for MQ 8 was marked exactly the same as MQ 7 (even down to the subsections). I do not think this is possible, as I got more of the multiple-choice wrong.\n\nMy kerb is pabloa.\n\nI believe I should have gotten a 100% on both of the parts I had to code myself (4 of 4 for both parts). I received 1.5/2 on the multiple-choice, but I believe a 1/2 would be correct (since I got  number one right). I also believe that one can do memoization using a direct access array (or a less efficient linked list) so I believe I deserve credit for the second of the multiple-choice questions.\n\nAgain, I would appreciate it if someone can take a look to make sure I got credit where I deserved it and didn&#39;t where I didn&#39;t. \n\nBest,\n\nPablo",
+        "type": "question",
+        "created": "2022-11-09T02:21:08.432Z",
+        "subject": "Micro Quiz Grade Error and Regrade Request",
+        "_id": "la90lia8gpkgo"
+    },
+    {
+        "content": "<p>I think this is coincidence.\u00a0</p>\n<p>For Q2, your code does not work in these test cases:\u00a0</p>\n<p></p>\n<pre>\ns = &#34;computer&#34;\nchar_in_s(&#39;r&#39;, s)\n\ns = &#34;738shur5&#34;\nchar_in_s(&#39;r&#39;, s)</pre>\n<p>And for Q3 I have you checking off the first and last options, which means you just got the last one incorrect. (maybe you did not hit submit on the last change you made that might have given you 50%)</p>",
+        "type": "i_answer",
+        "created": "2022-11-09T16:06:45.949Z",
+        "_id": "la90lia8gpkgo"
+    }
+]

@@ -1,0 +1,21 @@
+[
+    {
+        "content": "I followed the instructions to download Anaconda Navigator on windows, but when I try to launch it through the start menu, a blank console flashes 3 times for about 1 second, and then nothing else happens, so I am unable to access the actual navigator.\u00a0 I have already tried reinstalling Anaconda and using fixes on the internet, but nothing has worked so far.",
+        "type": "question",
+        "created": "2022-09-07T01:05:32.186Z",
+        "subject": "Anaconda Navigator not working",
+        "_id": "l7qx5m3eycss7"
+    },
+    {
+        "content": "<p>You may need to go to office hours, which start Thursday, to have an LA resolve this. Just in case, these are the official install instructions for Windows:</p>\n<p><a href=\"https://docs.anaconda.com/anaconda/install/windows/\" target=\"_blank\" rel=\"noopener noreferrer\">https://docs.anaconda.com/anaconda/install/windows/</a></p>\n<p></p>\n<p>Also, try to launch Spyder directly from the start menu. As long as that&#39;s working, and you can update it according to our handout, you should be fine.</p>",
+        "type": "i_answer",
+        "created": "2022-09-07T01:41:03.303Z",
+        "_id": "l7qx5m3eycss7"
+    },
+    {
+        "content": "<p>I had the same issue with the 64-bit version, but the 32-bit one seems to be working fine (I have 64-bit Windows)</p>",
+        "type": "s_answer",
+        "created": "2022-09-07T01:56:27.238Z",
+        "_id": "l7qx5m3eycss7"
+    }
+]

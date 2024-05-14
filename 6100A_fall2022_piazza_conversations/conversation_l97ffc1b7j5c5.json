@@ -1,0 +1,39 @@
+[
+    {
+        "content": "Hello, unfortunately I haven&#39;t had a ton of luck with office hours due to long wait times, and I have 3 errors that I have not been able to debug. Do you have any recommendations of what to do? Here are the errors. I&#39;ve been able to trace the first one back to being a result of clearing data (I think), butmoving around the clear command hasn&#39;t been able to help.\n\nERROR: test_data_frame_maker_small (__main__.TestDataFrame)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File &#34;C:\\Users\\lilia\\Downloads\\6.100A\\1_ps4\\1_ps4\\test_ps4_student.py&#34;, line 118, in test_data_frame_maker_small\n    self.assertEqual(Date(1, 5, 1), res_header)\n  File &#34;C:\\Users\\lilia\\anaconda3\\lib\\unittest\\case.py&#34;, line 837, in assertEqual\n    assertion_func(first, second, msg=msg)\n  File &#34;C:\\Users\\lilia\\anaconda3\\lib\\unittest\\case.py&#34;, line 827, in _baseAssertEqual\n    if not first == second:\n  File &#34;C:\\Users\\lilia\\Downloads\\6.100A\\1_ps4\\1_ps4\\dataframe_structs.py&#34;, line 64, in __eq__\n    if self.year != other.year:\nAttributeError: &#39;NoneType&#39; object has no attribute &#39;year&#39;\n\n======================================================================\nFAIL: test_data_frame_maker_large (__main__.TestDataFrame)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File &#34;C:\\Users\\lilia\\Downloads\\6.100A\\1_ps4\\1_ps4\\test_ps4_student.py&#34;, line 142, in test_data_frame_maker_large\n    self.assertEqual(Date(2022, 9, 15), res_header)\nAssertionError: 09/15/2022 != 09/14/2022\n\n======================================================================\nFAIL: test_shift_maker (__main__.TestDataFrame)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File &#34;C:\\Users\\lilia\\Downloads\\6.100A\\1_ps4\\1_ps4\\test_ps4_student.py&#34;, line 164, in test_shift_maker\n    self.assertEqual(Date(1, 4, 1), res_header)\nAssertionError: 04/01/0001 != 02/01/0001\n\n----------------------------------------------------------------------\nRan 12 tests in 1.924s\n\nFAILED (failures=2, errors=1)",
+        "type": "question",
+        "created": "2022-10-13T19:00:59.951Z",
+        "subject": "Trouble debugging code",
+        "_id": "l97ffc1b7j5c5"
+    },
+    {
+        "content": "Can you post your code file as well?",
+        "type": "i_answer",
+        "created": "2022-10-13T19:05:58.689Z",
+        "_id": "l97ffc1b7j5c5"
+    },
+    {
+        "content": "Hi,\n\nI wasn&#39;t sure how to upload it to piazza, so I just emailed it.\n\nThanks,\nLily",
+        "type": "followup",
+        "created": "2022-10-13T19:10:25.678Z",
+        "_id": "l97ffc1b7j5c5"
+    },
+    {
+        "content": "<p>1. Your frame_data() function is not inclusive of the interval boundary dates</p>\n<p>2. You are not setting frame size when the time provided is None<br />3. If the years are the same, but the month is not, your is_equal_dates returns None</p>\n<p>4. Your is_before() function returns None when date.get_year() &lt; end.get_year()</p>\n<p>5. Similar problem with your is_after() function</p>\n<p></p>\n<p>Let me know if these fixes don&#39;t solve your problem</p>",
+        "type": "followup_response",
+        "created": "2022-10-13T19:41:36.497Z",
+        "_id": "l97ffc1b7j5c5"
+    },
+    {
+        "content": "Hi- thanks so much for all your suggestions. Unfortunately, though, they weren&#39;t able to resolve my issues :( (see email)",
+        "type": "followup_response",
+        "created": "2022-10-13T20:59:53.422Z",
+        "_id": "l97ffc1b7j5c5"
+    },
+    {
+        "content": "<p>I have another student with the same issue for shift_maker. It seems like the DataFrame when initialized does not set the header, meaning it is None. The header only gets set when you call store_data, which isn&#39;t applicable in this case.</p>",
+        "type": "followup",
+        "created": "2022-10-13T22:52:23.794Z",
+        "_id": "l97ffc1b7j5c5"
+    }
+]

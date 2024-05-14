@@ -1,0 +1,21 @@
+[
+    {
+        "content": "Hello,<div>If the with_help is set to False and the user enters \u2018!\u2019, what should be printed out?</div>",
+        "type": "question",
+        "created": "2022-09-24T02:22:27.431Z",
+        "subject": "Question on With_help",
+        "_id": "l8fae0knahr6hi"
+    },
+    {
+        "content": "The same message that you output when an invalid letter is entered. \u2018Oops! That is an invalid letter\u2019",
+        "type": "i_answer",
+        "created": "2022-09-24T03:06:49.688Z",
+        "_id": "l8fae0knahr6hi"
+    },
+    {
+        "content": "Thank you so much!",
+        "type": "followup",
+        "created": "2022-09-24T03:07:23.592Z",
+        "_id": "l8fae0knahr6hi"
+    }
+]

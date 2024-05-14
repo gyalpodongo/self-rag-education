@@ -1,0 +1,63 @@
+[
+    {
+        "content": "<p>Hi,\u00a0</p>\n<p>\u00a0</p>\n<p>The testfile was giving error for the function test_play_game_wildcard.\u00a0 It turns out that the test case is written is such a way that it allows only lower case letters when printing the following -- print(&#39;<strong>revealed letter: </strong>&#39; &#43; revealed_letter)\u00a0</p>\n<p></p>\n<p>For me the string &#39;<strong>r</strong>evealed letter above was &#39;<strong>R</strong>evealed letter&#39; and thus failed.</p>\n<p></p>\n<p>Wondering how to get an updated grade for the autograder for this issue.\u00a0</p>\n<p></p>\n<p>======================================================================<br />FAIL: test_play_game_wildcard (__main__.TestPS2)<br />----------------------------------------------------------------------<br />Traceback (most recent call last):<br />\u00a0 File &#34;C:\\Users\\Abhishri Kabra\\Desktop\\Fall 2022\\CS\\test_ps2_student.py&#34;, line 358, in test_play_game_wildcard<br />\u00a0 \u00a0 raise(e)<br />\u00a0 File &#34;C:\\Users\\Abhishri Kabra\\Desktop\\Fall 2022\\CS\\test_ps2_student.py&#34;, line 349, in test_play_game_wildcard<br />\u00a0 \u00a0 self.assertTrue(&#34;revealed&#34; in lines[7]) # lost 2 guesses<br />AssertionError: False is not true</p>\n<p>----------------------------------------------------------------------</p>\n<p></p>\n<p>Thanks!</p>",
+        "type": "question",
+        "created": "2022-10-06T21:36:05.649Z",
+        "subject": "PSET2 Wildcard testcase failure",
+        "_id": "l8xkvtoxioa38s"
+    },
+    {
+        "content": "<p><strong attention=\"j7awud7zf0p2uu\">@Kuan Wei Huang</strong>\u00a0</p>",
+        "type": "followup",
+        "created": "2022-10-07T19:13:50.599Z",
+        "_id": "l8xkvtoxioa38s"
+    },
+    {
+        "content": "<p>I don&#39;t think I fully understand what the student is describing. Perhaps ps2 writers <strong attention=\"jlq02dxe11726r\">@Anna Wong</strong> <strong attention=\"jncd2zg6gq42wk\">@Yilinn Yang</strong> should decide what they want to do in this case. Does this bug require a rerunning ps2 with a new staff tester?</p>",
+        "type": "followup_response",
+        "created": "2022-10-07T19:32:30.442Z",
+        "_id": "l8xkvtoxioa38s"
+    },
+    {
+        "content": "<p>And it seems like it&#39;s a more-than-one person issue</p>",
+        "type": "followup_response",
+        "created": "2022-10-07T19:33:12.332Z",
+        "_id": "l8xkvtoxioa38s"
+    },
+    {
+        "content": "<p>This test case was in the student tester, so it&#39;s something that they would have been able to catch before submitting to the autograder. The issue is just that they printed a capitalized R instead of a lowercase one (the example provided used &#34;Letter revealed&#34;, so it checked for lowercase). Do we know how many people were affected? If it&#39;s not too many we could just manually regrade/rerun.\u00a0</p>",
+        "type": "followup_response",
+        "created": "2022-10-09T00:45:00.802Z",
+        "_id": "l8xkvtoxioa38s"
+    },
+    {
+        "content": "<p>If this test case was in the student tester, I&#39;m less inclined to give regrades for the same reason Anna described. Looks like op &#43; 2 others had this issue.</p>\n<p><strong attention=\"j7awttwxllz28i\">@Andy Lambert</strong> <strong attention=\"jlq02dxe11726r\">@Anna Wong</strong> Happy to regrade or not, just lmk what you guys decide. Thanks!</p>",
+        "type": "followup_response",
+        "created": "2022-10-09T04:23:10.884Z",
+        "_id": "l8xkvtoxioa38s"
+    },
+    {
+        "content": "<p>Hmm ok we can regrade for them, but can you also mention in the reply that this is something they would have seen if they ran the student tester, and remind them that they should run the student tester before submitting to the website?</p>",
+        "type": "followup_response",
+        "created": "2022-10-11T01:50:04.661Z",
+        "_id": "l8xkvtoxioa38s"
+    },
+    {
+        "content": "<p>Hi Abhishri, we&#39;ll regrade your pset. The test case that you failed was in the student tester which you have access to. Please be sure to check that your code passes all of the student tester for future submissions. Thanks.</p>",
+        "type": "i_answer",
+        "created": "2022-10-11T01:58:40.680Z",
+        "_id": "l8xkvtoxioa38s"
+    },
+    {
+        "content": "<p>Sg. Will regrade.</p>",
+        "type": "followup_response",
+        "created": "2022-10-11T01:59:53.499Z",
+        "_id": "l8xkvtoxioa38s"
+    },
+    {
+        "content": "<p>Thank you!\u00a0</p>",
+        "type": "followup",
+        "created": "2022-10-11T19:25:09.891Z",
+        "_id": "l8xkvtoxioa38s"
+    }
+]

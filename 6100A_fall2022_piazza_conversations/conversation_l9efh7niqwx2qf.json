@@ -1,0 +1,33 @@
+[
+    {
+        "content": "<p>Hi!</p>\n<p>I&#39;m wondering if anyone can explain why the T/F question in the review session slides:\u00a0</p>\n<div>\n<div>\n<div>\n<div>\n<p>&#34;Let L be a list, each element of which is a list of ints. In Python, the assignment statement L[0][0] = 3 mutates the list L.&#34; is false.</p>\n<p>Thank you!</p>\n<p></p>\n</div>\n</div>\n</div>\n</div>",
+        "type": "question",
+        "created": "2022-10-18T16:36:50.814Z",
+        "subject": "review session T/F question",
+        "_id": "l9efh7niqwx2qf"
+    },
+    {
+        "content": "<p>Let&#39;s consider an example.</p>\n<p></p>\n<p>L = [[1, 2], [3, 4], [5, 6]]</p>\n<p></p>\n<p>In Python, this means that there are 3 lists ([1,2], [3,4], [5,6]) and each element of L is a <strong>reference</strong> to the corresponding list.</p>\n<p></p>\n<p>In other words: L = [ref to [1, 2], ref to [3, 4], ref to [5, 6]]</p>\n<p></p>\n<p>When we run the assignment statement L[0][0] = 3, we are mutating the first list in L to go from [1, 2] to [3, 2]. However, we are <strong>not</strong> changing L[0], which continues to be a reference to the same list. In this scenario, L[0] is mutated, but L is not.\u00a0</p>\n<p></p>\n<p>Does this make sense?</p>\n<p></p>\n<p></p>",
+        "type": "i_answer",
+        "created": "2022-10-18T16:43:47.253Z",
+        "_id": "l9efh7niqwx2qf"
+    },
+    {
+        "content": "<p>So if we change the pointers, we change the corresponding list that the pointer belongs to?</p>",
+        "type": "followup",
+        "created": "2022-10-18T18:14:16.131Z",
+        "_id": "l9efh7niqwx2qf"
+    },
+    {
+        "content": "<p>Yes, if you change the pointers, the corresponding element of L points to a new list altogether. This would be an example of mutating list L.</p>",
+        "type": "followup_response",
+        "created": "2022-10-18T19:33:37.867Z",
+        "_id": "l9efh7niqwx2qf"
+    },
+    {
+        "content": "<p>Hi, I&#39;m still a bit confused, since when I put in\u00a0</p>\n<p>L = [[1, 2], [3, 4], [5, 6]]<br />L[0][0] = 3<br />and print out L, it would print out [[3, 2], [3, 4], [5, 6]]</p>",
+        "type": "followup",
+        "created": "2022-10-19T12:54:10.162Z",
+        "_id": "l9efh7niqwx2qf"
+    }
+]

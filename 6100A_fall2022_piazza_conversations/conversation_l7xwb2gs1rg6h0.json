@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>I found a small issue with the CAT-SOOP website, but it is accessibility-related, so I&#39;d like to report it to the maintainers.</p>\n<p></p>\n<p></p>\n<p>Could you please point me in the right direction to do that?</p>\n<p></p>\n<p></p>\n<p>The issue is that all the pages have the same title, so using the browser&#39;s History feature to try to find a page is made difficult.</p>\n<p></p>\n<p></p>\n<p>Thank you.</p>\n<p></p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fkxy88cn4vfp36w%2Fb670417aa83535897b0959b85070b3bf126595029881d421abcf1f62f1e35d48%2FScreen_Shot_2022-09-11_at_6.12.10_PM.png\" alt=\"\" width=\"1578\" height=\"914\" /></p>",
+        "type": "question",
+        "created": "2022-09-11T22:16:10.300Z",
+        "subject": "Where to report website issue?",
+        "_id": "l7xwb2gs1rg6h0"
+    },
+    {
+        "content": "<p>I think I found what I was looking for:</p>\n<p></p>\n<p><a href=\"https://catsoop.mit.edu/website\" target=\"_blank\" rel=\"noopener noreferrer\">https://catsoop.mit.edu/website</a></p>\n<p></p>",
+        "type": "s_answer",
+        "created": "2022-09-11T22:17:14.604Z",
+        "_id": "l7xwb2gs1rg6h0"
+    }
+]

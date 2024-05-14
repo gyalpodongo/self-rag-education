@@ -1,0 +1,21 @@
+[
+    {
+        "content": "<p>Could someone explain why the functions were different?\u00a0</p>",
+        "type": "question",
+        "created": "2022-09-30T19:19:54.360Z",
+        "subject": "3-5 Explanation",
+        "_id": "l8ovdkooveo1u5"
+    },
+    {
+        "content": "<p><code>fun_func_1</code> goes through every element of list <code>L</code> and sets every entry equal to its index. Note that when you do <code>L[i]</code> here, you&#39;re actually changing the original list.\u00a0</p>\n<p></p>\n<p><code>fun_func_2</code> goes through every element of the list <code>L</code> as well, but it&#39;s using list comprehension and generating a new list. It attempts to set every entry equal to its index, but it doesn&#39;t change the original list.</p>\n<p></p>\n<p>You can see these both in action with:</p>\n<pre>\nx = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]\ny = [100, 101, 102]\n\ndef fun_func_1(L):\n    for i in range(len(L)):\n        L[i] = i\n\ndef fun_func_2(L):\n    L = [i for i in range(len(L))]\n\nfun_func_1(x)\nprint(x) # [0, 1, 2]\nfun_func_2(y)\nprint(y) # [100, 101, 102]</pre>\n<p></p>",
+        "type": "i_answer",
+        "created": "2022-10-01T00:20:04.191Z",
+        "_id": "l8ovdkooveo1u5"
+    },
+    {
+        "content": "<p>Makes sense! Thanks so much!</p>",
+        "type": "followup",
+        "created": "2022-10-01T19:40:11.280Z",
+        "_id": "l8ovdkooveo1u5"
+    }
+]

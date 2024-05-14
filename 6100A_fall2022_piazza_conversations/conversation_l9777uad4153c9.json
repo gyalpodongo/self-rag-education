@@ -1,0 +1,15 @@
+[
+    {
+        "content": "Hi, I&#39;m pretty sure that in pset 4, time is a tuple of 3 values rather than 2 like the docstring says. Should we assume it&#39;s (years, months, days)?",
+        "type": "question",
+        "created": "2022-10-13T15:11:13.429Z",
+        "subject": "time",
+        "_id": "l9777uad4153c9"
+    },
+    {
+        "content": "Yes that is the intention. Please use indexing to access the year and month",
+        "type": "i_answer",
+        "created": "2022-10-13T19:09:51.096Z",
+        "_id": "l9777uad4153c9"
+    }
+]

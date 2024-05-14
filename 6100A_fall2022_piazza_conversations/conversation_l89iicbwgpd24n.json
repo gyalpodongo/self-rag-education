@@ -1,0 +1,33 @@
+[
+    {
+        "content": "<p style=\"text-align:left\">Hello, I noticed that for Part C Test 2 for PSET 1, the tester expects my code to take 12 steps to find the lowest usable rate of return. However this seems to be mathematically inaccurate, especially considering that none of the other tests had any &#34;off by one&#34; errors. Below is a step-by-step breakdown of the bisection search process for Part C Test 2. A_S is shorthand for amount_saved. &#39;r&#39; is the rate of return.</p>\n<p style=\"text-align:left\"></p>\n<p style=\"text-align:left\">-----------------------------------------------</p>\n<p>steps = 0<br />A_S (r) = 187,401 * (1 &#43; r/12)^36</p>\n<p><br />r (loop 1) = (1 &#43; 0)/2 = 0.5</p>\n<p>A_S (0.5) = 814718.3809650</p>\n<p>A_S (0.5) &gt; 200,000 -&gt; high_bound_rate = 0.5</p>\n<p>steps = 1</p>\n<p><br />r (loop 2) = (0.5 &#43; 0)/2 = 0.25</p>\n<p>A_S (0.25) = 393682.617473</p>\n<p>A_S (0.25) &gt; 200,000 -&gt; high_bound_rate = 0.25</p>\n<p>steps = 2</p>\n<p><br />r (loop 3) = (0.25 &#43; 0)/2 = 0.125</p>\n<p>A_S (0.125) = 272138.47588</p>\n<p>A_S (0.125) &gt; 200,000 -&gt; high_bound_rate = 0.125</p>\n<p>steps = 3</p>\n<p><br />r (loop 4) = (0.125 &#43; 0)/2 = 0.0625</p>\n<p>A_S (0.0625) = 225938.788117</p>\n<p>A_S (0.0625) &gt; 200,000 -&gt; high_bound_rate = 0.0625</p>\n<p>steps = 4</p>\n<p><br />r (loop 5) = (0.0625 &#43; 0)/2 = 0.03125</p>\n<p>A_S (0.03125) = 205794.654162</p>\n<p>A_S (0.03125) &gt; 200,000 -&gt; high_bound_rate = 0.015625</p>\n<p>steps = 5</p>\n<p></p>\n<p>r (loop 6) = (0.03125 &#43; 0)/2 = 0.015625</p>\n<p>A_S (0.015625) = 196388.573571</p>\n<p>A_S (0.015625) &lt; 200,000 -&gt; low_bound_rate = 0.015625</p>\n<p>steps = 6</p>\n<p><br />r (loop 7) = (0.03125 &#43; 0.015625)/2 = 0.0234375</p>\n<p>A_S (0.0234375) = 201038.137867</p>\n<p>A_S (0.0234375) &gt; 200,000 -&gt; high_bound_rate = 0.0234375</p>\n<p>steps = 7</p>\n<p><br />r (loop 8) = (0.0234375 &#43; 0.015625)/2 = 0.01953125</p>\n<p>A_S (0.01953125) = 198700.133998</p>\n<p>A_S (0.01953125) &lt; 200,000 -&gt; low_bound_rate = 0.01953125</p>\n<p>steps = 8</p>\n<p><br />r (loop 9) = (0.0234375 &#43; 0.01953125)/2 = 0.021484375</p>\n<p>A_S (0.021484375) = 199865.812216</p>\n<p>A_S (0.021484375) &lt; 200,000 -&gt; low_bound_rate = 0.021484375</p>\n<p>steps = 9</p>\n<p><br />r (loop 10) = (0.0234375 &#43; 0.021484375)/2 = 0.0224609375</p>\n<p>A_S (0.0224609375) = 200451.141816</p>\n<p>A_S (0.0224609375) &gt; 200,000 -&gt; high_bound_rate = 0.0224609375</p>\n<p>steps = 10</p>\n<p><br />r (loop 11) = (0.0224609375 &#43; 0.021484375)/2 = 0.02197265625</p>\n<p>A_S (0.02197265625) = 200158.268997</p>\n<p>A_S (0.02197265625) &gt; 200,000 -&gt; high_bound_rate = 0.02197265625</p>\n<p>steps = 11</p>\n<p><br />r (loop 12) = (0.02197265625 &#43; 0.021484375)/2 = 0.021728515625</p>\n<p>A_S (0.021728515625) = 200011.988638</p>\n<p>&#39;while&#39; loop\u00a0 terminates-- no bisection step</p>\n<p>\u00a0<br />Total # of steps: 11</p>\n<p></p>\n<p>-----------------------------------------------</p>\n<p></p>\n<p>Could you please explain this discrepancy? Thank you very much.</p>\n<p></p>\n<p></p>",
+        "type": "question",
+        "created": "2022-09-20T01:23:09.164Z",
+        "subject": "PSET Part C Tester Step count",
+        "_id": "l89iicbwgpd24n"
+    },
+    {
+        "content": "<p>How many times did you calculate a value for <kbd>r</kbd>? How does that correspond to the number of steps you counted?</p>",
+        "type": "i_answer",
+        "created": "2022-09-20T03:35:05.945Z",
+        "_id": "l89iicbwgpd24n"
+    },
+    {
+        "content": "<p>I calculated\u00a0<code>r</code>\u00a0 once before entering the loop, then an addition 11 times inside the loop for a total of twelve times. The PSET instructions stated that &#34;<code>steps</code> should equal the number of times that you bisect the testing interval,&#34; so I incremented\u00a0<code>steps</code> each time the search space was resized.</p>",
+        "type": "followup",
+        "created": "2022-09-20T03:53:18.144Z",
+        "_id": "l89iicbwgpd24n"
+    },
+    {
+        "content": "<p>Make sure to be careful <em>where</em> you are incrementing steps in your loop. If you want us to take a look at your code, you can make a private piazza post or come to OH!</p>",
+        "type": "followup_response",
+        "created": "2022-09-20T16:04:43.067Z",
+        "_id": "l89iicbwgpd24n"
+    },
+    {
+        "content": "<p>This is likely just a minor conceptual discrepancy. Every time you calculate a new <kbd>r</kbd> in the middle of the interval, we consider that a bisection. It sounds like you don&#39;t count that until you go on either side of <kbd>r</kbd>. We could debate this, but the online grader has a generous slack that the test case we provided doesn&#39;t. If you&#39;re off by just one, you should be fine.</p>",
+        "type": "followup_response",
+        "created": "2022-09-20T21:04:54.052Z",
+        "_id": "l89iicbwgpd24n"
+    }
+]

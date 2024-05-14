@@ -1,0 +1,21 @@
+[
+    {
+        "content": "<p>Once the quiz is done, where can we find the answer and explanation for this question?</p>",
+        "type": "question",
+        "created": "2022-09-14T21:01:22.336Z",
+        "subject": "Guess and check integer problems question from the quiz",
+        "_id": "l823yfj48ny3a1"
+    },
+    {
+        "content": "<md>Changed to private because I wasn't sure if the title reveals mq content or not.</md>",
+        "type": "followup",
+        "created": "2022-09-14T21:10:50.752Z",
+        "_id": "l823yfj48ny3a1"
+    },
+    {
+        "content": "<p>The quiz page itself will show the answers. You can ask in office hours if the answer doesn&#39;t match up with your intuition.</p>",
+        "type": "i_answer",
+        "created": "2022-09-15T01:45:01.235Z",
+        "_id": "l823yfj48ny3a1"
+    }
+]

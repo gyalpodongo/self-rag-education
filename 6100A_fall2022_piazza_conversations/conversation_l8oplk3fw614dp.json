@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi,</p>\n<p></p>\n<p>This is the first time I signed up for a PSET buddy, I did so a few days ago, but in the page for PSET 3 it says that I do not have a buddy assigned. How do I get a buddy?</p>",
+        "type": "question",
+        "created": "2022-09-30T16:38:09.147Z",
+        "subject": "How to find PSET Buddy?",
+        "_id": "l8oplk3fw614dp"
+    },
+    {
+        "content": "<p>We can pair you with Yu-Ting Huang <a href=\"mailto:yutinghu@mit.edu\" target=\"_blank\" rel=\"noopener noreferrer\">yutinghu@mit.edu</a></p>",
+        "type": "i_answer",
+        "created": "2022-10-03T15:18:05.679Z",
+        "_id": "l8oplk3fw614dp"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "content": "Hi, I was just wondering when scores will be out. I know you&#39;re all probably very busy so I understand if it takes a few days. Thanks!",
+        "type": "question",
+        "created": "2022-09-30T00:02:24.117Z",
+        "subject": "Microquiz 2 scores",
+        "_id": "l8nq10j99zs2mp"
+    },
+    {
+        "content": "<md>Resolved.\n\nMQ 2\n*   Mean: 7.6\n*   Median: 8.4\n*   Standard Deviation: 2.1</md>",
+        "type": "i_answer",
+        "created": "2022-10-02T16:27:13.672Z",
+        "_id": "l8nq10j99zs2mp"
+    }
+]

@@ -1,0 +1,21 @@
+[
+    {
+        "content": "For some reason, the built-in function get_frame_size() is not returning what it says on its docstring. Instead of returning a tuple of years and months, it is returning a tuple containing (date1, date2, 0) where date1 and date2 are Date objects. What is causing this?",
+        "type": "question",
+        "created": "2022-10-13T16:40:00.475Z",
+        "subject": "Built-in function Error: get_frame_size()",
+        "_id": "l97ae0nvrbg4p3"
+    },
+    {
+        "content": "I have the same issue and I am also very confused. :(",
+        "type": "followup",
+        "created": "2022-10-13T17:44:15.469Z",
+        "_id": "l97ae0nvrbg4p3"
+    },
+    {
+        "content": "<p>Can\u2019t say for sure, but if you\u2019re using set_frame_size() you might be providing incorrect arguments to it</p>\n<p></p>\n<p>Edit: Other common problems I&#39;ve seen are people not including the interval boundaries in their frame_data(), or not testing for some edge cases in their is_equal, is_before and is_after functions</p>",
+        "type": "i_answer",
+        "created": "2022-10-13T19:10:55.395Z",
+        "_id": "l97ae0nvrbg4p3"
+    }
+]

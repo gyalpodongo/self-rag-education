@@ -1,0 +1,15 @@
+[
+    {
+        "content": "Hello, I signed up for a pset buddy for pset two but didn\u2019t get assigned one. This happened last week as well. Is it still possible to be assigned a buddy? Thanks\u00a0",
+        "type": "question",
+        "created": "2022-09-21T19:35:33.180Z",
+        "subject": "Pset busses for pset 2",
+        "_id": "l8c0z130sp14wq"
+    },
+    {
+        "content": "<p>just sent you an email with a buddy pairing!</p>",
+        "type": "i_answer",
+        "created": "2022-09-21T20:01:03.344Z",
+        "_id": "l8c0z130sp14wq"
+    }
+]

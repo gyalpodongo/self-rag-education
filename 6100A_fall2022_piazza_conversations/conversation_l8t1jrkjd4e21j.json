@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p>Hi! I was wondering if I would be able to see why I failed/got errors for some of the autograder test cases for pset 2. I passed all of the cases in the student tester, but I did not pass some tests with the same names in the autograder, so I wanted to see what happened.</p>",
+        "type": "question",
+        "created": "2022-10-03T17:23:45.619Z",
+        "subject": "Seeing Pset 2 Autograder Detailed Results",
+        "_id": "l8t1jrkjd4e21j"
+    },
+    {
+        "content": "<p>If you click the &#34;Autograder&#34; link from the scores page you will see all the staff test cases that your code ran with.\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-10-03T17:58:45.838Z",
+        "_id": "l8t1jrkjd4e21j"
+    },
+    {
+        "content": "<p>Hi Ana, I saw that page earlier, but would I be able to know what exactly happened to cause the code to fail/give an error, so that I can hopefully avoid similar mistakes in the future?</p>\n<p></p>\n<p>For example, I saw that I didn&#39;t pass this autograder test case:\u00a0</p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fk52tth2wcd02an%2F3e90202ba701f8a121f66ae572487df30e4a97712fbd743409ad23de076bedc4%2Fimage.png\" alt=\"image.pngNaN\" /></p>\n<p></p>\n<p>but I passed the student tester test_play_game_wildcard case, and I was wondering if those are the same.\u00a0</p>\n<p></p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fk52tth2wcd02an%2Fe6aa684254aac1eb09a3abc9f91d5cbd8d0b72b3e199052ae8c6a0cb27ffa2e7%2Fimage.png\" alt=\"image.pngNaN\" /></p>",
+        "type": "followup",
+        "created": "2022-10-03T18:13:41.564Z",
+        "_id": "l8t1jrkjd4e21j"
+    },
+    {
+        "content": "<p>I don&#39;t have time to take a look through your code, but definitely head to office hours and someone there can let you know details on the test case and where your code went wrong.\u00a0</p>",
+        "type": "followup_response",
+        "created": "2022-10-04T13:37:35.202Z",
+        "_id": "l8t1jrkjd4e21j"
+    }
+]

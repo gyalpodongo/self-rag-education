@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Are the recitations happening in 37-212, or is there an alternate location again?</p>\n<p></p>\n<p>Thanks.</p>",
+        "type": "question",
+        "created": "2022-09-30T16:44:48.759Z",
+        "subject": "Where are today&#39;s recitations?",
+        "_id": "l8opu4frsao6xn"
+    },
+    {
+        "content": "<p>I found them on the course website.</p>",
+        "type": "s_answer",
+        "created": "2022-09-30T19:04:52.013Z",
+        "_id": "l8opu4frsao6xn"
+    }
+]

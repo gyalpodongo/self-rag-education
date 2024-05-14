@@ -1,0 +1,9 @@
+[
+    {
+        "content": "<p>Hello,</p>\n<p></p>\n<p>I hope my message finds you well.\u00a0</p>\n<p>After checking out the autograder for my submission I realized that eventhough I was returning the correct answer it still thinks it is wrong.\u00a0</p>\n<p>In the PSET 1 instructions you mention that &#34;<strong>If the initial deposit amount is greater than or equal to the required down payment minus $100, then the\u00a0best savings rate is 0.0&#34;</strong></p>\n<p>I thus understood this instruction as simply print that the best savings rate is 0.0 and then break. From what I understand you might have meant that you also wanted me to assign the value of r to be zero. Which would have been very simple for me as I could have simply added a line above this with the code\u00a0</p>\n<p>r=0.0 followed by the print statement.\u00a0</p>\n<p>I do not believe I should have lost 10 points for this as I do return that the r=0 in the print statement. My logic for not changing the value or r was that you normally refer to changing the variable r in this way &#34;<strong>\u00a0<code>r</code>\u00a0should be assigned the value</strong>\u00a0<code>None&#34;</code></p>\n<p>Could you please let me know if I can still change the code and simply add a line assigning r to 0.0 to get the full points?</p>\n<p>I need to get a specific grade on this course to graduate and I do not want to lose 10 points on this detail that I honestly misinterpreted</p>\n<p></p>\n<p>Best regards,</p>\n<p></p>\n<p>Nicolas Agrotis</p>\n<p></p>",
+        "type": "question",
+        "created": "2022-10-13T16:10:42.965Z",
+        "subject": "Mistake in Grading Pset 1",
+        "_id": "l979cck5hspa1"
+    }
+]

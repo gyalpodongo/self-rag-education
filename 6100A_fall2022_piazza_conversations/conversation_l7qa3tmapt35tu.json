@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p>Hello!! I am having difficulty accessing the HKN Tutoring Services website. Can you please help me find the link at your leisure? Thank you!!</p>",
+        "type": "question",
+        "created": "2022-09-06T14:20:17.458Z",
+        "subject": "Accessing HKN Tutoring Website?",
+        "_id": "l7qa3tmapt35tu"
+    },
+    {
+        "content": "<p>I am also having trouble loading the HKN website. It could be that certificates need to be installed? I will play around and let you know.</p>",
+        "type": "i_answer",
+        "created": "2022-09-06T15:14:43.741Z",
+        "_id": "l7qa3tmapt35tu"
+    },
+    {
+        "content": "<p>From the intel that I&#39;ve gathered, HKN has either been inactive or disbanded in the past few years. This is extremely disappointing if so, as I know the tutoring services were a great resource for students. The good news is that there is a ton of help available in this course, whether it be through weekly recitations, piazza, and office hours. If you need a bit more personal help, I&#39;m certain that an LA or TA in office hours will be able to take the time to explain concepts more in depth. If this still isn&#39;t working, please reach out to us and we can figure out an alternative.</p>",
+        "type": "followup",
+        "created": "2022-09-07T14:19:57.853Z",
+        "_id": "l7qa3tmapt35tu"
+    },
+    {
+        "content": "<p>Hi!! Thank you so, so much for the super detailed and supportive answer!! Means a lot!!</p>",
+        "type": "followup_response",
+        "created": "2022-09-07T18:19:02.227Z",
+        "_id": "l7qa3tmapt35tu"
+    }
+]

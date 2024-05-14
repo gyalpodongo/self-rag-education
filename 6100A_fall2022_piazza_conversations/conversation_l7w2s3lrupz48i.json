@@ -1,0 +1,21 @@
+[
+    {
+        "content": "<p>How much grading weight does pset 0 have? Is it worth using a late day for?<br />Asking for a friend, of course.</p>",
+        "type": "question",
+        "created": "2022-09-10T15:41:50.271Z",
+        "subject": "P-Set 0 Grading",
+        "_id": "l7w2s3lrupz48i"
+    },
+    {
+        "content": "<p>Pset 0 is not graded.</p>",
+        "type": "s_answer",
+        "created": "2022-09-10T15:51:44.206Z",
+        "_id": "l7w2s3lrupz48i"
+    },
+    {
+        "content": "<p>does that mean that specifically for ps0, late days are not applied, even if I were to submit ps0 after the deadline?</p>",
+        "type": "followup",
+        "created": "2022-09-10T19:39:23.089Z",
+        "_id": "l7w2s3lrupz48i"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>I&#39;m trying to use the following code to try to test my frame_data function:<br /><br />data = load_data(&#34;datasets/mock1.csv&#34;, &#34;Close&#34;)<br />df = make_dataframe(data)<br />frame_data(data, df)</p>\n<p></p>\n<p>However, I&#39;m seeing the following error:</p>\n<p></p>\n<p>NameError: name &#39;make_dataframe&#39; is not defined</p>\n<p></p>\n<p>I don&#39;t see this function defined anywhere in the test script either, but somehow it still runs.</p>\n<p></p>\n<p>How/where do I import or define this function?</p>\n<p></p>\n<p>Thank you.</p>\n<p></p>",
+        "type": "question",
+        "created": "2022-10-13T13:19:25.393Z",
+        "subject": "NameError: name &#39;make_dataframe&#39; is not defined",
+        "_id": "l97382c1lui40h"
+    },
+    {
+        "content": "<p>OK, I figured out that it is in ps4.py, and I had commented it out while testing.</p>",
+        "type": "s_answer",
+        "created": "2022-10-13T14:56:36.695Z",
+        "_id": "l97382c1lui40h"
+    }
+]

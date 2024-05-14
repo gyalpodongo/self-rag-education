@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi,</p>\n<p>My PSET 4 was scored a 50% because of a fileconfig error, even though it passed all the test cases with the student tester.<br /><br />Can it be regraded manually?</p>\n<p></p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl7qxebos4ti5mf%2F22b0dc03ef469d9f9905ae34245bb4a84a5d4968122d3580ba0579835fe2aee1%2Fimage.png\" alt=\"image.pngNaN\" /><br />Thanks,<br />Eric Zhou</p>",
+        "type": "question",
+        "created": "2022-10-17T14:09:34.534Z",
+        "subject": "Fontconfig error: Cannot load default config file resulting in 50% pset autograder score",
+        "_id": "l9curyvaccgdz"
+    },
+    {
+        "content": "<p>Hi Eric,</p>\n<p></p>\n<p>The fontconfig error does not actually affect your score. However, your code did timeout on the server after 4 seconds. We will manually regrade psets that went over the 4 second limit on the server, so your pset should also be regraded.</p>\n<p></p>\n<p>Best,</p>\n<p>Matt</p>",
+        "type": "i_answer",
+        "created": "2022-10-17T22:06:48.085Z",
+        "_id": "l9curyvaccgdz"
+    }
+]

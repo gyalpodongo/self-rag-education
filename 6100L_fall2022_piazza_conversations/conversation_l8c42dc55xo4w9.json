@@ -1,0 +1,15 @@
+[
+    {
+        "content": "Hello,\u00a0<div><br /></div><div>I\u2019m trying to submit my ps1a file for the halfway submission but it keeps telling that the tester failed because it couldn\u2019t find the required comments. I have commented the pset number, my name, and collaborators at the top of my file as instructed. Are there other comments that I am missing? Thanks\u00a0</div>",
+        "type": "question",
+        "created": "2022-09-21T21:02:07.877Z",
+        "subject": "Pset 1 Halfway Submission",
+        "_id": "l8c42dc55xo4w9"
+    },
+    {
+        "content": "<p>Did you preserve the &#34;header comments&#34; in the original files we provided?</p>",
+        "type": "followup",
+        "created": "2022-09-22T03:09:28.342Z",
+        "_id": "l8c42dc55xo4w9"
+    }
+]

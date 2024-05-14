@@ -1,0 +1,39 @@
+[
+    {
+        "content": "<p>Hey! I passed 56% on PSET4 Autograder but passed all of the cases in the test file, so I&#39;m confused about what happened, what cases failed. Last week I had the same issue and turned out to be a mistake. Here&#39;s my code <a href=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl7qgp6f9k793bf%2F374d8bc58aea3a09cb60a5c915fcb428673af83af8c305f49332fc13735d6725%2Fps4.py\" target=\"_blank\" rel=\"noopener noreferrer\">ps4.py</a> and email jssteele@mit.edu</p>",
+        "type": "question",
+        "created": "2022-10-17T19:10:38.450Z",
+        "subject": "56% on PSET4 Autograder but Passed test cases",
+        "_id": "l9d5j52qucj6kn"
+    },
+    {
+        "content": "<p><strong attention=\"j7awud7zf0p2uu\">@Kuan Wei Huang</strong>\u00a0</p>",
+        "type": "followup",
+        "created": "2022-10-18T14:58:06.651Z",
+        "_id": "l9d5j52qucj6kn"
+    },
+    {
+        "content": "<p>bumping this :)</p>",
+        "type": "followup",
+        "created": "2022-10-20T19:34:33.857Z",
+        "_id": "l9d5j52qucj6kn"
+    },
+    {
+        "content": "<p>Sure will take a look. What&#39;s your kerb?</p>",
+        "type": "i_answer",
+        "created": "2022-10-21T12:27:10.683Z",
+        "_id": "l9d5j52qucj6kn"
+    },
+    {
+        "content": "<p>My kerb is jssteele</p>",
+        "type": "followup_response",
+        "created": "2022-10-21T15:09:20.101Z",
+        "_id": "l9d5j52qucj6kn"
+    },
+    {
+        "content": "<div>\n<div>\n<p>Got it. Just added you to the manual regrade list. You should hear back next week. Thanks for your patience.</p>\n</div>\n</div>",
+        "type": "followup_response",
+        "created": "2022-10-21T15:13:28.472Z",
+        "_id": "l9d5j52qucj6kn"
+    }
+]

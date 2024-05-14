@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hello,</p>\n<p></p>\n<p>After submitting my files for PSET 1, I noticed that after the &#34;select file&#34; button, the website states &#34;Fakepath&#34;. However, the website also stated my code submitted. Would this be an issue or is this typical?</p>\n<p></p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl7qgpbacee03n2%2Fc4c44edd73c0538d533e7ed32294b112f56380e996108471ce94bf9318e91c6b%2Fimage.png\" alt=\"image.pngNaN\" /></p>",
+        "type": "question",
+        "created": "2022-09-20T01:07:50.491Z",
+        "subject": "&#34;Fakepath&#34; Shown On Submission",
+        "_id": "l89hynh7h9f305"
+    },
+    {
+        "content": "That&#39;s typical. Whenever you upload a file to a website submission portal, it always hides the file path as to not reveal information about your PC file system to others (particularly to the owners of the website)<div>If it says submitted, you should be all good</div>",
+        "type": "s_answer",
+        "created": "2022-09-20T01:11:17.844Z",
+        "_id": "l89hynh7h9f305"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi,</p>\n<p>I&#39;m passing the date_frame_maker_full test case, but the data_frame_maker_small is failing because the month is off by one and the data_frame_maker_large is failing because the day is off by one.\u00a0 Any ideas what is going wrong? I used the get_header and time_before functions to get the start and end date.</p>",
+        "type": "question",
+        "created": "2022-10-13T01:30:15.736Z",
+        "subject": "data frame maker",
+        "_id": "l96dw2t4x0s5gq"
+    },
+    {
+        "content": "It is possible something is wrong with some of your helper functions that mightve escaped \u00a0the tests. I would recommend going to OH to check this out, since I\u2019m not sure if I have any ideas for what might be wrong until I see the code",
+        "type": "i_answer",
+        "created": "2022-10-13T04:43:29.503Z",
+        "_id": "l96dw2t4x0s5gq"
+    }
+]

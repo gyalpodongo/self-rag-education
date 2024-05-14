@@ -1,0 +1,57 @@
+[
+    {
+        "content": "<p>I want to import the csv module so that I can use the reader object. Can we do this or do you want us to only use built-in python functions?</p>",
+        "type": "question",
+        "created": "2022-10-10T20:56:16.418Z",
+        "subject": "Can we import modules or can we only use built-in Python functions?",
+        "_id": "l93980tejw3at"
+    },
+    {
+        "content": "<p>Or could we use pandas for dealing with the csv files?\u00a0</p>",
+        "type": "s_answer",
+        "created": "2022-10-10T20:58:47.180Z",
+        "_id": "l93980tejw3at"
+    },
+    {
+        "content": "<p>or could we use pandas for dealing with csv files?</p>",
+        "type": "followup",
+        "created": "2022-10-10T20:59:31.712Z",
+        "_id": "l93980tejw3at"
+    },
+    {
+        "content": "<p>No imports are allowed for this pset. All file related parsing must be done manually using the\u00a0<strong>with</strong> block to open a file:</p>\n<p></p>\n<pre>\nwith open(file_name, &#34;r&#34;) as f:\n\t&lt;your code here, f is your handle to the file&gt;</pre>\n<p></p>\n<p>When the\u00a0<strong>with</strong> block terminates, the file automatically closes, so it&#39;s best to extract all the data from the file that you need and store it in another variable.</p>",
+        "type": "i_answer",
+        "created": "2022-10-12T00:39:06.404Z",
+        "_id": "l93980tejw3at"
+    },
+    {
+        "content": "<p>You cannot use pandas for file parsing in this pset</p>",
+        "type": "followup_response",
+        "created": "2022-10-12T00:40:02.847Z",
+        "_id": "l93980tejw3at"
+    },
+    {
+        "content": "<p>Are we allowed to use built-in python functions like replace or strip for this part?\u00a0</p>",
+        "type": "followup",
+        "created": "2022-10-12T23:28:41.448Z",
+        "_id": "l93980tejw3at"
+    },
+    {
+        "content": "<p>Yes, you&#39;re allowed to use those</p>",
+        "type": "followup_response",
+        "created": "2022-10-13T05:00:48.629Z",
+        "_id": "l93980tejw3at"
+    },
+    {
+        "content": "<p>I think just like 6.009 / 6.101 does, we should state that imports aren&#39;t allowed explicitly. Some people may do this and lose points if they didn&#39;t check this piazza post.</p>",
+        "type": "followup",
+        "created": "2022-10-17T01:10:19.310Z",
+        "_id": "l93980tejw3at"
+    },
+    {
+        "content": "<p>State this in the pset handout I mean</p>",
+        "type": "followup_response",
+        "created": "2022-10-17T01:10:33.173Z",
+        "_id": "l93980tejw3at"
+    }
+]

@@ -1,0 +1,2798 @@
+[
+    {
+        "timestamp": "00:00:06",
+        "content": "LOOPS OVER STRINGS GUESS-and -CHECK, BINARY"
+    },
+    {
+        "timestamp": "00:00:30",
+        "content": "LAST TIM E"
+    },
+    {
+        "timestamp": "00:01:42",
+        "content": "break STATEMENT"
+    },
+    {
+        "timestamp": "00:04:21",
+        "content": "Python Tutor: Visualize code in Python, JavaScript, C, C++,\u2026"
+    },
+    {
+        "timestamp": "00:06:30",
+        "content": "YOU TRY IT!"
+    },
+    {
+        "timestamp": "00:10:39",
+        "content": "STRINGS and LOOPS"
+    },
+    {
+        "timestamp": "00:15:57",
+        "content": "ROBOT CHEERLEADERS"
+    },
+    {
+        "timestamp": "00:31:24",
+        "content": "70 print( 71 for i in range(times print(word, SUMMARY SO FAR"
+    },
+    {
+        "timestamp": "00:32:39",
+        "content": "GUESS-and-CHECK"
+    },
+    {
+        "timestamp": "00:33:42",
+        "content": "GUESS-and-CHECK SQUARE ROOT"
+    },
+    {
+        "timestamp": "00:37:09",
+        "content": "GUESS-and -CHECK ROOT with while loop"
+    },
+    {
+        "timestamp": "00:51:45",
+        "content": "ise secret"
+    },
+    {
+        "timestamp": "00:52:27",
+        "content": "not found"
+    },
+    {
+        "timestamp": "00:54:21",
+        "content": "BIG IDEA"
+    },
+    {
+        "timestamp": "00:54:51",
+        "content": "while LOOP or for LOOP?"
+    },
+    {
+        "timestamp": "00:55:39",
+        "content": "GUESS-and-CHECK CUBE ROOT: POSITIVE CUBES"
+    },
+    {
+        "timestamp": "00:58:24",
+        "content": "GUESS -and-CHECK CUBE ROOT: JUST a LITTLE FASTER"
+    },
+    {
+        "timestamp": "01:00:39",
+        "content": "GUESS-and-CHECK with WORD PROBLEMS"
+    },
+    {
+        "timestamp": "01:02:21",
+        "content": "EXAMPLE WITH BIGGER NUMBERS"
+    },
+    {
+        "timestamp": "01:02:57",
+        "content": "MORE EFFICIENT SOLUTION"
+    },
+    {
+        "timestamp": "01:04:18",
+        "content": "BINARY NUMBERS"
+    },
+    {
+        "timestamp": "01:04:54",
+        "content": "OUR MOTIVATION - keep this in mind for the next few slides"
+    },
+    {
+        "timestamp": "01:06:51",
+        "content": "A CLOSER LOOK AT FLOATS"
+    },
+    {
+        "timestamp": "01:06:57",
+        "content": "FLOATING POINT REPRESENTATION"
+    },
+    {
+        "timestamp": "01:07:15",
+        "content": "WHY BINARY? HARDWARE IMPLEMENTATION"
+    },
+    {
+        "timestamp": "01:09:30",
+        "content": "21\u00b0 +1 28 + 27 + 26 + 25 + 21 + 2\u00b0"
+    },
+    {
+        "timestamp": "01:09:48",
+        "content": "28 + 27"
+    },
+    {
+        "timestamp": "01:10:27",
+        "content": "CONVERTING DECIMAL INTEGER TO BINARY"
+    },
+    {
+        "timestamp": "01:12:51",
+        "content": "DOING this in PYTHON and HANDLING NEGATIVE NUMBERS"
+    },
+    {
+        "timestamp": "00:00:00",
+        "content": "Okay. So let's get started. Today we will be continuing talking a little bit about loops and seeing some other couple nuances of loops."
+    },
+    {
+        "timestamp": "00:00:10",
+        "content": "And then we'll get started on our first algorithm, the guess and check algorithm."
+    },
+    {
+        "timestamp": "00:00:14",
+        "content": "And then towards the end, we're going to start talking about binary numbers in advance of seeing our next algorithm."
+    },
+    {
+        "timestamp": "00:00:20",
+        "content": "So let's do a quick recap of what we learned last time, and then we'll do a little coding example and then we'll move on."
+    },
+    {
+        "timestamp": "00:00:26",
+        "content": "So we saw last lecture, some looping mechanisms."
+    },
+    {
+        "timestamp": "00:00:30",
+        "content": "We saw while loops and for loops they were both a way for us to control what happens in the code."
+    },
+    {
+        "timestamp": "00:00:36",
+        "content": "And specifically, they're a way for us to repeat certain lines in the code, sort of automatically, so to speak."
+    },
+    {
+        "timestamp": "00:00:42",
+        "content": "So with y loops, the lines of code were repeated as long as some condition held."
+    },
+    {
+        "timestamp": "00:00:47",
+        "content": "And with four loops the lines of code were repeated for some sequence of values."
+    },
+    {
+        "timestamp": "00:00:53",
+        "content": "And the sequence of values was something that we decided it was numerical that that that's what we saw."
+    },
+    {
+        "timestamp": "00:00:59",
+        "content": "Last lecture today we're going to see that the sequence of values can actually be non numerical as well."
+    },
+    {
+        "timestamp": "00:01:07",
+        "content": "So. Both of those loop types, I guess had ended at at certain times."
+    },
+    {
+        "timestamp": "00:01:16",
+        "content": "Right? So the Y loop ended when the condition became false and the for loop ended."
+    },
+    {
+        "timestamp": "00:01:22",
+        "content": "When we've exhausted our sequence of values. But oftentimes we want to write programs where we break out of the loop prematurely."
+    },
+    {
+        "timestamp": "00:01:30",
+        "content": "We don't want the Y loop condition to become false, and we don't want to exhaust our entire set of values for loop."
+    },
+    {
+        "timestamp": "00:01:36",
+        "content": "So in order to exit a loop before the natural end comes, we can use this thing called a break statement."
+    },
+    {
+        "timestamp": "00:01:44",
+        "content": "And the break statement allows us to exit the loop and the loop it exits is going to be the one that immediately surrounds the break statement."
+    },
+    {
+        "timestamp": "00:01:53",
+        "content": "So here's a little example of a nested two nested while loop."
+    },
+    {
+        "timestamp": "00:01:57",
+        "content": "So one while loop and then one nested one inside it."
+    },
+    {
+        "timestamp": "00:02:01",
+        "content": "The outer one is going to run whenever condition one holds and the inner one runs whenever condition two holds."
+    },
+    {
+        "timestamp": "00:02:09",
+        "content": "Okay. Now expression a will evaluate when both condition one and condition to hold."
+    },
+    {
+        "timestamp": "00:02:16",
+        "content": "Right. So we enter the first y loop and we enter the second while both of those conditions have to be true."
+    },
+    {
+        "timestamp": "00:02:22",
+        "content": "But Python, as soon as it sees this break statement, Python will immediately exit the loop that it saw that surrounds that break statement."
+    },
+    {
+        "timestamp": "00:02:31",
+        "content": "So the loop that surrounds the break statement is the one that has conditioned to write the condition."
+    },
+    {
+        "timestamp": "00:02:37",
+        "content": "One loop will keep going. So as soon as Python sees this break statement, it's going to immediately stop running the wire loop."
+    },
+    {
+        "timestamp": "00:02:45",
+        "content": "It's not even going to go back up and check the condition. Two. Which means that expression B will actually never get evaluated."
+    },
+    {
+        "timestamp": "00:02:52",
+        "content": "So this is terrible code. We don't want to write code like this because the expression B will never be run."
+    },
+    {
+        "timestamp": "00:02:58",
+        "content": "Right. But this is just to show you the impact that a break statement would have."
+    },
+    {
+        "timestamp": "00:03:02",
+        "content": "An expression C will then be evaluated whenever condition one is true."
+    },
+    {
+        "timestamp": "00:03:10",
+        "content": "Now, condition two may or may not have been true along the way, but expression C will evaluate only one condition one is true, right condition two would have stopped being true."
+    },
+    {
+        "timestamp": "00:03:17",
+        "content": "And then we're going at the same indentation level as this inner loop."
+    },
+    {
+        "timestamp": "00:03:22",
+        "content": "So yeah, because like it only violates the one time I get only gets a once and then because the break is there."
+    },
+    {
+        "timestamp": "00:03:36",
+        "content": "Exactly. Yeah, that's a great point. So it only evaluates this expression a one time because right after it evaluates it, it sees the break and then we immediately exit the Y loop and we're done."
+    },
+    {
+        "timestamp": "00:03:40",
+        "content": "That is a great observation. Yeah. And that's what this this code will will basically show."
+    },
+    {
+        "timestamp": "00:03:46",
+        "content": "So here it is, us doing the break statement, sort of in the same structures on the previous the previous slide."
+    },
+    {
+        "timestamp": "00:03:52",
+        "content": "And what we're going to do is actually just run the Python tutor for this code just to give you some more practice running the Python tutor."
+    },
+    {
+        "timestamp": "00:04:01",
+        "content": "So this is the same code as on the previous slide. I've got a four loop that goes through some sequence of values."
+    },
+    {
+        "timestamp": "00:04:08",
+        "content": "Can anyone tell me what are the sequence of values? This for loop will loop over."
+    },
+    {
+        "timestamp": "00:04:14",
+        "content": "Five, seven, nine. And we stop, right?"
+    },
+    {
+        "timestamp": "00:04:21",
+        "content": "Because 11 is end, but we go up to but not including on minus one."
+    },
+    {
+        "timestamp": "00:04:25",
+        "content": "So five, seven, nine are the only three values we would potentially loop over."
+    },
+    {
+        "timestamp": "00:04:31",
+        "content": "So next we initialize my sum to zero."
+    },
+    {
+        "timestamp": "00:04:34",
+        "content": "So in our minds we kind of think about the fact that we're going to loop through make this loop variable b five, seven, nine."
+    },
+    {
+        "timestamp": "00:04:41",
+        "content": "So the first time through the loop, I will be five. We're going to add I, which is currently five to my sum."
+    },
+    {
+        "timestamp": "00:04:49",
+        "content": "So five plus zero makes my sum five. And then we immediately see the break."
+    },
+    {
+        "timestamp": "00:04:56",
+        "content": "Right. Because if my sum equals five, it's true. So we go inside and we immediately see the break statement."
+    },
+    {
+        "timestamp": "00:05:02",
+        "content": "This line will never get executed. So we're never going to increment my son by one."
+    },
+    {
+        "timestamp": "00:05:10",
+        "content": "So the break immediately breaks out of our loop."
+    },
+    {
+        "timestamp": "00:05:14",
+        "content": "Now, the if the if statement is not a loop, right? It's a conditional."
+    },
+    {
+        "timestamp": "00:05:17",
+        "content": "So the loop we break out of is the for loop, and then there's no other loop surrounding it."
+    },
+    {
+        "timestamp": "00:05:21",
+        "content": "So then the program is basically done and we print five. Okay."
+    },
+    {
+        "timestamp": "00:05:28",
+        "content": "Again, bad code. We would never write code like this, but this is just to show you exactly what happens with with the break statement."
+    },
+    {
+        "timestamp": "00:05:36",
+        "content": "All right. So there's the code block for the for loop, and this is the code block for the if statement."
+    },
+    {
+        "timestamp": "00:05:42",
+        "content": "And the break breaks out of our loop. Right. Which is the lighter purple."
+    },
+    {
+        "timestamp": "00:05:48",
+        "content": "Not not the not the statement. Okay."
+    },
+    {
+        "timestamp": "00:05:52",
+        "content": "So let's have you write a little bit of code and this is sort of maybe a little practice with just loops in general that we saw last lecture."
+    },
+    {
+        "timestamp": "00:06:01",
+        "content": "There's no break really in this particular program here."
+    },
+    {
+        "timestamp": "00:06:05",
+        "content": "Just a little bit of practice. So what I want you to do is to write code that basically has a for loop running through this range."
+    },
+    {
+        "timestamp": "00:06:12",
+        "content": "So for I n pick one of these, I want you to write code within that for a loop that counts how many, how many even numbers are in that range."
+    },
+    {
+        "timestamp": "00:06:23",
+        "content": "Right. So including the zero. So for range five you would use your counter should basically pick up on the fact that zero is even, two is even."
+    },
+    {
+        "timestamp": "00:06:34",
+        "content": "And four is even. And then that's it. So it should print three."
+    },
+    {
+        "timestamp": "00:06:42",
+        "content": "So here is the you try it in said the python file for today and I've already started you off with this for I in range five as the first one."
+    },
+    {
+        "timestamp": "00:06:53",
+        "content": "And I'll give you a couple of minutes to just write the code in here. Okay."
+    },
+    {
+        "timestamp": "00:07:03",
+        "content": "Would anyone like to start us off? With some code."
+    },
+    {
+        "timestamp": "00:07:13",
+        "content": "Or give me. Yeah. Yep."
+    },
+    {
+        "timestamp": "00:07:29",
+        "content": "So this line of code is going to take our eye."
+    },
+    {
+        "timestamp": "00:07:32",
+        "content": "Right. So, in fact, what we could do to remind ourselves what is and this is very helpful for quizzes as well."
+    },
+    {
+        "timestamp": "00:07:39",
+        "content": "We can write a little comment here that says I is zero one, two, three, four."
+    },
+    {
+        "timestamp": "00:07:46",
+        "content": "Just so we don't have to remember this fact."
+    },
+    {
+        "timestamp": "00:07:49",
+        "content": "We can just always look here and know what AI is going to be."
+    },
+    {
+        "timestamp": "00:07:54",
+        "content": "And then this line of code, absolutely correct, is going to take I and grab the remainder when I is divided by two."
+    },
+    {
+        "timestamp": "00:08:03",
+        "content": "Okay. And if the remainder zero, that means that the numbers even."
+    },
+    {
+        "timestamp": "00:08:09",
+        "content": "And then what do we do inside here? So when this is true, when it's even, how do we keep track of whether or how many times this condition occurs?"
+    },
+    {
+        "timestamp": "00:08:26",
+        "content": "Yeah. Yes, exactly."
+    },
+    {
+        "timestamp": "00:08:32",
+        "content": "Should we create a variable? Yes, we can. So let's call it even numbs and we'll probably want to increment it by one."
+    },
+    {
+        "timestamp": "00:08:41",
+        "content": "Right. Because here's another number that's even so even nums plus equals one."
+    },
+    {
+        "timestamp": "00:08:46",
+        "content": "And then let's remember to. Initialize it right before our loop."
+    },
+    {
+        "timestamp": "00:08:53",
+        "content": "Right. So initially, before we even start our loop, we have zero even numbers."
+    },
+    {
+        "timestamp": "00:08:57",
+        "content": "And then each time through our loop, we see one that's perfectly divisible by two."
+    },
+    {
+        "timestamp": "00:09:03",
+        "content": "We're going to increment this little counter by one. Okay."
+    },
+    {
+        "timestamp": "00:09:09",
+        "content": "And. Oh, yeah. Not the same variable."
+    },
+    {
+        "timestamp": "00:09:13",
+        "content": "Thank you. Even. Yeah."
+    },
+    {
+        "timestamp": "00:09:17",
+        "content": "And the mental model you should have sort of at this point or been getting is just the fact that these three lines solve our problem."
+    },
+    {
+        "timestamp": "00:09:26",
+        "content": "It does the automatic counting for us. Right?"
+    },
+    {
+        "timestamp": "00:09:30",
+        "content": "Because I will take on zero than one than two, then three and then four automatically as the loop goes through the sequence of values."
+    },
+    {
+        "timestamp": "00:09:44",
+        "content": "And so at the end of the loop, so sort of at the same indentation level as the four loop, all we need to do is print how many how many of these numbers we have."
+    },
+    {
+        "timestamp": "00:09:53",
+        "content": "So if we run it, it'll print three. And if we change this to ten, it'll print probably six."
+    },
+    {
+        "timestamp": "00:10:00",
+        "content": "Right, because it counts the zero. Right. Questions about."
+    },
+    {
+        "timestamp": "00:10:07",
+        "content": "Yeah, please. Is there anything I should look out for?"
+    },
+    {
+        "timestamp": "00:10:14",
+        "content": "So if you're undercounting, you may be initialized."
+    },
+    {
+        "timestamp": "00:10:18",
+        "content": "Did you initialize even numbers to something else? Or maybe this is not incrementing."
+    },
+    {
+        "timestamp": "00:10:24",
+        "content": "Right. Or maybe the range is different. I'll try the reason."
+    },
+    {
+        "timestamp": "00:10:28",
+        "content": "Yeah. It worked awesome."
+    },
+    {
+        "timestamp": "00:10:39",
+        "content": "Okay. So. Iterating through using for loops to iterate through a sequence of values is pretty useful."
+    },
+    {
+        "timestamp": "00:10:49",
+        "content": "Let's take another look here at this particular program."
+    },
+    {
+        "timestamp": "00:10:52",
+        "content": "So this program is this this set of code?"
+    },
+    {
+        "timestamp": "00:10:56",
+        "content": "This code and this code actually end up doing the same thing. But let's look at the top one for now."
+    },
+    {
+        "timestamp": "00:11:02",
+        "content": "So this is a program that takes in a string s as sort of an input, so to speak."
+    },
+    {
+        "timestamp": "00:11:08",
+        "content": "It iterates through the numbers zero to the length of s right."
+    },
+    {
+        "timestamp": "00:11:13",
+        "content": "So for I for index in range, Len s is basically going to say for index in range 13 or however many letters this string has."
+    },
+    {
+        "timestamp": "00:11:23",
+        "content": "Right. de0 space l like all those letters."
+    },
+    {
+        "timestamp": "00:11:28",
+        "content": "There's probably 13 of them or something that."
+    },
+    {
+        "timestamp": "00:11:31",
+        "content": "So this line of code here is going to have our index take on the values zero through 13 representing the index in s right."
+    },
+    {
+        "timestamp": "00:11:41",
+        "content": "So the lowercase D will be our index zero. The lowercase e will be an index one and so on."
+    },
+    {
+        "timestamp": "00:11:47",
+        "content": "So with this index in hand. The next bit of code."
+    },
+    {
+        "timestamp": "00:11:51",
+        "content": "If a square bracket index equal equal, I will check for me if this particular character is an AI or that particular character is a you."
+    },
+    {
+        "timestamp": "00:12:02",
+        "content": "And every time that happens, I'm going to have this print out."
+    },
+    {
+        "timestamp": "00:12:06",
+        "content": "Print out to the screen. There's an IOU. So inside my code here, this is the first one."
+    },
+    {
+        "timestamp": "00:12:16",
+        "content": "And I run it. It's going to print out that sentence twice because there's only two eyes are use in here."
+    },
+    {
+        "timestamp": "00:12:23",
+        "content": "And if it repeats, it'll print out twice. So there's one you and one I."
+    },
+    {
+        "timestamp": "00:12:31",
+        "content": "But this code can actually be written a lot simpler."
+    },
+    {
+        "timestamp": "00:12:39",
+        "content": "Notice it took me a little bit of a while to explain it, and probably at first glance it would take you a little bit of time to figure out what it's doing."
+    },
+    {
+        "timestamp": "00:12:43",
+        "content": "And that's because we're actually relying on the index as kind of a middleman."
+    },
+    {
+        "timestamp": "00:12:48",
+        "content": "Right. We're looking we're iterating our for loop through the index and then we're indexing into that index variable to grab the particular letter."
+    },
+    {
+        "timestamp": "00:13:00",
+        "content": "It turns out that with four loops, right? I told you, you can iterate over any sequence of values, not just numbers."
+    },
+    {
+        "timestamp": "00:13:08",
+        "content": "And remember that strings are actually just a sequence of characters, right?"
+    },
+    {
+        "timestamp": "00:13:13",
+        "content": "Case sensitive characters. So in Python, we can actually write code like this."
+    },
+    {
+        "timestamp": "00:13:18",
+        "content": "So the middle box right here. It has our for loop iterating through each character in the string directly."
+    },
+    {
+        "timestamp": "00:13:27",
+        "content": "So no longer are we looking at the index zero through 12, but we're looking at the letter directly."
+    },
+    {
+        "timestamp": "00:13:41",
+        "content": "So our loop variable, which I called char but you can call whatever you'd like, is now going to take on values that are the letters themselves, one at a time."
+    },
+    {
+        "timestamp": "00:13:50",
+        "content": "So the first time through the loop char will be lowercase D, the next time through the loop char will be lowercase E, the next time char will be lowercase m and so on."
+    },
+    {
+        "timestamp": "00:13:56",
+        "content": "And so now we've got the sequence of values. That's the letters directly."
+    },
+    {
+        "timestamp": "00:14:01",
+        "content": "So when we check if the letter is an either or you, all I need to do is check if that character right."
+    },
+    {
+        "timestamp": "00:14:07",
+        "content": "Char my variable is equivalent to I or equivalent to you."
+    },
+    {
+        "timestamp": "00:14:12",
+        "content": "And it's going to be the same and it's exactly the same code."
+    },
+    {
+        "timestamp": "00:14:16",
+        "content": "So this is the one we had before and this is the one I just went through."
+    },
+    {
+        "timestamp": "00:14:20",
+        "content": "And again, it prints out that sentence twice, right?"
+    },
+    {
+        "timestamp": "00:14:23",
+        "content": "Because it's the same starting string. So the sequence of values now is our characters direct directs the letters directly."
+    },
+    {
+        "timestamp": "00:14:32",
+        "content": "It's not the index itself. And it turns out there's actually a much more python way to write the code, this middle box down here."
+    },
+    {
+        "timestamp": "00:14:42",
+        "content": "So in the bottom box, the only part that I've changed is the if statement."
+    },
+    {
+        "timestamp": "00:14:53",
+        "content": "And I'm using this in keyword to test whether the character that I have in hand lowercase d, lowercase e, lowercase m and so on, is in this sequence of characters, I or you."
+    },
+    {
+        "timestamp": "00:14:59",
+        "content": "And for this case, it's not so important, right? Because in the middle box, we could do."
+    },
+    {
+        "timestamp": "00:15:04",
+        "content": "If Char is equal to I or char is equal to you, which is fine."
+    },
+    {
+        "timestamp": "00:15:08",
+        "content": "But if we were, if we wanted to test, if the character is one of the digits zero through nine this if or or would become a really long line."
+    },
+    {
+        "timestamp": "00:15:19",
+        "content": "Right. And so all we can do is if Char is in some particular sequence of characters, Python will automatically turn that into that longer."
+    },
+    {
+        "timestamp": "00:15:30",
+        "content": "If it's this or if it's this or if it's this or if it's this and so on."
+    },
+    {
+        "timestamp": "00:15:34",
+        "content": "Okay. Okay."
+    },
+    {
+        "timestamp": "00:15:37",
+        "content": "So the big idea here with four loops is that, yes, we're iterating through a sequence of values, but we're not limited to just numbers."
+    },
+    {
+        "timestamp": "00:15:49",
+        "content": "And that's the cool thing about for loops. You can iterate through characters directly and we're going to see later on, we can iterate through lists of numbers, lists of strings and a whole bunch of other things."
+    },
+    {
+        "timestamp": "00:15:57",
+        "content": "So let's write a slightly more complex program."
+    },
+    {
+        "timestamp": "00:15:59",
+        "content": "This was version 0.01 of the cheerleader robots you see up in the corner there that I wrote, the robots are not mine, but the code is."
+    },
+    {
+        "timestamp": "00:16:10",
+        "content": "So here is a little bit of code that kind of puts together iterating through strings directly and iterating through numbers directly."
+    },
+    {
+        "timestamp": "00:16:17",
+        "content": "So let me show you what this program is actually doing and then we'll go over the code."
+    },
+    {
+        "timestamp": "00:16:23",
+        "content": "Somebody give me some now and you're really excited about. What is that?"
+    },
+    {
+        "timestamp": "00:16:30",
+        "content": "What? Never mind."
+    },
+    {
+        "timestamp": "00:16:36",
+        "content": "Give me something else that I know. What is it?"
+    },
+    {
+        "timestamp": "00:16:40",
+        "content": "Pineapples. Pineapples. Okay."
+    },
+    {
+        "timestamp": "00:16:44",
+        "content": "So it's going to cheer for us about pineapples and let's say we're enthusiastic level eight about pineapples."
+    },
+    {
+        "timestamp": "00:16:52",
+        "content": "All right. So this is my cheerleader program. So I typed in a word and I typed in an enthusiasm level for pineapples."
+    },
+    {
+        "timestamp": "00:16:59",
+        "content": "And then all it does is and notice the repetition, which computers are really awesome for."
+    },
+    {
+        "timestamp": "00:17:05",
+        "content": "Give me up, give me an eye. Give me an and so on."
+    },
+    {
+        "timestamp": "00:17:09",
+        "content": "Right. What does that spell? And then it does pineapples with three exclamation marks eight times."
+    },
+    {
+        "timestamp": "00:17:14",
+        "content": "Because that's how enthusiastic I'm about pineapples. All right."
+    },
+    {
+        "timestamp": "00:17:19",
+        "content": "So let's look at the code that actually does this. Notice there's two parts to it, right?"
+    },
+    {
+        "timestamp": "00:17:23",
+        "content": "There's the part that does the spelling."
+    },
+    {
+        "timestamp": "00:17:27",
+        "content": "And then there's the part that does repeating the word some number of times."
+    },
+    {
+        "timestamp": "00:17:33",
+        "content": "So these are two separate loops. The spelling is up here, this for loop here and then repeating some number of times is down here."
+    },
+    {
+        "timestamp": "00:17:42",
+        "content": "Okay. So the part where we do the spelling."
+    },
+    {
+        "timestamp": "00:17:46",
+        "content": "Has a for loop that iterates through the letters in the word directly."
+    },
+    {
+        "timestamp": "00:17:52",
+        "content": "Right. I'm not doing anything special with these letters so I can just iterate through the letters directly."
+    },
+    {
+        "timestamp": "00:17:58",
+        "content": "So for W in word where word is the input that I grabbed from the user."
+    },
+    {
+        "timestamp": "00:18:03",
+        "content": "W is a loop variable. That's going to first BP, then AI, then and then E, then A and so on."
+    },
+    {
+        "timestamp": "00:18:12",
+        "content": "Right. And then I have an if else here."
+    },
+    {
+        "timestamp": "00:18:15",
+        "content": "And if you look carefully, the only difference between the if what we do inside the F and what we do inside"
+    },
+    {
+        "timestamp": "00:18:20",
+        "content": "the LC is whether we type in on and then a letter or a and then the letter."
+    },
+    {
+        "timestamp": "00:18:27",
+        "content": "Right. Because some letters make sense to say give me an A as opposed to give me a A."
+    },
+    {
+        "timestamp": "00:18:32",
+        "content": "It just doesn't sound right in English. The letters where it makes sense to do N are defined up here."
+    },
+    {
+        "timestamp": "00:18:40",
+        "content": "So notice they're just defined as a really long string. And so the if statement uses that in keyword we saw on the slide."
+    },
+    {
+        "timestamp": "00:18:49",
+        "content": "Right."
+    },
+    {
+        "timestamp": "00:18:50",
+        "content": "It says if w so if that particular character is one of these is in this sequence of characters, then print, give me one and that particular character."
+    },
+    {
+        "timestamp": "00:19:04",
+        "content": "And otherwise, it's you know, it's not one of these letters where it makes sense to say, um, so then you just print, give me a, and then that letter."
+    },
+    {
+        "timestamp": "00:19:21",
+        "content": "Here. I just rewrote these two print statements using strings, which we talked about back in lecture two, just to show you how you could how you could rewrite it with strings."
+    },
+    {
+        "timestamp": "00:19:26",
+        "content": "But it can be done both ways. Okay. So at the end of this, we've done the spelling and then we have a print statement that says, what does that spell?"
+    },
+    {
+        "timestamp": "00:19:34",
+        "content": "And then the last part is to repeat that word, sum and number of times, whatever the user told us."
+    },
+    {
+        "timestamp": "00:19:40",
+        "content": "So I saved that number of times in a variable called times."
+    },
+    {
+        "timestamp": "00:19:44",
+        "content": "And then all I do here is I have a nice little four loop that goes through however many how much, how much that number is, right?"
+    },
+    {
+        "timestamp": "00:19:52",
+        "content": "So range times means it's going to be zero all the way up through and including times minus one."
+    },
+    {
+        "timestamp": "00:19:59",
+        "content": "That's a total of eight, eight times in this particular case that it loops through."
+    },
+    {
+        "timestamp": "00:20:03",
+        "content": "And then all we do is print the word with three exclamation marks."
+    },
+    {
+        "timestamp": "00:20:08",
+        "content": "Notice that this print statement that's inside the bottom for loop is not actually doing anything with our loop variable, right?"
+    },
+    {
+        "timestamp": "00:20:16",
+        "content": "Our loop variable here is IE, but we're not doing anything with it and that's totally fine, right?"
+    },
+    {
+        "timestamp": "00:20:21",
+        "content": "Because all we're using the times and the loop very in this particular case is to do this action some number of times."
+    },
+    {
+        "timestamp": "00:20:29",
+        "content": "We don't always have to do something with that loop. Very. Any questions about this code?"
+    },
+    {
+        "timestamp": "00:20:38",
+        "content": "Yeah. You also have use statements where you could use if statements for the prints."
+    },
+    {
+        "timestamp": "00:20:44",
+        "content": "Which one. Which prints these ones. How so?"
+    },
+    {
+        "timestamp": "00:20:50",
+        "content": "No. To evaluate the use instead of having to construct."
+    },
+    {
+        "timestamp": "00:20:58",
+        "content": "I mean, f0f strings. Yeah, we could have done it like this."
+    },
+    {
+        "timestamp": "00:21:03",
+        "content": "Yeah. So this is. This is how it is f and then we do the characters themselves inside the, the curly brackets."
+    },
+    {
+        "timestamp": "00:21:09",
+        "content": "Yeah. Oh, no, that's okay. That's okay. Yeah, there's a question."
+    },
+    {
+        "timestamp": "00:21:12",
+        "content": "Yeah. Work since we're not."
+    },
+    {
+        "timestamp": "00:21:16",
+        "content": "Yeah. So the last for loop is, is still going to iterate through times."
+    },
+    {
+        "timestamp": "00:21:22",
+        "content": "Times. Right. And the loop variable each time through the loop will be zero than one, then two, then three."
+    },
+    {
+        "timestamp": "00:21:29",
+        "content": "We're not doing anything with the I. Right."
+    },
+    {
+        "timestamp": "00:21:31",
+        "content": "The stuff that's indented is going to get done, but we're just not using the fact that is zero or one or two at all."
+    },
+    {
+        "timestamp": "00:21:40",
+        "content": "Yeah. It increments itself automatically. We're just not using it. Yeah, exactly."
+    },
+    {
+        "timestamp": "00:21:48",
+        "content": "Okay. And that's what I said."
+    },
+    {
+        "timestamp": "00:21:52",
+        "content": "Okay, so let's have you write a little bit of code. So let's assume you're going to be given a string of lowercase letters."
+    },
+    {
+        "timestamp": "00:21:59",
+        "content": "Right. So we're not going to bother uppercase lowercase. Just assume you're given lowercase letters."
+    },
+    {
+        "timestamp": "00:22:03",
+        "content": "It's stored in the variable. S. So as an example, s is equal to ABC."
+    },
+    {
+        "timestamp": "00:22:06",
+        "content": "A I would like you to write some code that counts."
+    },
+    {
+        "timestamp": "00:22:10",
+        "content": "How many unique letters are in the string? Right. So notice a occurs twice."
+    },
+    {
+        "timestamp": "00:22:15",
+        "content": "But the count that your code should do for this particular in this particular string should just be three."
+    },
+    {
+        "timestamp": "00:22:21",
+        "content": "Right. We don't want to double count the eight. So there are three unique letters in ABC eight."
+    },
+    {
+        "timestamp": "00:22:25",
+        "content": "They are A, B and C. So I do have a little hint."
+    },
+    {
+        "timestamp": "00:22:31",
+        "content": "It involves the use of an extra variable as these programs usually go."
+    },
+    {
+        "timestamp": "00:22:37",
+        "content": "Try to think about having this extra variable."
+    },
+    {
+        "timestamp": "00:22:41",
+        "content": "Be a string that contains everything you've seen so far."
+    },
+    {
+        "timestamp": "00:22:55",
+        "content": "So as soon as you see a letter that you haven't seen before. Add it to the string variable that you've marking, that you've now seen this, this, this letter and then use this scene variable to to write the rest of it."
+    },
+    {
+        "timestamp": "00:23:02",
+        "content": "So if you as you go through your your letters, make sure that you're going to check whether you've seen it already before, before recounting it."
+    },
+    {
+        "timestamp": "00:23:14",
+        "content": "So as usual, it's in here around 976."
+    },
+    {
+        "timestamp": "00:23:19",
+        "content": "This is the code to to do so."
+    },
+    {
+        "timestamp": "00:23:22",
+        "content": "I'll give you a couple of minutes and then we can write it together. Okay."
+    },
+    {
+        "timestamp": "00:23:28",
+        "content": "So let me just work through it."
+    },
+    {
+        "timestamp": "00:23:30",
+        "content": "And this is something that I think is pretty useful in a quick situation, is just writing things on the on paper first."
+    },
+    {
+        "timestamp": "00:23:35",
+        "content": "Just because it's like programing in computer science class doesn't mean we have to start coding right away."
+    },
+    {
+        "timestamp": "00:23:40",
+        "content": "So it's really helpful to just kind of put some ideas down on paper."
+    },
+    {
+        "timestamp": "00:23:44",
+        "content": "So the way I would go about this problem is clearly I have to touch each character right in the string."
+    },
+    {
+        "timestamp": "00:23:51",
+        "content": "S So already for me that's I need to have a loop."
+    },
+    {
+        "timestamp": "00:23:56",
+        "content": "So as I'm looking at each character, I'm going to keep track of it."
+    },
+    {
+        "timestamp": "00:24:00",
+        "content": "So it's not something I haven't seen. So if it's something I haven't seen before, what I want to do is say, okay, I have now seen this."
+    },
+    {
+        "timestamp": "00:24:09",
+        "content": "So I'm going to add it to a scene variable. And then I'm going to increment a counter."
+    },
+    {
+        "timestamp": "00:24:14",
+        "content": "Right. I've seen it once. So count maybe equals one."
+    },
+    {
+        "timestamp": "00:24:20",
+        "content": "The next time I look at the next letter, I'm going to say, What's a B?"
+    },
+    {
+        "timestamp": "00:24:24",
+        "content": "Have I seen it before? No. Let me add it to my scene variable and increment my count."
+    },
+    {
+        "timestamp": "00:24:32",
+        "content": "Next time I'm going to look at the letter C. I have. Have I seen it before?"
+    },
+    {
+        "timestamp": "00:24:36",
+        "content": "No. I'm going to add it to my scene and then I'm going to increment my count."
+    },
+    {
+        "timestamp": "00:24:40",
+        "content": "And then the last time I'm going to look at this letter, A, I'm going to say, is it already in my scene?"
+    },
+    {
+        "timestamp": "00:24:45",
+        "content": "Yep. So I'm not going to do anything with this one. Right?"
+    },
+    {
+        "timestamp": "00:24:48",
+        "content": "So when I see a letter that's already seen that I've already added to my scene variable, I basically do nothing in my code."
+    },
+    {
+        "timestamp": "00:24:56",
+        "content": "Right? So the most of the work happens when I encounter something I have never seen before."
+    },
+    {
+        "timestamp": "00:25:02",
+        "content": "So does anyone have some starter code? Or something we can write."
+    },
+    {
+        "timestamp": "00:25:07",
+        "content": "We don't have to write it perfectly top to bottom. We can write pieces here and there."
+    },
+    {
+        "timestamp": "00:25:14",
+        "content": "Yes. Really? Yep."
+    },
+    {
+        "timestamp": "00:25:21",
+        "content": "Ha ha ha. And then I said, like, if the car is in the mall, I want to see if it's not."
+    },
+    {
+        "timestamp": "00:25:35",
+        "content": "It's. Yeah. So that's a great start."
+    },
+    {
+        "timestamp": "00:25:39",
+        "content": "So if you want to see if it's not in scene, we can just say if char our car, however you pronounce it, is not in scene."
+    },
+    {
+        "timestamp": "00:25:47",
+        "content": "So that takes the inverse of."
+    },
+    {
+        "timestamp": "00:25:51",
+        "content": "You know, true or false, whatever this is, right? His insane will either be true or false and not."
+    },
+    {
+        "timestamp": "00:25:58",
+        "content": "That will be false or true. Right. So that's perfect."
+    },
+    {
+        "timestamp": "00:26:02",
+        "content": "Yeah. You could be when you use the word."
+    },
+    {
+        "timestamp": "00:26:05",
+        "content": "Not a word to use like. Yes. Oh, yeah."
+    },
+    {
+        "timestamp": "00:26:08",
+        "content": "So we can use not when we're dealing with booleans."
+    },
+    {
+        "timestamp": "00:26:12",
+        "content": "Right. So something that the expression that evaluates to true or false, that's when we use not and the not equal."
+    },
+    {
+        "timestamp": "00:26:19",
+        "content": "So the exclamation mark equal is used where with other expressions when we're testing for equality."
+    },
+    {
+        "timestamp": "00:26:25",
+        "content": "Right. Like three not equal to or like A, not equal B or something like that."
+    },
+    {
+        "timestamp": "00:26:30",
+        "content": "Right. So things that are that could be numerical, not necessarily just true and false."
+    },
+    {
+        "timestamp": "00:26:35",
+        "content": "Yeah. Okay. So if Char is not in scene."
+    },
+    {
+        "timestamp": "00:26:43",
+        "content": "So if I haven't seen it before, what do I want to do? Yeah."
+    },
+    {
+        "timestamp": "00:26:49",
+        "content": "Yep. Yep."
+    },
+    {
+        "timestamp": "00:27:02",
+        "content": "So we can append the character that we just looked at to our scene list."
+    },
+    {
+        "timestamp": "00:27:08",
+        "content": "Right, just as we had done incrementally here. So that takes care of adding the character one by one if we haven't seen it to our scene."
+    },
+    {
+        "timestamp": "00:27:16",
+        "content": "Good. Anything else we want to do or we can even test it out like this, right?"
+    },
+    {
+        "timestamp": "00:27:23",
+        "content": "So we can print scene each time through our loop."
+    },
+    {
+        "timestamp": "00:27:29",
+        "content": "Right. So first it's A, then it's a B, then it's A, B, C, and then the last time it should still be A, B, C, and it is."
+    },
+    {
+        "timestamp": "00:27:45",
+        "content": "Okay. And the last step is to just do what the problem asked us to do, which is to print how many characters or how many unique characters are in this list or in the string."
+    },
+    {
+        "timestamp": "00:27:54",
+        "content": "Yep. Yeah."
+    },
+    {
+        "timestamp": "00:28:07",
+        "content": "We can have a counter. That is initially zero before the loop."
+    },
+    {
+        "timestamp": "00:28:13",
+        "content": "And every time we add a new thing to our scene string, we can increment our counter and then that takes care of the bulk of the work."
+    },
+    {
+        "timestamp": "00:28:22",
+        "content": "Right? This does all the counting, all the adding to the unique scene."
+    },
+    {
+        "timestamp": "00:28:27",
+        "content": "And so at the end of the loop, we have this number in hand."
+    },
+    {
+        "timestamp": "00:28:31",
+        "content": "And then we can just print it. So with this particular case, it's three."
+    },
+    {
+        "timestamp": "00:28:35",
+        "content": "If we add more A's and random spots, it's still going to be three."
+    },
+    {
+        "timestamp": "00:28:39",
+        "content": "Right. Out. Yeah."
+    },
+    {
+        "timestamp": "00:28:44",
+        "content": "So now that we have some code out that basically that works really well, we can make improvements to it."
+    },
+    {
+        "timestamp": "00:28:55",
+        "content": "So one improvement that's suggested is instead of keeping a counter variable, we can actually just recognize the fact that the length of our scene is just all the unique characters we've seen already."
+    },
+    {
+        "timestamp": "00:29:03",
+        "content": "Right. Because when we double up on something, we don't react it. So all we can do to."
+    },
+    {
+        "timestamp": "00:29:09",
+        "content": "To print out. The number of unique characters is to just say, I'm going to print out the length of scene."
+    },
+    {
+        "timestamp": "00:29:17",
+        "content": "Okay. And now there's no need to increment any sort of counter. And so that still gives us three."
+    },
+    {
+        "timestamp": "00:29:30",
+        "content": "Questions about this code. Does it make sense?"
+    },
+    {
+        "timestamp": "00:29:38",
+        "content": "Notice there's no else, right? We just have a nice little if there's no else, because there's nothing to do when we've already seen the character."
+    },
+    {
+        "timestamp": "00:29:46",
+        "content": "So we could have those pass and passes. Just some."
+    },
+    {
+        "timestamp": "00:29:50",
+        "content": "Just the key word in Python, you see, it's turned blue because it's accurate."
+    },
+    {
+        "timestamp": "00:29:54",
+        "content": "In Python, it just means do nothing. Right. So we wouldn't write this, obviously, but."
+    },
+    {
+        "timestamp": "00:30:01",
+        "content": "That's you know, if we had a case that that's what we do."
+    },
+    {
+        "timestamp": "00:30:04",
+        "content": "We just do nothing. Okay."
+    },
+    {
+        "timestamp": "00:30:10",
+        "content": "Other questions about the code. All right. Sorry."
+    },
+    {
+        "timestamp": "00:30:20",
+        "content": "Sorry to keep. Why are we printing the length of seen here?"
+    },
+    {
+        "timestamp": "00:30:28",
+        "content": "So we're printing the length of scene because."
+    },
+    {
+        "timestamp": "00:30:33",
+        "content": "Because we see that whenever we add a unique character to this scene variable, it's, it's one that we haven't actually seen before."
+    },
+    {
+        "timestamp": "00:30:44",
+        "content": "Right. And so the only things I'm adding to my scene are things that are new."
+    },
+    {
+        "timestamp": "00:30:50",
+        "content": "And so even as I was going through manually here, I said, I've seen the ads in the B, I've seen the C, I added them one by one."
+    },
+    {
+        "timestamp": "00:30:58",
+        "content": "And then when I saw the duplicate A, I didn't add it to my O here."
+    },
+    {
+        "timestamp": "00:31:02",
+        "content": "Right. And so basically the scene already contains all the unique characters in my list, in my, um, in my, in my string."
+    },
+    {
+        "timestamp": "00:31:12",
+        "content": "Original string. Yeah."
+    },
+    {
+        "timestamp": "00:31:20",
+        "content": "Okay. So quick summary of what we've seen so far before we started looking at our first algorithm."
+    },
+    {
+        "timestamp": "00:31:24",
+        "content": "So we've seen objects, right? That's how we write Python Python programs."
+    },
+    {
+        "timestamp": "00:31:29",
+        "content": "We manipulate objects by saving them to variable."
+    },
+    {
+        "timestamp": "00:31:32",
+        "content": "So the values are more easily accessible. We have expressions that evaluate two different things integers, floats, booleans, things like that."
+    },
+    {
+        "timestamp": "00:31:39",
+        "content": "We added branching as a way to control as a control flow mechanism to our program."
+    },
+    {
+        "timestamp": "00:31:45",
+        "content": "Right. It says, Hey, Python, either evaluate this set of statements or this other set of statements depending on whether this condition is true."
+    },
+    {
+        "timestamp": "00:31:56",
+        "content": "And then we added the last mechanism for control flow, the looping mechanism that said either loop or repeat this code while some condition is true or loop this code for the sequence of values."
+    },
+    {
+        "timestamp": "00:32:07",
+        "content": "Okay. So really with that in hand, we basically have a really nice toolbox of things that we can use to write interesting programs."
+    },
+    {
+        "timestamp": "00:32:16",
+        "content": "That's kind of all we need, but this is not the end of the class."
+    },
+    {
+        "timestamp": "00:32:21",
+        "content": "We're going to look at other things that will make our code neater, more readable."
+    },
+    {
+        "timestamp": "00:32:25",
+        "content": "We can write more of it more efficiently and things like that."
+    },
+    {
+        "timestamp": "00:32:28",
+        "content": "But really, if you want to just start writing little algorithms, this is all we need in terms of Python syntax."
+    },
+    {
+        "timestamp": "00:32:35",
+        "content": "So the first thing we're going to apply this knowledge to is our very first algorithm called the guess and check algorithm."
+    },
+    {
+        "timestamp": "00:32:43",
+        "content": "So another word for the guess in check algorithm is exhaustive enumeration."
+    },
+    {
+        "timestamp": "00:32:48",
+        "content": "Okay, so the idea here is that we're given a problem."
+    },
+    {
+        "timestamp": "00:32:53",
+        "content": "We can guess a value for a solution. Okay, we'll just do a guess and then we'll test whether this guess is correct."
+    },
+    {
+        "timestamp": "00:33:00",
+        "content": "Does it solve our problem? If it does, we're done."
+    },
+    {
+        "timestamp": "00:33:04",
+        "content": "We've found a solution to our problem."
+    },
+    {
+        "timestamp": "00:33:07",
+        "content": "If it doesn't solve our problem, we're just going to keep making guesses until we've exhausted our set of possible guesses."
+    },
+    {
+        "timestamp": "00:33:15",
+        "content": "Right. So either we find the solution or we say we weren't able to find a solution to this problem."
+    },
+    {
+        "timestamp": "00:33:21",
+        "content": "Doesn't mean there one that one doesn't exist."
+    },
+    {
+        "timestamp": "00:33:23",
+        "content": "It just means that with guess in check and exhaustively enumerating all these possible values, we were not able to find a solution."
+    },
+    {
+        "timestamp": "00:33:30",
+        "content": "So in terms of a flow chart, the way this looks is we have an initial guess."
+    },
+    {
+        "timestamp": "00:33:35",
+        "content": "We ask, is this guess correct? If it is, we're done. And if it's not, we're going to choose a next guess."
+    },
+    {
+        "timestamp": "00:33:42",
+        "content": "So let's look at finding the root of a perfect square."
+    },
+    {
+        "timestamp": "00:33:48",
+        "content": "And that's our problem. And we're going to say either we found the root of this perfect square or we say this is not a perfect square."
+    },
+    {
+        "timestamp": "00:33:58",
+        "content": "So with guests in check, we can say, well, what if we want to find?"
+    },
+    {
+        "timestamp": "00:34:02",
+        "content": "What if we want to find whether seven is a perfect square?"
+    },
+    {
+        "timestamp": "00:34:05",
+        "content": "If it is, what is its route? And if it's not, say that it's not a perfect square."
+    },
+    {
+        "timestamp": "00:34:10",
+        "content": "Well, we can make an initial guess six. That's not the right solution."
+    },
+    {
+        "timestamp": "00:34:14",
+        "content": "We can make another guess nine. That's not the right solution. We can make another guess."
+    },
+    {
+        "timestamp": "00:34:18",
+        "content": "Two That's not the right solution. We can make a guess. Zero That's obviously not the right solution."
+    },
+    {
+        "timestamp": "00:34:23",
+        "content": "We can keep guessing randomly like this, but it's not going to be very efficient."
+    },
+    {
+        "timestamp": "00:34:27",
+        "content": "Right. What we want to do is use the power of computers. And computers work with these sort of patterns in hand."
+    },
+    {
+        "timestamp": "00:34:32",
+        "content": "Right. Remember range starting from zero. Following a pattern going up to some number."
+    },
+    {
+        "timestamp": "00:34:44",
+        "content": "So the idea is to be systematic and then we can really harness the power of programing and computers being able to do things really, really quickly for us."
+    },
+    {
+        "timestamp": "00:34:47",
+        "content": "So for that same problem, finding out whether a number X is a perfect square, let's be systematic and start with a guess of zero."
+    },
+    {
+        "timestamp": "00:34:57",
+        "content": "Two. Two cases. The number we're trying to find the square root of is a perfect square, let's say four."
+    },
+    {
+        "timestamp": "00:35:05",
+        "content": "We're going to start with the guess of zero zero squared. Solve our problem."
+    },
+    {
+        "timestamp": "00:35:09",
+        "content": "No increment does one squared solve our problem."
+    },
+    {
+        "timestamp": "00:35:12",
+        "content": "No increment. Does two squared solve our problem?"
+    },
+    {
+        "timestamp": "00:35:16",
+        "content": "Yes, we are done. What if X is not a perfect square?"
+    },
+    {
+        "timestamp": "00:35:22",
+        "content": "Okay. Let's say ten. Let's use the same systematic approach of guess and check."
+    },
+    {
+        "timestamp": "00:35:33",
+        "content": "We're going to need to add a little bit of algebra, though, because if we don't, we're at risk of potentially doing something that will lead to an infinite loop."
+    },
+    {
+        "timestamp": "00:35:39",
+        "content": "So the algebra we need to add to solve our problem is to say if if we we're looking at a number that's not a perfect square."
+    },
+    {
+        "timestamp": "00:35:47",
+        "content": "We need to have to find we have to find a way to stop. Right."
+    },
+    {
+        "timestamp": "00:35:50",
+        "content": "We don't want to guess something that's infinite. Guess in check."
+    },
+    {
+        "timestamp": "00:35:54",
+        "content": "So we need an exhaustive set of potential solutions."
+    },
+    {
+        "timestamp": "00:35:58",
+        "content": "So we're going to use algebra and we're going to say we're going to stop as soon as our guest squared becomes bigger than X."
+    },
+    {
+        "timestamp": "00:36:06",
+        "content": "Okay. So we're going to start guessing zero, then one, then two, then three, then four."
+    },
+    {
+        "timestamp": "00:36:10",
+        "content": "And at some point that number that gets squared will be bigger than x."
+    },
+    {
+        "timestamp": "00:36:15",
+        "content": "And we know we can stop because numbers bigger than that will definitely be bigger than X."
+    },
+    {
+        "timestamp": "00:36:20",
+        "content": "So our first guess would be zero squared. Obviously less than ten one squared less than ten two squared."
+    },
+    {
+        "timestamp": "00:36:26",
+        "content": "Less than ten. Three squared less than ten. Right. That's nine."
+    },
+    {
+        "timestamp": "00:36:30",
+        "content": "Four squared becomes 16 and we say this is where we stop and we have not found."
+    },
+    {
+        "timestamp": "00:36:40",
+        "content": "A square root for ten. Right. So ten is not a perfect square."
+    },
+    {
+        "timestamp": "00:36:46",
+        "content": "Does that make sense? All right. Okay. So our exhaustive set of potential solutions is zero through four."
+    },
+    {
+        "timestamp": "00:36:53",
+        "content": "Because that brought us close closest to ten."
+    },
+    {
+        "timestamp": "00:36:57",
+        "content": "And at four, we've gone over ten. And we don't need to check five, six, seven, because there's definitely not going to be those values."
+    },
+    {
+        "timestamp": "00:37:04",
+        "content": "Squared will definitely be bigger than ten. So this is the code that solves that problem."
+    },
+    {
+        "timestamp": "00:37:11",
+        "content": "We get input from the user. So what number do you want to find?"
+    },
+    {
+        "timestamp": "00:37:15",
+        "content": "Whether it's a perfect square or not? And what? What is it if it is a perfect square?"
+    },
+    {
+        "timestamp": "00:37:21",
+        "content": "We have a wire loop that checks one condition."
+    },
+    {
+        "timestamp": "00:37:25",
+        "content": "Right. That's our stopping condition here. We're going to iterate through the loop when guest squared is less than x, right?"
+    },
+    {
+        "timestamp": "00:37:34",
+        "content": "So on that number line, we're going to keep incrementing by one as long as our square is less than x."
+    },
+    {
+        "timestamp": "00:37:43",
+        "content": "So that's the spy loop here. And what we're doing inside the loop is incrementing our guess, I guess equals guess plus one."
+    },
+    {
+        "timestamp": "00:37:52",
+        "content": "And then at some point, if we haven't found a perfect square or if we have found a perfect square, this condition becomes false, right?"
+    },
+    {
+        "timestamp": "00:38:00",
+        "content": "Because this is false when the when we have the opposite of this less than sine."
+    },
+    {
+        "timestamp": "00:38:05",
+        "content": "So get squared becomes greater than or equal to x."
+    },
+    {
+        "timestamp": "00:38:10",
+        "content": "Now that's two very different things, right? Yes."
+    },
+    {
+        "timestamp": "00:38:13",
+        "content": "Squared greater than x means we haven't found this perfect square, but get squared is equal to x means we have found a perfect square."
+    },
+    {
+        "timestamp": "00:38:22",
+        "content": "Right. And both of those cases trigger us to leave the Y loop."
+    },
+    {
+        "timestamp": "00:38:29",
+        "content": "So then right after the wire loop, we need to have an enforce the false checks for one of those two cases."
+    },
+    {
+        "timestamp": "00:38:36",
+        "content": "So the if gets squared is equivalent to x means that we exited the Y loop because we found that it was a perfect square."
+    },
+    {
+        "timestamp": "00:38:44",
+        "content": "So like for for example, right, if X was four when we hit two, that while loop becomes false and we exited because four was a perfect square."
+    },
+    {
+        "timestamp": "00:38:54",
+        "content": "But the ten, for example, would fall within the clause here."
+    },
+    {
+        "timestamp": "00:38:59",
+        "content": "Right. Because we have exited the loop because guest squared four four squared 16 was greater than ten."
+    },
+    {
+        "timestamp": "00:39:07",
+        "content": "Okay. And so that's. Then we would print X is not a perfect square."
+    },
+    {
+        "timestamp": "00:39:14",
+        "content": "Okay. So this works for many different values as big as you'd like."
+    },
+    {
+        "timestamp": "00:39:20",
+        "content": "But it doesn't work for it doesn't work for negative values."
+    },
+    {
+        "timestamp": "00:39:24",
+        "content": "And the reason it doesn't work for negative values is because the loop never actually enters in the first place."
+    },
+    {
+        "timestamp": "00:39:38",
+        "content": "So for example, if we look at whether negative two is a is a perfect square, we're going to start with just zero just because that's how we we implemented the algorithm right on the previous slide."
+    },
+    {
+        "timestamp": "00:39:44",
+        "content": "It says guess is equal to zero right at the top. And so guess is zero we say is zero squared less than X."
+    },
+    {
+        "timestamp": "00:39:54",
+        "content": "No. Zero is not less than negative two. And that why Luke never even enters at all."
+    },
+    {
+        "timestamp": "00:40:01",
+        "content": "Which is fine, right. Because negative two does not or negative for you."
+    },
+    {
+        "timestamp": "00:40:05",
+        "content": "Negative numbers are not perfect squares unless we're talking about imaginary numbers, but we're not in this particular case."
+    },
+    {
+        "timestamp": "00:40:13",
+        "content": "However, we might want to handle the case when the user gives us a negative number."
+    },
+    {
+        "timestamp": "00:40:17",
+        "content": "Maybe they accidentally typed in the negative sign or something like that."
+    },
+    {
+        "timestamp": "00:40:21",
+        "content": "So we can actually take care of that case by adding a little bit of extra code around what we already wrote."
+    },
+    {
+        "timestamp": "00:40:29",
+        "content": "So the stuff that's boxed in red is the extra code we write."
+    },
+    {
+        "timestamp": "00:40:32",
+        "content": "Everything else is exactly the same as two slides ago. So the only thing we want to do when we encounter a negative number is flag it."
+    },
+    {
+        "timestamp": "00:40:43",
+        "content": "Using a new variable that's either true or false."
+    },
+    {
+        "timestamp": "00:40:47",
+        "content": "And then at the end we can handle that flag. So if it's true, we do something."
+    },
+    {
+        "timestamp": "00:40:59",
+        "content": "And if it's false, we do something else. So in this particular case, we've got a negative flag initially false, which means that we're going to initially assume the user gives us a positive value."
+    },
+    {
+        "timestamp": "00:41:04",
+        "content": "Right. So negative flag equals false. They use it, we get input from the user and then we check if the user gave us a negative number."
+    },
+    {
+        "timestamp": "00:41:12",
+        "content": "So if the x is less than zero, then we're going to change the value of this flag like flag equals to true."
+    },
+    {
+        "timestamp": "00:41:20",
+        "content": "So we're going to change the value from false to true. And then the rest of it is the same."
+    },
+    {
+        "timestamp": "00:41:25",
+        "content": "Right. This is all the same as what we had two slides ago."
+    },
+    {
+        "timestamp": "00:41:29",
+        "content": "Except that at the end we're going to check to see if the user gave us actually gave us a negative number."
+    },
+    {
+        "timestamp": "00:41:35",
+        "content": "We can check with them. Did you actually mean the positive version of that number or something like that?"
+    },
+    {
+        "timestamp": "00:41:42",
+        "content": "And so in code, the way this looks is as follows."
+    },
+    {
+        "timestamp": "00:41:47",
+        "content": "So if we run it and we give it, you know, for obviously it tells us it's a perfect square and what its square root is."
+    },
+    {
+        "timestamp": "00:41:55",
+        "content": "Nine. Works ten."
+    },
+    {
+        "timestamp": "00:41:59",
+        "content": "It says it's not a perfect square."
+    },
+    {
+        "timestamp": "00:42:01",
+        "content": "And then when we give it a negative number, a square or not, it just tells us negative four is not a perfect square."
+    },
+    {
+        "timestamp": "00:42:09",
+        "content": "And then it says Just checking. Did you mean four? So does this extra print statement when the number was negative?"
+    },
+    {
+        "timestamp": "00:42:18",
+        "content": "Yeah, I quite get. Yeah."
+    },
+    {
+        "timestamp": "00:42:24",
+        "content": "So I can explain that again. So the negative flag equals false is just a variable."
+    },
+    {
+        "timestamp": "00:42:35",
+        "content": "Right. I just called it a flag. It's a variable I initialize to false just to say, hey, the number I'm going to assume is not negative and then we only flag it to we only change its value to true if the number was negative."
+    },
+    {
+        "timestamp": "00:42:43",
+        "content": "So in fact we could have just had a little if else here. Right."
+    },
+    {
+        "timestamp": "00:42:47",
+        "content": "So we get the we don't have this line up here."
+    },
+    {
+        "timestamp": "00:42:50",
+        "content": "We have X is equal to int and then we say if x is less than zero neg flag equals true else neg flag equals false."
+    },
+    {
+        "timestamp": "00:42:56",
+        "content": "We could have done that as well. Okay."
+    },
+    {
+        "timestamp": "00:43:02",
+        "content": "So the big idea with Jess in check is we can't test an infinite number of values."
+    },
+    {
+        "timestamp": "00:43:06",
+        "content": "We have to stop at some point. Right."
+    },
+    {
+        "timestamp": "00:43:18",
+        "content": "So now we've been working with the code that looks like something on the left side, right we've been using while loops, but we've seen that we can actually write very efficient code using for loops as well."
+    },
+    {
+        "timestamp": "00:43:25",
+        "content": "And in fact the guess in check method maybe intuitively lends itself better to a four loop than a while loop."
+    },
+    {
+        "timestamp": "00:43:31",
+        "content": "Right, because we're trying to iterate through an exhaustive set of values, write the number of zero through some number."
+    },
+    {
+        "timestamp": "00:43:38",
+        "content": "Right? And so maybe a four loop is a better way to write such a guess centric algorithm."
+    },
+    {
+        "timestamp": "00:43:43",
+        "content": "And we're going to see how to rewrite that in a little bit."
+    },
+    {
+        "timestamp": "00:43:46",
+        "content": "But in terms of a flowchart, the way the for loop would go is we sequentially go through all the possible values."
+    },
+    {
+        "timestamp": "00:43:53",
+        "content": "When we've exhausted all the values, we say we didn't find a solution and otherwise the for loop just automatically grabs for us the next value in the sequence."
+    },
+    {
+        "timestamp": "00:44:02",
+        "content": "So let's have you work on this for a little bit. I want you to heart code for me."
+    },
+    {
+        "timestamp": "00:44:05",
+        "content": "A number as a secret number. This is kind of what we did. Last lecture."
+    },
+    {
+        "timestamp": "00:44:09",
+        "content": "So secret equals seven, five, whatever you like it to be."
+    },
+    {
+        "timestamp": "00:44:18",
+        "content": "And then I want you to write some code that goes through all of these numbers from 1 to 10, inclusive, let's say, and prince that it found the secret number."
+    },
+    {
+        "timestamp": "00:44:23",
+        "content": "So if the secret number is within the range zero through ten, print that you found the number."
+    },
+    {
+        "timestamp": "00:44:30",
+        "content": "And otherwise don't print anything. So if you don't find the number, print nothing."
+    },
+    {
+        "timestamp": "00:44:39",
+        "content": "And as you're working on that and if you finish that code, think about how you would change that code to do one thing differently if it's not found print that you didn't find it."
+    },
+    {
+        "timestamp": "00:44:48",
+        "content": "So in the first version, if you don't find it, do nothing."
+    },
+    {
+        "timestamp": "00:44:52",
+        "content": "But in the second version, if you don't find it, tell me that you didn't find it."
+    },
+    {
+        "timestamp": "00:44:57",
+        "content": "Okay. So these codes are."
+    },
+    {
+        "timestamp": "00:45:03",
+        "content": "In this Python file. And the easier version is about line 129."
+    },
+    {
+        "timestamp": "00:45:13",
+        "content": "And then if you work on it after you finish that, if you're done, you can just copy that code two lines about 144 and try to modify it to the new specification."
+    },
+    {
+        "timestamp": "00:45:21",
+        "content": "So if you don't find it, print that you didn't find it. Okay."
+    },
+    {
+        "timestamp": "00:45:27",
+        "content": "So tell me some code for the first one. So if we find the number print, we found it and otherwise do nothing."
+    },
+    {
+        "timestamp": "00:45:43",
+        "content": "What's better while looper for loop. For loop."
+    },
+    {
+        "timestamp": "00:45:49",
+        "content": "Yeah. For. Let's say I in."
+    },
+    {
+        "timestamp": "00:45:54",
+        "content": "Range. How do I get numbers? One, two, 1 to 10 inclusive."
+    },
+    {
+        "timestamp": "00:46:02",
+        "content": "One comma 11. Exactly. Good. So this and again, I can write a little message for myself."
+    },
+    {
+        "timestamp": "00:46:08",
+        "content": "I is one, two, three, four."
+    },
+    {
+        "timestamp": "00:46:12",
+        "content": "Dot, dot, dot 11. What do I do to make the check?"
+    },
+    {
+        "timestamp": "00:46:17",
+        "content": "Whether this number I is my secret."
+    },
+    {
+        "timestamp": "00:46:26",
+        "content": "Yep. If I was secret. Well, let's say print found."
+    },
+    {
+        "timestamp": "00:46:34",
+        "content": "Okay. Run it. Obviously, four is within that range."
+    },
+    {
+        "timestamp": "00:46:38",
+        "content": "Obviously 100 not in that range. Right."
+    },
+    {
+        "timestamp": "00:46:41",
+        "content": "So when we had four, it printed found and when we had 100, it did nothing."
+    },
+    {
+        "timestamp": "00:46:47",
+        "content": "Okay. I'm going to copy this code and paste it down here."
+    },
+    {
+        "timestamp": "00:46:52",
+        "content": "So let's try the version now where we just make one small change to our specification."
+    },
+    {
+        "timestamp": "00:46:58",
+        "content": "Right now we request the code to say, if you don't find the number within this range print that you did not find it."
+    },
+    {
+        "timestamp": "00:47:07",
+        "content": "What are some things we can try? Else."
+    },
+    {
+        "timestamp": "00:47:11",
+        "content": "Okay. Print."
+    },
+    {
+        "timestamp": "00:47:16",
+        "content": "Not found. Okay. So for obviously."
+    },
+    {
+        "timestamp": "00:47:25",
+        "content": "Was found, but we also printed all these not found."
+    },
+    {
+        "timestamp": "00:47:32",
+        "content": "Why? Yes."
+    },
+    {
+        "timestamp": "00:47:37",
+        "content": "It's a full page so you can try to break it out."
+    },
+    {
+        "timestamp": "00:47:42",
+        "content": "Yeah, we printed it because it's iterating through the whole range. Every time I check in, I."
+    },
+    {
+        "timestamp": "00:47:47",
+        "content": "I'm either printing found or not found. Yeah."
+    },
+    {
+        "timestamp": "00:47:51",
+        "content": "So we could break. I guess. When we found it, right?"
+    },
+    {
+        "timestamp": "00:47:58",
+        "content": "Break. Run it. Okay."
+    },
+    {
+        "timestamp": "00:48:03",
+        "content": "Then we print not found until we find it, and then we break."
+    },
+    {
+        "timestamp": "00:48:07",
+        "content": "So we're getting there, right? It's looking a little bit better."
+    },
+    {
+        "timestamp": "00:48:12",
+        "content": "What else can we try? Yes. And another break."
+    },
+    {
+        "timestamp": "00:48:19",
+        "content": "We can try another break after not found. But then the four is not found."
+    },
+    {
+        "timestamp": "00:48:27",
+        "content": "Yeah. I guess."
+    },
+    {
+        "timestamp": "00:48:42",
+        "content": "I mean. Yeah."
+    },
+    {
+        "timestamp": "00:48:47",
+        "content": "I like the idea. Yeah, we can do you can try to do a Boolean flag. Was that your suggestion as well?"
+    },
+    {
+        "timestamp": "00:48:51",
+        "content": "Yeah. Okay. Let's try to do the Boolean flag way."
+    },
+    {
+        "timestamp": "00:48:55",
+        "content": "Let's delete the breaks. Let's go back to what we had before."
+    },
+    {
+        "timestamp": "00:49:01",
+        "content": "So basically our idea is I think what we're trying to get at is we only want to print not found when we've gone through all the numbers in the range."
+    },
+    {
+        "timestamp": "00:49:12",
+        "content": "Right. So kind of something like this. Right."
+    },
+    {
+        "timestamp": "00:49:15",
+        "content": "I want to print than not found only once at the end of my loop."
+    },
+    {
+        "timestamp": "00:49:20",
+        "content": "Okay. But this doesn't work either, because I'm always printing not found, no matter if I do this extra print inside here."
+    },
+    {
+        "timestamp": "00:49:29",
+        "content": "Right. Because this not found at the end here is at the same indentation level as the for loop."
+    },
+    {
+        "timestamp": "00:49:34",
+        "content": "So the suggestion from a couple of you is to actually set a flag, right?"
+    },
+    {
+        "timestamp": "00:49:40",
+        "content": "So we can set a found flag to be originally, let's say, false, right?"
+    },
+    {
+        "timestamp": "00:49:47",
+        "content": "So before I even start my loop, let me just assume it's false."
+    },
+    {
+        "timestamp": "00:49:52",
+        "content": "And I'm going to use this flag to to to trigger."
+    },
+    {
+        "timestamp": "00:49:59",
+        "content": "I I'm going to I guess I'm going to change this flag whenever."
+    },
+    {
+        "timestamp": "00:50:04",
+        "content": "I found the number, right? So found is originally false."
+    },
+    {
+        "timestamp": "00:50:10",
+        "content": "And the place in my code where I know I found the number is here right when I is equivalent to my secret and then I can set my found flag to be true."
+    },
+    {
+        "timestamp": "00:50:22",
+        "content": "I only call it a flag because it flags that an event happened or not."
+    },
+    {
+        "timestamp": "00:50:26",
+        "content": "So it's kind of a boolean event, but it's really just a variable, right?"
+    },
+    {
+        "timestamp": "00:50:30",
+        "content": "Nothing special about the word flag. It's just a variable."
+    },
+    {
+        "timestamp": "00:50:36",
+        "content": "Right. Okay."
+    },
+    {
+        "timestamp": "00:50:38",
+        "content": "So now I think the suggestion was now that we've set our flag to two true or false, depending on what happened in the code, we can say if found."
+    },
+    {
+        "timestamp": "00:50:49",
+        "content": "Or I guess in this particular case, if not found right."
+    },
+    {
+        "timestamp": "00:50:53",
+        "content": "The inverse of my boolean. Print not found."
+    },
+    {
+        "timestamp": "00:51:00",
+        "content": "There's no else because the house was already taken care of. When? When we had the secret."
+    },
+    {
+        "timestamp": "00:51:05",
+        "content": "When we found the secret within the code. So now we print found when it's four."
+    },
+    {
+        "timestamp": "00:51:11",
+        "content": "And if the number is obviously outside the range like 100, we print not found."
+    },
+    {
+        "timestamp": "00:51:20",
+        "content": "We can make a small change to it. I guess so. We don't have to print found down in there for maybe consistency or making things even."
+    },
+    {
+        "timestamp": "00:51:30",
+        "content": "We can just say else print found or something like that."
+    },
+    {
+        "timestamp": "00:51:36",
+        "content": "And I think that should work as well. So 100 is not found and four is about right."
+    },
+    {
+        "timestamp": "00:51:43",
+        "content": "So now we're doing things kind of consistently. We're printing out whether we found it or not down here and inside the for loop."
+    },
+    {
+        "timestamp": "00:51:49",
+        "content": "We'll just we're just dealing with the logic of the finding or not finding it."
+    },
+    {
+        "timestamp": "00:51:56",
+        "content": "Any questions about this code? Does it seem all right? Does it make sense?"
+    },
+    {
+        "timestamp": "00:52:01",
+        "content": "So I'm showcasing these Boolean flags just because they're very useful for signaling that things happened in your code."
+    },
+    {
+        "timestamp": "00:52:09",
+        "content": "Right. So when you find yourself asking, how do I how do I know that this thing happened or something like bullying flag is the answer."
+    },
+    {
+        "timestamp": "00:52:22",
+        "content": "Right. Just set it to true or false zero or one A or B, whatever you want, and then check the value of that variable later on in the code to see if the event happened or not."
+    },
+    {
+        "timestamp": "00:52:35",
+        "content": "So these are the two codes that we had just written kind of side by side just to show you exactly what the difference is."
+    },
+    {
+        "timestamp": "00:52:41",
+        "content": "So here is the code where if we don't find the number, we don't print anything, right?"
+    },
+    {
+        "timestamp": "00:52:54",
+        "content": "So it's just the for loop with an if and we say we found it and the one on the right is the code where we did find it, where if we didn't find it, we printed that we didn't find it."
+    },
+    {
+        "timestamp": "00:52:57",
+        "content": "So the only things that are added in addition to the code on the left is the stuff that's bolded."
+    },
+    {
+        "timestamp": "00:53:02",
+        "content": "All right, so I just have this flag that I initially set to false."
+    },
+    {
+        "timestamp": "00:53:05",
+        "content": "I set it to true when this event happened, that is, I found the number and then I do the check at the end to print or not print out."
+    },
+    {
+        "timestamp": "00:53:16",
+        "content": "Yeah. And I don't use ls in the F or down here."
+    },
+    {
+        "timestamp": "00:53:25",
+        "content": "In the F so we don't use the else inside the if I was secret because that if we're else will be done every time through the loop."
+    },
+    {
+        "timestamp": "00:53:37",
+        "content": "Right. And I only print that. We didn't find it one time at the end."
+    },
+    {
+        "timestamp": "00:53:42",
+        "content": "Right. If I have an on else inside the for loop, it's basically asking if I."
+    },
+    {
+        "timestamp": "00:53:49",
+        "content": "Is the secret number. So zero is not the secret number."
+    },
+    {
+        "timestamp": "00:53:52",
+        "content": "We would hit the else. One is not the secret number. We hit the else."
+    },
+    {
+        "timestamp": "00:53:56",
+        "content": "Two is not the secret number. We hit the else and only when I get to seven."
+    },
+    {
+        "timestamp": "00:53:59",
+        "content": "In this case it is the secret number. So I hit the F and so on."
+    },
+    {
+        "timestamp": "00:54:03",
+        "content": "So it's not something I want to do every time through the loop. It's I put it at the end because I only need to do it once."
+    },
+    {
+        "timestamp": "00:54:14",
+        "content": "That I mean, Democrats. Okay."
+    },
+    {
+        "timestamp": "00:54:20",
+        "content": "So. Boolean variables are a variable that is in one of two states."
+    },
+    {
+        "timestamp": "00:54:26",
+        "content": "Right I used here. True or false?"
+    },
+    {
+        "timestamp": "00:54:28",
+        "content": "But as I mentioned, you can use zero or one A or B as long as you as the programmer remember what values you're expecting."
+    },
+    {
+        "timestamp": "00:54:34",
+        "content": "This this variable to take on boolean variables can be used as signals that something happened in the code."
+    },
+    {
+        "timestamp": "00:54:41",
+        "content": "Right? So this could be useful in a quick situation. We call these boolean flags."
+    },
+    {
+        "timestamp": "00:54:45",
+        "content": "But again, it's just a name. It's it's just a variable that changes state depending on if some event happened in the code."
+    },
+    {
+        "timestamp": "00:55:07",
+        "content": "Okay. So I'm coming back to the idea of while in for loops and we've already seen that there are many situations where for loops are a lot more, a lot easier to use than while loops. Okay, so when we have four loops at a rate through a sequence of values, so the guess and check algorithm actually lends itself a little bit better to for loops than loops."
+    },
+    {
+        "timestamp": "00:55:12",
+        "content": "So here's an example of us trying to find the cube root in this particular case, not the square root of a number."
+    },
+    {
+        "timestamp": "00:55:19",
+        "content": "And again, we're only asking if this number X is it, or in this case, cube is a perfect cube."
+    },
+    {
+        "timestamp": "00:55:26",
+        "content": "Okay. So the way the code works with a for loop is we're going to iterate through all the possible values."
+    },
+    {
+        "timestamp": "00:55:34",
+        "content": "So we have for our guess in range some number."
+    },
+    {
+        "timestamp": "00:55:40",
+        "content": "So we're going to check all the values zero all the way up through cube plus one."
+    },
+    {
+        "timestamp": "00:55:44",
+        "content": "The reason why we did the plus one is because if the user gives us the number one, we want to check one itself, right?"
+    },
+    {
+        "timestamp": "00:55:50",
+        "content": "If we didn't have cube plus one, if we just had Cube, we would mistakenly stop at zero, even though one is a perfect."
+    },
+    {
+        "timestamp": "00:55:59",
+        "content": "Okay. And then inside the for loop, we just have if guest cubed is equal to cube."
+    },
+    {
+        "timestamp": "00:56:04",
+        "content": "Then we have found our perfect cube. If we have negative numbers with cubes, it's just adding a little bit of extra code."
+    },
+    {
+        "timestamp": "00:56:21",
+        "content": "But it's not as weird as with the square root, right, because the cube root of a negative number is just the cube root of that positive version of that number with a negative sign in front of it."
+    },
+    {
+        "timestamp": "00:56:33",
+        "content": "So all we're doing with a negative number, as the input is saying, I'm going to iterate through all these values and through zero all the way up to the positive version of whatever the user gave me."
+    },
+    {
+        "timestamp": "00:56:41",
+        "content": "So this is taking the absolute value of the number the user gave me and adding one to it."
+    },
+    {
+        "timestamp": "00:56:46",
+        "content": "So just kind of like the code on the previous slide, except we're doing the absolute value of it."
+    },
+    {
+        "timestamp": "00:56:55",
+        "content": "We're checking if the guest cubed is equivalent to the absolute value of cubed, exactly the same as on the previous slide, except taking the absolute value of the cube."
+    },
+    {
+        "timestamp": "00:57:00",
+        "content": "And then we have this extra little bit that checks if the user actually gave us a negative number."
+    },
+    {
+        "timestamp": "00:57:05",
+        "content": "So do we need to put a negative number in front of our guess?"
+    },
+    {
+        "timestamp": "00:57:13",
+        "content": "So if the user actually did give us a negative number, let's just take do minus whatever value we just found for the cube and then we can print the cube."
+    },
+    {
+        "timestamp": "00:57:22",
+        "content": "Of this perfect group. Okay."
+    },
+    {
+        "timestamp": "00:57:25",
+        "content": "So again, same code as before. The only difference is absolute value of cube and adding this check to deal with negative numbers."
+    },
+    {
+        "timestamp": "00:57:42",
+        "content": "Okay. So we can actually make this code a little bit faster because for example, when we're taking the, you know, checking the keyboard of 27, the numbers we're checking are 0123, four, five, six."
+    },
+    {
+        "timestamp": "00:57:49",
+        "content": "In our for loop all the way up to 27. Right."
+    },
+    {
+        "timestamp": "00:57:52",
+        "content": "But we can recognize the fact that when we reach for a 27 five, let's say 26, we can recognize the fact that when we hit three."
+    },
+    {
+        "timestamp": "00:58:04",
+        "content": "The gas cubed is actually 27. Right."
+    },
+    {
+        "timestamp": "00:58:15",
+        "content": "And so in our for loop, it doesn't make sense to keep checking for five, six, seven to see if those numbers are then going to match or be our cube root for a potentially perfect cube."
+    },
+    {
+        "timestamp": "00:58:23",
+        "content": "And so that's what this code is doing. It's going to have a little if statement in here."
+    },
+    {
+        "timestamp": "00:58:35",
+        "content": "So again, this is the same as before, but we're going to have a little if statement that says if the guest cubed is greater than or equal to, not just equal to, but greater than or equal to."
+    },
+    {
+        "timestamp": "00:58:39",
+        "content": "Let's break out of the loop. Okay. And so when this condition is false or sorry, when this condition is true, guess cubed is greater than or equal to."
+    },
+    {
+        "timestamp": "00:58:51",
+        "content": "We have exited the loop. But now, just like with the square root code, with the y loop, we have to see why we exited the loop."
+    },
+    {
+        "timestamp": "00:58:58",
+        "content": "Why did we break out of this loop prematurely? Okay."
+    },
+    {
+        "timestamp": "00:59:02",
+        "content": "One is we exited because the guest cubed was equal to the cube or the guest cubed was greater than the cube."
+    },
+    {
+        "timestamp": "00:59:10",
+        "content": "And so then we have a little, if else, a conditional here that says if we exited because it's not equal greater than then it's not a perfect cube."
+    },
+    {
+        "timestamp": "00:59:21",
+        "content": "And otherwise we exited because it was equal to which is the same code we had on the previous slide."
+    },
+    {
+        "timestamp": "00:59:28",
+        "content": "Check whether the user gave us a positive or negative value."
+    },
+    {
+        "timestamp": "00:59:32",
+        "content": "Put the negative sign in front of our guest and then print the perfect Kubert."
+    },
+    {
+        "timestamp": "00:59:39",
+        "content": "So all variations of the same sort of starter code."
+    },
+    {
+        "timestamp": "00:59:42",
+        "content": "We're just adding little bits of functionality and making the code slightly more efficient here and there."
+    },
+    {
+        "timestamp": "00:59:49",
+        "content": "So I have another example. And this example is probably the point in this class where you're like, Aha, this is what computational thinking means."
+    },
+    {
+        "timestamp": "00:59:57",
+        "content": "So remember these word problems from childhood, right?"
+    },
+    {
+        "timestamp": "01:00:01",
+        "content": "You see a math problem, you have basically a system of equations algebraically."
+    },
+    {
+        "timestamp": "01:00:06",
+        "content": "You could probably solve it within a minute or so. We can actually apply computation to solve problems just like these."
+    },
+    {
+        "timestamp": "01:00:14",
+        "content": "So we don't need to do it algebraically. We can just tell the computer, here's a bunch of values I want you to try."
+    },
+    {
+        "timestamp": "01:00:20",
+        "content": "Try them to see if they match these systems of equations and then print out the answer."
+    },
+    {
+        "timestamp": "01:00:25",
+        "content": "Right. So here's an example. I've got Elizabeth and Cindy selling tickets to a fundraiser."
+    },
+    {
+        "timestamp": "01:00:30",
+        "content": "Ben sells to fewer than us, and he sells twice as many. Ten total tickets were sold."
+    },
+    {
+        "timestamp": "01:00:35",
+        "content": "How many did Alyssa sell? Here's some code that could solve this problem for us."
+    },
+    {
+        "timestamp": "01:00:41",
+        "content": "I'm basically figuring out all the possible combinations for tickets that Alyssa and Ben and Cindy could sell."
+    },
+    {
+        "timestamp": "01:00:48",
+        "content": "Right. So I've got three loops each nested, right?"
+    },
+    {
+        "timestamp": "01:00:52",
+        "content": "So Alyssa could have could sell zero or one ticket or two tickets and so on, but for every value of a list."
+    },
+    {
+        "timestamp": "01:00:59",
+        "content": "So unless I can have cancel zero one or two tickets for every one of those, Ben can sell zero one or two tickets."
+    },
+    {
+        "timestamp": "01:01:07",
+        "content": "Right. So Alyssa can sell zero, Ben can sell zero, Cindy can sell zero."
+    },
+    {
+        "timestamp": "01:01:11",
+        "content": "Alyssa can sell zero. Ben can sell one, Cindy can sell zero and so on."
+    },
+    {
+        "timestamp": "01:01:14",
+        "content": "So we're basically having these three for loops that make all the possible combinations of ticket."
+    },
+    {
+        "timestamp": "01:01:18",
+        "content": "So here I have a list of Ben and Cindy trying to sell tickets to a fundraiser, and then I have my system of equations here."
+    },
+    {
+        "timestamp": "01:01:25",
+        "content": "So in total they sell ten tickets. So here total to less than twice are all boolean variables."
+    },
+    {
+        "timestamp": "01:01:31",
+        "content": "So A plus B plus is equivalent to ten is the first condition I need to hold b is equal to a minus."
+    },
+    {
+        "timestamp": "01:01:38",
+        "content": "Two is the second condition I need to hold and C is equal to is equivalent to two times."
+    },
+    {
+        "timestamp": "01:01:43",
+        "content": "A is the last condition I need hold. Those are the conditions from the previous slides."
+    },
+    {
+        "timestamp": "01:01:46",
+        "content": "Right. And so these three booleans whenever they hold total is true and two less is true and twice is true when all these things, three things hold."
+    },
+    {
+        "timestamp": "01:01:57",
+        "content": "I have found the solution to my problem. So inside my code, this is Elizabeth and Cindy trying to sell tickets."
+    },
+    {
+        "timestamp": "01:02:06",
+        "content": "And the code automatically tells me they sold this message."
+    },
+    {
+        "timestamp": "01:02:09",
+        "content": "And what's cool about this code is we can then change something about it and then we can run it again."
+    },
+    {
+        "timestamp": "01:02:15",
+        "content": "And immediately it tells us what the new solution is. We don't have to do it algebraically and solve it all over again."
+    },
+    {
+        "timestamp": "01:02:23",
+        "content": "The problem with this code and the way I wrote it specifically is it's really slow for big numbers."
+    },
+    {
+        "timestamp": "01:02:28",
+        "content": "If I change it to a thousand tickets being sold by three people."
+    },
+    {
+        "timestamp": "01:02:32",
+        "content": "Right. And then a couple other changes here. Just the sheer fact that I've got Alissa iterating through 0 to 1000 and then iterating"
+    },
+    {
+        "timestamp": "01:02:38",
+        "content": "through zero thousand and Cindy iterating through zero 2000 takes a really long time."
+    },
+    {
+        "timestamp": "01:02:43",
+        "content": "And so that particular code, I'm not even going to run it will take a really long time if I change the values to be a thousand, 20 and twice."
+    },
+    {
+        "timestamp": "01:02:52",
+        "content": "But instead we can use kind of a mix of algebra and computation to solve the problem."
+    },
+    {
+        "timestamp": "01:02:57",
+        "content": "We recognize we actually only need to loop through one loop, right?"
+    },
+    {
+        "timestamp": "01:03:01",
+        "content": "I only care about maybe checking Alice's number of tickets being zero through potentially a thousand tickets sold."
+    },
+    {
+        "timestamp": "01:03:08",
+        "content": "And then I can use my other two equations."
+    },
+    {
+        "timestamp": "01:03:11",
+        "content": "Right. Ben and Cindy, how many did they sell with respect to Alissa?"
+    },
+    {
+        "timestamp": "01:03:15",
+        "content": "And then I've got my two other equations here. Which will tell me how many buttons Cindy sold with respect to Alice's Loop."
+    },
+    {
+        "timestamp": "01:03:25",
+        "content": "Right. And then my last equation here is that Ben and Cindy and Alissa all together had to sell a thousand."
+    },
+    {
+        "timestamp": "01:03:33",
+        "content": "And so with this particular code. I'm able to find the answer to the question, which is how many tickets they sold."
+    },
+    {
+        "timestamp": "01:03:41",
+        "content": "And again, this is really awesome because now I can make small changes to the numbers and solve the problem basically immediately like that."
+    },
+    {
+        "timestamp": "01:03:51",
+        "content": "Right? I don't need to go back and solve it algebraically as I would if I were to do math."
+    },
+    {
+        "timestamp": "01:03:58",
+        "content": "Okay. So we can apply computation to many different problems."
+    },
+    {
+        "timestamp": "01:04:05",
+        "content": "I hope that this is a really good showcase, this this word problem of what we mean by computational thinking and the kinds of things we want you to come away from, come away with in this class."
+    },
+    {
+        "timestamp": "01:04:13",
+        "content": "The last thing I wanted to talk about and I'll just do a quick intuition is binary numbers."
+    },
+    {
+        "timestamp": "01:04:17",
+        "content": "And this is actually a precursor to the next algorithm we're going to see in the next lecture an approximation algorithm."
+    },
+    {
+        "timestamp": "01:04:23",
+        "content": "It's going to be an improvement on the guest centric algorithm. So so far we've seen numbers in Python."
+    },
+    {
+        "timestamp": "01:04:29",
+        "content": "They can be integers, which are whole numbers and floats which are real numbers."
+    },
+    {
+        "timestamp": "01:04:34",
+        "content": "But in programing, some interesting things happen when we deal with floats."
+    },
+    {
+        "timestamp": "01:04:40",
+        "content": "Okay."
+    },
+    {
+        "timestamp": "01:04:40",
+        "content": "And this is going to be our motivation for talking about binary numbers and then fractions and then floats in this lecture and then the next one."
+    },
+    {
+        "timestamp": "01:04:47",
+        "content": "So here's an example. Of some code."
+    },
+    {
+        "timestamp": "01:04:52",
+        "content": "So I've got it's exactly what's in the slides. I've got an integer X and all I'm doing in this code is I have a loop through range ten."
+    },
+    {
+        "timestamp": "01:05:00",
+        "content": "So that means it's going to loop through ten times. And I'm adding point 110 times 4.1 plus point one plus point 110 times."
+    },
+    {
+        "timestamp": "01:05:08",
+        "content": "And I'm going to print whether X the sum point one plus point one plus one is equal to one."
+    },
+    {
+        "timestamp": "01:05:15",
+        "content": "And just to show you how I'm not pulling your leg, I'm going to run it and print whether X 0.1 plus point one plus by 110 times is equivalent to one."
+    },
+    {
+        "timestamp": "01:05:24",
+        "content": "And this code prints false. Not intuitive, right?"
+    },
+    {
+        "timestamp": "01:05:28",
+        "content": "If I'm adding point 110 times, I should be getting one. But I'm not in programing."
+    },
+    {
+        "timestamp": "01:05:36",
+        "content": "And just to show you the actual answer we get, let's print what the value of X is and then ask whether that's the same as just multiplying point one by ten."
+    },
+    {
+        "timestamp": "01:05:44",
+        "content": "So doing the loop where we add this number ten times. Gives me actually .9999999, whereas just multiplying point one by ten gives me one as I expect."
+    },
+    {
+        "timestamp": "01:05:56",
+        "content": "Okay. And this is the motivation for or I guess the precursor to our next algorithm, the approximation algorithm."
+    },
+    {
+        "timestamp": "01:06:04",
+        "content": "Okay. So we have this thing called a floating point error."
+    },
+    {
+        "timestamp": "01:06:08",
+        "content": "And why does it happen? And since it happens, we can't do equivalency, right?"
+    },
+    {
+        "timestamp": "01:06:23",
+        "content": "We can't use the equal sign between. Floats because we get things like this that are going to completely mess up our program when we expect, you know, something as simple as adding point one to itself ten times to be one, and it's not right."
+    },
+    {
+        "timestamp": "01:06:30",
+        "content": "And so the big idea here is we have operations on floats in the way because of the way floats are actually stored in computer memory."
+    },
+    {
+        "timestamp": "01:06:37",
+        "content": "These operations introduce a very small error, super, super small every time you do an operation with a float."
+    },
+    {
+        "timestamp": "01:06:44",
+        "content": "But the more you do this operation that has this tiny error, the more this error gets magnified."
+    },
+    {
+        "timestamp": "01:06:49",
+        "content": "Right? And so then we see surprising results like that."
+    },
+    {
+        "timestamp": "01:06:53",
+        "content": "And so that comes about with the way that floats are actually stored in the computer."
+    },
+    {
+        "timestamp": "01:06:59",
+        "content": "So what we have in the computer is we work with binary zeros and ones, but humans actually work in base temp, right?"
+    },
+    {
+        "timestamp": "01:07:06",
+        "content": "We think from 0 to 9, but the computer works in base two, either zero or one."
+    },
+    {
+        "timestamp": "01:07:12",
+        "content": "And the reason it works through zero and one is because of the way that the computer hardware is built."
+    },
+    {
+        "timestamp": "01:07:17",
+        "content": "Right. It's easy for the computer hardware to say that a magnetic spin is up or down, zero or one."
+    },
+    {
+        "timestamp": "01:07:24",
+        "content": "It's easy for the hardware to say that it has a voltage that's lower high."
+    },
+    {
+        "timestamp": "01:07:34",
+        "content": "Right. If it would be a lot harder for the computer hardware to say, hey, I have a voltage at zero, low, high, let's say one or it's 1/10 of the high or 2/10 of the high."
+    },
+    {
+        "timestamp": "01:07:39",
+        "content": "There would be too many errors introduced. And so it's a lot easier for the computer hardware to just be in one of these two states."
+    },
+    {
+        "timestamp": "01:07:51",
+        "content": "Zero one, right. So that's where binary comes in. And so when we're dealing with integers, this is not a problem because we can easily convert numbers that are in base ten to base two that are whole numbers integers."
+    },
+    {
+        "timestamp": "01:08:02",
+        "content": "The problem will come when we do floats."
+    },
+    {
+        "timestamp": "01:08:04",
+        "content": "So you don't need to know how to do the conversion, but it will give you an intuition for what's going to happen."
+    },
+    {
+        "timestamp": "01:08:10",
+        "content": "So the number 1507 and base ten."
+    },
+    {
+        "timestamp": "01:08:13",
+        "content": "So that's what we have up here is a thousand plus 500 plus zero times ten plus seven."
+    },
+    {
+        "timestamp": "01:08:18",
+        "content": "Right in base two, we have a similar pattern."
+    },
+    {
+        "timestamp": "01:08:22",
+        "content": "We have some some whole number multiplied by some power of two."
+    },
+    {
+        "timestamp": "01:08:26",
+        "content": "Here we had the whole number B be either number zero through nine multiplied by some power of ten."
+    },
+    {
+        "timestamp": "01:08:32",
+        "content": "But in base two, we're going to have either zero or one multiplied by some power of two."
+    },
+    {
+        "timestamp": "01:08:39",
+        "content": "And if we're trying to convert the number 1507 from base ten to base two."
+    },
+    {
+        "timestamp": "01:08:45",
+        "content": "I guess humanly speaking, the way we think about it is what is the biggest power of two that we can have that takes us close to, but not over 1507?"
+    },
+    {
+        "timestamp": "01:08:54",
+        "content": "And that's ten to to the ten 1024, because to do the 11 is 20 something and that's already too big."
+    },
+    {
+        "timestamp": "01:09:01",
+        "content": "And then you ask yourself, what's the next biggest power of two? I can add to this number 24 that brings me close to but not over 1507."
+    },
+    {
+        "timestamp": "01:09:11",
+        "content": "That's going to be 256. Notice we skipped two to the nine because adding two to the nine takes us over 1507."
+    },
+    {
+        "timestamp": "01:09:19",
+        "content": "It's adding 512 to 1024."
+    },
+    {
+        "timestamp": "01:09:22",
+        "content": "And so we repeat this process where we're basically trying to figure out what are the biggest powers of two we can add in order that makes up 1507."
+    },
+    {
+        "timestamp": "01:09:32",
+        "content": "And it turns out it's going to be two to the ten plus two to the eight plus to the seven clusters."
+    },
+    {
+        "timestamp": "01:09:36",
+        "content": "The six +25, two to the four, three and two are all going to be zeros and two to the one and two to the zero and the bits."
+    },
+    {
+        "timestamp": "01:09:44",
+        "content": "Right. One times through the ten, one times to the eight is basically what gets represented here, right?"
+    },
+    {
+        "timestamp": "01:09:50",
+        "content": "These whole number portions that we multiply the powers of ten by."
+    },
+    {
+        "timestamp": "01:09:56",
+        "content": "And that's how we convert from a from a decimal number to a binary number."
+    },
+    {
+        "timestamp": "01:10:00",
+        "content": "But again, this is kind of a human way of converting. We can actually do it in a more systematic way, a more not a more imperative way, right?"
+    },
+    {
+        "timestamp": "01:10:09",
+        "content": "A recipe way, some way that a computer can actually use to take a number and convert it to binary."
+    },
+    {
+        "timestamp": "01:10:15",
+        "content": "And you would never have to come up with this way. But given this way of converting the binary, you should be able to code it up."
+    },
+    {
+        "timestamp": "01:10:23",
+        "content": "So the idea here is we're going to take a number and we're going to look at the remainder when we divide it by two."
+    },
+    {
+        "timestamp": "01:10:33",
+        "content": "Right. If it's an odd number, obviously the remainders one, if it's an even number, the remainder zero."
+    },
+    {
+        "timestamp": "01:10:37",
+        "content": "And that remainder actually gives us the last bit, the farthest right bit."
+    },
+    {
+        "timestamp": "01:10:42",
+        "content": "And then we can take the number and divide it by to fully. And then that gives us the remaining four digits."
+    },
+    {
+        "timestamp": "01:10:48",
+        "content": "So you see everything else just gets shifted over. And the way the code looks is just doing successive divisions and figuring out the remainders."
+    },
+    {
+        "timestamp": "01:10:58",
+        "content": "So I'm just going to look at the Python tutor real quick and then we can we can stop."
+    },
+    {
+        "timestamp": "01:11:07",
+        "content": "So if we're trying to convert the number 1507 following this particular recipe, all we do is we look at the remainder when we divide the number by two."
+    },
+    {
+        "timestamp": "01:11:11",
+        "content": "So this is an odd number. Obviously, the remainder is going to be one."
+    },
+    {
+        "timestamp": "01:11:15",
+        "content": "So we add a one to our binary representation and then we're going to keep adding what happens when we divide the the remaining numbers by two?"
+    },
+    {
+        "timestamp": "01:11:26",
+        "content": "We're going to keep adding the remainder to the front of this string here."
+    },
+    {
+        "timestamp": "01:11:30",
+        "content": "So if we divide the number 1507 by two, that gives us 753."
+    },
+    {
+        "timestamp": "01:11:35",
+        "content": "And now we ask, is 753 odd? Or even it's odd."
+    },
+    {
+        "timestamp": "01:11:39",
+        "content": "So we add another one to the front of this string. The result string."
+    },
+    {
+        "timestamp": "01:11:43",
+        "content": "Divide 753 by two, it's 376. This is even."
+    },
+    {
+        "timestamp": "01:11:47",
+        "content": "So now we add a zero to the front of my string. Right. So notice what happens to this string as we go."
+    },
+    {
+        "timestamp": "01:11:52",
+        "content": "Step by step. 376 divided by two is 188."
+    },
+    {
+        "timestamp": "01:11:56",
+        "content": "What is this even number? So we add a zero to the front of the string."
+    },
+    {
+        "timestamp": "01:12:01",
+        "content": "188 divided by two is 94. Again, it's an even number, so we add a zero to the front of this string."
+    },
+    {
+        "timestamp": "01:12:07",
+        "content": "94 divide by two is 47. It's odd. So we out of 147 divided by two is 23."
+    },
+    {
+        "timestamp": "01:12:12",
+        "content": "It's odd. So we had a 123 divide by two is 11."
+    },
+    {
+        "timestamp": "01:12:15",
+        "content": "So we had an odd so it was we had a 111 divide by two is five."
+    },
+    {
+        "timestamp": "01:12:19",
+        "content": "So it's odd. So we had a one. And then five of my toes, even we had a zero and then one is our last number, so we had a one."
+    },
+    {
+        "timestamp": "01:12:27",
+        "content": "And notice this is the exact same number we had when we did it in this human thoughtful"
+    },
+    {
+        "timestamp": "01:12:38",
+        "content": "way where we were trying to figure out the highest powers of two we can take to go up to, but not over the number 1507."
+    },
+    {
+        "timestamp": "01:12:42",
+        "content": "Okay. But we did this using just this this very iterative, very nice, loopy code."
+    },
+    {
+        "timestamp": "01:12:48",
+        "content": "And if we want it to do a negative number, we would just add these two boxes here."
+    },
+    {
+        "timestamp": "01:12:52",
+        "content": "It just basically means we had a negative sign in front of us. Okay."
+    },
+    {
+        "timestamp": "01:12:58",
+        "content": "Yeah."
+    }
+]

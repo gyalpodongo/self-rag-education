@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi!</p>\n<p></p>\n<p>Is it possible to get partial credit on our quiz coding questions?</p>\n<p></p>\n<p>Thank you!</p>\n<p></p>",
+        "type": "question",
+        "created": "2022-09-28T20:44:43.510Z",
+        "subject": "Partial Credit",
+        "_id": "l8m3iy5yb394uh"
+    },
+    {
+        "content": "<p>Yes, we do not debug but can take a quick look.\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-09-29T18:32:37.867Z",
+        "_id": "l8m3iy5yb394uh"
+    }
+]

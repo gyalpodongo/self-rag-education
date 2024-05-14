@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>My file is having trouble recognizing string.ascii_lowercase even after importing it from string -- any advice on how to navigate this? I would just define a new variable with the alphabet, but the test file uses string.ascii_lowercase and since my file doesn&#39;t recognize it I don&#39;t pass the test cases when I should.</p>",
+        "type": "question",
+        "created": "2022-09-24T02:35:00.289Z",
+        "subject": "string.ascii_lowercase",
+        "_id": "l8fau5hd3ez7na"
+    },
+    {
+        "content": "Can you send what the terminal says when you try to run it?",
+        "type": "i_answer",
+        "created": "2022-09-25T19:25:18.877Z",
+        "_id": "l8fau5hd3ez7na"
+    }
+]

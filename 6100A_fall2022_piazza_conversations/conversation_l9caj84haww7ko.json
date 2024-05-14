@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>If our final grade on the 6.100A website is green, does that mean we are passing? What % is a passing grade for this class, or is that determined after the final?\u00a0</p>",
+        "type": "question",
+        "created": "2022-10-17T04:42:54.305Z",
+        "subject": "What is a passing grade in this class?",
+        "_id": "l9caj84haww7ko"
+    },
+    {
+        "content": "The syllabus says the highest a C (which is the PNR passing grade) will be is a 70.\u00a0",
+        "type": "s_answer",
+        "created": "2022-10-17T18:01:52.095Z",
+        "_id": "l9caj84haww7ko"
+    }
+]

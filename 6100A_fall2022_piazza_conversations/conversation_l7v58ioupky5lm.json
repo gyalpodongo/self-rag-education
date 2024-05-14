@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>I submitted answers for all pset 0 questions, but I don&#39;t see a place to submit the whole pset.\u00a0</p>",
+        "type": "question",
+        "created": "2022-09-10T00:02:49.374Z",
+        "subject": "Do we need to submit pset 0 as a whole or just individual problems?",
+        "_id": "l7v58ioupky5lm"
+    },
+    {
+        "content": "<md>There is only **ps0.py** file that needs to be submitted as a whole with the assignment of raising a number to a power and taking a logarithm. The rest of pset 0 is mainly about setting up Python and software in addition to survey questions online.</md>",
+        "type": "i_answer",
+        "created": "2022-09-10T03:45:57.557Z",
+        "_id": "l7v58ioupky5lm"
+    }
+]

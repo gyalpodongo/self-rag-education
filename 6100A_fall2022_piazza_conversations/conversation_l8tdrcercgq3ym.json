@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>I&#39;m getting this error when I run the tester but I&#39;m not sure what it means/how to debug it within the get_tfidf function:</p>\n<p></p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl7mxmtikc5h5mb%2Ff652fa6f815ab3536e1f5537b24fd29d6a3fdae3f0c3730e4e69b25d3ec03184%2Fpset3tester.png\" width=\"354\" height=\"108\" alt=\"\" /></p>",
+        "type": "question",
+        "created": "2022-10-03T23:05:34.611Z",
+        "subject": "Testing error in Pset 3 get_tfidf",
+        "_id": "l8tdrcercgq3ym"
+    },
+    {
+        "content": "<p>Hard to say what the error is based off this. I would recommend going to OH for help on how to debug</p>",
+        "type": "i_answer",
+        "created": "2022-10-04T03:59:00.160Z",
+        "_id": "l8tdrcercgq3ym"
+    }
+]

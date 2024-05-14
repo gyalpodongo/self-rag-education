@@ -1,0 +1,33 @@
+[
+    {
+        "content": "<p>Hi,<br /><br />Just wondering, for the case where the initial deposit is too low and as such the r value will never cause the amount saved to meet the break condition of the while loop, is it ok to say something like:<br /><br />&#34;If you have had more than 20 guesses (i.e. if steps&gt;20), exit the loop and set r=None etc.&#34;?<br /><br />I realise this is an arbitrary value, so I wondered if I should implement another break condition instead. I thought about doing something that compares the difference in successive guesses and if this difference meets a specific tolerance, then exit, but I realised that setting the value of tol/steps at which to break are essentially the same thing.<br /><br />Thanks.</p>",
+        "type": "question",
+        "created": "2022-09-18T23:58:36.736Z",
+        "subject": "PSET 1 Part C) query",
+        "_id": "l8801rr4roy3uj"
+    },
+    {
+        "content": "Well, mathematically speaking, how would you know if it\u2019s impossible for a certain R parameter to never get you to your goal in the set time? You shouldn\u2019t need to break after a number of steps.\u00a0",
+        "type": "i_answer",
+        "created": "2022-09-19T00:02:29.382Z",
+        "_id": "l8801rr4roy3uj"
+    },
+    {
+        "content": "<p>Ah ok - I guess I could analytically define the maximum value of amount_saved (using r=1) and if this value is &lt; required amount, then break?</p>",
+        "type": "followup",
+        "created": "2022-09-19T00:06:02.607Z",
+        "_id": "l8801rr4roy3uj"
+    },
+    {
+        "content": "Yup! You may not even need to break if you know it ahead of time too.",
+        "type": "followup",
+        "created": "2022-09-19T00:12:47.062Z",
+        "_id": "l8801rr4roy3uj"
+    },
+    {
+        "content": "<p>Makes sense- thanks a lot for the help.</p>",
+        "type": "followup_response",
+        "created": "2022-09-19T00:13:26.789Z",
+        "_id": "l8801rr4roy3uj"
+    }
+]

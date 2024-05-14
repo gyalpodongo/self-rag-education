@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi,</p>\n<p>I solved the &#34;Similarity&#34; part of the pset but am not sure what the question means when it says that the function should be able to be used with the outputs of get_frequencies and get_letter_frequencies. Does that mean we need to build the calculate_similarity_score function with those functions? I built the function without using them. The same thing is suggested in part 6 and I&#39;m not sure how to utilize the pre-existing functions.</p>\n<p>Thanks!</p>",
+        "type": "question",
+        "created": "2022-10-02T00:14:58.999Z",
+        "subject": "Pset 3 functions",
+        "_id": "l8qlcwc7u81564"
+    },
+    {
+        "content": "<md>You don't have to use pre-existing functions in calculate\\_similarity\\_score. I think it's trying to say that the output from say get_frequencies (a freq dictionary) should be a valid input to calculate\\_similarity\\_score. \n\nin terms of Part 6 about TF-IDF, that involves some frequencies calculations, so using a function you wrote earlier could be helpful.</md>",
+        "type": "i_answer",
+        "created": "2022-10-02T16:54:09.880Z",
+        "_id": "l8qlcwc7u81564"
+    }
+]

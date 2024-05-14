@@ -1,0 +1,33 @@
+[
+    {
+        "content": "<p>Hi--\u00a0</p>\n<p></p>\n<p>Would it be possible to get a manual regrade on PSET 4? I passed all test cases originally but only got a 56 on the autograder.</p>\n<p></p>\n<p>Thanks!</p>",
+        "type": "question",
+        "created": "2022-10-20T02:22:12.576Z",
+        "subject": "PSET 4 manual regrade request",
+        "_id": "l9gftug0tt7y3"
+    },
+    {
+        "content": "<p><strong attention=\"j7awud7zf0p2uu\">@Kuan Wei Huang</strong>\u00a0</p>",
+        "type": "followup",
+        "created": "2022-10-21T03:35:30.037Z",
+        "_id": "l9gftug0tt7y3"
+    },
+    {
+        "content": "<p>Sure will take a look. What&#39;s your kerb?</p>",
+        "type": "i_answer",
+        "created": "2022-10-21T12:24:56.743Z",
+        "_id": "l9gftug0tt7y3"
+    },
+    {
+        "content": "<p>My kerb is pronina@mit.edu . Thanks again!</p>",
+        "type": "followup",
+        "created": "2022-10-21T12:28:59.089Z",
+        "_id": "l9gftug0tt7y3"
+    },
+    {
+        "content": "<p>Got it. Just added you to the manual regrade list. You should hear back next week. Thanks for your patience.</p>",
+        "type": "followup_response",
+        "created": "2022-10-21T12:30:50.070Z",
+        "_id": "l9gftug0tt7y3"
+    }
+]

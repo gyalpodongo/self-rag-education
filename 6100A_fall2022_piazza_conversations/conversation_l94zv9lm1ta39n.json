@@ -1,0 +1,27 @@
+[
+    {
+        "content": "Hi,\u00a0<div>Below I have attached a picture of the error I am getting. I have highlighted the specific line. <img src=\"https://piazza.com/redirect/s3?bucket=uploads&amp;prefix=attach%2Fl5s90ip6zjd5tz%2Fl7qan195ifk6fo%2Fjskvbrjfjxwq%2Fpublic_2022_10_11.jpg\" /><p></p>I don\u2019t know how I would fix this error because technically there is no more data beyond the bounds of \u201call\u201d graph. The shift maker buttons work fine for other time ranges (1m, 6m, 1y\u2026) and does not generate an error when I reach the limit on if I\u2019m in a different range, but only does during \u201call\u201d.\u00a0</div><div><br /></div><div>Should I raise an error to solve this error?\u00a0</div><div>Because although clicking &#43;/- 1M in the \u201call\u201d graph generates an error, it does not affect my usage of the other buttons afterwards at all.\u00a0</div><div><br /></div><div>Thanks so much,\u00a0</div><div>Grace\u00a0</div>",
+        "type": "question",
+        "created": "2022-10-12T02:09:57.082Z",
+        "subject": "Follow up question about TypeError",
+        "_id": "l94zv9lm1ta39n"
+    },
+    {
+        "content": "<div>Sorry I\u2019m not sure why the picture is so blurry, please let me know if you need a clearer pic, I will try to figure something out.\u00a0</div>",
+        "type": "s_answer",
+        "created": "2022-10-12T02:11:00.738Z",
+        "_id": "l94zv9lm1ta39n"
+    },
+    {
+        "content": "<p>Sorry I can&#39;t read this from the picture you uploaded. You&#39;re on a Mac so what you can do is hold\u00a0<strong>Command</strong>,\u00a0<strong>Shift</strong>, and\u00a0<strong>4</strong> to take a screenshot of what you&#39;re seeing and reupload as another question.</p>\n<p></p>\n<p>Also I would recommend posting to all instructors, not just me, so we can get their input if needed.</p>\n<p></p>\n<p>Sorry about that</p>",
+        "type": "i_answer",
+        "created": "2022-10-12T18:32:24.519Z",
+        "_id": "l94zv9lm1ta39n"
+    },
+    {
+        "content": "Thank you! I think I have resolved the problem. I was missing a return None statement and a conditional. Thank you for your time!\u00a0<div><br /></div>",
+        "type": "followup",
+        "created": "2022-10-12T18:52:11.245Z",
+        "_id": "l94zv9lm1ta39n"
+    }
+]

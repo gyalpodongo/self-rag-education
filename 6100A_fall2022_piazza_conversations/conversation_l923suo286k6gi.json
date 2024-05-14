@@ -1,0 +1,21 @@
+[
+    {
+        "content": "Hi,\u00a0<div><br /></div><div>For PSET 3, I only passed 31 out of the 34 public tests because I failed all 3 of the TestGetFrequentWords, but when I was running it, the code for this part works fine. Specifically, the code fails at a statement where I merge to dictionaries with a \u201c|\u201d\u00a0</div><div><br /></div><div>I learned to use this operand online and it says that it only works on Python versions 3.9 and higher. Is it possible that the test cases failed because the auto grader version wasn\u2019t high enough or is there a problem when merging with \u201c|\u201d?</div><div><br /></div><div>Thanks</div>",
+        "type": "question",
+        "created": "2022-10-10T01:36:44.354Z",
+        "subject": "PSET 3 Grade",
+        "_id": "l923suo286k6gi"
+    },
+    {
+        "content": "<p>I had the same issue with my code failing the tests due to the use of the | operand to merge dictionaries.</p>",
+        "type": "followup",
+        "created": "2022-10-10T01:39:14.835Z",
+        "_id": "l923suo286k6gi"
+    },
+    {
+        "content": "<p>Can you guys post your kerbs below and we&#39;ll take another look? Thanks!</p>",
+        "type": "i_answer",
+        "created": "2022-10-10T14:45:47.003Z",
+        "_id": "l923suo286k6gi"
+    }
+]

@@ -1,0 +1,69 @@
+[
+    {
+        "content": "<p>Whenever I run the student tester it makes me manully plug in the inputs. Should this happen or did I do something wrong?</p>\n<p></p>",
+        "type": "question",
+        "created": "2022-09-21T00:41:12.567Z",
+        "subject": "PSET 1 student tester",
+        "_id": "l8awg96fzp651d"
+    },
+    {
+        "content": "This should not be happening. Without looking at your code, I can&#39;t say what&#39;s causing this, but my guess would be that you ran hangman outside the<div>if __name__ == &#34;__main__&#34; block</div>",
+        "type": "i_answer",
+        "created": "2022-09-21T13:29:32.469Z",
+        "_id": "l8awg96fzp651d"
+    },
+    {
+        "content": "This is for pset 1, not pset 2",
+        "type": "followup",
+        "created": "2022-09-21T13:30:07.900Z",
+        "_id": "l8awg96fzp651d"
+    },
+    {
+        "content": "Sorry, my bad. Regardless, the tester should not be asking you to manually plug inputs into it.",
+        "type": "followup_response",
+        "created": "2022-09-21T13:31:47.535Z",
+        "_id": "l8awg96fzp651d"
+    },
+    {
+        "content": "Is it possible to look over my code and tell me if there\u2019s something obviously wrong with it? Or should I come to office hours today?",
+        "type": "followup_response",
+        "created": "2022-09-21T13:33:04.501Z",
+        "_id": "l8awg96fzp651d"
+    },
+    {
+        "content": "I can look it over if you post it (make sure to create a private Piazza post), but OH are your best bet",
+        "type": "followup_response",
+        "created": "2022-09-21T13:39:31.664Z",
+        "_id": "l8awg96fzp651d"
+    },
+    {
+        "content": "I\u2019ll post it here privately in case I can\u2019t get to OH today. Thanks!",
+        "type": "followup_response",
+        "created": "2022-09-21T13:40:28.978Z",
+        "_id": "l8awg96fzp651d"
+    },
+    {
+        "content": "I see the problem. Can you move your inputs and variable declaration to the appropriate section? That should fix it",
+        "type": "followup",
+        "created": "2022-09-21T13:46:26.903Z",
+        "_id": "l8awg96fzp651d"
+    },
+    {
+        "content": "Oh wow, I really didn\u2019t pay attention. Thank you!",
+        "type": "followup_response",
+        "created": "2022-09-21T13:48:43.931Z",
+        "_id": "l8awg96fzp651d"
+    },
+    {
+        "content": "If I resubmit now, do I use one late day?",
+        "type": "followup_response",
+        "created": "2022-09-21T13:54:13.168Z",
+        "_id": "l8awg96fzp651d"
+    },
+    {
+        "content": "Yes. This will count as one late day",
+        "type": "followup_response",
+        "created": "2022-09-21T15:24:40.862Z",
+        "_id": "l8awg96fzp651d"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>In number 4 of the PSET, it says that the steps taken in the bisection search may vary based on how it was implemented. In one of the cases in ps1_tester.py, my program takes 11 steps as opposed to the expected 12, so it is registering as a failure. Will this effect how my work is graded?</p>",
+        "type": "question",
+        "created": "2022-09-13T21:23:32.067Z",
+        "subject": "PSET 1 Student Tester",
+        "_id": "l80pb2w3yik5wq"
+    },
+    {
+        "content": "<p>Yes. Check to make sure you don&#39;t have any &#34;off by one&#34; errors, i.e. are you updating your variables in the right places?</p>",
+        "type": "i_answer",
+        "created": "2022-09-14T15:52:59.802Z",
+        "_id": "l80pb2w3yik5wq"
+    }
+]

@@ -1,0 +1,9 @@
+[
+    {
+        "content": "<p>Looking through the PSET 4 tester, the input for shift_maker seems to be a tuple of length 3 when the docstring specifically says it should be length 2? This seems to make it impossible to pass the test case without manually editing the test case/cutting off part of the time input, which seems incorrect. Also, smaller issue, but matplotlib does not seem to want to create a window with VSCode.</p>",
+        "type": "question",
+        "created": "2022-10-07T21:00:13.927Z",
+        "subject": "Test Case/Rendering Issue PSET 4",
+        "_id": "l8yz1k2vefn447"
+    }
+]

@@ -1,0 +1,21 @@
+[
+    {
+        "content": "<p>I have the same issues as question @285 posted earlier. I passed all the test cases in the tester but got a 38% from the auto grader. I would understand if I missed a few points, but with so little information from the auto grader output, I have no idea what I did wrong. Is there a way to get a manual regrade? Or help with explaining why I failed so many auto grader tests and not tester cases?<br /><br /></p>\n<p>Thank you in advance.</p>",
+        "type": "question",
+        "created": "2022-10-17T14:52:31.316Z",
+        "subject": "Issues with PSET 4 Autograder",
+        "_id": "l9cwb74k7cy59r"
+    },
+    {
+        "content": "<p><strong attention=\"j7awud7zf0p2uu\">@Kuan Wei Huang</strong> I&#39;m going to tag you in a bunch of these, but I&#39;ll explain what the issue is here<br /><br />One student in office hours explained that she thinks her load_data function is wrong, she only loaded in the closing prices and not the opening prices. Since the local tester only checked for the closing prices, this was misleading. I think that points should be awarded back for this since the docstrings were inconsistent, and seemingly a lot of students had this issue. Not sure if it&#39;s the exact issue for this student, but a lot of them with very low scores on the autograder probably have some similar issue.eatshirt</p>",
+        "type": "followup",
+        "created": "2022-10-17T16:47:41.134Z",
+        "_id": "l9cwb74k7cy59r"
+    },
+    {
+        "content": "<p>Sure will take a look. What&#39;s your kerb?</p>",
+        "type": "i_answer",
+        "created": "2022-10-21T12:27:45.001Z",
+        "_id": "l9cwb74k7cy59r"
+    }
+]

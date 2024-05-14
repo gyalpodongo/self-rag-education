@@ -1,0 +1,33 @@
+[
+    {
+        "content": "<p>For PSET 1, on part 3 test 03, my default &#34;rate&#34; was .5 which I did not change, however I output 0, and since the grader checks the variable value and not the output, it says I was incorrect. The TA who checked my code said that the way I did it should be correct, and so I was wondering if I could get the points back. <img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl7si5rm5yq262%2F317ecb8ab3289fd7052e9ffe9446e72b7b72f29f017220e3d48c020eb159f5df%2FScreen_Shot_2022-09-26_at_2.46.10_PM.png\" width=\"627\" height=\"401\" alt=\"\" /></p>",
+        "type": "question",
+        "created": "2022-09-26T18:52:51.986Z",
+        "subject": "Autograder error",
+        "_id": "l8j4ne6qdpa27v"
+    },
+    {
+        "content": "<p><strong attention=\"j7awud7zf0p2uu\">@Kuan Wei Huang</strong> manual grading? but it seems like they just didn&#39;t follow instructions</p>",
+        "type": "followup",
+        "created": "2022-09-27T03:53:38.037Z",
+        "_id": "l8j4ne6qdpa27v"
+    },
+    {
+        "content": "<p>i.e. we would then have to award points back to everyone who made this mistake, which would be hard to track</p>",
+        "type": "followup_response",
+        "created": "2022-09-27T03:53:57.299Z",
+        "_id": "l8j4ne6qdpa27v"
+    },
+    {
+        "content": "<p>I agree. Maybe assure them they will be on the &#34;special considerations list&#34; in case their final grade is borderline.</p>",
+        "type": "followup_response",
+        "created": "2022-09-27T11:57:24.778Z",
+        "_id": "l8j4ne6qdpa27v"
+    },
+    {
+        "content": "<p>Since the pset instructions do say that the value of r in that case should be zero, it would be unfair for us to award points back in this case. However, we will keep it in mind when we evaluate final grades.</p>",
+        "type": "i_answer",
+        "created": "2022-09-27T14:01:56.403Z",
+        "_id": "l8j4ne6qdpa27v"
+    }
+]

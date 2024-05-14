@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>The assignment says:</p>\n<p></p>\n<p>&#34;Note: if a user inputs an incorrect vowel that hasn&#39;t been guessed and there is only one guess remaining, the user loses and the game is over.&#34;</p>\n<p></p>\n<p>Does this mean that if a user guesses a vowel correctly,</p>\n<p>with only 1 guess remaining,</p>\n<p>they&#39;re allowed to win?</p>",
+        "type": "question",
+        "created": "2022-09-27T07:53:41.401Z",
+        "subject": "Guessing a vowel with only 1 guess remaining?",
+        "_id": "l8jwjjfd8io6qb"
+    },
+    {
+        "content": "Yes, they\u2019re allowed to guess a vowel on the last guess, and can definitely win if that ends up completing secret word",
+        "type": "i_answer",
+        "created": "2022-09-27T11:14:25.952Z",
+        "_id": "l8jwjjfd8io6qb"
+    }
+]

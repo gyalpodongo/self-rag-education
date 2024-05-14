@@ -1,0 +1,15 @@
+[
+    {
+        "content": "Does our code need to account for if the user enters a valid input but puts a space after it? Or can we consider that as an invalid input?\u00a0",
+        "type": "question",
+        "created": "2022-09-25T15:38:15.531Z",
+        "subject": "Adding a space after input",
+        "_id": "l8hi99wr10f1ch"
+    },
+    {
+        "content": "You can consider that as invalid input",
+        "type": "i_answer",
+        "created": "2022-09-25T20:00:10.703Z",
+        "_id": "l8hi99wr10f1ch"
+    }
+]

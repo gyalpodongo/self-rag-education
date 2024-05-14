@@ -1,0 +1,15 @@
+[
+    {
+        "content": "Hi, I noticed that the recitation notes mention we should read the style guide- where can this be found?\n\nThanks!",
+        "type": "question",
+        "created": "2022-09-14T12:23:47.028Z",
+        "subject": "Style Guide",
+        "_id": "l81lgt3owcl6ta"
+    },
+    {
+        "content": "<p>Under &#34;About 6.100A/B&#34; on the course page, there&#39;s a section titled &#34;Style Guide&#34;</p>",
+        "type": "s_answer",
+        "created": "2022-09-14T12:25:53.907Z",
+        "_id": "l81lgt3owcl6ta"
+    }
+]

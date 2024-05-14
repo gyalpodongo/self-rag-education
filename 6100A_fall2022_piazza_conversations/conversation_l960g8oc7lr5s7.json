@@ -1,0 +1,21 @@
+[
+    {
+        "content": "<p>the years in the date i return keep being off by 1 too many or too few. I&#39;ve tried adding and subtracting 1 in a bunch of different places but it isn&#39;t really helping, I keep having this problem. How can I fix it?\u00a0</p>\n<p>NVM resolved!</p>",
+        "type": "question",
+        "created": "2022-10-12T19:14:01.836Z",
+        "subject": "pset 4 pt 3 year in date off by 1",
+        "_id": "l960g8oc7lr5s7"
+    },
+    {
+        "content": "<p>resolved.</p>",
+        "type": "i_answer",
+        "created": "2022-10-12T19:44:42.885Z",
+        "_id": "l960g8oc7lr5s7"
+    },
+    {
+        "content": "I am also having similar issues. Do you have any tips on how to resolve this?",
+        "type": "followup",
+        "created": "2022-10-13T17:54:27.913Z",
+        "_id": "l960g8oc7lr5s7"
+    }
+]

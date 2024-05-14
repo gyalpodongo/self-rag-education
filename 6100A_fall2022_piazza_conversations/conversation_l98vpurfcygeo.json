@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi Ana,\u00a0</p>\n<p></p>\n<p>I just got all four problem sets checked and I received a 100% grade for each except for Pset-2 I got a 90% on the style. However, the column on the top shows that I only got 81% for the Psets. I don&#39;t know if it is wrong or if it is just a temporary mark.\u00a0</p>\n<p></p>\n<p>Best,</p>\n<p>Zhishen</p>\n<p></p>\n<p></p>",
+        "type": "question",
+        "created": "2022-10-14T19:24:50.811Z",
+        "subject": "Psets Grading issue",
+        "_id": "l98vpurfcygeo"
+    },
+    {
+        "content": "<p>I believe the system updates that total pset score after the pset4 score becomes visible (right now it just says Submitted, but no grade). Let me know if this score is not updated on Monday by email anabell@mit.edu</p>",
+        "type": "i_answer",
+        "created": "2022-10-14T19:40:25.187Z",
+        "_id": "l98vpurfcygeo"
+    }
+]

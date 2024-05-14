@@ -1,0 +1,15 @@
+[
+    {
+        "content": "still confused on the difference b/t these, would appreciate a quick clarification before the quiz",
+        "type": "question",
+        "created": "2022-11-21T18:28:16.740Z",
+        "subject": "getters vs. setters",
+        "_id": "lar4fh7orrd4um"
+    },
+    {
+        "content": "<p>They are methods and either return the value of a data attribute or set the value of a data attribute.\u00a0<br /><br /></p>\n<p>They exists so that you can give someone using your data type an opportunity to get or set the value of a data attribute in a consistent way. Most of the time, the getters and setters just return or set the data attribute value. Sometimes, maybe you want the getter/setter method to do something extra in the spirit of enforcing the docstring of the method.\u00a0</p>\n<p></p>\n<pre>\n# suppose there is a data attr named self.a that we&#39;d like to be a number in the class def\n\n# one version of a simple setter\ndef set_a(self, newa):\n    self.a = newa\n\n# another version of the setter with some enforcing\ndef set_a(self, newa):\n    if type(newa) == float or type(newa) == int:\n        self.a = newa\n    else:\n        raise ValueError(&#34;data attribute a can only be set to a number&#34;)\n\n# the getters are typically more straightforward but in the fitness tracker we saw they can do some fancy things\ndef get_a(self):\n    return self.a</pre>\n<p></p>",
+        "type": "i_answer",
+        "created": "2022-11-21T18:49:47.070Z",
+        "_id": "lar4fh7orrd4um"
+    }
+]

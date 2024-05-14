@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl7qw5aqqqdt33o%2Fb3ae731075c50e824373f2eb4e6ef6b7ad73e0e71de5b1599ad2c70f50b1f4cb%2Fimage.png\" alt=\"image.png\" /></p>\n<p>For PSET #3, the autograder gave me 0/3 for &#34;python3 test.py TestGetFrequentWords&#34; with the following error message. However, I thought that we could use | to create the union of two dictionaries. When I ran the code on Spyder using | it also worked. Would you please mind explaining what went wrong? Thank you very much!\u00a0</p>",
+        "type": "question",
+        "created": "2022-10-08T23:23:51.845Z",
+        "subject": "Pset #3 Test Failure",
+        "_id": "l90jm4dh1z760k"
+    },
+    {
+        "content": "<p><strong attention=\"j7awud7zf0p2uu\">@Kuan Wei Huang</strong> (might need a regrade)</p>",
+        "type": "followup",
+        "created": "2022-10-10T00:44:26.452Z",
+        "_id": "l90jm4dh1z760k"
+    },
+    {
+        "content": "<p>I just looked this up, apparently the feature was released in python 3.9. The tester is probably running a different version. A TA will be able to handgrade your code.</p>\n<p></p>\n<p>Update: Andy was absolutely right about you using a python3.9 feature which tripped up the autograder. I manually ran your code and you got full credit. You should see an update to your grade soon. Thanks!</p>",
+        "type": "i_answer",
+        "created": "2022-10-10T00:46:10.030Z",
+        "_id": "l90jm4dh1z760k"
+    },
+    {
+        "content": "<p>Noted.</p>",
+        "type": "followup_response",
+        "created": "2022-10-10T00:46:48.753Z",
+        "_id": "l90jm4dh1z760k"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "content": "3-3. If A is a class and x is a data attribute of A, client code using A SHOULD NOT directly access x.\n\nWhy is this true? I remember being told not to do this in OH for pset 4, but why not?",
+        "type": "question",
+        "created": "2022-10-17T23:13:35.447Z",
+        "subject": "Microquiz 2 3-3",
+        "_id": "l9de7krb8dn22n"
+    },
+    {
+        "content": "<md>One of the purposes of classes is abstraction. Using `x` directly requires the user of class `A` to know the implementation details of `A` (i.e. what the attribute variables names are). Instead, getter and setter methods should be used to inform users how to interface with class `A`.</md>",
+        "type": "i_answer",
+        "created": "2022-10-18T01:06:25.408Z",
+        "_id": "l9de7krb8dn22n"
+    }
+]

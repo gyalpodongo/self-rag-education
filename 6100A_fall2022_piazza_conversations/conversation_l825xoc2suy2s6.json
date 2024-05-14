@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Do we need to put comments in our code to explain what certain lines/sections do?</p>",
+        "type": "question",
+        "created": "2022-09-14T21:56:46.322Z",
+        "subject": "comment on our code?",
+        "_id": "l825xoc2suy2s6"
+    },
+    {
+        "content": "<p>For psets yes, for quizzes no (but can be helpful to you if need to debug!)</p>",
+        "type": "i_answer",
+        "created": "2022-09-15T01:42:36.178Z",
+        "_id": "l825xoc2suy2s6"
+    }
+]

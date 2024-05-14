@@ -1,0 +1,15 @@
+[
+    {
+        "content": "Hi, I&#39;m confused as to why my code isn&#39;t working for this problem-it prints an un-mutated version of La. Does cloning a list count as mutating it?\n\ndef mutate_if_formed_by_L(L1, L2):\n    &#34;&#34;&#34; L1 and L2 are lists containing ints\n    Determines if the elements in L2 can be formed using the\n    elements in L1 in the order in which they appear in L1.\n    If yes, mutates L1 to contain the same elements in L2.\n    If no, L1 stays unchanged.\n    Returns None.&#34;&#34;&#34;\n    # your code here\n    lis=[]\n    count=0\n    if L2 in L1:\n        L1=L2[:]\n    ln=len(L1)\n    for i in L1:\n        lis.append(i)\n    for i in range(len(L2)):\n        if L2[i] in lis:\n            count&#43;=1\n            lis=lis[(i&#43;1):ln]\n    if count==len(L2):\n        L1=L2[:]",
+        "type": "question",
+        "created": "2022-10-18T13:54:12.864Z",
+        "subject": "Exam practice problem 7",
+        "_id": "l9e9o2dcwgo7cj"
+    },
+    {
+        "content": "<p>No, cloning a list is not the same as mutation. Mutation would be changing a value at an index in L1, i.e. L1[i] = x</p>",
+        "type": "i_answer",
+        "created": "2022-10-18T14:53:51.338Z",
+        "_id": "l9e9o2dcwgo7cj"
+    }
+]

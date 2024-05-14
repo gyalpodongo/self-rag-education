@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Can you put a list in a set? Or can only immutable objects be set items?</p>",
+        "type": "question",
+        "created": "2022-09-28T06:42:21.490Z",
+        "subject": "Can you put a list in a set? Or can only immutable objects be set items?",
+        "_id": "l8l9fnoyy851i1"
+    },
+    {
+        "content": "<p>Only immutable, like dictionary keys. Try it in the Python terminal!</p>",
+        "type": "i_answer",
+        "created": "2022-09-28T06:47:57.439Z",
+        "_id": "l8l9fnoyy851i1"
+    }
+]

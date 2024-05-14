@@ -1,0 +1,27 @@
+[
+    {
+        "content": "Hi, I&#39;m having trouble with this function, specifically the argument time. It says time is supposed to be (, ), but when I ask it to print time, it prints (0, 1, 0). Why is this? I pass all the test cases for shift_maker(time) specifically but issues arise with time when I call shift_maker() in other functions.",
+        "type": "question",
+        "created": "2022-10-13T02:36:25.352Z",
+        "subject": "Problem with shift_maker(time)",
+        "_id": "l96g95s8otb6wv"
+    },
+    {
+        "content": "It\u2019s hard to say what the problem is just by seeing this. Can you go to office hours to get it debugged?",
+        "type": "i_answer",
+        "created": "2022-10-13T04:38:56.142Z",
+        "_id": "l96g95s8otb6wv"
+    },
+    {
+        "content": "I will definitely try to- unfortunately, I waited in the queue for 2.5 hours yesterday without making it near the front, and even though I joined today&#39;s OH as soon as it opened, I&#39;m at position 18.",
+        "type": "followup",
+        "created": "2022-10-13T13:02:11.172Z",
+        "_id": "l96g95s8otb6wv"
+    },
+    {
+        "content": "<p>I believe the `shift_maker()` function is only supposed to accept a 2-tuple of (year, month). However, in the test suite, the `test_shift_maker()`test provides a 3-tuple. When I implemented my code, I did it based on the assumption that time would be provided as a 2-tuple according to the docstring, causing my implementation to fail the test but work as intended. Will this test case be fixed in grading or will my implementation be considered incorrect?</p>",
+        "type": "followup",
+        "created": "2022-10-13T14:43:24.199Z",
+        "_id": "l96g95s8otb6wv"
+    }
+]

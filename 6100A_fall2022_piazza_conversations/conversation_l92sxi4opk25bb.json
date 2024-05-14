@@ -1,0 +1,15 @@
+[
+    {
+        "content": "Figured it out- what exactly are field accessors though?",
+        "type": "question",
+        "created": "2022-10-10T13:20:11.784Z",
+        "subject": "Pset 4: How do we use field accessors?",
+        "_id": "l92sxi4opk25bb"
+    },
+    {
+        "content": "<p>Field accessors refer to the\u00a0<strong>getter</strong> and\u00a0<strong>setter</strong> functions for an object. Since Python classes just let you access attributes within a class by saying\u00a0<strong>date1.month</strong>, that means that any function or any program that has access to the\u00a0<strong>date1</strong> object can now change the value of its month attribute, and other programs may see that change.</p>\n<p></p>\n<p>It&#39;s a good practice to control how exactly we change those attributes, so we do so by using a\u00a0<strong>get_month()</strong> function, since its sole purpose is to return the month field, rather than allowing you to change it. Date objects don&#39;t have a\u00a0<strong>set_month()</strong> function because we didn&#39;t intend Date objects to be able to change value.</p>",
+        "type": "i_answer",
+        "created": "2022-10-12T00:46:31.010Z",
+        "_id": "l92sxi4opk25bb"
+    }
+]

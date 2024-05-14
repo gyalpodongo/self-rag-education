@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi, I can&#39;t view the microquiz tips video, even after downloading it. Is there some other way to view it?</p>",
+        "type": "question",
+        "created": "2022-09-13T18:28:07.452Z",
+        "subject": "Can&#39;t view Microquiz Tips",
+        "_id": "l80j1i1ow4514z"
+    },
+    {
+        "content": "<p>Try a different browser or use incognito/private session?</p>",
+        "type": "i_answer",
+        "created": "2022-09-13T18:32:48.802Z",
+        "_id": "l80j1i1ow4514z"
+    }
+]

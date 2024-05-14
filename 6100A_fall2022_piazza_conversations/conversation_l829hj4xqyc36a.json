@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hello, I just finished taking quiz 1, but when I went to the scores part of the website, the website states &#34;Did not take&#34; for quiz 1 as is shown in the attached image. Is this normal for this time whilst the quiz is still being administered, or has my taking of the quiz not saved? <a href=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl7qgpbacee03n2%2Fd1cff9b919a47f772291b03d3b6be9550164c816c7a8b921a31102d3275ca2cc%2F6100A_Quiz_1.PNG\" target=\"_blank\" rel=\"noopener noreferrer\">6100A_Quiz_1.PNG</a></p>",
+        "type": "question",
+        "created": "2022-09-14T23:36:11.553Z",
+        "subject": "Quiz 1 States &#34;Did not take&#34;",
+        "_id": "l829hj4xqyc36a"
+    },
+    {
+        "content": "<p>This will change once we grade and add the scores to the website (hopefully by tomorrow evening).\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-09-15T01:41:46.385Z",
+        "_id": "l829hj4xqyc36a"
+    }
+]

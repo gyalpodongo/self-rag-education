@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>I felt like the lecture on functions was a speed-run, and I got a bit lost conceptually. Anyone have advice for making sure I understand functions conceptually (through practice questions or other mediums) and finding practice problems to adequately test my knowledge?</p>\n<p></p>\n<p>Thanks!</p>\n<p></p>",
+        "type": "question",
+        "created": "2022-09-20T15:56:28.120Z",
+        "subject": "Practice for Functions",
+        "_id": "l8adpfmg5l45y"
+    },
+    {
+        "content": "I&#39;d really recommend the 6.100A (6.0001) MITX course for practice questions (in general, not just functions) it&#39;s been helping me tons. The module for Lecture 4 has a scope and function questions. I believe there&#39;s a link to it in the about class section of the class site but you should also be able to add it on MITX itself if you search for it.\u00a0",
+        "type": "s_answer",
+        "created": "2022-09-20T15:59:30.371Z",
+        "_id": "l8adpfmg5l45y"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>In Part 2, we have to load the data from the csv file. When I try to pass the path through the open() method, I get an error that there&#39;s &#34;no such file or directory&#34;. I&#39;ve also tried using open(&#34;./&#34; &#43; str(csv), &#39;r&#39;) to indicate that it&#39;s searching within the cwd, but to no avail. What should I fix?</p>\n<p></p>\n<p>code:</p>\n<div>\n<div><code>with open(csv, &#34;r&#34;) as f:</code></div>\n</div>\n<p></p>\n<p>output:</p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fl7tdu6121up3w4%2Fe9909fca36dcf338c4b6d67ac8d4e6f0e8f50359d2cce7cbcb395134687ad57b%2Fimage.png\" alt=\"image.pngNaN\" /></p>",
+        "type": "question",
+        "created": "2022-10-11T20:04:13.996Z",
+        "subject": "PSET 4.2: Error: No such file or dir",
+        "_id": "l94msy7g4cezb"
+    },
+    {
+        "content": "I\u2019m not sure what you\u2019re using to run your code, but using the Terminal/Console in either VSCode and Spyder and putting `python ps4.py` while you\u2019re in the right directory should work. I think the issue here is that you have a folder within a folder called 1_ps4. The computer won\u2019t find a datasets folder at that first level, only the second floor. Try putting your code in just one level of foldering called 1_ps4 instead of nesting it in two folders with the same name.",
+        "type": "i_answer",
+        "created": "2022-10-11T21:12:00.648Z",
+        "_id": "l94msy7g4cezb"
+    }
+]

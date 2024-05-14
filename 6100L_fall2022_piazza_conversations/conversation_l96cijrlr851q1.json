@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Lec9 Finger Exercises score on the scores tab says 0%, while the webpage that corresponds to the actual finger exercise shows 100% (with my code and the test cases and everything).\u00a0</p>\n<p>Is it just a website malfunction, or is something wrong with my solution (even though it passed all test cases)?\u00a0</p>\n<p></p>\n<p>Sincerely,</p>",
+        "type": "question",
+        "created": "2022-10-13T00:51:44.913Z",
+        "subject": "Missing score for lec9 finger exercises",
+        "_id": "l96cijrlr851q1"
+    },
+    {
+        "content": "<p>I&#39;ve fixed the issue, the Scores page now shows the correct score.</p>",
+        "type": "i_answer",
+        "created": "2022-10-13T01:09:02.353Z",
+        "_id": "l96cijrlr851q1"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>I am struggling to figure out how to approach this section. I understand that you need to access the file and then split each line to make a list of the elements in the line. Once I get here though, I am not sure how to get the specific price that you are looking for. My attempt is below but I keep getting a list index out of range for temp_string[1] and cannot determine why.\u00a0</p>\n<p></p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fktgl2l8n7li414%2F6e62d755658db01bbf448ebd540c69f91a452f0e5de44cd3ed879fd6a722ae89%2Fimage.png\" alt=\"image.png\" /></p>",
+        "type": "question",
+        "created": "2022-10-12T13:54:19.991Z",
+        "subject": "Pset 4 part 2",
+        "_id": "l95p13vb52p644"
+    },
+    {
+        "content": "<p>Try printing temp_string, and seeing what it outputs. It is possible it is not in the format you think it is</p>",
+        "type": "i_answer",
+        "created": "2022-10-13T05:13:57.625Z",
+        "_id": "l95p13vb52p644"
+    }
+]

@@ -1,0 +1,21 @@
+[
+    {
+        "content": "<p>Hi! I was able to solve the pset 3 manual cases at the bottom of document_distance.py. I had to make some changes based on the test case results but eventually passed all the test cases.<br /><br />The biggest issue is that the instructions tell us to write get_tfidf so it returns a sorted tuple. The &#34;big test case&#34; (test_tfidf_big) sets the expected result to a constant - tfidf_list. That list is not sorted alphabetically.<br /><br />Running with test case as written:\u00a0</p>\n<p></p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fkvoqxmcvwg30a%2F24792fface96376450b582e927dd424fac349d394c36041e67cbae64f36ec9bd%2FScreen_Shot_2022-09-27_at_16.01.11.png\" alt=\"Screen_Shot_2022-09-27_at_16.01.11.pngNaN\" /></p>\n<p></p>\n<p>Modified test case:\u00a0</p>\n<p></p>\n<p><img src=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fkvoqxmcvwg30a%2F44f7b067bb545e024841f6ed78bc736970ee97a629bc72fd753699492f7ad0a8%2FScreen_Shot_2022-09-27_at_16.01.33.png\" alt=\"Screen_Shot_2022-09-27_at_16.01.33.pngNaN\" /></p>\n<p></p>\n<p>I know we&#39;re not supposed to modify the test case but I&#39;m confused, since the instructions were pretty clear that get_tfidf should return an alphabetically sorted tuple. I&#39;d appreciate any guidance.\u00a0</p>",
+        "type": "question",
+        "created": "2022-09-27T20:02:52.270Z",
+        "subject": "pset 3 test case issues",
+        "_id": "l8kml9ta1jaxe"
+    },
+    {
+        "content": "<p><a href=\"https://sicp-s1.mit.edu/fall22/psets/1_pset3#:~:text=The%20output%20should%20be%20a%20sorted%20list%20of%20tuples%20%28in%20increasing%20TF%2DIDF%20score%29%2C%20where%20each%20tuple%20is%20of%20the%20form%20%28word%2C%20TF%2DIDF%29.%20In%20case%20of%20words%20with%20the%20same%20TF%2DIDF%2C%20the%20words%20should%20be%20sorted%20in%20increasing%20alphabetical%20order\" target=\"_blank\" rel=\"noopener noreferrer\">https://sicp-s1.mit.edu/fall22/psets/1_pset3#:~:text=The%20output%20should%20be%20a%20sorted%20list%20of%20tuples%20(in%20increasing%20TF%2DIDF%20score)%2C%20where%20each%20tuple%20is%20of%20the%20form%20(word%2C%20TF%2DIDF).%20In%20case%20of%20words%20with%20the%20same%20TF%2DIDF%2C%20the%20words%20should%20be%20sorted%20in%20increasing%20alphabetical%20order</a></p>\n<p></p>\n<p>You&#39;re supposed to return the tfidf_list sorted by the score (so all the lowest scores come in at the start, and the highest scores at the end). And if the scores are tied, then you use the alphabetical order, which is the opposite of what you&#39;re doing right now.</p>",
+        "type": "i_answer",
+        "created": "2022-09-27T21:39:57.985Z",
+        "_id": "l8kml9ta1jaxe"
+    },
+    {
+        "content": "<p>I see - thank you so much!</p>",
+        "type": "followup",
+        "created": "2022-09-27T22:07:30.466Z",
+        "_id": "l8kml9ta1jaxe"
+    }
+]

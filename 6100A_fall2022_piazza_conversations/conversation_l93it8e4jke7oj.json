@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p>Can we assume that for part 3, when we need to do the time_before function, we will not be given a months value greater than 12? Or will we have to account for that as well?</p>",
+        "type": "question",
+        "created": "2022-10-11T01:24:42.556Z",
+        "subject": "Pset 4 Part 3 - Time Frames Assumption",
+        "_id": "l93it8e4jke7oj"
+    },
+    {
+        "content": "<p>There is no bound placed on the year or month variables. They can be any positive or negative integer, and your function will need to take that into account.</p>\n<p></p>\n<p>Think about each component separately: for example, 24 months prior to a given date is the same as 2 years prior to that date; 2 years and 24 months prior to a given date is the same as 4 years prior to that date, etc.</p>",
+        "type": "i_answer",
+        "created": "2022-10-12T00:37:11.069Z",
+        "_id": "l93it8e4jke7oj"
+    },
+    {
+        "content": "<p>is there a bound placed on the days variable?</p>",
+        "type": "followup",
+        "created": "2022-10-12T19:14:51.281Z",
+        "_id": "l93it8e4jke7oj"
+    },
+    {
+        "content": "<p>There is none, so don&#39;t worry about it :)</p>",
+        "type": "followup_response",
+        "created": "2022-10-12T19:16:07.886Z",
+        "_id": "l93it8e4jke7oj"
+    }
+]

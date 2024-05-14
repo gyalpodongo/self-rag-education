@@ -1,0 +1,39 @@
+[
+    {
+        "content": "<p>I cant find my error...</p>\n<p></p>\n<p><em>def date_from_string(date_str):</em><br /><em>\u00a0 \u00a0 &#34;&#34;&#34;</em><br /><em>\u00a0 \u00a0 Creates a Date object from a date-formatted string</em></p>\n<p><em>\u00a0 \u00a0 Args:</em><br /><em>\u00a0 \u00a0 \u00a0 \u00a0 date_str &lt;str&gt; - date-formatted string in the format &#34;mm/dd/yyyy&#34;</em></p>\n<p><em>\u00a0 \u00a0 returns Date object corresponding to the values of day, month,</em><br /><em>\u00a0 \u00a0 \u00a0 \u00a0 and year of date_str</em><br /><em>\u00a0 \u00a0 &#34;&#34;&#34;</em><br /><em>\u00a0 \u00a0 (m, d, y) = date_str.split(&#34;/&#34;)</em><br /><em>\u00a0 \u00a0 return Date(int(y), int(m), int(d))</em></p>",
+        "type": "question",
+        "created": "2022-10-06T20:55:09.612Z",
+        "subject": "Why&#39;s my date_from_string wrong?",
+        "_id": "l8xjf6lozwoh6"
+    },
+    {
+        "content": "What\u2019s your error?",
+        "type": "followup",
+        "created": "2022-10-06T20:57:02.144Z",
+        "_id": "l8xjf6lozwoh6"
+    },
+    {
+        "content": "<p>FAIL: test_date_from_string<br />test_date_from_string (__main__.TestDateConstruction) ... FAIL</p>",
+        "type": "followup_response",
+        "created": "2022-10-06T20:59:21.170Z",
+        "_id": "l8xjf6lozwoh6"
+    },
+    {
+        "content": "<p>Please ensure that you have not altered the `dataframe_structs.py` file or the `test_ps4_student.py` file. To be safe, please download a fresh copy of the pset and replace those files with the downloaded ones and try again.</p>\n<p></p>\n<p>If this does not fix the error, please let us know.</p>",
+        "type": "i_answer",
+        "created": "2022-10-06T21:14:21.245Z",
+        "_id": "l8xjf6lozwoh6"
+    },
+    {
+        "content": "Can you scroll down to where it shows more details of this error, and send that?",
+        "type": "followup_response",
+        "created": "2022-10-08T14:12:36.714Z",
+        "_id": "l8xjf6lozwoh6"
+    },
+    {
+        "content": "<p>Resolved!</p>",
+        "type": "followup_response",
+        "created": "2022-10-09T03:53:54.772Z",
+        "_id": "l8xjf6lozwoh6"
+    }
+]

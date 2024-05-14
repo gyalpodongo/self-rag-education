@@ -1,0 +1,3050 @@
+[
+    {
+        "timestamp": "00:00:12",
+        "content": "MORE PYTHON CLASS METHODS"
+    },
+    {
+        "timestamp": "00:00:33",
+        "content": "IMPLEMENTING THE CLASS USING THE CLASS"
+    },
+    {
+        "timestamp": "00:02:45",
+        "content": "RECALL THE COORDINATE CLASS"
+    },
+    {
+        "timestamp": "00:09:27",
+        "content": "ADDING METHODS TO THE COORDINATE CLASS"
+    },
+    {
+        "timestamp": "00:10:30",
+        "content": "MAKING COORDINATE INSTANCES"
+    },
+    {
+        "timestamp": "00:13:21",
+        "content": "CLASS DEFINITION OF AN OBJECT TYPE vs"
+    },
+    {
+        "timestamp": "00:14:36",
+        "content": "USING CLASSES TO BUILD OTHER CLASSES"
+    },
+    {
+        "timestamp": "00:15:51",
+        "content": "CIRCLE CLASS: DEFINITION and INSTANCES"
+    },
+    {
+        "timestamp": "00:16:15",
+        "content": "nd INS"
+    },
+    {
+        "timestamp": "00:25:42",
+        "content": "YOU TRY IT!"
+    },
+    {
+        "timestamp": "00:27:54",
+        "content": "is inside2 (self, point): return self. center .distance(\u2026"
+    },
+    {
+        "timestamp": "00:28:09",
+        "content": "EXAMPLE: FRACTIONS"
+    },
+    {
+        "timestamp": "00:29:54",
+        "content": "INSTANCES"
+    },
+    {
+        "timestamp": "00:30:24",
+        "content": "NEED TO CREATE INSTANCES"
+    },
+    {
+        "timestamp": "00:31:06",
+        "content": "MULTIPLY FRACTIONS"
+    },
+    {
+        "timestamp": "00:37:18",
+        "content": "ValueError"
+    },
+    {
+        "timestamp": "00:40:33",
+        "content": "LET'S TRY IT OUT WITH MORE THINGS"
+    },
+    {
+        "timestamp": "00:43:09",
+        "content": "SPECIAL OPERATORS IMPLEMENTED WITH DUNDER METHODS"
+    },
+    {
+        "timestamp": "00:47:00",
+        "content": "DEFINING YOUR OWN PRINT METHOD"
+    },
+    {
+        "timestamp": "00:49:45",
+        "content": "WRAPPING YOUR HEAD AROUND TYPES AND CLASSES"
+    },
+    {
+        "timestamp": "00:51:03",
+        "content": "Use isinstance () to check if an object is a Coordinate"
+    },
+    {
+        "timestamp": "00:52:15",
+        "content": "CREATE & PRINT INSTANCES"
+    },
+    {
+        "timestamp": "00:53:15",
+        "content": "LET'S TRY IT OUT"
+    },
+    {
+        "timestamp": "00:56:48",
+        "content": "COMPARING METHOD vs. DUNDER METHOD"
+    },
+    {
+        "timestamp": "00:57:54",
+        "content": "bottom return Fraction(top, lenom*oth.denom bottom)"
+    },
+    {
+        "timestamp": "00:59:00",
+        "content": "return return"
+    },
+    {
+        "timestamp": "01:00:57",
+        "content": "CLASSES CAN HIDE DETAILS"
+    },
+    {
+        "timestamp": "01:03:30",
+        "content": "BIG IDEA"
+    },
+    {
+        "timestamp": "01:04:36",
+        "content": "CAN KEEP BOTH OPTIONS BY ADDING A METHOD TO CAST TO A float"
+    },
+    {
+        "timestamp": "01:06:18",
+        "content": "LETS TRY IT OUT SOME MORE"
+    },
+    {
+        "timestamp": "01:08:21",
+        "content": "ADD A METHOD"
+    },
+    {
+        "timestamp": "01:11:48",
+        "content": "CHECK THE TYPES, THEY'RE DIFFERENT"
+    },
+    {
+        "timestamp": "01:12:18",
+        "content": "print"
+    },
+    {
+        "timestamp": "01:15:36",
+        "content": "WHY 00P and BUNDLING THE DATA IN THIS WAY?"
+    },
+    {
+        "timestamp": "00:00:00",
+        "content": "All right, let's begin today's lecture."
+    },
+    {
+        "timestamp": "00:00:04",
+        "content": "So last class, we began our adventure with creating our own data types."
+    },
+    {
+        "timestamp": "00:00:10",
+        "content": "Today, we're going to start off with a little bit of a recap, just to remind you some of the details about creating our own data types."
+    },
+    {
+        "timestamp": "00:00:18",
+        "content": "And then we're going to build upon that coordinate class we started in last class."
+    },
+    {
+        "timestamp": "00:00:24",
+        "content": "We'll build we'll build a circle class and then we'll build some fraction data types."
+    },
+    {
+        "timestamp": "00:00:30",
+        "content": "All right. So the first thing I'd like to mention is to remind you guys about sort of writing code from these two different perspectives, right?"
+    },
+    {
+        "timestamp": "00:00:45",
+        "content": "So just like when we wrote functions, we were kind of writing the definition of the function, telling Python we have this function that we're defining abstractly and this is what it does."
+    },
+    {
+        "timestamp": "00:00:50",
+        "content": "And then we were calling the function later on in the program many, many times."
+    },
+    {
+        "timestamp": "00:00:54",
+        "content": "Well, the same thing exists. The same idea exists."
+    },
+    {
+        "timestamp": "00:01:00",
+        "content": "Now that we're creating a creating our own data types, we have to write code from the point of view of somebody who's implementing the class or deciding all of these details that goes"
+    },
+    {
+        "timestamp": "00:01:15",
+        "content": "into creating the class itself versus somebody who's just using a class that's already been written where we create instances, a bunch of different objects that just happened to be this data type."
+    },
+    {
+        "timestamp": "00:01:20",
+        "content": "So when we implement the class, what were some of the things we did?"
+    },
+    {
+        "timestamp": "00:01:23",
+        "content": "Well, we're telling Python that this object now exists."
+    },
+    {
+        "timestamp": "00:01:27",
+        "content": "We're telling Python the name of the data type that we're creating something we choose."
+    },
+    {
+        "timestamp": "00:01:32",
+        "content": "We're deciding we're making these design decisions where we decide what attributes make up our class."
+    },
+    {
+        "timestamp": "00:01:37",
+        "content": "So the attributes are either data like the properties, what are the variables that make up your object and the behaviors through methods, right?"
+    },
+    {
+        "timestamp": "00:01:47",
+        "content": "So that's implementing the class. And then when we're using the class, we're now saying, all right, let's assume that this class definition exists."
+    },
+    {
+        "timestamp": "00:01:55",
+        "content": "There's this object that has these behaviors and these data attributes."
+    },
+    {
+        "timestamp": "00:01:59",
+        "content": "Let's now create a whole bunch of objects that are of this type."
+    },
+    {
+        "timestamp": "00:02:04",
+        "content": "And this is when we're creating these instances and then manipulating all of these instances by running methods on them, things like that."
+    },
+    {
+        "timestamp": "00:02:14",
+        "content": "So when we're implementing the class, right, this thing on the left hand side, we're basically telling Python in abstract terms what are the common properties and behaviors of our data type?"
+    },
+    {
+        "timestamp": "00:02:27",
+        "content": "And then when we're using the class, the thing on the right hand side here, we're creating actual objects with very specific values for their data attributes that we can manipulate in different ways."
+    },
+    {
+        "timestamp": "00:02:36",
+        "content": "So let's remember this coordinate class that we wrote Last Lecture."
+    },
+    {
+        "timestamp": "00:02:40",
+        "content": "Okay, this is not new stuff, but I will just go over it real quick."
+    },
+    {
+        "timestamp": "00:02:44",
+        "content": "So first line here tells Python we're creating a new data type."
+    },
+    {
+        "timestamp": "00:02:49",
+        "content": "Its name is coordinate. And this keyword class tells Python we're creating the data type."
+    },
+    {
+        "timestamp": "00:02:54",
+        "content": "The parentheses here is object, which stands for the Python object data type."
+    },
+    {
+        "timestamp": "00:03:00",
+        "content": "So it's something really generic. And this in the parentheses here is the parent of our class, right?"
+    },
+    {
+        "timestamp": "00:03:07",
+        "content": "So anything that a regular python object can do, the very basic things our class can do as well."
+    },
+    {
+        "timestamp": "00:03:13",
+        "content": "Last lecture I mentioned an example of such a basic thing is to take a variable name and assign it to an object type that we create."
+    },
+    {
+        "timestamp": "00:03:23",
+        "content": "The very first method that we should write for a new data type that we create is the init method."
+    },
+    {
+        "timestamp": "00:03:29",
+        "content": "And this I called a dunder method because it starts with double underscores"
+    },
+    {
+        "timestamp": "00:03:34",
+        "content": "before the init and double entries and ends with double underscores after the."
+    },
+    {
+        "timestamp": "00:03:39",
+        "content": "And that's the actual name of this method. Double underscore init."
+    },
+    {
+        "timestamp": "00:03:42",
+        "content": "Double underscore. Okay. So this method is like a constructor for the class."
+    },
+    {
+        "timestamp": "00:03:47",
+        "content": "It tells python. How do you create an actual object of this type?"
+    },
+    {
+        "timestamp": "00:03:51",
+        "content": "So it's it's a function. It's just a function that works only with objects of type coordinate."
+    },
+    {
+        "timestamp": "00:03:58",
+        "content": "So as a function, it takes parameters. You can see it takes three parameters here the self, the X and the Y."
+    },
+    {
+        "timestamp": "00:04:10",
+        "content": "Now when we're actually creating objects of type coordinates, we only pass in parameters for everything other than self because self is a variable name"
+    },
+    {
+        "timestamp": "00:04:17",
+        "content": "that we use to describe having an instance of the class without actually creating one yet."
+    },
+    {
+        "timestamp": "00:04:23",
+        "content": "Right. Because remember what we're doing here in this definition, we're telling Python that this object type now exists."
+    },
+    {
+        "timestamp": "00:04:29",
+        "content": "We're writing it as we speak, but we don't have an actual instance to manipulate yet."
+    },
+    {
+        "timestamp": "00:04:41",
+        "content": "Right? This is just the definition. And so the self tells Python that when we're writing this code, we're going to use the self variable name as sort of a formal name to be able to run this method on."
+    },
+    {
+        "timestamp": "00:04:48",
+        "content": "Okay. So we're going to see in the next slide exactly what, what maps to self when we run it."
+    },
+    {
+        "timestamp": "00:04:53",
+        "content": "But that's what the self means inside the parameter list here and here."
+    },
+    {
+        "timestamp": "00:04:59",
+        "content": "And then beyond that we use self within the init method to tell Python which one of these variables are actually"
+    },
+    {
+        "timestamp": "00:05:07",
+        "content": "data attributes versus which of these variables are just plain old variables as we've been working with."
+    },
+    {
+        "timestamp": "00:05:13",
+        "content": "So any variable that's defined using self dots."
+    },
+    {
+        "timestamp": "00:05:16",
+        "content": "So here I got self doubt x and self doubt y are data attributes."
+    },
+    {
+        "timestamp": "00:05:21",
+        "content": "So that means any object I create, that's a type coordinate."
+    },
+    {
+        "timestamp": "00:05:24",
+        "content": "I know we'll have a variable x and y associated with it."
+    },
+    {
+        "timestamp": "00:05:29",
+        "content": "Right. Because I've defined these x and y as using self doubt x and self doubt y."
+    },
+    {
+        "timestamp": "00:05:34",
+        "content": "Now in the last lecture, I actually had these parameter lists."
+    },
+    {
+        "timestamp": "00:05:42",
+        "content": "The parameters in this list here be different. And then X and Y, I think I had x value, y value and then I had self doubt x equals x val or this x here to the right of the equals sign is the x from the parameter list."
+    },
+    {
+        "timestamp": "00:05:57",
+        "content": "Right. But yeah. So in that sense it doesn't matter what these variables are in the parameter list, they're just going to be the same over here on the right hand side of the equal sign. Okay."
+    },
+    {
+        "timestamp": "00:06:01",
+        "content": "But the actual parameters, the sorry, the actual data attributes are self dot x and self doubt y of my object."
+    },
+    {
+        "timestamp": "00:06:11",
+        "content": "Okay. So then we had one method that we wrote Last Lecture."
+    },
+    {
+        "timestamp": "00:06:15",
+        "content": "It was called Distance, and it took two parameters. So the first one, of course, is self, and the self represents the thing."
+    },
+    {
+        "timestamp": "00:06:27",
+        "content": "This object that you're going to call the method on. I don't have that object yet, so I'm just calling itself for now because this is the class definition and then this"
+    },
+    {
+        "timestamp": "00:06:32",
+        "content": "other parameter is some other coordinate object that I'm going to run this method on."
+    },
+    {
+        "timestamp": "00:06:38",
+        "content": "So the body of distance says, All right, well, how do I find the distance between two points in the 2D plane?"
+    },
+    {
+        "timestamp": "00:06:46",
+        "content": "It's just Pythagoras, right? So that means grab the X value of one of my points, subtract the x value of the other point, square them."
+    },
+    {
+        "timestamp": "00:06:54",
+        "content": "Same with the wise, square them, add them, take the square root."
+    },
+    {
+        "timestamp": "00:06:58",
+        "content": "So what's the x value of one point? Well, one of the points is going to be the thing that I'm calling the distance method on self."
+    },
+    {
+        "timestamp": "00:07:05",
+        "content": "So I grab the x value of self using this dot notation self taught x and then what's the x value of this other coordinate point?"
+    },
+    {
+        "timestamp": "00:07:13",
+        "content": "Well, it's called other in my parameter list. So I'm going to grab the x value of other again using dot notation."
+    },
+    {
+        "timestamp": "00:07:21",
+        "content": "Okay. And then we just do the math. Yes."
+    },
+    {
+        "timestamp": "00:07:27",
+        "content": "Call functions on a class that were defined in."
+    },
+    {
+        "timestamp": "00:07:32",
+        "content": "Like this. Yeah. So you can make methods."
+    },
+    {
+        "timestamp": "00:07:36",
+        "content": "You can make methods for a particular class. It was like you can only call those that you define."
+    },
+    {
+        "timestamp": "00:07:43",
+        "content": "They call another. Exactly. Yeah. Yeah."
+    },
+    {
+        "timestamp": "00:07:48",
+        "content": "Yeah, sure. The way we could define. Oh. Class is something other than an object."
+    },
+    {
+        "timestamp": "00:07:55",
+        "content": "A class is something other than an object that we put toward an object or something else."
+    },
+    {
+        "timestamp": "00:08:01",
+        "content": "In the parentheses, yes, we can put other things in the parentheses."
+    },
+    {
+        "timestamp": "00:08:04",
+        "content": "So that's actually what Monday's lecture will be about."
+    },
+    {
+        "timestamp": "00:08:07",
+        "content": "In that case, the thing in the parentheses becomes the parent of the class that you're currently writing."
+    },
+    {
+        "timestamp": "00:08:16",
+        "content": "So I won't go into too much detail, but to have this other object as a parent means that everything that that object can do automatically your object can do as well."
+    },
+    {
+        "timestamp": "00:08:24",
+        "content": "And then on top of that, you can decide a bunch of additional stuff your new object does."
+    },
+    {
+        "timestamp": "00:08:30",
+        "content": "But in a sense, your coordinate object is a whatever this thing in the parentheses is, and then it can do a bunch of other stuff as well."
+    },
+    {
+        "timestamp": "00:08:43",
+        "content": "With this square. Yeah."
+    },
+    {
+        "timestamp": "00:08:47",
+        "content": "How could you do that? Oh."
+    },
+    {
+        "timestamp": "00:08:50",
+        "content": "To make a copy of the object or make it a copy of this class."
+    },
+    {
+        "timestamp": "00:08:55",
+        "content": "Oh. So here we're not. You can't make a copy of the class here specifically because we're just defining the class."
+    },
+    {
+        "timestamp": "00:09:03",
+        "content": "But when you're creating coordinate objects, then you could define a method that copies your object into another object."
+    },
+    {
+        "timestamp": "00:09:14",
+        "content": "So in essence, it would return a new object of type, coordinate with whatever parameters you'd want to do."
+    },
+    {
+        "timestamp": "00:09:22",
+        "content": "So. Yeah, all of these things are possible here. So let's add one more method to this class."
+    },
+    {
+        "timestamp": "00:09:28",
+        "content": "Let's call it to underscore origin."
+    },
+    {
+        "timestamp": "00:09:32",
+        "content": "Okay. So this distance method, just to remind ourselves, returned a number."
+    },
+    {
+        "timestamp": "00:09:37",
+        "content": "Right. So it just took the difference between these two points."
+    },
+    {
+        "timestamp": "00:09:41",
+        "content": "And it returned a number, just how far away they are. But this two origin method is going to do something slightly different."
+    },
+    {
+        "timestamp": "00:09:57",
+        "content": "Essentially, what I'm going to have this method do is to take my point from wherever it is in my two D plane that it has been initialized to and say, I'm going to reset it back to the origin. Right."
+    },
+    {
+        "timestamp": "00:10:02",
+        "content": "So to do that, all that means is I'm going to make it's X value and it's Y value be zero so I can manipulate the X and Y data"
+    },
+    {
+        "timestamp": "00:10:12",
+        "content": "attributes of this particular object to be whatever I want them to be so I can reset them both to be zero."
+    },
+    {
+        "timestamp": "00:10:19",
+        "content": "So if I ever call this method on an object whose X and y values are something other than zero, they'll be reset to zero."
+    },
+    {
+        "timestamp": "00:10:28",
+        "content": "So let's actually run the code that we just wrote. So here I've got to coordinate objects being created."
+    },
+    {
+        "timestamp": "00:10:34",
+        "content": "So the beauty of writing this class for us is that now we can create as many coordinate objects as we'd like."
+    },
+    {
+        "timestamp": "00:10:40",
+        "content": "They all will have an X value and a Y value associated with them."
+    },
+    {
+        "timestamp": "00:10:43",
+        "content": "It's just that the specific values for X and Y will be different."
+    },
+    {
+        "timestamp": "00:10:47",
+        "content": "Right. So here I've got a coordinate object with x three and y four being created and it's going"
+    },
+    {
+        "timestamp": "00:10:58",
+        "content": "to be bound by the variable named see and hear a coordinate object with x and y values, both zero bound to a variable named origin."
+    },
+    {
+        "timestamp": "00:11:02",
+        "content": "Okay. So then I can use this dot notation that we talked about last lecture to access either data or to run methods on the on the object."
+    },
+    {
+        "timestamp": "00:11:13",
+        "content": "So in this print print statement here, I'm using dot notation on C and origin to grab the x values of C over here and origin over here."
+    },
+    {
+        "timestamp": "00:11:27",
+        "content": "And then I'm running the distance method on c."
+    },
+    {
+        "timestamp": "00:11:31",
+        "content": "So remember dot notation says the thing before the dot is going to be an object."
+    },
+    {
+        "timestamp": "00:11:36",
+        "content": "The thing after the dot is going to be the method name that can run on this object of type, whatever this is coordinate."
+    },
+    {
+        "timestamp": "00:11:45",
+        "content": "And then in the parentheses, it's just a function we just passed in all the variables that that that method expects."
+    },
+    {
+        "timestamp": "00:11:53",
+        "content": "Right. So see, that distance will print whatever, you know, however far away it is."
+    },
+    {
+        "timestamp": "00:11:57",
+        "content": "I know. Five because those are nice numbers. Okay."
+    },
+    {
+        "timestamp": "00:12:01",
+        "content": "So then if we run this function that we just wrote to Origin, this function, just to remind you, doesn't actually return anything, right?"
+    },
+    {
+        "timestamp": "00:12:09",
+        "content": "It just resets the variables X and Y for that particular object back to zero."
+    },
+    {
+        "timestamp": "00:12:16",
+        "content": "So in here when I call this method here right again dot notation, the thing before the dot is an object."
+    },
+    {
+        "timestamp": "00:12:23",
+        "content": "It's C, its x and y values are currently three and four."
+    },
+    {
+        "timestamp": "00:12:28",
+        "content": "But after I run this function, it returns none, by the way."
+    },
+    {
+        "timestamp": "00:12:33",
+        "content": "Its X and Y values will be changed to zero and zero."
+    },
+    {
+        "timestamp": "00:12:37",
+        "content": "So if I look at my code here, right, so here's this print up statement, right?"
+    },
+    {
+        "timestamp": "00:12:44",
+        "content": "So sees X values three and sees an origins x is zero."
+    },
+    {
+        "timestamp": "00:12:48",
+        "content": "Fine. And then I've got these two calls here."
+    },
+    {
+        "timestamp": "00:12:52",
+        "content": "So see that to Origin, right? I'm making this function call before the function call sees X is three, sees Y is four."
+    },
+    {
+        "timestamp": "00:13:00",
+        "content": "And after the function call you can see, sees X is zero and sees y0."
+    },
+    {
+        "timestamp": "00:13:04",
+        "content": "So I'm literally changing the x and y values of this object, see?"
+    },
+    {
+        "timestamp": "00:13:13",
+        "content": "All right. So question so far. So far, so good."
+    },
+    {
+        "timestamp": "00:13:17",
+        "content": "Hopefully a recap. Okay. So, again, sort of similar to the first slide we started with, right?"
+    },
+    {
+        "timestamp": "00:13:23",
+        "content": "So we've got this class called an object, right? The class name is our type."
+    },
+    {
+        "timestamp": "00:13:27",
+        "content": "So this object I'm creating is a type coordinate. We're defining the class in a generic way, in an abstract way."
+    },
+    {
+        "timestamp": "00:13:33",
+        "content": "Right. So we have to use the self variable either in the parameter list to tell python."
+    },
+    {
+        "timestamp": "00:13:41",
+        "content": "What's the thing before the dot going to map to. Well it's going to map to self in my parameter list."
+    },
+    {
+        "timestamp": "00:13:47",
+        "content": "Or we use the self to tell Python what the data attributes of this object are."
+    },
+    {
+        "timestamp": "00:13:52",
+        "content": "Right. So anything to find itself dot some variable name will be a data attribute that's common across all the instances I create."
+    },
+    {
+        "timestamp": "00:13:59",
+        "content": "So from of this type. When we create actual instances, that's when our our blueprint, our abstract definition now gets put into use."
+    },
+    {
+        "timestamp": "00:14:16",
+        "content": "And now I'm creating actual objects that I can grab X values from change, X values from, you know, get distances between other objects and so on and so."
+    },
+    {
+        "timestamp": "00:14:20",
+        "content": "Okay. So what I'd like to do next is to."
+    },
+    {
+        "timestamp": "00:14:25",
+        "content": "Take this coordinate class and build a circle class with it."
+    },
+    {
+        "timestamp": "00:14:31",
+        "content": "So this comes sort of hand-in-hand with the idea of when you're deciding how to create a class, you get to make the design decision, right?"
+    },
+    {
+        "timestamp": "00:14:40",
+        "content": "So when the finger exercise for Monday's lecture, today's Wednesday is Monday's lecture."
+    },
+    {
+        "timestamp": "00:14:46",
+        "content": "You guys had to create a center sorry, a circle class, right?"
+    },
+    {
+        "timestamp": "00:14:51",
+        "content": "But the way we defined the circle class in that finger exercise was basically by that circles radius."
+    },
+    {
+        "timestamp": "00:14:57",
+        "content": "That's the only sort of way we abstracted that circle."
+    },
+    {
+        "timestamp": "00:15:01",
+        "content": "Right? But now in this lecture, we're going to make a different design decision and say that."
+    },
+    {
+        "timestamp": "00:15:08",
+        "content": "Let's say and say that a circle will now be defined using two things."
+    },
+    {
+        "timestamp": "00:15:13",
+        "content": "The first is the radius, right? So I'm going to say that that's an integer, and the second is going to be the center of the circle."
+    },
+    {
+        "timestamp": "00:15:21",
+        "content": "Right. So as in the picture there, I'm going to say that a circle is based on the center and this radius."
+    },
+    {
+        "timestamp": "00:15:28",
+        "content": "And the center is not going to be a float."
+    },
+    {
+        "timestamp": "00:15:31",
+        "content": "It's not going to be a tuple, it's not going to be an int. It's going to be a a coordinate object."
+    },
+    {
+        "timestamp": "00:15:36",
+        "content": "Right. The data type that we were just writing. All right, good."
+    },
+    {
+        "timestamp": "00:15:43",
+        "content": "It's not a secret. But that didn't lower my voice on purpose is just."
+    },
+    {
+        "timestamp": "00:15:48",
+        "content": "Just wanted to let that sink in. Right. So the one of our data attributes for the circle class is a coordinate object."
+    },
+    {
+        "timestamp": "00:15:56",
+        "content": "So we're using an object that we just wrote to create a more complex object."
+    },
+    {
+        "timestamp": "00:16:00",
+        "content": "A circle. Okay, so here's my class definition."
+    },
+    {
+        "timestamp": "00:16:05",
+        "content": "The data type is called circle. Again, it inherits."
+    },
+    {
+        "timestamp": "00:16:08",
+        "content": "All the parent of circle is just a generic python object."
+    },
+    {
+        "timestamp": "00:16:12",
+        "content": "First method we have to write is the init method. First parameters self."
+    },
+    {
+        "timestamp": "00:16:17",
+        "content": "So this thing that I'm creating right now and I say that to create a circle, I have to give it a center and I have to give it a radius."
+    },
+    {
+        "timestamp": "00:16:26",
+        "content": "The data attributes of this circle class, right?"
+    },
+    {
+        "timestamp": "00:16:31",
+        "content": "So the, the two attributes that make up my circle are the self dots center."
+    },
+    {
+        "timestamp": "00:16:36",
+        "content": "So the center of variable here and self doubt radius."
+    },
+    {
+        "timestamp": "00:16:39",
+        "content": "Right? So these two things together make up our circle object."
+    },
+    {
+        "timestamp": "00:16:45",
+        "content": "And initially in the method, right?"
+    },
+    {
+        "timestamp": "00:16:47",
+        "content": "And when we construct our object, we're just going to set these two things to be whatever is passed in as parameters in that in the constructor."
+    },
+    {
+        "timestamp": "00:16:58",
+        "content": "All right. So. What I'd like to say is that this center think center parameter will be a coordinate object and radius will be an input."
+    },
+    {
+        "timestamp": "00:17:09",
+        "content": "Now, notice in this code, I'm not actually enforcing this. Right."
+    },
+    {
+        "timestamp": "00:17:13",
+        "content": "I could create a set a circle object by just passing in two strings."
+    },
+    {
+        "timestamp": "00:17:19",
+        "content": "Right. At this point, this code doesn't care. Right."
+    },
+    {
+        "timestamp": "00:17:23",
+        "content": "Nowhere am I enforcing the fact that center is a coordinate and radius will be in it."
+    },
+    {
+        "timestamp": "00:17:27",
+        "content": "But that's just something that we know."
+    },
+    {
+        "timestamp": "00:17:31",
+        "content": "So then when we create the actual object down here, right, my underscore circle is going to be a variable that's bound to my circle object."
+    },
+    {
+        "timestamp": "00:17:42",
+        "content": "So here I'm invoking the name of my class circle."
+    },
+    {
+        "timestamp": "00:17:46",
+        "content": "And then what are the two parameters I'm passing in? Well, the first one I said right up here that it should be a center coordinate object."
+    },
+    {
+        "timestamp": "00:17:55",
+        "content": "So center is a variable name. And what is it?"
+    },
+    {
+        "timestamp": "00:17:59",
+        "content": "Well, I had to create this coordinate object."
+    },
+    {
+        "timestamp": "00:18:03",
+        "content": "Right. So I'm just invoking the name of coordinate this class that creates for me to coordinate object."
+    },
+    {
+        "timestamp": "00:18:08",
+        "content": "And I happen to put the center of the circle at two."
+    },
+    {
+        "timestamp": "00:18:16",
+        "content": "So this censure thing is a coordinated object, right? It's not a tuple or a float or whatever."
+    },
+    {
+        "timestamp": "00:18:21",
+        "content": "It's called an object. And then the radius of this circle is two and it."
+    },
+    {
+        "timestamp": "00:18:36",
+        "content": "Everyone okay with that? Okay. So what I'd like you to do next is to modify the Senate method just slightly, just to show you that the init method doesn't just always set the data attributes and it's done."
+    },
+    {
+        "timestamp": "00:18:43",
+        "content": "It can do a lot of initialization code. One of the more important things it can do is to try to enforce the types on the on the parameters here."
+    },
+    {
+        "timestamp": "00:18:54",
+        "content": "Right. So what I'd like you to do is add to this code to, to, to check that the type of center is a coordinate and the type of radius is an integer."
+    },
+    {
+        "timestamp": "00:19:04",
+        "content": "And only if those two things are true, then do you set the two data attributes and otherwise raise for me a value error."
+    },
+    {
+        "timestamp": "00:19:16",
+        "content": "So that should be around line 48."
+    },
+    {
+        "timestamp": "00:19:22",
+        "content": "Okay. Does anyone have some code for me? Yeah."
+    },
+    {
+        "timestamp": "00:19:36",
+        "content": "Not equal caught in it. Yeah. So that's race value there?"
+    },
+    {
+        "timestamp": "00:19:42",
+        "content": "Yep. Cool. So that takes care of one you."
+    },
+    {
+        "timestamp": "00:19:53",
+        "content": "Yep. So if the type of radius because that's the parameter passed in not equal to int."
+    },
+    {
+        "timestamp": "00:20:01",
+        "content": "Raise or. So if we drop into each of any of these ifs, then we immediately raise the value error, write the code doesn't complete."
+    },
+    {
+        "timestamp": "00:20:13",
+        "content": "And then only if we didn't drop into this one or this one do we then go on to create my object."
+    },
+    {
+        "timestamp": "00:20:21",
+        "content": "So then here we are. These two lines here will succeed."
+    },
+    {
+        "timestamp": "00:20:25",
+        "content": "Right. So there's no error raised or anything like that. But then this line here raised of our value error."
+    },
+    {
+        "timestamp": "00:20:33",
+        "content": "Because we tried to create a circle where the center is an integer, right?"
+    },
+    {
+        "timestamp": "00:20:36",
+        "content": "Obviously not a coordinate object. And then here again, we raised a value area because we tried to pass in a string as the radius."
+    },
+    {
+        "timestamp": "00:20:44",
+        "content": "Any questions about this code? Oh, yeah."
+    },
+    {
+        "timestamp": "00:20:49",
+        "content": "I just think that's very important for me to."
+    },
+    {
+        "timestamp": "00:20:53",
+        "content": "For you. Yeah. So it's important to place them before you actually create the object, right?"
+    },
+    {
+        "timestamp": "00:20:58",
+        "content": "Because you don't want to create it unless. Unless, unless everything's appropriate."
+    },
+    {
+        "timestamp": "00:21:09",
+        "content": "Okay. So now let's add one more useful method to our class circle."
+    },
+    {
+        "timestamp": "00:21:17",
+        "content": "Now that we've defined a circle using a central point and a radius, we can add this little function that checks if another coordinate object."
+    },
+    {
+        "timestamp": "00:21:28",
+        "content": "Is inside our circle. Okay."
+    },
+    {
+        "timestamp": "00:21:32",
+        "content": "So again, I'm not going to be able to enforce that."
+    },
+    {
+        "timestamp": "00:21:37",
+        "content": "This point is a coordinated object, but, you know, you could do it in the docstring or you could do a check or something like that."
+    },
+    {
+        "timestamp": "00:21:42",
+        "content": "But, you know, again, we're just going to assume the user using this method is going to follow the rules."
+    },
+    {
+        "timestamp": "00:21:47",
+        "content": "So how is this method going to work?"
+    },
+    {
+        "timestamp": "00:21:58",
+        "content": "The idea here is that we're going to use the center, which is a coordinate object and some other point, you know, P, wherever it may be, what we're going to do is we're going to say, what's the distance between this point and the center of the circle if it's greater than the radius?"
+    },
+    {
+        "timestamp": "00:22:06",
+        "content": "We know the point is outside the circle. If it's smaller than the radius, we know the point is in the circle."
+    },
+    {
+        "timestamp": "00:22:11",
+        "content": "Right. So this code is just enforcing that."
+    },
+    {
+        "timestamp": "00:22:15",
+        "content": "So we have just a simple return statement."
+    },
+    {
+        "timestamp": "00:22:19",
+        "content": "That's going to run the distance method. Right."
+    },
+    {
+        "timestamp": "00:22:23",
+        "content": "This is a method that we wrote. Back in the cornet class."
+    },
+    {
+        "timestamp": "00:22:30",
+        "content": "Right. That's fine. Because you know what point is an object of type coordinate and self dot center."
+    },
+    {
+        "timestamp": "00:22:39",
+        "content": "So the center of this circle object I'm trying to manipulate, right."
+    },
+    {
+        "timestamp": "00:22:43",
+        "content": "To tell if another point is inside me or not is also a corded object."
+    },
+    {
+        "timestamp": "00:22:48",
+        "content": "So why not? We already wrote the code that calculates the distance between these two points."
+    },
+    {
+        "timestamp": "00:22:54",
+        "content": "So let's call it. So here I've got the thing before the dot a coordinate object dot notation."
+    },
+    {
+        "timestamp": "00:22:59",
+        "content": "The method I want to run on this called an object. And then in parentheses, this is another calling object."
+    },
+    {
+        "timestamp": "00:23:04",
+        "content": "So this will just tell me some number for how far away these two points are."
+    },
+    {
+        "timestamp": "00:23:08",
+        "content": "And all we do is return whether that number is less than the radius."
+    },
+    {
+        "timestamp": "00:23:15",
+        "content": "Does that make sense? And again, this only works if point."
+    },
+    {
+        "timestamp": "00:23:21",
+        "content": "The thing that's passed in here is a cornered object. Right."
+    },
+    {
+        "timestamp": "00:23:24",
+        "content": "Otherwise, this code will fail because it's going to try to pass and it's going to try to run the distance method on a string, for example."
+    },
+    {
+        "timestamp": "00:23:32",
+        "content": "And of course, the string doesn't have a distance method, right? So down here, these two lines are exactly as we had before."
+    },
+    {
+        "timestamp": "00:23:40",
+        "content": "We create a circle object. Whose center is that? Two, comma two and radius is two."
+    },
+    {
+        "timestamp": "00:23:45",
+        "content": "And then I've got another coordinate object down here. It's at one, comma, one, right."
+    },
+    {
+        "timestamp": "00:23:51",
+        "content": "So clearly within the circle. So that print statement well then print true."
+    },
+    {
+        "timestamp": "00:23:57",
+        "content": "Right. So that's just basically what I wrote. This is a coordinate object. This is the method."
+    },
+    {
+        "timestamp": "00:24:01",
+        "content": "This is another coordinate object. All right."
+    },
+    {
+        "timestamp": "00:24:05",
+        "content": "So let's run it. So this is exactly the code from the slide."
+    },
+    {
+        "timestamp": "00:24:11",
+        "content": "So if I run this method on a quarter, an object, that's one comma, one somewhere in here."
+    },
+    {
+        "timestamp": "00:24:15",
+        "content": "So true. And otherwise, if I run it on an object right here, p ten, comma, ten."
+    },
+    {
+        "timestamp": "00:24:22",
+        "content": "Clearly outside the circle, it prints false. Questions."
+    },
+    {
+        "timestamp": "00:24:33",
+        "content": "Okay. Yes."
+    },
+    {
+        "timestamp": "00:24:37",
+        "content": "That's exactly what I said already. But. So now I want you to answer this question."
+    },
+    {
+        "timestamp": "00:24:43",
+        "content": "Nothing to code here, but I've got these two inside methods."
+    },
+    {
+        "timestamp": "00:24:48",
+        "content": "So the first one here is inside. One is exactly the one that we just saw."
+    },
+    {
+        "timestamp": "00:24:52",
+        "content": "Right. It runs the distance method with point and soft center."
+    },
+    {
+        "timestamp": "00:24:58",
+        "content": "Is inside to look slightly different. The differences I've highlighted in this box."
+    },
+    {
+        "timestamp": "00:25:03",
+        "content": "What I'd like you to tell me we can do a show of hands is. Are these two functions of these two methods functionally equivalent?"
+    },
+    {
+        "timestamp": "00:25:09",
+        "content": "That is. Will they return the same thing given the same input."
+    },
+    {
+        "timestamp": "00:25:15",
+        "content": "So think about it and then I will do a show has."
+    },
+    {
+        "timestamp": "00:25:25",
+        "content": "So who thinks? Yes, they are functionally equivalent. Like given the same input, they will both return true or false."
+    },
+    {
+        "timestamp": "00:25:35",
+        "content": "Who thinks? No, they are not functionally equivalent. Some half and half."
+    },
+    {
+        "timestamp": "00:25:41",
+        "content": "Okay. Well, let's think about what the distance method is doing."
+    },
+    {
+        "timestamp": "00:25:48",
+        "content": "It's being run on an object of type. What?"
+    },
+    {
+        "timestamp": "00:25:57",
+        "content": "Coordinate. Exactly. So in here is point an object of type coordinate."
+    },
+    {
+        "timestamp": "00:26:02",
+        "content": "Yes. Okay. And then here, what is the parameter to the distance method?"
+    },
+    {
+        "timestamp": "00:26:08",
+        "content": "Is it object of type? Coordinate self doubt center."
+    },
+    {
+        "timestamp": "00:26:13",
+        "content": "Is it an object of type coordinate? Yes. So now let's look at is inside too."
+    },
+    {
+        "timestamp": "00:26:18",
+        "content": "What is the type of self doubt center? Coordinate and we're running the distance method on this object of type coordinate."
+    },
+    {
+        "timestamp": "00:26:27",
+        "content": "And what is the object in the parameter list here?"
+    },
+    {
+        "timestamp": "00:26:30",
+        "content": "What's its type? Coordinate. So when we wrote The Distance Method, does it matter?"
+    },
+    {
+        "timestamp": "00:26:38",
+        "content": "Which object we call the method on to get the distance between these two points."
+    },
+    {
+        "timestamp": "00:26:44",
+        "content": "No right. Because the distance between saying I want the distance between this point and this"
+    },
+    {
+        "timestamp": "00:26:50",
+        "content": "point is the same as saying I want the distance between this point and this point."
+    },
+    {
+        "timestamp": "00:26:54",
+        "content": "Right. It's just the order is different. Right."
+    },
+    {
+        "timestamp": "00:26:58",
+        "content": "So just the way that this distance method works, right? It doesn't actually matter which object I call the method on."
+    },
+    {
+        "timestamp": "00:27:05",
+        "content": "Right? As long as they're both cornered objects, which they are."
+    },
+    {
+        "timestamp": "00:27:13",
+        "content": "Does that make sense? Is that all right? Any questions about this for those who are in the know?"
+    },
+    {
+        "timestamp": "00:27:18",
+        "content": "Yeah. Circle. Self doubt center."
+    },
+    {
+        "timestamp": "00:27:25",
+        "content": "Self doubt center is an object of type coordinate, not circle."
+    },
+    {
+        "timestamp": "00:27:29",
+        "content": "Because it itself is a circle. Right because self is talking about me."
+    },
+    {
+        "timestamp": "00:27:35",
+        "content": "The class that I'm currently defining and the class I'm currently defining is a circle."
+    },
+    {
+        "timestamp": "00:27:41",
+        "content": "But self doubt center right. We even wrote code."
+    },
+    {
+        "timestamp": "00:27:45",
+        "content": "We would like to enforce that. It is a cordoned object."
+    },
+    {
+        "timestamp": "00:27:50",
+        "content": "Right? So we could have put parentheses around the self center if we wanted to and then call the distance on that."
+    },
+    {
+        "timestamp": "00:28:02",
+        "content": "Does that make sense? Okay."
+    },
+    {
+        "timestamp": "00:28:07",
+        "content": "All right. So that's all I had regarding the Circle class."
+    },
+    {
+        "timestamp": "00:28:10",
+        "content": "Now we're going to switch gears and we're going to look at fractions, right?"
+    },
+    {
+        "timestamp": "00:28:14",
+        "content": "So numerator and denominator situation here."
+    },
+    {
+        "timestamp": "00:28:18",
+        "content": "So we're going to create a new data type to represent a number as a fraction."
+    },
+    {
+        "timestamp": "00:28:24",
+        "content": "So first thing we need to do is make the design decision what data will represent our fraction."
+    },
+    {
+        "timestamp": "00:28:31",
+        "content": "So. Think about it. You guys tell me, what do you think?"
+    },
+    {
+        "timestamp": "00:28:34",
+        "content": "What's a reasonable set of data that could represent our number as a fraction?"
+    },
+    {
+        "timestamp": "00:28:41",
+        "content": "When you think of a. Yeah. Yeah."
+    },
+    {
+        "timestamp": "00:28:48",
+        "content": "A set of two. Two things, maybe integers, right?"
+    },
+    {
+        "timestamp": "00:28:51",
+        "content": "One representing the numerator, the thing above the line, and one the denominator of the thing below the line."
+    },
+    {
+        "timestamp": "00:28:58",
+        "content": "That's exactly what I had in mind. What are some behaviors of fractions?"
+    },
+    {
+        "timestamp": "00:29:03",
+        "content": "You guys tell me. What should what things should fractions do?"
+    },
+    {
+        "timestamp": "00:29:09",
+        "content": "Yes, it. Yeah."
+    },
+    {
+        "timestamp": "00:29:14",
+        "content": "Yes. Adding them, multiplying fractions together, dividing them, inverting a fraction."
+    },
+    {
+        "timestamp": "00:29:21",
+        "content": "Also something we could do, right? So one over what it currently is, things like that."
+    },
+    {
+        "timestamp": "00:29:26",
+        "content": "All right. So we're going to write it together. The full code is actually in the Python file."
+    },
+    {
+        "timestamp": "00:29:30",
+        "content": "So mostly I'm going to go through the slides just because it's incremental."
+    },
+    {
+        "timestamp": "00:29:33",
+        "content": "So it's easier for me to talk about it. But the exact full code is already in the Python file if you're running it later."
+    },
+    {
+        "timestamp": "00:29:41",
+        "content": "So the first thing we're going to do is, is create this fraction class."
+    },
+    {
+        "timestamp": "00:29:45",
+        "content": "And I'm actually going to name it simple fraction instead of fraction because we're going to improve upon this simple fraction object in a little bit."
+    },
+    {
+        "timestamp": "00:29:55",
+        "content": "So this one I'm just going to call a simple fraction like before its parent is is the generic python object."
+    },
+    {
+        "timestamp": "00:30:03",
+        "content": "Right? So again, very, very simple. It doesn't do anything special yet."
+    },
+    {
+        "timestamp": "00:30:11",
+        "content": "The first method we need to write is the init method. So how do we initialize the fraction object?"
+    },
+    {
+        "timestamp": "00:30:16",
+        "content": "Obviously we don't want the numerator or the denominator to be empty."
+    },
+    {
+        "timestamp": "00:30:20",
+        "content": "Right. So when we create a simple fraction object, we want the user to tell us the values for the numerator and denominator."
+    },
+    {
+        "timestamp": "00:30:28",
+        "content": "So those are the two parameters that I would love the user to to initiate this fraction with."
+    },
+    {
+        "timestamp": "00:30:35",
+        "content": "And then what are going to what will be the two data attributes that we had decided on?"
+    },
+    {
+        "timestamp": "00:30:41",
+        "content": "Well, numerator so self Dunnam and self Denham will be the two data attributes."
+    },
+    {
+        "timestamp": "00:30:47",
+        "content": "Right. So self Dunham and self doubt dynamo are data attributes."
+    },
+    {
+        "timestamp": "00:30:50",
+        "content": "And they're going to be set initially to whatever is passed in that constructor call."
+    },
+    {
+        "timestamp": "00:30:58",
+        "content": "Okay. So far, so good. Let's write a method that helps us multiply two fraction objects together."
+    },
+    {
+        "timestamp": "00:31:05",
+        "content": "So we'll call it times. So this time's method will be called on an object."
+    },
+    {
+        "timestamp": "00:31:11",
+        "content": "The thing before the dot, that object, that thing before the dot will get mapped to self."
+    },
+    {
+        "timestamp": "00:31:17",
+        "content": "And then the thing in the parentheses, the one other parameter will be mapped to h."
+    },
+    {
+        "timestamp": "00:31:24",
+        "content": "Okay, so how do we multiply two fraction objects together?"
+    },
+    {
+        "timestamp": "00:31:28",
+        "content": "Take the numerators, multiply them, take the denominators, multiply them."
+    },
+    {
+        "timestamp": "00:31:32",
+        "content": "You got your new numerator and you got your new denominator, right? So how do we grab the numerators of both of these objects?"
+    },
+    {
+        "timestamp": "00:31:39",
+        "content": "So the numerator of the thing before the dot right that maps to self is self dot not."
+    },
+    {
+        "timestamp": "00:31:47",
+        "content": "And the numerator of the other object that's going to be in the parameter parameter list is the name of my parameter."
+    },
+    {
+        "timestamp": "00:31:54",
+        "content": "T h dot their numerator. No. Everyone okay so far?"
+    },
+    {
+        "timestamp": "00:32:03",
+        "content": "Yes. Okay. I saw some had that. So that's good. The denominator will be the same."
+    },
+    {
+        "timestamp": "00:32:08",
+        "content": "So my new denominator is just multiplying my denominator."
+    },
+    {
+        "timestamp": "00:32:12",
+        "content": "The thing before the dot what with the thing in the parameters denominator."
+    },
+    {
+        "timestamp": "00:32:16",
+        "content": "Okay. So I've got my new numerator, my new denominator, and all I'm going to do is do the division and return this value."
+    },
+    {
+        "timestamp": "00:32:23",
+        "content": "What's the type of the return here? What's this method going to return?"
+    },
+    {
+        "timestamp": "00:32:26",
+        "content": "What type? A float. Exactly. Yeah."
+    },
+    {
+        "timestamp": "00:32:30",
+        "content": "Good. Yep. Because all I'm doing is dividing one number by another number."
+    },
+    {
+        "timestamp": "00:32:37",
+        "content": "Okay. Perfect. So that's what I've already said."
+    },
+    {
+        "timestamp": "00:32:43",
+        "content": "Now we can define another method plus to add to two fraction objects together."
+    },
+    {
+        "timestamp": "00:32:49",
+        "content": "Very similar thing, except the top is going to be slightly different."
+    },
+    {
+        "timestamp": "00:32:52",
+        "content": "Right? You take the numerator of one times the denominator of the other, plus the numerator of other times the denominator of the first one."
+    },
+    {
+        "timestamp": "00:33:01",
+        "content": "Right. The crisscross thing. The denominator is the same."
+    },
+    {
+        "timestamp": "00:33:04",
+        "content": "Right? Just multiply the numbers together and again we return the division top divided by bottom."
+    },
+    {
+        "timestamp": "00:33:10",
+        "content": "Again, the the return of this method will be a float."
+    },
+    {
+        "timestamp": "00:33:14",
+        "content": "So even though I'm multiplying or adding these two fraction objects together, my return will be a float."
+    },
+    {
+        "timestamp": "00:33:20",
+        "content": "Fine. So let's run the code. I'm creating two simple fractional objects."
+    },
+    {
+        "timestamp": "00:33:27",
+        "content": "First one is going to be accessed using a variable named F one."
+    },
+    {
+        "timestamp": "00:33:31",
+        "content": "So this one represents the number three over four. Second one is access by variable name def two and this one represents the fraction one over four."
+    },
+    {
+        "timestamp": "00:33:42",
+        "content": "Okay. So now if I access the numerator of one."
+    },
+    {
+        "timestamp": "00:33:48",
+        "content": "Python says, Well, what's the object before the dot? It's F1."
+    },
+    {
+        "timestamp": "00:33:52",
+        "content": "So what is your numerator? Well, I set it to three, so this one tells me it's three, right?"
+    },
+    {
+        "timestamp": "00:33:56",
+        "content": "Pretty simple. Same thing with the denominator of one."
+    },
+    {
+        "timestamp": "00:34:01",
+        "content": "Again, it looks at the thing before the dot. It's a fraction object."
+    },
+    {
+        "timestamp": "00:34:04",
+        "content": "It says, Do you have a dynamic data attribute? You do, and its value is four."
+    },
+    {
+        "timestamp": "00:34:08",
+        "content": "So that's four. Now."
+    },
+    {
+        "timestamp": "00:34:11",
+        "content": "What's the result of F1 plus F2?"
+    },
+    {
+        "timestamp": "00:34:15",
+        "content": "Super weird way to write it, but it's what we've got so far."
+    },
+    {
+        "timestamp": "00:34:19",
+        "content": "Right. So the thing before the dot is an object. It's a simple fraction object."
+    },
+    {
+        "timestamp": "00:34:26",
+        "content": "And the thing before the dot. Remember maps to self in my parameter list."
+    },
+    {
+        "timestamp": "00:34:32",
+        "content": "Right. Because it's just a function. So like usual functions."
+    },
+    {
+        "timestamp": "00:34:37",
+        "content": "A bunch of lectures ago we basically mapped the actual parameters when we run the function to the formal parameters."
+    },
+    {
+        "timestamp": "00:34:44",
+        "content": "The things from my function definition."
+    },
+    {
+        "timestamp": "00:34:46",
+        "content": "So the actual parameter here for self is the thing before the dot f one and the and the and the parameter F two gets mapped to OTOH."
+    },
+    {
+        "timestamp": "00:34:58",
+        "content": "That's how we read that. So this is just doing the audition, right?"
+    },
+    {
+        "timestamp": "00:35:02",
+        "content": "So this will give me one pointer because it's a float."
+    },
+    {
+        "timestamp": "00:35:07",
+        "content": "Same with the times."
+    },
+    {
+        "timestamp": "00:35:08",
+        "content": "The thing before the dot maps to self and every other parameter in the parameter list maps to all everything else except for self."
+    },
+    {
+        "timestamp": "00:35:16",
+        "content": "So this one will do three over 16 to give me .1875."
+    },
+    {
+        "timestamp": "00:35:22",
+        "content": "Okay. Everyone okay? So far. The trick here is to remember that the thing before the dot maps to self in the in"
+    },
+    {
+        "timestamp": "00:35:30",
+        "content": "the method definition and then everything else maps to everything other than self."
+    },
+    {
+        "timestamp": "00:35:36",
+        "content": "Okay. I'm glad everything's okay so far, because I'm going to get you to write this."
+    },
+    {
+        "timestamp": "00:35:42",
+        "content": "This code here, it looks like a lot, but the first half of it is just re defining the in it method for simple fractions."
+    },
+    {
+        "timestamp": "00:35:50",
+        "content": "I want you to write these two methods and they're going to be one liners basically."
+    },
+    {
+        "timestamp": "00:35:55",
+        "content": "So get inverse. Will return something and it returns a float representing one over myself."
+    },
+    {
+        "timestamp": "00:36:04",
+        "content": "Right. So if the input as is in this example here, if I have a simple fraction object representing three over four."
+    },
+    {
+        "timestamp": "00:36:12",
+        "content": "If I call get inverse on it right here if one dot get inverse self becomes f one and I would like it to return and therefore print four over three."
+    },
+    {
+        "timestamp": "00:36:32",
+        "content": "So 1.3333333. Okay, that's get in verse and then invert is a method that doesn't return anything, so it returns none and instead it just internally switches the numerator and denominator of self, right?"
+    },
+    {
+        "timestamp": "00:36:40",
+        "content": "So self's numerator becomes whatever its denominator is and the other way around, right?"
+    },
+    {
+        "timestamp": "00:36:45",
+        "content": "So when you call it this one doesn't print anything, but instead if we access everyone's numerator and denominator, they will have been switched."
+    },
+    {
+        "timestamp": "00:36:56",
+        "content": "So this is down on line. 133."
+    },
+    {
+        "timestamp": "00:37:03",
+        "content": "Give you a couple of moments and then we can write it together. Should not be a lot of code."
+    },
+    {
+        "timestamp": "00:37:09",
+        "content": "Okay. How do we write the get in verse? So remember, you have to return something."
+    },
+    {
+        "timestamp": "00:37:14",
+        "content": "How do we return? One over. Won over self."
+    },
+    {
+        "timestamp": "00:37:23",
+        "content": "So remember self is an object of type simple fraction, right?"
+    },
+    {
+        "timestamp": "00:37:26",
+        "content": "So we need to manipulate its numerator and the denominator if we want to do the return."
+    },
+    {
+        "timestamp": "00:37:31",
+        "content": "Because if we just do this, um, as this one here, this one here."
+    },
+    {
+        "timestamp": "00:37:38",
+        "content": "Then Python says, Oh, sorry, it's trying to divide one an integer by an object of type simple fraction."
+    },
+    {
+        "timestamp": "00:37:47",
+        "content": "Right. And that's the error that we get here. And it doesn't know how to do a division between an integer and a simple fraction."
+    },
+    {
+        "timestamp": "00:37:53",
+        "content": "So how can we do that? By working with actual numbers that are part of my simple fraction."
+    },
+    {
+        "timestamp": "00:38:07",
+        "content": "Anyone? Yeah. Self-denial divided by soft on them."
+    },
+    {
+        "timestamp": "00:38:17",
+        "content": "Yeah, we can do that. Yeah. Or one over soft on them."
+    },
+    {
+        "timestamp": "00:38:21",
+        "content": "Divide by soft and that's also fine. But this is a little bit cleaner."
+    },
+    {
+        "timestamp": "00:38:25",
+        "content": "So now Denham is an integer, right? Because when we create it, we pass it into it."
+    },
+    {
+        "timestamp": "00:38:32",
+        "content": "So dynamic num are integers, which means that python knows how to do a division between a number and another number."
+    },
+    {
+        "timestamp": "00:38:38",
+        "content": "Yeah. So if we run that now, it prints 1.3, three, three, three, three."
+    },
+    {
+        "timestamp": "00:38:45",
+        "content": "Exactly. Okay. How do we do the invert function method?"
+    },
+    {
+        "timestamp": "00:38:51",
+        "content": "Sorry. Sorry."
+    },
+    {
+        "timestamp": "00:38:56",
+        "content": "Go ahead. I tried to sign, you know, I was like, yeah, I need to eight or."
+    },
+    {
+        "timestamp": "00:39:09",
+        "content": "That's the deal. Yeah, I know."
+    },
+    {
+        "timestamp": "00:39:16",
+        "content": "But, you know. And so."
+    },
+    {
+        "timestamp": "00:39:25",
+        "content": "You know, they. Like that? Yeah. Yep."
+    },
+    {
+        "timestamp": "00:39:29",
+        "content": "That's one way to do it. Yep."
+    },
+    {
+        "timestamp": "00:39:33",
+        "content": "So you can see now accessing the new numerator and denominator gives me four three."
+    },
+    {
+        "timestamp": "00:39:37",
+        "content": "Any other ways that you've done it? Yeah. Hmm."
+    },
+    {
+        "timestamp": "00:39:44",
+        "content": "Also. Yep."
+    },
+    {
+        "timestamp": "00:39:53",
+        "content": "The tuple trick. I like it. Self done?"
+    },
+    {
+        "timestamp": "00:39:56",
+        "content": "Yep. Perfect. Yes. But I."
+    },
+    {
+        "timestamp": "00:40:02",
+        "content": "I just felt that now because of that. Oh, okay."
+    },
+    {
+        "timestamp": "00:40:07",
+        "content": "Yeah, that also works. Yeah. Perfect."
+    },
+    {
+        "timestamp": "00:40:12",
+        "content": "All. All very valid ways of doing it. Yep."
+    },
+    {
+        "timestamp": "00:40:16",
+        "content": "So notice there's no return for this one, right? I didn't want to return anything."
+    },
+    {
+        "timestamp": "00:40:20",
+        "content": "Python will automatically return none. And these internal numerator and denominator will have been flipped."
+    },
+    {
+        "timestamp": "00:40:26",
+        "content": "Perfect. Questions about this code."
+    },
+    {
+        "timestamp": "00:40:36",
+        "content": "So let's try it out a little bit more. So here I've got these two additions, right?"
+    },
+    {
+        "timestamp": "00:40:41",
+        "content": "So this is exactly what we had previously."
+    },
+    {
+        "timestamp": "00:40:45",
+        "content": "The exact same code. What's weird, though, and you might have been weirded out by this too when we first ran it is I am doing operations"
+    },
+    {
+        "timestamp": "00:41:06",
+        "content": "with two fraction objects and yet the plus and the and the times methods give me floats, which is a little weird, right? Ideally, if we're working with fraction objects, I would like the return to also be a fraction object so I can then work with more fraction objects later on."
+    },
+    {
+        "timestamp": "00:41:13",
+        "content": "That's one weird thing. Another weird thing is if we then print one of our objects that we've created f one."
+    },
+    {
+        "timestamp": "00:41:20",
+        "content": "In this case we use print statements often write to debug things like that."
+    },
+    {
+        "timestamp": "00:41:24",
+        "content": "If I use the print statement on an object of type that I've created, in this case, a simple fraction Python spits this out."
+    },
+    {
+        "timestamp": "00:41:33",
+        "content": "It says, Hey, your object is an object of type simple fraction at this memory location."
+    },
+    {
+        "timestamp": "00:41:40",
+        "content": "No, thank you. That's not very useful to me. Right. What I'd like to know is maybe a nice representation of my fraction object."
+    },
+    {
+        "timestamp": "00:41:47",
+        "content": "Like three or four. Right. I don't care about what memory location it's at."
+    },
+    {
+        "timestamp": "00:41:53",
+        "content": "And one more thing we'd like to try to do. This is a class that represents something numerical."
+    },
+    {
+        "timestamp": "00:42:01",
+        "content": "So something that people might instinctually want to do is to use operators like the"
+    },
+    {
+        "timestamp": "00:42:06",
+        "content": "Star or the Plus or the slash right to divide and multiply these fraction things."
+    },
+    {
+        "timestamp": "00:42:12",
+        "content": "But if we run the star operator between object of type, simple fraction right times, another object times of type simple fraction."
+    },
+    {
+        "timestamp": "00:42:21",
+        "content": "Python gives us an error. And I'll even show you the error."
+    },
+    {
+        "timestamp": "00:42:27",
+        "content": "So. Here."
+    },
+    {
+        "timestamp": "00:42:33",
+        "content": "So here I am, printing my object. Right? So it spits this out, which is fine, but not what I want."
+    },
+    {
+        "timestamp": "00:42:40",
+        "content": "This one, you know, obviously we've seen this that already prints this out."
+    },
+    {
+        "timestamp": "00:42:42",
+        "content": "And then if I try to multiply my two simple fraction objects together, it says, I don't know how to do that."
+    },
+    {
+        "timestamp": "00:42:51",
+        "content": "Right. So it's unsupported operand types. So the operand, simple fraction and simple fraction are not supported with the star operator."
+    },
+    {
+        "timestamp": "00:42:58",
+        "content": "Well, no surprise there. How's Python supposed to know how to multiply two simple fraction objects together?"
+    },
+    {
+        "timestamp": "00:43:04",
+        "content": "Right. Right. Before I even ran this program, I didn't even know what a simple fraction object was."
+    },
+    {
+        "timestamp": "00:43:09",
+        "content": "All right, so we need to tell it all of these details."
+    },
+    {
+        "timestamp": "00:43:14",
+        "content": "And we will do just that. So all of these are operators print, Len that we've been using star add right."
+    },
+    {
+        "timestamp": "00:43:24",
+        "content": "Less than greater than even the square brackets to indexed into something."
+    },
+    {
+        "timestamp": "00:43:28",
+        "content": "These are actually shorthand notations. Right."
+    },
+    {
+        "timestamp": "00:43:31",
+        "content": "They're really common operations that you want to do."
+    },
+    {
+        "timestamp": "00:43:35",
+        "content": "And Python lets you use these common operations in instead of writing these really verbose function names."
+    },
+    {
+        "timestamp": "00:43:44",
+        "content": "But really behind the scenes. All of these shorthand operations actually run a method."
+    },
+    {
+        "timestamp": "00:43:52",
+        "content": "Okay. I guess not a secret. I'm not lowering my voice because it's a secret, but it's just it's really cool."
+    },
+    {
+        "timestamp": "00:43:57",
+        "content": "So all of these operations, like the multiplication or the print statement, just gets replaced with a method."
+    },
+    {
+        "timestamp": "00:44:04",
+        "content": "Okay. And the method names look like this. They are dunder methods."
+    },
+    {
+        "timestamp": "00:44:09",
+        "content": "Just like the init method was a special method that python ran when something special happened."
+    },
+    {
+        "timestamp": "00:44:13",
+        "content": "Like you're creating an object."
+    },
+    {
+        "timestamp": "00:44:15",
+        "content": "Well, when something special happens, like you're using the plus operator between an object of your type and something else."
+    },
+    {
+        "timestamp": "00:44:23",
+        "content": "Python will also run this special dunder method behind the scenes."
+    },
+    {
+        "timestamp": "00:44:27",
+        "content": "Right. And same here. If I want to multiply my object with something else, Python will run this special dunder method behind the scenes."
+    },
+    {
+        "timestamp": "00:44:35",
+        "content": "If I want to print an object of my type. Python will run this special dunder method behind the scenes."
+    },
+    {
+        "timestamp": "00:44:41",
+        "content": "Right. Even something like casting. If I want to cast my object to a float or to a string or something."
+    },
+    {
+        "timestamp": "00:44:47",
+        "content": "Python will run this special dunder method behind the scenes."
+    },
+    {
+        "timestamp": "00:44:51",
+        "content": "And then, you know, there's a whole bunch of other ones even indexing into a list or sorry, not a list, indexing into an object of your type."
+    },
+    {
+        "timestamp": "00:45:04",
+        "content": "So if you make an object like a Q or a stack where you know you have a bunch of sequences of objects, you can tell Python how to index into an object of your type into an object."
+    },
+    {
+        "timestamp": "00:45:09",
+        "content": "That's a queue, right? So all of these things, all of these methods need to be implemented somewhere."
+    },
+    {
+        "timestamp": "00:45:17",
+        "content": "Now, most of them are not implemented in the basic python object except for the STR."
+    },
+    {
+        "timestamp": "00:45:25",
+        "content": "So the str method actually just prints the memory location of this object."
+    },
+    {
+        "timestamp": "00:45:29",
+        "content": "That's exactly what we had seen right by the default behavior."
+    },
+    {
+        "timestamp": "00:45:32",
+        "content": "But none of these other ones are really implemented. And so if you want the object that you're currently writing to work with the Star or the"
+    },
+    {
+        "timestamp": "00:45:46",
+        "content": "Plus or the double equal sign to test for equality between this object and something else, you have to write the method in your class definition."
+    },
+    {
+        "timestamp": "00:45:51",
+        "content": "Okay. So you have to implement it to tell Python that this is what you want to do when somebody uses the special shorthand notation."
+    },
+    {
+        "timestamp": "00:45:59",
+        "content": "So let's start with the print, because it's the most basic thing you will probably want to implement when you create a new data type."
+    },
+    {
+        "timestamp": "00:46:05",
+        "content": "Right. For debugging purposes, you will find yourself instinctually saying, hey, print F1 to print this fraction, object to see what it looks like."
+    },
+    {
+        "timestamp": "00:46:14",
+        "content": "And so the STR method is one of the really basic things you should implement right after the method."
+    },
+    {
+        "timestamp": "00:46:20",
+        "content": "Okay. So let's look at it in the context of the court and object."
+    },
+    {
+        "timestamp": "00:46:24",
+        "content": "So here I've got my court an object three, comma four."
+    },
+    {
+        "timestamp": "00:46:29",
+        "content": "And even when I print this court, an object Python tells me this still uninformative message that this object is of type coordinate at this memory location."
+    },
+    {
+        "timestamp": "00:46:38",
+        "content": "I don't care. WINSTEAD What I would really like to do is say, hey, I want to represent a court."
+    },
+    {
+        "timestamp": "00:46:43",
+        "content": "It object by something like this angle bracket the value of the X coordinate comma, the value of the Y coordinate close angle bracket."
+    },
+    {
+        "timestamp": "00:46:53",
+        "content": "Right. So that would be a far more informative print statement than what memory location this thing is that right?"
+    },
+    {
+        "timestamp": "00:47:00",
+        "content": "So let's do that. Well, here we are."
+    },
+    {
+        "timestamp": "00:47:04",
+        "content": "Our our. Our. Our court and object."
+    },
+    {
+        "timestamp": "00:47:08",
+        "content": "The distance, the net like we had before. And here I'm defining my str method."
+    },
+    {
+        "timestamp": "00:47:14",
+        "content": "Right? So double underscore str double underscore. No other parameters except for self."
+    },
+    {
+        "timestamp": "00:47:19",
+        "content": "So me calling this method on an object. And what is this going to do?"
+    },
+    {
+        "timestamp": "00:47:25",
+        "content": "It will return, not print. Return a string."
+    },
+    {
+        "timestamp": "00:47:32",
+        "content": "And the string is going to represent the thing you want to be printed out."
+    },
+    {
+        "timestamp": "00:47:36",
+        "content": "So it returns a string doesn't print it however you want to make up the string is up to you."
+    },
+    {
+        "timestamp": "00:47:45",
+        "content": "So here I've just used concatenation of a bunch of stuff, so I'm concatenating the angle bracket with the x value of my current object cache to a string concatenated with the"
+    },
+    {
+        "timestamp": "00:47:54",
+        "content": "comma concatenated with the y value of my current object cast to a string concatenated with the closed ankle bracket."
+    },
+    {
+        "timestamp": "00:48:00",
+        "content": "And that's the design decision we made to for how according to object should be printed."
+    },
+    {
+        "timestamp": "00:48:07",
+        "content": "Everyone okay so far? Okay."
+    },
+    {
+        "timestamp": "00:48:12",
+        "content": "So if you want to use an F string to make up this thing to return, totally fine."
+    },
+    {
+        "timestamp": "00:48:18",
+        "content": "If you want to make a variable right in between the return and the definition here that you just keep concatenating with."
+    },
+    {
+        "timestamp": "00:48:24",
+        "content": "So you can made it with new lines and things like that. Also, totally fine at the end you just have to return that string that represents the thing."
+    },
+    {
+        "timestamp": "00:48:32",
+        "content": "You want to print it out. So now let's see what happens when we actually run the code, right?"
+    },
+    {
+        "timestamp": "00:48:39",
+        "content": "So here I'm creating a coordinate object, and then I'm printing that coordinate object."
+    },
+    {
+        "timestamp": "00:48:44",
+        "content": "Well, Python says, Hey, you just called a special shorthand notation on an object of type coordinate."
+    },
+    {
+        "timestamp": "00:48:51",
+        "content": "Let me see if you implemented the STR method. It looks in the class definition."
+    },
+    {
+        "timestamp": "00:49:02",
+        "content": "It sees the str method implemented here and then it runs the code inside and says you want to grab, sees x value and sees y value and concatenated with these things here."
+    },
+    {
+        "timestamp": "00:49:07",
+        "content": "Sure, I can do that for you. And then it goes and prints this out to the screen."
+    },
+    {
+        "timestamp": "00:49:13",
+        "content": "Okay. Very cool. Right now we can decide how to print objects that we create."
+    },
+    {
+        "timestamp": "00:49:19",
+        "content": "All right. So let's try to wrap our minds around types here."
+    },
+    {
+        "timestamp": "00:49:23",
+        "content": "Okay. So if we print this, see?"
+    },
+    {
+        "timestamp": "00:49:28",
+        "content": "See is an instance of a court it object, right?"
+    },
+    {
+        "timestamp": "00:49:31",
+        "content": "It's it's it's it's a it's it's an actual object that we're manipulating."
+    },
+    {
+        "timestamp": "00:49:35",
+        "content": "It's not the class definition. It's not anything abstract like that."
+    },
+    {
+        "timestamp": "00:49:38",
+        "content": "It's an actual object, like the integer three. Right. Is an actual object."
+    },
+    {
+        "timestamp": "00:49:44",
+        "content": "So if we print that c python uses the str method. Well, what if we print the type of see somebody tell me what's the type of see?"
+    },
+    {
+        "timestamp": "00:49:56",
+        "content": "CORDEN Yeah, it's the class name that we define. So when we print that type of C, Python says this is a class coordinate."
+    },
+    {
+        "timestamp": "00:50:04",
+        "content": "Which makes sense because if we just replace type of see here with what it is coordinate, we'll get the same print statement."
+    },
+    {
+        "timestamp": "00:50:11",
+        "content": "If we just print coordinate. Python says this is a class of type called."
+    },
+    {
+        "timestamp": "00:50:16",
+        "content": "So those two lines are equivalent. And then let me blow your minds a little bit more."
+    },
+    {
+        "timestamp": "00:50:22",
+        "content": "What if we print the type of coordinate? Well, what is coordinate?"
+    },
+    {
+        "timestamp": "00:50:28",
+        "content": "It's a type. Right."
+    },
+    {
+        "timestamp": "00:50:32",
+        "content": "We're defining a new type in Python called a coordinate."
+    },
+    {
+        "timestamp": "00:50:36",
+        "content": "So coordinate is a new data type in Python. So its type is."
+    },
+    {
+        "timestamp": "00:50:41",
+        "content": "Type. Okay."
+    },
+    {
+        "timestamp": "00:50:44",
+        "content": "So everything in Python is an object. Even types."
+    },
+    {
+        "timestamp": "00:50:49",
+        "content": "Okay. One more thing. So we've used the type of something equal something else, right?"
+    },
+    {
+        "timestamp": "00:50:55",
+        "content": "When we check that the type of the the Circles Center was a coordinate."
+    },
+    {
+        "timestamp": "00:50:59",
+        "content": "That's one way to check for types. Another way is to use this is instance function just as an aside so you can check that C is"
+    },
+    {
+        "timestamp": "00:51:09",
+        "content": "an instance of type coordinate by using this is instance method and this will tell you true."
+    },
+    {
+        "timestamp": "00:51:15",
+        "content": "And you know just to draw a parallel you can say is instance three comma and that would also say true, right?"
+    },
+    {
+        "timestamp": "00:51:22",
+        "content": "Because three is an object of type integer. It's just another way to check for types."
+    },
+    {
+        "timestamp": "00:51:28",
+        "content": "Okay. So the remainder of this class, I would like to go back to our fraction class and make it better."
+    },
+    {
+        "timestamp": "00:51:38",
+        "content": "Now that we know Dunder Method's right."
+    },
+    {
+        "timestamp": "00:51:42",
+        "content": "Let's implement a whole bunch of Dunder methods to help us."
+    },
+    {
+        "timestamp": "00:51:47",
+        "content": "To help us and people who want to use our class use it in a more efficient way."
+    },
+    {
+        "timestamp": "00:51:52",
+        "content": "Right. So we're going to implement the star operator, the plus operator."
+    },
+    {
+        "timestamp": "00:51:55",
+        "content": "We're going to implement the print. And then we're going to implement, implement, converting to a float."
+    },
+    {
+        "timestamp": "00:52:02",
+        "content": "All right. So the first thing that we should probably add is the STR method."
+    },
+    {
+        "timestamp": "00:52:07",
+        "content": "Right. Because then it will help us in debugging when we print an object of type fraction."
+    },
+    {
+        "timestamp": "00:52:14",
+        "content": "So let's define double underscore as our double underscore, right?"
+    },
+    {
+        "timestamp": "00:52:18",
+        "content": "Again, no parameters except for self, because that's the the the method, the object we're calling this method on."
+    },
+    {
+        "timestamp": "00:52:26",
+        "content": "And again, however you want to form this string is up to you."
+    },
+    {
+        "timestamp": "00:52:30",
+        "content": "You can use f strings or a variable that you keep adding on to."
+    },
+    {
+        "timestamp": "00:52:34",
+        "content": "I just did it straight in here with concatenation, so I've got the numerator slash the denominator as a very reasonable way to represent a string."
+    },
+    {
+        "timestamp": "00:52:43",
+        "content": "Right. So 3/4 as three over four."
+    },
+    {
+        "timestamp": "00:52:48",
+        "content": "Okay. So one thing I guess to keep you keep track of is if you're concatenating, you just have to remember to cast districts, right?"
+    },
+    {
+        "timestamp": "00:52:56",
+        "content": "If it's a number or something, that's not a string. So let's try it out."
+    },
+    {
+        "timestamp": "00:53:01",
+        "content": "I've got three fraction objects here. So the first two we've already seen."
+    },
+    {
+        "timestamp": "00:53:07",
+        "content": "So I've got a fraction representing three over four. A fraction representing one over four."
+    },
+    {
+        "timestamp": "00:53:11",
+        "content": "And a three is now going to be a fraction representing five over one."
+    },
+    {
+        "timestamp": "00:53:17",
+        "content": "Okay. If we print F1 again, python asks Hey, did you implement an SDR method in your class definition?"
+    },
+    {
+        "timestamp": "00:53:25",
+        "content": "Yes you did. Good job. Let me use it. So then it uses this, right?"
+    },
+    {
+        "timestamp": "00:53:29",
+        "content": "So grabs the numerator of f one slash the numerator of sorry, the denominator of f one."
+    },
+    {
+        "timestamp": "00:53:35",
+        "content": "So this will print three the numerator of one slash the denominator of of one."
+    },
+    {
+        "timestamp": "00:53:41",
+        "content": "Okay. Same with I have to accept that now it's going to grab f two's numerator and denominator one for."
+    },
+    {
+        "timestamp": "00:53:49",
+        "content": "So notice now it's not doing the divisions like it did before or."
+    },
+    {
+        "timestamp": "00:53:53",
+        "content": "Sorry, never mind. We're not there yet. There's nothing to divide."
+    },
+    {
+        "timestamp": "00:53:57",
+        "content": "It's just grabbing the numerator and denominator and just printing them out."
+    },
+    {
+        "timestamp": "00:54:01",
+        "content": "Right. It's not doing any divisions. Now when we print five the the the fraction object representing five over one it prints 5/1."
+    },
+    {
+        "timestamp": "00:54:15",
+        "content": "I don't like that because it looks weird, right?"
+    },
+    {
+        "timestamp": "00:54:20",
+        "content": "Do you like that? So then I'm going to have you fix it."
+    },
+    {
+        "timestamp": "00:54:26",
+        "content": "Change the str method just a little bit. Such that if the denominator is one."
+    },
+    {
+        "timestamp": "00:54:34",
+        "content": "Just have it print the numerator, right."
+    },
+    {
+        "timestamp": "00:54:38",
+        "content": "And otherwise the representation should be as before numerator and denominator."
+    },
+    {
+        "timestamp": "00:54:47",
+        "content": "So this should be a down line. 140."
+    },
+    {
+        "timestamp": "00:54:52",
+        "content": "Yeah. Where is it? Very far down to 65."
+    },
+    {
+        "timestamp": "00:55:08",
+        "content": "Okay. Anyone have some code for me? Yes."
+    },
+    {
+        "timestamp": "00:55:27",
+        "content": "Yep. But. Yep."
+    },
+    {
+        "timestamp": "00:55:35",
+        "content": "We can do it. What else is not needed? I don't think."
+    },
+    {
+        "timestamp": "00:55:39",
+        "content": "Because if we dropped into the if we just immediately return. Otherwise we would just do the remaining thing."
+    },
+    {
+        "timestamp": "00:55:44",
+        "content": "But perfectly fine. Yeah. And let's run it."
+    },
+    {
+        "timestamp": "00:55:52",
+        "content": "Right. So the A is a fraction representing one over four, so nicely printed one over four and B the fraction three over one is just printing three."
+    },
+    {
+        "timestamp": "00:56:02",
+        "content": "Good. Questions about this code."
+    },
+    {
+        "timestamp": "00:56:08",
+        "content": "Okay. For the remaining lecture though we're not going to use this modified this nicer better SDR method."
+    },
+    {
+        "timestamp": "00:56:15",
+        "content": "So let's just forget what we just did and just remember that it looks like this."
+    },
+    {
+        "timestamp": "00:56:20",
+        "content": "Okay, just. Okay. So now let's implement the Dunder methods for addition, multiplication division and things like that."
+    },
+    {
+        "timestamp": "00:56:29",
+        "content": "So I'm going to do the multiplication just because it's not as long for the numerator."
+    },
+    {
+        "timestamp": "00:56:34",
+        "content": "So just convenience factor here. The left hand side, I've got our old simple fraction code."
+    },
+    {
+        "timestamp": "00:56:41",
+        "content": "And the right hand side has my new fraction code."
+    },
+    {
+        "timestamp": "00:56:45",
+        "content": "Okay, so the old simple fraction code. Remember, had this times method."
+    },
+    {
+        "timestamp": "00:56:51",
+        "content": "That took itself and OTOH it calculated a new numerator and denominator and returned this."
+    },
+    {
+        "timestamp": "00:56:58",
+        "content": "Okay. Now my new fraction code will no longer need to call times."
+    },
+    {
+        "timestamp": "00:57:04",
+        "content": "Right. So we're not going to implement a method called times."
+    },
+    {
+        "timestamp": "00:57:07",
+        "content": "Instead, we're going to implement the method behind the scenes for the shorthand notation star to multiply two frac fraction objects."
+    },
+    {
+        "timestamp": "00:57:17",
+        "content": "So we need to implement RDF double underscore, multiple underscore."
+    },
+    {
+        "timestamp": "00:57:22",
+        "content": "Parameter list is the same because we still have a thing before the star and"
+    },
+    {
+        "timestamp": "00:57:25",
+        "content": "the thing after the star as the two fraction object we'd like to multiply."
+    },
+    {
+        "timestamp": "00:57:30",
+        "content": "Within the code itself. The new calculations of the new numerator in the new denominator are the same as well."
+    },
+    {
+        "timestamp": "00:57:37",
+        "content": "Right. We're still grabbing the numerators of self and other the denominators of self and other multiplying those together."
+    },
+    {
+        "timestamp": "00:57:43",
+        "content": "Right. What's different is in the returns, right?"
+    },
+    {
+        "timestamp": "00:57:47",
+        "content": "What was the return type for the The Times method?"
+    },
+    {
+        "timestamp": "00:57:56",
+        "content": "A decimal? Yeah, a float. Exactly. What's the return type of my new."
+    },
+    {
+        "timestamp": "00:58:01",
+        "content": "Method, the more. A fraction."
+    },
+    {
+        "timestamp": "00:58:05",
+        "content": "Exactly. So, yes, I am operating with fraction objects."
+    },
+    {
+        "timestamp": "00:58:09",
+        "content": "So I'm expecting that the return type of this method, the star double score model, is also a fraction object."
+    },
+    {
+        "timestamp": "00:58:18",
+        "content": "So then I can just keep working with fraction objects throughout my code, not having to worry about whether this thing is now afloat or not."
+    },
+    {
+        "timestamp": "00:58:25",
+        "content": "All right, so how are we creating this fraction object?"
+    },
+    {
+        "timestamp": "00:58:28",
+        "content": "Well, just like we would create a regular fraction object up in the previous slides."
+    },
+    {
+        "timestamp": "00:58:34",
+        "content": "Right. So here. Right. Here's an example of us creating a new fraction object."
+    },
+    {
+        "timestamp": "00:58:38",
+        "content": "Right. Numerator one denominator for well, same here."
+    },
+    {
+        "timestamp": "00:58:43",
+        "content": "This method will return a new fraction object."
+    },
+    {
+        "timestamp": "00:58:47",
+        "content": "Whose numerator is the thing that I just calculated the top and the denominator is the thing that I just calculated bottom."
+    },
+    {
+        "timestamp": "00:58:56",
+        "content": "Does that make sense? Okay."
+    },
+    {
+        "timestamp": "00:59:02",
+        "content": "So this one returns a float. This one returns a fraction."
+    },
+    {
+        "timestamp": "00:59:06",
+        "content": "Okay. Let's run it. So a fraction, one over four B is a fraction representing three over four."
+    },
+    {
+        "timestamp": "00:59:13",
+        "content": "Good. Those are the numbers we've been working with. If we print a the print statement says this is the fraction object one slash for right."
+    },
+    {
+        "timestamp": "00:59:21",
+        "content": "Whose representation is one slash."
+    },
+    {
+        "timestamp": "00:59:22",
+        "content": "For now, if I use the star operator between A and B, the thing before the star is kind of like the thing before the dot."
+    },
+    {
+        "timestamp": "00:59:30",
+        "content": "It's the self. It gets mapped to self in my double underscore."
+    },
+    {
+        "timestamp": "00:59:34",
+        "content": "And the thing after the star, right, the second parameter so to speak is the is the is the one parameter that my method takes right other."
+    },
+    {
+        "timestamp": "00:59:45",
+        "content": "So this will create will run the mall method behind the scenes."
+    },
+    {
+        "timestamp": "00:59:49",
+        "content": "Right. So Python, when it sees that star asks, do you have a more method implemented in your class action?"
+    },
+    {
+        "timestamp": "00:59:55",
+        "content": "Because the thing before the star is a fraction object."
+    },
+    {
+        "timestamp": "00:59:59",
+        "content": "Yes, we do. What does it return? Well, it does the multiplication."
+    },
+    {
+        "timestamp": "01:00:03",
+        "content": "And in the end, the return of this method is this thing here."
+    },
+    {
+        "timestamp": "01:00:06",
+        "content": "Right. So I literally just made this, I guess, copied this from the return using the numbers of an B."
+    },
+    {
+        "timestamp": "01:00:14",
+        "content": "So it creates a new fraction object whose numerators three and denominator is 60."
+    },
+    {
+        "timestamp": "01:00:20",
+        "content": "So C equals fraction parentheses three comma 16."
+    },
+    {
+        "timestamp": "01:00:26",
+        "content": "Basically just another fraction object. So now when I print c."
+    },
+    {
+        "timestamp": "01:00:31",
+        "content": "It's going to use the str method for a fraction object."
+    },
+    {
+        "timestamp": "01:00:34",
+        "content": "Right. Because C is a fraction object. Right."
+    },
+    {
+        "timestamp": "01:00:38",
+        "content": "That right. That's exactly what C was. So this will also print the way we ask to print a fraction."
+    },
+    {
+        "timestamp": "01:00:45",
+        "content": "Numerator and denominator three slash 60. Everyone okay so far?"
+    },
+    {
+        "timestamp": "01:00:57",
+        "content": "Okay. So the following lines are all equivalent."
+    },
+    {
+        "timestamp": "01:01:01",
+        "content": "Okay. Using the shorthand notation."
+    },
+    {
+        "timestamp": "01:01:05",
+        "content": "Very nice. Very python. Like way to multiply two fractions together."
+    },
+    {
+        "timestamp": "01:01:10",
+        "content": "But behind the scenes, this is just running a method."
+    },
+    {
+        "timestamp": "01:01:14",
+        "content": "So, of course, if you really want to, you can just use the same old way of calling a method."
+    },
+    {
+        "timestamp": "01:01:21",
+        "content": "Right. Thing before the dot dot method name parentheses parameter list."
+    },
+    {
+        "timestamp": "01:01:28",
+        "content": "So here think before the dot is a dot the name of my method the square moldable"
+    },
+    {
+        "timestamp": "01:01:34",
+        "content": "underscore parentheses all of the parameter list except for the thing I'm calling it."
+    },
+    {
+        "timestamp": "01:01:48",
+        "content": "All right, so those two are equivalent. And of course, last time I mentioned sort of a way to hopefully demystify running these methods where, you know, the self becomes this thing before the dot. You could call the method on the name of your data type, right?"
+    },
+    {
+        "timestamp": "01:01:57",
+        "content": "The, the type that you're currently creating fraction. So fraction is not an instance, right?"
+    },
+    {
+        "timestamp": "01:02:03",
+        "content": "A was an instance, it was an actual object that we created. But Fraction is just the name of my class."
+    },
+    {
+        "timestamp": "01:02:08",
+        "content": "So if you call the method on the name of your class, then Python expects the full parameter list."
+    },
+    {
+        "timestamp": "01:02:14",
+        "content": "Right? So something for self, something for other, something for whatever parameters you have."
+    },
+    {
+        "timestamp": "01:02:19",
+        "content": "And so there we would explicitly pass in both A and B as part of my parameter list because the thing before the dot is not an object."
+    },
+    {
+        "timestamp": "01:02:26",
+        "content": "So there's nothing, it doesn't map itself. Okay. But I would never, ever, ever run line of code like this."
+    },
+    {
+        "timestamp": "01:02:35",
+        "content": "This last one here, right? This is just for your information, it's non python like it's just very verbose, right?"
+    },
+    {
+        "timestamp": "01:02:42",
+        "content": "And so this these these dunder methods help us abstract away a bunch of these details."
+    },
+    {
+        "timestamp": "01:02:49",
+        "content": "Right. So how annoying would it be to always use dot notation when we want to multiply an integer with another integer?"
+    },
+    {
+        "timestamp": "01:02:56",
+        "content": "Can you imagine constantly writing three dot doubles for Moldovan Square for that would be very bad code."
+    },
+    {
+        "timestamp": "01:03:03",
+        "content": "It would take forever to read. Right."
+    },
+    {
+        "timestamp": "01:03:05",
+        "content": "And so we're abstracting away all the details for calling these methods into these nice little shorthand notations."
+    },
+    {
+        "timestamp": "01:03:11",
+        "content": "And as I said, the shorthand notations exist for a lot of different operations."
+    },
+    {
+        "timestamp": "01:03:15",
+        "content": "We saw print. You can do length comparisons like equality, even indexing into things."
+    },
+    {
+        "timestamp": "01:03:21",
+        "content": "You can always you can abstract all of those away into shorthand notations."
+    },
+    {
+        "timestamp": "01:03:27",
+        "content": "And behind the scenes, these methods will be run. Okay."
+    },
+    {
+        "timestamp": "01:03:32",
+        "content": "So big idea. Right. Exactly what I said."
+    },
+    {
+        "timestamp": "01:03:35",
+        "content": "All these special operations that we've been using already."
+    },
+    {
+        "timestamp": "01:03:39",
+        "content": "Behind the scenes, these methods get run, and these methods were written inside the class definition for the types that we've been using, right?"
+    },
+    {
+        "timestamp": "01:03:53",
+        "content": "So when we index into a list, L square brackets, three or whatever, there's a method being called behind the scenes in the list class to grab the element at index three."
+    },
+    {
+        "timestamp": "01:04:00",
+        "content": "I don't remember the method name for that, but probably like double score index to one score, I don't know."
+    },
+    {
+        "timestamp": "01:04:06",
+        "content": "But there is some method behind the scenes. All right."
+    },
+    {
+        "timestamp": "01:04:09",
+        "content": "Let's do a couple more things. Sorry."
+    },
+    {
+        "timestamp": "01:04:14",
+        "content": "I guess that doesn't mean something to us. You can't ask Python, but you can look at the documentation."
+    },
+    {
+        "timestamp": "01:04:21",
+        "content": "I think it's like in python dot org. There's a website that lists basically everything that you can."
+    },
+    {
+        "timestamp": "01:04:27",
+        "content": "That's a dungeon method. Yeah. Under categories like and all the indexing type stuff."
+    },
+    {
+        "timestamp": "01:04:32",
+        "content": "All the numerical type stuff. Yeah. Okay."
+    },
+    {
+        "timestamp": "01:04:37",
+        "content": "So let's do one more thing. Let's say that we're working with fraction objects."
+    },
+    {
+        "timestamp": "01:04:42",
+        "content": "And so the dunder methods that we're writing are now returning other fraction objects."
+    },
+    {
+        "timestamp": "01:04:59",
+        "content": "So let's allow the user the opportunity to cast one of these fraction objects to a float just in case they would like to do grab the, you know, the the float value of three slash 60."
+    },
+    {
+        "timestamp": "01:05:03",
+        "content": "Right. That's a very reasonable thing they might want to do. So let's, you know, get ahead of them and add that as part of our class definition."
+    },
+    {
+        "timestamp": "01:05:11",
+        "content": "So to cast things to a float in this particular case, the Dunder method for that is double underscore, float to double underscore."
+    },
+    {
+        "timestamp": "01:05:19",
+        "content": "And all it's going to do is grab the numerator of self and divide it by the denominator of self."
+    },
+    {
+        "timestamp": "01:05:26",
+        "content": "Right. So this will just do a division. Self dot nom is a number self."
+    },
+    {
+        "timestamp": "01:05:29",
+        "content": "That genome is another number. It does the division and this returns a float."
+    },
+    {
+        "timestamp": "01:05:34",
+        "content": "Right. So here when we multiply c is equal to eight times b, remember that C became a fraction object with numerator and denominator 16."
+    },
+    {
+        "timestamp": "01:05:44",
+        "content": "Right. You remember that. So then when we cast it to a float down here, Python says, Hey, did you implement the under method?"
+    },
+    {
+        "timestamp": "01:05:54",
+        "content": "Double underscore, float, double underscore. Oh, yeah, you did. Let me just go ahead and do the thing you want me to do inside it."
+    },
+    {
+        "timestamp": "01:06:00",
+        "content": "So it takes the three divided by 16 and it prints .1875."
+    },
+    {
+        "timestamp": "01:06:09",
+        "content": "Okay. Let's try it out a little bit more."
+    },
+    {
+        "timestamp": "01:06:11",
+        "content": "So here I've got two fractured objects, one representing one over four, the other one representing two over three."
+    },
+    {
+        "timestamp": "01:06:19",
+        "content": "I multiply those two together. Again, this gives me a fraction object, right?"
+    },
+    {
+        "timestamp": "01:06:23",
+        "content": "Because it's running the the mold under method and the mold under method gives me a fraction object with the new numerator and denominator."
+    },
+    {
+        "timestamp": "01:06:37",
+        "content": "So when I print the return of that, when I print C, this prints the new numerator, which is two times one divided by the new denominator, which is four times three."
+    },
+    {
+        "timestamp": "01:06:41",
+        "content": "So prints two over 12. Does that look okay to you?"
+    },
+    {
+        "timestamp": "01:06:48",
+        "content": "I mean, it looks okay, but suppose you're doing, you know, calculations with a whole bunch of numbers."
+    },
+    {
+        "timestamp": "01:06:53",
+        "content": "And at some point you get two really big numerators and really big denominators."
+    },
+    {
+        "timestamp": "01:06:58",
+        "content": "But then. You stare at it long enough and realize that that big numerator divided by the denominator is actually something like one over four."
+    },
+    {
+        "timestamp": "01:07:08",
+        "content": "Right? So this is not reduced. Right."
+    },
+    {
+        "timestamp": "01:07:12",
+        "content": "Which is fine. Our code is not doing the reduction, but it would be nice."
+    },
+    {
+        "timestamp": "01:07:19",
+        "content": "To write a method that allows the user to reduce a fraction right now would be really nice."
+    },
+    {
+        "timestamp": "01:07:26",
+        "content": "So can we fix this? Yes, we can. Otherwise we wouldn't be here."
+    },
+    {
+        "timestamp": "01:07:30",
+        "content": "So let's write this method to reduce a fraction object."
+    },
+    {
+        "timestamp": "01:07:35",
+        "content": "It looks like a lot. But it's not."
+    },
+    {
+        "timestamp": "01:07:39",
+        "content": "Trust me, it's just a bunch of us. So the first part of it is a little helper function, not a method."
+    },
+    {
+        "timestamp": "01:07:47",
+        "content": "Right. Notice there's no self going on in this GCD function, right?"
+    },
+    {
+        "timestamp": "01:07:52",
+        "content": "This is just a regular function that I will use to help me get the greatest common divisor for the two parameters."
+    },
+    {
+        "timestamp": "01:08:00",
+        "content": "And. And D. Okay. Because when I have two numbers, right?"
+    },
+    {
+        "timestamp": "01:08:06",
+        "content": "If I want to reduce them, I find the greatest common divisors and I'm going to divide the top and the bottom by that divisor."
+    },
+    {
+        "timestamp": "01:08:13",
+        "content": "And that will help me reduce it. So this GCD function helps me find this greatest common divisor."
+    },
+    {
+        "timestamp": "01:08:20",
+        "content": "All right, so here, I'm just defining the function. I'm not actually using it."
+    },
+    {
+        "timestamp": "01:08:24",
+        "content": "And then I've got to I an infant, an elf."
+    },
+    {
+        "timestamp": "01:08:29",
+        "content": "So if the denominator zero, something's super weird, so I'm just going to return none."
+    },
+    {
+        "timestamp": "01:08:33",
+        "content": "Right. Because having a fraction where the denominator zero."
+    },
+    {
+        "timestamp": "01:08:36",
+        "content": "Maybe something went wrong. Else if the denominator is one, we don't need to do any reduction."
+    },
+    {
+        "timestamp": "01:08:43",
+        "content": "Right. No reducing is needed. So we just return the numerator. And else I do have two actual numbers that I could maybe could potentially reduce."
+    },
+    {
+        "timestamp": "01:08:54",
+        "content": "So let's just reduce them."
+    },
+    {
+        "timestamp": "01:08:57",
+        "content": "The first line here runs this function, this helper function that I wrote on the numerator and denominator to grab the greatest common divisor."
+    },
+    {
+        "timestamp": "01:09:06",
+        "content": "So, you know, it's two over 12, it'll find two."
+    },
+    {
+        "timestamp": "01:09:10",
+        "content": "Then the next line here takes the numerator, the numerator and divides by that greatest common divisor and cast it to an it."
+    },
+    {
+        "timestamp": "01:09:19",
+        "content": "Right. Because I want my numerator and denominator to be in it."
+    },
+    {
+        "timestamp": "01:09:23",
+        "content": "So I'll take the numerator and divide by for example two. Same with the nominator."
+    },
+    {
+        "timestamp": "01:09:28",
+        "content": "I'm going to take my denominator and divide by that same GCD."
+    },
+    {
+        "timestamp": "01:09:32",
+        "content": "I found. Casting to an end."
+    },
+    {
+        "timestamp": "01:09:36",
+        "content": "So my new top and my new bottom will now be used to create a new fraction object."
+    },
+    {
+        "timestamp": "01:09:44",
+        "content": "That is in reduced form. All right. So one six for the example to 12."
+    },
+    {
+        "timestamp": "01:09:51",
+        "content": "All right. So here it is. This is my previous example where I multiplied that thing that gave me to slash 12."
+    },
+    {
+        "timestamp": "01:09:59",
+        "content": "And then if I do see dot reduce python will call the reduced method on C so the object that whose numerators two and denominators 12 and"
+    },
+    {
+        "timestamp": "01:10:09",
+        "content": "then this will reduce it to one over six and we'll print call the SDR method on an object of type fraction to give me one over six."
+    },
+    {
+        "timestamp": "01:10:21",
+        "content": "Everyone okay? You could put it outside the reduce, but since it's being used specifically in the reduce, we'd like to just keep it within."
+    },
+    {
+        "timestamp": "01:10:37",
+        "content": "Right. So it's not if it doesn't need to be used by other things, we'll just keep it only to the sort of scope where it needs to exist."
+    },
+    {
+        "timestamp": "01:10:45",
+        "content": "But it can be outside here. Okay."
+    },
+    {
+        "timestamp": "01:10:53",
+        "content": "So one thing is weird here, though, right?"
+    },
+    {
+        "timestamp": "01:10:56",
+        "content": "This elif here. What is the type that gets returned from the Alps?"
+    },
+    {
+        "timestamp": "01:11:05",
+        "content": "You guys tell me, what's this type here that gets returned down in the Alps? Fraction."
+    },
+    {
+        "timestamp": "01:11:09",
+        "content": "What is the type being returned in the cliff? Yes, it."
+    },
+    {
+        "timestamp": "01:11:19",
+        "content": "So if the denominator happens to be a one, this function, this method reduce returns an integer."
+    },
+    {
+        "timestamp": "01:11:27",
+        "content": "If it's not, it returns a fraction."
+    },
+    {
+        "timestamp": "01:11:30",
+        "content": "So if at some point in the future you're mixing, you know, you you happen to reduce something that has a denominator of one."
+    },
+    {
+        "timestamp": "01:11:37",
+        "content": "You're now working with integers and then potentially you'd be doing further operations by mixing that with fraction object."
+    },
+    {
+        "timestamp": "01:11:45",
+        "content": "So as an example here I've got a fraction object, A four over one, B three over nine."
+    },
+    {
+        "timestamp": "01:11:52",
+        "content": "Reducing it gives me a four fine. It's the integer four and reducing B gives me one over three fraction one over three."
+    },
+    {
+        "timestamp": "01:11:59",
+        "content": "Right. So the type just to show you exactly you know I'm not liking the type of the a reduced is an end."
+    },
+    {
+        "timestamp": "01:12:09",
+        "content": "Right. That's what the code is doing. And the type of be reduced is a fraction."
+    },
+    {
+        "timestamp": "01:12:14",
+        "content": "So then when we do the star operator between AR and VR, Python is going to say you're trying to multiply an ant with a fraction."
+    },
+    {
+        "timestamp": "01:12:22",
+        "content": "Did you ever tell me how to do that? No. Right."
+    },
+    {
+        "timestamp": "01:12:26",
+        "content": "We told it how to multiply a fraction in another fraction, but not an inch with a fraction."
+    },
+    {
+        "timestamp": "01:12:32",
+        "content": "And so Python will fail here. So one thing that you can do to fix it is to change this elif here."
+    },
+    {
+        "timestamp": "01:12:44",
+        "content": "So let's have everything consistent. So I want you to do this change."
+    },
+    {
+        "timestamp": "01:12:48",
+        "content": "Instead of returning self dot num return for me a fraction object representing the numerator."
+    },
+    {
+        "timestamp": "01:12:55",
+        "content": "Right. All right. Does anyone know?"
+    },
+    {
+        "timestamp": "01:12:58",
+        "content": "Just a small change to a set of returning self. Don't know. What should I return?"
+    },
+    {
+        "timestamp": "01:13:04",
+        "content": "How do I make a fraction object? Just invoke the name of fraction."
+    },
+    {
+        "timestamp": "01:13:08",
+        "content": "Right. What's the numerator of this fraction object supposed to be?"
+    },
+    {
+        "timestamp": "01:13:13",
+        "content": "It's already there. Self Dunham. What's the denominator of this fraction object?"
+    },
+    {
+        "timestamp": "01:13:20",
+        "content": "Yeah, exactly. So it's just returns a fraction object whose numerator is solved on common denominator as what exactly."
+    },
+    {
+        "timestamp": "01:13:29",
+        "content": "All right. So now all the different cases except for this randomly weird denominator being zero, right?"
+    },
+    {
+        "timestamp": "01:13:34",
+        "content": "In case that happens, some something's gone wrong."
+    },
+    {
+        "timestamp": "01:13:37",
+        "content": "Maybe all the other cases are returning a fraction object, which is good, because now it's consistent, right?"
+    },
+    {
+        "timestamp": "01:13:49",
+        "content": "Oh, yeah, exactly. So we did say we didn't want it to be five one, but this is actually using the old STR method where we didn't do that check."
+    },
+    {
+        "timestamp": "01:13:58",
+        "content": "So it will print five over one. But if we, you know, if we do the check, if self doubt dynamically equal one, then return stir self on the like."
+    },
+    {
+        "timestamp": "01:14:07",
+        "content": "If we add that, then it won't do that. Yeah, but this is just using the old str method that doesn't do that."
+    },
+    {
+        "timestamp": "01:14:14",
+        "content": "Nice formatting for us. Questions."
+    },
+    {
+        "timestamp": "01:14:21",
+        "content": "We've been working a lot with returning new objects of the same type that we're writing."
+    },
+    {
+        "timestamp": "01:14:26",
+        "content": "Right. That's sort of a new thing to. Okay."
+    },
+    {
+        "timestamp": "01:14:34",
+        "content": "So. What's the purpose of these two lectures?"
+    },
+    {
+        "timestamp": "01:14:39",
+        "content": "Right. So hopefully it shows that. It's very useful to to bundle data and behaviors together."
+    },
+    {
+        "timestamp": "01:14:51",
+        "content": "Right. So the ultimate goal when we're writing programs is to write code that's modular, organized, right."
+    },
+    {
+        "timestamp": "01:14:59",
+        "content": "Because in the future, you might want to build upon this code, in the future you might want to read this code to use it for something else."
+    },
+    {
+        "timestamp": "01:15:05",
+        "content": "In the future, other people might want to read this code or use this code, this class that you wrote to build more complex classes, right?"
+    },
+    {
+        "timestamp": "01:15:13",
+        "content": "Like we use the coordinate class to build a circle class. Right?"
+    },
+    {
+        "timestamp": "01:15:16",
+        "content": "Other people might use your circle class to build, I don't know, a sphere class or something like that, something more complicated."
+    },
+    {
+        "timestamp": "01:15:22",
+        "content": "And so it's really nice to create these little data types that are organized, right?"
+    },
+    {
+        "timestamp": "01:15:27",
+        "content": "Modular. And so we're basically bundling together these data, right?"
+    },
+    {
+        "timestamp": "01:15:33",
+        "content": "So what makes up your object and behaviors together so we can use these objects in a nicely consistent way."
+    },
+    {
+        "timestamp": "01:15:39",
+        "content": "So remember back when we were learning about functions, right?"
+    },
+    {
+        "timestamp": "01:15:43",
+        "content": "The ideas of decomposition and abstraction were very important functions basically"
+    },
+    {
+        "timestamp": "01:15:53",
+        "content": "took a chunk of code and decompose them into one module that we could reuse many, many different places. Right. And we abstracted away the details of the function through docstring."
+    },
+    {
+        "timestamp": "01:15:59",
+        "content": "So people didn't have to slog through a whole bunch of code to figure out what the function did."
+    },
+    {
+        "timestamp": "01:16:03",
+        "content": "All they did was read the docstring and they knew exactly what we wanted."
+    },
+    {
+        "timestamp": "01:16:07",
+        "content": "Now object oriented programing and Python classes have that same big decomposition and abstraction energy."
+    },
+    {
+        "timestamp": "01:16:14",
+        "content": "Right. They've got a bunch of modules that we're creating here where we're bundling together data and behaviors."
+    },
+    {
+        "timestamp": "01:16:27",
+        "content": "Right. So we can create a whole bunch of objects that behave in the exact same way, nicely consistent, so that we know that if I create a coordinate object here, it's going to have an X and Y value."
+    },
+    {
+        "timestamp": "01:16:31",
+        "content": "And if I create another quarter object, it's also going to have an X and Y value."
+    },
+    {
+        "timestamp": "01:16:35",
+        "content": "It's not suddenly going to have an X, Y and Z value, right?"
+    },
+    {
+        "timestamp": "01:16:38",
+        "content": "So creating these objects that work in a consistent way is, is very is very, you know, decomposition, an abstraction."
+    },
+    {
+        "timestamp": "01:16:49",
+        "content": "You are working with the ideas of the composite abstraction, just like functions did."
+    },
+    {
+        "timestamp": "01:16:55",
+        "content": "Okay. So next lecture we will be starting on what?"
+    },
+    {
+        "timestamp": "01:16:59",
+        "content": "We'll do a little bit more of these classes and then we'll start on inheritance."
+    },
+    {
+        "timestamp": "01:17:03",
+        "content": "So having parents, the objects that we created. All right."
+    }
+]

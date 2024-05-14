@@ -1,0 +1,33 @@
+[
+    {
+        "content": "<p>Are the users allowed to win by using the help feature of the game?</p>\n<p></p>\n<p>Related to that, if they have 3 guesses left are they allowed to use help at all? None of the provided example games have this case, and the language in the instructions states that they should get an error message only if they don&#39;t have at least 3.</p>",
+        "type": "question",
+        "created": "2022-09-24T17:48:05.488Z",
+        "subject": "Winning using Help",
+        "_id": "l8g7ge0gpk32bn"
+    },
+    {
+        "content": "<p>Yes, the users are allowed to win by using the with_help feature, however they can only ask for help 3 times.\u00a0</p>\n<p></p>\n<p>Yes, as long as they haven&#39;t used up their 3 helps, they can still ask for help, regardless of how many guesses are remaining.\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-09-24T18:03:54.471Z",
+        "_id": "l8g7ge0gpk32bn"
+    },
+    {
+        "content": "<p>Wait for the second yes, does that not go against &#34;If you do not have at least three guesses remaining, the computer will warn you of this and let you try again. You lose no guesses.&#34;</p>\n<p></p>\n<p>Regardless, for my second question I meant more like in a scenario where they have, say, 3 unique letters remaining. If they have only three guesses left, they ask for help, and help is granted because they have &#34;at least three guesses remaining,&#34; but now they have zero guesses. Do they just lose? Or should this throw the same warning as if they only had 2 guesses remaining saying &#34;Oops! Not enough guesses left:&#34;</p>\n<p></p>\n<p>I feel like this is getting really complicated because then we have to add logic that checks if they only have one unique letter left in the secret word, and only allow them to use help in that instance. Otherwise, using help with only three guesses left would make them lose the game.</p>",
+        "type": "followup",
+        "created": "2022-09-24T18:17:35.251Z",
+        "_id": "l8g7ge0gpk32bn"
+    },
+    {
+        "content": "You\u2019re correct. If you have 2 or less guesses remaining, you cannot ask for help.<div><br /></div><div>As to your other question, if you have 3 guesses left, and ask for help, you can win or loose depending on whether that guess completes the secret word. So, if you have just one more letter left to guess, and you use help, you\u2019ll win. Depending on how you implemented it, this may or may not require you to add further logic. Feel free to follow up</div>",
+        "type": "followup_response",
+        "created": "2022-09-24T19:13:57.562Z",
+        "_id": "l8g7ge0gpk32bn"
+    },
+    {
+        "content": "<p>That clears it all up, thank you\u00a0</p>",
+        "type": "followup_response",
+        "created": "2022-09-24T19:15:10.537Z",
+        "_id": "l8g7ge0gpk32bn"
+    }
+]

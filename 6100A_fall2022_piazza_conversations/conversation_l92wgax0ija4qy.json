@@ -1,0 +1,15 @@
+[
+    {
+        "content": "Hi, we were the students that posted about having issues with PSET 3. Our Kerbs are fnv and gracez03. It would great if you could take a look at our code. Thanks!\u00a0",
+        "type": "note",
+        "created": "2022-10-10T14:58:47.748Z",
+        "subject": "Kerbs to check PSET 3 grade",
+        "_id": "l92wgax0ija4qy"
+    },
+    {
+        "content": "<p>Hi Grace, I reran your code and you got 9.6/10. Your code failed one of the cases testing get_most_frequent_words. You should see your updated grade soon. Thanks.</p>",
+        "type": "followup",
+        "created": "2022-10-10T19:38:41.681Z",
+        "_id": "l92wgax0ija4qy"
+    }
+]

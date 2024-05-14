@@ -1,0 +1,33 @@
+[
+    {
+        "content": "<p>My submission is taking a long time to load for such a short file. And it says next to it &#34;C:\\fakepath\\ps0.py&#34;, that sounds odd?\u00a0 Is there an error?</p>",
+        "type": "question",
+        "created": "2022-09-09T22:40:31.995Z",
+        "subject": "Submission",
+        "_id": "l7v2aozfro025d"
+    },
+    {
+        "content": "<p>resolved, make sure to save as python not text file</p>",
+        "type": "s_answer",
+        "created": "2022-09-09T22:46:05.858Z",
+        "_id": "l7v2aozfro025d"
+    },
+    {
+        "content": "<md>resolved in student answer. \n\nThe \"C:\\fakepath\\ps0.py\" is ok; it is a placeholder file path as the full path name on your local device is too long and unique to you, so for submission purposes, you might see fakepath as placeholder.</md>",
+        "type": "i_answer",
+        "created": "2022-09-09T22:55:46.684Z",
+        "_id": "l7v2aozfro025d"
+    },
+    {
+        "content": "<p>Hi, I cannot see a submit button after uploading my PS and after answering the questions in the survey. My kerb is kimbece and it seems like I have not been added as a student yet. Any help is greatly appreciated.</p>",
+        "type": "followup",
+        "created": "2022-09-09T23:09:10.134Z",
+        "_id": "l7v2aozfro025d"
+    },
+    {
+        "content": "<p>I just gave you access to the class website, please submit now.</p>",
+        "type": "followup_response",
+        "created": "2022-09-09T23:45:53.985Z",
+        "_id": "l7v2aozfro025d"
+    }
+]

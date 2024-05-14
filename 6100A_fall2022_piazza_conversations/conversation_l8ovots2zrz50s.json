@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>How can I see which test cases I failed on in problem 1 of microquiz 2? It says 100% in green, but 3.6/4 on the scores page and I&#39;m curious which cases it failed on.\u00a0</p>",
+        "type": "question",
+        "created": "2022-09-30T19:28:39.362Z",
+        "subject": "Quiz 2 Problem 1 How to see missed cases",
+        "_id": "l8ovots2zrz50s"
+    },
+    {
+        "content": "<p>Examples of where your code does not work are: 6, 10, and 15</p>",
+        "type": "i_answer",
+        "created": "2022-10-03T15:20:36.797Z",
+        "_id": "l8ovots2zrz50s"
+    }
+]

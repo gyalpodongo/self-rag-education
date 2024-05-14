@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>2 confusions/questions:</p>\n<p></p>\n<p>1) will we have infinite submissions during the actual quiz?</p>\n<p>2) will we be shown the accuracy/score of our answers submitted during the quiz as well?</p>\n<p>Thanks</p>",
+        "type": "question",
+        "created": "2022-09-14T01:26:05.464Z",
+        "subject": "Quiz Mechanics Confirmation",
+        "_id": "l80xz0d46o3581"
+    },
+    {
+        "content": "<p>Yes to infinite submissions, but you should code and debug on your local IDE. Submit to the grader code that you think is complete. Clicking submit to the graders is slower and more inefficient than testing locally.\u00a0</p>\n<p></p>\n<p>You&#39;ll see some test cases with the See Output button, just like in the finger exercises. The grade you see during the quiz might change when we run your code on our own more comprehensive test cases.\u00a0</p>\n<p></p>\n<p>Multiple choice gives no indication of correctness.</p>",
+        "type": "i_answer",
+        "created": "2022-09-14T01:33:43.608Z",
+        "_id": "l80xz0d46o3581"
+    }
+]

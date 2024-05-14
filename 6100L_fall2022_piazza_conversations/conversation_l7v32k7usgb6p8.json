@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p>I answered the questions and uploaded my code but I cannot find a submit button. Thanks</p>",
+        "type": "question",
+        "created": "2022-09-09T23:02:12.186Z",
+        "subject": "How to submit PS0",
+        "_id": "l7v32k7usgb6p8"
+    },
+    {
+        "content": "<p>I just added you as a student, please try now.</p>",
+        "type": "i_answer",
+        "created": "2022-09-09T23:46:20.865Z",
+        "_id": "l7v32k7usgb6p8"
+    },
+    {
+        "content": "<p>I am a very novice of python, so I had written my code on the right side (interpreter pane), not on the left side (a Code Editor).</p>\n<p>I talked with TA(Walter.H) this morning and it turned out to be wrong...\u00a0</p>\n<p></p>\n<p>In this case, should I submit the ps.0 again?\u00a0</p>\n<p>If I submit again it late, is there any disadvantage?</p>\n<p></p>\n<p>Thank you :)</p>",
+        "type": "followup",
+        "created": "2022-09-12T14:47:01.730Z",
+        "_id": "l7v32k7usgb6p8"
+    },
+    {
+        "content": "<p>Just submit it again, pset0 is not for points, just making sure everything is all set up (and a learning opportunity!)</p>",
+        "type": "followup_response",
+        "created": "2022-09-12T15:16:44.020Z",
+        "_id": "l7v32k7usgb6p8"
+    }
+]

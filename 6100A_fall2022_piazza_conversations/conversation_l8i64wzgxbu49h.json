@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Are we allowed to use IDEs to run and test our code while taking microquizzes?</p>",
+        "type": "question",
+        "created": "2022-09-26T02:46:42.940Z",
+        "subject": "IDEs on Microquizzes",
+        "_id": "l8i64wzgxbu49h"
+    },
+    {
+        "content": "<p>Yes, as long as you are not using a browser based IDE.</p>",
+        "type": "i_answer",
+        "created": "2022-09-26T17:48:51.833Z",
+        "_id": "l8i64wzgxbu49h"
+    }
+]

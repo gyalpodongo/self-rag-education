@@ -1,0 +1,21 @@
+[
+    {
+        "content": "<p>I forgot to add comments to my code.</p>\n<p></p>\n<p>Is it better to resubmit my pset late but with comments, or to leave it without comments but on time?</p>\n<p></p>\n<p></p>",
+        "type": "question",
+        "created": "2022-10-05T01:42:53.579Z",
+        "subject": "Resubmit pset late with comments or leave it without comments but on time?",
+        "_id": "l8uyti8b72a6u2"
+    },
+    {
+        "content": "<p>You&#39;ll lose 1 &#34;late day&#34; but if you submit the next PSET on or before the 2nd day after its due date at 9pm, it won&#39;t matter. I say resubmit it with the comments.</p>",
+        "type": "s_answer",
+        "created": "2022-10-05T01:52:52.303Z",
+        "_id": "l8uyti8b72a6u2"
+    },
+    {
+        "content": "<p>Thank you for your advice!</p>\n<p></p>\n<p>I&#39;ve resubmitted it with comments.</p>",
+        "type": "followup",
+        "created": "2022-10-05T22:28:06.276Z",
+        "_id": "l8uyti8b72a6u2"
+    }
+]

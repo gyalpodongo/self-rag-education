@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi! For this part of the pset, can we not use equality symbols at all or just not the ==? Thanks!</p>",
+        "type": "question",
+        "created": "2022-10-12T00:16:57.871Z",
+        "subject": "1.2 on pset 4",
+        "_id": "l94vtyq74kd67m"
+    },
+    {
+        "content": "<p>To be clear, you are not allowed to write:</p>\n<p></p>\n<pre>\nreturn date1 == date2</pre>\n<p></p>\n<p>This is because when you create an instance of a class and store it in a variable, the variable acts as a pointer to a place in memory where that class&#39; data is stored, and this statement in Python would simply check\u00a0<strong>reference equality</strong>, or whether both these Date objects point to the same data, which in this case they do not. We ask you not to use this not only because it&#39;s bad practice, but also because this behavior can be modified in Python, where classes can define what it means to be\u00a0<em>equal</em> all internally. The point of this problem is not for you to mess around with that behavior right now.</p>\n<p></p>\n<p>The point of\u00a0<em>is_equal_dates()</em> is to check for\u00a0<strong>functional equality</strong>, or whether these represent the same data. So think about what defines a date (what attributes define this instance?) and whether or not both Date objects represent the same calendar date, and how we can check that within this function.</p>",
+        "type": "i_answer",
+        "created": "2022-10-12T00:33:11.939Z",
+        "_id": "l94vtyq74kd67m"
+    }
+]

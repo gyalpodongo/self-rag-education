@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p>I don&#39;t see a button to submit the pset and I am logged in.\u00a0</p>",
+        "type": "question",
+        "created": "2022-09-08T21:08:03.656Z",
+        "subject": "Unable to submit pset0",
+        "_id": "l7tjjx6wice44g"
+    },
+    {
+        "content": "<p>It didn&#39;&#39;t seem like you had access to the course. You can try now and it should show up.\u00a0</p>",
+        "type": "i_answer",
+        "created": "2022-09-08T22:03:35.335Z",
+        "_id": "l7tjjx6wice44g"
+    },
+    {
+        "content": "<p>I&#39;m also unable to submit my Pset. May I be added to this class? I just submitted my registration this morning.</p>",
+        "type": "followup",
+        "created": "2022-09-09T20:32:16.725Z",
+        "_id": "l7tjjx6wice44g"
+    },
+    {
+        "content": "<p>all set</p>",
+        "type": "followup_response",
+        "created": "2022-09-09T21:01:47.111Z",
+        "_id": "l7tjjx6wice44g"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p dir=\"ltr\">If anyone has made a study guide or cheat sheet yet, what did you put on it? For the MicroQuiz cheat sheets I always had a full double-sided page of stuff that I didn\u2019t end up needing, and I didn\u2019t have the things I did need. Does anyone have any advice?</p>",
+        "type": "question",
+        "created": "2022-10-17T18:06:09.719Z",
+        "subject": "Final Exam Study Guide/Cheat Sheet",
+        "_id": "l9d387xzsmv2hu"
+    },
+    {
+        "content": "<p>I added a reference of which of {}, (), and [] make dicts, tuples, and lists, because I seem to forget often.</p>\n<p></p>\n<p>I also added how to add to each of those, how to remove from each, how to get the first item, how to copy by reference and by value.</p>",
+        "type": "s_answer",
+        "created": "2022-10-18T14:00:05.267Z",
+        "_id": "l9d387xzsmv2hu"
+    }
+]

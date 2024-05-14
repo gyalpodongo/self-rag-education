@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>What&#39;s considered a passing grade in this class?</p>",
+        "type": "question",
+        "created": "2022-12-12T01:09:51.095Z",
+        "subject": "Passing Grade?",
+        "_id": "lbk3kxvbicd1nl"
+    },
+    {
+        "content": "<p>The max cutoffs will be A-90-B-80-C-70-D-60-F. A Pass is ABC.</p>",
+        "type": "i_answer",
+        "created": "2022-12-12T16:04:02.887Z",
+        "_id": "lbk3kxvbicd1nl"
+    }
+]

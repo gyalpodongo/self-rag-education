@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi there! For PSET 1,\u00a0 I got a 0% on parts A &amp; B and a 50% on part C according to the autograder. However, the autograder shows that my code produced the same output as what should be correct. I went to office hours and it seems that the issue is I defined the variable to be &#34;month&#34; instead of &#34;months.&#34; When I run my code in Spyder, I get no errors and get the correct output.</p>\n<p></p>\n<p>Would it be possible for my grade to be revised?</p>\n<p></p>\n<p>Thank you so much for your help!</p>\n<p></p>",
+        "type": "question",
+        "created": "2022-09-27T14:28:31.475Z",
+        "subject": "Autograder 20% grade on PSET 1 even though passed test cases",
+        "_id": "l8kanaszjyn4u6"
+    },
+    {
+        "content": "<p>If you got a 0 on any part of the pset it will be manually graded by a TA. In the future, please make sure you read the pset instructions carefully to avoid errors like this!</p>",
+        "type": "i_answer",
+        "created": "2022-09-27T14:32:08.306Z",
+        "_id": "l8kanaszjyn4u6"
+    }
+]

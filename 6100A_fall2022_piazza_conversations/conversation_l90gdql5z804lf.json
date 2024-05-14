@@ -1,0 +1,27 @@
+[
+    {
+        "content": "<p>For part 5 (frame maker), we are supposed to make a function within another function. the inside function is supposed to take in a data tuple and a dataframe object, and I was wondering how where we are supposed to get those parameters to pass in, as the outside function only takes in a time value.</p>",
+        "type": "question",
+        "created": "2022-10-08T21:53:21.881Z",
+        "subject": "function within a function",
+        "_id": "l90gdql5z804lf"
+    },
+    {
+        "content": "<p>When defining a function within a function, you don&#39;t need to have its arguments readily available. For example I can do the following:</p>\n<p></p>\n<pre>\ndef multiply_by(x):\n\tdef multiply(n):\n\t\treturn n * x\n\treturn multiply</pre>\n<p>So now I defined\u00a0<strong>multiply()</strong> to multiply any number\u00a0<strong>n</strong> by a factor of\u00a0<strong>x.\u00a0</strong>I&#39;ll need to pass in a value\u00a0<strong>x</strong> to construct the new function, but past that, it simply defines a function for me and I can store it in a <em>variable</em> and call it like I would any other function.</p>\n<pre>\ntimes_4 = multiply_by(4)\nprint(times_4(10)) # prints 40</pre>",
+        "type": "i_answer",
+        "created": "2022-10-12T01:10:01.142Z",
+        "_id": "l90gdql5z804lf"
+    },
+    {
+        "content": "<p>when I return my function, I get an error saying NameError name &#39;function_name&#39; is not defined. why might this be?</p>",
+        "type": "followup",
+        "created": "2022-10-12T23:04:07.105Z",
+        "_id": "l90gdql5z804lf"
+    },
+    {
+        "content": "<p>Is it possible you misspelled the function name in the return?</p>",
+        "type": "followup_response",
+        "created": "2022-10-13T05:01:48.899Z",
+        "_id": "l90gdql5z804lf"
+    }
+]

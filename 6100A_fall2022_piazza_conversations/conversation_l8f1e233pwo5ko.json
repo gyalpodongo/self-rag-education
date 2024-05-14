@@ -1,0 +1,15 @@
+[
+    {
+        "content": "What if they guess a letter that was revealed by the get help function? Is it okay to still use the &#34;Oops! You&#39;ve already guessed that letter:&#34; statement?",
+        "type": "question",
+        "created": "2022-09-23T22:10:32.847Z",
+        "subject": "guess a letter that was revealed by the get help function",
+        "_id": "l8f1e233pwo5ko"
+    },
+    {
+        "content": "<p>Yes, I think so. Since you should also add the revealed letter into the letters_guessed list in your helper function. And the statement doesn&#39;t need to define again.</p>",
+        "type": "s_answer",
+        "created": "2022-09-24T03:03:00.029Z",
+        "_id": "l8f1e233pwo5ko"
+    }
+]

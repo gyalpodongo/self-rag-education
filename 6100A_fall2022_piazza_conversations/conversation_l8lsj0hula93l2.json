@@ -1,0 +1,15 @@
+[
+    {
+        "content": "title",
+        "type": "question",
+        "created": "2022-09-28T15:36:50.754Z",
+        "subject": "Can a string contain a list",
+        "_id": "l8lsj0hula93l2"
+    },
+    {
+        "content": "A string cannot contain a list, but a list can contain a string. Remember that a string is a series of characters strung together to make some kind of phrase so it can only contain characters.<div><br /></div><div>Keep in mind, it is possible to turn a string into a list using methods like \u201csplit\u201d and breaking it into the pieces you\u2019re looking for.\u00a0</div>",
+        "type": "i_answer",
+        "created": "2022-09-28T15:41:47.613Z",
+        "_id": "l8lsj0hula93l2"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "content": "<p>Hi there,</p>\n<p>Whenever I run the tester in my IDE, it says that I have passed all the tests. However, when I submit through the class website, it says I failed all of them. I went to OH but we couldn&#39;t figure out the issue, so I wanted to ask here to see what I should do. Thank you!</p>\n<p></p>\n<p><a href=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fkun40netz5n5er%2F1f7634de70f304a368252f80e7fe59e899b347deea9abc57598149a53bf42f9b%2FScreen_Shot_2022-10-03_at_6.18.11_PM.png\" target=\"_blank\" rel=\"noopener noreferrer\">Screen_Shot_2022-10-03_at_6.18.11_PM.png</a></p>\n<p></p>\n<p><a href=\"/redirect/s3?bucket=uploads&amp;prefix=paste%2Fkun40netz5n5er%2F7cf3ca948237b6f2629b61c64280b0aff89b0db22b26eabd6b21f75866e9010c%2FScreen_Shot_2022-10-03_at_6.18.28_PM.png\" target=\"_blank\" rel=\"noopener noreferrer\">Screen_Shot_2022-10-03_at_6.18.28_PM.png</a></p>\n<p></p>\n<p>Update - RESOLVED</p>",
+        "type": "question",
+        "created": "2022-10-03T22:20:14.636Z",
+        "subject": "PSET 3 Submission Error",
+        "_id": "l8tc51nwdjf4w3"
+    },
+    {
+        "content": "<p>Resolved - I had an extra line of imports and a print statement in case anyone runs into a similar problem</p>",
+        "type": "s_answer",
+        "created": "2022-10-04T02:08:25.173Z",
+        "_id": "l8tc51nwdjf4w3"
+    }
+]
